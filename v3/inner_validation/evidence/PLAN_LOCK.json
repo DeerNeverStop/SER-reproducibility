@@ -1,0 +1,12 @@
+{
+  "program": "SER26-DUAL-VALIDATION-1",
+  "source_commit": "de39f2ae5bad4540da9d13ab4cc6196bec786400",
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "plan_file_sha256": "a765bad72a0c6be88040ca0dadac6848d139988714af26e738a06403ad0cb1e1",
+  "source_count": 36,
+  "formal_units": 480,
+  "pilot_units": 4,
+  "frozen_before_new_training": true,
+  "formal_training_completed": false,
+  "public_preregistration_claim": false
+}

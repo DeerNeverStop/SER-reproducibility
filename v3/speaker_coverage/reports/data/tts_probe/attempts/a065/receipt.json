@@ -1,0 +1,40 @@
+{
+  "attempt_id": "a065",
+  "attempt_sha256": "dd19fb3c0119a5c8ce8242f926bc84f496e7edcdf94bebbc04453f9cdd4d5d4d",
+  "config_sha256": "1014dd68450c8e891133eba62cc6a59dac22e98b126dbb55862c1a5a0e3b2b1c",
+  "environment": {
+    "accelerate": "1.12.0",
+    "backend": "Qwen3TTSModel.generate_voice_design",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "numpy": "2.1.2",
+    "pid": 2197,
+    "qwen-tts": "0.1.1",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.3"
+  },
+  "error": null,
+  "finished_utc": "2026-09-06T20:22:20.478275+00:00",
+  "manifest_sha256": "341f8cae062b38bee33569a50e45ffded4e7a27bc16f30a2cf9b0f0b93218a19",
+  "metrics": {
+    "clip_fraction_abs_ge_0_999": 0.0,
+    "duration_seconds": 1.92,
+    "finite": true,
+    "mono": true,
+    "peak_abs": 0.56640625,
+    "rms": 0.10011314562753076,
+    "sample_rate": 24000,
+    "samples": 46080,
+    "technically_writable": true
+  },
+  "seed": 59768094,
+  "started_utc": "2026-09-06T20:22:18.716106+00:00",
+  "status": "success",
+  "vram": {
+    "peak_allocated_bytes": 4246799360,
+    "peak_reserved_bytes": 4439670784
+  },
+  "wall_seconds": 1.7611623033881187,
+  "wav_file": "audio.wav",
+  "wav_sha256": "5bdc1e20925dd37b852cdac8a33fc478c3301794f134e1b785eb69e7bb226258"
+}

@@ -1,0 +1,71 @@
+{
+  "repository_id": "P05R019",
+  "repository_url": "https://github.com/Yaowan410/Emotion-Aware-subtitles",
+  "commit_sha": "dc64ec9a268d2229211b51b9c76bf6fff01f6c49",
+  "draw_rank": 23,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "random_rows",
+  "probe_parameters": {
+    "corpora": [
+      "IEMOCAP"
+    ],
+    "test_size": 0.1,
+    "seed": 42,
+    "stratify": true
+  },
+  "decisive_source": [
+    "Model.py:L90-L101"
+  ],
+  "rationale": "IEMOCAP row indices are stratified by emotion only; speaker/session IDs do not enter train_test_split.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 360,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "speaker_intersection": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "speaker_intersection_count": 10
+    }
+  ],
+  "max_speaker_intersection": 10,
+  "split_risk_final": "yes",
+  "prior_split_risk": "yes"
+}

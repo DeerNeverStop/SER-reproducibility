@@ -1,0 +1,12 @@
+{
+  "outputs": "D:/SER-final-program-20260907/postrun/20260907T184308Z",
+  "utc": "2026-09-07T18:44:16.6848768Z",
+  "training_pid": 29552,
+  "state": "waiting_for_original_process",
+  "process_handle_held": true,
+  "training_start_utc": "2026-09-07T14:52:28.5156867Z",
+  "formal_predictions_read": false,
+  "wrapper_pid": 17564,
+  "contract_sha256": "bd1c21f1b0e7d500c5d30793b5ab998157b3f0f074062c86ebcba6a84a5ab261",
+  "manual_visual_review_pending": true
+}

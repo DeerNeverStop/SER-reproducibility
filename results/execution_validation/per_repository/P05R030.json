@@ -1,0 +1,22 @@
+{
+  "repository_id": "P05R030",
+  "repository_url": "https://github.com/mzarvandi/SER-wav2vec",
+  "commit_sha": "3a78aa177edc4e847bcfccbffc2cd88d0aab96f6",
+  "draw_rank": 34,
+  "evidence_tier": "tier3_unknown",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "external_kaggle_partition",
+  "probe_parameters": {},
+  "decisive_source": [
+    "SER-wav2vec.ipynb:L408-L418",
+    "SER-wav2vec.ipynb:L565-L566"
+  ],
+  "rationale": "The notebook infers membership from external Kaggle Train/Train and Test/Test directories. Their manifests and construction rule are absent, so actor overlap cannot be recovered from the frozen repository.",
+  "pairs": [],
+  "max_speaker_intersection": null,
+  "split_risk_final": "unknown",
+  "prior_split_risk": "unknown"
+}

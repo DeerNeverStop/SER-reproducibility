@@ -1,0 +1,38 @@
+{
+  "schema": "ser-one-shot-postrun-SYNTHETIC-exit17-probe-1",
+  "pass": true,
+  "scope": "Actual postrun_wait.ps1 entry with one hidden synthetic child; no formal inputs or model execution",
+  "started_utc": "2026-09-07T18:43:17.1852365Z",
+  "completed_utc": "2026-09-07T18:43:21.5424634Z",
+  "elapsed_seconds": 4.3549263,
+  "wrapper_entry": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\postrun_wait.ps1",
+  "wrapper_sha256": "7f9e86504e986dc528a7c837a59b55e7e6228b59f49d2b356c4b87c314106a7e",
+  "contract_sha256": "e5e3e937f0e78549b25164f83c57b662dd21817c5b38028a8aa08b251f8ddc3c",
+  "training_pid": 30044,
+  "training_start_utc": "2026-09-07T18:43:17.2189548Z",
+  "training_exe": "D:\\software\\PowerShell\\7.6.5\\pwsh.exe",
+  "hidden_child_exit": 17,
+  "wrapper_exit": 1,
+  "live_handle_bound": true,
+  "recorded_original_exit17": true,
+  "expected_failed_stop": true,
+  "no_02_admitted": true,
+  "no_10_score": true,
+  "out_absent": true,
+  "synthetic_input_paths_absent": true,
+  "wrapper_source_unchanged": true,
+  "control_files": [
+    "00_wait_started.json",
+    "01_training_exited.json",
+    "99_failed.json"
+  ],
+  "files_sha256": {
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\probe_exit17.ps1": "e7304113bdd52df0a9af0151d82bd26bc5524d782e95d77f2bb4d592f5b979a8",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\control\\01_training_exited.json": "e95b378f8d2b45cb0c520ea9c6613b675d3568ce8af98283e215a13a6c16454b",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\control\\99_failed.json": "ae6e69d4b7281e68484a49786f66c34484237a95c91a4551b7f6da142fd6dcaa",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\wrapper.log": "1a203e438a996b3950e66ffa396c21fc1b30c4856b7a7f24449baeba54354917",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\contract.json": "e5e3e937f0e78549b25164f83c57b662dd21817c5b38028a8aa08b251f8ddc3c",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\control\\00_wait_started.json": "c809b6c9a9121bb79a17e415f71a350e4a266d374953530449d8570a1ed547d4",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17_v2\\run_probe.ps1": "ddf53a89a96af68039d6f55f5e84dfafcdfd87e70e657138153c872ea3a6e6ff"
+  }
+}

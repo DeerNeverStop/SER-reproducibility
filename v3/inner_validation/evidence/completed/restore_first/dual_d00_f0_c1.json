@@ -1,0 +1,135 @@
+{
+  "base_file_sha256": "136a3e720c04f2c77bf7a4dc6a3868b14d5a2c145a988114b733cb1a8428be98",
+  "base_state_sha256": "d8e745fb761c56d209431413bcc373f92784dc2c8d850199b6caa5cf05ca2c36",
+  "bundle_params_sha256": "e70e8d484a2ef3a4755520da427c4a46fc34e40167dca0e0eda4f22c7ac4d1b4",
+  "committed_file_sha256": {
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c1/DONE": "e7c1d581d5c1ad79d62f356b231efc388583720e0266a95dfe9174d286bdf66d",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c1/attempts/0001/checkpoint.pt": "c7dfd456cd384366c3f3881da01803427d39fc75d457f68d01a5fdd6a347ac9f",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c1/attempts/0001/history.json": "6668c4cd1d6bfb2bb2d3a7c47f455a92158711fa25e753a7ca00f2c1204770b5",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c1/attempts/0001/predictions.npz": "136e33b876f9a9149de689d6f317cdd3f665914521b30c8bd9cf485b8841502e",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c1/attempts/0001/receipt.json": "9d67d7576bba7bbbf7821c354cf8f499162eaff7abc6cf5f587f8465ebe41d7b"
+  },
+  "comparisons": {
+    "test__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "test__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "test__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "val_seen__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_seen__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_seen__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    }
+  },
+  "environment": {
+    "audit_extra_package_versions": {
+      "librosa": "0.11.0",
+      "soundfile": "0.13.1",
+      "torchaudio": "2.8.0+cu128"
+    },
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "cudnn_tf32": true,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "matmul_tf32": false,
+    "numpy": "2.1.2",
+    "python": "3.12.3",
+    "threads": 1,
+    "torch": "2.8.0+cu128"
+  },
+  "epoch_state_load_seconds": {
+    "11": 0.19302217289805412,
+    "12": 0.17603238858282566,
+    "15": 0.17675479501485825
+  },
+  "forward_seconds": {
+    "epoch11__test": 0.2739487364888191,
+    "epoch11__val_seen": 0.34989386051893234,
+    "epoch11__val_unseen": 0.33580328710377216,
+    "epoch12__test": 0.2737397477030754,
+    "epoch12__val_seen": 0.3468559365719557,
+    "epoch12__val_unseen": 0.3354973588138819,
+    "epoch15__test": 0.2745072115212679,
+    "epoch15__val_seen": 0.34837271086871624,
+    "epoch15__val_unseen": 0.33503527753055096
+  },
+  "frozen_parameter_sha256": "2c49490398901cdd9a36af0df34deb2bccfbafb5151237cf817becd067497f84",
+  "max_abs_diff": 0.0,
+  "model_constructor_seconds": 1.5213824715465307,
+  "pass": true,
+  "schema": "ser-dual-validation-restore-unit-1",
+  "scientific_scores_computed": false,
+  "selected_epochs": {
+    "best_seen": 11,
+    "best_unseen": 12,
+    "last": 15
+  },
+  "unique_epochs": [
+    11,
+    12,
+    15
+  ],
+  "unit_id": "dual_d00_f0_c1"
+}

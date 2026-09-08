@@ -1,0 +1,283 @@
+{
+ "cases_run": 20,
+ "rejected_or_behaved": 20,
+ "report": [
+  {
+   "case": "M01_drop_row",
+   "detail": {
+    "integrity_I1_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I1"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M02_label_swap",
+   "detail": {
+    "integrity_I3_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M03_fold_overlap",
+   "detail": {
+    "integrity_I2_failed": true,
+    "integrity_I5_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I2",
+     "I5"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M04_config_drift",
+   "detail": {
+    "integrity_I7_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I7"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M05_duplicate_row",
+   "detail": {
+    "integrity_I4_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M06_missing_cell",
+   "detail": {
+    "m_N02": 4,
+    "unchanged_N01": true,
+    "verdict_N02": "not tested"
+   },
+   "expect": {
+    "family_size": {
+     "N02": 4
+    },
+    "unchanged": [
+     "N01"
+    ],
+    "verdict": {
+     "N02": "not tested"
+    }
+   },
+   "pass": true
+  },
+  {
+   "case": "M07_done_tamper",
+   "detail": {
+    "integrity_I1_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I1"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M08_argmax_violation",
+   "detail": {
+    "integrity_I4_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M09_split_table_tamper",
+   "detail": {
+    "integrity_I2_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I2"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M10_speaker_swap",
+   "detail": {
+    "integrity_I3_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M11_hpo_missing_config",
+   "detail": {
+    "integrity_I6_failed": true,
+    "verdict_N14": "not tested"
+   },
+   "expect": {
+    "integrity_fail": [
+     "I6"
+    ],
+    "verdict": {
+     "N14": "not tested"
+    }
+   },
+   "pass": true
+  },
+  {
+   "case": "M15_conditional_truncation",
+   "detail": {
+    "n_N11": 24,
+    "tested_N11": true,
+    "tested_R09": true
+   },
+   "expect": {
+    "n": {
+     "N11": 24
+    },
+    "tested": [
+     "N11",
+     "R09"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M20_hygiene_tamper",
+   "detail": {
+    "integrity_I3_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M21_crossing_isolation",
+   "detail": {
+    "D14_changed": true,
+    "unchanged_R01": true,
+    "unchanged_R02": true,
+    "unchanged_R03": true
+   },
+   "expect": {
+    "changed_descriptor": "D14",
+    "unchanged": [
+     "R01",
+     "R02",
+     "R03"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M24_logit_column_missing",
+   "detail": {
+    "integrity_I4_failed": true
+   },
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "pass": true
+  },
+  {
+   "case": "M18_family_placeholder",
+   "detail": {
+    "m_N15": 2,
+    "unchanged_N01": true,
+    "verdict_N15": "not tested"
+   },
+   "expect": {
+    "family_size": {
+     "N15": 2
+    },
+    "unchanged": [
+     "N01"
+    ],
+    "verdict": {
+     "N15": "not tested"
+    }
+   },
+   "pass": true
+  },
+  {
+   "case": "M23_tost_missing",
+   "detail": {
+    "verdict_T01": "not tested"
+   },
+   "expect": {
+    "verdict": {
+     "T01": "not tested"
+    }
+   },
+   "pass": true
+  },
+  {
+   "case": "M25_mech_condition_missing",
+   "detail": {
+    "tested_N05": true,
+    "verdict_N06": "not tested"
+   },
+   "expect": {
+    "tested": [
+     "N05"
+    ],
+    "verdict": {
+     "N06": "not tested"
+    }
+   },
+   "pass": true
+  },
+  {
+   "case": "M13_null_world_no_false_support",
+   "detail": {
+    "means": {
+     "R01": -1.5852347883597895,
+     "R02": -2.30448082010582,
+     "R03": 0.7192460317460309,
+     "R07": 0.3523892195767197
+    },
+    "supported": []
+   },
+   "pass": true
+  },
+  {
+   "case": "M14_sign_flip_directional_reading",
+   "detail": {
+    "mean": -16.794808201058203,
+    "reject": true,
+    "verdict": "not supported"
+   },
+   "pass": true
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,145 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{spconf,amsmath,graphicx,booktabs}
+\usepackage{newtxmath}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\hypersetup{pdftitle={Speaker Overlap in Speech Emotion Recognition: Outer- and Inner-Split Protocol Effects},pdfauthor={Tian Xie}}
+\title{Speaker Overlap in Speech Emotion Recognition:\\Outer- and Inner-Split Protocol Effects}
+\name{Tian Xie}
+\address{University of Toronto\\tianjack.xie@mail.utoronto.ca}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Speaker-overlapping evaluation can obscure whether speech emotion recognition generalizes to unseen speakers. We combine a prespecified multi-corpus experiment with a pre-execution-frozen test of validation optimism. The original program crosses random and speaker-grouped outer test and inner validation splits, compares matched-size exposure conditions, and evaluates partial fine-tuning. Across three from-scratch models, the random-versus-grouped pipeline contrast is 18.24 UAR points on RAVDESS, 2.56 on CREMA-D, and 7.21 on a repetition-clean SUBESCO panel. Both boundary contrasts contribute; matched-size comparisons also implicate prompt and cross-prompt speaker overlap. The new CREMA-D experiment completes 24 prespecified draws and 1,920 fits. With an identical speaker-exclusive outer test, random inner validation increases validation optimism by 1.419 points (95\% confidence interval 0.901--1.937). This does not establish a corresponding loss in outer-test performance. We distinguish the two studies' inferential units, preserve their audit trails, and bound the conclusions to the specified pipelines.
+\end{abstract}
+\begin{keywords}
+speech emotion recognition, evaluation protocol, speaker independence, validation bias, reproducibility
+\end{keywords}
+
+\section{Introduction}
+Speech emotion recognition (SER) is often intended for speakers absent from training. A random utterance split can nevertheless place the same speaker on both sides of an evaluation boundary. A second boundary arises when validation data select checkpoints or hyperparameters: a speaker-exclusive final test does not make the inner selection process speaker-exclusive. These settings answer different prediction questions, so high scores under one setting need not transfer to another.
+
+Prior work has examined SER splitting criteria, standardized evaluation and dataset-dependent shortcuts~\cite{atmaja,antoniou,serab,meyer}. Our contribution is a linked set of protocol comparisons, not a new classifier or a claim that these risks were previously unknown. We cross the outer and inner boundaries, compare exposure conditions at matched training size, and examine a modern fine-tuned encoder. We then separately test whether speaker-overlapping validation is more optimistic when the honest outer test is held fixed.
+
+The evidence has two distinct layers. A prespecified program (v2; 4,943 completed units under its frozen plan) supplies the multi-corpus comparisons. A subsequent corrective study, N14R2, supplies the principal hyperparameter-selection evidence using fresh partitions, seeds and fits. Its 24-draw design and analysis were frozen before execution. We do not merge the studies, reinterpret all results as a single new pre-execution specification, or treat earlier HPO observations as independent evidence from the fresh test~\cite{artifact}.
+
+\section{Experimental design}
+\subsection{Data, metrics and model families}
+We use the acted-speech corpora RAVDESS (24 speakers, eight emotions), CREMA-D (91 speakers, six emotions), and SUBESCO (20 speakers, seven emotions)~\cite{ravdess,cremad,subesco}. Frozen hygiene rules remove conflicting-label duplicate groups, retain one path from same-label duplicates, and exclude one prespecified unusable CREMA-D file. The resulting corpora contain 1,439, 7,435 and 6,998 utterances, respectively. The primary SUBESCO level is a pinned 980-utterance panel: seven prompts and one take per speaker--prompt--emotion combination. Sibling takes therefore cannot explain its primary protocol contrast.
+
+The original factorial evaluates CNN, ResNet-SE and Transformer models trained from scratch, and linear probes on frozen HuBERT-base, WavLM-base+ and wav2vec~2.0-base representations~\cite{hubert,wavlm,wav2vec}. Scratch models share the frozen front end: 22.05-kHz mono audio, 30-dB trimming, 64 log-mel bins, 128 frames, per-utterance normalization and train-only augmentation. Training uses class-balanced cross-entropy, AdamW, cosine scheduling, at most 100 epochs, patience 15 and the minimum-validation-loss checkpoint. Probes use fit-fold-standardized time-averaged representations. Three replicates jointly index partition and training randomness.
+
+UAR is the mean recall across emotion classes, reported in percentage points (pp) for differences. Original-program results average out-of-fold, per-speaker UAR over replicates and, where indicated, within a model family. N14R2 instead computes six-class UAR on each whole validation or test fold; these two aggregation rules are not interchangeable.
+
+\subsection{Outer and inner protocol boundaries}
+The first letter of a cell denotes the outer split and the second its inner fit/validation split: R is stratified random splitting and G is speaker grouping. Both use five outer folds. Thus RR is random at both boundaries; GG is grouped at both; RG and GR change one boundary. We define the protocol premium as RR minus GG UAR. The identity
+\begin{equation}
+ U_{RR}-U_{GG}=(U_{RG}-U_{GG})+(U_{RR}-U_{RG})
+\end{equation}
+separates two prespecified protocol contrasts. We call these the outer-boundary and inner-boundary terms. They are not causal mediation shares: grouping also changes training and validation membership, and may change allocation. GR minus GG describes the inner-allocation contrast when the outer test is already grouped.
+
+\subsection{Matched exposure and fine-tuning}
+The exposure block crosses speaker and prompt groups on CREMA-D and SUBESCO-full. A checkerboard fixes test items from one speaker-group--prompt-group intersection and constructs four legal training conditions: neither overlap (none), test speakers' other prompts (spk), other speakers' test prompts (prm), and both overlaps (both). Training size is matched to the smallest legal pool (approximately 3,440 and 3,359 fit utterances), with class stratification and a common inner rule. Remaining variants of the test items are excluded except in an explicit SUBESCO sibling-take condition. Five speaker folds, two prompt rotations and two replicates yield 20 fits per condition and model (CNN and ResNet-SE). These subsampled conditions are not directly comparable in absolute UAR with the factorial.
+
+A separate matched-utterance-count comparison contrasts five 24-speaker CREMA-D panels with five 91-speaker panels. It tests a speaker-count/density package, not speaker count independently of within-speaker density. For partial fine-tuning, WavLM-base+ updates its top four transformer layers and a linear head, using class-balanced cross-entropy and AdamW with constant encoder/head learning rates $5\times10^{-5}/10^{-3}$, weight decay $10^{-2}$, batch size 16, fp16, at most 15 epochs, patience three and the minimum-validation-loss checkpoint. Training crops are random 3-s segments; evaluation uses the first 10 s. The frozen same-regime comparator shares the head, partitions, seeds, dropout-active training mode and epoch budget, with unstandardized pooled features. Two seeds use the first RR/GG partition draw per primary corpus. This comparator is not the standardized probe in the factorial. Full architectures and hyperparameters are pinned in the artifact.
+
+\subsection{Original-program analysis}
+The prespecified v2 analysis uses speaker-paired differences, 10,000-resample whole-speaker percentile bootstrap intervals, and two-sided Wilcoxon tests with Holm adjustment within the frozen claim families. N07--N08 (SUBESCO exposure contrasts) and N11--N13 (fine-tuning increments) were designated estimation-only before execution because simulated power was low; an interval excluding zero does not add them to the prespecified hypothesis-testing families. The intervals describe speaker variation under the realized fitted pipelines, not uncertainty across independent corpora or a full distribution of retraining runs. Complete frozen-plan records, family membership, model-level tables and secondary diagnostics remain in the artifact~\cite{artifact}.
+
+\section{Multi-corpus results}
+\subsection{Both boundaries contribute}
+Table~\ref{tab:factorial} summarizes the paired family-level results. The scratch-model premium is positive on all three corpora. On SUBESCO-980 it is 7.21 pp, comprising an outer-boundary term of 3.98 pp and an inner-boundary term of 3.23 pp. On RAVDESS the corresponding terms are 12.16 and 6.08 pp; on CREMA-D, 1.16 and 1.40 pp. All listed prespecified tests have Holm-adjusted $p<0.001$. The numerical balance is corpus-specific: there is no universal correction factor and no justified prevalence-times-effect extrapolation.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Original factorial: mean differences [95\% whole-speaker bootstrap CI], in UAR pp. Scratch averages CNN, ResNet-SE and Transformer; probes average three frozen encoders. All listed tests have Holm $p<0.001$. The inferential counts are speakers, not fits.}
+\label{tab:factorial}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcrrrr}\toprule
+Corpus & Speakers & Scratch RR--GG & Scratch RG--GG & Scratch RR--RG & Probe RR--GG\\\midrule
+RAVDESS & 24 & 18.24 [15.53, 21.06] & 12.16 [10.18, 14.21] & 6.08 [4.70, 7.41] & 11.78 [9.73, 14.15]\\
+CREMA-D & 91 & 2.56 [2.08, 3.06] & 1.16 [0.74, 1.59] & 1.40 [1.05, 1.75] & 2.16 [1.73, 2.64]\\
+SUBESCO-980 & 20 & 7.21 [5.15, 9.39] & 3.98 [2.29, 5.67] & 3.23 [2.22, 4.22] & 5.34 [4.02, 6.90]\\\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Overlap comparisons at matched training size}
+On CREMA-D, allowing prompt overlap without speaker overlap increases UAR by 11.07 pp [9.82, 12.34], whereas allowing cross-prompt speaker overlap without prompt overlap increases it by 2.68 pp [1.79, 3.54]. The SUBESCO-full sibling-take contrast adds 10.09 pp [7.99, 12.41] relative to both-overlap training at matched size. These three prespecified comparisons have Holm $p<0.001$. The design controls test membership and training count, but not all properties of the training samples; the estimates do not demonstrate that a network used a voiceprint.
+
+At matched utterance count, the 24-speaker CREMA-D panels have a premium 4.90 pp [3.95, 5.87] larger than the matched 91-speaker panels (Holm $p<0.001$). Its analysis includes the 72 distinct speakers occurring in the five smaller panels, not 72 independent panel draws. The SUBESCO prompt-only and speaker-only estimates are 5.27 pp [2.68, 7.86] and 15.89 pp [13.39, 18.48], respectively. They retain their estimation-only status; the apparent ordering across corpora is not a prespecified test of language or corpus differences.
+
+\subsection{Premium after partial fine-tuning}
+Partial fine-tuning retains positive RR--GG contrasts on all three corpora (Table~\ref{tab:ft}; Holm $p<0.001$). Thus the observed protocol sensitivity is not restricted to from-scratch architectures. Relative to the same-regime frozen comparator, the premium changes by 14.17 pp [8.82, 19.60] on RAVDESS, 2.61 pp [1.47, 3.74] on CREMA-D and 8.57 pp [5.00, 12.50] on SUBESCO-980. These increments were estimation-only. Moreover, 54 of the comparator's 60 fits selected the final epoch and its absolute UAR was low. This budget-matched but weak baseline does not support a general claim that fine-tuning necessarily amplifies leakage.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Partial fine-tuning: original-program UAR (\%) and paired premium [95\% speaker bootstrap CI] in pp.}
+\label{tab:ft}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}\toprule
+Corpus & RR & GG & RR--GG [95\% CI]\\\midrule
+RAVDESS & 78.58 & 59.57 & 19.01 [14.78, 23.16]\\
+CREMA-D & 70.34 & 68.58 & 1.76 [0.85, 2.69]\\
+SUBESCO-980 & 59.90 & 53.11 & 6.79 [3.88, 9.80]\\\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Fresh test of validation optimism}
+\subsection{N14R2: design and inferential unit}
+N14R2 asks a narrower question: with an identical speaker-exclusive outer test, does random rather than speaker-grouped inner validation overstate the selected model's test performance? The earlier v2 HPO estimate is historical, not the principal evidence here. An intervening study, N14R, ended incomplete after an infrastructure incident; its 16 complete draws and all 1,298 successful fits, including a partial draw, are excluded. No old predictions, fitted weights, draws or training seeds enter N14R2.
+
+The pre-execution-frozen specification fixes 24 primary and four unused reserve draws. Each draw uses five randomized stratified speaker-grouped outer folds shared by GR and GG. Inner validation uses a 25\% sample-random (GR) or speaker-grouped (GG) holdout, with all six classes represented. N14R2 reuses the pinned log-mel front end, ResNet-SE architecture, augmentation, class-balanced loss, AdamW and cosine schedule. Eight configurations cross learning rate $\{3\!\times\!10^{-4},10^{-3}\}$, weight decay $\{10^{-4},10^{-3}\}$ and dropout $\{0.1,0.3\}$. There is one training replicate per draw/fold, with paired training seeds across configurations and cells; batch size is 64, maximum epochs 100 and patience 15. Checkpoints minimize validation loss. Within each draw--fold--cell episode, the configuration maximizing that complete validation fold's UAR is selected, with exact ties broken by grid index.
+
+For selected-model validation and test UAR, $V$ and $T$, define
+\begin{equation}
+\Delta_d=\frac{1}{5}\sum_{f=1}^{5}
+\big[(V-T)_{df,GR}-(V-T)_{df,GG}\big],\quad
+\widehat\theta=\frac{1}{24}\sum_{d=1}^{24}\Delta_d.
+\end{equation}
+The complete draw is the inferential unit. Neither the 120 folds nor the 1,920 fits are independent replicates. The frozen primary test is a two-sided one-sample Student $t$ test over 24 deltas, with a 95\% $t$ interval and a separate one-member Holm family. Directional support requires a positive mean and adjusted $p\leq0.05$. Sensitivities use 100,000 draw-bootstrap resamples and all $2^{24}$ sign assignments; sign-flip validity additionally requires symmetry/sign exchangeability.
+
+\subsection{Result and audit trail}
+All 24 primary draws and 1,920 fits completed, without failures, retries or reserve activation. A hash-bound completeness lock preceded scoring. The mean optimism difference is \textbf{1.419 pp}, with SD 1.226, SE 0.250, $t(23)=5.669$, two-sided/Holm $p=9.013\times10^{-6}$, and 95\% CI \textbf{[0.901, 1.937]}. The bootstrap CI is [0.950, 1.906]; the sign-flip sensitivity gives $p=4.768\times10^{-6}$. These are concordant sensitivity results, not replacements for the primary test.
+
+The descriptive outer-test difference-in-differences,
+\begin{equation}
+ [T_{GR}(\mathrm{selected})-T_{GG}(\mathrm{selected})]
+ -[T_{GR}(c_4)-T_{GG}(c_4)],
+\end{equation}
+averaged equally over folds and draws, is $-0.076$ pp with 95\% $t$ CI [$-0.320$, 0.169]. Here $c_4=(10^{-3},10^{-4},0.1)$ is the prespecified fixed configuration. This descriptor has no formal hypothesis-test verdict. The primary finding is greater validation optimism, not a 1.419-point test-performance loss, an equivalence result, or evidence of a particular memorization mechanism.
+
+The frozen scorer's original JSON failed independent verification at one output-only field: it counted 24 analyzed draws as 24 planned draws rather than 28. We preserve that output and failure report. A separately labeled copy changes only that integer (one byte, 24 to 28); all scientific numbers, source, plan and analysis-lock bytes remain unchanged. The unmodified verifier then fully reconstructed the corrected copy and passed with zero differences~\cite{artifact}. This is a disclosed metadata erratum, not a claim that the original scorer passed unchanged.
+
+\section{Discussion, limitations and reproducibility}
+The factorial shows that outer and inner protocol choices both affect reported scores; the exposure block further distinguishes prompt overlap, cross-prompt speaker overlap and sibling takes under specified matching constraints. N14R2 establishes greater validation optimism for random inner validation in one fixed CREMA-D/ResNet-SE pipeline. Together these results motivate reporting both boundaries and using speaker-exclusive validation when validation is intended to estimate unseen-speaker performance. They do not mandate a universal numeric correction or identify a causal mediation mechanism.
+
+The evidence remains limited to acted corpora, frozen implementations and prespecified randomizations. Original speaker-bootstrap intervals and N14R2 draw-level intervals quantify different variation and must not be pooled. Fine-tuning increments are limited by the weak frozen comparator. N14R2 was prospectively distributed across four RTX 4090 hosts; paired cells and configurations stayed on the same host, but driver/host variation was not eliminated. Its target is conditional on the fixed corpus, pipeline and deployment, not unrestricted generalization to new speakers, languages or corpora.
+
+The repository artifact links the v2 frozen-plan records and verification with the fresh N14R2 specification, original failure, corrected result, independent verification and replay instructions~\cite{artifact}. The frozen N14R2 specification required a public pre-execution receipt, but the evidence available at manuscript preparation does not establish that such a receipt was publicly accessible before execution. We therefore describe N14R2 as pre-execution frozen rather than publicly preregistered. This is a limitation of verifiable provenance and does not establish that the repository was private at that earlier time. At manuscript preparation the repository is private and the materials are not publicly accessible. Original v2 verification records 1,320 verification items with zero failed items. The N14R2 replay reconstructs stored outputs, not raw-audio retraining. Its verifier records external-cache-byte verification as false because the immutable lock's Windows paths are absent on the Linux replay host; separate operator PINS checks validated the actual cloud cache. Raw audio and feature caches are not redistributed. Frozen experimental artifacts remain unchanged by this manuscript revision.
+
+\section{Conclusion}
+Speaker-overlap premiums depend on the complete evaluation pipeline, not only its final test split. Prespecified multi-corpus contrasts show contributions from both boundaries and positive premiums after partial fine-tuning. A fresh 24-draw test finds 1.419 pp greater validation optimism under random inner validation, while its descriptive test-performance contrast does not establish harm. The practical lesson is to specify the target population, report both splitting boundaries, and distinguish validation optimism from external predictive performance.
+
+\section{Acknowledgments and AI disclosure}
+Anthropic Claude assisted the original experiment implementation and manuscript draft. OpenAI Codex assisted design review, N14R2 implementation/execution, analysis verification, and drafting/revision of all manuscript sections and tables. These systems are not authors; the named human author is responsible for reviewing the evidence and approving submission. No new participant data were collected for these experiments.
+
+\clearpage
+\begin{thebibliography}{11}
+\raggedright
+\bibitem{atmaja} B. T. Atmaja and A. Sasou, ``Effect of different splitting criteria on the performance of speech emotion recognition,'' in \emph{Proc. TENCON}, 2021, pp. 760--764, doi: 10.1109/TENCON54134.2021.9707265.
+\bibitem{antoniou} N. Antoniou, A. Katsamanis, T. Giannakopoulos, and S. Narayanan, ``Designing and evaluating speech emotion recognition systems: A reality check case study with IEMOCAP,'' in \emph{Proc. ICASSP}, 2023, pp. 1--5, doi: 10.1109/ICASSP49357.2023.10096808.
+\bibitem{serab} N. Scheidwasser-Clow, M. Kegler, P. Beckmann, and M. Cernak, ``SERAB: A multi-lingual benchmark for speech emotion recognition,'' in \emph{Proc. ICASSP}, 2022, pp. 7697--7701, doi: 10.1109/ICASSP43922.2022.9747348.
+\bibitem{meyer} P. Meyer, E. Buscherm{\"o}hle, and T. Fingscheidt, ``What do classifiers actually learn? A case study on emotion recognition datasets,'' in \emph{Proc. Interspeech}, 2018, pp. 262--266, doi: 10.21437/Interspeech.2018-1851.
+\bibitem{ravdess} S. R. Livingstone and F. A. Russo, ``The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English,'' \emph{PLOS ONE}, vol. 13, no. 5, Art. e0196391, 2018, doi: 10.1371/journal.pone.0196391.
+\bibitem{cremad} H. Cao, D. G. Cooper, M. K. Keutmann, R. C. Gur, A. Nenkova, and R. Verma, ``CREMA-D: Crowd-sourced emotional multimodal actors dataset,'' \emph{IEEE Trans. Affective Computing}, vol. 5, no. 4, pp. 377--390, 2014, doi: 10.1109/TAFFC.2014.2336244.
+\bibitem{subesco} S. Sultana, M. S. Rahman, M. R. Selim, and M. Z. Iqbal, ``SUST Bangla Emotional Speech Corpus (SUBESCO): An audio-only emotional speech corpus for Bangla,'' \emph{PLOS ONE}, vol. 16, no. 4, Art. e0250173, 2021, doi: 10.1371/journal.pone.0250173.
+\bibitem{hubert} W.-N. Hsu, B. Bolte, Y.-H. H. Tsai, K. Lakhotia, R. Salakhutdinov, and A. Mohamed, ``HuBERT: Self-supervised speech representation learning by masked prediction of hidden units,'' \emph{IEEE/ACM Trans. Audio, Speech, and Language Processing}, vol. 29, pp. 3451--3460, 2021, doi: 10.1109/TASLP.2021.3122291.
+\bibitem{wavlm} S. Chen et al., ``WavLM: Large-scale self-supervised pre-training for full stack speech processing,'' \emph{IEEE J. Sel. Topics Signal Process.}, vol. 16, no. 6, pp. 1505--1518, 2022, doi: 10.1109/JSTSP.2022.3188113.
+\bibitem{wav2vec} A. Baevski, Y. Zhou, A. Mohamed, and M. Auli, ``wav2vec 2.0: A framework for self-supervised learning of speech representations,'' in \emph{Advances in Neural Information Processing Systems}, vol. 33, 2020, pp. 12449--12460.
+\bibitem{artifact} T. Xie, ``SER experimental artifact: frozen v2 program and N14R2 corrective study,'' GitHub repository, 2026. [Online; access restricted at manuscript preparation]. \url{https://github.com/DeerNeverStop/SER}. Original historical tag: \texttt{SER26-prereg-1}; corrective-study historical tag: \texttt{SER26-N14R2-prereg-1}; completed analysis and erratum: \texttt{SER26-N14R2-complete-20260906}.
+\end{thebibliography}
+\end{document}

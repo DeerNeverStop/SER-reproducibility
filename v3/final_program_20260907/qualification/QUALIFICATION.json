@@ -1,0 +1,109 @@
+{
+  "status": "four technical pilots completed and actually restored in a separate CUDA process",
+  "program": "SER26-FINAL-CHECKPOINT-PROGRAM-1",
+  "units": [
+    {
+      "unit_id": "fpc_pilot_cremad_d00_f0_A",
+      "wall_seconds": 92.61177670001052,
+      "peak_allocated_bytes": 1695545344,
+      "peak_reserved_bytes": 2711617536,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "torchaudio": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 5070",
+        "threads": 4,
+        "pid": 24276,
+        "started_at": "2026-09-07T14:32:47.614591+00:00"
+      },
+      "done_sha256": "a5c155b5ece3e2e91ac3b677e490d12a19a184e8dcf2a0cabd83976801b68161",
+      "receipt_sha256": "76aa78ed608fb186327541db7f002210b84423dba8144aaad479eb49bf218bf7",
+      "checkpoint_bytes": 340365643
+    },
+    {
+      "unit_id": "fpc_pilot_cremad_d00_f0_B",
+      "wall_seconds": 36.35175019997405,
+      "peak_allocated_bytes": 1695545344,
+      "peak_reserved_bytes": 2711617536,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "torchaudio": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 5070",
+        "threads": 4,
+        "pid": 25292,
+        "started_at": "2026-09-07T14:35:09.444583+00:00"
+      },
+      "done_sha256": "534adbfe3ed92961166f134195f5b0306039b2408399ca366c3ed2ec989e1931",
+      "receipt_sha256": "4a8e1c4b177556ef61f98fb0a3e3d39bc7e45e1a9a2727b0d738ed7525d3706b",
+      "checkpoint_bytes": 113458537
+    },
+    {
+      "unit_id": "fpc_pilot_subesco_d00_f0_A",
+      "wall_seconds": 36.400397899968084,
+      "peak_allocated_bytes": 1648102912,
+      "peak_reserved_bytes": 2703228928,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "torchaudio": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 5070",
+        "threads": 4,
+        "pid": 25292,
+        "started_at": "2026-09-07T14:35:09.444583+00:00"
+      },
+      "done_sha256": "d8ac3443ab4407fa9add81dca2d700e193bc9772ee7385d5b569b5243d4f9e48",
+      "receipt_sha256": "91cae1f6d62e9867cfe691bf66d7dcdd802d830cd45d8de21c4f21d48378ba53",
+      "checkpoint_bytes": 453831503
+    },
+    {
+      "unit_id": "fpc_pilot_ravdess_d00_f0_A",
+      "wall_seconds": 17.114273499988485,
+      "peak_allocated_bytes": 1461792768,
+      "peak_reserved_bytes": 2759852032,
+      "environment": {
+        "torch": "2.11.0+cu128",
+        "torchaudio": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 5070",
+        "threads": 4,
+        "pid": 25292,
+        "started_at": "2026-09-07T14:35:09.444583+00:00"
+      },
+      "done_sha256": "cb55be2b4532164c5feeb13161832ad35309ec004d707318d90bb3381efe2d67",
+      "receipt_sha256": "3364a5b915a5f3e4baff2d4662a1c4ff21079afa9ef989cf29daf052112c3df2",
+      "checkpoint_bytes": 340384139
+    }
+  ],
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "pilot_lock_sha256": "3f3b01e815d864aa99ed2bb56dcde9c657e24eb1bce1e83f69b75e3efe4c1a23",
+  "source_commit": "3980a9733723072bf07a019854d29acfd9371c33",
+  "fresh_process_pid": 4804,
+  "restored_epoch_group_comparisons": 33,
+  "restored_max_abs_diff": 0.0,
+  "planned_formal_fits": 384,
+  "weighted_fit_hours": 5.113226604665397,
+  "planning_total_hours": [
+    5,
+    7
+  ],
+  "route": "local NVIDIA GeForce RTX 5070",
+  "incremental_cloud_rental_cost": 0,
+  "formal_scientific_scores_computed": false,
+  "pilot_scores_used_to_choose_scientific_configuration": false,
+  "free_bytes": {
+    "C:": 53354352640,
+    "D:": 327612006400,
+    "E:": 781645877248
+  },
+  "archive_sha256": {
+    "pilot_complete_gate.json": "d4106a7298d89bf0550490f50a6c0980ac5e9e26bc580c853539277195ab6b67",
+    "pilot_fresh_process_replay.json": "c23f6068a6d404eeedc885b3e994f1f1432fd6132897b67fbc81ff16baf28486",
+    "pilot_source_lock.json": "cea9e2b9e47cbd5ac5ee6321aaf7d4bfd81a31b82b7554b76af6f4e281fdb4d4"
+  },
+  "limitations": [
+    "One technical observation per corpus/arm; elapsed-time range is a planning estimate, not a confidence interval.",
+    "The 384-fit runtime adds a strict full-ledger validator after pilot qualification; scientific plan and engine stay byte-identical.",
+    "This records technical replay only and is not a completed formal experiment."
+  ]
+}

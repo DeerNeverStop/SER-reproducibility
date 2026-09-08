@@ -1,0 +1,23 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "kind": "independent-verification",
+  "verify_sha256": "94b0c47fd3fbf249843c4305872ab5694b507d76fc3f134d2b12ee7192f16419",
+  "tolerance": 1e-09,
+  "modules": {
+    "B2-FIX": {
+      "integrity": {
+        "pass": true
+      },
+      "comparison": {
+        "pass": true,
+        "compared": 22158,
+        "failed": 0
+      }
+    }
+  },
+  "reasons": [],
+  "extracted_from": "analysis_verification_all_frozen.json",
+  "parent_receipt_sha256": "bc535d8f5b6c7751a6dfb890a09f54fd8299196b1ad646a877a1d72662fc75b2",
+  "note": "Exact module block from the full frozen verification invocation; no second numerical run is claimed.",
+  "pass": true
+}

@@ -1,0 +1,30 @@
+{
+  "analysis_manifest_sha256": "059bfd06ba35a04e47c2f7a38badcd423bfd9955eb428cf386b242a0f48bc44d",
+  "analysis_status": "complete",
+  "checks": {
+    "all_output_hashes_match": true,
+    "fixed_holm_family_24": true,
+    "full_cell_missingness_propagation": true,
+    "raw_utterance_reanalysis_exact_match": true,
+    "speaker_paired_direction": true,
+    "strict_protocol_speaker_disjointness": true
+  },
+  "counts": {
+    "budget_audit.csv": 1,
+    "cell_completeness.csv": 72,
+    "complete_cells": 72,
+    "oof_seed_metrics.csv": 72,
+    "outer_fold_speaker_overlap.csv": 135,
+    "paired_speaker_differences.csv": 1380,
+    "protocol_metric_summary.csv": 72,
+    "protocol_premium.csv": 72,
+    "speaker_protocol_metrics.csv": 1380,
+    "speaker_seed_metrics.csv": 4140,
+    "unit_completeness.csv": 1620
+  },
+  "schema_version": "p1_protocol_premium_verification_v1",
+  "status": "pass",
+  "summarizer_sha256": "a3a43530f2e65bec6c97757a583c1549302d476b1a0a40cd6d56ce82056bc181",
+  "verified_at": "2026-08-12T15:39:19-04:00",
+  "verifier_sha256": "c80b6d81acbed47b6a9dd49b8728b6f56593132256a9dda3240d4d2c98b03e75"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "ser-chinese-companion-build-1",
+  "created_at": "2026-09-07T20:16:05.412602+00:00",
+  "inputs_sha256": {
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\中文解读.md": "228bb48820f1f18194a51b4894aa3a7347ca657b108b6f810ae298e92644cd64",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\build_chinese.py": "579de6d33c25baca69371c1f0a2f50c64f1327fd431e0c2a9b6469872440e5ee",
+    "C:\\Windows\\Fonts\\simsun.ttc": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab",
+    "C:\\Windows\\Fonts\\simhei.ttf": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\FIGURE_MANIFEST.json": "aaddcdf3b54c7ac2b969a90b4adc3418c323ab5e71e644c4c10fe4051790e7b3"
+  },
+  "document_metadata": {
+    "title": "语音情绪识别中的验证说话人曝光与检查点选择",
+    "author": "Tian Xie",
+    "language": "zh-CN"
+  },
+  "figure_manifest": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\FIGURE_MANIFEST.json",
+  "figures": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\complete_epoch_curves.pdf",
+      "sha256": "57c6f4b0c115802e36c59c044165eda36964eab5cc937e22888991f0227cd1ae",
+      "bytes": 32820,
+      "source_cropbox": [
+        0.0,
+        0.0,
+        476.39952,
+        204.89976
+      ],
+      "caption": "图 1。三个原生任务的全部 15 轮曲线。浅灰细线表示每个语料的 120 条单独外测轨迹；三条粗线分别等权平均 120 个主要 context 的已见验证、未见验证和外测成绩。不作平滑，不额外添加曲线不确定性带。",
+      "page": 5,
+      "x": 54.0,
+      "y": 500.5121983827463,
+      "width": 487.27559055118115,
+      "height": 209.5775653967814,
+      "scale": 1.0228297260903645,
+      "matrix": [
+        1.0228297260903645,
+        0,
+        0,
+        1.0228297260903645,
+        54.0,
+        500.5121983827463
+      ]
+    }
+  ],
+  "output": {
+    "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\explainer.pdf",
+    "bytes": 378697,
+    "sha256": "81219748f97037a1a53494d5b6000c54c570d75fd51b8a6b7d400c74db8edd04"
+  },
+  "figure_embedding": "vector PDF content merge; no rasterization",
+  "scope": "Document layout only; no model inference or new scientific analysis.",
+  "visual_review_performed": false
+}

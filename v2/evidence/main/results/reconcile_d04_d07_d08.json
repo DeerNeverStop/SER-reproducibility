@@ -1,0 +1,304 @@
+{
+ "items": [
+  {
+   "abs_diff": 0.0,
+   "item": "D04.sub_1400_one_minus_sub_700_one.n",
+   "pass": true,
+   "scorer": 20,
+   "verifier": 20
+  },
+  {
+   "abs_diff": 2.220446049250313e-16,
+   "item": "D04.sub_1400_one_minus_sub_700_one.mean",
+   "pass": true,
+   "scorer": 0.7026643990929677,
+   "verifier": 0.702664399092968
+  },
+  {
+   "abs_diff": 1.7763568394002505e-15,
+   "item": "D04.sub_1400_one_minus_sub_700_one.ci_low",
+   "pass": true,
+   "scorer": -2.161355583900227,
+   "verifier": -2.161355583900229
+  },
+  {
+   "abs_diff": 1.3322676295501878e-15,
+   "item": "D04.sub_1400_one_minus_sub_700_one.ci_high",
+   "pass": true,
+   "scorer": 3.681590136054421,
+   "verifier": 3.6815901360544196
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D04.sub_700_two_minus_sub_700_one.n",
+   "pass": true,
+   "scorer": 20,
+   "verifier": 20
+  },
+  {
+   "abs_diff": 8.881784197001252e-16,
+   "item": "D04.sub_700_two_minus_sub_700_one.mean",
+   "pass": true,
+   "scorer": 6.131802721088431,
+   "verifier": 6.131802721088432
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D04.sub_700_two_minus_sub_700_one.ci_low",
+   "pass": true,
+   "scorer": 3.793523242630383,
+   "verifier": 3.793523242630383
+  },
+  {
+   "abs_diff": 1.7763568394002505e-15,
+   "item": "D04.sub_700_two_minus_sub_700_one.ci_high",
+   "pass": true,
+   "scorer": 8.396439200680268,
+   "verifier": 8.396439200680266
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.sd_over_draws",
+   "pass": true,
+   "scorer": 0.5709279282704963,
+   "verifier": 0.5709279282704963
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.cremad_24_d0",
+   "pass": true,
+   "scorer": 7.072398088023089,
+   "verifier": 7.072398088023089
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.cremad_24_d1",
+   "pass": true,
+   "scorer": 6.129648707773707,
+   "verifier": 6.129648707773707
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.cremad_24_d2",
+   "pass": true,
+   "scorer": 7.553702084952086,
+   "verifier": 7.553702084952086
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.cremad_24_d3",
+   "pass": true,
+   "scorer": 6.423567751692751,
+   "verifier": 6.423567751692751
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_24.cremad_24_d4",
+   "pass": true,
+   "scorer": 6.497755716505715,
+   "verifier": 6.497755716505715
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_91m.sd_over_draws",
+   "pass": true,
+   "scorer": 0.9688091202291074,
+   "verifier": 0.9688091202291074
+  },
+  {
+   "abs_diff": 1.1102230246251565e-16,
+   "item": "D07.cremad_91m.cremad_91m_d0",
+   "pass": true,
+   "scorer": 0.656288156288156,
+   "verifier": 0.6562881562881561
+  },
+  {
+   "abs_diff": 2.7755575615628914e-17,
+   "item": "D07.cremad_91m.cremad_91m_d1",
+   "pass": true,
+   "scorer": 0.21749084249084277,
+   "verifier": 0.21749084249084275
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_91m.cremad_91m_d2",
+   "pass": true,
+   "scorer": 1.625457875457877,
+   "verifier": 1.625457875457877
+  },
+  {
+   "abs_diff": 2.220446049250313e-16,
+   "item": "D07.cremad_91m.cremad_91m_d3",
+   "pass": true,
+   "scorer": 1.8620268620268619,
+   "verifier": 1.8620268620268616
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D07.cremad_91m.cremad_91m_d4",
+   "pass": true,
+   "scorer": 2.640415140415141,
+   "verifier": 2.640415140415141
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.rr_minus_gg.n",
+   "pass": true,
+   "scorer": 91,
+   "verifier": 91
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.rr_minus_gg.mean",
+   "pass": true,
+   "scorer": 1.8250674844081431,
+   "verifier": 1.8250674844081431
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.rr_minus_gg.ci_low",
+   "pass": true,
+   "scorer": 0.8338208647274574,
+   "verifier": 0.8338208647274574
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.rr_minus_gg.ci_high",
+   "pass": true,
+   "scorer": 2.8213769594264075,
+   "verifier": 2.8213769594264075
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.test_selection_optimism_mean",
+   "pass": true,
+   "scorer": 0.6096778403666334,
+   "verifier": 0.6096778403666334
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.selected.f0",
+   "pass": true,
+   "scorer": 5,
+   "verifier": 5
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.selected.f1",
+   "pass": true,
+   "scorer": 7,
+   "verifier": 7
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.selected.f2",
+   "pass": true,
+   "scorer": 4,
+   "verifier": 4
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.selected.f3",
+   "pass": true,
+   "scorer": 6,
+   "verifier": 6
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.RR_hpo.selected.f4",
+   "pass": true,
+   "scorer": 6,
+   "verifier": 6
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.test_selection_optimism_mean",
+   "pass": true,
+   "scorer": 0.3971577367123899,
+   "verifier": 0.3971577367123899
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.selected.f0",
+   "pass": true,
+   "scorer": 4,
+   "verifier": 4
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.selected.f1",
+   "pass": true,
+   "scorer": 6,
+   "verifier": 6
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.selected.f2",
+   "pass": true,
+   "scorer": 2,
+   "verifier": 2
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.selected.f3",
+   "pass": true,
+   "scorer": 2,
+   "verifier": 2
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GR_hpo.selected.f4",
+   "pass": true,
+   "scorer": 6,
+   "verifier": 6
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.test_selection_optimism_mean",
+   "pass": true,
+   "scorer": 0.8913439544031746,
+   "verifier": 0.8913439544031746
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.selected.f0",
+   "pass": true,
+   "scorer": 0,
+   "verifier": 0
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.selected.f1",
+   "pass": true,
+   "scorer": 0,
+   "verifier": 0
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.selected.f2",
+   "pass": true,
+   "scorer": 2,
+   "verifier": 2
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.selected.f3",
+   "pass": true,
+   "scorer": 6,
+   "verifier": 6
+  },
+  {
+   "abs_diff": 0.0,
+   "item": "D08.GG_hpo.selected.f4",
+   "pass": true,
+   "scorer": 4,
+   "verifier": 4
+  }
+ ],
+ "max_abs_diff": 1.7763568394002505e-15,
+ "n_failed": 0,
+ "n_items": 42,
+ "note": "key map between ser_v2.score (results.json) and ser_v2.verify (verifier_results.json) for the three descriptors the frozen verifier did not compare",
+ "pass": true,
+ "tolerance": 1e-09
+}

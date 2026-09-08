@@ -1,0 +1,64 @@
+{
+  "budget_audit": {
+    "budget_stop_present": "false",
+    "budget_stop_reasons": "",
+    "formal_started_at": "2026-08-11T14:17:11-04:00",
+    "gpu_seconds": "90310.795743600815",
+    "gpu_seconds_limit": "720000",
+    "gpu_within_limit": "true",
+    "last_recorded_activity_at": "2026-08-12T15:37:20-04:00",
+    "ledger_records": "1622",
+    "output_bytes": "295293636",
+    "output_bytes_limit": "21474836480",
+    "output_within_limit": "true",
+    "status": "pass",
+    "unresolved_ledger_records": "0",
+    "wall_seconds": "91209",
+    "wall_seconds_limit": "1209600",
+    "wall_within_limit": "true"
+  },
+  "complete_cells": 72,
+  "complete_training_units": 1620,
+  "created_at": "2026-08-12T15:38:51-04:00",
+  "frozen_rules": {
+    "bootstrap_percentile_method": "numpy.percentile linear 2.5/97.5",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 202608101744,
+    "contrast_directions": {
+      "GL": "groupkfold - loso",
+      "RG": "random - groupkfold",
+      "RL": "random - loso"
+    },
+    "holm_alpha": 0.05,
+    "holm_family": "2 corpora x 4 models x 3 UAR contrasts",
+    "holm_family_size": 24,
+    "missing_confirmatory_p_policy": "retain the fixed 24-test family; a missing test is a non-rejected p=1 placeholder for Holm ordering, while its published p and adjusted p remain blank",
+    "missingness": "any missing/failed/invalid outer fold invalidates the full corpus-model-protocol-seed OOF cell; any missing seed cell invalidates its three-seed protocol summary and every contrast requiring that protocol",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "outputs": {
+    "budget_audit.csv": "40a044864748a9e4a129b083e714ec553c05343e2d145d229812405c7f6bcbf1",
+    "cell_completeness.csv": "79bb02de4920dfe161bd454a189329dcd1cfefd58b9495be634284e58932fd57",
+    "oof_seed_metrics.csv": "829e28366588fe9db34af91965db684d88ff9fa97383ed5d76a2890ec16fbc5d",
+    "outer_fold_speaker_overlap.csv": "738bad5711c212c073dd3dbf6f076f157273de4dd611d853fab273776d7e164e",
+    "paired_speaker_differences.csv": "3ce566dbc2002f3d7821d4ce1c5348f149fff9501c4b70173ceb084b250a9be9",
+    "protocol_metric_summary.csv": "14e630a47c1beba3aa737d45ca8d40487d213ccdcf813a90f7e4c249b63c3b2b",
+    "protocol_premium.csv": "e28298dded7c74441a300235e225aee0a0c11d4a854bca1d5289e6fe3ebd718c",
+    "source_files.csv": "553fea222853f1abc01804d6a0cec8626ecae17ef83701f22b37763596981024",
+    "speaker_protocol_metrics.csv": "8719b547b0b26969c9d34962cea7e34bc4cfb545b6108bf126fd7806c6abb246",
+    "speaker_seed_metrics.csv": "1f2d7b5590b8d7bf5ea8f86c516ddc23bbfd3867d0687cf0947c1545ffd96060",
+    "unit_completeness.csv": "f49b4e1983d87c1f32fe8d32969bbd191d9c80a4f734ddfa582d7c2702109786"
+  },
+  "planned_training_units": 1620,
+  "preregistration_frozen_prefix_bytes": 12426,
+  "preregistration_frozen_prefix_sha256": "91db3edc544f76fc412f4dfc5f35adef23934635ca3ede36c8089c38bd14b782",
+  "required_cells": 72,
+  "schema_version": "p1_protocol_premium_summary_v1",
+  "source_files_sha256": "553fea222853f1abc01804d6a0cec8626ecae17ef83701f22b37763596981024",
+  "status": "complete",
+  "summarizer_sha256": "a3a43530f2e65bec6c97757a583c1549302d476b1a0a40cd6d56ce82056bc181"
+}

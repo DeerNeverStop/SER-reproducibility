@@ -1,0 +1,11 @@
+{
+  "schema": "ser-coverage-scoring-launch-1",
+  "requested_at_utc": "2026-09-06T23:30:16.9094809Z",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "accepted_formal_gate_sha256": "499b7a069a5cf6d4ce1ecc5a5faa1c20be1fac45fa9fdc2e83338f89e9161d63",
+  "accepted_formal_seal_sha256": "0790c27022d2d562802d59cb4f605faafbb0e5b5c162a0ef54635980121a8666",
+  "formal_units": 720,
+  "main_score_output_previously_absent": true,
+  "gpu_provider_status": "EXITED",
+  "verification_precedes_scoring": true
+}

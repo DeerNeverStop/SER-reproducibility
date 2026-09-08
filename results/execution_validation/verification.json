@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checks": [
+    "manifest stage, construct boundary and safety flags",
+    "analysis/baseline script and output hash chain",
+    "30-row frozen roster and baseline lineage",
+    "final tier 24/1/5 and risk 20/5/5 counts",
+    "24 exact-fragment records, 384/384 bounded property cases and independent intersections",
+    "P05R008 unknown downgrade and P05R015 no verdict",
+    "six-row change registry and two outcome changes",
+    "265 frozen source inventory hashes",
+    "4,444-row synthetic manifest",
+    "tier_summary exact reconciliation"
+  ],
+  "check_count": 10,
+  "repository_count": 30,
+  "tier_counts": {
+    "tier1_execution_confirmed": 24,
+    "tier3_unknown": 5,
+    "tier2_static_execution_inference": 1
+  },
+  "outcome_counts": {
+    "yes": 20,
+    "unknown": 5,
+    "no": 5
+  },
+  "tier1_property_cases": 384,
+  "tier1_property_cases_passed": 384,
+  "changed_outcome_repositories": [
+    "P05R008",
+    "P05R015"
+  ],
+  "finite_property_test_is_general_proof": false,
+  "verifier_script": "tools/verify_p0_5_execution_validation.py",
+  "verifier_script_sha256": "a473adfeb955ff8fc1accf4d1cbf17394edd178a874ca07cc363eee70702b59b",
+  "analysis_script_imported": false,
+  "python_executable": "E:\\科研\\SER\\ser_gpu\\Scripts\\python.exe"
+}

@@ -1,0 +1,384 @@
+{
+  "repository_id": "P05R018",
+  "evidence_tier_before": "tier1_execution_confirmed",
+  "evidence_tier_after": "tier1_execution_confirmed",
+  "candidate_module_imported": false,
+  "whole_repository_executed": false,
+  "original_source_fragment_executed": true,
+  "execution_scope": "exact LOSO loop header and mask/index assignments",
+  "source_reference": "iemocap_emotion_recognition_csv.ipynb:cell9 split-mask fragment",
+  "source_file_sha256": "d50dd9b99f0be3eae085e76a393066b553055d94a8dd0eefa8d95d172930d919",
+  "source_fragment_ast_sha256": "038976bbc373b95701351bbab492fba2039b8a7de8da8f5a836688ba6477a68a",
+  "adapter_equivalence": "pass_finite_cases",
+  "property_case_count": 16,
+  "property_cases_passed": 16,
+  "property_case_seeds": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    11,
+    17,
+    23,
+    42,
+    101,
+    313,
+    997,
+    20260810,
+    20260811,
+    20260812,
+    20260813
+  ],
+  "input_domain": "case 0 is the complete frozen synthetic target-corpus manifest for this repository; cases 1-15 are deterministic row-order permutations of the same manifest, including any frozen augmentation/window expansion",
+  "output_contract": "ordered train and final-evaluation row-index arrays; multi-stage paths include their exact inner validation removal before the final train array",
+  "coverage_boundary": "Only the decisive frozen split fragment and its declared arrays/lists are exercised. Upstream audio/feature extraction, external manifests, model code and performance are outside scope.",
+  "general_mathematical_proof": false,
+  "primary_pairs": [
+    {
+      "pair": "pair_00",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses01F"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_01",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses01M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_02",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses02F"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_03",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses02M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_04",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses03F"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_05",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses03M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_06",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses04F"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_07",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses04M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_08",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses05F"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    },
+    {
+      "pair": "pair_09",
+      "train_rows": 320,
+      "test_rows": 40,
+      "train_speakers": [
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses05M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_observed": "no",
+  "cases": [
+    {
+      "case_index": 0,
+      "seed": 0,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 1,
+      "seed": 1,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 2,
+      "seed": 2,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 3,
+      "seed": 3,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 4,
+      "seed": 7,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 5,
+      "seed": 11,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 6,
+      "seed": 17,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 7,
+      "seed": 23,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 8,
+      "seed": 42,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 9,
+      "seed": 101,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 10,
+      "seed": 313,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 11,
+      "seed": 997,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 12,
+      "seed": 20260810,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 13,
+      "seed": 20260811,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 14,
+      "seed": 20260812,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 15,
+      "seed": 20260813,
+      "input_rows": 400,
+      "input_speakers": 10,
+      "pair_count": 10,
+      "exact_index_agreement": true
+    }
+  ],
+  "safety": {
+    "network": false,
+    "gpu": false,
+    "candidate_module_import": false,
+    "whole_repository": false,
+    "training": false
+  },
+  "repository_url": "https://github.com/daribdb/speech-emotion-recognition-iemocap",
+  "commit_sha": "785c4433a31ff0bfe86eee5a6230a4fa5aebc6dc",
+  "draw_rank": 22,
+  "decisive_file_line": "iemocap_emotion_recognition_csv.ipynb:L793-L841",
+  "split_risk_before_section12": "no",
+  "split_risk_after_section12": "no"
+}

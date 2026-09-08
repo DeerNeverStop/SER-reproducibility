@@ -1,0 +1,73 @@
+{
+ "cremad": {
+  "corpus": "cremad",
+  "dropped": [
+   {
+    "reason": "H1 label-conflicting duplicate group 776a8c973fd0",
+    "relative_path": "1006_TIE_HAP_XX.wav"
+   },
+   {
+    "reason": "H1 label-conflicting duplicate group 776a8c973fd0",
+    "relative_path": "1006_TIE_NEU_XX.wav"
+   },
+   {
+    "reason": "H1 label-conflicting duplicate group c9b6d56f9775",
+    "relative_path": "1013_WSI_DIS_XX.wav"
+   },
+   {
+    "reason": "H1 label-conflicting duplicate group c9b6d56f9775",
+    "relative_path": "1013_WSI_SAD_XX.wav"
+   },
+   {
+    "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6",
+    "relative_path": "1017_IWW_ANG_XX.wav"
+   },
+   {
+    "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6",
+    "relative_path": "1017_IWW_FEA_XX.wav"
+   },
+   {
+    "reason": "H3 registered unusable file",
+    "relative_path": "1076_MTI_SAD_XX.wav"
+   }
+  ],
+  "n_dropped": 7,
+  "n_input": 7442,
+  "n_kept": 7435
+ },
+ "ravdess": {
+  "corpus": "ravdess",
+  "dropped": [
+   {
+    "reason": "H2 exact duplicate of lexically first path (ad066a199379)",
+    "relative_path": "Actor_07/03-01-03-01-02-02-07.wav"
+   }
+  ],
+  "n_dropped": 1,
+  "n_input": 1440,
+  "n_kept": 1439
+ },
+ "subesco": {
+  "corpus": "subesco",
+  "dropped": [
+   {
+    "reason": "H2 exact duplicate of lexically first path (db308f1bef5f)",
+    "relative_path": "F_09_CHAITY_S_8_SAD_4.wav"
+   },
+   {
+    "reason": "H2 exact duplicate of lexically first path (71efdec3acd1)",
+    "relative_path": "M_02_NIPUN_S_2_ANGRY_2.wav"
+   }
+  ],
+  "n_dropped": 2,
+  "n_input": 7000,
+  "n_kept": 6998
+ },
+ "subesco_980": {
+  "corpus": "subesco",
+  "dropped": [],
+  "n_dropped": 0,
+  "n_input": 980,
+  "n_kept": 980
+ }
+}

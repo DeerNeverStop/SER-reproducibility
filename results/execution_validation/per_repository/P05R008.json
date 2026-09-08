@@ -1,0 +1,88 @@
+{
+  "repository_id": "P05R008",
+  "repository_url": "https://github.com/neerajk23-cmd/Speech-Emotion-Recognition-on-RAVDESS-Dataset",
+  "commit_sha": "516bc2802eddc65dc382c7d51cd0384410c3e056",
+  "draw_rank": 10,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "fixed_speakers",
+  "probe_parameters": {
+    "corpus": "RAVDESS",
+    "train_speakers": [
+      "RAVDESS:01",
+      "RAVDESS:02",
+      "RAVDESS:03",
+      "RAVDESS:04",
+      "RAVDESS:05",
+      "RAVDESS:06",
+      "RAVDESS:07",
+      "RAVDESS:08",
+      "RAVDESS:09",
+      "RAVDESS:10",
+      "RAVDESS:11",
+      "RAVDESS:12",
+      "RAVDESS:13",
+      "RAVDESS:14",
+      "RAVDESS:15",
+      "RAVDESS:16",
+      "RAVDESS:17",
+      "RAVDESS:18",
+      "RAVDESS:19"
+    ],
+    "test_speakers": [
+      "RAVDESS:20",
+      "RAVDESS:21",
+      "RAVDESS:22",
+      "RAVDESS:23",
+      "RAVDESS:24"
+    ]
+  },
+  "decisive_source": [
+    "cnn-final-ee708-project.ipynb:L1 (cells 5-6)",
+    "Evaluation_Test_Data.ipynb:L1 (cells 3,6,8)"
+  ],
+  "rationale": "The reported outer evaluation holds out actors 20-24; the random inner validation is not the final evaluation pair.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 1140,
+      "test_rows": 300,
+      "train_speakers": [
+        "RAVDESS:01",
+        "RAVDESS:02",
+        "RAVDESS:03",
+        "RAVDESS:04",
+        "RAVDESS:05",
+        "RAVDESS:06",
+        "RAVDESS:07",
+        "RAVDESS:08",
+        "RAVDESS:09",
+        "RAVDESS:10",
+        "RAVDESS:11",
+        "RAVDESS:12",
+        "RAVDESS:13",
+        "RAVDESS:14",
+        "RAVDESS:15",
+        "RAVDESS:16",
+        "RAVDESS:17",
+        "RAVDESS:18",
+        "RAVDESS:19"
+      ],
+      "test_speakers": [
+        "RAVDESS:20",
+        "RAVDESS:21",
+        "RAVDESS:22",
+        "RAVDESS:23",
+        "RAVDESS:24"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_final": "no",
+  "prior_split_risk": "no"
+}

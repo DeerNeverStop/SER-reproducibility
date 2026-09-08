@@ -1,0 +1,3136 @@
+{
+  "schema": "ser-speaker-coverage-diagnostics-1",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "input": {
+    "asv": {
+      "asv_path": "cremad_ecapa.npz",
+      "asv_location": "features",
+      "asv_sha256": "905c64d5dea9699951fa192348465fcd715d1bb3aafd67207aaff01072252db9",
+      "asv_rows": 7435,
+      "asv_dimension": 192
+    },
+    "xvector": {
+      "asv_path": "cremad_xvect.npz",
+      "asv_location": "features",
+      "asv_sha256": "2f52368e7feb1dd05f786d499a2b0237296c282c8ce9ac5ff784864a03537b2e",
+      "asv_rows": 7435,
+      "asv_dimension": 512
+    },
+    "diagnose_source_sha256": "4b35e176c26416873cb42f05310c15da110a60f4b3958d3197e3e644b55fe773",
+    "legacy_aggregation_source_sha256": "90823b351770da46bff01dea45e2377adaf5a4a93219a032c7422093ffbfd505"
+  },
+  "descriptive_only": true,
+  "changes_to_policy_or_budget": [],
+  "new_ser_scores_read": false,
+  "E0": {
+    "status": "completed_descriptive_ecapa_geometry",
+    "n_fold_rotation_contexts": 30,
+    "xvector_status": "completed",
+    "reference_support_failures": [],
+    "space_summaries": [
+      {
+        "fold": 0,
+        "rotation": 0,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "ITS",
+          "IOM",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TAI",
+          "DFA",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6596406119569518,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.511111111111111,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 0,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "ITS",
+          "IOM",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TAI",
+          "DFA",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9306347728262363,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5666666666666667,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 0,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5032669762988405,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.4666666666666667,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 1,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "ITH",
+          "TIE",
+          "IEO"
+        ],
+        "second_prompts": [
+          "IWW",
+          "ITS",
+          "MTI",
+          "TSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6711489241925703,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.4885057471264367,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 1,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "ITH",
+          "TIE",
+          "IEO"
+        ],
+        "second_prompts": [
+          "IWW",
+          "ITS",
+          "MTI",
+          "TSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9271031824127623,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.4655172413793103,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 1,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5127438910960045,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.41954022988505746,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 2,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IOM",
+          "ITH",
+          "DFA"
+        ],
+        "second_prompts": [
+          "IEO",
+          "IWL",
+          "TAI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6997035381192896,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.4623655913978495,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 2,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IOM",
+          "ITH",
+          "DFA"
+        ],
+        "second_prompts": [
+          "IEO",
+          "IWL",
+          "TAI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9390271136019048,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5268817204301075,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 2,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5282359976836875,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.46774193548387094,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 3,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "TAI",
+          "IWW",
+          "WSI"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IOM",
+          "IWL",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6564063083145226,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.4754098360655737,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 3,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "TAI",
+          "IWW",
+          "WSI"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IOM",
+          "IWL",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9373356212266072,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.4699453551912568,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 3,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5270495726760484,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.43169398907103823,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 4,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "TSI",
+          "WSI",
+          "TAI"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "IOM",
+          "TIE"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6783971062314974,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.423728813559322,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 4,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "TSI",
+          "WSI",
+          "TAI"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "IOM",
+          "TIE"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9219137254969604,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5028248587570622,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 4,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5354526290299289,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.480225988700565,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 5,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "ITS",
+          "IWW",
+          "IEO",
+          "ITH"
+        ],
+        "second_prompts": [
+          "TAI",
+          "TIE",
+          "DFA",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.668328123656914,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.4519774011299435,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 5,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "ITS",
+          "IWW",
+          "IEO",
+          "ITH"
+        ],
+        "second_prompts": [
+          "TAI",
+          "TIE",
+          "DFA",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9373307454087241,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5706214689265536,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 0,
+        "rotation": 5,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.4965718096373791,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.423728813559322,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 0,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TIE",
+          "IWL",
+          "IOM",
+          "TAI"
+        ],
+        "second_prompts": [
+          "WSI",
+          "IWW",
+          "DFA",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6718739773814627,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.4666666666666667,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 0,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TIE",
+          "IWL",
+          "IOM",
+          "TAI"
+        ],
+        "second_prompts": [
+          "WSI",
+          "IWW",
+          "DFA",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9499079060044897,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.49999999999999994,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 0,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5091594988366248,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5166666666666665,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 1,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IWW",
+          "ITH",
+          "IEO",
+          "ITS"
+        ],
+        "second_prompts": [
+          "TIE",
+          "DFA",
+          "TSI",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6920943363970428,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5084745762711864,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 1,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IWW",
+          "ITH",
+          "IEO",
+          "ITS"
+        ],
+        "second_prompts": [
+          "TIE",
+          "DFA",
+          "TSI",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9385589099745107,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5084745762711864,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 1,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5416623376474035,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.463276836158192,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 2,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IWL",
+          "IOM",
+          "IEO",
+          "ITS"
+        ],
+        "second_prompts": [
+          "TSI",
+          "TAI",
+          "ITH",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6625587700594157,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.44623655913978494,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 2,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IWL",
+          "IOM",
+          "IEO",
+          "ITS"
+        ],
+        "second_prompts": [
+          "TSI",
+          "TAI",
+          "ITH",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9283099552121725,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.4677419354838709,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 2,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5383172721716374,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.49462365591397844,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 3,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "ITS",
+          "MTI",
+          "WSI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "IWW",
+          "TSI",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6759254770294238,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5245901639344264,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 3,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "ITS",
+          "MTI",
+          "WSI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "IWW",
+          "TSI",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9534313364423136,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5573770491803278,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 3,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5413967925127572,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5245901639344261,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 4,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "TIE",
+          "DFA",
+          "IOM"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "TAI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6779676205649833,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.4858757062146893,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 4,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "TIE",
+          "DFA",
+          "IOM"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "TAI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9484601412558746,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5254237288135593,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 4,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5311769906229658,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.519774011299435,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 5,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "IEO",
+          "WSI",
+          "ITH"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IWW",
+          "TIE",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6722952948855093,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.480225988700565,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 5,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "IEO",
+          "WSI",
+          "ITH"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IWW",
+          "TIE",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9346399209459274,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5423728813559321,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 1,
+        "rotation": 5,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5166389412986905,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.4858757062146893,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 0,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IWL",
+          "WSI",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "IOM",
+          "DFA",
+          "TAI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6882139971015935,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5084745762711864,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 0,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IWL",
+          "WSI",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "IOM",
+          "DFA",
+          "TAI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9402384041457391,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5762711864406779,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 0,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5253306417230829,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5254237288135594,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 1,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "MTI",
+          "IEO",
+          "ITS",
+          "IWW"
+        ],
+        "second_prompts": [
+          "TIE",
+          "ITH",
+          "TSI",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6958438488891614,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.4712643678160919,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 1,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "MTI",
+          "IEO",
+          "ITS",
+          "IWW"
+        ],
+        "second_prompts": [
+          "TIE",
+          "ITH",
+          "TSI",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9342199274887808,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.5000000000000001,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 1,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5408035642850351,
+        "n_candidate_people": 58,
+        "n_dependent_distance_pairs": 1653,
+        "mean_nn3_intersection_fraction": 0.44827586206896547,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 2,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "ITH",
+          "DFA",
+          "ITS"
+        ],
+        "second_prompts": [
+          "IWL",
+          "TSI",
+          "IOM",
+          "IEO"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6551695994395299,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.4262295081967213,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 2,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "ITH",
+          "DFA",
+          "ITS"
+        ],
+        "second_prompts": [
+          "IWL",
+          "TSI",
+          "IOM",
+          "IEO"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9377277716411606,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.46448087431693985,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 2,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.538054119171508,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.4590163934426229,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 3,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "MTI",
+          "ITS",
+          "IOM"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TAI",
+          "IWW",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.7391258910397265,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5901639344262293,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 3,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "MTI",
+          "ITS",
+          "IOM"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TAI",
+          "IWW",
+          "IWL"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9482090181838523,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5081967213114753,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 3,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5551484831283355,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.4590163934426229,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 4,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "IOM",
+          "TIE",
+          "TSI"
+        ],
+        "second_prompts": [
+          "DFA",
+          "IWW",
+          "MTI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.7051107342524557,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.519774011299435,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 4,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "IOM",
+          "TIE",
+          "TSI"
+        ],
+        "second_prompts": [
+          "DFA",
+          "IWW",
+          "MTI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9517513721817175,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5423728813559321,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 4,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.551612421923131,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.4971751412429378,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 5,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "TAI",
+          "ITH",
+          "DFA"
+        ],
+        "second_prompts": [
+          "IEO",
+          "IWW",
+          "ITS",
+          "TIE"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6591685606094427,
+        "n_candidate_people": 57,
+        "n_dependent_distance_pairs": 1596,
+        "mean_nn3_intersection_fraction": 0.4561403508771929,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 5,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "TAI",
+          "ITH",
+          "DFA"
+        ],
+        "second_prompts": [
+          "IEO",
+          "IWW",
+          "ITS",
+          "TIE"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9210431696749621,
+        "n_candidate_people": 57,
+        "n_dependent_distance_pairs": 1596,
+        "mean_nn3_intersection_fraction": 0.567251461988304,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 2,
+        "rotation": 5,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5166961369087179,
+        "n_candidate_people": 57,
+        "n_dependent_distance_pairs": 1596,
+        "mean_nn3_intersection_fraction": 0.4269005847953216,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 0,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "IWL",
+          "ITS",
+          "WSI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "DFA",
+          "TIE",
+          "IWW"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6825798281235911,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5645161290322581,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 0,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "IWL",
+          "ITS",
+          "WSI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "DFA",
+          "TIE",
+          "IWW"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9458282585691488,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5376344086021506,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 0,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5084696977948979,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5376344086021505,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 1,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "ITH",
+          "TIE",
+          "TSI",
+          "ITS"
+        ],
+        "second_prompts": [
+          "IEO",
+          "DFA",
+          "IWW",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6951638573187403,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.46774193548387094,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 1,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "ITH",
+          "TIE",
+          "TSI",
+          "ITS"
+        ],
+        "second_prompts": [
+          "IEO",
+          "DFA",
+          "IWW",
+          "MTI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9394188285202022,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5161290322580645,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 1,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5290025224353069,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5053763440860215,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 2,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IEO",
+          "TAI",
+          "IWL"
+        ],
+        "second_prompts": [
+          "ITS",
+          "DFA",
+          "ITH",
+          "IOM"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6817527200811947,
+        "n_candidate_people": 63,
+        "n_dependent_distance_pairs": 1953,
+        "mean_nn3_intersection_fraction": 0.4708994708994709,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 2,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IEO",
+          "TAI",
+          "IWL"
+        ],
+        "second_prompts": [
+          "ITS",
+          "DFA",
+          "ITH",
+          "IOM"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9378102620501704,
+        "n_candidate_people": 63,
+        "n_dependent_distance_pairs": 1953,
+        "mean_nn3_intersection_fraction": 0.492063492063492,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 2,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5077268168479394,
+        "n_candidate_people": 63,
+        "n_dependent_distance_pairs": 1953,
+        "mean_nn3_intersection_fraction": 0.49206349206349204,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 3,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IWW",
+          "TAI",
+          "IWL"
+        ],
+        "second_prompts": [
+          "IOM",
+          "MTI",
+          "WSI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6870593491109276,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.510752688172043,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 3,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IWW",
+          "TAI",
+          "IWL"
+        ],
+        "second_prompts": [
+          "IOM",
+          "MTI",
+          "WSI",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9462943267574754,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5483870967741935,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 3,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5120015526555686,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.4623655913978495,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 4,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "DFA",
+          "WSI",
+          "TIE"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "IOM",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6440948413953961,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.45698924731182805,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 4,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "DFA",
+          "WSI",
+          "TIE"
+        ],
+        "second_prompts": [
+          "MTI",
+          "IWW",
+          "IOM",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9244715284278454,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.47849462365591394,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 4,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5316733253287064,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5053763440860216,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 5,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "ITH",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "IEO",
+          "TAI",
+          "DFA",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6997907493931503,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.45,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 5,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "ITH",
+          "IWW",
+          "TIE"
+        ],
+        "second_prompts": [
+          "IEO",
+          "TAI",
+          "DFA",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9458142631862803,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5666666666666665,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 3,
+        "rotation": 5,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5090448251695359,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.48333333333333334,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 0,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "DFA",
+          "IOM",
+          "IWL"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TIE",
+          "IWW",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6447388436774172,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5245901639344263,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 0,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TAI",
+          "DFA",
+          "IOM",
+          "IWL"
+        ],
+        "second_prompts": [
+          "WSI",
+          "TIE",
+          "IWW",
+          "ITS"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.936733649956764,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.5300546448087432,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 0,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.49802180691252285,
+        "n_candidate_people": 61,
+        "n_dependent_distance_pairs": 1830,
+        "mean_nn3_intersection_fraction": 0.53551912568306,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 1,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IEO",
+          "DFA",
+          "IWW"
+        ],
+        "second_prompts": [
+          "MTI",
+          "TIE",
+          "ITS",
+          "ITH"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6497593605307601,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.538888888888889,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 1,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "TSI",
+          "IEO",
+          "DFA",
+          "IWW"
+        ],
+        "second_prompts": [
+          "MTI",
+          "TIE",
+          "ITS",
+          "ITH"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9364481462750474,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5277777777777779,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 1,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5033129206408224,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 2,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "IOM",
+          "IEO",
+          "TSI"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IWL",
+          "ITH",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6727670086083251,
+        "n_candidate_people": 64,
+        "n_dependent_distance_pairs": 2016,
+        "mean_nn3_intersection_fraction": 0.5208333333333334,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 2,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "DFA",
+          "IOM",
+          "IEO",
+          "TSI"
+        ],
+        "second_prompts": [
+          "ITS",
+          "IWL",
+          "ITH",
+          "TAI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.942686686091535,
+        "n_candidate_people": 64,
+        "n_dependent_distance_pairs": 2016,
+        "mean_nn3_intersection_fraction": 0.49479166666666663,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 2,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5105120565937492,
+        "n_candidate_people": 64,
+        "n_dependent_distance_pairs": 2016,
+        "mean_nn3_intersection_fraction": 0.49479166666666663,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 3,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "TSI",
+          "IWW",
+          "MTI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "ITS",
+          "IWL",
+          "IOM"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6922343743270286,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5215053763440861,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 3,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "WSI",
+          "TSI",
+          "IWW",
+          "MTI"
+        ],
+        "second_prompts": [
+          "TAI",
+          "ITS",
+          "IWL",
+          "IOM"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9527074320563677,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5806451612903225,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 3,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5229382783918959,
+        "n_candidate_people": 62,
+        "n_dependent_distance_pairs": 1891,
+        "mean_nn3_intersection_fraction": 0.5215053763440859,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 4,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "TIE",
+          "IWW",
+          "DFA"
+        ],
+        "second_prompts": [
+          "MTI",
+          "TAI",
+          "TSI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.6506167913217932,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5277777777777778,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 4,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "IOM",
+          "TIE",
+          "IWW",
+          "DFA"
+        ],
+        "second_prompts": [
+          "MTI",
+          "TAI",
+          "TSI",
+          "WSI"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9321670342681094,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5555555555555556,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 4,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.5144006790137046,
+        "n_candidate_people": 60,
+        "n_dependent_distance_pairs": 1770,
+        "mean_nn3_intersection_fraction": 0.5277777777777778,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 5,
+        "comparison": "ecapa_half4_vs_half4",
+        "first_prompts": [
+          "ITH",
+          "IWW",
+          "TIE",
+          "TAI"
+        ],
+        "second_prompts": [
+          "WSI",
+          "ITS",
+          "IEO",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.686242630725122,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5028248587570622,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 5,
+        "comparison": "xvector_half4_vs_half4",
+        "first_prompts": [
+          "ITH",
+          "IWW",
+          "TIE",
+          "TAI"
+        ],
+        "second_prompts": [
+          "WSI",
+          "ITS",
+          "IEO",
+          "DFA"
+        ],
+        "pairwise_distance_spearman_descriptive": 0.9396379162290931,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.5649717514124293,
+        "pairs_are_not_independent_samples": true
+      },
+      {
+        "fold": 4,
+        "rotation": 5,
+        "comparison": "ecapa_vs_xvector",
+        "pairwise_distance_spearman_descriptive": 0.48076747306688805,
+        "n_candidate_people": 59,
+        "n_dependent_distance_pairs": 1711,
+        "mean_nn3_intersection_fraction": 0.4802259887005648,
+        "pairs_are_not_independent_samples": true
+      }
+    ],
+    "thresholds": null,
+    "policy_or_budget_changes": [],
+    "used_new_ser_scores": false,
+    "population": "eligible_training_candidates_only; repeated context rows and distance pairs are dependent",
+    "pool_metrics": "cosine nn1 mean/max and nn3 mean; selected people have nn1=0 but generally nn3>0",
+    "outlier_measure": "mean distance to other eligible candidates; a descriptive percentile, not a quality exclusion"
+  },
+  "E1": {
+    "status": "completed_historical_csv_association",
+    "primary": "CNN/B576/S48/prompt_new; nearest3 versus person UAR",
+    "n_legacy_people": 91,
+    "n_complete_reference_people": 85,
+    "n_legacy_fit_instances": 90,
+    "n_reference_contexts_per_person": 18,
+    "primary_spearman": {
+      "rho": -0.16932820183427527,
+      "ci95": [
+        -0.380048979887588,
+        0.0472459059904795
+      ],
+      "n_people": 85,
+      "requested_bootstraps": 2000,
+      "valid_bootstraps": 2000,
+      "seed": 20260906,
+      "status": "conditional_descriptive_interval",
+      "uncertainty": "resamples_people_after_fixing_models_and_reference_rule; not new-training-population uncertainty"
+    },
+    "global_loso_spearman": {
+      "rho": -0.24342761464204826,
+      "ci95": [
+        -0.43618309885454065,
+        -0.013100205817923658
+      ],
+      "n_people": 85,
+      "requested_bootstraps": 2000,
+      "valid_bootstraps": 2000,
+      "seed": 20260906,
+      "status": "conditional_descriptive_interval",
+      "uncertainty": "resamples_people_after_fixing_models_and_reference_rule; not new-training-population uncertainty"
+    },
+    "rank_partial_correlation_controlling_global_loso_descriptive": 0.026778698810582948,
+    "global_loso_definition": "mean cosine distance to every other corpus person with complete same-eight-prompt neutral references; never selected by outcomes",
+    "uar_aggregation": "existing core_score.collect_draws pools six rotations' class counts, computes fixed-six-class UAR, then averages three draw UARs; raw logits not replayed here",
+    "distance_aggregation": "equal mean over six rotations within draw, then three draws",
+    "reference_query_scope": "disjoint within each historical unit; a reference may be a query in another rotation",
+    "excluded_people": [
+      {
+        "speaker": "1002",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 6,
+        "expected_contexts": 18
+      },
+      {
+        "speaker": "1006",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 6,
+        "expected_contexts": 18
+      },
+      {
+        "speaker": "1008",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 6,
+        "expected_contexts": 18
+      },
+      {
+        "speaker": "1009",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 9,
+        "expected_contexts": 18
+      },
+      {
+        "speaker": "1019",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 9,
+        "expected_contexts": 18
+      },
+      {
+        "speaker": "1076",
+        "reason": "incomplete_eight_reference_support_in_one_or_more_contexts",
+        "valid_contexts": 3,
+        "expected_contexts": 18
+      }
+    ],
+    "reference_support_failures": [
+      {
+        "speaker": "1019",
+        "draw": 0,
+        "rotation": 1,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_MTI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 0,
+        "rotation": 2,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_IOM_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWL_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 0,
+        "rotation": 5,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 0,
+        "rotation": 0,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 0,
+        "rotation": 3,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 0,
+        "rotation": 4,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 0,
+        "rotation": 5,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IEO_NEU_XX.wav",
+          "1008_ITH_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 0,
+        "rotation": 0,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWL_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 0,
+        "rotation": 0,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWL_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 0,
+        "rotation": 1,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 0,
+        "rotation": 1,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 0,
+        "rotation": 1,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IEO_NEU_XX.wav",
+          "1009_ITH_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 0,
+        "rotation": 3,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_IOM_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWL_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 0,
+        "rotation": 4,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 0,
+        "rotation": 4,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 0,
+        "rotation": 4,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IOM_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 0,
+        "rotation": 5,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 0,
+        "rotation": 5,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 0,
+        "rotation": 0,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 0,
+        "rotation": 1,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 0,
+        "rotation": 2,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 0,
+        "rotation": 3,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 0,
+        "rotation": 5,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 1,
+        "rotation": 1,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_MTI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 1,
+        "rotation": 2,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_IOM_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWL_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 1,
+        "rotation": 5,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 1,
+        "rotation": 0,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 1,
+        "rotation": 0,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 1,
+        "rotation": 1,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IEO_NEU_XX.wav",
+          "1009_ITH_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 1,
+        "rotation": 1,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 1,
+        "rotation": 2,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 1,
+        "rotation": 3,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 1,
+        "rotation": 3,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_IOM_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWL_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 1,
+        "rotation": 3,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 1,
+        "rotation": 4,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 1,
+        "rotation": 4,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IOM_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 1,
+        "rotation": 5,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IEO_NEU_XX.wav",
+          "1008_ITH_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 1,
+        "rotation": 5,
+        "fold": 1,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 1,
+        "rotation": 0,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWL_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 1,
+        "rotation": 1,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 1,
+        "rotation": 4,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 1,
+        "rotation": 5,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 1,
+        "rotation": 0,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWL_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 1,
+        "rotation": 1,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 1,
+        "rotation": 4,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 1,
+        "rotation": 5,
+        "fold": 4,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 2,
+        "rotation": 0,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWL_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 2,
+        "rotation": 1,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 2,
+        "rotation": 1,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_MTI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 2,
+        "rotation": 2,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_IOM_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWL_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 2,
+        "rotation": 4,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IOM_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_MTI_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_TSI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1002",
+        "draw": 2,
+        "rotation": 5,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1002_DFA_NEU_XX.wav",
+          "1002_IEO_NEU_XX.wav",
+          "1002_ITH_NEU_XX.wav",
+          "1002_ITS_NEU_XX.wav",
+          "1002_IWW_NEU_XX.wav",
+          "1002_TAI_NEU_XX.wav",
+          "1002_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1019",
+        "draw": 2,
+        "rotation": 5,
+        "fold": 0,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1019_DFA_NEU_XX.wav",
+          "1019_IEO_NEU_XX.wav",
+          "1019_ITS_NEU_XX.wav",
+          "1019_IWW_NEU_XX.wav",
+          "1019_TAI_NEU_XX.wav",
+          "1019_TIE_NEU_XX.wav",
+          "1019_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITH"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 2,
+        "rotation": 0,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWL_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 2,
+        "rotation": 0,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 2,
+        "rotation": 1,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 2,
+        "rotation": 3,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_IOM_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWL_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 2,
+        "rotation": 4,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IOM_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_MTI_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_TSI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 2,
+        "rotation": 4,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IOM_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_MTI_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav",
+          "1008_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1006",
+        "draw": 2,
+        "rotation": 5,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1006_DFA_NEU_XX.wav",
+          "1006_IEO_NEU_XX.wav",
+          "1006_ITH_NEU_XX.wav",
+          "1006_ITS_NEU_XX.wav",
+          "1006_IWW_NEU_XX.wav",
+          "1006_TAI_NEU_XX.wav",
+          "1006_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:TIE"
+        ]
+      },
+      {
+        "speaker": "1008",
+        "draw": 2,
+        "rotation": 5,
+        "fold": 2,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1008_DFA_NEU_XX.wav",
+          "1008_IEO_NEU_XX.wav",
+          "1008_ITH_NEU_XX.wav",
+          "1008_ITS_NEU_XX.wav",
+          "1008_IWW_NEU_XX.wav",
+          "1008_TAI_NEU_XX.wav",
+          "1008_TIE_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:WSI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 2,
+        "rotation": 0,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 2,
+        "rotation": 1,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IEO_NEU_XX.wav",
+          "1009_ITH_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 2,
+        "rotation": 1,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 2,
+        "rotation": 2,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_IOM_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 2,
+        "rotation": 3,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_IOM_NEU_XX.wav",
+          "1009_ITS_NEU_XX.wav",
+          "1009_IWL_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 2,
+        "rotation": 3,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_IOM_NEU_XX.wav",
+          "1076_IWL_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_MTI_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TSI_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      },
+      {
+        "speaker": "1009",
+        "draw": 2,
+        "rotation": 4,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1009_DFA_NEU_XX.wav",
+          "1009_IOM_NEU_XX.wav",
+          "1009_IWW_NEU_XX.wav",
+          "1009_TAI_NEU_XX.wav",
+          "1009_TIE_NEU_XX.wav",
+          "1009_TSI_NEU_XX.wav",
+          "1009_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:MTI"
+        ]
+      },
+      {
+        "speaker": "1076",
+        "draw": 2,
+        "rotation": 5,
+        "fold": 3,
+        "requested_references": 8,
+        "valid_references": 7,
+        "reference_paths": [
+          "1076_DFA_NEU_XX.wav",
+          "1076_IEO_NEU_XX.wav",
+          "1076_ITH_NEU_XX.wav",
+          "1076_IWW_NEU_XX.wav",
+          "1076_TAI_NEU_XX.wav",
+          "1076_TIE_NEU_XX.wav",
+          "1076_WSI_NEU_XX.wav"
+        ],
+        "problems": [
+          "missing_cell:ITS"
+        ]
+      }
+    ],
+    "voice_only_covariate": {
+      "status": "not_supplied_or_aligned",
+      "included_in_model": false
+    },
+    "causal_interpretation": false,
+    "used_new_ser_scores": false,
+    "input": {
+      "per_speaker_file": "per_speaker.csv",
+      "per_speaker_sha256": "d1d97fcf589e99edd36f64a2e9bd3c0432ac365dbb7539d70bd603c063a9c3d9",
+      "legacy_plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+      "legacy_plan_file_sha256": "76a84b56189af5e2a9888f8690a912f1902f7db0eb7f51ede9f5bd4da179cf43"
+    }
+  },
+  "table_sha256": {
+    "e0_policy_geometry.csv": "60c6c34294902c6fb017db091fc07fb92d1d932e4abbb7d67cd101c20d110b77",
+    "e0_reference_stability.csv": "45fb112a7add67283abdd397462b4551038f0d52c3eb518bcac04a2c2cb7a7f0",
+    "e0_policy_overlap.csv": "b6bc186f7887562cb546d98a970d59e9e81f07a700fd3401a050c33d5c69b02c",
+    "e1_people.csv": "12ec2f60d3bef2f384de1866b700be5e5a01c554bce7ade34efb252db17c6cc1"
+  }
+}

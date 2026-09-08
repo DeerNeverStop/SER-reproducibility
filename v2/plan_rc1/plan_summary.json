@@ -1,0 +1,196 @@
+{
+ "conditional_gpu_hours": 8.0,
+ "level_info": {
+  "cremad": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 7435,
+   "provenance": "real"
+  },
+  "cremad_24_d0": {
+   "base": "cremad",
+   "n_spk": 24,
+   "n_utt": 1955,
+   "provenance": "real"
+  },
+  "cremad_24_d1": {
+   "base": "cremad",
+   "n_spk": 24,
+   "n_utt": 1966,
+   "provenance": "real"
+  },
+  "cremad_24_d2": {
+   "base": "cremad",
+   "n_spk": 24,
+   "n_utt": 1962,
+   "provenance": "real"
+  },
+  "cremad_24_d3": {
+   "base": "cremad",
+   "n_spk": 24,
+   "n_utt": 1962,
+   "provenance": "real"
+  },
+  "cremad_24_d4": {
+   "base": "cremad",
+   "n_spk": 24,
+   "n_utt": 1953,
+   "provenance": "real"
+  },
+  "cremad_91m_d0": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 1955,
+   "provenance": "real"
+  },
+  "cremad_91m_d1": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 1966,
+   "provenance": "real"
+  },
+  "cremad_91m_d2": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 1962,
+   "provenance": "real"
+  },
+  "cremad_91m_d3": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 1962,
+   "provenance": "real"
+  },
+  "cremad_91m_d4": {
+   "base": "cremad",
+   "n_spk": 91,
+   "n_utt": 1953,
+   "provenance": "real"
+  },
+  "ravdess": {
+   "base": "ravdess",
+   "n_spk": 24,
+   "n_utt": 1439,
+   "provenance": "real"
+  },
+  "sub_1400_one": {
+   "base": "subesco",
+   "n_spk": 20,
+   "n_utt": 1400,
+   "provenance": "synthetic_placeholder"
+  },
+  "sub_700_one": {
+   "base": "subesco",
+   "n_spk": 20,
+   "n_utt": 700,
+   "provenance": "synthetic_placeholder"
+  },
+  "sub_700_two": {
+   "base": "subesco",
+   "n_spk": 20,
+   "n_utt": 1400,
+   "provenance": "synthetic_placeholder"
+  },
+  "subesco_980": {
+   "base": "subesco_980",
+   "n_spk": 20,
+   "n_utt": 980,
+   "provenance": "real"
+  },
+  "subesco_full": {
+   "base": "subesco",
+   "n_spk": 20,
+   "n_utt": 7000,
+   "provenance": "synthetic_placeholder"
+  }
+ },
+ "n_units": 4943,
+ "per_arm": {
+  "CTRL": {
+   "cap": 16.0,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 8.66,
+   "units": 3139,
+   "within_cap": true
+  },
+  "FT": {
+   "cap": 26.0,
+   "conditional_gpu_hours": 8.0,
+   "gpu_hours": 17.33,
+   "units": 120,
+   "within_cap": true
+  },
+  "HPO": {
+   "cap": 5.0,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 2.7,
+   "units": 240,
+   "within_cap": true
+  },
+  "MECH2X2": {
+   "cap": 7.0,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 5.66,
+   "units": 520,
+   "within_cap": true
+  },
+  "MECHID": {
+   "cap": 0.5,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 0.3,
+   "units": 180,
+   "within_cap": true
+  },
+  "PREP": {
+   "cap": 3.5,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 3.0,
+   "units": 0,
+   "within_cap": true
+  },
+  "PROBECPU": {
+   "cap": 0.0,
+   "conditional_gpu_hours": 0.0,
+   "cpu_hours": 1.0796333333333334,
+   "gpu_hours": 0.0,
+   "sweep_units_not_in_plan": 54600,
+   "units": 924,
+   "within_cap": true
+  },
+  "STAT": {
+   "cap": 0.5,
+   "conditional_gpu_hours": 0.0,
+   "gpu_hours": 0.5,
+   "units": 0,
+   "within_cap": true
+  }
+ },
+ "population_provenance": {
+  "cremad": "real",
+  "ravdess": "real",
+  "subesco": "synthetic_placeholder",
+  "subesco_980": "real"
+ },
+ "program_cap": 50.0,
+ "run_plan_sha256": "e6756696f3d1df0ba06c614130d6ebabd00c997567e9e2a019031b5c7192de3a",
+ "synthetic": false,
+ "total_gpu_hours": 38.15,
+ "total_with_conditional": 46.15,
+ "truncation_order": [
+  "FT: cremad seed 1 (fine-tune and frozen comparator)          [conditional unit; first to go]",
+  "HPO: ravdess cells (all)",
+  "MECH2X2: replicate r=1 on cremad and subesco_full",
+  "CTRL: cremad_24 / cremad_91m draws 3-4",
+  "FT: ravdess and subesco_980 frozen-comparator seed 1",
+  "CTRL: transformer on subesco_980 replicate r=2"
+ ],
+ "truncation_savings_by_rank_gpu_hours": {
+  "1": 8.0,
+  "2": 0.44,
+  "3": 2.83,
+  "4": 0.8,
+  "5": 1.17,
+  "6": 0.03
+ },
+ "within_program_cap": true
+}

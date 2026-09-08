@@ -1,0 +1,128 @@
+{
+  "E1_control": {
+    "aggregation": "macro average over six acted classes after pooling actual six-rotation queries within draw, then equal average over three draws",
+    "all_query_sets_identical_across_draws": true,
+    "causal_interpretation": false,
+    "descriptive_rank_partial_nn3_uar_controlling_human_agreement": -0.16968491301181546,
+    "descriptive_rank_partial_nn3_uar_controlling_human_plurality": -0.143947070723273,
+    "descriptive_rank_partial_nn3_uar_controlling_human_plurality_and_global_loso": 0.0520279969953649,
+    "descriptive_spearman_human_plurality_vs_historical_uar": 0.2379742264106978,
+    "descriptive_spearman_nn3_vs_historical_uar": -0.16932820183427522,
+    "formal_gate": false,
+    "human_reference": "fallible rater judgments versus intended acted filename labels, not error-free true emotion",
+    "inferential_p_values": null,
+    "legacy_people_outside_E1": [
+      "1002",
+      "1006",
+      "1008",
+      "1009",
+      "1019",
+      "1076"
+    ],
+    "legacy_primary_people": 91,
+    "main_E1_replaced": false,
+    "n_aligned_path_draw_rows": 18339,
+    "n_people": 85,
+    "n_unique_aligned_paths": 6113,
+    "n_unique_queries": 6115,
+    "new_SER_results_read": false,
+    "omitted_query_draw_rows": [
+      {
+        "draw": 0,
+        "path": "1064_IEO_DIS_MD.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      },
+      {
+        "draw": 0,
+        "path": "1064_TIE_SAD_XX.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      },
+      {
+        "draw": 1,
+        "path": "1064_IEO_DIS_MD.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      },
+      {
+        "draw": 1,
+        "path": "1064_TIE_SAD_XX.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      },
+      {
+        "draw": 2,
+        "path": "1064_IEO_DIS_MD.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      },
+      {
+        "draw": 2,
+        "path": "1064_TIE_SAD_XX.wav",
+        "reason": "known_mp3_stimulus_issue",
+        "speaker": "1064"
+      }
+    ],
+    "policy_or_budget_changes": [],
+    "status": "completed_descriptive_historical_voice_covariate",
+    "tie_handling": "fractional plurality match = 1/k when acted class is among k tied modes, otherwise 0; not strict unique-winner accuracy",
+    "unequal_support": "known stimulus issues omitted from human covariates only; exact support by person/draw/class disclosed; E1 SER scores unchanged"
+  },
+  "descriptive_only": true,
+  "formal_gate": false,
+  "input": {
+    "diagnostics_sha256": "29833a59e99c8b1583092c5feb67690cd83678ea62c5163e1ba38bf981d6a24b",
+    "e1_people_sha256": "12ec2f60d3bef2f384de1866b700be5e5a01c554bce7ade34efb252db17c6cc1",
+    "legacy_plan_file_sha256": "76a84b56189af5e2a9888f8690a912f1902f7db0eb7f51ede9f5bd4da179cf43",
+    "legacy_plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+    "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+    "parent_plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f"
+  },
+  "schema": "ser-voice-only-e1-description-1",
+  "source_audit": {
+    "cross_checks": [
+      "clipNum to SentenceFilenames",
+      "voice counts to numResponses",
+      "max count to agreement",
+      "all tied modes to emoVote and summary VoiceVote"
+    ],
+    "encoding": "100000*queryType+clipNum",
+    "known_mp3_stimulus_issues": {
+      "1064_IEO_DIS_MD": "MP3 contains about one minute of multiple emotional displays",
+      "1064_TIE_SAD_XX": "MP3 has no duration",
+      "1076_MTI_NEU_XX": "MP3 very short/no audio; computational WAV is fine",
+      "1076_MTI_SAD_XX": "MP3 and WAV no audio/very short; also removed by corpus hygiene"
+    },
+    "modality_row_counts": {
+      "1": 7442,
+      "2": 7442,
+      "3": 7442
+    },
+    "official_repository": "https://github.com/CheyneyComputerScience/CREMA-D",
+    "query_type_used": 1,
+    "source_proof": [
+      "tabulateVotesV2.r: goodQueryTypeClip",
+      "summarizeVotes.r: voiceTestResponses queryType==1",
+      "README.md: queryType and MP3/AudioWAV descriptions"
+    ],
+    "sources_sha256": {
+      "README.md": "152d6e2af67e40c043b7244ab45e25f83292b5bcef225b412f416552f05511b9",
+      "SentenceFilenames.csv": "ba8c2d1ec4a0b585ca003ffe37fd59cff9a7e2d5b23389e4769b355fd363dfb7",
+      "processedResults/summaryTable.csv": "1ea0e13d98853d920c7c51e69a72ba5ba42018f85a9b89b8b2cc1b53c1aa56a9",
+      "processedResults/tabulatedVotes.csv": "c60d886c12037306241d51af95ca44539d5b9620762b28a3f50f9c9623dcb18e",
+      "summarizeVotes.r": "ccd211990899ff54c94b46f3c950f772046320d8706cf1153bd6f4218fccefc5",
+      "tabulateVotesV2.r": "803190fb207080e67343dbcaaf4f6884a10b1ef7bbedc5d5573bbb37d5729498"
+    },
+    "status": "voice_only_schema_and_counts_verified",
+    "stimulus_boundary": "human ratings used original MP3s; computation uses WAVs; byte identity is not asserted",
+    "visual_vote_values_used": false,
+    "voice_rows": 7442,
+    "voice_tied_pluralities": 644
+  },
+  "source_sha256": "7a7c17a26b6e73b91c04c94be566e3d4392252efba8ca5a500a68004dfa6735e",
+  "table_sha256": {
+    "voice_people.csv": "14fcfe557fc15814ffd4c026ccbaa2c7abc0fc26b83bb4bd198c3f51d36ba608",
+    "voice_query_alignment.csv": "1eeeab3d32390b39e4817a58d2d5243724d904e4bfd11ac79c48e54b82129e3b"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "asv_model": {
+    "directory": "/workspace/coverage-models/ecapa",
+    "files": {
+      "README.md": "00f58c3cbd7a7510de9374080da0e82a4c4e8f4df567f7338fe6efe108be705a",
+      "classifier.ckpt": "fd9e3634fe68bd0a427c95e354c0c677374f62b3f434e45b78599950d860d535",
+      "embedding_model.ckpt": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+      "hyperparams.yaml": "6f78854fa04ba59e761437b76a2575d3aba5e5016de3e9b69f0c9a5077fb1a41",
+      "label_encoder.txt": "e13c3a167bb4112685670ee896d20e2b565af16b3a4ceeaa8689fa4d22adb8b9",
+      "mean_var_norm_emb.ckpt": "cd70225b05b37be64fc5a95e24395d804231d43f74b2e1e5a513db7b69b34c33"
+    },
+    "model_id": "speechbrain/spkrec-ecapa-voxceleb",
+    "revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286"
+  },
+  "asv_pins_file_sha256": "7966a9daae9aa27ae00834a7a8cd397314c6df8830322ef9e35ce4c3e7bc425c",
+  "by_emotion": {
+    "ANG": 0.5625,
+    "DIS": 0.5,
+    "FEA": 0.5625,
+    "HAP": 0.5625,
+    "NEU": 0.375,
+    "SAD": 0.625
+  },
+  "description_anchor_retrieval_agreement": 0.53125,
+  "emotion_validity_established": false,
+  "files": {
+    "anchor_retrieval.csv": "1ed130355d5bae4bd3c1afd6d86131a509f272d698b3a64340bfb0fc750d3220",
+    "embeddings.npz": "b19e38f3c90ca0f28bdbda832b93be9a3e00b081f4412384621ed0f8225be28c"
+  },
+  "formal_E3_gate_passed": false,
+  "human_raters_completed": 0,
+  "limitations": [
+    "one neutral anchor per described voice",
+    "ASV is emotion/prosody sensitive",
+    "agreement with intended description is not verified human identity",
+    "no equivalence to 24 independent synthetic speakers"
+  ],
+  "manifest_sha256": "341f8cae062b38bee33569a50e45ffded4e7a27bc16f30a2cf9b0f0b93218a19",
+  "mean_own_minus_other_cosine_margin": 0.00439161427008609,
+  "n_anchors": 4,
+  "n_nonanchor_with_own_anchor": 96,
+  "n_successful_audio": 100,
+  "preprocessing": "soundfile float32 mono mean; polyphase resample 16k; no trim/no loudness change; batches16; seed20260906",
+  "schema": "ser-tts-asv-diagnostic-1",
+  "source_sha256": "65558ee7d4c374817c69057cdefc846e373eea0eae3b528eed3c0ad79994ff82"
+}

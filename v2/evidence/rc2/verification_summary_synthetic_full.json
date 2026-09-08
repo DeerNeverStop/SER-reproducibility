@@ -1,0 +1,20 @@
+{
+ "keys": [
+  "failed_items",
+  "items",
+  "max_abs_diff",
+  "n_failed",
+  "n_items",
+  "pass",
+  "results_path",
+  "run_id",
+  "schema",
+  "tex",
+  "tolerance",
+  "verifier_integrity_pass"
+ ],
+ "max_abs_diff": 2.842170943040401e-14,
+ "n_failed": 0,
+ "n_items": 1320,
+ "pass": true
+}

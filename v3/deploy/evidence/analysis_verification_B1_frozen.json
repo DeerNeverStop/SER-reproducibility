@@ -1,0 +1,22 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "kind": "independent-verification",
+  "modules": {
+    "B1": {
+      "integrity": {
+        "pass": false
+      },
+      "comparison": {
+        "pass": false,
+        "compared": 546,
+        "failed": 1
+      }
+    }
+  },
+  "reasons": [
+    "B1: VerificationError: B1 summary.accepted_support_6: missing"
+  ],
+  "verify_sha256": "94b0c47fd3fbf249843c4305872ab5694b507d76fc3f134d2b12ee7192f16419",
+  "tolerance": 1e-09,
+  "pass": false
+}

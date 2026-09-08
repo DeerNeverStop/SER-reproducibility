@@ -1,0 +1,32 @@
+{
+  "change": {
+    "changed_bytes": 1,
+    "from": 24,
+    "path": "$.n_planned_draws",
+    "to": 28,
+    "zero_based_byte_offset": 99139
+  },
+  "contains_outcome_statistics": false,
+  "corrected_result_sha256": "92146e7dcf01cc8fd923f78d08017e638d501732ff23110008caa64b5f6ef6c6",
+  "corrected_verification": "pending; rerun the unmodified frozen independent verifier",
+  "created_at": "2026-09-06T03:49:02.323708+00:00",
+  "disclosure": "Correction was selected from the singleton structural mismatch and source inspection before scientific interpretation. During subsequent original-report inspection, numerical values were incidentally displayed after the analysis lock and after the metadata-only correction decision. No design, selection, calculation or stopping rule was changed.",
+  "frozen_commit": "4fe0bb52f15b56a6626363be31a378b0f9661293",
+  "objects_equal_except_declared_field": true,
+  "operator_script_sha256": "6b9c8df2717c44772932815d7054caaf94fbf1914209f2387c754b7149b46d31",
+  "original_failed_verification_sha256": "bdaf7745fd218115d038f852137b3aefbf84053403f0ebe5a5a1a1b53f646a0c",
+  "original_inputs_unchanged": true,
+  "original_result_sha256": "a49a9cd56f2fe64df0be96b568c24be63779e1d6126e38b791310b0fad506ec6",
+  "original_verification_pass": false,
+  "preserved": [
+    "frozen code and PINS",
+    "plan",
+    "analysis lock",
+    "original result",
+    "original failed verifier report",
+    "all numerical and inferential fields"
+  ],
+  "reason": "Frozen score.py:1256 counts the locked 24 analysis draws after filtering at 1061-1069; the frozen plan contains 28 planned draws (24 primary + 4 reserves), as verify.py:1292 correctly expects. This field is output-only.",
+  "run_plan_sha256": "165f79d939efbba52946d70c222d6df643c419ceb670c5e4b6fd1c184d0385c7",
+  "schema": "ser26-n14r2-metadata-erratum-1"
+}

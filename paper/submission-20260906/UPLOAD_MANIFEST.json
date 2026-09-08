@@ -1,0 +1,103 @@
+{
+  "schema": "ser-manuscript-upload-1",
+  "prepared_on": "2026-09-06",
+  "repository": "DeerNeverStop/SER",
+  "visibility_at_upload_preparation": "PRIVATE",
+  "branch": "codex/paper-review-20260906",
+  "base_commit": "4fe0bb52f15b56a6626363be31a378b0f9661293",
+  "experiment_release": "https://github.com/DeerNeverStop/SER/releases/tag/SER26-N14R2-complete-20260906",
+  "purpose": "User-requested Claude review; manuscript-only snapshot; no submission or public publication",
+  "original_deliverables_count": 11,
+  "original_deliverables_byte_identical": true,
+  "manifest_excludes_its_own_hash": true,
+  "pdf_pages": {
+    "english/xie.pdf": 5,
+    "chinese/explainer.pdf": 8
+  },
+  "files": [
+    {
+      "path": "english/main.tex",
+      "size_bytes": 22688,
+      "sha256": "c25ab10a64abf0f6b2bc428aaf204e8809bdc157a8e00a18b9f18f623aa2bd52",
+      "original_deliverable": true
+    },
+    {
+      "path": "english/spconf.sty",
+      "size_bytes": 8798,
+      "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86",
+      "original_deliverable": true
+    },
+    {
+      "path": "english/IEEEbib.bst",
+      "size_bytes": 17903,
+      "sha256": "7e6ca0c8b72158d504a12bb091f817c07032a021ba41ca783cca4c2dd80d570b",
+      "original_deliverable": true
+    },
+    {
+      "path": "chinese/中文解读.md",
+      "size_bytes": 20496,
+      "sha256": "43382452346fe785eec9949da68f15873680e71e0d2d39f417ecd8c89f2caf87",
+      "original_deliverable": true
+    },
+    {
+      "path": "chinese/build_chinese.py",
+      "size_bytes": 10811,
+      "sha256": "fb6944e6fea5802b875094fa25bb5d3e71dc835e5b7fdf85d555ed2391da1d41",
+      "original_deliverable": true
+    },
+    {
+      "path": "tools/check_pdfs.py",
+      "size_bytes": 16539,
+      "sha256": "e118f917d1902cb60ebb8c4e000afd0755dae5efd59cf0cbefa5cc5859491514",
+      "original_deliverable": true
+    },
+    {
+      "path": "README_交付与投稿检查.md",
+      "size_bytes": 6021,
+      "sha256": "e0d4d92fbc1d9443427a7076d22cb93e63a13e08c2164d6297b2ea6eb2de94a9",
+      "original_deliverable": true
+    },
+    {
+      "path": "pdf_qa.json",
+      "size_bytes": 25322,
+      "sha256": "0da10c5bb99e13a4b3df0202889f3948396d7472a93c5c82803fcbcb40dce91a",
+      "original_deliverable": true
+    },
+    {
+      "path": "english/xie.pdf",
+      "size_bytes": 58633,
+      "sha256": "59f7932897bfd3723cfd5cd43017ea44956cb847984f88dcc478f0bcb1f1efef",
+      "original_deliverable": true
+    },
+    {
+      "path": "chinese/explainer.pdf",
+      "size_bytes": 203354,
+      "sha256": "0e8c8d1bc37db20ddebe510cf1453c0d7e48d8b2e8620f760aef17212d989861",
+      "original_deliverable": true
+    },
+    {
+      "path": "source_bundle.zip",
+      "size_bytes": 43995,
+      "sha256": "44aca2c948934b907ded308cb874100dfd228d4b7263fb113f155cbda1aa7905",
+      "original_deliverable": true
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4154,
+      "sha256": "fb385ddedcb073f03f7bef516c82fc911d026c5dc41f352dbeae670e3cd22c87",
+      "original_deliverable": false
+    },
+    {
+      "path": "CLAUDE_REVIEW_REQUEST.md",
+      "size_bytes": 4553,
+      "sha256": "492cc961b4f6eaf737513379fe0d35e5bafa55c698df65c4a89bb0a4509175a5",
+      "original_deliverable": false
+    },
+    {
+      "path": ".gitattributes",
+      "size_bytes": 66,
+      "sha256": "03638a924da37f6891050882e1bb64c1224a3327d980182a1bcdbe38bfa8de3b",
+      "original_deliverable": false
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "checks": [
+    {
+      "check": "random_test_once",
+      "pass": true
+    },
+    {
+      "check": "random_fold_0_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "random_fold_0_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "random_fold_0_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "random_fold_1_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "random_fold_1_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "random_fold_1_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "random_fold_2_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "random_fold_2_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "random_fold_2_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "random_fold_3_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "random_fold_3_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "random_fold_3_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "random_fold_4_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "random_fold_4_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "random_fold_4_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_test_once",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_0_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_0_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_0_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_0_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_1_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_1_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_1_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_1_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_2_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_2_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_2_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_2_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_3_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_3_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_3_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_3_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_4_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_4_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_4_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "groupkfold_fold_4_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_test_once",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_0_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_0_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_0_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_0_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_1_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_1_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_1_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_1_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_2_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_2_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_2_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_2_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_3_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_3_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_3_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_3_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_4_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_4_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_4_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_4_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_5_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_5_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_5_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_5_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_6_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_6_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_6_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_6_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_7_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_7_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_7_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_7_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_8_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_8_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_8_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_8_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_9_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_9_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_9_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_9_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_10_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_10_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_10_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_10_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_11_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_11_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_11_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_11_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_12_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_12_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_12_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_12_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_13_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_13_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_13_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_13_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_14_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_14_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_14_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_14_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_15_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_15_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_15_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_15_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_16_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_16_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_16_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_16_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_17_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_17_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_17_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_17_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_18_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_18_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_18_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_18_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_19_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_19_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_19_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_19_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_20_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_20_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_20_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_20_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_21_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_21_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_21_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_21_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_22_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_22_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_22_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_22_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_23_index_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_23_speaker_disjoint",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_23_inner_partitions_train",
+      "pass": true
+    },
+    {
+      "check": "loso_fold_23_test_unseen_by_inner",
+      "pass": true
+    },
+    {
+      "check": "cnn_shape_4x8",
+      "pass": true
+    },
+    {
+      "check": "resnet_se_shape_4x8",
+      "pass": true
+    },
+    {
+      "check": "transformer_shape_4x8",
+      "pass": true
+    },
+    {
+      "check": "fno_shape_4x8",
+      "pass": true
+    },
+    {
+      "check": "outer_test_helper_visits_every_utterance_once",
+      "pass": true
+    },
+    {
+      "check": "outer_test_helper_is_one_loader_pass",
+      "pass": true
+    },
+    {
+      "check": "attempt_unit_contains_one_outer_test_call_site",
+      "pass": true
+    }
+  ],
+  "core_sha256": "16a4d2ed96892674f6132c4ea42dea1634bcd605f2467cb88551314984f86180",
+  "created_at": "2026-08-11T14:15:25-04:00",
+  "failed": [],
+  "frozen_inputs": {
+    "preregistration_frozen_prefix_bytes": 12426,
+    "preregistration_frozen_prefix_sha256": "91db3edc544f76fc412f4dfc5f35adef23934635ca3ede36c8089c38bd14b782",
+    "preregistration_full_sha256": "747ab72c981dc5035adc2cd492190f2cbc62da85c519274742ccce417be44e80",
+    "ser_commit": "d11768ed31a91f611472b89e52f3f6bb97030c40",
+    "ser_file_sha256": {
+      "advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+      "advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+      "fno_data.py": "9762eeb91268258443dd8a1908336d2cffeed9097f6e2c66461f4419ce0f3c88",
+      "fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+      "tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff"
+    }
+  },
+  "n_checks": 141,
+  "no_p1_metrics": true,
+  "runner_sha256": "8cf2232854919eacd676c860ce8ff990ab74e2fa69be2f2826db645cd17b2cbc",
+  "status": "pass",
+  "synthetic_only": true
+}

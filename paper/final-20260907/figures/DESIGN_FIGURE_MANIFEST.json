@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-07T15:51:18.443179+00:00",
+  "scope": "Design schematic only; no fitted results read or scientific statistics computed",
+  "science_sha256": "62d7e74e1fabdca3ccfd05e14512abb1cbeef8d5857873fb8c969af31f84e8f1",
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "script_sha256": "96534f312e6e5de7d6502771034f09721f79353b98bec798dd461b7030935316",
+  "files": {
+    "shared_trajectory_design.pdf": {
+      "sha256": "e86813bab303829a730dbe27b191206a2ff97e77d4ad0b943939cb2442f4447f",
+      "bytes": 32208
+    },
+    "shared_trajectory_design.png": {
+      "sha256": "f396505cbf85b2d393b958b89b5f2c77479693cef217566cedbbf310abca9109",
+      "bytes": 151314
+    },
+    "shared_trajectory_design.svg": {
+      "sha256": "81ef680cc9971c83b7a18b41b446d38326a2cd999a8132aebf74bb100e7ac734",
+      "bytes": 103450
+    }
+  },
+  "native_width_inches": 7.15,
+  "native_height_inches": 3.7,
+  "minimum_text_points": 9,
+  "main_A_fits": 360,
+  "additional_B_fits": 24,
+  "pilots_in_scientific_counts": 0,
+  "main_hypotheses": "Three corpora \u00d7 (delta_CE, J), fixed six-test Holm family",
+  "formal_results_read": false,
+  "visual_review_required": true
+}

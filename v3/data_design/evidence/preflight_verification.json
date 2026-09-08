@@ -1,0 +1,181 @@
+{
+  "pass": true,
+  "schema": "ser-study2-independent-plan-verification-1",
+  "scope": "complete_real_core_metadata",
+  "n_units": 1440,
+  "units_by_model": {
+    "ridge_wavlm": 720,
+    "cnn": 720
+  },
+  "n_speakers": 91,
+  "n_prompts": 12,
+  "early_stop_rows_range": [
+    279,
+    288
+  ],
+  "representatives": {
+    "raw_rows": 7442,
+    "hygienic_rows": 7435,
+    "representative_rows": 6524,
+    "unavailable_cells": [
+      [
+        "1040",
+        "ITH",
+        5
+      ]
+    ],
+    "representative_intensity_counts": {
+      "XX": 6069,
+      "MD": 455
+    }
+  },
+  "test_class_prompt_shortfalls": [
+    {
+      "speaker": "1019",
+      "label": 0,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1019",
+      "label": 1,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1019",
+      "label": 2,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1019",
+      "label": 3,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1019",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1019",
+      "label": 5,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1013",
+      "label": 1,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1013",
+      "label": 5,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1017",
+      "label": 0,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1017",
+      "label": 2,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1040",
+      "label": 5,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 0,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 1,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 2,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 3,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1008",
+      "label": 5,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1002",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1006",
+      "label": 3,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1006",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 0,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 1,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 2,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 3,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1009",
+      "label": 5,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1076",
+      "label": 4,
+      "available_prompts": 11
+    },
+    {
+      "speaker": "1076",
+      "label": 5,
+      "available_prompts": 11
+    }
+  ],
+  "scientific_outcomes_read": false,
+  "plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+  "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+  "source_files_checked": 16,
+  "feature_bytes_checked": true,
+  "runtime_ready_claimed": true,
+  "training_authorization": "not_granted_by_metadata_verification"
+}

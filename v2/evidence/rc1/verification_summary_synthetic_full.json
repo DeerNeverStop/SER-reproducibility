@@ -1,0 +1,10 @@
+{
+ "schema": "ser-v2-verification-1",
+ "tolerance": 1e-12,
+ "pass": true,
+ "max_abs_diff": 2.842170943040401e-14,
+ "n_items": 1320,
+ "n_failed": 0,
+ "failed_items": [],
+ "verifier_integrity_pass": true
+}

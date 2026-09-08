@@ -1,0 +1,293 @@
+{
+  "schema": "ser-synthetic-whole-paper-layout-1",
+  "created_at": "2026-09-07T18:18:28.616808+00:00",
+  "scope": "SYNTHETIC page-budget mock-up only; results are blank slots and an explicitly synthetic curve. Not a final manuscript or submission-ready scientific text.",
+  "formal_results_accessed": false,
+  "new_scientific_tests": 0,
+  "script": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\check_full_layout.py",
+    "bytes": 5422,
+    "sha256": "0b1206fe9fe76aa5bc6a9fcfe0ac1f4c17afc2a287a79191eefa36c0c7b79ca0"
+  },
+  "source": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\main.tex",
+    "bytes": 22435,
+    "sha256": "4e50433f2128604c5c5f0ea0a8e87161ace3ef0584f768fde50adb999175363a"
+  },
+  "pdf": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\main.pdf",
+    "bytes": 75619,
+    "sha256": "50fe505e2ab65d85ab1c5b6127e7290c49a5e588afee2325d7a649030f47166e"
+  },
+  "figure": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\SYNTHETIC_curves.pdf",
+    "bytes": 19867,
+    "sha256": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f"
+  },
+  "style": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\spconf.sty",
+    "bytes": 8798,
+    "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+  },
+  "log": {
+    "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\main.log",
+    "bytes": 20447,
+    "sha256": "ed83bb95270924da61a371b0da0d30edcbc5900e3985506349092138a4f32cb2"
+  },
+  "page_count": 5,
+  "abstract_words": 130,
+  "checks": {
+    "five_pages": true,
+    "letter_and_bounds": true,
+    "first_references_on_page_five": true,
+    "twelve_references": true,
+    "ai_disclosure_on_page_four": true,
+    "all_pages_explicitly_synthetic": true,
+    "abstract_word_budget": true,
+    "six_primary_rows": true,
+    "three_absolute_rows": true,
+    "figure_on_page_four": true,
+    "figure_text_same": true,
+    "figure_width": true,
+    "figure_minimum_9pt": true,
+    "required_figure_labels": true,
+    "all_fonts_embedded": true,
+    "unencrypted": true,
+    "no_overfull_box": true
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "letter": true,
+      "no_char_outside_page": true
+    },
+    {
+      "page": 2,
+      "letter": true,
+      "no_char_outside_page": true
+    },
+    {
+      "page": 3,
+      "letter": true,
+      "no_char_outside_page": true
+    },
+    {
+      "page": 4,
+      "letter": true,
+      "no_char_outside_page": true
+    },
+    {
+      "page": 5,
+      "letter": true,
+      "no_char_outside_page": true
+    }
+  ],
+  "fonts": [
+    {
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "embedded": true
+    },
+    {
+      "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+      "embedded": true
+    },
+    {
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "embedded": true
+    },
+    {
+      "name": "/TQTHRL+NimbusRomNo9L-MediItal",
+      "embedded": true
+    },
+    {
+      "name": "/YEUUOC+NewTXMI7",
+      "embedded": true
+    },
+    {
+      "name": "/VDVGTR+TeXGyreTermesX-Regular",
+      "embedded": true
+    },
+    {
+      "name": "/CAFSZL+txsys",
+      "embedded": true
+    },
+    {
+      "name": "/DDIEWW+NewTXMI",
+      "embedded": true
+    },
+    {
+      "name": "/AKHCZK+txmiaX",
+      "embedded": true
+    },
+    {
+      "name": "/GBCUYZ+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "/FKPJSN+NimbusMonL-Regu",
+      "embedded": true
+    }
+  ],
+  "figure_scan": {
+    "input": {
+      "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\main.pdf",
+      "bytes": 75619,
+      "sha256": "50fe505e2ab65d85ab1c5b6127e7290c49a5e588afee2325d7a649030f47166e"
+    },
+    "page_count": 5,
+    "page_boxes": [
+      {
+        "media": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "crop": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "rotation": 0,
+        "user_unit": 1.0
+      },
+      {
+        "media": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "crop": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "rotation": 0,
+        "user_unit": 1.0
+      },
+      {
+        "media": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "crop": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "rotation": 0,
+        "user_unit": 1.0
+      },
+      {
+        "media": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "crop": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "rotation": 0,
+        "user_unit": 1.0
+      },
+      {
+        "media": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "crop": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "rotation": 0,
+        "user_unit": 1.0
+      }
+    ],
+    "figure_character_count": 239,
+    "fonts": [
+      "GBCUYZ+DejaVuSans"
+    ],
+    "required_text": {
+      "SYNTHETIC": true,
+      "CREMA-D": true,
+      "SUBESCO": true,
+      "RAVDESS": true,
+      "Seen validation": true,
+      "Unseen validation": true,
+      "Outer test": true,
+      "Epoch": true,
+      "Native-task UAR": true
+    },
+    "minimum_figure_em_pt": 9.532710000000002,
+    "maximum_figure_em_pt": 11.65109,
+    "rotated_character_count": 17,
+    "rotated_minimum_em_pt": 10.5919,
+    "rotated_minimum_bbox_height_pt": 2.9445481999999856,
+    "all_orthogonal": true,
+    "all_uniform_scale": true,
+    "all_text_horizontal_scaling_one": true,
+    "all_figure_text_at_least_9pt": true
+  },
+  "figure_comparison": {
+    "glyph_identity_and_order_equal": true,
+    "expected_uniform_scale": 1.0591256035141645,
+    "observed_minimum_scale": 1.05919,
+    "observed_maximum_scale": 1.05919,
+    "maximum_scale_difference": 6.439648583556057e-05,
+    "expected_width_pt": 504.5669291338583,
+    "observed_minimum_width_pt": 504.59760758880003,
+    "observed_maximum_width_pt": 504.59760758880003,
+    "maximum_width_difference_pt": 0.030678454941747854,
+    "width_tolerance_pt": 0.1,
+    "pass_scale": true
+  },
+  "remaining_log_warning": "One underfull paragraph in mock discussion; no overfull box. Five rendered pages were visually reviewed separately.",
+  "root_visual_review": {
+    "performed": true,
+    "method": "view_image original detail, all five latest pages",
+    "renders": [
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\page-1.png",
+        "bytes": 509924,
+        "sha256": "9079cbfa9e565a866945dd71dce3a432cb83d27e637693fd9078647d72043194"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\page-2.png",
+        "bytes": 601547,
+        "sha256": "391ab59d9bfd964a0f6d77eb0cc85e1b4bff515532c8a1826d0ac46d37c37c56"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\page-3.png",
+        "bytes": 447738,
+        "sha256": "8464e54c5510c8028c454be583e939f02f45a8794bf386daa787388336935788"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\page-4.png",
+        "bytes": 412163,
+        "sha256": "90888cd1698fbe1901f2f92bd58a5a5554e01b933bdab030cdfa78851d051743"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\SYNTHETIC_full_layout_v5\\page-5.png",
+        "bytes": 392022,
+        "sha256": "d9dc2ceefd7c391b396ac440a13c6b96aa355c3cec824cd9020c1f307ff62169"
+      }
+    ],
+    "findings": "All complete pages have readable prose, tables, equations and chart labels; no clipping or collisions. Six primary slots and three absolute-performance rows remain; figure and AI disclosure are within page 4. Page 5 has references and the temporary synthetic label only."
+  },
+  "limits": "The temporary synthetic header is an explicit QA label. Abstract, results, interpretation, availability reference and title remain provisional. Real values and final prose require new full PDF checks.",
+  "pass_layout": true
+}

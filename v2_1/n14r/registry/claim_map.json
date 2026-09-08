@@ -1,0 +1,12 @@
+{
+  "S1R": {
+    "hypothesis_id": "N14R",
+    "allowed_if_supported": "Speaker-overlapping inner validation produced greater HPO validation optimism than speaker-grouped inner validation on the frozen CREMA-D/ResNet-SE design.",
+    "forbidden_expansions": [
+      "The effect generalizes to other corpora or models.",
+      "The mechanism necessarily reduces outer-test performance.",
+      "Speakers or folds were independent inferential units."
+    ],
+    "d09r_is_descriptive": true
+  }
+}

@@ -1,0 +1,1080 @@
+{"event": "batch_start", "time": "2026-09-07T00:35:45.166295+00:00", "unit_ids": ["dual_d00_f0_c0", "dual_d00_f0_c1", "dual_d00_f0_c2", "dual_d00_f0_c3", "dual_d00_f1_c0", "dual_d00_f1_c1", "dual_d00_f1_c2", "dual_d00_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T00:35:45.167396+00:00", "unit_id": "dual_d00_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:36:18.224926+00:00", "unit_id": "dual_d00_f0_c0", "fit_seconds": 32.91104111634195}
+{"event": "unit_start", "time": "2026-09-07T00:36:18.430962+00:00", "unit_id": "dual_d00_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:36:52.321562+00:00", "unit_id": "dual_d00_f0_c1", "fit_seconds": 33.468383798375726}
+{"event": "unit_start", "time": "2026-09-07T00:36:52.507879+00:00", "unit_id": "dual_d00_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:37:26.585936+00:00", "unit_id": "dual_d00_f0_c2", "fit_seconds": 33.666279735043645}
+{"event": "unit_start", "time": "2026-09-07T00:37:26.752733+00:00", "unit_id": "dual_d00_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:37:56.900486+00:00", "unit_id": "dual_d00_f0_c3", "fit_seconds": 29.86983896419406}
+{"event": "unit_start", "time": "2026-09-07T00:37:57.030926+00:00", "unit_id": "dual_d00_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:38:35.218838+00:00", "unit_id": "dual_d00_f1_c0", "fit_seconds": 37.77772535569966}
+{"event": "unit_start", "time": "2026-09-07T00:38:35.364008+00:00", "unit_id": "dual_d00_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:39:09.771776+00:00", "unit_id": "dual_d00_f1_c1", "fit_seconds": 34.12617134861648}
+{"event": "unit_start", "time": "2026-09-07T00:39:09.908386+00:00", "unit_id": "dual_d00_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:39:47.142213+00:00", "unit_id": "dual_d00_f1_c2", "fit_seconds": 36.81551101244986}
+{"event": "unit_start", "time": "2026-09-07T00:39:47.271567+00:00", "unit_id": "dual_d00_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:40:24.578296+00:00", "unit_id": "dual_d00_f1_c3", "fit_seconds": 36.88953724689782}
+{"event": "batch_done", "time": "2026-09-07T00:40:24.718231+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T00:44:58.765340+00:00", "unit_ids": ["dual_d00_f2_c0", "dual_d00_f2_c1", "dual_d00_f2_c2", "dual_d00_f2_c3", "dual_d00_f3_c0", "dual_d00_f3_c1", "dual_d00_f3_c2", "dual_d00_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T00:44:58.766496+00:00", "unit_id": "dual_d00_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:45:32.153672+00:00", "unit_id": "dual_d00_f2_c0", "fit_seconds": 33.23771744593978}
+{"event": "unit_start", "time": "2026-09-07T00:45:32.354286+00:00", "unit_id": "dual_d00_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:46:01.880371+00:00", "unit_id": "dual_d00_f2_c1", "fit_seconds": 29.38217929005623}
+{"event": "unit_start", "time": "2026-09-07T00:46:02.032089+00:00", "unit_id": "dual_d00_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:46:36.927219+00:00", "unit_id": "dual_d00_f2_c2", "fit_seconds": 34.483684331178665}
+{"event": "unit_start", "time": "2026-09-07T00:46:37.073866+00:00", "unit_id": "dual_d00_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:47:11.865657+00:00", "unit_id": "dual_d00_f2_c3", "fit_seconds": 34.37210814282298}
+{"event": "unit_start", "time": "2026-09-07T00:47:12.027332+00:00", "unit_id": "dual_d00_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:47:46.269632+00:00", "unit_id": "dual_d00_f3_c0", "fit_seconds": 33.96542722918093}
+{"event": "unit_start", "time": "2026-09-07T00:47:46.436292+00:00", "unit_id": "dual_d00_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:48:22.918989+00:00", "unit_id": "dual_d00_f3_c1", "fit_seconds": 36.06925282627344}
+{"event": "unit_start", "time": "2026-09-07T00:48:23.063729+00:00", "unit_id": "dual_d00_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:48:59.601325+00:00", "unit_id": "dual_d00_f3_c2", "fit_seconds": 36.11385051719844}
+{"event": "unit_start", "time": "2026-09-07T00:48:59.737442+00:00", "unit_id": "dual_d00_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:49:36.148905+00:00", "unit_id": "dual_d00_f3_c3", "fit_seconds": 35.99933994188905}
+{"event": "batch_done", "time": "2026-09-07T00:49:36.285462+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T00:49:55.332172+00:00", "unit_ids": ["dual_d00_f4_c0", "dual_d00_f4_c1", "dual_d00_f4_c2", "dual_d00_f4_c3", "dual_d01_f0_c0", "dual_d01_f0_c1", "dual_d01_f0_c2", "dual_d01_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T00:49:55.333244+00:00", "unit_id": "dual_d00_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:50:34.091916+00:00", "unit_id": "dual_d00_f4_c0", "fit_seconds": 38.4764414485544}
+{"event": "unit_start", "time": "2026-09-07T00:50:34.275343+00:00", "unit_id": "dual_d00_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:51:09.604318+00:00", "unit_id": "dual_d00_f4_c1", "fit_seconds": 35.05209465511143}
+{"event": "unit_start", "time": "2026-09-07T00:51:09.732615+00:00", "unit_id": "dual_d00_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:51:48.432122+00:00", "unit_id": "dual_d00_f4_c2", "fit_seconds": 38.28516561537981}
+{"event": "unit_start", "time": "2026-09-07T00:51:48.653951+00:00", "unit_id": "dual_d00_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:52:27.172491+00:00", "unit_id": "dual_d00_f4_c3", "fit_seconds": 38.106126146391034}
+{"event": "unit_start", "time": "2026-09-07T00:52:27.363636+00:00", "unit_id": "dual_d01_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:53:01.827383+00:00", "unit_id": "dual_d01_f0_c0", "fit_seconds": 34.18372629955411}
+{"event": "unit_start", "time": "2026-09-07T00:53:01.961604+00:00", "unit_id": "dual_d01_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:53:39.066408+00:00", "unit_id": "dual_d01_f0_c1", "fit_seconds": 36.69099794887006}
+{"event": "unit_start", "time": "2026-09-07T00:53:39.211676+00:00", "unit_id": "dual_d01_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:54:13.668294+00:00", "unit_id": "dual_d01_f0_c2", "fit_seconds": 34.17779155448079}
+{"event": "unit_start", "time": "2026-09-07T00:54:13.805735+00:00", "unit_id": "dual_d01_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:54:47.665953+00:00", "unit_id": "dual_d01_f0_c3", "fit_seconds": 33.58276606723666}
+{"event": "batch_done", "time": "2026-09-07T00:54:47.803564+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T00:55:33.616053+00:00", "unit_ids": ["dual_d01_f1_c0", "dual_d01_f1_c1", "dual_d01_f1_c2", "dual_d01_f1_c3", "dual_d01_f2_c0", "dual_d01_f2_c1", "dual_d01_f2_c2", "dual_d01_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T00:55:33.616857+00:00", "unit_id": "dual_d01_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:56:12.494740+00:00", "unit_id": "dual_d01_f1_c0", "fit_seconds": 38.59922990202904}
+{"event": "unit_start", "time": "2026-09-07T00:56:12.667474+00:00", "unit_id": "dual_d01_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:56:50.562103+00:00", "unit_id": "dual_d01_f1_c1", "fit_seconds": 37.48080666363239}
+{"event": "unit_start", "time": "2026-09-07T00:56:50.695883+00:00", "unit_id": "dual_d01_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:57:24.702496+00:00", "unit_id": "dual_d01_f1_c2", "fit_seconds": 33.7283541969955}
+{"event": "unit_start", "time": "2026-09-07T00:57:24.847938+00:00", "unit_id": "dual_d01_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:58:02.820188+00:00", "unit_id": "dual_d01_f1_c3", "fit_seconds": 37.559282671660185}
+{"event": "unit_start", "time": "2026-09-07T00:58:02.988406+00:00", "unit_id": "dual_d01_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:58:38.062434+00:00", "unit_id": "dual_d01_f2_c0", "fit_seconds": 34.79472574591637}
+{"event": "unit_start", "time": "2026-09-07T00:58:38.192545+00:00", "unit_id": "dual_d01_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:59:13.378300+00:00", "unit_id": "dual_d01_f2_c1", "fit_seconds": 34.8997369594872}
+{"event": "unit_start", "time": "2026-09-07T00:59:13.510866+00:00", "unit_id": "dual_d01_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:59:51.924546+00:00", "unit_id": "dual_d01_f2_c2", "fit_seconds": 38.000602131709456}
+{"event": "unit_start", "time": "2026-09-07T00:59:52.059210+00:00", "unit_id": "dual_d01_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:00:26.428216+00:00", "unit_id": "dual_d01_f2_c3", "fit_seconds": 34.09312989190221}
+{"event": "batch_done", "time": "2026-09-07T01:00:26.566404+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:01:11.433132+00:00", "unit_ids": ["dual_d01_f3_c0", "dual_d01_f3_c1", "dual_d01_f3_c2", "dual_d01_f3_c3", "dual_d01_f4_c0", "dual_d01_f4_c1", "dual_d01_f4_c2", "dual_d01_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:01:11.434036+00:00", "unit_id": "dual_d01_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:01:51.368469+00:00", "unit_id": "dual_d01_f3_c0", "fit_seconds": 39.51878270879388}
+{"event": "unit_start", "time": "2026-09-07T01:01:51.573323+00:00", "unit_id": "dual_d01_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:02:25.712099+00:00", "unit_id": "dual_d01_f3_c1", "fit_seconds": 33.85983633249998}
+{"event": "unit_start", "time": "2026-09-07T01:02:25.864020+00:00", "unit_id": "dual_d01_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:02:59.409101+00:00", "unit_id": "dual_d01_f3_c2", "fit_seconds": 33.26233832165599}
+{"event": "unit_start", "time": "2026-09-07T01:02:59.570380+00:00", "unit_id": "dual_d01_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:03:33.017350+00:00", "unit_id": "dual_d01_f3_c3", "fit_seconds": 33.16789740137756}
+{"event": "unit_start", "time": "2026-09-07T01:03:33.148678+00:00", "unit_id": "dual_d01_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:04:09.256537+00:00", "unit_id": "dual_d01_f4_c0", "fit_seconds": 35.69461692497134}
+{"event": "unit_start", "time": "2026-09-07T01:04:09.404439+00:00", "unit_id": "dual_d01_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:04:45.007238+00:00", "unit_id": "dual_d01_f4_c1", "fit_seconds": 35.188328962773085}
+{"event": "unit_start", "time": "2026-09-07T01:04:45.146549+00:00", "unit_id": "dual_d01_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:05:17.552983+00:00", "unit_id": "dual_d01_f4_c2", "fit_seconds": 32.126999873667955}
+{"event": "unit_start", "time": "2026-09-07T01:05:17.718060+00:00", "unit_id": "dual_d01_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:05:50.195540+00:00", "unit_id": "dual_d01_f4_c3", "fit_seconds": 32.201568422839046}
+{"event": "batch_done", "time": "2026-09-07T01:05:50.324568+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:06:08.906999+00:00", "unit_ids": ["dual_d02_f0_c0", "dual_d02_f0_c1", "dual_d02_f0_c2", "dual_d02_f0_c3", "dual_d02_f1_c0", "dual_d02_f1_c1", "dual_d02_f1_c2", "dual_d02_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:06:08.907929+00:00", "unit_id": "dual_d02_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:06:44.758061+00:00", "unit_id": "dual_d02_f0_c0", "fit_seconds": 35.57267645187676}
+{"event": "unit_start", "time": "2026-09-07T01:06:44.928973+00:00", "unit_id": "dual_d02_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:07:17.258596+00:00", "unit_id": "dual_d02_f0_c1", "fit_seconds": 32.04331002756953}
+{"event": "unit_start", "time": "2026-09-07T01:07:17.435281+00:00", "unit_id": "dual_d02_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:07:49.771901+00:00", "unit_id": "dual_d02_f0_c2", "fit_seconds": 32.05926552042365}
+{"event": "unit_start", "time": "2026-09-07T01:07:49.938009+00:00", "unit_id": "dual_d02_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:08:21.347053+00:00", "unit_id": "dual_d02_f0_c3", "fit_seconds": 31.132670683786273}
+{"event": "unit_start", "time": "2026-09-07T01:08:21.505435+00:00", "unit_id": "dual_d02_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:08:51.770242+00:00", "unit_id": "dual_d02_f1_c0", "fit_seconds": 30.120201390236616}
+{"event": "unit_start", "time": "2026-09-07T01:08:51.901747+00:00", "unit_id": "dual_d02_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:09:22.423888+00:00", "unit_id": "dual_d02_f1_c1", "fit_seconds": 30.37517960742116}
+{"event": "unit_start", "time": "2026-09-07T01:09:22.576929+00:00", "unit_id": "dual_d02_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:09:55.603324+00:00", "unit_id": "dual_d02_f1_c2", "fit_seconds": 32.73375165835023}
+{"event": "unit_start", "time": "2026-09-07T01:09:55.775096+00:00", "unit_id": "dual_d02_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:10:28.475084+00:00", "unit_id": "dual_d02_f1_c3", "fit_seconds": 32.42289944551885}
+{"event": "batch_done", "time": "2026-09-07T01:10:28.620390+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:11:05.166608+00:00", "unit_ids": ["dual_d02_f2_c0", "dual_d02_f2_c1", "dual_d02_f2_c2", "dual_d02_f2_c3", "dual_d02_f3_c0", "dual_d02_f3_c1", "dual_d02_f3_c2", "dual_d02_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:11:05.167964+00:00", "unit_id": "dual_d02_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:11:42.234081+00:00", "unit_id": "dual_d02_f2_c0", "fit_seconds": 36.78545815311372}
+{"event": "unit_start", "time": "2026-09-07T01:11:42.392313+00:00", "unit_id": "dual_d02_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:12:16.186498+00:00", "unit_id": "dual_d02_f2_c1", "fit_seconds": 33.51735575310886}
+{"event": "unit_start", "time": "2026-09-07T01:12:16.343502+00:00", "unit_id": "dual_d02_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:12:52.934783+00:00", "unit_id": "dual_d02_f2_c2", "fit_seconds": 36.18143045902252}
+{"event": "unit_start", "time": "2026-09-07T01:12:53.071443+00:00", "unit_id": "dual_d02_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:13:29.719278+00:00", "unit_id": "dual_d02_f2_c3", "fit_seconds": 36.23747342824936}
+{"event": "unit_start", "time": "2026-09-07T01:13:29.912558+00:00", "unit_id": "dual_d02_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:14:00.570983+00:00", "unit_id": "dual_d02_f3_c0", "fit_seconds": 30.507456550374627}
+{"event": "unit_start", "time": "2026-09-07T01:14:00.712272+00:00", "unit_id": "dual_d02_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:14:30.037152+00:00", "unit_id": "dual_d02_f3_c1", "fit_seconds": 29.1821211874485}
+{"event": "unit_start", "time": "2026-09-07T01:14:30.168731+00:00", "unit_id": "dual_d02_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:15:05.573509+00:00", "unit_id": "dual_d02_f3_c2", "fit_seconds": 34.99281903915107}
+{"event": "unit_start", "time": "2026-09-07T01:15:05.738991+00:00", "unit_id": "dual_d02_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:15:40.666751+00:00", "unit_id": "dual_d02_f3_c3", "fit_seconds": 34.51602457650006}
+{"event": "batch_done", "time": "2026-09-07T01:15:40.806802+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:16:01.900161+00:00", "unit_ids": ["dual_d02_f4_c0", "dual_d02_f4_c1", "dual_d02_f4_c2", "dual_d02_f4_c3", "dual_d03_f0_c0", "dual_d03_f0_c1", "dual_d03_f0_c2", "dual_d03_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:16:01.901189+00:00", "unit_id": "dual_d02_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:16:37.876492+00:00", "unit_id": "dual_d02_f4_c0", "fit_seconds": 35.69679996185005}
+{"event": "unit_start", "time": "2026-09-07T01:16:38.030734+00:00", "unit_id": "dual_d02_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:17:10.685736+00:00", "unit_id": "dual_d02_f4_c1", "fit_seconds": 32.37876815535128}
+{"event": "unit_start", "time": "2026-09-07T01:17:10.817257+00:00", "unit_id": "dual_d02_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:17:42.554392+00:00", "unit_id": "dual_d02_f4_c2", "fit_seconds": 31.46055844798684}
+{"event": "unit_start", "time": "2026-09-07T01:17:42.683892+00:00", "unit_id": "dual_d02_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:18:14.704223+00:00", "unit_id": "dual_d02_f4_c3", "fit_seconds": 31.7373452950269}
+{"event": "unit_start", "time": "2026-09-07T01:18:14.843497+00:00", "unit_id": "dual_d03_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:18:49.294261+00:00", "unit_id": "dual_d03_f0_c0", "fit_seconds": 34.1738083101809}
+{"event": "unit_start", "time": "2026-09-07T01:18:49.426809+00:00", "unit_id": "dual_d03_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:19:25.948964+00:00", "unit_id": "dual_d03_f0_c1", "fit_seconds": 36.110257068648934}
+{"event": "unit_start", "time": "2026-09-07T01:19:26.078824+00:00", "unit_id": "dual_d03_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:19:59.369077+00:00", "unit_id": "dual_d03_f0_c2", "fit_seconds": 33.01449645124376}
+{"event": "unit_start", "time": "2026-09-07T01:19:59.536849+00:00", "unit_id": "dual_d03_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:20:36.178904+00:00", "unit_id": "dual_d03_f0_c3", "fit_seconds": 36.23128412477672}
+{"event": "batch_done", "time": "2026-09-07T01:20:36.308568+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:20:58.011270+00:00", "unit_ids": ["dual_d03_f1_c0", "dual_d03_f1_c1", "dual_d03_f1_c2", "dual_d03_f1_c3", "dual_d03_f2_c0", "dual_d03_f2_c1", "dual_d03_f2_c2", "dual_d03_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:20:58.012209+00:00", "unit_id": "dual_d03_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:21:32.878832+00:00", "unit_id": "dual_d03_f1_c0", "fit_seconds": 34.72060810402036}
+{"event": "unit_start", "time": "2026-09-07T01:21:33.051320+00:00", "unit_id": "dual_d03_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:22:06.010609+00:00", "unit_id": "dual_d03_f1_c1", "fit_seconds": 32.683191852644086}
+{"event": "unit_start", "time": "2026-09-07T01:22:06.182688+00:00", "unit_id": "dual_d03_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:22:37.919736+00:00", "unit_id": "dual_d03_f1_c2", "fit_seconds": 31.461804565042257}
+{"event": "unit_start", "time": "2026-09-07T01:22:38.049247+00:00", "unit_id": "dual_d03_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:23:11.252172+00:00", "unit_id": "dual_d03_f1_c3", "fit_seconds": 32.92518936097622}
+{"event": "unit_start", "time": "2026-09-07T01:23:11.412512+00:00", "unit_id": "dual_d03_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:23:47.644785+00:00", "unit_id": "dual_d03_f2_c0", "fit_seconds": 35.82156230136752}
+{"event": "unit_start", "time": "2026-09-07T01:23:47.784908+00:00", "unit_id": "dual_d03_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:24:23.502221+00:00", "unit_id": "dual_d03_f2_c1", "fit_seconds": 35.30895836651325}
+{"event": "unit_start", "time": "2026-09-07T01:24:23.644978+00:00", "unit_id": "dual_d03_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:24:56.377650+00:00", "unit_id": "dual_d03_f2_c2", "fit_seconds": 32.45174225792289}
+{"event": "unit_start", "time": "2026-09-07T01:24:56.540848+00:00", "unit_id": "dual_d03_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:25:32.773765+00:00", "unit_id": "dual_d03_f2_c3", "fit_seconds": 35.82186681777239}
+{"event": "batch_done", "time": "2026-09-07T01:25:32.905037+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:25:55.308099+00:00", "unit_ids": ["dual_d03_f3_c0", "dual_d03_f3_c1", "dual_d03_f3_c2", "dual_d03_f3_c3", "dual_d03_f4_c0", "dual_d03_f4_c1", "dual_d03_f4_c2", "dual_d03_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:25:55.322838+00:00", "unit_id": "dual_d03_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:26:30.862812+00:00", "unit_id": "dual_d03_f3_c0", "fit_seconds": 35.39372327178717}
+{"event": "unit_start", "time": "2026-09-07T01:26:31.054169+00:00", "unit_id": "dual_d03_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:27:04.576225+00:00", "unit_id": "dual_d03_f3_c1", "fit_seconds": 33.240474835038185}
+{"event": "unit_start", "time": "2026-09-07T01:27:04.741343+00:00", "unit_id": "dual_d03_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:27:38.628960+00:00", "unit_id": "dual_d03_f3_c2", "fit_seconds": 33.592511020600796}
+{"event": "unit_start", "time": "2026-09-07T01:27:38.782408+00:00", "unit_id": "dual_d03_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:28:13.194251+00:00", "unit_id": "dual_d03_f3_c3", "fit_seconds": 34.13155489601195}
+{"event": "unit_start", "time": "2026-09-07T01:28:13.379933+00:00", "unit_id": "dual_d03_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:28:48.606357+00:00", "unit_id": "dual_d03_f4_c0", "fit_seconds": 34.94955746456981}
+{"event": "unit_start", "time": "2026-09-07T01:28:48.740894+00:00", "unit_id": "dual_d03_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:29:22.476341+00:00", "unit_id": "dual_d03_f4_c1", "fit_seconds": 33.45934631489217}
+{"event": "unit_start", "time": "2026-09-07T01:29:22.624933+00:00", "unit_id": "dual_d03_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:29:56.683756+00:00", "unit_id": "dual_d03_f4_c2", "fit_seconds": 33.77920660749078}
+{"event": "unit_start", "time": "2026-09-07T01:29:56.827361+00:00", "unit_id": "dual_d03_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:30:30.064190+00:00", "unit_id": "dual_d03_f4_c3", "fit_seconds": 32.957183226943016}
+{"event": "batch_done", "time": "2026-09-07T01:30:30.199679+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:30:52.067815+00:00", "unit_ids": ["dual_d04_f0_c0", "dual_d04_f0_c1", "dual_d04_f0_c2", "dual_d04_f0_c3", "dual_d04_f1_c0", "dual_d04_f1_c1", "dual_d04_f1_c2", "dual_d04_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:30:52.068737+00:00", "unit_id": "dual_d04_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:31:32.434129+00:00", "unit_id": "dual_d04_f0_c0", "fit_seconds": 40.0860002245754}
+{"event": "unit_start", "time": "2026-09-07T01:31:32.613843+00:00", "unit_id": "dual_d04_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:32:08.916988+00:00", "unit_id": "dual_d04_f0_c1", "fit_seconds": 36.026370419189334}
+{"event": "unit_start", "time": "2026-09-07T01:32:09.054749+00:00", "unit_id": "dual_d04_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:32:45.332379+00:00", "unit_id": "dual_d04_f0_c2", "fit_seconds": 35.99770643375814}
+{"event": "unit_start", "time": "2026-09-07T01:32:45.470229+00:00", "unit_id": "dual_d04_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:33:33.868333+00:00", "unit_id": "dual_d04_f0_c3", "fit_seconds": 48.104850145056844}
+{"event": "unit_start", "time": "2026-09-07T01:33:34.006980+00:00", "unit_id": "dual_d04_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:34:07.903735+00:00", "unit_id": "dual_d04_f1_c0", "fit_seconds": 33.619585851207376}
+{"event": "unit_start", "time": "2026-09-07T01:34:08.041061+00:00", "unit_id": "dual_d04_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:34:41.591971+00:00", "unit_id": "dual_d04_f1_c1", "fit_seconds": 33.257205091416836}
+{"event": "unit_start", "time": "2026-09-07T01:34:41.726444+00:00", "unit_id": "dual_d04_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:35:18.008039+00:00", "unit_id": "dual_d04_f1_c2", "fit_seconds": 35.867854760959744}
+{"event": "unit_start", "time": "2026-09-07T01:35:18.162238+00:00", "unit_id": "dual_d04_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:35:54.179866+00:00", "unit_id": "dual_d04_f1_c3", "fit_seconds": 35.60631452687085}
+{"event": "batch_done", "time": "2026-09-07T01:35:54.314418+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:36:30.219607+00:00", "unit_ids": ["dual_d04_f2_c0", "dual_d04_f2_c1", "dual_d04_f2_c2", "dual_d04_f2_c3", "dual_d04_f3_c0", "dual_d04_f3_c1", "dual_d04_f3_c2", "dual_d04_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:36:30.220869+00:00", "unit_id": "dual_d04_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:37:03.910510+00:00", "unit_id": "dual_d04_f2_c0", "fit_seconds": 33.544454377144575}
+{"event": "unit_start", "time": "2026-09-07T01:37:04.059600+00:00", "unit_id": "dual_d04_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:37:34.407646+00:00", "unit_id": "dual_d04_f2_c1", "fit_seconds": 30.20265758410096}
+{"event": "unit_start", "time": "2026-09-07T01:37:34.539920+00:00", "unit_id": "dual_d04_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:38:09.866417+00:00", "unit_id": "dual_d04_f2_c2", "fit_seconds": 34.91371704638004}
+{"event": "unit_start", "time": "2026-09-07T01:38:10.011188+00:00", "unit_id": "dual_d04_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:38:45.817262+00:00", "unit_id": "dual_d04_f2_c3", "fit_seconds": 35.389376325532794}
+{"event": "unit_start", "time": "2026-09-07T01:38:45.987157+00:00", "unit_id": "dual_d04_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:39:18.465962+00:00", "unit_id": "dual_d04_f3_c0", "fit_seconds": 32.18512428551912}
+{"event": "unit_start", "time": "2026-09-07T01:39:18.608208+00:00", "unit_id": "dual_d04_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:39:53.203337+00:00", "unit_id": "dual_d04_f3_c1", "fit_seconds": 34.18432774953544}
+{"event": "unit_start", "time": "2026-09-07T01:39:53.350939+00:00", "unit_id": "dual_d04_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:40:24.867044+00:00", "unit_id": "dual_d04_f3_c2", "fit_seconds": 31.240159248933196}
+{"event": "unit_start", "time": "2026-09-07T01:40:25.000054+00:00", "unit_id": "dual_d04_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:40:56.544033+00:00", "unit_id": "dual_d04_f3_c3", "fit_seconds": 31.267176927998662}
+{"event": "batch_done", "time": "2026-09-07T01:40:56.673020+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:41:28.660717+00:00", "unit_ids": ["dual_d04_f4_c0", "dual_d04_f4_c1", "dual_d04_f4_c2", "dual_d04_f4_c3", "dual_d05_f0_c0", "dual_d05_f0_c1", "dual_d05_f0_c2", "dual_d05_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:41:28.661565+00:00", "unit_id": "dual_d04_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:42:02.896374+00:00", "unit_id": "dual_d04_f4_c0", "fit_seconds": 34.09174540825188}
+{"event": "unit_start", "time": "2026-09-07T01:42:03.055389+00:00", "unit_id": "dual_d04_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:42:36.545228+00:00", "unit_id": "dual_d04_f4_c1", "fit_seconds": 33.21280872821808}
+{"event": "unit_start", "time": "2026-09-07T01:42:36.706736+00:00", "unit_id": "dual_d04_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:43:09.412966+00:00", "unit_id": "dual_d04_f4_c2", "fit_seconds": 32.43054741062224}
+{"event": "unit_start", "time": "2026-09-07T01:43:09.546202+00:00", "unit_id": "dual_d04_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:43:45.558779+00:00", "unit_id": "dual_d04_f4_c3", "fit_seconds": 35.60143853724003}
+{"event": "unit_start", "time": "2026-09-07T01:43:45.706332+00:00", "unit_id": "dual_d05_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:44:21.091118+00:00", "unit_id": "dual_d05_f0_c0", "fit_seconds": 34.973343431949615}
+{"event": "unit_start", "time": "2026-09-07T01:44:21.223491+00:00", "unit_id": "dual_d05_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:44:53.317073+00:00", "unit_id": "dual_d05_f0_c1", "fit_seconds": 31.815650936216116}
+{"event": "unit_start", "time": "2026-09-07T01:44:53.450331+00:00", "unit_id": "dual_d05_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:45:28.289014+00:00", "unit_id": "dual_d05_f0_c2", "fit_seconds": 34.430385917425156}
+{"event": "unit_start", "time": "2026-09-07T01:45:28.449021+00:00", "unit_id": "dual_d05_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:46:00.472194+00:00", "unit_id": "dual_d05_f0_c3", "fit_seconds": 31.745953269302845}
+{"event": "batch_done", "time": "2026-09-07T01:46:00.601352+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:46:25.635627+00:00", "unit_ids": ["dual_d05_f1_c0", "dual_d05_f1_c1", "dual_d05_f1_c2", "dual_d05_f1_c3", "dual_d05_f2_c0", "dual_d05_f2_c1", "dual_d05_f2_c2", "dual_d05_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:46:25.636577+00:00", "unit_id": "dual_d05_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:47:03.118804+00:00", "unit_id": "dual_d05_f1_c0", "fit_seconds": 37.18785339780152}
+{"event": "unit_start", "time": "2026-09-07T01:47:03.295670+00:00", "unit_id": "dual_d05_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:47:36.823742+00:00", "unit_id": "dual_d05_f1_c1", "fit_seconds": 33.23922520875931}
+{"event": "unit_start", "time": "2026-09-07T01:47:36.956375+00:00", "unit_id": "dual_d05_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:48:13.177344+00:00", "unit_id": "dual_d05_f1_c2", "fit_seconds": 35.809933211654425}
+{"event": "unit_start", "time": "2026-09-07T01:48:13.333744+00:00", "unit_id": "dual_d05_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:48:46.552299+00:00", "unit_id": "dual_d05_f1_c3", "fit_seconds": 32.94368584640324}
+{"event": "unit_start", "time": "2026-09-07T01:48:46.682052+00:00", "unit_id": "dual_d05_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:49:20.143899+00:00", "unit_id": "dual_d05_f2_c0", "fit_seconds": 33.184689516201615}
+{"event": "unit_start", "time": "2026-09-07T01:49:20.277510+00:00", "unit_id": "dual_d05_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:49:53.861367+00:00", "unit_id": "dual_d05_f2_c1", "fit_seconds": 33.30646531842649}
+{"event": "unit_start", "time": "2026-09-07T01:49:53.995710+00:00", "unit_id": "dual_d05_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:50:30.862631+00:00", "unit_id": "dual_d05_f2_c2", "fit_seconds": 36.45640320889652}
+{"event": "unit_start", "time": "2026-09-07T01:50:30.990947+00:00", "unit_id": "dual_d05_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:51:07.621007+00:00", "unit_id": "dual_d05_f2_c3", "fit_seconds": 36.20573015511036}
+{"event": "batch_done", "time": "2026-09-07T01:51:07.748183+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:51:22.390784+00:00", "unit_ids": ["dual_d05_f3_c0", "dual_d05_f3_c1", "dual_d05_f3_c2", "dual_d05_f3_c3", "dual_d05_f4_c0", "dual_d05_f4_c1", "dual_d05_f4_c2", "dual_d05_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:51:22.391699+00:00", "unit_id": "dual_d05_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:51:57.678640+00:00", "unit_id": "dual_d05_f3_c0", "fit_seconds": 34.9969235714525}
+{"event": "unit_start", "time": "2026-09-07T01:51:57.810078+00:00", "unit_id": "dual_d05_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:52:27.507093+00:00", "unit_id": "dual_d05_f3_c1", "fit_seconds": 29.372605841606855}
+{"event": "unit_start", "time": "2026-09-07T01:52:27.667022+00:00", "unit_id": "dual_d05_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:52:59.089324+00:00", "unit_id": "dual_d05_f3_c2", "fit_seconds": 31.146167991682887}
+{"event": "unit_start", "time": "2026-09-07T01:52:59.227489+00:00", "unit_id": "dual_d05_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:53:31.034723+00:00", "unit_id": "dual_d05_f3_c3", "fit_seconds": 31.523386131972075}
+{"event": "unit_start", "time": "2026-09-07T01:53:31.166152+00:00", "unit_id": "dual_d05_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:54:04.199821+00:00", "unit_id": "dual_d05_f4_c0", "fit_seconds": 32.75570830516517}
+{"event": "unit_start", "time": "2026-09-07T01:54:04.345947+00:00", "unit_id": "dual_d05_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:54:35.729426+00:00", "unit_id": "dual_d05_f4_c1", "fit_seconds": 31.108659856021404}
+{"event": "unit_start", "time": "2026-09-07T01:54:35.857816+00:00", "unit_id": "dual_d05_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:55:10.696850+00:00", "unit_id": "dual_d05_f4_c2", "fit_seconds": 34.42871141433716}
+{"event": "unit_start", "time": "2026-09-07T01:55:10.852573+00:00", "unit_id": "dual_d05_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:55:45.289247+00:00", "unit_id": "dual_d05_f4_c3", "fit_seconds": 34.02857645228505}
+{"event": "batch_done", "time": "2026-09-07T01:55:45.419095+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T01:56:19.331173+00:00", "unit_ids": ["dual_d06_f0_c0", "dual_d06_f0_c1", "dual_d06_f0_c2", "dual_d06_f0_c3", "dual_d06_f1_c0", "dual_d06_f1_c1", "dual_d06_f1_c2", "dual_d06_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T01:56:19.332150+00:00", "unit_id": "dual_d06_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:56:56.677058+00:00", "unit_id": "dual_d06_f0_c0", "fit_seconds": 37.065645242109895}
+{"event": "unit_start", "time": "2026-09-07T01:56:56.838815+00:00", "unit_id": "dual_d06_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:57:32.830212+00:00", "unit_id": "dual_d06_f0_c1", "fit_seconds": 35.5747305508703}
+{"event": "unit_start", "time": "2026-09-07T01:57:32.965876+00:00", "unit_id": "dual_d06_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T01:58:05.854320+00:00", "unit_id": "dual_d06_f0_c2", "fit_seconds": 32.61261408403516}
+{"event": "unit_start", "time": "2026-09-07T01:58:05.997732+00:00", "unit_id": "dual_d06_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T01:58:39.581416+00:00", "unit_id": "dual_d06_f0_c3", "fit_seconds": 33.2953488714993}
+{"event": "unit_start", "time": "2026-09-07T01:58:39.712287+00:00", "unit_id": "dual_d06_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T01:59:14.324396+00:00", "unit_id": "dual_d06_f1_c0", "fit_seconds": 34.33446441963315}
+{"event": "unit_start", "time": "2026-09-07T01:59:14.456513+00:00", "unit_id": "dual_d06_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T01:59:52.577560+00:00", "unit_id": "dual_d06_f1_c1", "fit_seconds": 37.70725955069065}
+{"event": "unit_start", "time": "2026-09-07T01:59:52.730400+00:00", "unit_id": "dual_d06_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:00:29.832423+00:00", "unit_id": "dual_d06_f1_c2", "fit_seconds": 36.68878939375281}
+{"event": "unit_start", "time": "2026-09-07T02:00:30.007390+00:00", "unit_id": "dual_d06_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:01:04.035859+00:00", "unit_id": "dual_d06_f1_c3", "fit_seconds": 33.751134207472205}
+{"event": "batch_done", "time": "2026-09-07T02:01:04.170298+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:01:16.325340+00:00", "unit_ids": ["dual_d06_f2_c0", "dual_d06_f2_c1", "dual_d06_f2_c2", "dual_d06_f2_c3", "dual_d06_f3_c0", "dual_d06_f3_c1", "dual_d06_f3_c2", "dual_d06_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:01:16.326165+00:00", "unit_id": "dual_d06_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:01:53.058978+00:00", "unit_id": "dual_d06_f2_c0", "fit_seconds": 36.45680365897715}
+{"event": "unit_start", "time": "2026-09-07T02:01:53.207557+00:00", "unit_id": "dual_d06_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:02:26.527153+00:00", "unit_id": "dual_d06_f2_c1", "fit_seconds": 33.04328182339668}
+{"event": "unit_start", "time": "2026-09-07T02:02:26.674000+00:00", "unit_id": "dual_d06_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:02:59.965661+00:00", "unit_id": "dual_d06_f2_c2", "fit_seconds": 33.01401247084141}
+{"event": "unit_start", "time": "2026-09-07T02:03:00.098133+00:00", "unit_id": "dual_d06_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:03:33.540156+00:00", "unit_id": "dual_d06_f2_c3", "fit_seconds": 33.16431784443557}
+{"event": "unit_start", "time": "2026-09-07T02:03:33.671383+00:00", "unit_id": "dual_d06_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:04:10.693463+00:00", "unit_id": "dual_d06_f3_c0", "fit_seconds": 36.611708384007215}
+{"event": "unit_start", "time": "2026-09-07T02:04:10.837753+00:00", "unit_id": "dual_d06_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:04:47.078364+00:00", "unit_id": "dual_d06_f3_c1", "fit_seconds": 35.83121747709811}
+{"event": "unit_start", "time": "2026-09-07T02:04:47.207024+00:00", "unit_id": "dual_d06_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:05:23.688117+00:00", "unit_id": "dual_d06_f3_c2", "fit_seconds": 36.07116661220789}
+{"event": "unit_start", "time": "2026-09-07T02:05:23.826693+00:00", "unit_id": "dual_d06_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:06:00.281906+00:00", "unit_id": "dual_d06_f3_c3", "fit_seconds": 36.046338172629476}
+{"event": "batch_done", "time": "2026-09-07T02:06:00.414351+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:06:13.664642+00:00", "unit_ids": ["dual_d06_f4_c0", "dual_d06_f4_c1", "dual_d06_f4_c2", "dual_d06_f4_c3", "dual_d07_f0_c0", "dual_d07_f0_c1", "dual_d07_f0_c2", "dual_d07_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:06:13.665511+00:00", "unit_id": "dual_d06_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:06:51.313120+00:00", "unit_id": "dual_d06_f4_c0", "fit_seconds": 37.367605766281486}
+{"event": "unit_start", "time": "2026-09-07T02:06:51.464085+00:00", "unit_id": "dual_d06_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:07:25.546457+00:00", "unit_id": "dual_d06_f4_c1", "fit_seconds": 33.80223906971514}
+{"event": "unit_start", "time": "2026-09-07T02:07:25.722365+00:00", "unit_id": "dual_d06_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:07:59.441148+00:00", "unit_id": "dual_d06_f4_c2", "fit_seconds": 33.439861189574}
+{"event": "unit_start", "time": "2026-09-07T02:07:59.602296+00:00", "unit_id": "dual_d06_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:08:33.175013+00:00", "unit_id": "dual_d06_f4_c3", "fit_seconds": 33.29606929421425}
+{"event": "unit_start", "time": "2026-09-07T02:08:33.306687+00:00", "unit_id": "dual_d07_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:09:07.445296+00:00", "unit_id": "dual_d07_f0_c0", "fit_seconds": 33.860756473615766}
+{"event": "unit_start", "time": "2026-09-07T02:09:07.583053+00:00", "unit_id": "dual_d07_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:09:44.008925+00:00", "unit_id": "dual_d07_f0_c1", "fit_seconds": 36.011618226766586}
+{"event": "unit_start", "time": "2026-09-07T02:09:44.141369+00:00", "unit_id": "dual_d07_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:10:20.891675+00:00", "unit_id": "dual_d07_f0_c2", "fit_seconds": 36.339448956772685}
+{"event": "unit_start", "time": "2026-09-07T02:10:21.050838+00:00", "unit_id": "dual_d07_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:10:56.936671+00:00", "unit_id": "dual_d07_f0_c3", "fit_seconds": 35.475534688681364}
+{"event": "batch_done", "time": "2026-09-07T02:10:57.080745+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:11:09.830585+00:00", "unit_ids": ["dual_d07_f1_c0", "dual_d07_f1_c1", "dual_d07_f1_c2", "dual_d07_f1_c3", "dual_d07_f2_c0", "dual_d07_f2_c1", "dual_d07_f2_c2", "dual_d07_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:11:09.831292+00:00", "unit_id": "dual_d07_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:11:48.597235+00:00", "unit_id": "dual_d07_f1_c0", "fit_seconds": 38.48784686811268}
+{"event": "unit_start", "time": "2026-09-07T02:11:48.752640+00:00", "unit_id": "dual_d07_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:12:24.398435+00:00", "unit_id": "dual_d07_f1_c1", "fit_seconds": 35.36919204518199}
+{"event": "unit_start", "time": "2026-09-07T02:12:24.545983+00:00", "unit_id": "dual_d07_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:13:03.510368+00:00", "unit_id": "dual_d07_f1_c2", "fit_seconds": 38.554103342816234}
+{"event": "unit_start", "time": "2026-09-07T02:13:03.665416+00:00", "unit_id": "dual_d07_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:13:39.231467+00:00", "unit_id": "dual_d07_f1_c3", "fit_seconds": 35.29057025536895}
+{"event": "unit_start", "time": "2026-09-07T02:13:39.367985+00:00", "unit_id": "dual_d07_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:14:13.121583+00:00", "unit_id": "dual_d07_f2_c0", "fit_seconds": 33.47713599167764}
+{"event": "unit_start", "time": "2026-09-07T02:14:13.263401+00:00", "unit_id": "dual_d07_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:14:46.432812+00:00", "unit_id": "dual_d07_f2_c1", "fit_seconds": 32.89272000081837}
+{"event": "unit_start", "time": "2026-09-07T02:14:46.563391+00:00", "unit_id": "dual_d07_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:15:19.487544+00:00", "unit_id": "dual_d07_f2_c2", "fit_seconds": 32.6491475533694}
+{"event": "unit_start", "time": "2026-09-07T02:15:19.631633+00:00", "unit_id": "dual_d07_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:15:55.874578+00:00", "unit_id": "dual_d07_f2_c3", "fit_seconds": 35.82756761647761}
+{"event": "batch_done", "time": "2026-09-07T02:15:56.031589+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:16:06.737867+00:00", "unit_ids": ["dual_d07_f3_c0", "dual_d07_f3_c1", "dual_d07_f3_c2", "dual_d07_f3_c3", "dual_d07_f4_c0", "dual_d07_f4_c1", "dual_d07_f4_c2", "dual_d07_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:16:06.738708+00:00", "unit_id": "dual_d07_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:16:46.011680+00:00", "unit_id": "dual_d07_f3_c0", "fit_seconds": 38.860818495973945}
+{"event": "unit_start", "time": "2026-09-07T02:16:46.190983+00:00", "unit_id": "dual_d07_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:17:20.436419+00:00", "unit_id": "dual_d07_f3_c1", "fit_seconds": 33.82925938256085}
+{"event": "unit_start", "time": "2026-09-07T02:17:20.612883+00:00", "unit_id": "dual_d07_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:17:55.804154+00:00", "unit_id": "dual_d07_f3_c2", "fit_seconds": 34.77993265725672}
+{"event": "unit_start", "time": "2026-09-07T02:17:55.963385+00:00", "unit_id": "dual_d07_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:18:29.274084+00:00", "unit_id": "dual_d07_f3_c3", "fit_seconds": 32.90015310049057}
+{"event": "unit_start", "time": "2026-09-07T02:18:29.443619+00:00", "unit_id": "dual_d07_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:19:06.222726+00:00", "unit_id": "dual_d07_f4_c0", "fit_seconds": 36.370784394443035}
+{"event": "unit_start", "time": "2026-09-07T02:19:06.356180+00:00", "unit_id": "dual_d07_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:19:39.357012+00:00", "unit_id": "dual_d07_f4_c1", "fit_seconds": 32.72489805333316}
+{"event": "unit_start", "time": "2026-09-07T02:19:39.492850+00:00", "unit_id": "dual_d07_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:20:12.990381+00:00", "unit_id": "dual_d07_f4_c2", "fit_seconds": 33.2203657720238}
+{"event": "unit_start", "time": "2026-09-07T02:20:13.130349+00:00", "unit_id": "dual_d07_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:20:46.446424+00:00", "unit_id": "dual_d07_f4_c3", "fit_seconds": 33.03579258918762}
+{"event": "batch_done", "time": "2026-09-07T02:20:46.590716+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:21:04.041469+00:00", "unit_ids": ["dual_d08_f0_c0", "dual_d08_f0_c1", "dual_d08_f0_c2", "dual_d08_f0_c3", "dual_d08_f1_c0", "dual_d08_f1_c1", "dual_d08_f1_c2", "dual_d08_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:21:04.042610+00:00", "unit_id": "dual_d08_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:21:42.141798+00:00", "unit_id": "dual_d08_f0_c0", "fit_seconds": 37.81610462628305}
+{"event": "unit_start", "time": "2026-09-07T02:21:42.282104+00:00", "unit_id": "dual_d08_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:22:19.289835+00:00", "unit_id": "dual_d08_f0_c1", "fit_seconds": 36.59392215684056}
+{"event": "unit_start", "time": "2026-09-07T02:22:19.482418+00:00", "unit_id": "dual_d08_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:22:53.198050+00:00", "unit_id": "dual_d08_f0_c2", "fit_seconds": 33.435835445299745}
+{"event": "unit_start", "time": "2026-09-07T02:22:53.382923+00:00", "unit_id": "dual_d08_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:23:27.509011+00:00", "unit_id": "dual_d08_f0_c3", "fit_seconds": 33.84769326634705}
+{"event": "unit_start", "time": "2026-09-07T02:23:27.707837+00:00", "unit_id": "dual_d08_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:23:58.453873+00:00", "unit_id": "dual_d08_f1_c0", "fit_seconds": 30.601050443947315}
+{"event": "unit_start", "time": "2026-09-07T02:23:58.628248+00:00", "unit_id": "dual_d08_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:24:30.629462+00:00", "unit_id": "dual_d08_f1_c1", "fit_seconds": 31.721607200801373}
+{"event": "unit_start", "time": "2026-09-07T02:24:30.773482+00:00", "unit_id": "dual_d08_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:25:05.351008+00:00", "unit_id": "dual_d08_f1_c2", "fit_seconds": 34.16371467523277}
+{"event": "unit_start", "time": "2026-09-07T02:25:05.485168+00:00", "unit_id": "dual_d08_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:25:37.288163+00:00", "unit_id": "dual_d08_f1_c3", "fit_seconds": 31.525442017242312}
+{"event": "batch_done", "time": "2026-09-07T02:25:37.420201+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:26:00.553512+00:00", "unit_ids": ["dual_d08_f2_c0", "dual_d08_f2_c1", "dual_d08_f2_c2", "dual_d08_f2_c3", "dual_d08_f3_c0", "dual_d08_f3_c1", "dual_d08_f3_c2", "dual_d08_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:26:00.554556+00:00", "unit_id": "dual_d08_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:26:40.528351+00:00", "unit_id": "dual_d08_f2_c0", "fit_seconds": 39.563224067911506}
+{"event": "unit_start", "time": "2026-09-07T02:26:40.685478+00:00", "unit_id": "dual_d08_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:27:16.907286+00:00", "unit_id": "dual_d08_f2_c1", "fit_seconds": 35.80872996710241}
+{"event": "unit_start", "time": "2026-09-07T02:27:17.042314+00:00", "unit_id": "dual_d08_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:27:53.210791+00:00", "unit_id": "dual_d08_f2_c2", "fit_seconds": 35.757465448230505}
+{"event": "unit_start", "time": "2026-09-07T02:27:53.341063+00:00", "unit_id": "dual_d08_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:28:29.052727+00:00", "unit_id": "dual_d08_f2_c3", "fit_seconds": 35.30159572325647}
+{"event": "unit_start", "time": "2026-09-07T02:28:29.181464+00:00", "unit_id": "dual_d08_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:29:07.659870+00:00", "unit_id": "dual_d08_f3_c0", "fit_seconds": 38.069243516772985}
+{"event": "unit_start", "time": "2026-09-07T02:29:07.795196+00:00", "unit_id": "dual_d08_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:29:42.627973+00:00", "unit_id": "dual_d08_f3_c1", "fit_seconds": 34.55544097349048}
+{"event": "unit_start", "time": "2026-09-07T02:29:42.771225+00:00", "unit_id": "dual_d08_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:30:16.900537+00:00", "unit_id": "dual_d08_f3_c2", "fit_seconds": 33.852447006851435}
+{"event": "unit_start", "time": "2026-09-07T02:30:17.030819+00:00", "unit_id": "dual_d08_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:30:50.894002+00:00", "unit_id": "dual_d08_f3_c3", "fit_seconds": 33.58701216802001}
+{"event": "batch_done", "time": "2026-09-07T02:30:51.023379+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:31:39.115319+00:00", "unit_ids": ["dual_d08_f4_c0", "dual_d08_f4_c1", "dual_d08_f4_c2", "dual_d08_f4_c3", "dual_d09_f0_c0", "dual_d09_f0_c1", "dual_d09_f0_c2", "dual_d09_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:31:39.118536+00:00", "unit_id": "dual_d08_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:32:15.130839+00:00", "unit_id": "dual_d08_f4_c0", "fit_seconds": 35.73019721545279}
+{"event": "unit_start", "time": "2026-09-07T02:32:15.293105+00:00", "unit_id": "dual_d08_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:32:47.493285+00:00", "unit_id": "dual_d08_f4_c1", "fit_seconds": 31.923382371664047}
+{"event": "unit_start", "time": "2026-09-07T02:32:47.625153+00:00", "unit_id": "dual_d08_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:33:22.489718+00:00", "unit_id": "dual_d08_f4_c2", "fit_seconds": 34.453895615413785}
+{"event": "unit_start", "time": "2026-09-07T02:33:22.640642+00:00", "unit_id": "dual_d08_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:33:57.858464+00:00", "unit_id": "dual_d08_f4_c3", "fit_seconds": 34.807897850871086}
+{"event": "unit_start", "time": "2026-09-07T02:33:58.005465+00:00", "unit_id": "dual_d09_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:34:36.100577+00:00", "unit_id": "dual_d09_f0_c0", "fit_seconds": 37.68458844535053}
+{"event": "unit_start", "time": "2026-09-07T02:34:36.230254+00:00", "unit_id": "dual_d09_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:35:10.478064+00:00", "unit_id": "dual_d09_f0_c1", "fit_seconds": 33.967247838154435}
+{"event": "unit_start", "time": "2026-09-07T02:35:10.668244+00:00", "unit_id": "dual_d09_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:35:47.989802+00:00", "unit_id": "dual_d09_f0_c2", "fit_seconds": 36.91004106961191}
+{"event": "unit_start", "time": "2026-09-07T02:35:48.140937+00:00", "unit_id": "dual_d09_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:36:25.498419+00:00", "unit_id": "dual_d09_f0_c3", "fit_seconds": 36.946128871291876}
+{"event": "batch_done", "time": "2026-09-07T02:36:25.646533+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:36:36.366604+00:00", "unit_ids": ["dual_d09_f1_c0", "dual_d09_f1_c1", "dual_d09_f1_c2", "dual_d09_f1_c3", "dual_d09_f2_c0", "dual_d09_f2_c1", "dual_d09_f2_c2", "dual_d09_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:36:36.367499+00:00", "unit_id": "dual_d09_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:37:13.805123+00:00", "unit_id": "dual_d09_f1_c0", "fit_seconds": 37.16059158183634}
+{"event": "unit_start", "time": "2026-09-07T02:37:13.952664+00:00", "unit_id": "dual_d09_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:37:47.992309+00:00", "unit_id": "dual_d09_f1_c1", "fit_seconds": 33.762573877349496}
+{"event": "unit_start", "time": "2026-09-07T02:37:48.129215+00:00", "unit_id": "dual_d09_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:38:20.487530+00:00", "unit_id": "dual_d09_f1_c2", "fit_seconds": 32.06217330135405}
+{"event": "unit_start", "time": "2026-09-07T02:38:20.641740+00:00", "unit_id": "dual_d09_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:38:54.235569+00:00", "unit_id": "dual_d09_f1_c3", "fit_seconds": 33.316263599321246}
+{"event": "unit_start", "time": "2026-09-07T02:38:54.365479+00:00", "unit_id": "dual_d09_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:39:28.784413+00:00", "unit_id": "dual_d09_f2_c0", "fit_seconds": 34.13936585560441}
+{"event": "unit_start", "time": "2026-09-07T02:39:28.931941+00:00", "unit_id": "dual_d09_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:40:00.887134+00:00", "unit_id": "dual_d09_f2_c1", "fit_seconds": 31.679014641791582}
+{"event": "unit_start", "time": "2026-09-07T02:40:01.018395+00:00", "unit_id": "dual_d09_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:40:37.498842+00:00", "unit_id": "dual_d09_f2_c2", "fit_seconds": 36.06108713708818}
+{"event": "unit_start", "time": "2026-09-07T02:40:37.629463+00:00", "unit_id": "dual_d09_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:41:11.633748+00:00", "unit_id": "dual_d09_f2_c3", "fit_seconds": 33.727912647649646}
+{"event": "batch_done", "time": "2026-09-07T02:41:11.764467+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:41:32.564167+00:00", "unit_ids": ["dual_d09_f3_c0", "dual_d09_f3_c1", "dual_d09_f3_c2", "dual_d09_f3_c3", "dual_d09_f4_c0", "dual_d09_f4_c1", "dual_d09_f4_c2", "dual_d09_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:41:32.565817+00:00", "unit_id": "dual_d09_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:42:09.291502+00:00", "unit_id": "dual_d09_f3_c0", "fit_seconds": 36.44897958636284}
+{"event": "unit_start", "time": "2026-09-07T02:42:09.440388+00:00", "unit_id": "dual_d09_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:42:42.970809+00:00", "unit_id": "dual_d09_f3_c1", "fit_seconds": 33.25290024280548}
+{"event": "unit_start", "time": "2026-09-07T02:42:43.117005+00:00", "unit_id": "dual_d09_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:43:16.005356+00:00", "unit_id": "dual_d09_f3_c2", "fit_seconds": 32.61047128401697}
+{"event": "unit_start", "time": "2026-09-07T02:43:16.140386+00:00", "unit_id": "dual_d09_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:43:48.155007+00:00", "unit_id": "dual_d09_f3_c3", "fit_seconds": 31.739552481099963}
+{"event": "unit_start", "time": "2026-09-07T02:43:48.298390+00:00", "unit_id": "dual_d09_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:44:23.748212+00:00", "unit_id": "dual_d09_f4_c0", "fit_seconds": 35.17404120787978}
+{"event": "unit_start", "time": "2026-09-07T02:44:23.892716+00:00", "unit_id": "dual_d09_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:45:01.227999+00:00", "unit_id": "dual_d09_f4_c1", "fit_seconds": 36.92582189105451}
+{"event": "unit_start", "time": "2026-09-07T02:45:01.359099+00:00", "unit_id": "dual_d09_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:45:35.837193+00:00", "unit_id": "dual_d09_f4_c2", "fit_seconds": 34.200433460995555}
+{"event": "unit_start", "time": "2026-09-07T02:45:35.973503+00:00", "unit_id": "dual_d09_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:46:10.526630+00:00", "unit_id": "dual_d09_f4_c3", "fit_seconds": 34.275216933339834}
+{"event": "batch_done", "time": "2026-09-07T02:46:10.661741+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:46:29.937170+00:00", "unit_ids": ["dual_d10_f0_c0", "dual_d10_f0_c1", "dual_d10_f0_c2", "dual_d10_f0_c3", "dual_d10_f1_c0", "dual_d10_f1_c1", "dual_d10_f1_c2", "dual_d10_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:46:29.950587+00:00", "unit_id": "dual_d10_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:47:04.358206+00:00", "unit_id": "dual_d10_f0_c0", "fit_seconds": 34.26343668811023}
+{"event": "unit_start", "time": "2026-09-07T02:47:04.486899+00:00", "unit_id": "dual_d10_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:47:37.513969+00:00", "unit_id": "dual_d10_f0_c1", "fit_seconds": 32.75127091258764}
+{"event": "unit_start", "time": "2026-09-07T02:47:37.642976+00:00", "unit_id": "dual_d10_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:48:14.475118+00:00", "unit_id": "dual_d10_f0_c2", "fit_seconds": 36.423350194469094}
+{"event": "unit_start", "time": "2026-09-07T02:48:14.605535+00:00", "unit_id": "dual_d10_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:48:46.812044+00:00", "unit_id": "dual_d10_f0_c3", "fit_seconds": 31.93157571181655}
+{"event": "unit_start", "time": "2026-09-07T02:48:46.942647+00:00", "unit_id": "dual_d10_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:49:21.783747+00:00", "unit_id": "dual_d10_f1_c0", "fit_seconds": 34.56542824022472}
+{"event": "unit_start", "time": "2026-09-07T02:49:21.941431+00:00", "unit_id": "dual_d10_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:49:56.974652+00:00", "unit_id": "dual_d10_f1_c1", "fit_seconds": 34.75693996064365}
+{"event": "unit_start", "time": "2026-09-07T02:49:57.103905+00:00", "unit_id": "dual_d10_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:50:32.045731+00:00", "unit_id": "dual_d10_f1_c2", "fit_seconds": 34.666490560397506}
+{"event": "unit_start", "time": "2026-09-07T02:50:32.187683+00:00", "unit_id": "dual_d10_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:51:07.300037+00:00", "unit_id": "dual_d10_f1_c3", "fit_seconds": 34.83654496446252}
+{"event": "batch_done", "time": "2026-09-07T02:51:07.429472+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:51:26.161673+00:00", "unit_ids": ["dual_d10_f2_c0", "dual_d10_f2_c1", "dual_d10_f2_c2", "dual_d10_f2_c3", "dual_d10_f3_c0", "dual_d10_f3_c1", "dual_d10_f3_c2", "dual_d10_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:51:26.163213+00:00", "unit_id": "dual_d10_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:52:02.303394+00:00", "unit_id": "dual_d10_f2_c0", "fit_seconds": 35.86171852424741}
+{"event": "unit_start", "time": "2026-09-07T02:52:02.436057+00:00", "unit_id": "dual_d10_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:52:34.986455+00:00", "unit_id": "dual_d10_f2_c1", "fit_seconds": 32.27335729636252}
+{"event": "unit_start", "time": "2026-09-07T02:52:35.118615+00:00", "unit_id": "dual_d10_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:53:10.231992+00:00", "unit_id": "dual_d10_f2_c2", "fit_seconds": 34.704630771651864}
+{"event": "unit_start", "time": "2026-09-07T02:53:10.362595+00:00", "unit_id": "dual_d10_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:53:42.813314+00:00", "unit_id": "dual_d10_f2_c3", "fit_seconds": 32.17503077723086}
+{"event": "unit_start", "time": "2026-09-07T02:53:42.941993+00:00", "unit_id": "dual_d10_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:54:18.674285+00:00", "unit_id": "dual_d10_f3_c0", "fit_seconds": 35.454879477620125}
+{"event": "unit_start", "time": "2026-09-07T02:54:18.823859+00:00", "unit_id": "dual_d10_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:54:53.901827+00:00", "unit_id": "dual_d10_f3_c1", "fit_seconds": 34.80104766972363}
+{"event": "unit_start", "time": "2026-09-07T02:54:54.058354+00:00", "unit_id": "dual_d10_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:55:28.453657+00:00", "unit_id": "dual_d10_f3_c2", "fit_seconds": 34.11821955628693}
+{"event": "unit_start", "time": "2026-09-07T02:55:28.588493+00:00", "unit_id": "dual_d10_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:56:04.134588+00:00", "unit_id": "dual_d10_f3_c3", "fit_seconds": 35.26307311281562}
+{"event": "batch_done", "time": "2026-09-07T02:56:04.327574+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T02:56:26.222520+00:00", "unit_ids": ["dual_d10_f4_c0", "dual_d10_f4_c1", "dual_d10_f4_c2", "dual_d10_f4_c3", "dual_d11_f0_c0", "dual_d11_f0_c1", "dual_d11_f0_c2", "dual_d11_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T02:56:26.223407+00:00", "unit_id": "dual_d10_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:57:03.095455+00:00", "unit_id": "dual_d10_f4_c0", "fit_seconds": 36.59209984354675}
+{"event": "unit_start", "time": "2026-09-07T02:57:03.267980+00:00", "unit_id": "dual_d10_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:57:38.301597+00:00", "unit_id": "dual_d10_f4_c1", "fit_seconds": 34.62048717401922}
+{"event": "unit_start", "time": "2026-09-07T02:57:38.451861+00:00", "unit_id": "dual_d10_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T02:58:13.064398+00:00", "unit_id": "dual_d10_f4_c2", "fit_seconds": 34.18962821178138}
+{"event": "unit_start", "time": "2026-09-07T02:58:13.195661+00:00", "unit_id": "dual_d10_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T02:58:43.601025+00:00", "unit_id": "dual_d10_f4_c3", "fit_seconds": 30.128831297159195}
+{"event": "unit_start", "time": "2026-09-07T02:58:43.733184+00:00", "unit_id": "dual_d11_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T02:59:15.165673+00:00", "unit_id": "dual_d11_f0_c0", "fit_seconds": 31.286502704024315}
+{"event": "unit_start", "time": "2026-09-07T02:59:15.297486+00:00", "unit_id": "dual_d11_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T02:59:48.605024+00:00", "unit_id": "dual_d11_f0_c1", "fit_seconds": 33.031750621274114}
+{"event": "unit_start", "time": "2026-09-07T02:59:48.735697+00:00", "unit_id": "dual_d11_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:00:24.986582+00:00", "unit_id": "dual_d11_f0_c2", "fit_seconds": 35.841842148453}
+{"event": "unit_start", "time": "2026-09-07T03:00:25.141266+00:00", "unit_id": "dual_d11_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:01:01.111361+00:00", "unit_id": "dual_d11_f0_c3", "fit_seconds": 35.56201425567269}
+{"event": "batch_done", "time": "2026-09-07T03:01:01.266488+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:01:22.435815+00:00", "unit_ids": ["dual_d11_f1_c0", "dual_d11_f1_c1", "dual_d11_f1_c2", "dual_d11_f1_c3", "dual_d11_f2_c0", "dual_d11_f2_c1", "dual_d11_f2_c2", "dual_d11_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:01:22.436927+00:00", "unit_id": "dual_d11_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:02:03.192833+00:00", "unit_id": "dual_d11_f1_c0", "fit_seconds": 40.34167141653597}
+{"event": "unit_start", "time": "2026-09-07T03:02:03.386385+00:00", "unit_id": "dual_d11_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:02:36.821972+00:00", "unit_id": "dual_d11_f1_c1", "fit_seconds": 33.15907813049853}
+{"event": "unit_start", "time": "2026-09-07T03:02:36.990144+00:00", "unit_id": "dual_d11_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:03:13.147490+00:00", "unit_id": "dual_d11_f1_c2", "fit_seconds": 35.74827674403787}
+{"event": "unit_start", "time": "2026-09-07T03:03:13.282308+00:00", "unit_id": "dual_d11_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:03:46.140182+00:00", "unit_id": "dual_d11_f1_c3", "fit_seconds": 32.581926979124546}
+{"event": "unit_start", "time": "2026-09-07T03:03:46.306665+00:00", "unit_id": "dual_d11_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:04:19.891863+00:00", "unit_id": "dual_d11_f2_c0", "fit_seconds": 33.30945588089526}
+{"event": "unit_start", "time": "2026-09-07T03:04:20.021328+00:00", "unit_id": "dual_d11_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:04:55.932515+00:00", "unit_id": "dual_d11_f2_c1", "fit_seconds": 35.49774672836065}
+{"event": "unit_start", "time": "2026-09-07T03:04:56.081833+00:00", "unit_id": "dual_d11_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:05:29.003336+00:00", "unit_id": "dual_d11_f2_c2", "fit_seconds": 32.64654682204127}
+{"event": "unit_start", "time": "2026-09-07T03:05:29.137236+00:00", "unit_id": "dual_d11_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:06:02.171904+00:00", "unit_id": "dual_d11_f2_c3", "fit_seconds": 32.757754342630506}
+{"event": "batch_done", "time": "2026-09-07T03:06:02.306995+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:06:18.840483+00:00", "unit_ids": ["dual_d11_f3_c0", "dual_d11_f3_c1", "dual_d11_f3_c2", "dual_d11_f3_c3", "dual_d11_f4_c0", "dual_d11_f4_c1", "dual_d11_f4_c2", "dual_d11_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:06:18.841260+00:00", "unit_id": "dual_d11_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:06:56.790611+00:00", "unit_id": "dual_d11_f3_c0", "fit_seconds": 37.67167350836098}
+{"event": "unit_start", "time": "2026-09-07T03:06:56.982635+00:00", "unit_id": "dual_d11_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:07:33.292591+00:00", "unit_id": "dual_d11_f3_c1", "fit_seconds": 35.882320668548346}
+{"event": "unit_start", "time": "2026-09-07T03:07:33.423365+00:00", "unit_id": "dual_d11_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:08:09.753384+00:00", "unit_id": "dual_d11_f3_c2", "fit_seconds": 35.92055527493358}
+{"event": "unit_start", "time": "2026-09-07T03:08:09.888171+00:00", "unit_id": "dual_d11_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:08:43.322952+00:00", "unit_id": "dual_d11_f3_c3", "fit_seconds": 33.14416586793959}
+{"event": "unit_start", "time": "2026-09-07T03:08:43.457582+00:00", "unit_id": "dual_d11_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:09:17.831932+00:00", "unit_id": "dual_d11_f4_c0", "fit_seconds": 34.09785399958491}
+{"event": "unit_start", "time": "2026-09-07T03:09:17.969870+00:00", "unit_id": "dual_d11_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:09:51.919626+00:00", "unit_id": "dual_d11_f4_c1", "fit_seconds": 33.67199873179197}
+{"event": "unit_start", "time": "2026-09-07T03:09:52.050552+00:00", "unit_id": "dual_d11_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:10:25.377784+00:00", "unit_id": "dual_d11_f4_c2", "fit_seconds": 33.051414703950286}
+{"event": "unit_start", "time": "2026-09-07T03:10:25.515486+00:00", "unit_id": "dual_d11_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:10:58.330119+00:00", "unit_id": "dual_d11_f4_c3", "fit_seconds": 32.538450080901384}
+{"event": "batch_done", "time": "2026-09-07T03:10:58.461748+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:11:16.858614+00:00", "unit_ids": ["dual_d12_f0_c0", "dual_d12_f0_c1", "dual_d12_f0_c2", "dual_d12_f0_c3", "dual_d12_f1_c0", "dual_d12_f1_c1", "dual_d12_f1_c2", "dual_d12_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:11:16.859493+00:00", "unit_id": "dual_d12_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:11:54.384808+00:00", "unit_id": "dual_d12_f0_c0", "fit_seconds": 37.24351264722645}
+{"event": "unit_start", "time": "2026-09-07T03:11:54.539470+00:00", "unit_id": "dual_d12_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:12:28.455550+00:00", "unit_id": "dual_d12_f0_c1", "fit_seconds": 33.639329919591546}
+{"event": "unit_start", "time": "2026-09-07T03:12:28.584987+00:00", "unit_id": "dual_d12_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:13:05.617744+00:00", "unit_id": "dual_d12_f0_c2", "fit_seconds": 36.62257397733629}
+{"event": "unit_start", "time": "2026-09-07T03:13:05.751483+00:00", "unit_id": "dual_d12_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:13:39.311821+00:00", "unit_id": "dual_d12_f0_c3", "fit_seconds": 33.28573125973344}
+{"event": "unit_start", "time": "2026-09-07T03:13:39.441440+00:00", "unit_id": "dual_d12_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:14:16.466871+00:00", "unit_id": "dual_d12_f1_c0", "fit_seconds": 36.61531127244234}
+{"event": "unit_start", "time": "2026-09-07T03:14:16.627231+00:00", "unit_id": "dual_d12_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:14:51.689362+00:00", "unit_id": "dual_d12_f1_c1", "fit_seconds": 34.65181238763034}
+{"event": "unit_start", "time": "2026-09-07T03:14:51.821960+00:00", "unit_id": "dual_d12_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:15:24.314522+00:00", "unit_id": "dual_d12_f1_c2", "fit_seconds": 32.2143819630146}
+{"event": "unit_start", "time": "2026-09-07T03:15:24.446478+00:00", "unit_id": "dual_d12_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:15:57.729104+00:00", "unit_id": "dual_d12_f1_c3", "fit_seconds": 33.00617793388665}
+{"event": "batch_done", "time": "2026-09-07T03:15:57.856905+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:16:13.318305+00:00", "unit_ids": ["dual_d12_f2_c0", "dual_d12_f2_c1", "dual_d12_f2_c2", "dual_d12_f2_c3", "dual_d12_f3_c0", "dual_d12_f3_c1", "dual_d12_f3_c2", "dual_d12_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:16:13.319198+00:00", "unit_id": "dual_d12_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:16:50.066419+00:00", "unit_id": "dual_d12_f2_c0", "fit_seconds": 36.463146863505244}
+{"event": "unit_start", "time": "2026-09-07T03:16:50.199613+00:00", "unit_id": "dual_d12_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:17:23.700420+00:00", "unit_id": "dual_d12_f2_c1", "fit_seconds": 33.22378979064524}
+{"event": "unit_start", "time": "2026-09-07T03:17:23.832548+00:00", "unit_id": "dual_d12_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:17:56.710747+00:00", "unit_id": "dual_d12_f2_c2", "fit_seconds": 32.60131075978279}
+{"event": "unit_start", "time": "2026-09-07T03:17:56.841238+00:00", "unit_id": "dual_d12_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:18:32.833498+00:00", "unit_id": "dual_d12_f2_c3", "fit_seconds": 35.57788528315723}
+{"event": "unit_start", "time": "2026-09-07T03:18:32.979740+00:00", "unit_id": "dual_d12_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:19:07.901379+00:00", "unit_id": "dual_d12_f3_c0", "fit_seconds": 34.6439199373126}
+{"event": "unit_start", "time": "2026-09-07T03:19:08.043889+00:00", "unit_id": "dual_d12_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:19:45.537181+00:00", "unit_id": "dual_d12_f3_c1", "fit_seconds": 37.07749480381608}
+{"event": "unit_start", "time": "2026-09-07T03:19:45.684005+00:00", "unit_id": "dual_d12_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:20:19.880144+00:00", "unit_id": "dual_d12_f3_c2", "fit_seconds": 33.91844907216728}
+{"event": "unit_start", "time": "2026-09-07T03:20:20.013703+00:00", "unit_id": "dual_d12_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:20:54.691869+00:00", "unit_id": "dual_d12_f3_c3", "fit_seconds": 34.4009866528213}
+{"event": "batch_done", "time": "2026-09-07T03:20:54.821724+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:21:10.423074+00:00", "unit_ids": ["dual_d12_f4_c0", "dual_d12_f4_c1", "dual_d12_f4_c2", "dual_d12_f4_c3", "dual_d13_f0_c0", "dual_d13_f0_c1", "dual_d13_f0_c2", "dual_d13_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:21:10.423910+00:00", "unit_id": "dual_d12_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:21:44.286014+00:00", "unit_id": "dual_d12_f4_c0", "fit_seconds": 33.71712105162442}
+{"event": "unit_start", "time": "2026-09-07T03:21:44.460562+00:00", "unit_id": "dual_d12_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:22:15.424967+00:00", "unit_id": "dual_d12_f4_c1", "fit_seconds": 30.688978685066104}
+{"event": "unit_start", "time": "2026-09-07T03:22:15.576344+00:00", "unit_id": "dual_d12_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:22:47.779340+00:00", "unit_id": "dual_d12_f4_c2", "fit_seconds": 31.9268891941756}
+{"event": "unit_start", "time": "2026-09-07T03:22:47.937068+00:00", "unit_id": "dual_d12_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:23:20.179632+00:00", "unit_id": "dual_d12_f4_c3", "fit_seconds": 31.962446559220552}
+{"event": "unit_start", "time": "2026-09-07T03:23:20.358172+00:00", "unit_id": "dual_d13_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:23:57.685686+00:00", "unit_id": "dual_d13_f0_c0", "fit_seconds": 36.917326079681516}
+{"event": "unit_start", "time": "2026-09-07T03:23:57.816168+00:00", "unit_id": "dual_d13_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:24:34.865698+00:00", "unit_id": "dual_d13_f0_c1", "fit_seconds": 36.63839766010642}
+{"event": "unit_start", "time": "2026-09-07T03:24:34.995805+00:00", "unit_id": "dual_d13_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:25:11.752160+00:00", "unit_id": "dual_d13_f0_c2", "fit_seconds": 36.349044654518366}
+{"event": "unit_start", "time": "2026-09-07T03:25:11.882509+00:00", "unit_id": "dual_d13_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:25:48.543539+00:00", "unit_id": "dual_d13_f0_c3", "fit_seconds": 36.25092529319227}
+{"event": "batch_done", "time": "2026-09-07T03:25:48.674019+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:26:06.769227+00:00", "unit_ids": ["dual_d13_f1_c0", "dual_d13_f1_c1", "dual_d13_f1_c2", "dual_d13_f1_c3", "dual_d13_f2_c0", "dual_d13_f2_c1", "dual_d13_f2_c2", "dual_d13_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:26:06.770145+00:00", "unit_id": "dual_d13_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:26:46.048582+00:00", "unit_id": "dual_d13_f1_c0", "fit_seconds": 38.99742124043405}
+{"event": "unit_start", "time": "2026-09-07T03:26:46.196241+00:00", "unit_id": "dual_d13_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:27:24.958069+00:00", "unit_id": "dual_d13_f1_c1", "fit_seconds": 38.35000498406589}
+{"event": "unit_start", "time": "2026-09-07T03:27:25.146657+00:00", "unit_id": "dual_d13_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:28:03.108072+00:00", "unit_id": "dual_d13_f1_c2", "fit_seconds": 37.54713959060609}
+{"event": "unit_start", "time": "2026-09-07T03:28:03.279493+00:00", "unit_id": "dual_d13_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:28:38.403460+00:00", "unit_id": "dual_d13_f1_c3", "fit_seconds": 34.84762169606984}
+{"event": "unit_start", "time": "2026-09-07T03:28:38.533347+00:00", "unit_id": "dual_d13_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:29:13.388487+00:00", "unit_id": "dual_d13_f2_c0", "fit_seconds": 34.57867860235274}
+{"event": "unit_start", "time": "2026-09-07T03:29:13.518260+00:00", "unit_id": "dual_d13_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:29:47.818915+00:00", "unit_id": "dual_d13_f2_c1", "fit_seconds": 34.01756079867482}
+{"event": "unit_start", "time": "2026-09-07T03:29:47.948226+00:00", "unit_id": "dual_d13_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:30:22.224223+00:00", "unit_id": "dual_d13_f2_c2", "fit_seconds": 33.998140178620815}
+{"event": "unit_start", "time": "2026-09-07T03:30:22.359686+00:00", "unit_id": "dual_d13_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:30:56.695949+00:00", "unit_id": "dual_d13_f2_c3", "fit_seconds": 34.059466211125255}
+{"event": "batch_done", "time": "2026-09-07T03:30:56.826413+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:31:46.143199+00:00", "unit_ids": ["dual_d13_f3_c0", "dual_d13_f3_c1", "dual_d13_f3_c2", "dual_d13_f3_c3", "dual_d13_f4_c0", "dual_d13_f4_c1", "dual_d13_f4_c2", "dual_d13_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:31:46.144064+00:00", "unit_id": "dual_d13_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:32:22.357573+00:00", "unit_id": "dual_d13_f3_c0", "fit_seconds": 35.93573408015072}
+{"event": "unit_start", "time": "2026-09-07T03:32:22.508556+00:00", "unit_id": "dual_d13_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:32:54.164548+00:00", "unit_id": "dual_d13_f3_c1", "fit_seconds": 31.37797180749476}
+{"event": "unit_start", "time": "2026-09-07T03:32:54.314279+00:00", "unit_id": "dual_d13_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:33:28.578944+00:00", "unit_id": "dual_d13_f3_c2", "fit_seconds": 33.85359254665673}
+{"event": "unit_start", "time": "2026-09-07T03:33:28.709277+00:00", "unit_id": "dual_d13_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:34:00.124315+00:00", "unit_id": "dual_d13_f3_c3", "fit_seconds": 31.137746799737215}
+{"event": "unit_start", "time": "2026-09-07T03:34:00.254144+00:00", "unit_id": "dual_d13_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:34:36.153520+00:00", "unit_id": "dual_d13_f4_c0", "fit_seconds": 35.487806018441916}
+{"event": "unit_start", "time": "2026-09-07T03:34:36.289333+00:00", "unit_id": "dual_d13_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:35:09.032642+00:00", "unit_id": "dual_d13_f4_c1", "fit_seconds": 32.46573542058468}
+{"event": "unit_start", "time": "2026-09-07T03:35:09.174042+00:00", "unit_id": "dual_d13_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:35:44.325191+00:00", "unit_id": "dual_d13_f4_c2", "fit_seconds": 34.74065364524722}
+{"event": "unit_start", "time": "2026-09-07T03:35:44.456855+00:00", "unit_id": "dual_d13_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:36:19.672048+00:00", "unit_id": "dual_d13_f4_c3", "fit_seconds": 34.8027044441551}
+{"event": "batch_done", "time": "2026-09-07T03:36:19.809856+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:36:46.117791+00:00", "unit_ids": ["dual_d14_f0_c0", "dual_d14_f0_c1", "dual_d14_f0_c2", "dual_d14_f0_c3", "dual_d14_f1_c0", "dual_d14_f1_c1", "dual_d14_f1_c2", "dual_d14_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:36:46.118548+00:00", "unit_id": "dual_d14_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:37:23.332428+00:00", "unit_id": "dual_d14_f0_c0", "fit_seconds": 36.935554940253496}
+{"event": "unit_start", "time": "2026-09-07T03:37:23.493982+00:00", "unit_id": "dual_d14_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:37:59.543637+00:00", "unit_id": "dual_d14_f0_c1", "fit_seconds": 35.63960272818804}
+{"event": "unit_start", "time": "2026-09-07T03:37:59.681033+00:00", "unit_id": "dual_d14_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:38:32.718864+00:00", "unit_id": "dual_d14_f0_c2", "fit_seconds": 32.754084534943104}
+{"event": "unit_start", "time": "2026-09-07T03:38:32.865632+00:00", "unit_id": "dual_d14_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:39:05.771205+00:00", "unit_id": "dual_d14_f0_c3", "fit_seconds": 32.62853633053601}
+{"event": "unit_start", "time": "2026-09-07T03:39:05.903655+00:00", "unit_id": "dual_d14_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:39:38.933788+00:00", "unit_id": "dual_d14_f1_c0", "fit_seconds": 32.885917680338025}
+{"event": "unit_start", "time": "2026-09-07T03:39:39.065813+00:00", "unit_id": "dual_d14_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:40:14.555544+00:00", "unit_id": "dual_d14_f1_c1", "fit_seconds": 35.212072214111686}
+{"event": "unit_start", "time": "2026-09-07T03:40:14.699869+00:00", "unit_id": "dual_d14_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:40:50.505859+00:00", "unit_id": "dual_d14_f1_c2", "fit_seconds": 35.529845433309674}
+{"event": "unit_start", "time": "2026-09-07T03:40:50.635013+00:00", "unit_id": "dual_d14_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:41:29.217394+00:00", "unit_id": "dual_d14_f1_c3", "fit_seconds": 38.16977144405246}
+{"event": "batch_done", "time": "2026-09-07T03:41:29.346496+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:41:45.102110+00:00", "unit_ids": ["dual_d14_f2_c0", "dual_d14_f2_c1", "dual_d14_f2_c2", "dual_d14_f2_c3", "dual_d14_f3_c0", "dual_d14_f3_c1", "dual_d14_f3_c2", "dual_d14_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:41:45.102839+00:00", "unit_id": "dual_d14_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:42:18.639869+00:00", "unit_id": "dual_d14_f2_c0", "fit_seconds": 33.39215652085841}
+{"event": "unit_start", "time": "2026-09-07T03:42:18.796921+00:00", "unit_id": "dual_d14_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:42:48.655786+00:00", "unit_id": "dual_d14_f2_c1", "fit_seconds": 29.715131621807814}
+{"event": "unit_start", "time": "2026-09-07T03:42:48.786394+00:00", "unit_id": "dual_d14_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:43:21.248359+00:00", "unit_id": "dual_d14_f2_c2", "fit_seconds": 32.184587785974145}
+{"event": "unit_start", "time": "2026-09-07T03:43:21.378151+00:00", "unit_id": "dual_d14_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:43:54.262734+00:00", "unit_id": "dual_d14_f2_c3", "fit_seconds": 32.60814882442355}
+{"event": "unit_start", "time": "2026-09-07T03:43:54.392378+00:00", "unit_id": "dual_d14_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:44:24.798737+00:00", "unit_id": "dual_d14_f3_c0", "fit_seconds": 30.263561632484198}
+{"event": "unit_start", "time": "2026-09-07T03:44:24.927165+00:00", "unit_id": "dual_d14_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:44:56.078029+00:00", "unit_id": "dual_d14_f3_c1", "fit_seconds": 30.87486846372485}
+{"event": "unit_start", "time": "2026-09-07T03:44:56.208712+00:00", "unit_id": "dual_d14_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:45:29.722906+00:00", "unit_id": "dual_d14_f3_c2", "fit_seconds": 33.106087416410446}
+{"event": "unit_start", "time": "2026-09-07T03:45:29.852342+00:00", "unit_id": "dual_d14_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:46:04.763457+00:00", "unit_id": "dual_d14_f3_c3", "fit_seconds": 34.503555273637176}
+{"event": "batch_done", "time": "2026-09-07T03:46:04.893269+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:46:42.701496+00:00", "unit_ids": ["dual_d14_f4_c0", "dual_d14_f4_c1", "dual_d14_f4_c2", "dual_d14_f4_c3", "dual_d15_f0_c0", "dual_d15_f0_c1", "dual_d15_f0_c2", "dual_d15_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:46:42.702391+00:00", "unit_id": "dual_d14_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:47:19.985573+00:00", "unit_id": "dual_d14_f4_c0", "fit_seconds": 37.00504315085709}
+{"event": "unit_start", "time": "2026-09-07T03:47:20.139793+00:00", "unit_id": "dual_d14_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:47:52.939012+00:00", "unit_id": "dual_d14_f4_c1", "fit_seconds": 32.52234409749508}
+{"event": "unit_start", "time": "2026-09-07T03:47:53.069577+00:00", "unit_id": "dual_d14_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:48:26.402480+00:00", "unit_id": "dual_d14_f4_c2", "fit_seconds": 33.048109252005816}
+{"event": "unit_start", "time": "2026-09-07T03:48:26.544002+00:00", "unit_id": "dual_d14_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:49:02.663475+00:00", "unit_id": "dual_d14_f4_c3", "fit_seconds": 35.70264998264611}
+{"event": "unit_start", "time": "2026-09-07T03:49:02.815467+00:00", "unit_id": "dual_d15_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:49:36.078480+00:00", "unit_id": "dual_d15_f0_c0", "fit_seconds": 32.98595921508968}
+{"event": "unit_start", "time": "2026-09-07T03:49:36.212695+00:00", "unit_id": "dual_d15_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:50:11.678198+00:00", "unit_id": "dual_d15_f0_c1", "fit_seconds": 35.03721874207258}
+{"event": "unit_start", "time": "2026-09-07T03:50:11.812706+00:00", "unit_id": "dual_d15_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:50:46.987326+00:00", "unit_id": "dual_d15_f0_c2", "fit_seconds": 34.765390392392874}
+{"event": "unit_start", "time": "2026-09-07T03:50:47.135175+00:00", "unit_id": "dual_d15_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:51:22.401673+00:00", "unit_id": "dual_d15_f0_c3", "fit_seconds": 34.85711785778403}
+{"event": "batch_done", "time": "2026-09-07T03:51:22.554595+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:51:38.594339+00:00", "unit_ids": ["dual_d15_f1_c0", "dual_d15_f1_c1", "dual_d15_f1_c2", "dual_d15_f1_c3", "dual_d15_f2_c0", "dual_d15_f2_c1", "dual_d15_f2_c2", "dual_d15_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:51:38.598527+00:00", "unit_id": "dual_d15_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:52:16.181632+00:00", "unit_id": "dual_d15_f1_c0", "fit_seconds": 37.306049866601825}
+{"event": "unit_start", "time": "2026-09-07T03:52:16.346017+00:00", "unit_id": "dual_d15_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:52:50.595935+00:00", "unit_id": "dual_d15_f1_c1", "fit_seconds": 33.97214120440185}
+{"event": "unit_start", "time": "2026-09-07T03:52:50.788737+00:00", "unit_id": "dual_d15_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:53:24.947533+00:00", "unit_id": "dual_d15_f1_c2", "fit_seconds": 33.88121237233281}
+{"event": "unit_start", "time": "2026-09-07T03:53:25.116870+00:00", "unit_id": "dual_d15_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:53:58.908742+00:00", "unit_id": "dual_d15_f1_c3", "fit_seconds": 33.51562291570008}
+{"event": "unit_start", "time": "2026-09-07T03:53:59.037029+00:00", "unit_id": "dual_d15_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:54:31.525785+00:00", "unit_id": "dual_d15_f2_c0", "fit_seconds": 32.20589271560311}
+{"event": "unit_start", "time": "2026-09-07T03:54:31.653887+00:00", "unit_id": "dual_d15_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:55:06.473950+00:00", "unit_id": "dual_d15_f2_c1", "fit_seconds": 34.4114211704582}
+{"event": "unit_start", "time": "2026-09-07T03:55:06.617977+00:00", "unit_id": "dual_d15_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:55:38.974264+00:00", "unit_id": "dual_d15_f2_c2", "fit_seconds": 32.08084820583463}
+{"event": "unit_start", "time": "2026-09-07T03:55:39.120111+00:00", "unit_id": "dual_d15_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:56:14.149401+00:00", "unit_id": "dual_d15_f2_c3", "fit_seconds": 34.620185336098075}
+{"event": "batch_done", "time": "2026-09-07T03:56:14.279864+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T03:56:35.796850+00:00", "unit_ids": ["dual_d15_f3_c0", "dual_d15_f3_c1", "dual_d15_f3_c2", "dual_d15_f3_c3", "dual_d15_f4_c0", "dual_d15_f4_c1", "dual_d15_f4_c2", "dual_d15_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T03:56:35.797590+00:00", "unit_id": "dual_d15_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:57:11.551521+00:00", "unit_id": "dual_d15_f3_c0", "fit_seconds": 35.475617622956634}
+{"event": "unit_start", "time": "2026-09-07T03:57:11.686629+00:00", "unit_id": "dual_d15_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:57:44.234383+00:00", "unit_id": "dual_d15_f3_c1", "fit_seconds": 32.268200462684035}
+{"event": "unit_start", "time": "2026-09-07T03:57:44.392297+00:00", "unit_id": "dual_d15_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T03:58:15.880620+00:00", "unit_id": "dual_d15_f3_c2", "fit_seconds": 31.211670899763703}
+{"event": "unit_start", "time": "2026-09-07T03:58:16.012665+00:00", "unit_id": "dual_d15_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T03:58:50.393606+00:00", "unit_id": "dual_d15_f3_c3", "fit_seconds": 33.97132617607713}
+{"event": "unit_start", "time": "2026-09-07T03:58:50.523302+00:00", "unit_id": "dual_d15_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T03:59:24.174106+00:00", "unit_id": "dual_d15_f4_c0", "fit_seconds": 33.37496277689934}
+{"event": "unit_start", "time": "2026-09-07T03:59:24.305444+00:00", "unit_id": "dual_d15_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T03:59:57.556919+00:00", "unit_id": "dual_d15_f4_c1", "fit_seconds": 32.97467294707894}
+{"event": "unit_start", "time": "2026-09-07T03:59:57.700617+00:00", "unit_id": "dual_d15_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:00:33.212680+00:00", "unit_id": "dual_d15_f4_c2", "fit_seconds": 35.10346897132695}
+{"event": "unit_start", "time": "2026-09-07T04:00:33.342804+00:00", "unit_id": "dual_d15_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:01:06.042055+00:00", "unit_id": "dual_d15_f4_c3", "fit_seconds": 32.42313630878925}
+{"event": "batch_done", "time": "2026-09-07T04:01:06.169107+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:01:32.590698+00:00", "unit_ids": ["dual_d16_f0_c0", "dual_d16_f0_c1", "dual_d16_f0_c2", "dual_d16_f0_c3", "dual_d16_f1_c0", "dual_d16_f1_c1", "dual_d16_f1_c2", "dual_d16_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:01:32.591483+00:00", "unit_id": "dual_d16_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:02:10.310750+00:00", "unit_id": "dual_d16_f0_c0", "fit_seconds": 37.441095830872655}
+{"event": "unit_start", "time": "2026-09-07T04:02:10.463248+00:00", "unit_id": "dual_d16_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:02:44.477789+00:00", "unit_id": "dual_d16_f0_c1", "fit_seconds": 33.739022977650166}
+{"event": "unit_start", "time": "2026-09-07T04:02:44.624508+00:00", "unit_id": "dual_d16_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:03:20.547220+00:00", "unit_id": "dual_d16_f0_c2", "fit_seconds": 35.51236913539469}
+{"event": "unit_start", "time": "2026-09-07T04:03:20.679367+00:00", "unit_id": "dual_d16_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:03:54.340024+00:00", "unit_id": "dual_d16_f0_c3", "fit_seconds": 33.38261804357171}
+{"event": "unit_start", "time": "2026-09-07T04:03:54.475119+00:00", "unit_id": "dual_d16_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:04:31.938739+00:00", "unit_id": "dual_d16_f1_c0", "fit_seconds": 37.05588521808386}
+{"event": "unit_start", "time": "2026-09-07T04:04:32.069194+00:00", "unit_id": "dual_d16_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:05:06.032285+00:00", "unit_id": "dual_d16_f1_c1", "fit_seconds": 33.68694802187383}
+{"event": "unit_start", "time": "2026-09-07T04:05:06.195512+00:00", "unit_id": "dual_d16_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:05:42.890399+00:00", "unit_id": "dual_d16_f1_c2", "fit_seconds": 36.28604461066425}
+{"event": "unit_start", "time": "2026-09-07T04:05:43.035176+00:00", "unit_id": "dual_d16_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:06:19.743426+00:00", "unit_id": "dual_d16_f1_c3", "fit_seconds": 36.29743657819927}
+{"event": "batch_done", "time": "2026-09-07T04:06:19.891368+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:07:10.664614+00:00", "unit_ids": ["dual_d16_f2_c0", "dual_d16_f2_c1", "dual_d16_f2_c2", "dual_d16_f2_c3", "dual_d16_f3_c0", "dual_d16_f3_c1", "dual_d16_f3_c2", "dual_d16_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:07:10.665494+00:00", "unit_id": "dual_d16_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:07:49.424401+00:00", "unit_id": "dual_d16_f2_c0", "fit_seconds": 38.48024599812925}
+{"event": "unit_start", "time": "2026-09-07T04:07:49.599796+00:00", "unit_id": "dual_d16_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:08:23.217549+00:00", "unit_id": "dual_d16_f2_c1", "fit_seconds": 33.339875146746635}
+{"event": "unit_start", "time": "2026-09-07T04:08:23.364577+00:00", "unit_id": "dual_d16_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:08:55.798595+00:00", "unit_id": "dual_d16_f2_c2", "fit_seconds": 32.15688624419272}
+{"event": "unit_start", "time": "2026-09-07T04:08:55.935456+00:00", "unit_id": "dual_d16_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:09:32.349147+00:00", "unit_id": "dual_d16_f2_c3", "fit_seconds": 36.004025312140584}
+{"event": "unit_start", "time": "2026-09-07T04:09:32.479579+00:00", "unit_id": "dual_d16_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:10:06.695711+00:00", "unit_id": "dual_d16_f3_c0", "fit_seconds": 33.93960624746978}
+{"event": "unit_start", "time": "2026-09-07T04:10:06.840180+00:00", "unit_id": "dual_d16_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:10:40.251086+00:00", "unit_id": "dual_d16_f3_c1", "fit_seconds": 33.13618157617748}
+{"event": "unit_start", "time": "2026-09-07T04:10:40.385416+00:00", "unit_id": "dual_d16_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:11:16.585318+00:00", "unit_id": "dual_d16_f3_c2", "fit_seconds": 35.791598208248615}
+{"event": "unit_start", "time": "2026-09-07T04:11:16.721238+00:00", "unit_id": "dual_d16_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:11:52.921047+00:00", "unit_id": "dual_d16_f3_c3", "fit_seconds": 35.79230444692075}
+{"event": "batch_done", "time": "2026-09-07T04:11:53.066028+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:12:08.153428+00:00", "unit_ids": ["dual_d16_f4_c0", "dual_d16_f4_c1", "dual_d16_f4_c2", "dual_d16_f4_c3", "dual_d17_f0_c0", "dual_d17_f0_c1", "dual_d17_f0_c2", "dual_d17_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:12:08.154358+00:00", "unit_id": "dual_d16_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:12:45.648972+00:00", "unit_id": "dual_d16_f4_c0", "fit_seconds": 37.2170329913497}
+{"event": "unit_start", "time": "2026-09-07T04:12:45.815566+00:00", "unit_id": "dual_d16_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:13:19.221131+00:00", "unit_id": "dual_d16_f4_c1", "fit_seconds": 33.12783907726407}
+{"event": "unit_start", "time": "2026-09-07T04:13:19.370980+00:00", "unit_id": "dual_d16_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:13:55.773545+00:00", "unit_id": "dual_d16_f4_c2", "fit_seconds": 35.99532011337578}
+{"event": "unit_start", "time": "2026-09-07T04:13:55.911536+00:00", "unit_id": "dual_d16_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:14:29.251437+00:00", "unit_id": "dual_d16_f4_c3", "fit_seconds": 33.06422762572765}
+{"event": "unit_start", "time": "2026-09-07T04:14:29.380712+00:00", "unit_id": "dual_d17_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:15:06.636428+00:00", "unit_id": "dual_d17_f0_c0", "fit_seconds": 36.84422154352069}
+{"event": "unit_start", "time": "2026-09-07T04:15:06.770160+00:00", "unit_id": "dual_d17_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:15:40.558433+00:00", "unit_id": "dual_d17_f0_c1", "fit_seconds": 33.51103715784848}
+{"event": "unit_start", "time": "2026-09-07T04:15:40.694020+00:00", "unit_id": "dual_d17_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:16:14.689797+00:00", "unit_id": "dual_d17_f0_c2", "fit_seconds": 33.70683968067169}
+{"event": "unit_start", "time": "2026-09-07T04:16:14.837435+00:00", "unit_id": "dual_d17_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:16:51.997559+00:00", "unit_id": "dual_d17_f0_c3", "fit_seconds": 36.746936310082674}
+{"event": "batch_done", "time": "2026-09-07T04:16:52.124413+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:17:04.972319+00:00", "unit_ids": ["dual_d17_f1_c0", "dual_d17_f1_c1", "dual_d17_f1_c2", "dual_d17_f1_c3", "dual_d17_f2_c0", "dual_d17_f2_c1", "dual_d17_f2_c2", "dual_d17_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:17:04.973215+00:00", "unit_id": "dual_d17_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:17:42.051454+00:00", "unit_id": "dual_d17_f1_c0", "fit_seconds": 36.78916356153786}
+{"event": "unit_start", "time": "2026-09-07T04:17:42.203631+00:00", "unit_id": "dual_d17_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:18:14.887557+00:00", "unit_id": "dual_d17_f1_c1", "fit_seconds": 32.40859436802566}
+{"event": "unit_start", "time": "2026-09-07T04:18:15.022911+00:00", "unit_id": "dual_d17_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:18:47.776183+00:00", "unit_id": "dual_d17_f1_c2", "fit_seconds": 32.469095991924405}
+{"event": "unit_start", "time": "2026-09-07T04:18:47.912635+00:00", "unit_id": "dual_d17_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:19:20.373337+00:00", "unit_id": "dual_d17_f1_c3", "fit_seconds": 32.18508878722787}
+{"event": "unit_start", "time": "2026-09-07T04:19:20.507574+00:00", "unit_id": "dual_d17_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:19:51.437253+00:00", "unit_id": "dual_d17_f2_c0", "fit_seconds": 30.786850603297353}
+{"event": "unit_start", "time": "2026-09-07T04:19:51.594472+00:00", "unit_id": "dual_d17_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:20:21.290216+00:00", "unit_id": "dual_d17_f2_c1", "fit_seconds": 29.55199403129518}
+{"event": "unit_start", "time": "2026-09-07T04:20:21.425127+00:00", "unit_id": "dual_d17_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:20:57.062196+00:00", "unit_id": "dual_d17_f2_c2", "fit_seconds": 35.225821655243635}
+{"event": "unit_start", "time": "2026-09-07T04:20:57.193069+00:00", "unit_id": "dual_d17_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:21:30.088270+00:00", "unit_id": "dual_d17_f2_c3", "fit_seconds": 32.618848068639636}
+{"event": "batch_done", "time": "2026-09-07T04:21:30.217568+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:22:01.109622+00:00", "unit_ids": ["dual_d17_f3_c0", "dual_d17_f3_c1", "dual_d17_f3_c2", "dual_d17_f3_c3", "dual_d17_f4_c0", "dual_d17_f4_c1", "dual_d17_f4_c2", "dual_d17_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:22:01.110649+00:00", "unit_id": "dual_d17_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:22:37.452207+00:00", "unit_id": "dual_d17_f3_c0", "fit_seconds": 36.06379837542772}
+{"event": "unit_start", "time": "2026-09-07T04:22:37.583730+00:00", "unit_id": "dual_d17_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:23:10.411406+00:00", "unit_id": "dual_d17_f3_c1", "fit_seconds": 32.55130383186042}
+{"event": "unit_start", "time": "2026-09-07T04:23:10.540208+00:00", "unit_id": "dual_d17_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:23:42.587359+00:00", "unit_id": "dual_d17_f3_c2", "fit_seconds": 31.76944492943585}
+{"event": "unit_start", "time": "2026-09-07T04:23:42.715902+00:00", "unit_id": "dual_d17_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:24:15.288013+00:00", "unit_id": "dual_d17_f3_c3", "fit_seconds": 32.295809822157025}
+{"event": "unit_start", "time": "2026-09-07T04:24:15.416865+00:00", "unit_id": "dual_d17_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:24:46.156588+00:00", "unit_id": "dual_d17_f4_c0", "fit_seconds": 30.596617793664336}
+{"event": "unit_start", "time": "2026-09-07T04:24:46.312908+00:00", "unit_id": "dual_d17_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:25:16.338636+00:00", "unit_id": "dual_d17_f4_c1", "fit_seconds": 29.88201292231679}
+{"event": "unit_start", "time": "2026-09-07T04:25:16.468865+00:00", "unit_id": "dual_d17_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:25:51.517009+00:00", "unit_id": "dual_d17_f4_c2", "fit_seconds": 34.68642216920853}
+{"event": "unit_start", "time": "2026-09-07T04:25:51.676729+00:00", "unit_id": "dual_d17_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:26:28.399181+00:00", "unit_id": "dual_d17_f4_c3", "fit_seconds": 36.31113404594362}
+{"event": "batch_done", "time": "2026-09-07T04:26:28.584052+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:26:58.294340+00:00", "unit_ids": ["dual_d18_f0_c0", "dual_d18_f0_c1", "dual_d18_f0_c2", "dual_d18_f0_c3", "dual_d18_f1_c0", "dual_d18_f1_c1", "dual_d18_f1_c2", "dual_d18_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:26:58.295295+00:00", "unit_id": "dual_d18_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:27:37.390132+00:00", "unit_id": "dual_d18_f0_c0", "fit_seconds": 38.81521928496659}
+{"event": "unit_start", "time": "2026-09-07T04:27:37.539572+00:00", "unit_id": "dual_d18_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:28:13.187361+00:00", "unit_id": "dual_d18_f0_c1", "fit_seconds": 35.37103261612356}
+{"event": "unit_start", "time": "2026-09-07T04:28:13.317047+00:00", "unit_id": "dual_d18_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:28:48.761395+00:00", "unit_id": "dual_d18_f0_c2", "fit_seconds": 35.16854340210557}
+{"event": "unit_start", "time": "2026-09-07T04:28:48.893262+00:00", "unit_id": "dual_d18_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:29:24.696733+00:00", "unit_id": "dual_d18_f0_c3", "fit_seconds": 35.526795603334904}
+{"event": "unit_start", "time": "2026-09-07T04:29:24.832291+00:00", "unit_id": "dual_d18_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:29:57.599058+00:00", "unit_id": "dual_d18_f1_c0", "fit_seconds": 32.490190375596285}
+{"event": "unit_start", "time": "2026-09-07T04:29:57.734494+00:00", "unit_id": "dual_d18_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:30:30.609295+00:00", "unit_id": "dual_d18_f1_c1", "fit_seconds": 32.59413071535528}
+{"event": "unit_start", "time": "2026-09-07T04:30:30.742156+00:00", "unit_id": "dual_d18_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:31:05.865545+00:00", "unit_id": "dual_d18_f1_c2", "fit_seconds": 34.71029607579112}
+{"event": "unit_start", "time": "2026-09-07T04:31:06.001351+00:00", "unit_id": "dual_d18_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:31:39.094525+00:00", "unit_id": "dual_d18_f1_c3", "fit_seconds": 32.81572404131293}
+{"event": "batch_done", "time": "2026-09-07T04:31:39.222596+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:31:54.584847+00:00", "unit_ids": ["dual_d18_f2_c0", "dual_d18_f2_c1", "dual_d18_f2_c2", "dual_d18_f2_c3", "dual_d18_f3_c0", "dual_d18_f3_c1", "dual_d18_f3_c2", "dual_d18_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:31:54.585717+00:00", "unit_id": "dual_d18_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:32:35.008657+00:00", "unit_id": "dual_d18_f2_c0", "fit_seconds": 40.0126136187464}
+{"event": "unit_start", "time": "2026-09-07T04:32:35.139621+00:00", "unit_id": "dual_d18_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:33:07.687147+00:00", "unit_id": "dual_d18_f2_c1", "fit_seconds": 32.26892929151654}
+{"event": "unit_start", "time": "2026-09-07T04:33:07.821338+00:00", "unit_id": "dual_d18_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:33:43.620139+00:00", "unit_id": "dual_d18_f2_c2", "fit_seconds": 35.38987967930734}
+{"event": "unit_start", "time": "2026-09-07T04:33:43.770883+00:00", "unit_id": "dual_d18_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:34:20.584617+00:00", "unit_id": "dual_d18_f2_c3", "fit_seconds": 36.40214185230434}
+{"event": "unit_start", "time": "2026-09-07T04:34:20.728040+00:00", "unit_id": "dual_d18_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:34:55.353524+00:00", "unit_id": "dual_d18_f3_c0", "fit_seconds": 34.34947683289647}
+{"event": "unit_start", "time": "2026-09-07T04:34:55.486167+00:00", "unit_id": "dual_d18_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:35:29.291478+00:00", "unit_id": "dual_d18_f3_c1", "fit_seconds": 33.526512855663896}
+{"event": "unit_start", "time": "2026-09-07T04:35:29.438249+00:00", "unit_id": "dual_d18_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:36:02.484111+00:00", "unit_id": "dual_d18_f3_c2", "fit_seconds": 32.76639058627188}
+{"event": "unit_start", "time": "2026-09-07T04:36:02.612244+00:00", "unit_id": "dual_d18_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:36:36.197757+00:00", "unit_id": "dual_d18_f3_c3", "fit_seconds": 33.308470364660025}
+{"event": "batch_done", "time": "2026-09-07T04:36:36.326982+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:36:50.514017+00:00", "unit_ids": ["dual_d18_f4_c0", "dual_d18_f4_c1", "dual_d18_f4_c2", "dual_d18_f4_c3", "dual_d19_f0_c0", "dual_d19_f0_c1", "dual_d19_f0_c2", "dual_d19_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:36:50.514906+00:00", "unit_id": "dual_d18_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:37:32.755776+00:00", "unit_id": "dual_d18_f4_c0", "fit_seconds": 41.82773508131504}
+{"event": "unit_start", "time": "2026-09-07T04:37:32.948808+00:00", "unit_id": "dual_d18_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:38:08.019927+00:00", "unit_id": "dual_d18_f4_c1", "fit_seconds": 34.79399083927274}
+{"event": "unit_start", "time": "2026-09-07T04:38:08.178289+00:00", "unit_id": "dual_d18_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:38:46.453731+00:00", "unit_id": "dual_d18_f4_c2", "fit_seconds": 37.86651801876724}
+{"event": "unit_start", "time": "2026-09-07T04:38:46.607391+00:00", "unit_id": "dual_d18_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:39:20.830884+00:00", "unit_id": "dual_d18_f4_c3", "fit_seconds": 33.946119453758}
+{"event": "unit_start", "time": "2026-09-07T04:39:20.960628+00:00", "unit_id": "dual_d19_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:39:56.585249+00:00", "unit_id": "dual_d19_f0_c0", "fit_seconds": 35.348601922392845}
+{"event": "unit_start", "time": "2026-09-07T04:39:56.717366+00:00", "unit_id": "dual_d19_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:40:32.458858+00:00", "unit_id": "dual_d19_f0_c1", "fit_seconds": 35.4649074152112}
+{"event": "unit_start", "time": "2026-09-07T04:40:32.592454+00:00", "unit_id": "dual_d19_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:41:11.930134+00:00", "unit_id": "dual_d19_f0_c2", "fit_seconds": 38.92730375379324}
+{"event": "unit_start", "time": "2026-09-07T04:41:12.060091+00:00", "unit_id": "dual_d19_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:41:47.632070+00:00", "unit_id": "dual_d19_f0_c3", "fit_seconds": 35.29492095671594}
+{"event": "batch_done", "time": "2026-09-07T04:41:47.789866+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:42:28.786646+00:00", "unit_ids": ["dual_d19_f1_c0", "dual_d19_f1_c1", "dual_d19_f1_c2", "dual_d19_f1_c3", "dual_d19_f2_c0", "dual_d19_f2_c1", "dual_d19_f2_c2", "dual_d19_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:42:28.787543+00:00", "unit_id": "dual_d19_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:43:03.481687+00:00", "unit_id": "dual_d19_f1_c0", "fit_seconds": 34.55085714533925}
+{"event": "unit_start", "time": "2026-09-07T04:43:03.631056+00:00", "unit_id": "dual_d19_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:43:37.231636+00:00", "unit_id": "dual_d19_f1_c1", "fit_seconds": 33.323990324512124}
+{"event": "unit_start", "time": "2026-09-07T04:43:37.368542+00:00", "unit_id": "dual_d19_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:44:10.958455+00:00", "unit_id": "dual_d19_f1_c2", "fit_seconds": 33.31506563164294}
+{"event": "unit_start", "time": "2026-09-07T04:44:11.091654+00:00", "unit_id": "dual_d19_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:44:45.058799+00:00", "unit_id": "dual_d19_f1_c3", "fit_seconds": 33.69093678332865}
+{"event": "unit_start", "time": "2026-09-07T04:44:45.208954+00:00", "unit_id": "dual_d19_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:45:19.512639+00:00", "unit_id": "dual_d19_f2_c0", "fit_seconds": 34.0264695789665}
+{"event": "unit_start", "time": "2026-09-07T04:45:19.642789+00:00", "unit_id": "dual_d19_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:45:56.461421+00:00", "unit_id": "dual_d19_f2_c1", "fit_seconds": 36.408724423497915}
+{"event": "unit_start", "time": "2026-09-07T04:45:56.607788+00:00", "unit_id": "dual_d19_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:46:33.443674+00:00", "unit_id": "dual_d19_f2_c2", "fit_seconds": 36.42215139977634}
+{"event": "unit_start", "time": "2026-09-07T04:46:33.588964+00:00", "unit_id": "dual_d19_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:47:08.019058+00:00", "unit_id": "dual_d19_f2_c3", "fit_seconds": 34.15421368740499}
+{"event": "batch_done", "time": "2026-09-07T04:47:08.148203+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:47:25.617346+00:00", "unit_ids": ["dual_d19_f3_c0", "dual_d19_f3_c1", "dual_d19_f3_c2", "dual_d19_f3_c3", "dual_d19_f4_c0", "dual_d19_f4_c1", "dual_d19_f4_c2", "dual_d19_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:47:25.618202+00:00", "unit_id": "dual_d19_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:48:01.812354+00:00", "unit_id": "dual_d19_f3_c0", "fit_seconds": 35.916466016322374}
+{"event": "unit_start", "time": "2026-09-07T04:48:01.991349+00:00", "unit_id": "dual_d19_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:48:34.312109+00:00", "unit_id": "dual_d19_f3_c1", "fit_seconds": 32.045575603842735}
+{"event": "unit_start", "time": "2026-09-07T04:48:34.444417+00:00", "unit_id": "dual_d19_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:49:08.754066+00:00", "unit_id": "dual_d19_f3_c2", "fit_seconds": 33.89822051115334}
+{"event": "unit_start", "time": "2026-09-07T04:49:08.884805+00:00", "unit_id": "dual_d19_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:49:43.532756+00:00", "unit_id": "dual_d19_f3_c3", "fit_seconds": 34.239421086385846}
+{"event": "unit_start", "time": "2026-09-07T04:49:43.694721+00:00", "unit_id": "dual_d19_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:50:17.720915+00:00", "unit_id": "dual_d19_f4_c0", "fit_seconds": 33.74864638596773}
+{"event": "unit_start", "time": "2026-09-07T04:50:17.860084+00:00", "unit_id": "dual_d19_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:50:51.699817+00:00", "unit_id": "dual_d19_f4_c1", "fit_seconds": 33.5618258100003}
+{"event": "unit_start", "time": "2026-09-07T04:50:51.841502+00:00", "unit_id": "dual_d19_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:51:25.389835+00:00", "unit_id": "dual_d19_f4_c2", "fit_seconds": 33.27325978688896}
+{"event": "unit_start", "time": "2026-09-07T04:51:25.519613+00:00", "unit_id": "dual_d19_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:51:58.358208+00:00", "unit_id": "dual_d19_f4_c3", "fit_seconds": 32.560714192688465}
+{"event": "batch_done", "time": "2026-09-07T04:51:58.492467+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:52:21.610392+00:00", "unit_ids": ["dual_d20_f0_c0", "dual_d20_f0_c1", "dual_d20_f0_c2", "dual_d20_f0_c3", "dual_d20_f1_c0", "dual_d20_f1_c1", "dual_d20_f1_c2", "dual_d20_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:52:21.611322+00:00", "unit_id": "dual_d20_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:52:57.906380+00:00", "unit_id": "dual_d20_f0_c0", "fit_seconds": 36.016527730971575}
+{"event": "unit_start", "time": "2026-09-07T04:52:58.079382+00:00", "unit_id": "dual_d20_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:53:33.419848+00:00", "unit_id": "dual_d20_f0_c1", "fit_seconds": 34.928652100265026}
+{"event": "unit_start", "time": "2026-09-07T04:53:33.569381+00:00", "unit_id": "dual_d20_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:54:08.658323+00:00", "unit_id": "dual_d20_f0_c2", "fit_seconds": 34.67803177423775}
+{"event": "unit_start", "time": "2026-09-07T04:54:08.796850+00:00", "unit_id": "dual_d20_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:54:40.717787+00:00", "unit_id": "dual_d20_f0_c3", "fit_seconds": 31.644779844209552}
+{"event": "unit_start", "time": "2026-09-07T04:54:40.849776+00:00", "unit_id": "dual_d20_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:55:14.287983+00:00", "unit_id": "dual_d20_f1_c0", "fit_seconds": 33.16068603284657}
+{"event": "unit_start", "time": "2026-09-07T04:55:14.416714+00:00", "unit_id": "dual_d20_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:55:47.235186+00:00", "unit_id": "dual_d20_f1_c1", "fit_seconds": 32.54115926660597}
+{"event": "unit_start", "time": "2026-09-07T04:55:47.364400+00:00", "unit_id": "dual_d20_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:56:20.519697+00:00", "unit_id": "dual_d20_f1_c2", "fit_seconds": 32.87523942813277}
+{"event": "unit_start", "time": "2026-09-07T04:56:20.710557+00:00", "unit_id": "dual_d20_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:56:55.565396+00:00", "unit_id": "dual_d20_f1_c3", "fit_seconds": 34.44320717640221}
+{"event": "batch_done", "time": "2026-09-07T04:56:55.701677+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T04:57:18.075370+00:00", "unit_ids": ["dual_d20_f2_c0", "dual_d20_f2_c1", "dual_d20_f2_c2", "dual_d20_f2_c3", "dual_d20_f3_c0", "dual_d20_f3_c1", "dual_d20_f3_c2", "dual_d20_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T04:57:18.076476+00:00", "unit_id": "dual_d20_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T04:57:58.100478+00:00", "unit_id": "dual_d20_f2_c0", "fit_seconds": 39.61231866851449}
+{"event": "unit_start", "time": "2026-09-07T04:57:58.272800+00:00", "unit_id": "dual_d20_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T04:58:33.861472+00:00", "unit_id": "dual_d20_f2_c1", "fit_seconds": 35.17653622291982}
+{"event": "unit_start", "time": "2026-09-07T04:58:34.011095+00:00", "unit_id": "dual_d20_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T04:59:09.563820+00:00", "unit_id": "dual_d20_f2_c2", "fit_seconds": 35.13570663519204}
+{"event": "unit_start", "time": "2026-09-07T04:59:09.716746+00:00", "unit_id": "dual_d20_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T04:59:45.271958+00:00", "unit_id": "dual_d20_f2_c3", "fit_seconds": 35.141408218070865}
+{"event": "unit_start", "time": "2026-09-07T04:59:45.431877+00:00", "unit_id": "dual_d20_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:00:24.391751+00:00", "unit_id": "dual_d20_f3_c0", "fit_seconds": 38.54357009194791}
+{"event": "unit_start", "time": "2026-09-07T05:00:24.530448+00:00", "unit_id": "dual_d20_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:01:00.326191+00:00", "unit_id": "dual_d20_f3_c1", "fit_seconds": 35.51529542170465}
+{"event": "unit_start", "time": "2026-09-07T05:01:00.464305+00:00", "unit_id": "dual_d20_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:01:36.079893+00:00", "unit_id": "dual_d20_f3_c2", "fit_seconds": 35.336422972381115}
+{"event": "unit_start", "time": "2026-09-07T05:01:36.228117+00:00", "unit_id": "dual_d20_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:02:11.183332+00:00", "unit_id": "dual_d20_f3_c3", "fit_seconds": 34.67839262634516}
+{"event": "batch_done", "time": "2026-09-07T05:02:11.313106+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:02:56.851161+00:00", "unit_ids": ["dual_d20_f4_c0", "dual_d20_f4_c1", "dual_d20_f4_c2", "dual_d20_f4_c3", "dual_d21_f0_c0", "dual_d21_f0_c1", "dual_d21_f0_c2", "dual_d21_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:02:56.851857+00:00", "unit_id": "dual_d20_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:03:35.704634+00:00", "unit_id": "dual_d20_f4_c0", "fit_seconds": 38.44081044383347}
+{"event": "unit_start", "time": "2026-09-07T05:03:35.869110+00:00", "unit_id": "dual_d20_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:04:11.177081+00:00", "unit_id": "dual_d20_f4_c1", "fit_seconds": 34.89780401811004}
+{"event": "unit_start", "time": "2026-09-07T05:04:11.310285+00:00", "unit_id": "dual_d20_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:04:43.628682+00:00", "unit_id": "dual_d20_f4_c2", "fit_seconds": 32.0423087682575}
+{"event": "unit_start", "time": "2026-09-07T05:04:43.756120+00:00", "unit_id": "dual_d20_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:05:18.417696+00:00", "unit_id": "dual_d20_f4_c3", "fit_seconds": 34.251913737505674}
+{"event": "unit_start", "time": "2026-09-07T05:05:18.550112+00:00", "unit_id": "dual_d21_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:05:51.869898+00:00", "unit_id": "dual_d21_f0_c0", "fit_seconds": 33.04232475720346}
+{"event": "unit_start", "time": "2026-09-07T05:05:52.013164+00:00", "unit_id": "dual_d21_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:06:24.452320+00:00", "unit_id": "dual_d21_f0_c1", "fit_seconds": 32.16403509117663}
+{"event": "unit_start", "time": "2026-09-07T05:06:24.582234+00:00", "unit_id": "dual_d21_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:06:57.201023+00:00", "unit_id": "dual_d21_f0_c2", "fit_seconds": 32.34142152220011}
+{"event": "unit_start", "time": "2026-09-07T05:06:57.332025+00:00", "unit_id": "dual_d21_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:07:32.911853+00:00", "unit_id": "dual_d21_f0_c3", "fit_seconds": 35.17081808671355}
+{"event": "batch_done", "time": "2026-09-07T05:07:33.048210+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:07:54.104124+00:00", "unit_ids": ["dual_d21_f1_c0", "dual_d21_f1_c1", "dual_d21_f1_c2", "dual_d21_f1_c3", "dual_d21_f2_c0", "dual_d21_f2_c1", "dual_d21_f2_c2", "dual_d21_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:07:54.104980+00:00", "unit_id": "dual_d21_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:08:29.024229+00:00", "unit_id": "dual_d21_f1_c0", "fit_seconds": 34.77403891272843}
+{"event": "unit_start", "time": "2026-09-07T05:08:29.194634+00:00", "unit_id": "dual_d21_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:09:00.505926+00:00", "unit_id": "dual_d21_f1_c1", "fit_seconds": 31.166520392522216}
+{"event": "unit_start", "time": "2026-09-07T05:09:00.683627+00:00", "unit_id": "dual_d21_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:09:34.017527+00:00", "unit_id": "dual_d21_f1_c2", "fit_seconds": 33.05390179529786}
+{"event": "unit_start", "time": "2026-09-07T05:09:34.164935+00:00", "unit_id": "dual_d21_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:10:07.353444+00:00", "unit_id": "dual_d21_f1_c3", "fit_seconds": 32.909603491425514}
+{"event": "unit_start", "time": "2026-09-07T05:10:07.489332+00:00", "unit_id": "dual_d21_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:10:40.859910+00:00", "unit_id": "dual_d21_f2_c0", "fit_seconds": 33.09419124759734}
+{"event": "unit_start", "time": "2026-09-07T05:10:40.993399+00:00", "unit_id": "dual_d21_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:11:17.347360+00:00", "unit_id": "dual_d21_f2_c1", "fit_seconds": 35.93865451216698}
+{"event": "unit_start", "time": "2026-09-07T05:11:17.537997+00:00", "unit_id": "dual_d21_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:11:48.603891+00:00", "unit_id": "dual_d21_f2_c2", "fit_seconds": 30.785046253353357}
+{"event": "unit_start", "time": "2026-09-07T05:11:48.790908+00:00", "unit_id": "dual_d21_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:12:21.375017+00:00", "unit_id": "dual_d21_f2_c3", "fit_seconds": 32.306411517784}
+{"event": "batch_done", "time": "2026-09-07T05:12:21.522690+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:12:51.204392+00:00", "unit_ids": ["dual_d21_f3_c0", "dual_d21_f3_c1", "dual_d21_f3_c2", "dual_d21_f3_c3", "dual_d21_f4_c0", "dual_d21_f4_c1", "dual_d21_f4_c2", "dual_d21_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:12:51.205261+00:00", "unit_id": "dual_d21_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:13:27.704695+00:00", "unit_id": "dual_d21_f3_c0", "fit_seconds": 36.222980584949255}
+{"event": "unit_start", "time": "2026-09-07T05:13:27.841002+00:00", "unit_id": "dual_d21_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:14:03.108403+00:00", "unit_id": "dual_d21_f3_c1", "fit_seconds": 34.859180957078934}
+{"event": "unit_start", "time": "2026-09-07T05:14:03.247557+00:00", "unit_id": "dual_d21_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:14:38.474920+00:00", "unit_id": "dual_d21_f3_c2", "fit_seconds": 34.8165964987129}
+{"event": "unit_start", "time": "2026-09-07T05:14:38.603871+00:00", "unit_id": "dual_d21_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:15:14.101207+00:00", "unit_id": "dual_d21_f3_c3", "fit_seconds": 35.089827585965395}
+{"event": "unit_start", "time": "2026-09-07T05:15:14.228676+00:00", "unit_id": "dual_d21_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:15:47.146180+00:00", "unit_id": "dual_d21_f4_c0", "fit_seconds": 32.63341357000172}
+{"event": "unit_start", "time": "2026-09-07T05:15:47.275681+00:00", "unit_id": "dual_d21_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:16:20.490037+00:00", "unit_id": "dual_d21_f4_c1", "fit_seconds": 32.928444596007466}
+{"event": "unit_start", "time": "2026-09-07T05:16:20.617786+00:00", "unit_id": "dual_d21_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:16:54.089808+00:00", "unit_id": "dual_d21_f4_c2", "fit_seconds": 33.19562682136893}
+{"event": "unit_start", "time": "2026-09-07T05:16:54.216578+00:00", "unit_id": "dual_d21_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:17:27.551865+00:00", "unit_id": "dual_d21_f4_c3", "fit_seconds": 33.058220356702805}
+{"event": "batch_done", "time": "2026-09-07T05:17:27.681855+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:17:47.541685+00:00", "unit_ids": ["dual_d22_f0_c0", "dual_d22_f0_c1", "dual_d22_f0_c2", "dual_d22_f0_c3", "dual_d22_f1_c0", "dual_d22_f1_c1", "dual_d22_f1_c2", "dual_d22_f1_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:17:47.542543+00:00", "unit_id": "dual_d22_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:18:23.832554+00:00", "unit_id": "dual_d22_f0_c0", "fit_seconds": 36.0135942697525}
+{"event": "unit_start", "time": "2026-09-07T05:18:24.005749+00:00", "unit_id": "dual_d22_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:18:56.900953+00:00", "unit_id": "dual_d22_f0_c1", "fit_seconds": 32.618201926350594}
+{"event": "unit_start", "time": "2026-09-07T05:18:57.043717+00:00", "unit_id": "dual_d22_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:19:32.393941+00:00", "unit_id": "dual_d22_f0_c2", "fit_seconds": 34.921993151307106}
+{"event": "unit_start", "time": "2026-09-07T05:19:32.534260+00:00", "unit_id": "dual_d22_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:20:08.371749+00:00", "unit_id": "dual_d22_f0_c3", "fit_seconds": 35.428782533854246}
+{"event": "unit_start", "time": "2026-09-07T05:20:08.565195+00:00", "unit_id": "dual_d22_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:20:44.604137+00:00", "unit_id": "dual_d22_f1_c0", "fit_seconds": 35.62938796542585}
+{"event": "unit_start", "time": "2026-09-07T05:20:44.753424+00:00", "unit_id": "dual_d22_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:21:20.107833+00:00", "unit_id": "dual_d22_f1_c1", "fit_seconds": 34.93573673814535}
+{"event": "unit_start", "time": "2026-09-07T05:21:20.238386+00:00", "unit_id": "dual_d22_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:21:55.655169+00:00", "unit_id": "dual_d22_f1_c2", "fit_seconds": 35.00666976347566}
+{"event": "unit_start", "time": "2026-09-07T05:21:55.789360+00:00", "unit_id": "dual_d22_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:22:27.751820+00:00", "unit_id": "dual_d22_f1_c3", "fit_seconds": 31.68583870306611}
+{"event": "batch_done", "time": "2026-09-07T05:22:27.900377+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:22:44.085834+00:00", "unit_ids": ["dual_d22_f2_c0", "dual_d22_f2_c1", "dual_d22_f2_c2", "dual_d22_f2_c3", "dual_d22_f3_c0", "dual_d22_f3_c1", "dual_d22_f3_c2", "dual_d22_f3_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:22:44.086707+00:00", "unit_id": "dual_d22_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:23:22.172382+00:00", "unit_id": "dual_d22_f2_c0", "fit_seconds": 37.80722713470459}
+{"event": "unit_start", "time": "2026-09-07T05:23:22.323215+00:00", "unit_id": "dual_d22_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:23:56.677959+00:00", "unit_id": "dual_d22_f2_c1", "fit_seconds": 34.075656505301595}
+{"event": "unit_start", "time": "2026-09-07T05:23:56.853705+00:00", "unit_id": "dual_d22_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:24:33.698624+00:00", "unit_id": "dual_d22_f2_c2", "fit_seconds": 36.43380158394575}
+{"event": "unit_start", "time": "2026-09-07T05:24:33.852665+00:00", "unit_id": "dual_d22_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:25:10.404270+00:00", "unit_id": "dual_d22_f2_c3", "fit_seconds": 36.14222448691726}
+{"event": "unit_start", "time": "2026-09-07T05:25:10.582185+00:00", "unit_id": "dual_d22_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:25:45.326729+00:00", "unit_id": "dual_d22_f3_c0", "fit_seconds": 34.46308720484376}
+{"event": "unit_start", "time": "2026-09-07T05:25:45.469883+00:00", "unit_id": "dual_d22_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:26:20.342251+00:00", "unit_id": "dual_d22_f3_c1", "fit_seconds": 34.59539101459086}
+{"event": "unit_start", "time": "2026-09-07T05:26:20.492666+00:00", "unit_id": "dual_d22_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:26:57.512754+00:00", "unit_id": "dual_d22_f3_c2", "fit_seconds": 36.61037452891469}
+{"event": "unit_start", "time": "2026-09-07T05:26:57.665396+00:00", "unit_id": "dual_d22_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:27:34.612111+00:00", "unit_id": "dual_d22_f3_c3", "fit_seconds": 36.53675277158618}
+{"event": "batch_done", "time": "2026-09-07T05:27:34.746249+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:28:22.131674+00:00", "unit_ids": ["dual_d22_f4_c0", "dual_d22_f4_c1", "dual_d22_f4_c2", "dual_d22_f4_c3", "dual_d23_f0_c0", "dual_d23_f0_c1", "dual_d23_f0_c2", "dual_d23_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:28:22.132514+00:00", "unit_id": "dual_d22_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:28:58.747089+00:00", "unit_id": "dual_d22_f4_c0", "fit_seconds": 36.33640109188855}
+{"event": "unit_start", "time": "2026-09-07T05:28:58.897630+00:00", "unit_id": "dual_d22_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:29:28.886541+00:00", "unit_id": "dual_d22_f4_c1", "fit_seconds": 29.845039751380682}
+{"event": "unit_start", "time": "2026-09-07T05:29:29.017598+00:00", "unit_id": "dual_d22_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:30:01.793321+00:00", "unit_id": "dual_d22_f4_c2", "fit_seconds": 32.497380232438445}
+{"event": "unit_start", "time": "2026-09-07T05:30:01.932911+00:00", "unit_id": "dual_d22_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:30:34.329109+00:00", "unit_id": "dual_d22_f4_c3", "fit_seconds": 32.11987088061869}
+{"event": "unit_start", "time": "2026-09-07T05:30:34.461175+00:00", "unit_id": "dual_d23_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:31:07.293105+00:00", "unit_id": "dual_d23_f0_c0", "fit_seconds": 32.554746797308326}
+{"event": "unit_start", "time": "2026-09-07T05:31:07.443963+00:00", "unit_id": "dual_d23_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:31:37.379634+00:00", "unit_id": "dual_d23_f0_c1", "fit_seconds": 29.7913863863796}
+{"event": "unit_start", "time": "2026-09-07T05:31:37.522683+00:00", "unit_id": "dual_d23_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:32:10.346227+00:00", "unit_id": "dual_d23_f0_c2", "fit_seconds": 32.54584142193198}
+{"event": "unit_start", "time": "2026-09-07T05:32:10.481491+00:00", "unit_id": "dual_d23_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:32:42.746484+00:00", "unit_id": "dual_d23_f0_c3", "fit_seconds": 31.98921656049788}
+{"event": "batch_done", "time": "2026-09-07T05:32:42.880064+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:33:21.034093+00:00", "unit_ids": ["dual_d23_f1_c0", "dual_d23_f1_c1", "dual_d23_f1_c2", "dual_d23_f1_c3", "dual_d23_f2_c0", "dual_d23_f2_c1", "dual_d23_f2_c2", "dual_d23_f2_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:33:21.036679+00:00", "unit_id": "dual_d23_f1_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:34:00.013438+00:00", "unit_id": "dual_d23_f1_c0", "fit_seconds": 38.698282703757286}
+{"event": "unit_start", "time": "2026-09-07T05:34:00.160166+00:00", "unit_id": "dual_d23_f1_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:34:34.685383+00:00", "unit_id": "dual_d23_f1_c1", "fit_seconds": 34.24883039854467}
+{"event": "unit_start", "time": "2026-09-07T05:34:34.827058+00:00", "unit_id": "dual_d23_f1_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:35:09.428285+00:00", "unit_id": "dual_d23_f1_c2", "fit_seconds": 34.32236483693123}
+{"event": "unit_start", "time": "2026-09-07T05:35:09.627289+00:00", "unit_id": "dual_d23_f1_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:35:46.721314+00:00", "unit_id": "dual_d23_f1_c3", "fit_seconds": 36.68499981984496}
+{"event": "unit_start", "time": "2026-09-07T05:35:46.873745+00:00", "unit_id": "dual_d23_f2_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:36:21.212998+00:00", "unit_id": "dual_d23_f2_c0", "fit_seconds": 34.06279589794576}
+{"event": "unit_start", "time": "2026-09-07T05:36:21.354044+00:00", "unit_id": "dual_d23_f2_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:36:59.283182+00:00", "unit_id": "dual_d23_f2_c1", "fit_seconds": 37.508914075791836}
+{"event": "unit_start", "time": "2026-09-07T05:36:59.452661+00:00", "unit_id": "dual_d23_f2_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:37:34.673429+00:00", "unit_id": "dual_d23_f2_c2", "fit_seconds": 34.9432354606688}
+{"event": "unit_start", "time": "2026-09-07T05:37:34.824606+00:00", "unit_id": "dual_d23_f2_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:38:11.688409+00:00", "unit_id": "dual_d23_f2_c3", "fit_seconds": 36.455318039283156}
+{"event": "batch_done", "time": "2026-09-07T05:38:11.821497+00:00", "units": 8}
+{"event": "batch_start", "time": "2026-09-07T05:38:59.801840+00:00", "unit_ids": ["dual_d23_f3_c0", "dual_d23_f3_c1", "dual_d23_f3_c2", "dual_d23_f3_c3", "dual_d23_f4_c0", "dual_d23_f4_c1", "dual_d23_f4_c2", "dual_d23_f4_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T05:38:59.802823+00:00", "unit_id": "dual_d23_f3_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:39:37.329468+00:00", "unit_id": "dual_d23_f3_c0", "fit_seconds": 37.246787713840604}
+{"event": "unit_start", "time": "2026-09-07T05:39:37.473302+00:00", "unit_id": "dual_d23_f3_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:40:10.196675+00:00", "unit_id": "dual_d23_f3_c1", "fit_seconds": 32.446798318997025}
+{"event": "unit_start", "time": "2026-09-07T05:40:10.336020+00:00", "unit_id": "dual_d23_f3_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:40:42.521428+00:00", "unit_id": "dual_d23_f3_c2", "fit_seconds": 31.909933999180794}
+{"event": "unit_start", "time": "2026-09-07T05:40:42.653837+00:00", "unit_id": "dual_d23_f3_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:41:17.472360+00:00", "unit_id": "dual_d23_f3_c3", "fit_seconds": 34.410189570859075}
+{"event": "unit_start", "time": "2026-09-07T05:41:17.603578+00:00", "unit_id": "dual_d23_f4_c0"}
+{"event": "unit_done", "time": "2026-09-07T05:41:49.712727+00:00", "unit_id": "dual_d23_f4_c0", "fit_seconds": 31.831743635237217}
+{"event": "unit_start", "time": "2026-09-07T05:41:49.844568+00:00", "unit_id": "dual_d23_f4_c1"}
+{"event": "unit_done", "time": "2026-09-07T05:42:21.216865+00:00", "unit_id": "dual_d23_f4_c1", "fit_seconds": 31.096090150997043}
+{"event": "unit_start", "time": "2026-09-07T05:42:21.382694+00:00", "unit_id": "dual_d23_f4_c2"}
+{"event": "unit_done", "time": "2026-09-07T05:42:53.577854+00:00", "unit_id": "dual_d23_f4_c2", "fit_seconds": 31.917809387668967}
+{"event": "unit_start", "time": "2026-09-07T05:42:53.709463+00:00", "unit_id": "dual_d23_f4_c3"}
+{"event": "unit_done", "time": "2026-09-07T05:43:25.361011+00:00", "unit_id": "dual_d23_f4_c3", "fit_seconds": 31.374814899638295}
+{"event": "batch_done", "time": "2026-09-07T05:43:25.512007+00:00", "units": 8}

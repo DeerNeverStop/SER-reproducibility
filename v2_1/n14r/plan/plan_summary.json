@@ -1,0 +1,21 @@
+{
+ "all_28_draws_all_retries_projected_gpu_hours": 216.8,
+ "all_28_draws_first_attempt_projected_gpu_hours": 108.4,
+ "analysis_population_rows": 7435,
+ "hygiene_sha256": "c78b0035c4c02e41e7fb502b9597d941fc03ecb1a7409498a538cae6b14b19a1",
+ "manifest_input_rows": 7442,
+ "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+ "maximum_attempts_per_unit": 2,
+ "maximum_units": 2240,
+ "primary_draws": 24,
+ "primary_first_attempt_projected_gpu_hours": 92.9,
+ "primary_units": 1920,
+ "reserve_draws": 4,
+ "run_plan_sha256": "c561f7fec18759d43a9c419c384b12ca392650f78ce94c060ec20477a1a2d99a",
+ "soft_resource_allocation_gpu_hours": 125.0,
+ "spec_version": "1.0.0",
+ "split_index_sha256": "35ad33f9f96ddf01b89b7fd9d24302f14ced790bcc7da2b77ee30a7f92421089",
+ "study_id": "N14R",
+ "theoretical_maximum_training_attempts": 4480,
+ "units_per_draw": 80
+}

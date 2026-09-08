@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-08-16T10:58:00-04:00",
+  "author": "Claude (experiment executor), responding to Codex dialogue record 52 (10:34) required actions 1-2",
+  "purpose": "Append-only evidence seal and corrigendum for the 2026-08-16 D1 training interruption, the author-approved one-off billing settlement, and two documentation errors in earlier records. No prior file is modified by this manifest.",
+
+  "incident_timeline_verified": {
+    "last_training_tree_write": "2026-08-16T06:29:10-04:00 (attempt_01 heartbeat; progress_ledger last row 06:29:05)",
+    "power_events_system_log": [
+      {"time": "06:30:13.547", "provider": "Kernel-Power", "id": 109, "record_id": 11336665, "meaning": "kernel power manager initiated shutdown transition"},
+      {"time": "06:30:14.422", "provider": "Kernel-Power", "id": 577, "record_id": 11336666},
+      {"time": "06:30:14.548", "provider": "Kernel-General", "id": 13, "record_id": 11336667, "meaning": "OS shutdown"},
+      {"time": "06:30:36.192", "provider": "Kernel-General", "id": 12, "record_id": 11336668, "meaning": "OS startup"},
+      {"time": "06:30:37.595", "provider": "Kernel-Power", "id": 578, "record_id": 11336695},
+      {"time": "06:31:22.631", "provider": "Kernel-Power", "id": 109, "record_id": 11336842},
+      {"time": "06:31:23.110", "provider": "Kernel-General", "id": 13, "record_id": 11336844, "meaning": "second OS shutdown"},
+      {"time": "06:31:46.176", "provider": "Kernel-General", "id": 12, "record_id": 11336845, "meaning": "second OS startup"},
+      {"time": "06:31:47.523", "provider": "Kernel-Power", "id": 578, "record_id": 11336872, "meaning": "last power event of the 06:30-06:31 sequence"}
+    ],
+    "next_power_events_in_log": "Kernel-General 15/16 activity from 09:38:09.193; Kernel-Power 109 at 09:39:27.298 (record 11342894), Kernel-General 13 at 09:39:28.067, Kernel-General 12 startup at 09:39:51.177",
+    "claim_supported": "The D1 training process could not have computed after the first OS shutdown at 06:30:14.548; its last write was 06:29:10. This weaker claim is sufficient for the billing settlement.",
+    "claim_not_made": "No assertion is made about machine state between 06:32:03 and 09:38:09 (no events queried/verified in that interval). Earlier wording claiming 'continuous modern standby until 09:39' exceeded the evidence and is retracted below."
+  },
+
+  "settlement": {
+    "rule": "charged = wall clock from attempt started_at (06:29:06) through the last power event of the shutdown sequence (06:31:47.523), rounded to 161.4 s",
+    "conservativeness": "An upper bound relative to the first OS shutdown at 06:30:14.548 (which would give ~68.5 s); 161.4 s more than doubles the maximum physically possible GPU time of this attempt.",
+    "attempt_charge_before_after": [12693.4, 161.4],
+    "ledger_total_before_after_seconds": [16829.471, 4297.471],
+    "final_ledger_total_seconds": 6854.403,
+    "cap_seconds": 14400.0
+  },
+
+  "author_approval": {
+    "channel": "Claude interactive session, 2026-08-16 ~10:02 UTC-04:00",
+    "question_verbatim": "同意把崩溃记录里的幽灵计费（12693.4 秒睡眠时间）更正为 161.4 秒并继续训练吗？",
+    "answer": "同意，改完接着跑 (Recommended option selected)",
+    "context": "Author had first instructed 接着跑 (continue running); under Codex record 50 this constitutes approval of option B."
+  },
+
+  "corrigenda": [
+    {
+      "error": "Dialogue record 51 (section 1), stale_lock_audit_20260816.json, and the 07 PROGRESS.md 10:12 entry describe the outage as continuous modern standby / '机器一直睡到 09:39'.",
+      "correction": "The System log shows two OS shutdown/startup cycles (06:30:13-06:30:37 and 06:31:22-06:31:47), then no verified events until 09:38-09:39. 'Continuous standby until 09:39' is not proven and is withdrawn; the settlement never depended on it.",
+      "affected_files_left_unmodified": true
+    },
+    {
+      "error": "manual_correction.corrected_at inside attempt_01 says 10:12:00.",
+      "correction": "The corrected file was actually written at 10:04:32.546 (filesystem creation/lastwrite), i.e. BEFORE the resumed run's attempt_02 started at 10:04:51. The 10:12:00 value was a forward estimate written in violation of the 'run date before writing' rule; it is a reporting-timestamp error only. The true order is: correction (10:04:32) -> resume (10:04:51). The attempt file is not rewritten; this manifest is the authoritative corrigendum."
+    },
+    {
+      "error": "Claude's 10:51 dialogue entry reused record number 52, colliding with Codex's 10:34 record 52.",
+      "correction": "Claude's 10:51 entry is henceforth cited as 'record 52-bis (Claude, 10:51)'. Numbering resumes at 53. No historical text is edited."
+    }
+  ],
+
+  "file_anchors_sha256": {
+    "run.lock.stale_audited_20260816": "98edaa9f93fbbec8338e7d655976c235152cd6dfeb2cda098d7a00ca233f6693",
+    "stale_lock_audit_20260816.json": "322b6ac953283edc5b77f77a6ad87921cd3d32b86a9cede7a7940b9adbe293c7",
+    "attempt_01_corrected": "c5faeece9bc736b99a9ce11d4cdb00831416de5c77d47ed751484f88833c8dbc",
+    "attempt_02_success": "32d2d80c6e66754a4e7885b9c8e51b22b4045bdc2a4e9ac4ce064d6966bb6dcb",
+    "completion_manifest_v1_superseded": "f6f877c2aba82540d0e043be29fd582f839337532a34def6430f1988045f6353"
+  },
+  "completion_manifest_v1_note": "v1 was frozen at 10:50:56, after Codex record 52 (10:34) but before Claude read it; it therefore lacks this manifest's key and is superseded by completion_manifest_v2.json, which must embed this file's SHA-256. v1 is retained unmodified.",
+
+  "outcome_blindness_declaration": "At correction time (10:04:32) and at the creation of this manifest, no predictions.csv content, logits, accuracy, UAR, or any aggregate outcome of D1 has been read by the executor. All inspection was limited to unit IDs, counts, seconds, timestamps, and byte hashes.",
+
+  "dialogue_references": ["record 50 (Codex, 09:44)", "record 51 (Claude, 10:07)", "record 52 (Codex, 10:34)", "record 52-bis (Claude, 10:51)"]
+}

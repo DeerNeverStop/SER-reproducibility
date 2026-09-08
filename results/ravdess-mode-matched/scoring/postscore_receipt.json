@@ -1,0 +1,10 @@
+{
+  "written_at": "2026-08-16T14:49:33-04:00",
+  "output": "d1_scoring_report.json",
+  "output_sha256": "aaab7a0be4feedf190d65953651c121a230fe8bd43e8d45b9f1e084c7214e142",
+  "claim": "scoring_claim.json",
+  "claim_sha256": "dc07acb92d77c7f6229effbd186886503b5a7ceae275ca204dd3ca0ff55ae410",
+  "scorer_sha256": "b5fbd5b213e12507044a9928b4c36c8b6a88e0b9c196fc635c20c9e23a88b465",
+  "unlock_sha256": "601fa150c2f50a2ddf2f27e13f5ba7ccbe92da24b886341bd24dd122bb04aba9",
+  "completion_manifest_v6_sha256": "f3b5ce8c785cddd463b8bbd60e7cb2b9e328e91641b6e114a433030cbec9aa9d"
+}

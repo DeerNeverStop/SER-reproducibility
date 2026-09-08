@@ -1,0 +1,6 @@
+{"pass": true, "program": "SER26-DEPLOY-2", "lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5", "counts": {"A_units": 135, "B2_FIXED_units": 135, "B2_units": 390}}
+[calib_gpu] 2 unit(s) selected for ['cnn', 'wavlm_ft'] on cuda (NVIDIA GeForce RTX 5090)
+[calib_gpu] 1/2 cremad cnn GR r0 f0: epochs=100 best=95 130.7s (done=1 skipped=0 failed=0)
+[calib_gpu] audio verified for cremad: 7435 files
+[calib_gpu] 2/2 cremad wavlm_ft GR r0 f0: epochs=6 best=3 59.5s (done=2 skipped=0 failed=0)
+[calib_gpu] {"models": ["cnn", "wavlm_ft"], "selected": 2, "done": 2, "skipped_ok": 0, "failed": 0, "device": "cuda"}

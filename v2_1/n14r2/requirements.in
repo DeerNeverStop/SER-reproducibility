@@ -1,0 +1,8 @@
+# Portable Linux/Python 3.12 environment, resolved before formal execution.
+torch==2.11.0+cu128
+numpy==2.4.6
+scipy==1.18.0
+scikit-learn==1.9.0
+librosa==0.11.0
+tqdm==4.69.0
+pytest==9.1.1

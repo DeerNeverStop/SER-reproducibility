@@ -1,0 +1,683 @@
+{
+ "claims": {
+  "C1": {
+   "evidence": {},
+   "rule": "always reported with intervals; no verdict",
+   "verdict": "reported (estimation claim)"
+  },
+  "C2-rep": {
+   "evidence": {
+    "R01": "supported",
+    "R02": "supported",
+    "R03": "supported",
+    "R04": "supported",
+    "R05": "supported",
+    "R06": "supported",
+    "R07": "supported",
+    "R08": "supported"
+   },
+   "rule": "supported iff all eight reject; per-test verdicts in evidence; not a headline claim",
+   "verdict": "supported"
+  },
+  "C2a": {
+   "evidence": {
+    "N01": "supported",
+    "N02": "supported"
+   },
+   "rule": "supported iff N01 rejects; N02 reported",
+   "verdict": "supported"
+  },
+  "C2b": {
+   "evidence": {
+    "N03": "supported",
+    "N04": "supported"
+   },
+   "rule": "supported iff both reject",
+   "verdict": "supported"
+  },
+  "C3a": {
+   "evidence": {
+    "N05": "supported",
+    "N07": "estimate (not tested)"
+   },
+   "rule": "supported iff >=1 rejects and no opposite-sign rejection",
+   "verdict": "supported"
+  },
+  "C3b": {
+   "evidence": {
+    "N06": "supported",
+    "N08": "estimate (not tested)"
+   },
+   "rule": "supported iff >=1 rejects and no opposite-sign rejection",
+   "verdict": "supported"
+  },
+  "C3c": {
+   "evidence": {
+    "N09": "supported"
+   },
+   "rule": "supported iff N09 rejects",
+   "verdict": "supported"
+  },
+  "C3d": {
+   "evidence": {
+    "N10": "supported"
+   },
+   "rule": "supported iff N10 rejects",
+   "verdict": "supported"
+  },
+  "C4a": {
+   "evidence": {
+    "R09": "supported",
+    "R10": "supported",
+    "R11": "supported"
+   },
+   "rule": "supported iff >=2 of 3 reject",
+   "verdict": "supported"
+  },
+  "C4b": {
+   "evidence": {
+    "N11": "estimate (not tested)",
+    "N12": "estimate (not tested)",
+    "N13": "estimate (not tested)"
+   },
+   "rule": "estimation claim after a priori demotion: reported with intervals; no verdict",
+   "verdict": "reported (estimation claim)"
+  },
+  "S1": {
+   "evidence": {
+    "N14": "supported"
+   },
+   "rule": "supported iff N14 rejects",
+   "verdict": "supported"
+  },
+  "S2": {
+   "evidence": {
+    "N15": "supported"
+   },
+   "rule": "supported iff N15 rejects",
+   "verdict": "supported"
+  },
+  "S3": {
+   "evidence": {
+    "T01": "supported"
+   },
+   "rule": "supported iff TOST rejects both one-sided nulls",
+   "verdict": "supported"
+  },
+  "S4": {
+   "evidence": {
+    "T02": "supported"
+   },
+   "rule": "supported iff TOST rejects both one-sided nulls",
+   "verdict": "supported"
+  }
+ },
+ "factorial": {
+  "cremad|cnn": {
+   "GG": 56.36308136308137,
+   "GR": 57.263518939343115,
+   "RG": 57.729577097708955,
+   "RR": 58.7750314398666
+  },
+  "cremad|hubert_base": {
+   "GG": 68.83860441552748,
+   "GR": 69.13098094416776,
+   "RG": 70.1842113930026,
+   "RR": 70.73192375390178
+  },
+  "cremad|resnet_se": {
+   "GG": 59.112936310738505,
+   "GR": 59.779922966736166,
+   "RG": 59.85718087366439,
+   "RR": 61.586485350221615
+  },
+  "cremad|transformer": {
+   "GG": 49.518669161526304,
+   "GR": 51.19435916139212,
+   "RG": 50.88927657608977,
+   "RR": 52.30808568720658
+  },
+  "cremad|wav2vec2_base": {
+   "GG": 61.50903431123211,
+   "GR": 62.447564645366846,
+   "RG": 63.61738587013312,
+   "RR": 64.49270611358524
+  },
+  "cremad|wavlm_base_plus": {
+   "GG": 68.76211903684431,
+   "GR": 69.12026211476761,
+   "RG": 69.96181982445718,
+   "RR": 70.3777551305024
+  },
+  "ravdess|cnn": {
+   "GG": 40.46068948412699,
+   "GR": 45.7062251984127,
+   "RG": 52.622767857142854,
+   "RR": 56.959945436507944
+  },
+  "ravdess|hubert_base": {
+   "GG": 65.90401785714285,
+   "GR": 67.28360615079366,
+   "RG": 75.21391369047619,
+   "RR": 78.38851686507937
+  },
+  "ravdess|resnet_se": {
+   "GG": 45.63182043650793,
+   "GR": 52.883184523809526,
+   "RG": 58.407738095238095,
+   "RR": 65.86371527777779
+  },
+  "ravdess|transformer": {
+   "GG": 38.76178075396825,
+   "GR": 45.200892857142854,
+   "RG": 50.306919642857146,
+   "RR": 56.73983134920635
+  },
+  "ravdess|wav2vec2_base": {
+   "GG": 53.3172123015873,
+   "GR": 55.679563492063494,
+   "RG": 62.53720238095239,
+   "RR": 66.87748015873017
+  },
+  "ravdess|wavlm_base_plus": {
+   "GG": 65.11966765873017,
+   "GR": 65.91951884920636,
+   "RG": 72.33382936507935,
+   "RR": 74.4140625
+  },
+  "subesco_980|cnn": {
+   "GG": 39.62585034013605,
+   "GR": 42.857142857142854,
+   "RG": 43.40136054421768,
+   "RR": 47.14285714285714
+  },
+  "subesco_980|hubert_base": {
+   "GG": 56.564625850340136,
+   "GR": 58.46938775510205,
+   "RG": 58.50340136054423,
+   "RR": 60.816326530612244
+  },
+  "subesco_980|resnet_se": {
+   "GG": 44.04761904761905,
+   "GR": 46.632653061224495,
+   "RG": 47.108843537414955,
+   "RR": 51.12244897959184
+  },
+  "subesco_980|transformer": {
+   "GG": 37.99319727891155,
+   "GR": 41.66666666666667,
+   "RG": 43.095238095238095,
+   "RR": 45.034013605442176
+  },
+  "subesco_980|wav2vec2_base": {
+   "GG": 52.58503401360544,
+   "GR": 54.14965986394558,
+   "RG": 55.85034013605442,
+   "RR": 58.60544217687074
+  },
+  "subesco_980|wavlm_base_plus": {
+   "GG": 54.59183673469387,
+   "GR": 56.394557823129254,
+   "RG": 58.639455782312915,
+   "RR": 60.34013605442176
+  }
+ },
+ "ft": {
+  "cremad|wavlm_base_plus_frozen_sr": {
+   "GG": 51.3398841695545,
+   "RR": 50.48942205535612
+  },
+  "cremad|wavlm_base_plus_ft": {
+   "GG": 68.57818616060375,
+   "RR": 70.33631813851594
+  },
+  "ravdess|wavlm_base_plus_frozen_sr": {
+   "GG": 31.770833333333332,
+   "RR": 36.60249255952381
+  },
+  "ravdess|wavlm_base_plus_ft": {
+   "GG": 59.5703125,
+   "RR": 78.57607886904762
+  },
+  "subesco_980|wavlm_base_plus_frozen_sr": {
+   "GG": 38.826530612244895,
+   "RR": 37.04081632653062
+  },
+  "subesco_980|wavlm_base_plus_ft": {
+   "GG": 53.11224489795918,
+   "RR": 59.89795918367346
+  }
+ },
+ "hypotheses": {
+  "N01": {
+   "ci": [
+    5.147392290249433,
+    9.387755102040815
+   ],
+   "claim": "C2a",
+   "family": "N-decomp",
+   "mean": 7.210884353741497,
+   "n": 20,
+   "p": 8.832385863081277e-05,
+   "p_holm": 0.0003532954345232511,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N02": {
+   "ci": [
+    4.024943310657595,
+    6.904761904761903
+   ],
+   "claim": "C2a",
+   "family": "N-decomp",
+   "mean": 5.340136054421768,
+   "n": 20,
+   "p": 0.0001027725553214571,
+   "p_holm": 0.0003532954345232511,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N03": {
+   "ci": [
+    2.29024943310658,
+    5.668934240362811
+   ],
+   "claim": "C2b",
+   "family": "N-decomp",
+   "mean": 3.979591836734696,
+   "n": 20,
+   "p": 0.0008899536071042575,
+   "p_holm": 0.0008899536071042575,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N04": {
+   "ci": [
+    2.2222222222222214,
+    4.217687074829934
+   ],
+   "claim": "C2b",
+   "family": "N-decomp",
+   "mean": 3.2312925170068034,
+   "n": 20,
+   "p": 0.0002706971591465626,
+   "p_holm": 0.0005413943182931252,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N05": {
+   "ci": [
+    9.815323565323569,
+    12.340544871794869
+   ],
+   "claim": "C3a",
+   "family": "N-mech",
+   "mean": 11.074481074481074,
+   "n": 91,
+   "p": 3.0670102801729415e-16,
+   "p_holm": 1.2268041120691766e-15,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N06": {
+   "ci": [
+    1.7856952075702077,
+    3.5386141636141635
+   ],
+   "claim": "C3b",
+   "family": "N-mech",
+   "mean": 2.6831501831501834,
+   "n": 91,
+   "p": 1.258303748433401e-07,
+   "p_holm": 2.516607496866802e-07,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N07": {
+   "ci": [
+    2.6785714285714284,
+    7.857142857142857
+   ],
+   "claim": "C3a",
+   "family": "N-mech",
+   "mean": 5.267857142857142,
+   "n": 20,
+   "p": 0.002324742898534975,
+   "p_holm": null,
+   "status": "estimate",
+   "verdict": "estimate (not tested)"
+  },
+  "N08": {
+   "ci": [
+    13.392857142857148,
+    18.482142857142858
+   ],
+   "claim": "C3b",
+   "family": "N-mech",
+   "mean": 15.892857142857144,
+   "n": 20,
+   "p": 8.794879347050151e-05,
+   "p_holm": null,
+   "status": "estimate",
+   "verdict": "estimate (not tested)"
+  },
+  "N09": {
+   "ci": [
+    7.991071428571426,
+    12.410714285714283
+   ],
+   "claim": "C3c",
+   "family": "N-mech",
+   "mean": 10.089285714285714,
+   "n": 20,
+   "p": 8.757494073814436e-05,
+   "p_holm": 8.757494073814436e-05,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N10": {
+   "ci": [
+    3.9453735845879936,
+    5.871876983693389
+   ],
+   "claim": "C3d",
+   "family": "N-mech",
+   "mean": 4.9032383993321496,
+   "n": 72,
+   "p": 7.579531162024084e-12,
+   "p_holm": 2.2738593486072252e-11,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N11": {
+   "ci": [
+    8.821614583333334,
+    19.596586681547617
+   ],
+   "claim": "C4b",
+   "family": "N-modern",
+   "mean": 14.174107142857144,
+   "n": 24,
+   "p": 0.0002684617874459983,
+   "p_holm": null,
+   "status": "estimate",
+   "verdict": "estimate (not tested)"
+  },
+  "N12": {
+   "ci": [
+    1.473758803772537,
+    3.7440026777252036
+   ],
+   "claim": "C4b",
+   "family": "N-modern",
+   "mean": 2.6085940921105744,
+   "n": 91,
+   "p": 8.499113770188075e-05,
+   "p_holm": null,
+   "status": "estimate",
+   "verdict": "estimate (not tested)"
+  },
+  "N13": {
+   "ci": [
+    4.999999999999999,
+    12.499999999999996
+   ],
+   "claim": "C4b",
+   "family": "N-modern",
+   "mean": 8.571428571428571,
+   "n": 20,
+   "p": 0.0008387616582055303,
+   "p_holm": null,
+   "status": "estimate",
+   "verdict": "estimate (not tested)"
+  },
+  "N14": {
+   "ci": [
+    0.5873184563212861,
+    2.8093089678487444
+   ],
+   "claim": "S1",
+   "family": "N-supp",
+   "mean": 1.7073347588831513,
+   "n": 91,
+   "p": 0.004321743599767629,
+   "p_holm": 0.004321743599767629,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "N15": {
+   "ci": [
+    3.5950934193121697,
+    6.698495370370369
+   ],
+   "claim": "S2",
+   "family": "N-supp",
+   "mean": 5.131861772486773,
+   "n": 24,
+   "p": 4.664239717202791e-05,
+   "p_holm": 9.328479434405582e-05,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R01": {
+   "ci": [
+    15.53096064814815,
+    21.057581018518515
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 18.236400462962965,
+   "n": 24,
+   "p": 1.1920928955078125e-07,
+   "p_holm": 9.5367431640625e-07,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R02": {
+   "ci": [
+    10.17986317791005,
+    14.2082351603836
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 12.161044973544975,
+   "n": 24,
+   "p": 1.8179489321282247e-05,
+   "p_holm": 0.00010907693592769348,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R03": {
+   "ci": [
+    4.701967592592593,
+    7.406374007936507
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 6.07535548941799,
+   "n": 24,
+   "p": 2.6929243565254072e-05,
+   "p_holm": 0.00010907693592769348,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R04": {
+   "ci": [
+    2.079409025379723,
+    3.0573233492189544
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 2.55830521398287,
+   "n": 91,
+   "p": 1.9537183743533752e-13,
+   "p_holm": 1.953718374353375e-12,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R05": {
+   "ci": [
+    0.737424332891365,
+    1.5917587025645636
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 1.1604492373723139,
+   "n": 91,
+   "p": 1.2817110231234377e-06,
+   "p_holm": 8.971977161864065e-06,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R06": {
+   "ci": [
+    1.050031614363117,
+    1.749158875990378
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 1.397855976610556,
+   "n": 91,
+   "p": 1.008504123846754e-09,
+   "p_holm": 9.076537114620785e-09,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R07": {
+   "ci": [
+    9.734571345899473,
+    14.154524222883596
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 11.779720568783071,
+   "n": 24,
+   "p": 1.8179489321282247e-05,
+   "p_holm": 0.00010907693592769348,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R08": {
+   "ci": [
+    1.7295318302644311,
+    2.6392289876722117
+   ],
+   "claim": "C2-rep",
+   "family": "R",
+   "mean": 2.164209078128493,
+   "n": 91,
+   "p": 1.4740917361535896e-13,
+   "p_holm": 1.6215009097689485e-12,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R09": {
+   "ci": [
+    14.778645833333334,
+    23.16313244047619
+   ],
+   "claim": "C4a",
+   "family": "R",
+   "mean": 19.00576636904762,
+   "n": 24,
+   "p": 2.6871562371911443e-05,
+   "p_holm": 0.00010907693592769348,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R10": {
+   "ci": [
+    0.8457444188900242,
+    2.685650353919585
+   ],
+   "claim": "C4a",
+   "family": "R",
+   "mean": 1.7581319779121969,
+   "n": 91,
+   "p": 0.00046812369701551326,
+   "p_holm": 0.0009362473940310265,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "R11": {
+   "ci": [
+    3.87755102040816,
+    9.795918367346935
+   ],
+   "claim": "C4a",
+   "family": "R",
+   "mean": 6.785714285714283,
+   "n": 20,
+   "p": 0.0007730053684864614,
+   "p_holm": 0.0009362473940310265,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "T01": {
+   "ci": [
+    -0.564412481765962,
+    0.13071635324382647
+   ],
+   "claim": "S3",
+   "family": "T",
+   "mean": -0.21758529084536415,
+   "n": 91,
+   "p": 0.2328440069922615,
+   "p_holm": 3.497957052278622e-05,
+   "status": "confirmatory",
+   "verdict": "supported"
+  },
+  "T02": {
+   "ci": [
+    -0.9157509157509154,
+    0.676892551892552
+   ],
+   "claim": "S4",
+   "family": "T",
+   "mean": -0.10454822954822951,
+   "n": 91,
+   "p": 0.8044041814775518,
+   "p_holm": 0.0004787637880624418,
+   "status": "confirmatory",
+   "verdict": "supported"
+  }
+ },
+ "mech": {
+  "cremad|cnn": {
+   "both": 60.381562881562886,
+   "both_sib": null,
+   "exposed_half": 50.477716727716725,
+   "none": 47.12148962148962,
+   "prm": 57.0558608058608,
+   "spk": 50.37240537240537,
+   "unexposed_half": 46.94597069597069
+  },
+  "cremad|resnet_se": {
+   "both": 62.77472527472528,
+   "both_sib": null,
+   "exposed_half": 49.13003663003663,
+   "none": 47.216117216117226,
+   "prm": 59.43070818070817,
+   "spk": 49.33150183150183,
+   "unexposed_half": 47.182539682539684
+  },
+  "subesco_full|cnn": {
+   "both": 69.37499999999999,
+   "both_sib": 78.83928571428572,
+   "exposed_half": 56.69642857142857,
+   "none": 44.732142857142854,
+   "prm": 49.732142857142854,
+   "spk": 60.625000000000014,
+   "unexposed_half": 46.42857142857142
+  },
+  "subesco_full|resnet_se": {
+   "both": 69.01785714285714,
+   "both_sib": 79.73214285714286,
+   "exposed_half": 59.732142857142854,
+   "none": 47.05357142857142,
+   "prm": 52.58928571428571,
+   "spk": 62.94642857142857,
+   "unexposed_half": 47.41071428571429
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "repository_id": "P05R016",
+  "repository_url": "https://github.com/Susi-brambilla/emotion-recognition-RAVDESS",
+  "commit_sha": "7f56fb9ca521c37a06c0a856641536b547eca483",
+  "draw_rank": 19,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "fixed_speakers",
+  "probe_parameters": {
+    "corpus": "RAVDESS",
+    "train_speakers": [
+      "RAVDESS:01",
+      "RAVDESS:02",
+      "RAVDESS:03",
+      "RAVDESS:04",
+      "RAVDESS:05",
+      "RAVDESS:06",
+      "RAVDESS:07",
+      "RAVDESS:08",
+      "RAVDESS:09",
+      "RAVDESS:10",
+      "RAVDESS:11",
+      "RAVDESS:12",
+      "RAVDESS:13",
+      "RAVDESS:14",
+      "RAVDESS:15",
+      "RAVDESS:16",
+      "RAVDESS:17",
+      "RAVDESS:18",
+      "RAVDESS:19",
+      "RAVDESS:20"
+    ],
+    "test_speakers": [
+      "RAVDESS:23",
+      "RAVDESS:24"
+    ]
+  },
+  "decisive_source": [
+    "train_val_set.py:L51-L60",
+    "train_val_set.py:L105-L114"
+  ],
+  "rationale": "Actors 23-24 are assigned wholly to test, actors 21-22 to validation, and the remaining actors to training.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 1200,
+      "test_rows": 120,
+      "train_speakers": [
+        "RAVDESS:01",
+        "RAVDESS:02",
+        "RAVDESS:03",
+        "RAVDESS:04",
+        "RAVDESS:05",
+        "RAVDESS:06",
+        "RAVDESS:07",
+        "RAVDESS:08",
+        "RAVDESS:09",
+        "RAVDESS:10",
+        "RAVDESS:11",
+        "RAVDESS:12",
+        "RAVDESS:13",
+        "RAVDESS:14",
+        "RAVDESS:15",
+        "RAVDESS:16",
+        "RAVDESS:17",
+        "RAVDESS:18",
+        "RAVDESS:19",
+        "RAVDESS:20"
+      ],
+      "test_speakers": [
+        "RAVDESS:23",
+        "RAVDESS:24"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_final": "no",
+  "prior_split_risk": "no"
+}

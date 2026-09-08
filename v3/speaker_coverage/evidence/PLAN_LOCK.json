@@ -1,0 +1,16 @@
+{
+  "schema": "ser-speaker-coverage-source-plan-lock-1",
+  "source_commit": "db7836c0ac3564ed44849aa6f8d553984b846064",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "formal_units": 720,
+  "pilot_units": 19,
+  "first_formal_SER_fit_started": false,
+  "new_SER_scientific_scores_read": false,
+  "prior_work": "E0/E1 diagnostics and separate 100-attempt TTS engineering probe completed before formal SER training",
+  "files": {
+    "capacity.json": "8194f305af9383627dd71e6608f946691aa0a1cc64c10966177128c8c1511bb7",
+    "plan.json.gz": "7d6220d5747e3aaa4be29cb8e51b5e7e09d95d41a05e2159f49d874ae4b40dd4",
+    "plan_gate.json": "edd54e045a5d4f570726bc4bf95cb694105af16cec31b5e24a699af9db65f558",
+    "selection_diagnostics.json": "94c4516a10057768abf0d888cc52c822505b97c1acae076c9aa874898f581d8d"
+  }
+}

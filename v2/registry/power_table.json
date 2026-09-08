@@ -1,0 +1,197 @@
+{
+ "reps": 1000,
+ "alpha": 0.05,
+ "seed": 20260903,
+ "family_sizes": {
+  "N-decomp": 4,
+  "N-mech": 6,
+  "N-modern": 3,
+  "N-supp": 2,
+  "R": 11
+ },
+ "table": {
+  "N01": {
+   "assumed_mean_pp": 6.0,
+   "assumed_sd_pp": 5.0,
+   "n_speakers": 20,
+   "power_holm": 0.996,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N02": {
+   "assumed_mean_pp": 3.0,
+   "assumed_sd_pp": 4.0,
+   "n_speakers": 20,
+   "power_holm": 0.83,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N03": {
+   "assumed_mean_pp": 3.5,
+   "assumed_sd_pp": 4.5,
+   "n_speakers": 20,
+   "power_holm": 0.86,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N04": {
+   "assumed_mean_pp": 2.5,
+   "assumed_sd_pp": 4.0,
+   "n_speakers": 20,
+   "power_holm": 0.674,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N05": {
+   "assumed_mean_pp": 2.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 91,
+   "power_holm": 0.611,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N06": {
+   "assumed_mean_pp": 2.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 91,
+   "power_holm": 0.582,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N07": {
+   "assumed_mean_pp": 3.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 20,
+   "power_holm": 0.292,
+   "status_if_below_0.5": "demote to estimate"
+  },
+  "N08": {
+   "assumed_mean_pp": 4.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 20,
+   "power_holm": 0.486,
+   "status_if_below_0.5": "demote to estimate"
+  },
+  "N09": {
+   "assumed_mean_pp": 5.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 20,
+   "power_holm": 0.667,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N10": {
+   "assumed_mean_pp": 4.0,
+   "assumed_sd_pp": 8.0,
+   "n_speakers": 70,
+   "power_holm": 0.935,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N11": {
+   "assumed_mean_pp": 3.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 24,
+   "power_holm": 0.341,
+   "status_if_below_0.5": "demote to estimate"
+  },
+  "N12": {
+   "assumed_mean_pp": 1.0,
+   "assumed_sd_pp": 4.0,
+   "n_speakers": 91,
+   "power_holm": 0.489,
+   "status_if_below_0.5": "demote to estimate"
+  },
+  "N13": {
+   "assumed_mean_pp": 2.0,
+   "assumed_sd_pp": 6.0,
+   "n_speakers": 20,
+   "power_holm": 0.185,
+   "status_if_below_0.5": "demote to estimate"
+  },
+  "N14": {
+   "assumed_mean_pp": 5.0,
+   "assumed_sd_pp": 8.0,
+   "n_speakers": 91,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "N15": {
+   "assumed_mean_pp": 5.0,
+   "assumed_sd_pp": 8.0,
+   "n_speakers": 24,
+   "power_holm": 0.817,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R01": {
+   "assumed_mean_pp": 17.7,
+   "assumed_sd_pp": 8.0,
+   "n_speakers": 24,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R02": {
+   "assumed_mean_pp": 10.0,
+   "assumed_sd_pp": 7.0,
+   "n_speakers": 24,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R03": {
+   "assumed_mean_pp": 7.3,
+   "assumed_sd_pp": 6.0,
+   "n_speakers": 24,
+   "power_holm": 0.999,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R04": {
+   "assumed_mean_pp": 2.8,
+   "assumed_sd_pp": 3.5,
+   "n_speakers": 91,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R05": {
+   "assumed_mean_pp": 1.9,
+   "assumed_sd_pp": 3.0,
+   "n_speakers": 91,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R06": {
+   "assumed_mean_pp": 0.65,
+   "assumed_sd_pp": 3.0,
+   "n_speakers": 91,
+   "power_holm": 0.525,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R07": {
+   "assumed_mean_pp": 4.5,
+   "assumed_sd_pp": 4.9,
+   "n_speakers": 24,
+   "power_holm": 0.973,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R08": {
+   "assumed_mean_pp": 1.8,
+   "assumed_sd_pp": 3.1,
+   "n_speakers": 91,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R09": {
+   "assumed_mean_pp": 12.0,
+   "assumed_sd_pp": 8.0,
+   "n_speakers": 24,
+   "power_holm": 1.0,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R10": {
+   "assumed_mean_pp": 2.0,
+   "assumed_sd_pp": 4.0,
+   "n_speakers": 91,
+   "power_holm": 0.991,
+   "status_if_below_0.5": "keep confirmatory"
+  },
+  "R11": {
+   "assumed_mean_pp": 5.0,
+   "assumed_sd_pp": 6.0,
+   "n_speakers": 20,
+   "power_holm": 0.888,
+   "status_if_below_0.5": "keep confirmatory"
+  }
+ },
+ "note": "assumptions are stated per hypothesis; the registry a_priori_status is decided from this table at tag-1 and never changed after outcomes"
+}

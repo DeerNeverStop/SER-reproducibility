@@ -1,0 +1,263 @@
+{
+ "run": "run_full2 (all arms and levels; plan_cmp == plan_rc1 + placeholder SUBESCO manifest)",
+ "note": "M06 and M18 first failed only because their expected family size was the pre-restructuring constant 15; the expectation now reads the registry (4 and 2) and both pass on rerun",
+ "behaved_as_specified": 18,
+ "cases_run": 18,
+ "skipped": [],
+ "cases": [
+  {
+   "case": "M01_drop_row",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I1"
+    ]
+   },
+   "detail": {
+    "integrity_I1_failed": true
+   }
+  },
+  {
+   "case": "M02_label_swap",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "detail": {
+    "integrity_I3_failed": true
+   }
+  },
+  {
+   "case": "M03_fold_overlap",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I2",
+     "I5"
+    ]
+   },
+   "detail": {
+    "integrity_I2_failed": true,
+    "integrity_I5_failed": true
+   }
+  },
+  {
+   "case": "M04_config_drift",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I7"
+    ]
+   },
+   "detail": {
+    "integrity_I7_failed": true
+   }
+  },
+  {
+   "case": "M05_duplicate_row",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M06_missing_cell",
+   "pass": true,
+   "expect": {
+    "family_size": {
+     "N02": 4
+    },
+    "unchanged": [
+     "N01"
+    ],
+    "verdict": {
+     "N02": "not tested"
+    }
+   },
+   "detail": {
+    "m_N02": 4,
+    "unchanged_N01": true,
+    "verdict_N02": "not tested"
+   }
+  },
+  {
+   "case": "M07_done_tamper",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I1"
+    ]
+   },
+   "detail": {
+    "integrity_I1_failed": true
+   }
+  },
+  {
+   "case": "M08_argmax_violation",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M09_split_table_tamper",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I2"
+    ]
+   },
+   "detail": {
+    "integrity_I2_failed": true
+   }
+  },
+  {
+   "case": "M10_speaker_swap",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "detail": {
+    "integrity_I3_failed": true
+   }
+  },
+  {
+   "case": "M11_hpo_missing_config",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I6"
+    ],
+    "verdict": {
+     "N14": "not tested"
+    }
+   },
+   "detail": {
+    "integrity_I6_failed": true,
+    "verdict_N14": "not tested"
+   }
+  },
+  {
+   "case": "M15_conditional_truncation",
+   "pass": true,
+   "expect": {
+    "n": {
+     "N11": 24
+    },
+    "tested": [
+     "N11",
+     "R09"
+    ]
+   },
+   "detail": {
+    "n_N11": 24,
+    "tested_N11": true,
+    "tested_R09": true
+   }
+  },
+  {
+   "case": "M18_family_placeholder",
+   "pass": true,
+   "expect": {
+    "family_size": {
+     "N15": 2
+    },
+    "unchanged": [
+     "N01"
+    ],
+    "verdict": {
+     "N15": "not tested"
+    }
+   },
+   "detail": {
+    "m_N15": 2,
+    "unchanged_N01": true,
+    "verdict_N15": "not tested"
+   }
+  },
+  {
+   "case": "M20_hygiene_tamper",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I3"
+    ]
+   },
+   "detail": {
+    "integrity_I3_failed": true
+   }
+  },
+  {
+   "case": "M21_crossing_isolation",
+   "pass": true,
+   "expect": {
+    "changed_descriptor": "D14",
+    "unchanged": [
+     "R01",
+     "R02",
+     "R03"
+    ]
+   },
+   "detail": {
+    "D14_changed": true,
+    "unchanged_R01": true,
+    "unchanged_R02": true,
+    "unchanged_R03": true
+   }
+  },
+  {
+   "case": "M23_tost_missing",
+   "pass": true,
+   "expect": {
+    "verdict": {
+     "T01": "not tested"
+    }
+   },
+   "detail": {
+    "verdict_T01": "not tested"
+   }
+  },
+  {
+   "case": "M24_logit_column_missing",
+   "pass": true,
+   "expect": {
+    "integrity_fail": [
+     "I4"
+    ]
+   },
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M25_mech_condition_missing",
+   "pass": true,
+   "expect": {
+    "tested": [
+     "N05"
+    ],
+    "verdict": {
+     "N06": "not tested"
+    }
+   },
+   "detail": {
+    "tested_N05": true,
+    "verdict_N06": "not tested"
+   }
+  }
+ ]
+}

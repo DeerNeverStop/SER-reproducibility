@@ -1,0 +1,90 @@
+{
+ "023a599f13364eb5ca59e299394f04e572bae1264d2c84d9d914ebc7a5327f41": {
+  "batch_size": 64,
+  "dropout": 0.3,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 3,
+  "lr": 0.0003,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.001
+ },
+ "1bc86aef6e2aa68ebe1646bfe794dd733eec011e68c6fb88ba2a52cd3689d260": {
+  "batch_size": 64,
+  "dropout": 0.1,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 4,
+  "lr": 0.001,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.0001
+ },
+ "525a9b89875aabf96a25d5868732f0170064559379a37c40ffd832aff038cbcf": {
+  "batch_size": 64,
+  "dropout": 0.1,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 2,
+  "lr": 0.0003,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.001
+ },
+ "8232033a6d4c0c3e10867e069db9c6ca7b19b3e09e66ff0092f1e2677410f7cb": {
+  "batch_size": 64,
+  "dropout": 0.3,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 1,
+  "lr": 0.0003,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.0001
+ },
+ "88aee71e2b88566047252edd277ce4873e8f6347aa59f9ea7e8cb978e36de0e9": {
+  "batch_size": 64,
+  "dropout": 0.1,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 0,
+  "lr": 0.0003,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.0001
+ },
+ "a504d4678e5ff9f10c12d209d58c29fb5d28633b280b98f26fb6bb27a4408922": {
+  "batch_size": 64,
+  "dropout": 0.1,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 6,
+  "lr": 0.001,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.001
+ },
+ "c79d2ac28fa6c1f071282f04433bf6b26622912b78cd7300b458c769e691499e": {
+  "batch_size": 64,
+  "dropout": 0.3,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 5,
+  "lr": 0.001,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.0001
+ },
+ "d718b584d9e64da23564fc7b667bddeb9d67de01b253622a15f2359622f4f422": {
+  "batch_size": 64,
+  "dropout": 0.3,
+  "engine": "p1_frozen",
+  "epochs": 100,
+  "hpo_config_index": 7,
+  "lr": 0.001,
+  "model": "resnet_se",
+  "patience": 15,
+  "weight_decay": 0.001
+ }
+}

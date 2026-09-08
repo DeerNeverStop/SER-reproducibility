@@ -1,0 +1,7 @@
+dimension,category,count,denominator,note
+evidence_tier,tier1_execution_confirmed,24,30,mutually exclusive repository tier after section-12 closure
+evidence_tier,tier2_static_execution_inference,1,30,mutually exclusive repository tier after section-12 closure
+evidence_tier,tier3_unknown,5,30,mutually exclusive repository tier after section-12 closure
+split_risk_final,yes,20,30,yes=exact-fragment overlap or decisive static non-enforcement; no=speaker-disjoint; unknown=insufficient frozen evidence
+split_risk_final,no,5,30,yes=exact-fragment overlap or decisive static non-enforcement; no=speaker-disjoint; unknown=insufficient frozen evidence
+split_risk_final,unknown,5,30,yes=exact-fragment overlap or decisive static non-enforcement; no=speaker-disjoint; unknown=insufficient frozen evidence

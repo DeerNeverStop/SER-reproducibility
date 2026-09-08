@@ -1,0 +1,34 @@
+audit_order,canonical_repo_url,selection_stratum,planned_batch,status,selection_note
+1,https://github.com/hwang9u/emocatcher,pilot,pilot,included_audited,One of three preregistered field-pilot repositories
+2,https://github.com/ThomasRigoni7/Audio-emotion-recognition-RAVDESS,pilot|author_associated,pilot,included_audited,One of three field-pilot repositories and thesis-linked implementation
+3,https://github.com/ddlBoJack/emotion2vec,pilot|author_official,pilot,included_audited,One of three field-pilot repositories and official paper code
+4,https://github.com/alaaNfissi/Unveiling-Hidden-Factors-Explainable-AI-for-Feature-Boosting-in-Speech-Emotion-Recognition,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+5,https://github.com/youngaryan/speechbrain-emotion-hpo,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+6,https://github.com/luckymaduabuchi/Emotion-detection-,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+7,https://github.com/alaaNfissi/SigWavNet-Learning-Multiresolution-Signal-Wavelet-Network-for-Speech-Emotion-Recognition,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+8,https://github.com/lixiangucas01/GLAM,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+9,https://github.com/ECNU-Cross-Innovation-Lab/ShiftSER,paper_linked,PA,included_audited,Direct arXiv paper-to-code link
+10,https://github.com/Mak-Sim/ResLSTM-SER,author_official,RC,included_audited,Paper abstract and repository claim official implementation
+11,https://github.com/Jiaxin-Ye/TIM-Net_SER,author_official,RC,included_audited,Repository claims official ICASSP implementation
+12,https://github.com/Dalia-Sher/Speech-Emotion-Recognition-using-BLSTM-with-Attention,author_associated,RC,included_audited,README states published paper and links it
+13,https://github.com/emo-box/EmoBox,author_official,RC,included_audited,Official toolkit and benchmark repository
+14,https://github.com/rao-ma/Whisper_audio_classification,author_official,RC,included_audited,Repository claims official paper implementation
+15,https://github.com/marcogdepinto/emotion-classification-from-audio-files,author_associated,RC,included_audited,Repository includes the linked paper implementation
+16,https://github.com/xuanjihe/speech-emotion-recognition,author_associated,IE,included_audited,README author matches paper coauthor
+17,https://github.com/Vincent-ZHQ/CA-MSER,author_official,IE,included_audited,Repository README identifies exact paper code
+18,https://github.com/Sreyan88/MMER,author_official,IE,included_audited,Repository identifies authors' Interspeech paper
+19,https://github.com/iiscleap/multimodal_emotion_recognition,author_associated,IE,included_audited,Repository links exact ICASSP paper
+20,https://github.com/nhattruongpham/mmser,author_associated,IE,included_audited,Distinct same-owner substitute audited after the planned Light-SERNet URL returned 404; not treated as a redirect
+21,https://github.com/mnamvarpour/Wav2vec2EmoFusion,author_associated,IE,included_audited,Distinct same-owner substitute audited after the historical URL returned 404; not treated as a redirect
+22,https://github.com/ericguizzo/transferable_quaternion_embeddings,paper_linked_upstream,ROOT,included_audited,Retained upstream after qualification found the paper-linked fork source/config tree identical
+23,https://github.com/ECNU-Cross-Innovation-Lab/ENT,author_official,PA2,included_audited,Direct arXiv paper-to-code link
+24,https://github.com/happyjin/NNPM,paper_linked,PA2,excluded_E3_no_relevant_code,Direct arXiv paper-to-code link; minimal README requires code qualification
+25,https://github.com/NLP-SBILAB/CAMuLeNet,paper_linked_transfer,ROOT,included_audited,Historical paper-linked repository explicitly transfers all contents to this canonical repository
+26,https://github.com/tpnam0901/MemoCMT,author_official,PA2,included_audited,Repository claims official paper code
+27,https://github.com/AryaAftab/LIGHT-SERNET,author_official,PA2,included_audited,Repository claims official Light-SERNet implementation
+28,https://github.com/bagustris/asj_autumn_2019,author_associated,PA2,included_audited,Repository includes and cites associated paper
+29,https://github.com/bellagodiva/Context-Aided-Speech-Emotion-Recognition,author_claim,PA2,included_audited,Repository makes an author paper claim without an archival URL
+30,https://github.com/bagustris/ravdess_ser,supplemental_first_seen,RC,included_audited,Supplemental implementation selected after explicit paper/author strata
+31,https://github.com/Seldarzu/SER_AUDIO_CREMA_D,supplemental_first_seen,RC,included_audited,Canonical available repository replacing an unavailable discovery URL
+32,https://github.com/hkveeranki/speech-emotion-recognition,supplemental_first_seen,IE,included_audited,Supplemental EmoDB implementation; retained over an identical mirror
+33,https://github.com/hellolzc/SpeechEmotionRecognition-emodb,third_party_reproduction,IE,included_audited,Historical EmoDB discovery URL restored after identity checking proved the hyphenated repository is an upstream fork rather than a redirect

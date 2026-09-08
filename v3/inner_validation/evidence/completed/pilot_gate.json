@@ -1,0 +1,17 @@
+{
+  "done_sha256": {
+    "dual_d00_f0_c0": "503e449daf0b34f6361749e9a26e4c1d289272bb278b31da8e4d3fe12f1897b1",
+    "dual_d00_f0_c1": "082dbbb91a38be515db4c5c82354cfa30e6a9b92892db6878c8d447ef5f11b53",
+    "dual_d00_f0_c2": "54021a6f189e30659a9ab24a837c0ef84586d425e0b2431f334520c9bcc17137",
+    "dual_d00_f0_c3": "2b6248803c37261d9833a8f6d708ffa3e18bd1b6c0ae218a2f83cd37f6380d18"
+  },
+  "gate_sha256": "d7e6e82f02bfcbc4bacd908ed840e9957fb15aa1d97aaefaa2e65421800838a7",
+  "ledger_sha256": "bd6f729341340c6f7a72e3f8782b5ab626390ec1458925193a9fbdcae98ed32a",
+  "pass": true,
+  "phase": "pilot",
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "schema": "ser-dual-validation-result-gate-1",
+  "scores_computed": false,
+  "units": 4,
+  "verified_at": "2026-09-07T05:48:54.524751+00:00"
+}

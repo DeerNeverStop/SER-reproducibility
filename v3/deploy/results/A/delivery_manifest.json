@@ -1,0 +1,62 @@
+{
+  "analysis_command": "python -m v3.deploy.enroll score --plan v3/deploy/work/plan/A.json --run v3/deploy/work/A --out v3/deploy/results/A",
+  "formal_only": true,
+  "frozen_code_modified": false,
+  "frozen_source_plan_files_reverified_unchanged": 57,
+  "independent_verifier_receipt": "v3/deploy/evidence/analysis_verification_A.json",
+  "module": "A",
+  "pilot_used": false,
+  "program": "SER26-DEPLOY-2",
+  "raw_A_files_reverified_unchanged": 540,
+  "result_files": {
+    "ANALYSIS_ZH.md": {
+      "bytes": 8331,
+      "sha256": "4f377a0bcdd42c98560db6e70850f147ddeb71dfd1b9f6d8bf37a13c9373b660"
+    },
+    "N5.csv": {
+      "bytes": 1778,
+      "sha256": "6bce3daf58986535666c9ece9832c0b983e0d6691f8355e76a0f3b67ec41a84d"
+    },
+    "endpoints.json": {
+      "bytes": 794643,
+      "sha256": "e06e92e72c207c2d1f8d363b2435e467a941367f52dfc60f61fdd4e829938bd4"
+    },
+    "harm_share.csv": {
+      "bytes": 30975,
+      "sha256": "34751148f6777db6176aae30fb392419190ef5a869305e947947d6edfc4272b7"
+    },
+    "per_speaker.csv": {
+      "bytes": 3150240,
+      "sha256": "b006bc3bda759cd9c8f77bf1f8f595a39f5772b700b2212343f01356ac8ec62f"
+    },
+    "primary_N3.csv": {
+      "bytes": 7572,
+      "sha256": "bc5569847503d723cb67bcec8aad9387b754961b9431ba9dd43816173f1887dd"
+    },
+    "primary_N3_forest.png": {
+      "bytes": 158436,
+      "sha256": "03017a8aa8d43d01cb6cccac041ec298462e7d43833ccea59ce76336993edb5d"
+    },
+    "primary_N3_forest.svg": {
+      "bytes": 47633,
+      "sha256": "78f0cf066eba9339ae0ed632fdd6fa713af0c53084c4aeb817a3aa4260c58f55"
+    },
+    "primary_all9.csv": {
+      "bytes": 7572,
+      "sha256": "bc5569847503d723cb67bcec8aad9387b754961b9431ba9dd43816173f1887dd"
+    },
+    "recall.csv": {
+      "bytes": 9996,
+      "sha256": "821a0f3e521fde97142749a406eddae5478118bb7ba13b6eb16067da8672b8ee"
+    },
+    "secondary_N5_all9.csv": {
+      "bytes": 1778,
+      "sha256": "6bce3daf58986535666c9ece9832c0b983e0d6691f8355e76a0f3b67ec41a84d"
+    },
+    "summary_all9.json": {
+      "bytes": 723203,
+      "sha256": "7ffa9417ea2c1b1b505282a1a7b40967ee48e2e57164b3553f942401cabb9325"
+    }
+  },
+  "source_lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "status": "complete",
+  "reporting_only": true,
+  "statistics_recomputed": false,
+  "script": {
+    "relative_path": "tools/plot_p1_protocol_premium.py",
+    "sha256": "46b0dee59b2cacf616325ddcd8e1a41602e0c78df3569017499586d4e5136d58"
+  },
+  "sources": {
+    "protocol_metric_summary.csv": {
+      "relative_path": "results/protocol_premium/summary/protocol_metric_summary.csv",
+      "sha256": "14e630a47c1beba3aa737d45ca8d40487d213ccdcf813a90f7e4c249b63c3b2b"
+    },
+    "paired_speaker_differences.csv": {
+      "relative_path": "results/protocol_premium/summary/paired_speaker_differences.csv",
+      "sha256": "3ce566dbc2002f3d7821d4ce1c5348f149fff9501c4b70173ceb084b250a9be9"
+    },
+    "protocol_premium.csv": {
+      "relative_path": "results/protocol_premium/summary/protocol_premium.csv",
+      "sha256": "e28298dded7c74441a300235e225aee0a0c11d4a854bca1d5289e6fe3ebd718c"
+    }
+  },
+  "outputs": [
+    {
+      "relative_path": "results/protocol_premium/figures/p1_protocol_metric_comparison.png",
+      "sha256": "caa649708c23afe1b3efa985567b49046112568214667cef529c528ecc8c0617"
+    },
+    {
+      "relative_path": "results/protocol_premium/figures/p1_protocol_metric_comparison.svg",
+      "sha256": "defd528de80847383530e1470d3df105c6de27fa63c3cca9fa59146c9f72866c"
+    },
+    {
+      "relative_path": "results/protocol_premium/figures/p1_paired_speaker_difference_distributions.png",
+      "sha256": "60495453d218511a92be6e100c275d9e9647edfe9e8e8ae5373d9211fa261027"
+    },
+    {
+      "relative_path": "results/protocol_premium/figures/p1_paired_speaker_difference_distributions.svg",
+      "sha256": "8472e470bcfb3045a99707def7a002ecbf1bc20c95b8345b13261b936412ef17"
+    },
+    {
+      "relative_path": "results/protocol_premium/figures/p1_protocol_premium_facets.png",
+      "sha256": "0c33fa7c6cd1d832cbdebd4f5989e8c7adf06a56d14d2f0e6021f47446cb00a1"
+    },
+    {
+      "relative_path": "results/protocol_premium/figures/p1_protocol_premium_facets.svg",
+      "sha256": "bb54e4e5db35a2d352f5cc065f54b0dcaac312c54bd4b7d1e52d14a2c57cf7ca"
+    }
+  ],
+  "figure_families": [
+    "three_protocol_seed_summary",
+    "paired_speaker_difference_distribution",
+    "corpus_model_faceted_premium_ci"
+  ]
+}

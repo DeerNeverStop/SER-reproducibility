@@ -1,0 +1,10 @@
+{"event": "batch_start", "time": "2026-09-07T00:13:33.275500+00:00", "unit_ids": ["dual_d00_f0_c0", "dual_d00_f0_c1", "dual_d00_f0_c2", "dual_d00_f0_c3"], "environment": {"python": "3.12.3", "numpy": "2.1.2", "torch": "2.8.0+cu128", "cuda": "12.8", "cudnn": 91002, "gpu": "NVIDIA GeForce RTX 5090", "threads": 1, "matmul_tf32": false, "cudnn_tf32": true}}
+{"event": "unit_start", "time": "2026-09-07T00:13:33.276636+00:00", "unit_id": "dual_d00_f0_c0"}
+{"event": "unit_done", "time": "2026-09-07T00:14:06.587400+00:00", "unit_id": "dual_d00_f0_c0", "fit_seconds": 33.16526156105101}
+{"event": "unit_start", "time": "2026-09-07T00:14:06.740726+00:00", "unit_id": "dual_d00_f0_c1"}
+{"event": "unit_done", "time": "2026-09-07T00:14:41.320794+00:00", "unit_id": "dual_d00_f0_c1", "fit_seconds": 34.16642921231687}
+{"event": "unit_start", "time": "2026-09-07T00:14:41.524241+00:00", "unit_id": "dual_d00_f0_c2"}
+{"event": "unit_done", "time": "2026-09-07T00:15:15.733985+00:00", "unit_id": "dual_d00_f0_c2", "fit_seconds": 33.78877436555922}
+{"event": "unit_start", "time": "2026-09-07T00:15:15.899387+00:00", "unit_id": "dual_d00_f0_c3"}
+{"event": "unit_done", "time": "2026-09-07T00:15:47.684747+00:00", "unit_id": "dual_d00_f0_c3", "fit_seconds": 31.503877570852637}
+{"event": "batch_done", "time": "2026-09-07T00:15:47.867289+00:00", "units": 4}

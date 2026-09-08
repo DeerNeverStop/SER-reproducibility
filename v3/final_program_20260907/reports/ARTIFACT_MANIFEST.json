@@ -1,0 +1,532 @@
+{
+  "schema": "ser-final-program-lightweight-delivery-1",
+  "created_at": "2026-09-07T20:06:06.223729+00:00",
+  "scope": "This delivery batch only; unchanged copies plus README/local-large-artifact identity record. No new scientific judgment or rerun. Manifest excludes itself and any subsequently added files.",
+  "source_commit": "976297d824ea98816bdc0948befd704e612a54c1",
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "lock_sha256": "cd32459cef1e09c5efe5ef4c9f3a918aeef5a0aac15f2e98731a60daa3f4d258",
+  "score_counts": {
+    "formal_fits": 384,
+    "main_A": 360,
+    "control_B": 24,
+    "pilot_scored": 0,
+    "main_contexts": 360,
+    "corpus_draws": 72,
+    "family_tests": 6
+  },
+  "copied_group_counts": {
+    "scores": 7,
+    "audits": 3,
+    "paper_facts": 3,
+    "figures": 10,
+    "original_pipeline_events_logs": 13,
+    "recovery_events_logs": 20,
+    "original_launch_contract": 1,
+    "training_operations": 3
+  },
+  "copied_files": 60,
+  "generated_navigation_files": 2,
+  "manifest_payload_files": 62,
+  "payload_bytes": 4908341,
+  "original_paths_preserved": true,
+  "existing_repository_gitattributes": "Repository root already has * -text; archived LF/CRLF bytes must not be normalized.",
+  "local_zip_not_in_git": {
+    "bytes": 59897568,
+    "sha256": "c3f14905050f13401788a926d21dbb754cf28031499bfa77abef913315b14e6f",
+    "identity_record": "LOCAL_LARGE_ARTIFACTS.json"
+  },
+  "files": {
+    "LOCAL_LARGE_ARTIFACTS.json": {
+      "bytes": 2396,
+      "sha256": "9ae5bb01ffe4cf144e50869327fb622d51c3baea201b112f62c1ebaac01dc38e",
+      "kind": "new archival navigation/identity metadata",
+      "source_path": null
+    },
+    "README.md": {
+      "bytes": 3959,
+      "sha256": "cd69305417969506e0027b3864fdda23f20199e5aa75e42788d7a1de3e8fdc49",
+      "kind": "new archival navigation/identity metadata",
+      "source_path": null
+    },
+    "audits/formal_first_panel_restore_recovery_v1.json": {
+      "bytes": 402539,
+      "sha256": "d9f3e5760d5d26221e326fc72e5cc3740241118b271211315218d59e6bc4da4b",
+      "kind": "existing passed audit",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\audits\\formal_first_panel_restore_recovery_v1.json",
+      "source_sha256": "d9f3e5760d5d26221e326fc72e5cc3740241118b271211315218d59e6bc4da4b",
+      "copy": "unchanged bytes"
+    },
+    "audits/numeric_original.json": {
+      "bytes": 415708,
+      "sha256": "e66a0d5e125d693503ad524bb9c3367c518a9a2cee6a289184ac33cf783740d8",
+      "kind": "existing passed audit",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\audits\\numeric_original.json",
+      "source_sha256": "e66a0d5e125d693503ad524bb9c3367c518a9a2cee6a289184ac33cf783740d8",
+      "copy": "unchanged bytes"
+    },
+    "audits/numeric_relocated.json": {
+      "bytes": 514447,
+      "sha256": "6399dd9c031b16842a6d92c1d19c88ca17b462db57bbe46b1f61487af4ba4f5b",
+      "kind": "existing passed audit",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\audits\\numeric_relocated.json",
+      "source_sha256": "6399dd9c031b16842a6d92c1d19c88ca17b462db57bbe46b1f61487af4ba4f5b",
+      "copy": "unchanged bytes"
+    },
+    "figures/FIGURE_MANIFEST.json": {
+      "bytes": 3901,
+      "sha256": "aaddcdf3b54c7ac2b969a90b4adc3418c323ab5e71e644c4c10fe4051790e7b3",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\FIGURE_MANIFEST.json",
+      "source_sha256": "aaddcdf3b54c7ac2b969a90b4adc3418c323ab5e71e644c4c10fe4051790e7b3",
+      "copy": "unchanged bytes"
+    },
+    "figures/checkpoint_rule_effects.pdf": {
+      "bytes": 20516,
+      "sha256": "f53f36e2f1ee2f236e9a22c4f9f0188b7f46c360e4f730b326f62b48f1a8c7a8",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\checkpoint_rule_effects.pdf",
+      "source_sha256": "f53f36e2f1ee2f236e9a22c4f9f0188b7f46c360e4f730b326f62b48f1a8c7a8",
+      "copy": "unchanged bytes"
+    },
+    "figures/checkpoint_rule_effects.png": {
+      "bytes": 91166,
+      "sha256": "e0fef37236d7ea44f53fd6d63b1bf56d57a99d520d02068d698b18dfd5ec7f86",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\checkpoint_rule_effects.png",
+      "source_sha256": "e0fef37236d7ea44f53fd6d63b1bf56d57a99d520d02068d698b18dfd5ec7f86",
+      "copy": "unchanged bytes"
+    },
+    "figures/checkpoint_rule_effects.svg": {
+      "bytes": 69951,
+      "sha256": "4ef831ba305f14ba879140863695d76deb581f096b877e38e1898f8556ae8fc0",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\checkpoint_rule_effects.svg",
+      "source_sha256": "4ef831ba305f14ba879140863695d76deb581f096b877e38e1898f8556ae8fc0",
+      "copy": "unchanged bytes"
+    },
+    "figures/complete_epoch_curves.pdf": {
+      "bytes": 32820,
+      "sha256": "57c6f4b0c115802e36c59c044165eda36964eab5cc937e22888991f0227cd1ae",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\complete_epoch_curves.pdf",
+      "source_sha256": "57c6f4b0c115802e36c59c044165eda36964eab5cc937e22888991f0227cd1ae",
+      "copy": "unchanged bytes"
+    },
+    "figures/complete_epoch_curves.png": {
+      "bytes": 145955,
+      "sha256": "a03a735f1c7190f591044a1812cebb52d1913d681ff0f2ef719c897f04a2d951",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\complete_epoch_curves.png",
+      "source_sha256": "a03a735f1c7190f591044a1812cebb52d1913d681ff0f2ef719c897f04a2d951",
+      "copy": "unchanged bytes"
+    },
+    "figures/complete_epoch_curves.svg": {
+      "bytes": 259010,
+      "sha256": "0e2f9e79609081be4fb8e63c2fa0136e2f437cd7c8fda621239a76aab5e1d86c",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\complete_epoch_curves.svg",
+      "source_sha256": "0e2f9e79609081be4fb8e63c2fa0136e2f437cd7c8fda621239a76aab5e1d86c",
+      "copy": "unchanged bytes"
+    },
+    "figures/paired_role_controls.pdf": {
+      "bytes": 17781,
+      "sha256": "ecf3f0356f0feed99a6f5b72b86f93d8e1e824a795fe5fee04a22e99a4ae750c",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\paired_role_controls.pdf",
+      "source_sha256": "ecf3f0356f0feed99a6f5b72b86f93d8e1e824a795fe5fee04a22e99a4ae750c",
+      "copy": "unchanged bytes"
+    },
+    "figures/paired_role_controls.png": {
+      "bytes": 49672,
+      "sha256": "2058bb1fae82db8da1945480f8c51e5a80a6ade731409395a4c7b28d055a998b",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\paired_role_controls.png",
+      "source_sha256": "2058bb1fae82db8da1945480f8c51e5a80a6ade731409395a4c7b28d055a998b",
+      "copy": "unchanged bytes"
+    },
+    "figures/paired_role_controls.svg": {
+      "bytes": 36700,
+      "sha256": "672d53955d547dbaeb7a4e87855e2489b229f1f6c569400d53fc4d90bc221f61",
+      "kind": "existing figure/receipt",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\figures\\paired_role_controls.svg",
+      "source_sha256": "672d53955d547dbaeb7a4e87855e2489b229f1f6c569400d53fc4d90bc221f61",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/00_wait_started.json": {
+      "bytes": 470,
+      "sha256": "1f53e912acee78cb8c20321b38fef0efe5635356a171449d0ded39a8fbc6b85d",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\00_wait_started.json",
+      "source_sha256": "1f53e912acee78cb8c20321b38fef0efe5635356a171449d0ded39a8fbc6b85d",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/01_training_exited.json": {
+      "bytes": 104,
+      "sha256": "83de412ec25d462e1195fd6130b0eb924d02b8761dde124061126741db105c4b",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\01_training_exited.json",
+      "source_sha256": "83de412ec25d462e1195fd6130b0eb924d02b8761dde124061126741db105c4b",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/02_admitted_to_full_gate.json": {
+      "bytes": 220,
+      "sha256": "e5f90adf858ffc1a6c48acec560d3bb0fcb79ffd9c4c30d4f07cac407372b90f",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\02_admitted_to_full_gate.json",
+      "source_sha256": "e5f90adf858ffc1a6c48acec560d3bb0fcb79ffd9c4c30d4f07cac407372b90f",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/10_score.log": {
+      "bytes": 1103,
+      "sha256": "640c6eca8f3adf986d1230097f50840d5cb99b9b1682e34095a16785f4498af9",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\10_score.log",
+      "source_sha256": "640c6eca8f3adf986d1230097f50840d5cb99b9b1682e34095a16785f4498af9",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/10_score_exited.json": {
+      "bytes": 273,
+      "sha256": "26a284f24cec279752de4616415388d5f80757366c51ac2e49307ade6f172ac3",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\10_score_exited.json",
+      "source_sha256": "26a284f24cec279752de4616415388d5f80757366c51ac2e49307ade6f172ac3",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/10_score_started.json": {
+      "bytes": 446,
+      "sha256": "0c1f32bb06a64291e56681aa2de973b52a7a6fc1a0788918bc8b2142b101b4a1",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\10_score_started.json",
+      "source_sha256": "0c1f32bb06a64291e56681aa2de973b52a7a6fc1a0788918bc8b2142b101b4a1",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/20_numeric.log": {
+      "bytes": 127,
+      "sha256": "5ccc24c5fd2b93cda295cfe586cbcd5f5c7a4fe164fddd883fd1261d54a5e91c",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\20_numeric.log",
+      "source_sha256": "5ccc24c5fd2b93cda295cfe586cbcd5f5c7a4fe164fddd883fd1261d54a5e91c",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/20_numeric_exited.json": {
+      "bytes": 277,
+      "sha256": "03b2903fae2b5d179396c3fd468233ad8ecbfcce6c5f62696e124aafba743a96",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\20_numeric_exited.json",
+      "source_sha256": "03b2903fae2b5d179396c3fd468233ad8ecbfcce6c5f62696e124aafba743a96",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/20_numeric_started.json": {
+      "bytes": 588,
+      "sha256": "eacda5fe983c86b8782d410fac962d8ec3584c44eff4fb998904ae4a34f94ab8",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\20_numeric_started.json",
+      "source_sha256": "eacda5fe983c86b8782d410fac962d8ec3584c44eff4fb998904ae4a34f94ab8",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/30_restore.log": {
+      "bytes": 116,
+      "sha256": "2a66ca2234be3e37ed63f999247eb3e436f4283d6b52c060e9d6dfb12c24fa51",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\30_restore.log",
+      "source_sha256": "2a66ca2234be3e37ed63f999247eb3e436f4283d6b52c060e9d6dfb12c24fa51",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/30_restore_exited.json": {
+      "bytes": 277,
+      "sha256": "dd22827b2720f2d8fcddf90be2144df3216673ceded1e488ab6d4a4be21a297a",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\30_restore_exited.json",
+      "source_sha256": "dd22827b2720f2d8fcddf90be2144df3216673ceded1e488ab6d4a4be21a297a",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/30_restore_started.json": {
+      "bytes": 916,
+      "sha256": "15b7f64080d851a8ddc4468295c3c044e52449c4be9bdb266ec91e499d2a9642",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\30_restore_started.json",
+      "source_sha256": "15b7f64080d851a8ddc4468295c3c044e52449c4be9bdb266ec91e499d2a9642",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/99_failed.json": {
+      "bytes": 180,
+      "sha256": "c42a5a070aa0d4d29f88aba9f81788d67ff08a5da34345d0a67d1fc96dae6065",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\20260907T184308Z\\99_failed.json",
+      "source_sha256": "c42a5a070aa0d4d29f88aba9f81788d67ff08a5da34345d0a67d1fc96dae6065",
+      "copy": "unchanged bytes"
+    },
+    "operations/original_pipeline/launch_contract.json": {
+      "bytes": 12798,
+      "sha256": "bd1c21f1b0e7d500c5d30793b5ab998157b3f0f074062c86ebcba6a84a5ab261",
+      "kind": "original launch contract",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\launch_20260907T184308Z.json",
+      "source_sha256": "bd1c21f1b0e7d500c5d30793b5ab998157b3f0f074062c86ebcba6a84a5ab261",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/00_recovery_started.json": {
+      "bytes": 15994,
+      "sha256": "7c187d7051806f87601d145d40ebb3b15b5270a924d44c1e722515ecf9d90f98",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\00_recovery_started.json",
+      "source_sha256": "7c187d7051806f87601d145d40ebb3b15b5270a924d44c1e722515ecf9d90f98",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/01_environment_diagnosis.json": {
+      "bytes": 390,
+      "sha256": "35c1fa9689fef102151bc0364a066302c4c6edb973307f6cb256743b1b24576a",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\01_environment_diagnosis.json",
+      "source_sha256": "35c1fa9689fef102151bc0364a066302c4c6edb973307f6cb256743b1b24576a",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/30_restore.log": {
+      "bytes": 658,
+      "sha256": "6b9f82fbd734597c52349543644454c784bd1d7d87c7a90f2e5465f6e6d1e7ea",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\30_restore.log",
+      "source_sha256": "6b9f82fbd734597c52349543644454c784bd1d7d87c7a90f2e5465f6e6d1e7ea",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/30_restore_exited.json": {
+      "bytes": 262,
+      "sha256": "57d371034b473ca44da97c51d66e9b7140aa7e2f24b41a437197e0d5a057d873",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\30_restore_exited.json",
+      "source_sha256": "57d371034b473ca44da97c51d66e9b7140aa7e2f24b41a437197e0d5a057d873",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/30_restore_started.json": {
+      "bytes": 902,
+      "sha256": "f501c501fb6ef89e9714a5e2ed8cfb820a2961140588e239924b1858213b7a32",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\30_restore_started.json",
+      "source_sha256": "f501c501fb6ef89e9714a5e2ed8cfb820a2961140588e239924b1858213b7a32",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/40_figures.log": {
+      "bytes": 121,
+      "sha256": "d1c26893f4ec315c4b0f444383173bef37d3dd0cfa64523ea116e208bb0de969",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\40_figures.log",
+      "source_sha256": "d1c26893f4ec315c4b0f444383173bef37d3dd0cfa64523ea116e208bb0de969",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/40_figures_exited.json": {
+      "bytes": 262,
+      "sha256": "4450bc23bf15eb48144ab9090108a78702bed9ed1ed36134b58217b342d8bd91",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\40_figures_exited.json",
+      "source_sha256": "4450bc23bf15eb48144ab9090108a78702bed9ed1ed36134b58217b342d8bd91",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/40_figures_started.json": {
+      "bytes": 478,
+      "sha256": "32eba406b081a4d29acf6b87a5ee3c50e607555ef3a1d1574a7cb8ff9ff888f4",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\40_figures_started.json",
+      "source_sha256": "32eba406b081a4d29acf6b87a5ee3c50e607555ef3a1d1574a7cb8ff9ff888f4",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/50_facts.log": {
+      "bytes": 256,
+      "sha256": "e37933c14062f2c21da375033a6c84ffed1f2efb6c11229068213d433e7a85d3",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\50_facts.log",
+      "source_sha256": "e37933c14062f2c21da375033a6c84ffed1f2efb6c11229068213d433e7a85d3",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/50_facts_exited.json": {
+      "bytes": 260,
+      "sha256": "875f56d36e754bdf3a48396e8bdd0234605b790b5622569840a5dc15f69416c2",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\50_facts_exited.json",
+      "source_sha256": "875f56d36e754bdf3a48396e8bdd0234605b790b5622569840a5dc15f69416c2",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/50_facts_started.json": {
+      "bytes": 481,
+      "sha256": "5e2e354bdebafbf4a3117cc96d63a852f9e8cc8de1172f4db494cd3f13f4abf3",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\50_facts_started.json",
+      "source_sha256": "5e2e354bdebafbf4a3117cc96d63a852f9e8cc8de1172f4db494cd3f13f4abf3",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/60_export.log": {
+      "bytes": 437,
+      "sha256": "b59cde26273fd4e8e4649eb433942d5c9a9ef4c72471e7e7be54b906af22aabe",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\60_export.log",
+      "source_sha256": "b59cde26273fd4e8e4649eb433942d5c9a9ef4c72471e7e7be54b906af22aabe",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/60_export_exited.json": {
+      "bytes": 261,
+      "sha256": "a8e9eee520927132ecef3e462e334a080eb8af194bd37481ab820c5a0c84f75a",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\60_export_exited.json",
+      "source_sha256": "a8e9eee520927132ecef3e462e334a080eb8af194bd37481ab820c5a0c84f75a",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/60_export_started.json": {
+      "bytes": 567,
+      "sha256": "c02074a779860e05cb439ab22215335795413e3a15795e0367b5235eceb063ce",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\60_export_started.json",
+      "source_sha256": "c02074a779860e05cb439ab22215335795413e3a15795e0367b5235eceb063ce",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/70_relocated.log": {
+      "bytes": 657,
+      "sha256": "99b7c69c0c73ff245e3afd037353c0767c5f6818f0f296897f4da808a7dbc6b0",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\70_relocated.log",
+      "source_sha256": "99b7c69c0c73ff245e3afd037353c0767c5f6818f0f296897f4da808a7dbc6b0",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/70_relocated_exited.json": {
+      "bytes": 264,
+      "sha256": "b04b4717c3e8ffec7ca32c8fa6ce337fb1c15634b864e4d0ee01b1c2166ea936",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\70_relocated_exited.json",
+      "source_sha256": "b04b4717c3e8ffec7ca32c8fa6ce337fb1c15634b864e4d0ee01b1c2166ea936",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/70_relocated_started.json": {
+      "bytes": 639,
+      "sha256": "98818739cc55a392e973dedca84179769119b3206cc87b6a1958049b826edcd5",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\70_relocated_started.json",
+      "source_sha256": "98818739cc55a392e973dedca84179769119b3206cc87b6a1958049b826edcd5",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/90_recovery_complete.json": {
+      "bytes": 640,
+      "sha256": "2c6d5b17553cc126e3a08eba2e6238da3fd2356691840c707fb1e9d4a1e894a2",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\90_recovery_complete.json",
+      "source_sha256": "2c6d5b17553cc126e3a08eba2e6238da3fd2356691840c707fb1e9d4a1e894a2",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/bad_environment.log": {
+      "bytes": 1000,
+      "sha256": "4cbaec947b91486afeabbe6d0b29439d1540dd5d348e1b3dc24b59cff36f7755",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\bad_environment.log",
+      "source_sha256": "4cbaec947b91486afeabbe6d0b29439d1540dd5d348e1b3dc24b59cff36f7755",
+      "copy": "unchanged bytes"
+    },
+    "operations/recovery_cuda_visibility_v1/fixed_environment.log": {
+      "bytes": 78,
+      "sha256": "7fef77518aab786ea007534aa0cc12db8a9a56e3997df4f7c469ca5b22498d9f",
+      "kind": "existing pipeline event/log",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_orchestration\\recovery_cuda_visibility_v1\\fixed_environment.log",
+      "source_sha256": "7fef77518aab786ea007534aa0cc12db8a9a56e3997df4f7c469ca5b22498d9f",
+      "copy": "unchanged bytes"
+    },
+    "operations/training/BUILD_OPERATIONS_NOTE.py": {
+      "bytes": 17138,
+      "sha256": "0b7c69e80ebecd31c227e644a2397573eff4f8133fb4bfdc88ef1a066297adcf",
+      "kind": "operational projection and source",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_notes\\BUILD_OPERATIONS_NOTE.py",
+      "source_sha256": "0b7c69e80ebecd31c227e644a2397573eff4f8133fb4bfdc88ef1a066297adcf",
+      "copy": "unchanged bytes"
+    },
+    "operations/training/OPERATIONS_AFTER_TRAINING.json": {
+      "bytes": 1255230,
+      "sha256": "531ceed3851189be4ac89a2dbd090eea18c9b24d919afd65bb190147d40a5d47",
+      "kind": "operational projection and source",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_notes\\OPERATIONS_AFTER_TRAINING.json",
+      "source_sha256": "531ceed3851189be4ac89a2dbd090eea18c9b24d919afd65bb190147d40a5d47",
+      "copy": "unchanged bytes"
+    },
+    "operations/training/OPERATIONS_AFTER_TRAINING.md": {
+      "bytes": 2822,
+      "sha256": "398d814ff8b89f506b076e88f354d7791ee3be8f4b3013d620ae4302f30756cc",
+      "kind": "operational projection and source",
+      "source_path": "D:\\SER-final-program-20260907\\postrun_notes\\OPERATIONS_AFTER_TRAINING.md",
+      "source_sha256": "398d814ff8b89f506b076e88f354d7791ee3be8f4b3013d620ae4302f30756cc",
+      "copy": "unchanged bytes"
+    },
+    "paper_facts/facts.json": {
+      "bytes": 18504,
+      "sha256": "82bdcaa89893e71f19f814236428db8d273f291f77d0cdc7863f6240b1d95c83",
+      "kind": "existing shared bilingual facts",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\paper_facts\\facts.json",
+      "source_sha256": "82bdcaa89893e71f19f814236428db8d273f291f77d0cdc7863f6240b1d95c83",
+      "copy": "unchanged bytes"
+    },
+    "paper_facts/tables_en.md": {
+      "bytes": 5220,
+      "sha256": "e8e3b8264f2bc05b35e7cd8e20a797ce452be87e0db4fc7319a74051f18165a3",
+      "kind": "existing shared bilingual facts",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\paper_facts\\tables_en.md",
+      "source_sha256": "e8e3b8264f2bc05b35e7cd8e20a797ce452be87e0db4fc7319a74051f18165a3",
+      "copy": "unchanged bytes"
+    },
+    "paper_facts/tables_zh.md": {
+      "bytes": 4965,
+      "sha256": "b1899cd628d20ea7938cb2a10c928b0cdd9d3f652edf37f77443df07e921828d",
+      "kind": "existing shared bilingual facts",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\paper_facts\\tables_zh.md",
+      "source_sha256": "b1899cd628d20ea7938cb2a10c928b0cdd9d3f652edf37f77443df07e921828d",
+      "copy": "unchanged bytes"
+    },
+    "scores/complete_gate.json": {
+      "bytes": 383007,
+      "sha256": "19d8823f3281e283819a04d07ed358f7914d3f7118659d08b266fb321fb1013e",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\complete_gate.json",
+      "source_sha256": "19d8823f3281e283819a04d07ed358f7914d3f7118659d08b266fb321fb1013e",
+      "copy": "unchanged bytes"
+    },
+    "scores/contexts.csv": {
+      "bytes": 45408,
+      "sha256": "d519696dfcbbfc76b5b68542888442d238ad54bbfbb5dcb6fcee815c0db51f16",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\contexts.csv",
+      "source_sha256": "d519696dfcbbfc76b5b68542888442d238ad54bbfbb5dcb6fcee815c0db51f16",
+      "copy": "unchanged bytes"
+    },
+    "scores/controls.csv": {
+      "bytes": 4381,
+      "sha256": "b31d3e9e98d8b4ea6cd914d99c110a536d79f252c073683254f0f1790273d622",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\controls.csv",
+      "source_sha256": "b31d3e9e98d8b4ea6cd914d99c110a536d79f252c073683254f0f1790273d622",
+      "copy": "unchanged bytes"
+    },
+    "scores/curves.csv": {
+      "bytes": 661830,
+      "sha256": "f210fa9208d087c72aeb4156d6ea8523b7601a4cd6c4d16b6355462bab6541c4",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\curves.csv",
+      "source_sha256": "f210fa9208d087c72aeb4156d6ea8523b7601a4cd6c4d16b6355462bab6541c4",
+      "copy": "unchanged bytes"
+    },
+    "scores/draws.csv": {
+      "bytes": 6923,
+      "sha256": "997da1eb503ad5dfea0b3e217059d53017dc40fc019248cfe25dca779c83cdb1",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\draws.csv",
+      "source_sha256": "997da1eb503ad5dfea0b3e217059d53017dc40fc019248cfe25dca779c83cdb1",
+      "copy": "unchanged bytes"
+    },
+    "scores/results.json": {
+      "bytes": 166897,
+      "sha256": "13b07f8c825a8d43f1e62db1aa400b0a5c939c6ac193b2780960446e8dc55088",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\results.json",
+      "source_sha256": "13b07f8c825a8d43f1e62db1aa400b0a5c939c6ac193b2780960446e8dc55088",
+      "copy": "unchanged bytes"
+    },
+    "scores/selected_epochs.csv": {
+      "bytes": 226993,
+      "sha256": "d00c1f9a0e8d57282565d399ae5621d5a2f51df48ce40874507de3a51d0582fb",
+      "kind": "existing score/table/gate",
+      "source_path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\selected_epochs.csv",
+      "source_sha256": "d00c1f9a0e8d57282565d399ae5621d5a2f51df48ce40874507de3a51d0582fb",
+      "copy": "unchanged bytes"
+    }
+  }
+}

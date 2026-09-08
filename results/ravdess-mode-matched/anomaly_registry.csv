@@ -1,0 +1,3 @@
+anomaly_type,channel,relative_path,actor,emotion_name,sha256,group_size,cross_actor,cross_label,cross_channel,detail
+duplicate_sha256,speech,Actor_07/03-01-03-01-02-01-07.wav,7,happy,ad066a1993793b79c21a8c77e6d4b7dc67dd7d9053efa77e1844491e3681071c,2,False,False,False,group members: speech/Actor_07/03-01-03-01-02-01-07.wav; speech/Actor_07/03-01-03-01-02-02-07.wav
+duplicate_sha256,speech,Actor_07/03-01-03-01-02-02-07.wav,7,happy,ad066a1993793b79c21a8c77e6d4b7dc67dd7d9053efa77e1844491e3681071c,2,False,False,False,group members: speech/Actor_07/03-01-03-01-02-01-07.wav; speech/Actor_07/03-01-03-01-02-02-07.wav

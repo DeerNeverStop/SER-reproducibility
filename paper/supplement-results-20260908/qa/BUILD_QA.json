@@ -1,0 +1,72 @@
+{
+  "schema": "ser-supplement-manuscript-qa-1",
+  "build": "english_v3",
+  "pages": 5,
+  "technical_pages": 4,
+  "reference_pages": [
+    5
+  ],
+  "files": {
+    "english/main.tex": {
+      "bytes": 23527,
+      "sha256": "8c8d28974e6facc46f6d5a08375360ba455bb64e842c309839c119ccb5eb3ae8"
+    },
+    "english/spconf.sty": {
+      "bytes": 8798,
+      "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+    },
+    "english/xie.pdf": {
+      "bytes": 60846,
+      "sha256": "d93fd956306c92de537f4e5425048f8c99c5d18700527b0dd8c9ffa7dd56d280"
+    },
+    "qa/tectonic.log": {
+      "bytes": 19820,
+      "sha256": "9b3a79dc2b9ed06d9baa1561ba68eabab510072d7ec7e5080c19ef9d0f83c9b1"
+    }
+  },
+  "compiler": {
+    "name": "Tectonic",
+    "version": "0.17.0",
+    "sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d"
+  },
+  "overfull_boxes": false,
+  "underfull_warnings": "Three hboxes and a vbox are present in the original log; all final pages were visually inspected. No clipped/overlapping content or missing glyphs observed.",
+  "embedded_fonts": {
+    "/IHAIZV+NimbusRomNo9L-Medi": true,
+    "/BZIVMZ+NimbusRomNo9L-ReguItal": true,
+    "/IXFAWU+NimbusRomNo9L-Regu": true,
+    "/TQTHRL+NimbusRomNo9L-MediItal": true,
+    "/YEUUOC+NewTXMI7": true,
+    "/VDVGTR+TeXGyreTermesX-Regular": true,
+    "/CAFSZL+txsys": true,
+    "/DDIEWW+NewTXMI": true,
+    "/AKHCZK+txmiaX": true,
+    "/FKPJSN+NimbusMonL-Regu": true
+  },
+  "visual_review": {
+    "all_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "method": "pdftoppm PNG scale-to 1600, each final v3 page viewed by root after final text changes",
+    "source_render_pdf_sha256": "d93fd956306c92de537f4e5425048f8c99c5d18700527b0dd8c9ffa7dd56d280",
+    "render_sha256": {
+      "page-1.png": "9ec60e120c7ac4be357975dde9d03b1335de46999365916c308dff4c8f1addd9",
+      "page-2.png": "7b75948213f7fab8ecaa59f476f5b51ff9d0487caf9faa98321c7ea044455cb5",
+      "page-3.png": "d26ad1e190ed73ff332361649190d120f50a514bb0ef52e50b65043ddca10da0",
+      "page-4.png": "f28514d8b06f5de11ef62cf0c3db36575ed0f9d102c2678e36b56a03a31ffaed",
+      "page-5.png": "62a2160ffa61ff9ee2aa5aa5009ca7a5f93c35bbf4402e604117554171f32549"
+    }
+  },
+  "statistical_source": "../../../docs/autodl-supplement-20260908/results/OUTPUT_MANIFEST.json",
+  "scope": "Layout and file identity receipt; final statistical claim review is a separate attached original record.",
+  "claim_review": {
+    "path": "FINAL_MANUSCRIPT_CLAIM_REVIEW.md",
+    "bytes": 4857,
+    "sha256": "583a8ebb1313601ae8fb8a45f7353576085ada007b8dd4a308a220c7b9d940ea",
+    "tex_sha256": "8c8d28974e6facc46f6d5a08375360ba455bb64e842c309839c119ccb5eb3ae8"
+  }
+}

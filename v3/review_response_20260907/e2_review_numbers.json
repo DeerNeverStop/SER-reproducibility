@@ -1,0 +1,2832 @@
+{
+  "schema": "ser-e2-posthoc-review-1",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "source_sha256": {
+    "D:\\SER-speaker-coverage-20260906\\inputs\\plan_2c201b05bde2d4b07216ace064a542c0a32f0ed469a119ec8dc034acbe289774.json": "2c201b05bde2d4b07216ace064a542c0a32f0ed469a119ec8dc034acbe289774",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\dataset.py": "af033c6ff25439dac513f29287570cd4f616c656aef01f10dac8c00ac71d6e5b",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\experiment_utils.py": "44f143b800e7aff562fef47a90f81520f8bf542ddb40ffcc5094552710e95e63",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\features.py": "a4c8fc003b9732158cbecd2cea41f3978416ecc51dbf3649df48a92c24e68f7f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\plan_rc2\\unit_configs.json": "c541c6a2c868dd367e2b77426b1e312d15feef7317b8a172ebe2486a2a9c1d59",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\common.py": "e954e51f77ee66f23aead0fffd9d1cd8b2ed7b6aa0b1385e251498ca02d92ee2",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\corpora.py": "d921ff2497fb3ce1074c7237d436419a65e412a4b59db7caf26b89379539860c",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\features.py": "cdb5f86e0ee52da7c52dd2b0a892bd7be2c3e4f2bb87780329ba22d2d10c245f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\stats.py": "e25be689c4c1cbf2c549fc5b2c4c8599415c1b11de68f9669b130d5154b02a7e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\train.py": "cda4967cd8a8009eefdd87df87b7a327566cf9586299018397ac132adf12ba44",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_plan.py": "678f41809e84730cfea45e072adecfc6ea22cb23535ae86ac47b9859976b97da",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_run.py": "ea9fd83f067e47b39a2398797622be98a3dbe3239fd5455b67e9406a78221ae4",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_verify.py": "7f189b077b792af5bdd4ed7762043f7647bdcab518a0a2394abad8e47e45cf4b",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\deploy\\engines_deploy.py": "62f5d792243ca5ec8631988e1169502db2810d2ab1bbf9c325f3f3326e837753",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\EXECUTION_PLAN.md": "dc3ba1c1f21092ac4339096b456aa56eae90d5d6f5da47819452acb01d6982b9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\asv_emotion.py": "7ccf0d42436b8d44ac6f1c251cb78a24b23ed1f12f41b2f14bb53e1824985135",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\diagnose.py": "4b35e176c26416873cb42f05310c15da110a60f4b3958d3197e3e644b55fe773",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\extract_asv.py": "e1ad418c7f14fe7a1f49baa10d2e06ffad79d2d12d52ba15efa5e63929a750a3",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\plan.py": "369248b95ccc66cd7ac181f428fbff20daefa0008f6fb0da748504ac3e443480",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\run.py": "c3589ad5f22b366ab8971ada823e4f7f063ff0197250c58aebf1f794a7fba309",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\score.py": "8614fe6b6632f4db0bd73c5df201d74849d450fd63d719abee06634dea24b22f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\verify.py": "e9a548a7a1beb59dd99ad7043247ba31215d28eb84fc6b014d44c3b047ffe48e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\voice_diagnostic.py": "7a7c17a26b6e73b91c04c94be566e3d4392252efba8ca5a500a68004dfa6735e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\manifests\\cremad_manifest.csv": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+    "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_ecapa.npz": "905c64d5dea9699951fa192348465fcd715d1bb3aafd67207aaff01072252db9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\diagnostics\\e0_policy_geometry.csv": "60c6c34294902c6fb017db091fc07fb92d1d932e4abbb7d67cd101c20d110b77",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\e2\\results.json": "6b54514a42fc9284b7e22669ab30f8fc765a12559ef7a35cae29a0e435dcc7dd",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\e2\\per_speaker.csv": "290a3f86ac9e9afdf1f8e8716ff2d8e764401df4308e91d0698a9ce3c81bcf98",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\e2\\per_repeat_speaker.csv": "c5bde8d874ec60c84bd9bf6de7f6b436d0a76a575a353dceaeee5e4396792faf",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\e2\\contrasts.csv": "3a02c0beb3b00cbefd12060b60020eaa831599e8872366c7b945e61a3a9f5681",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\reports\\data\\e2\\fold_contrasts.csv": "36c753e35d426c897b0c004cf53b07a930b4186d5a86f95578e65b1320e024a2",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\review_response_20260907\\e2_recompute.py": "1e2c424e15d2958f243140f48a4dcea34a6a2406884376f98b2e377416f4a22e"
+  },
+  "old_selection_or_results_modified": false,
+  "models_fitted": false,
+  "test_SER_predictions_used_for_geometry": false,
+  "test_neutral_annotations_used": true,
+  "ecapa_scope": "frozen 192D normalized neutral references; known neutral labels used, no SER outcomes or heldout distances used to reselect training people",
+  "pool_old_csv_max_absolute_replay_error": 2.220446049250313e-16,
+  "pool": {
+    "equal_context_means": {
+      "U": {
+        "nn1_mean": 0.35644734835567105,
+        "nn1_max": 0.7704762403263306,
+        "nn3_mean": 0.5589980672009925
+      },
+      "R": {
+        "nn1_mean": 0.3214980336580242,
+        "nn1_max": 0.6570041222111596,
+        "nn3_mean": 0.5553226844155351
+      },
+      "C": {
+        "nn1_mean": 0.34812567856992305,
+        "nn1_max": 0.6965484343813682,
+        "nn3_mean": 0.5864438067330077
+      }
+    },
+    "paired_differences_and_counts": {
+      "nn1_mean": {
+        "C-U": {
+          "mean_difference": -0.008321669785748099,
+          "lower_count": 75,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "R-U": {
+          "mean_difference": -0.034949314697646915,
+          "lower_count": 90,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "C-R": {
+          "mean_difference": 0.02662764491189881,
+          "lower_count": 0,
+          "tie_count": 0,
+          "n_views": 90
+        }
+      },
+      "nn1_max": {
+        "C-U": {
+          "mean_difference": -0.07392780594496226,
+          "lower_count": 90,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "R-U": {
+          "mean_difference": -0.11347211811517093,
+          "lower_count": 90,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "C-R": {
+          "mean_difference": 0.03954431217020866,
+          "lower_count": 3,
+          "tie_count": 0,
+          "n_views": 90
+        }
+      },
+      "nn3_mean": {
+        "C-U": {
+          "mean_difference": 0.02744573953201502,
+          "lower_count": 0,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "R-U": {
+          "mean_difference": -0.003675382785457425,
+          "lower_count": 59,
+          "tie_count": 0,
+          "n_views": 90
+        },
+        "C-R": {
+          "mean_difference": 0.031121122317472445,
+          "lower_count": 0,
+          "tie_count": 0,
+          "n_views": 90
+        }
+      }
+    },
+    "scope": "90 fold/rotation/draw views; R/C share membership and geometry over draws, so only 30 distinct R/C contexts; folds/rotations reuse people and are not independent experiments"
+  },
+  "outer_geometry": {
+    "actual_test_query_neutral_available": {
+      "equal_context_means": {
+        "U": {
+          "nn1_mean": 0.644565358265913,
+          "nn1_max": 0.7911826178129288,
+          "nn3_mean": 0.6992214179934156
+        },
+        "R": {
+          "nn1_mean": 0.6377545566773123,
+          "nn1_max": 0.7919570002910467,
+          "nn3_mean": 0.696079341506153
+        },
+        "C": {
+          "nn1_mean": 0.6593778118290429,
+          "nn1_max": 0.7921550957718583,
+          "nn3_mean": 0.7178442794275768
+        }
+      },
+      "paired_differences_and_counts": {
+        "nn1_mean": {
+          "C-U": {
+            "mean_difference": 0.014812453563129798,
+            "lower_count": 20,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": -0.006810801588600721,
+            "lower_count": 62,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.02162325515173052,
+            "lower_count": 12,
+            "tie_count": 0,
+            "n_views": 90
+          }
+        },
+        "nn1_max": {
+          "C-U": {
+            "mean_difference": 0.0009724779589295876,
+            "lower_count": 41,
+            "tie_count": 5,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": 0.0007743824781178582,
+            "lower_count": 40,
+            "tie_count": 12,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.0001980954808117293,
+            "lower_count": 36,
+            "tie_count": 21,
+            "n_views": 90
+          }
+        },
+        "nn3_mean": {
+          "C-U": {
+            "mean_difference": 0.018622861434161034,
+            "lower_count": 8,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": -0.0031420764872626275,
+            "lower_count": 53,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.02176493792142366,
+            "lower_count": 6,
+            "tie_count": 0,
+            "n_views": 90
+          }
+        }
+      },
+      "scope": "90 fold/rotation/draw views; R/C share membership and geometry over draws, so only 30 distinct R/C contexts; folds/rotations reuse people and are not independent experiments",
+      "equal_person_after_rotation_draw_average": {
+        "U": {
+          "n_people": 91,
+          "mean_nn1": 0.6447959072855434,
+          "mean_nn3": 0.6994027275954413,
+          "reference_count_histogram": {
+            "2": 1620,
+            "1": 18
+          },
+          "min_views_per_person": 18,
+          "max_views_per_person": 18
+        },
+        "R": {
+          "n_people": 91,
+          "mean_nn1": 0.6380702281256325,
+          "mean_nn3": 0.6962962726787338,
+          "reference_count_histogram": {
+            "2": 1620,
+            "1": 18
+          },
+          "min_views_per_person": 18,
+          "max_views_per_person": 18
+        },
+        "C": {
+          "n_people": 91,
+          "mean_nn1": 0.6593773267361015,
+          "mean_nn3": 0.7177940479623288,
+          "reference_count_histogram": {
+            "2": 1620,
+            "1": 18
+          },
+          "min_views_per_person": 18,
+          "max_views_per_person": 18
+        }
+      }
+    },
+    "matched_eight_train_prompts_complete": {
+      "equal_context_means": {
+        "U": {
+          "nn1_mean": 0.5840551861640024,
+          "nn1_max": 0.7516378983336238,
+          "nn3_mean": 0.6457795311919708
+        },
+        "R": {
+          "nn1_mean": 0.574813832469812,
+          "nn1_max": 0.7467904465470933,
+          "nn3_mean": 0.6406560717315557
+        },
+        "C": {
+          "nn1_mean": 0.6028150328396304,
+          "nn1_max": 0.7475913994528343,
+          "nn3_mean": 0.667936115744875
+        }
+      },
+      "paired_differences_and_counts": {
+        "nn1_mean": {
+          "C-U": {
+            "mean_difference": 0.018759846675627842,
+            "lower_count": 16,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": -0.009241353694190518,
+            "lower_count": 64,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.028001200369818364,
+            "lower_count": 6,
+            "tie_count": 0,
+            "n_views": 90
+          }
+        },
+        "nn1_max": {
+          "C-U": {
+            "mean_difference": -0.00404649888078965,
+            "lower_count": 48,
+            "tie_count": 7,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": -0.004847451786530373,
+            "lower_count": 45,
+            "tie_count": 9,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.0008009529057407224,
+            "lower_count": 36,
+            "tie_count": 3,
+            "n_views": 90
+          }
+        },
+        "nn3_mean": {
+          "C-U": {
+            "mean_difference": 0.02215658455290415,
+            "lower_count": 9,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "R-U": {
+            "mean_difference": -0.0051234594604150675,
+            "lower_count": 58,
+            "tie_count": 0,
+            "n_views": 90
+          },
+          "C-R": {
+            "mean_difference": 0.027280044013319217,
+            "lower_count": 0,
+            "tie_count": 0,
+            "n_views": 90
+          }
+        }
+      },
+      "scope": "90 fold/rotation/draw views; R/C share membership and geometry over draws, so only 30 distinct R/C contexts; folds/rotations reuse people and are not independent experiments",
+      "equal_person_after_rotation_draw_average": {
+        "U": {
+          "n_people": 91,
+          "mean_nn1": 0.5811782238244901,
+          "mean_nn3": 0.6427824493264674,
+          "reference_count_histogram": {
+            "8": 1569
+          },
+          "min_views_per_person": 3,
+          "max_views_per_person": 18
+        },
+        "R": {
+          "n_people": 91,
+          "mean_nn1": 0.5730468515976689,
+          "mean_nn3": 0.638331588405065,
+          "reference_count_histogram": {
+            "8": 1569
+          },
+          "min_views_per_person": 3,
+          "max_views_per_person": 18
+        },
+        "C": {
+          "n_people": 91,
+          "mean_nn1": 0.6003569984662733,
+          "mean_nn3": 0.6650813122385614,
+          "reference_count_histogram": {
+            "8": 1569
+          },
+          "min_views_per_person": 3,
+          "max_views_per_person": 18
+        }
+      }
+    }
+  },
+  "reference_omissions": [
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 0,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1019",
+      "missing_prompts": [
+        "ITH"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 2,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1008",
+      "missing_prompts": [
+        "WSI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 4,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1009",
+      "missing_prompts": [
+        "MTI"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1002",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 3,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1006",
+      "missing_prompts": [
+        "TIE"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 0,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 1,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 2,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 3,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 0,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 1,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "C",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "R",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    },
+    {
+      "method": "matched_eight_train_prompts_complete",
+      "fold": 4,
+      "rotation": 5,
+      "draw": 2,
+      "policy": "U",
+      "speaker": "1076",
+      "missing_prompts": [
+        "ITS"
+      ]
+    }
+  ],
+  "geometry_scope": "Post-hoc descriptive geometry, no inferential CI or new selection gate. Primary reference-matched geometry requires all eight neutral references; secondary actual-query geometry uses the available one/two neutral query recordings and differs in reference text/count.",
+  "cnn_last_minus_best": {
+    "U": {
+      "mean_last_minus_best_pp": 1.3662263662263656,
+      "ci95_low": 0.6077256077256071,
+      "ci95_high": 2.1469387094387082,
+      "n_people_last_better": 58,
+      "n_people_tied": 4,
+      "n_people": 91
+    },
+    "R": {
+      "mean_last_minus_best_pp": 0.9051134051134054,
+      "ci95_low": 0.02220002220002336,
+      "ci95_high": 1.777412402412403,
+      "n_people_last_better": 54,
+      "n_people_tied": 3,
+      "n_people": 91
+    },
+    "C": {
+      "mean_last_minus_best_pp": 0.8232508232508231,
+      "ci95_low": 0.12857512857512884,
+      "ci95_high": 1.5142380767380748,
+      "n_people_last_better": 53,
+      "n_people_tied": 1,
+      "n_people": 91
+    },
+    "equal_three_policy_mean_pp": 1.0315301981968648
+  },
+  "cnn_last_best_interval_scope": "Exploratory paired-person percentile bootstrap after averaging the three fixed draws, conditional on already fitted models; not a causal early-stopping mechanism or independent confirmation",
+  "normal_holm_approximation_only": [
+    {
+      "model": "cnn",
+      "checkpoint": "best",
+      "contrast": "C-U",
+      "point": -0.10915010915010832,
+      "ci_low": -0.7150257150257138,
+      "ci_high": 0.5087505087505088,
+      "normal_se_proxy": 0.3121935488175327,
+      "normal_p_proxy": 0.7266214935846032,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "cnn",
+      "checkpoint": "best",
+      "contrast": "R-U",
+      "point": 0.455562955562956,
+      "ci_low": -0.2835127835127835,
+      "ci_high": 1.1900368150368148,
+      "normal_se_proxy": 0.3759124173129633,
+      "normal_p_proxy": 0.22555606289054436,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "cnn",
+      "checkpoint": "last",
+      "contrast": "C-U",
+      "point": -0.652125652125652,
+      "ci_low": -1.4171361046361048,
+      "ci_high": 0.07354913604913643,
+      "normal_se_proxy": 0.3802838349182884,
+      "normal_p_proxy": 0.08637470033464831,
+      "holm_12_proxy": 0.8637470033464831
+    },
+    {
+      "model": "cnn",
+      "checkpoint": "last",
+      "contrast": "R-U",
+      "point": -0.005550005550005552,
+      "ci_low": -0.8181748806748809,
+      "ci_high": 0.8126248751248754,
+      "normal_se_proxy": 0.41602799047923755,
+      "normal_p_proxy": 0.9893561671391997,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "ridge_wavlm",
+      "checkpoint": "best",
+      "contrast": "C-U",
+      "point": -0.48747548747548775,
+      "ci_low": -1.1867993117993125,
+      "ci_high": 0.2090617715617712,
+      "normal_se_proxy": 0.3560935543641256,
+      "normal_p_proxy": 0.17101383709969437,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "ridge_wavlm",
+      "checkpoint": "best",
+      "contrast": "R-U",
+      "point": 0.05411255411255414,
+      "ci_low": -0.6054131054131052,
+      "ci_high": 0.7145747770747769,
+      "normal_se_proxy": 0.3367377903113981,
+      "normal_p_proxy": 0.8723325168626893,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "ridge_wavlm",
+      "checkpoint": "last",
+      "contrast": "C-U",
+      "point": -0.48747548747548775,
+      "ci_low": -1.1867993117993125,
+      "ci_high": 0.2090617715617712,
+      "normal_se_proxy": 0.3560935543641256,
+      "normal_p_proxy": 0.17101383709969437,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "ridge_wavlm",
+      "checkpoint": "last",
+      "contrast": "R-U",
+      "point": 0.05411255411255414,
+      "ci_low": -0.6054131054131052,
+      "ci_high": 0.7145747770747769,
+      "normal_se_proxy": 0.3367377903113981,
+      "normal_p_proxy": 0.8723325168626893,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "wavlm_ft",
+      "checkpoint": "best",
+      "contrast": "C-U",
+      "point": 0.07492507492507494,
+      "ci_low": -0.9462932900432902,
+      "ci_high": 1.113556582306581,
+      "normal_se_proxy": 0.5254815620587175,
+      "normal_p_proxy": 0.8866190172574335,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "wavlm_ft",
+      "checkpoint": "best",
+      "contrast": "R-U",
+      "point": 0.22477522477522402,
+      "ci_low": -0.7284382284382296,
+      "ci_high": 1.2050449550449538,
+      "normal_se_proxy": 0.49324456947531997,
+      "normal_p_proxy": 0.648600364304112,
+      "holm_12_proxy": 1.0
+    },
+    {
+      "model": "wavlm_ft",
+      "checkpoint": "last",
+      "contrast": "C-U",
+      "point": 1.0302197802197794,
+      "ci_low": 0.03676878676878644,
+      "ci_high": 2.0236707736707724,
+      "normal_se_proxy": 0.5068720656538629,
+      "normal_p_proxy": 0.04210260352583079,
+      "holm_12_proxy": 0.4631286387841387
+    },
+    {
+      "model": "wavlm_ft",
+      "checkpoint": "last",
+      "contrast": "R-U",
+      "point": -1.1037573537573537,
+      "ci_low": -2.1180208680208676,
+      "ci_high": -0.10331682206682352,
+      "normal_se_proxy": 0.5139645579831499,
+      "normal_p_proxy": 0.03175064012104213,
+      "holm_12_proxy": 0.3810076814525056
+    }
+  ],
+  "multiplicity_warning": "Percentile bootstrap endpoints do not identify a normal standard error or an exact null p-value. Holm requires valid marginal p-values; these proxies cannot establish an exact corrected claim. The 12 rows include duplicate Ridge best/last endpoints and mix one frozen primary with sensitivity contrasts.",
+  "alternative_primary_intervals_descriptive": {
+    "fold_equal_weight": {
+      "n": 5,
+      "mean": -0.12879048482763575,
+      "ci95": [
+        -1.0190349515153998,
+        0.7614539818601282
+      ],
+      "valid_independence_not_established": true
+    },
+    "draw_equal_weight": {
+      "n": 3,
+      "mean": -0.10915010915010831,
+      "ci95": [
+        -1.823240568042333,
+        1.6049403497421162
+      ],
+      "valid_independence_not_established": true
+    },
+    "caveat": "Folds share training people; draws reuse all test people, and R/C membership is fixed across draws. Wider t intervals are not automatically more honest. Equal-fold mean is not identical to the frozen equal-person estimand."
+  },
+  "numpy_version": "2.4.6",
+  "output_csv_sha256": {
+    "e2_geometry_rows.csv": "130107ef0aee7c941b99b2b38cd62a4c45679a6d2891d764582ebf444bbddf58",
+    "e2_geometry_contexts.csv": "f454746b5c7c3829fe539dc1ea5894f2870e9f0448828898d4baca68ff0a56b6"
+  }
+}

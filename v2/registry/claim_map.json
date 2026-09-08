@@ -1,0 +1,245 @@
+{
+ "alpha": 0.05,
+ "claims": {
+  "C1": {
+   "requires": [],
+   "text": "Audit prevalence of speaker-nonexclusivity risk (Y_any primary, Y_test secondary) in a frozen-rule probability sample of public SER repository lineages",
+   "type": "estimation",
+   "verdict_rule": "always reported with intervals; no verdict"
+  },
+  "C2-rep": {
+   "requires": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+   ],
+   "text": "Same-implementation replication of the RAVDESS/CREMA-D direction (Ibrahim et al. 2026; Zielonka et al. 2022; our 2026 P1)",
+   "type": "replication",
+   "verdict_rule": "supported iff all eight reject; per-test verdicts in evidence; not a headline claim"
+  },
+  "C2a": {
+   "reported": [
+    "N02"
+   ],
+   "requires": [
+    "N01"
+   ],
+   "text": "Speaker-nonexclusive splitting inflates UAR on the repetition-clean SUBESCO-980 panel (scratch and probes)",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff N01 rejects; N02 reported"
+  },
+  "C2b": {
+   "requires": [
+    "N03",
+    "N04"
+   ],
+   "text": "The premium decomposes into positive outer test leakage and positive inner selection leakage on SUBESCO-980",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff both reject"
+  },
+  "C3a": {
+   "demoted_a_priori": [
+    "N07"
+   ],
+   "reported": [
+    "N07"
+   ],
+   "requires_any": [
+    "N05"
+   ],
+   "text": "Prompt/content overlap alone inflates UAR at speaker-exclusive training",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff >=1 rejects and no opposite-sign rejection"
+  },
+  "C3b": {
+   "demoted_a_priori": [
+    "N08"
+   ],
+   "reported": [
+    "N08"
+   ],
+   "requires_any": [
+    "N06"
+   ],
+   "text": "Cross-prompt speaker overlap alone inflates UAR at prompt-exclusive training",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff >=1 rejects and no opposite-sign rejection"
+  },
+  "C3c": {
+   "requires": [
+    "N09"
+   ],
+   "text": "Sibling takes add a further increment at matched N",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff N09 rejects"
+  },
+  "C3d": {
+   "requires": [
+    "N10"
+   ],
+   "text": "At matched N, fewer speakers with higher per-speaker density inflate more",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff N10 rejects"
+  },
+  "C4a": {
+   "requires_k_of": [
+    2,
+    [
+     "R09",
+     "R10",
+     "R11"
+    ]
+   ],
+   "text": "The premium persists under partial fine-tuning of WavLM-base+",
+   "type": "replication",
+   "verdict_rule": "supported iff >=2 of 3 reject"
+  },
+  "C4b": {
+   "demoted_a_priori": [
+    "N11",
+    "N12",
+    "N13"
+   ],
+   "reported": [
+    "N11",
+    "N12",
+    "N13"
+   ],
+   "requires_k_of": [
+    0,
+    []
+   ],
+   "text": "Fine-tuning re-exposes speaker information relative to the frozen same-regime comparator",
+   "type": "estimation",
+   "verdict_rule": "estimation claim after a priori demotion: reported with intervals; no verdict"
+  },
+  "S1": {
+   "requires": [
+    "N14"
+   ],
+   "text": "Supplement: hyperparameter selection on a speaker-overlapping validation set is optimistic",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff N14 rejects"
+  },
+  "S2": {
+   "requires": [
+    "N15"
+   ],
+   "text": "Supplement: the frozen-probe outer-boundary premium is head-dependent",
+   "type": "confirmatory",
+   "verdict_rule": "supported iff N15 rejects"
+  },
+  "S3": {
+   "requires": [
+    "T01"
+   ],
+   "text": "Supplement: LOSO advantage equals a training-set-size effect on CREMA-D frozen features",
+   "type": "equivalence",
+   "verdict_rule": "supported iff TOST rejects both one-sided nulls"
+  },
+  "S4": {
+   "requires": [
+    "T02"
+   ],
+   "text": "Supplement: no spillover to unexposed co-fold speakers",
+   "type": "equivalence",
+   "verdict_rule": "supported iff TOST rejects both one-sided nulls"
+  }
+ },
+ "descriptors": [
+  [
+   "D01",
+   "GR-GG allocation package on every family level (costs fit speakers; not inflation)"
+  ],
+  [
+   "D02",
+   "per-level RR-GG sign counts (x/9 scratch, x/9 probe) and per-replicate estimates"
+  ],
+  [
+   "D03",
+   "corpus differences RAVDESS-CREMA-D and RAVDESS-SUBESCO-980 with two-sample speaker bootstrap; +/-3 pp reading band"
+  ],
+  [
+   "D04",
+   "sub_1400_one vs sub_700_one (cell-count effect at one take) and sub_700_two vs sub_700_one (take effect at fixed cells); the fixed-N one/two contrast is an allocation effect"
+  ],
+  [
+   "D05",
+   "subesco_full random minus take-grouped premium on identical data"
+  ],
+  [
+   "D06",
+   "mechanism both-none, interaction (both-none)-(spk-none)-(prm-none); crowding contrast G1-G05; share G05/G1"
+  ],
+  [
+   "D07",
+   "cremad_24 vs cremad_91m raw premia per draw; variance over draws"
+  ],
+  [
+   "D08",
+   "RR_hpo reported-number premium; selected-config distribution; test-set-selection optimism (max over configs of outer-test UAR minus honestly selected)"
+  ],
+  [
+   "D09",
+   "honest outer-test DiD [GR_hpo-GG_hpo]-[GR_fixed-GG_fixed] (direction not prespecified)"
+  ],
+  [
+   "D10",
+   "speaker-ID probe accuracy on test-fold speakers under RR vs GG checkpoints (scratch, frozen WavLM, fine-tuned WavLM)"
+  ],
+  [
+   "D11",
+   "nearest-neighbour composition of training folds for test items (sibling / same-speaker / same-prompt / other)"
+  ],
+  [
+   "D12",
+   "premium-by-layer (Ridge) per encoder x corpus with Spearman over state index"
+  ],
+  [
+   "D13",
+   "Ridge direction stability over 20 draws (>=18/20 positive and q05>0)"
+  ],
+  [
+   "D14",
+   "RAVDESS CNN and SUBESCO-980 CNN draw x seed variance components"
+  ],
+  [
+   "D15",
+   "RAVDESS CNN LOSO, LOSO-sub, Group5 (like-for-like with Ibrahim et al. 2026)"
+  ],
+  [
+   "D16",
+   "CNN RR/GG on the six P1 frozen splits next to the 2026 P1 rows (reconciliation)"
+  ],
+  [
+   "D17",
+   "audit: Y_any and Y_test proportions, Wilson and partial-identification intervals, hypergeometric frame envelope, U bounds, execution-eligible fraction, realized overlap on the eligible subset, kappa with CI"
+  ],
+  [
+   "D18",
+   "accuracy and macro-F1 released without inference"
+  ]
+ ],
+ "family_policy": "Families are claim-wise: one Holm family per headline claim group; FWER 0.05 within each family; no program-wise error rate is claimed. Only hypotheses with a_priori_status == 'confirmatory' enter a family; hypotheses demoted a priori by the simulated power table (power_holm < 0.5) are reported as estimates with CIs.",
+ "family_sizes": {
+  "N-decomp": 4,
+  "N-mech": 4,
+  "N-supp": 2,
+  "R": 11,
+  "T": 2
+ },
+ "forbidden_claims": [
+  "prevalence x effect multiplication or a universal correction factor",
+  "'more than half' or any threshold statement about the audit",
+  "'uses speaker identity' / 'uses voiceprint' / mediation shares",
+  "'monotone dose curve'",
+  "language-causal statements for SUBESCO",
+  "reuse of 2026 P1/S0/S2/S3 numbers as updates (cited once as prior replication; reconciled via D16)",
+  "any per-level (single model) test; any accuracy/macro-F1 inference"
+ ]
+}

@@ -1,0 +1,529 @@
+{
+  "schema": "ser-final-program-paper-facts-1",
+  "data_status": "ACCEPTED_FORMAL_RESULT_SUMMARIES",
+  "program": "SER26-FINAL-CHECKPOINT-PROGRAM-1",
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "lock_sha256": "cd32459cef1e09c5efe5ef4c9f3a918aeef5a0aac15f2e98731a60daa3f4d258",
+  "source_result_semantic_sha256": "d46da317c2c9943f60a395603b663d436fc2c1acd42881e6da501600ee801952",
+  "source_audit_semantic_sha256": "a09cefbfc4d5fed9974850e22c7af6253ddbe25a7728ca92dd5526d7e8e2e1cc",
+  "source_and_input_sha256": {
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\results.json": "13b07f8c825a8d43f1e62db1aa400b0a5c939c6ac193b2780960446e8dc55088",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\complete_gate.json": "19d8823f3281e283819a04d07ed358f7914d3f7118659d08b266fb321fb1013e",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\audits\\numeric_original.json": "e66a0d5e125d693503ad524bb9c3367c518a9a2cee6a289184ac33cf783740d8",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\plot_results.py": "cbd8981d787c21690e1bd2f171a6f84f4298d68cf5bc1caab8124634305ab617",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\contexts.csv": "d519696dfcbbfc76b5b68542888442d238ad54bbfbb5dcb6fcee815c0db51f16",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\draws.csv": "997da1eb503ad5dfea0b3e217059d53017dc40fc019248cfe25dca779c83cdb1",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\selected_epochs.csv": "d00c1f9a0e8d57282565d399ae5621d5a2f51df48ce40874507de3a51d0582fb",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\curves.csv": "f210fa9208d087c72aeb4156d6ea8523b7601a4cd6c4d16b6355462bab6541c4",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\controls.csv": "b31d3e9e98d8b4ea6cd914d99c110a536d79f252c073683254f0f1790273d622",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\paper_facts.py": "aa63bfb974f537760b9701e655a2e1643de400fcd730c0a63626119e3a6899bb"
+  },
+  "counts": {
+    "formal_fits": 384,
+    "main_A": 360,
+    "control_B": 24,
+    "pilot_scored": 0,
+    "main_contexts": 360,
+    "corpus_draws": 72,
+    "family_tests": 6
+  },
+  "native_class_counts": {
+    "cremad": 6,
+    "subesco": 7,
+    "ravdess": 8
+  },
+  "analysis_contract": {
+    "main_trajectories": 360,
+    "swap_control_trajectories": 24,
+    "formal_fits": 384,
+    "pilot_fits": 4,
+    "main_arm": "A",
+    "swap_control": {
+      "corpus": "cremad",
+      "fold": 0,
+      "arm": "B",
+      "epoch": 15,
+      "paired_A": "same formal corpus/draw/fold A",
+      "inference": false
+    },
+    "tests": [
+      {
+        "corpus": "cremad",
+        "estimand": "delta_CE"
+      },
+      {
+        "corpus": "cremad",
+        "estimand": "J"
+      },
+      {
+        "corpus": "subesco",
+        "estimand": "delta_CE"
+      },
+      {
+        "corpus": "subesco",
+        "estimand": "J"
+      },
+      {
+        "corpus": "ravdess",
+        "estimand": "delta_CE"
+      },
+      {
+        "corpus": "ravdess",
+        "estimand": "J"
+      }
+    ],
+    "estimands": {
+      "delta_CE": "T(seen,CE)-T(unseen,CE)",
+      "delta_UAR": "T(seen,UAR)-T(unseen,UAR)",
+      "J": "delta_CE-delta_UAR"
+    },
+    "family_size": 6,
+    "multiplicity": "Holm, familywise alpha .05",
+    "alternative": "two-sided",
+    "aggregation": "whole-role native-class UAR; five-fold mean within draw; equal 24-draw mean",
+    "inference": "one-sample t on 24 complete draw effects, df23; conditional fixed-corpus scope",
+    "pointwise_interval": 0.95,
+    "bootstrap": false,
+    "practical_reference_pp": 1.0,
+    "equivalence_test": false,
+    "additional_control_hypothesis_tests": 0,
+    "tie": "earliest epoch for exact CE/UAR ties; UAR equal supports uses integer correct count",
+    "scientific_scoring_requires_all_formal_units": true
+  },
+  "units": {
+    "absolute_outer_uar": "percent (0--100), whole-role native-class macro recall",
+    "effects": "percentage points (pp), including delta_CE: this is an outer-UAR difference, not a CE loss difference",
+    "epoch": "one-based training epoch",
+    "epoch_counts": "counts among 120 main A trajectories per corpus",
+    "agreement": "fraction (0--1)",
+    "p_values": "dimensionless; JSON null renders as NA"
+  },
+  "inference": {
+    "family": "six prespecified tests: delta_CE and J within each of three native corpora",
+    "confidence_intervals": "recorded pointwise 95% t intervals, df=23; not simultaneous or Holm-adjusted intervals",
+    "p_values": "recorded two-sided t p and six-family Holm p; undefined remains NA, not 1 or 0",
+    "sampling": "five-fold mean per draw, then 24 equally weighted draws; conditional on this finite corpus and program",
+    "descriptive": "delta_UAR, all absolute UAR, epochs, agreement, middle/late, oracle and E: no new CI or p"
+  },
+  "source_values": {
+    "tests": [
+      {
+        "corpus": "cremad",
+        "estimand": "delta_CE",
+        "mean_pp": 0.9350000507121251,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 1.533800517116304,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.3130857195126601,
+        "t_statistic": 2.986402740334239,
+        "p_two_sided": 0.006597470625689115,
+        "pointwise_95_ci_pp": [
+          0.2873328943287371,
+          1.582667207095513
+        ],
+        "holm_p_six": 0.02638988250275646,
+        "reject_familywise_05": true
+      },
+      {
+        "corpus": "cremad",
+        "estimand": "J",
+        "mean_pp": 0.9366248024658758,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 1.7201955078884084,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.3511334376795297,
+        "t_statistic": 2.6674326679212723,
+        "p_two_sided": 0.013756938798048873,
+        "pointwise_95_ci_pp": [
+          0.21024994433751387,
+          1.6629996605942376
+        ],
+        "holm_p_six": 0.04127081639414662,
+        "reject_familywise_05": true
+      },
+      {
+        "corpus": "subesco",
+        "estimand": "delta_CE",
+        "mean_pp": 2.2470238095238098,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 3.083932310302586,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.6295050467936513,
+        "t_statistic": 3.5695088084978823,
+        "p_two_sided": 0.001627075087373657,
+        "pointwise_95_ci_pp": [
+          0.9447934036769237,
+          3.549254215370696
+        ],
+        "holm_p_six": 0.008309267677317659,
+        "reject_familywise_05": true
+      },
+      {
+        "corpus": "subesco",
+        "estimand": "J",
+        "mean_pp": 2.5595238095238098,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 3.449256099901725,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.7040764530784654,
+        "t_statistic": 3.635292443501963,
+        "p_two_sided": 0.00138487794621961,
+        "pointwise_95_ci_pp": [
+          1.103030696546192,
+          4.016016922501428
+        ],
+        "holm_p_six": 0.008309267677317659,
+        "reject_familywise_05": true
+      },
+      {
+        "corpus": "ravdess",
+        "estimand": "delta_CE",
+        "mean_pp": 0.4861111111111111,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 1.6191909671449307,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.3305159721357235,
+        "t_statistic": 1.4707643566208468,
+        "p_two_sided": 0.15490450362235458,
+        "pointwise_95_ci_pp": [
+          -0.19761327001250345,
+          1.1698354922347256
+        ],
+        "holm_p_six": 0.30980900724470917,
+        "reject_familywise_05": false
+      },
+      {
+        "corpus": "ravdess",
+        "estimand": "J",
+        "mean_pp": 0.46875,
+        "n_draws": 24,
+        "df": 23,
+        "sd_draw_pp": 2.608058685822781,
+        "interval_scope": "pointwise, not simultaneous; conditional on fixed corpus and program",
+        "status": "estimated",
+        "se_pp": 0.5323677499582898,
+        "t_statistic": 0.88050036847034,
+        "p_two_sided": 0.3876965114527017,
+        "pointwise_95_ci_pp": [
+          -0.6325365974928814,
+          1.5700365974928814
+        ],
+        "holm_p_six": 0.3876965114527017,
+        "reject_familywise_05": false
+      }
+    ],
+    "corpora": {
+      "cremad": {
+        "main_trajectories": 120,
+        "n_draws": 24,
+        "folds_per_draw": 5,
+        "delta_UAR_descriptive_mean_pp": -0.0016247517537507177,
+        "last_outer_descriptive_mean_uar": 53.71520225628843,
+        "middle_8_10_minus_late_14_15_descriptive_mean_pp": 0.20752554346035582,
+        "ce_epoch_agreement_fraction": 0.5833333333333334,
+        "uar_epoch_agreement_fraction": 0.375,
+        "rules": {
+          "seen_ce": {
+            "mean_outer_uar": 56.25326786569046,
+            "mean_selected_epoch": 6.708333333333333,
+            "selected_epoch_counts": {
+              "3": 1,
+              "4": 14,
+              "5": 23,
+              "6": 24,
+              "7": 18,
+              "8": 19,
+              "9": 11,
+              "10": 4,
+              "11": 4,
+              "12": 1,
+              "14": 1
+            },
+            "mean_oracle_shortfall_pp": 2.339008459493495
+          },
+          "unseen_ce": {
+            "mean_outer_uar": 55.31826781497834,
+            "mean_selected_epoch": 5.891666666666667,
+            "selected_epoch_counts": {
+              "2": 1,
+              "3": 7,
+              "4": 18,
+              "5": 28,
+              "6": 26,
+              "7": 17,
+              "8": 13,
+              "9": 7,
+              "10": 3
+            },
+            "mean_oracle_shortfall_pp": 3.2740085102056202
+          },
+          "seen_uar": {
+            "mean_outer_uar": 57.153571049404384,
+            "mean_selected_epoch": 10.533333333333333,
+            "selected_epoch_counts": {
+              "5": 2,
+              "6": 8,
+              "7": 12,
+              "8": 9,
+              "9": 14,
+              "10": 15,
+              "11": 12,
+              "12": 13,
+              "13": 12,
+              "14": 15,
+              "15": 8
+            },
+            "mean_oracle_shortfall_pp": 1.4387052757795786
+          },
+          "unseen_uar": {
+            "mean_outer_uar": 57.155195801158136,
+            "mean_selected_epoch": 10.091666666666667,
+            "selected_epoch_counts": {
+              "4": 2,
+              "5": 6,
+              "6": 6,
+              "7": 8,
+              "8": 16,
+              "9": 17,
+              "10": 12,
+              "11": 18,
+              "12": 6,
+              "13": 7,
+              "14": 11,
+              "15": 11
+            },
+            "mean_oracle_shortfall_pp": 1.4370805240258286
+          },
+          "last": {
+            "mean_outer_uar": 53.71520225628843,
+            "mean_selected_epoch": 15.0,
+            "selected_epoch_counts": {
+              "15": 120
+            },
+            "mean_oracle_shortfall_pp": 4.877074068895534
+          }
+        }
+      },
+      "subesco": {
+        "main_trajectories": 120,
+        "n_draws": 24,
+        "folds_per_draw": 5,
+        "delta_UAR_descriptive_mean_pp": -0.3125,
+        "last_outer_descriptive_mean_uar": 47.291666666666664,
+        "middle_8_10_minus_late_14_15_descriptive_mean_pp": -2.8943452380952377,
+        "ce_epoch_agreement_fraction": 0.26666666666666666,
+        "uar_epoch_agreement_fraction": 0.275,
+        "rules": {
+          "seen_ce": {
+            "mean_outer_uar": 47.113095238095234,
+            "mean_selected_epoch": 10.708333333333334,
+            "selected_epoch_counts": {
+              "4": 1,
+              "6": 2,
+              "7": 8,
+              "8": 13,
+              "9": 14,
+              "10": 27,
+              "11": 9,
+              "12": 16,
+              "13": 9,
+              "14": 10,
+              "15": 11
+            },
+            "mean_oracle_shortfall_pp": 4.940476190476191
+          },
+          "unseen_ce": {
+            "mean_outer_uar": 44.86607142857143,
+            "mean_selected_epoch": 7.916666666666667,
+            "selected_epoch_counts": {
+              "2": 1,
+              "3": 4,
+              "4": 3,
+              "5": 10,
+              "6": 15,
+              "7": 22,
+              "8": 22,
+              "9": 11,
+              "10": 16,
+              "11": 5,
+              "12": 7,
+              "13": 1,
+              "14": 2,
+              "15": 1
+            },
+            "mean_oracle_shortfall_pp": 7.1875
+          },
+          "seen_uar": {
+            "mean_outer_uar": 47.425595238095234,
+            "mean_selected_epoch": 12.541666666666666,
+            "selected_epoch_counts": {
+              "6": 1,
+              "7": 1,
+              "8": 6,
+              "9": 3,
+              "10": 13,
+              "11": 8,
+              "12": 19,
+              "13": 21,
+              "14": 22,
+              "15": 26
+            },
+            "mean_oracle_shortfall_pp": 4.627976190476191
+          },
+          "unseen_uar": {
+            "mean_outer_uar": 47.738095238095234,
+            "mean_selected_epoch": 11.975,
+            "selected_epoch_counts": {
+              "6": 3,
+              "7": 3,
+              "8": 6,
+              "9": 9,
+              "10": 11,
+              "11": 17,
+              "12": 12,
+              "13": 15,
+              "14": 27,
+              "15": 17
+            },
+            "mean_oracle_shortfall_pp": 4.315476190476191
+          },
+          "last": {
+            "mean_outer_uar": 47.291666666666664,
+            "mean_selected_epoch": 15.0,
+            "selected_epoch_counts": {
+              "15": 120
+            },
+            "mean_oracle_shortfall_pp": 4.761904761904762
+          }
+        }
+      },
+      "ravdess": {
+        "main_trajectories": 120,
+        "n_draws": 24,
+        "folds_per_draw": 5,
+        "delta_UAR_descriptive_mean_pp": 0.017361111111111088,
+        "last_outer_descriptive_mean_uar": 32.82118055555556,
+        "middle_8_10_minus_late_14_15_descriptive_mean_pp": -8.977141203703704,
+        "ce_epoch_agreement_fraction": 0.7666666666666667,
+        "uar_epoch_agreement_fraction": 0.425,
+        "rules": {
+          "seen_ce": {
+            "mean_outer_uar": 33.94097222222222,
+            "mean_selected_epoch": 14.35,
+            "selected_epoch_counts": {
+              "3": 1,
+              "4": 1,
+              "12": 2,
+              "13": 5,
+              "14": 39,
+              "15": 72
+            },
+            "mean_oracle_shortfall_pp": 2.430555555555556
+          },
+          "unseen_ce": {
+            "mean_outer_uar": 33.454861111111114,
+            "mean_selected_epoch": 13.858333333333333,
+            "selected_epoch_counts": {
+              "3": 2,
+              "4": 2,
+              "5": 1,
+              "11": 2,
+              "12": 7,
+              "13": 8,
+              "14": 36,
+              "15": 62
+            },
+            "mean_oracle_shortfall_pp": 2.9166666666666665
+          },
+          "seen_uar": {
+            "mean_outer_uar": 32.942708333333336,
+            "mean_selected_epoch": 13.658333333333333,
+            "selected_epoch_counts": {
+              "2": 1,
+              "3": 1,
+              "9": 1,
+              "10": 4,
+              "11": 5,
+              "12": 9,
+              "13": 12,
+              "14": 39,
+              "15": 48
+            },
+            "mean_oracle_shortfall_pp": 3.428819444444444
+          },
+          "unseen_uar": {
+            "mean_outer_uar": 32.92534722222222,
+            "mean_selected_epoch": 13.475,
+            "selected_epoch_counts": {
+              "2": 1,
+              "5": 1,
+              "9": 3,
+              "10": 5,
+              "11": 4,
+              "12": 16,
+              "13": 9,
+              "14": 35,
+              "15": 46
+            },
+            "mean_oracle_shortfall_pp": 3.446180555555556
+          },
+          "last": {
+            "mean_outer_uar": 32.82118055555556,
+            "mean_selected_epoch": 15.0,
+            "selected_epoch_counts": {
+              "15": 120
+            },
+            "mean_oracle_shortfall_pp": 3.550347222222222
+          }
+        }
+      }
+    },
+    "control": {
+      "estimand": "0.5*((QA(MA15)-QA(MB15))+(QB(MB15)-QB(MA15)))",
+      "n_pairs": 24,
+      "n_added_B_fits": 24,
+      "scope": "CREMA-D prespecified fold0; descriptive only",
+      "E_mean_pp": 2.8284143518518516,
+      "inference": false
+    }
+  },
+  "interpretation": {
+    "positive_delta": "seen-based checkpoint rule has higher outer UAR; not an estimate of V-T optimism",
+    "J": "difference between CE-based and UAR-based checkpoint-rule effects",
+    "scope": "conditional fixed-corpus randomization and training program; native tasks differ across corpora",
+    "prior_data_exposure": true,
+    "bootstrap": false,
+    "equivalence_test": false,
+    "curves_and_oracle": "descriptive; outer never selects a retained checkpoint",
+    "control": "whole training-group replacement; not an individual speaker effect; query also used by main A selection",
+    "zero_variance": "undefined t remains untested; reserved Holm family slot treated as p=1 internally"
+  },
+  "formatting": {
+    "decimals": 6,
+    "p_significant_digits": 6,
+    "source_floats_preserved_in_json": true
+  },
+  "scope": {
+    "new_training": 0,
+    "new_model_inference": 0,
+    "new_statistical_tests": 0,
+    "new_scientific_statistics": 0,
+    "selection_or_aggregation_recomputed": false,
+    "acceptance": "Shared plot-results gate plus full 384-unit audit commitments; no current weight rehash or numerical replay is performed here."
+  },
+  "rendered_files_sha256": {
+    "tables_zh.md": "b1899cd628d20ea7938cb2a10c928b0cdd9d3f652edf37f77443df07e921828d",
+    "tables_en.md": "e8e3b8264f2bc05b35e7cd8e20a797ce452be87e0db4fc7319a74051f18165a3"
+  },
+  "facts_sha256": "9b87f0df5e97b350007032a1606c1453c1cdfa75a9a0465c43afceef882245cd"
+}

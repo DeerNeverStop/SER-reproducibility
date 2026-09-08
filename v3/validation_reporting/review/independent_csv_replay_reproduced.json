@@ -1,0 +1,131 @@
+{
+  "review_type": "post-result independent CSV arithmetic replay",
+  "pass": true,
+  "finished_at": "2026-09-07T11:01:52.324301+00:00",
+  "python": "3.13.9",
+  "input_directory": "D:\\SER-validation-report-diagnostic-20260907\\analysis",
+  "input_sha256": {
+    "metrics.csv": "6f304692710d188874efd74b5a2ac2b3cb13fbaa8b1a5c93e3d9a746c4f37be3",
+    "episodes.csv": "2235c7873b43bc120f5e489af43254d79ec7e6bcb66fa82de5bfc8608c24b111",
+    "contrasts.csv": "be216716687dbbed4175d8b2c0b184546196e038f14b158e2715a6af1eae29a5",
+    "controls.csv": "2cae94f5e8008bbd7c4a765529ba9a0297e6876ac5228b119fa1b351124a1508",
+    "draws.csv": "251580513520c3da85c0c209a9560050cfaf027f200f72055ec6e36a1d0aca47",
+    "results.json": "da0e2c20c09fd5eb91e355b49e84f9fb66e01deaee34998b631f14d6bac2565a",
+    "FILE_SHA256.json": "d293cc0df8dc33284312361d6ddec387d600289d4acc81f66a7802d2909be562",
+    "../plan.json": "a37b2a3898232af8ae85f7b3b3c9b648c9ca9fdaa2daa13af9196bf0e499cf0a"
+  },
+  "manifest_files_verified": 7,
+  "analysis_plan_sha256": "1520d5ddb88b14aeb4309d5e342110b9abd7024457695b686d2faa9fc1a3d724",
+  "frozen_sources_unchanged": {
+    "v3/validation_reporting/__init__.py": "76e4d52df5237999af4a984c25e8ed534cd9ff173dd0dc5def29733974f792d7",
+    "v3/validation_reporting/core.py": "bdcb21e8bbe9122f532752977b0f3d917a33c2c13039f604e98fa52e74472b53",
+    "v3/validation_reporting/run.py": "30711f9eed033d1ef5ce796bcd2f2f7bae0477815d4ce226b7e0483b4f8d802b",
+    "v3/validation_reporting/SPEC.md": "eb91e4d5092ee55e1a1659248b9e24dae7764d2f6f3342961d9c35ec14874318",
+    "v3/validation_reporting/test_core.py": "813d85afddc58b18777d372dff8487051b707a1bd1cdda42ae318253609d4a2c",
+    "v3/validation_reporting/test_run.py": "cfbfd7dfe8483bd3d8ac05df7f3c9df23efa056a24dfd57cf7be1f0f35afafa5"
+  },
+  "method": "Independent standard-library Fraction/Decimal arithmetic; no import of core.py/run.py. Reconstruct 1920 equal-support half-score correct counts from CSV with strict integer tolerance; preserve 480 test UAR decimal strings, choose argmax with lowest-index ties, rebuild all episodes/contrasts/controls, then directions->5 folds->24 draws.",
+  "scope_limits": [
+    "Checks downstream CSV selection and aggregation, not raw-logit UAR or model inference.",
+    "Uses the same fixed post-result split; not an independent scientific replication.",
+    "No new significance tests, intervals, model fits, or endpoint selection."
+  ],
+  "rows": {
+    "metrics": 2400,
+    "episodes": 480,
+    "contrasts": 240,
+    "controls": 240,
+    "draws": 24
+  },
+  "comparisons": {
+    "metric_decimal_roundtrip": 2400,
+    "episodes.csv": 4320,
+    "contrasts.csv": 1200,
+    "controls.csv": 960,
+    "draws.csv": 600,
+    "result_means": 25,
+    "historical_fixed_exposure": 1
+  },
+  "max_absolute_pp_error": {
+    "metric_decimal_roundtrip": 0,
+    "episodes.csv": 1.1102230246251565e-14,
+    "contrasts.csv": 1.7763568394002505e-14,
+    "controls.csv": 1.2656542480726785e-14,
+    "draws.csv": 1.4210854715202004e-14,
+    "result_means": 7.105427357601002e-15,
+    "historical_fixed_exposure": 8.881784197001252e-16
+  },
+  "exact_integer_and_fraction_identities_pass": true,
+  "means_independently_replayed": {
+    "apparent_contrast_pp": 3.309674373512738,
+    "config_agreement": 0.5041666666666667,
+    "fixed_report_exposure_pp": 2.8385416666666665,
+    "fixed_seen_reuse_pp": 0.0,
+    "fixed_test_difference_pp": 0.0,
+    "fixed_unseen_reuse_pp": 0.0,
+    "report_gap_contrast_pp": 3.1678919661053304,
+    "reuse_contrast_pp": 0.1417824074074074,
+    "seen__apparent_gap_pp": 5.324271273219932,
+    "seen__report_exposure_pp": 2.9369212962962963,
+    "seen__report_gap_pp": 3.7878129398865985,
+    "seen__report_seen_uar": 57.757523148148145,
+    "seen__report_unseen_uar": 54.820601851851855,
+    "seen__reuse_pp": 1.5364583333333333,
+    "seen__selection_uar": 59.29398148148148,
+    "seen__test_uar": 53.96971020826155,
+    "test_contrast_pp": -0.23386418832755249,
+    "unseen__apparent_gap_pp": 2.0145968997071946,
+    "unseen__report_exposure_pp": 2.9918981481481484,
+    "unseen__report_gap_pp": 0.6199209737812684,
+    "unseen__report_seen_uar": 57.81539351851852,
+    "unseen__report_unseen_uar": 54.823495370370374,
+    "unseen__reuse_pp": 1.3946759259259258,
+    "unseen__selection_uar": 56.2181712962963,
+    "unseen__test_uar": 54.203574396589104
+  },
+  "exact_fraction_means": {
+    "apparent_contrast_pp": "3574448323393756673/1080000000000000000",
+    "config_agreement": "121/240",
+    "fixed_report_exposure_pp": "545/192",
+    "fixed_seen_reuse_pp": "0/1",
+    "fixed_test_difference_pp": "0/1",
+    "fixed_unseen_reuse_pp": "0/1",
+    "report_gap_contrast_pp": "1140441107797918891/360000000000000000",
+    "reuse_contrast_pp": "245/1728",
+    "seen__apparent_gap_pp": "2875106487538763297/540000000000000000",
+    "seen__report_exposure_pp": "5075/1728",
+    "seen__report_gap_pp": "2045418987538763297/540000000000000000",
+    "seen__report_seen_uar": "99805/1728",
+    "seen__report_unseen_uar": "47365/864",
+    "seen__reuse_pp": "295/192",
+    "seen__selection_uar": "25615/432",
+    "seen__test_uar": "1079394204165230989/20000000000000000",
+    "test_contrast_pp": "-9354567533102099/40000000000000000",
+    "unseen__apparent_gap_pp": "2175764651683769921/1080000000000000000",
+    "unseen__report_exposure_pp": "2585/864",
+    "unseen__report_gap_pp": "669514651683769921/1080000000000000000",
+    "unseen__report_seen_uar": "99905/1728",
+    "unseen__report_unseen_uar": "94735/1728",
+    "unseen__reuse_pp": "1205/864",
+    "unseen__selection_uar": "97145/1728",
+    "unseen__test_uar": "2168142975863564077/40000000000000000"
+  },
+  "config_counts": {
+    "seen": {
+      "0": 42,
+      "1": 31,
+      "2": 112,
+      "3": 55
+    },
+    "unseen": {
+      "0": 43,
+      "1": 28,
+      "2": 116,
+      "3": 53
+    }
+  },
+  "same_configuration_episodes": 121,
+  "new_statistical_tests": 0,
+  "new_confidence_intervals": 0,
+  "replay_source_sha256": "02eeb8e751944cee4e6148cc92460fce3e2362e7ce3a8bdb4093754aaa2c4afe"
+}

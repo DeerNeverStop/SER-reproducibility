@@ -1,0 +1,123 @@
+{
+  "schema": "ser-supplement-delivery-summary-1",
+  "scope": "Derived index of original accepted reports, not a new training run or new statistical analysis. Original local paths are retained in byte-exact reports.",
+  "formal_units": 720,
+  "technical_pilots": 8,
+  "clean_batches": 90,
+  "plan_sha256": "a8df7f9e0137353baa2218d449558f7977fbe9830f4e89df3856b36e450550ba",
+  "source_lock_sha256": "8d91a72dd7b68a370304022d83b448b6cbb95895615b931bc93572cc748f433b",
+  "all_current_retained_bytes_hashed": true,
+  "archive_file_count": 6216,
+  "retained_weight_files": 20,
+  "retained_weight_bytes": 9643695848,
+  "numeric_comparison": {
+    "compared_scalar_numbers": 199780,
+    "max_abs_difference": 7.105427357601002e-15,
+    "numerical_tolerance": {
+      "absolute": 1e-11,
+      "relative": 1e-09
+    },
+    "rows": {
+      "curves": 18000,
+      "descriptive": 104,
+      "draws": 312,
+      "primary_tests": 10,
+      "selected_epochs": 4800,
+      "units": 960
+    }
+  },
+  "copied_files": {
+    "results/OUTPUT_MANIFEST.json": {
+      "sha256": "e1042806268c32acc01316ca52dc15ef1edefbcda11cc1ac60a56f7679caa521",
+      "bytes": 1087
+    },
+    "results/curves.csv": {
+      "sha256": "89d416c77a3a113b62dc3c017b9d0bd0e1445c2548850ec49a3cbdf5de832f15",
+      "bytes": 3255145
+    },
+    "results/descriptive.csv": {
+      "sha256": "1899a7ef7d6b49be7bd640ff717909b47c938ed9b0a65bf4a772ba661b15660b",
+      "bytes": 27678
+    },
+    "results/draws.csv": {
+      "sha256": "d22ef6d439a07ba094a2d32f2163c2283d52102cb338bacad83896ede1da8ecb",
+      "bytes": 139966
+    },
+    "results/input_audit.json": {
+      "sha256": "872884c9575d6a49c7520c858e75a937eeb9693c8c80c29dd2960ab45d7b0962",
+      "bytes": 988030
+    },
+    "results/primary_tests.csv": {
+      "sha256": "19f3adb14410076acf1e4ca4b5b155b5fe4a0888408d69c8cef1511ef526a004",
+      "bytes": 3617
+    },
+    "results/results.json": {
+      "sha256": "bf6e41c9ef39465c566da737add9e2cf0c2b4e707e751fa42f3fe2991131630f",
+      "bytes": 58988
+    },
+    "results/selected_epochs.csv": {
+      "sha256": "67dbe02aa7180b608d90025d25614a029f2d29a1e1939f711be117382a4970ef",
+      "bytes": 780432
+    },
+    "results/units.csv": {
+      "sha256": "1aafd0197366e290cd5242bb56dcc61f787eefc77834b9f30d8c294043c9905a",
+      "bytes": 443276
+    },
+    "evidence/independent_replay.json": {
+      "sha256": "c54bae0c2ed7f3d8f81ae8fb3eb17093021e1890e0335d90acfd0eb33ddf5cb0",
+      "bytes": 50472
+    },
+    "evidence/independent_input_sha256.json": {
+      "sha256": "6bb7bef5c9501a0438ee68138a3d3a42239d15f0017ac39d93180646e9fd638d",
+      "bytes": 1049113
+    },
+    "evidence/closeout_verified_v1.json": {
+      "sha256": "3537f9ad050c048575617efbc53fdf561f29037adeb15dcb6754626cacc7605b",
+      "bytes": 1265174
+    }
+  },
+  "frozen_source_files_unchanged": {
+    "v3/autodl_supplement_20260908/__init__.py": {
+      "bytes": 83,
+      "sha256": "cd50b247a519192139c8546c1ca5df9c2bd01068716746336dd7a644eda5aeef"
+    },
+    "v3/autodl_supplement_20260908/cloud_pilot.py": {
+      "bytes": 17916,
+      "sha256": "37c91b4689f3027268807446933511a4ee8503c16dee80ffc376220ff107ee5b"
+    },
+    "v3/autodl_supplement_20260908/engine.py": {
+      "bytes": 26056,
+      "sha256": "6360a29f162b5fd430bcdf03863510acea74e728c7331817e6793dcae6b5d4f1"
+    },
+    "v3/autodl_supplement_20260908/plan.py": {
+      "bytes": 11426,
+      "sha256": "9cf8327cf9e1e4634523d1408f42125e47bd1dc062d52afcdffb871f18806334"
+    },
+    "v3/autodl_supplement_20260908/run.py": {
+      "bytes": 21423,
+      "sha256": "2c10e3fad5cd38c47113b8c9ee052e5f0ace3b2be2ba04c4b0dff92e84d59421"
+    },
+    "v3/autodl_supplement_20260908/score.py": {
+      "bytes": 34845,
+      "sha256": "dc4ff9cefe5b701d5a8122776c7eecabdb5990fe659b98068b8e843ffe960197"
+    },
+    "v3/autodl_supplement_20260908/test_cloud_pilot.py": {
+      "bytes": 12248,
+      "sha256": "d423a010b277cc838c5f7dfb8ae44d406ca445dfccaa949d639a0cbfcef0170f"
+    },
+    "v3/autodl_supplement_20260908/test_engine.py": {
+      "bytes": 14822,
+      "sha256": "1d68ccab8b352081b9cb7149a9d92b62145b0abe732ec58e71bd325a077204c4"
+    },
+    "v3/autodl_supplement_20260908/test_run.py": {
+      "bytes": 10736,
+      "sha256": "6db42fa63681627a03eb9a2e42365acf552a9e5bb7369147bfd84fecc0127068"
+    },
+    "v3/autodl_supplement_20260908/test_score.py": {
+      "bytes": 22095,
+      "sha256": "fbf5347d66575d0073a623294046862411783cf31da1cc8041ed000dea4aac31"
+    }
+  },
+  "archive_cloud_flags_are_historical": "The archive audit predates cloud closure; its false instance_stopped/released flags do not describe later state. See CLOUD_CLOSEOUT_REPORT.md and its original API receipts.",
+  "raw_audio_predictions_and_weights": "Not included in Git; full local formal and pilot backups retain predictions/metadata and the fixed 20 checkpoint files. Other weights were verified while available and released after prediction/metadata backup acknowledgment."
+}

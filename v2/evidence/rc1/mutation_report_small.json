@@ -1,0 +1,185 @@
+{
+ "run": "run_small (ravdess + subesco_980; CTRL/FT/PROBECPU)",
+ "rejected_or_behaved": 16,
+ "cases_run": 17,
+ "skipped": [
+  "M11_hpo_missing_config",
+  "M23_tost_missing",
+  "M25_mech_condition_missing"
+ ],
+ "cases": [
+  {
+   "case": "M01_drop_row",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I1_failed": true
+   }
+  },
+  {
+   "case": "M02_label_swap",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I3_failed": true
+   }
+  },
+  {
+   "case": "M03_fold_overlap",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I2_failed": true,
+    "integrity_I5_failed": true
+   }
+  },
+  {
+   "case": "M04_config_drift",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I7_failed": true
+   }
+  },
+  {
+   "case": "M05_duplicate_row",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M06_missing_cell",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "m_N02": 15,
+    "unchanged_N01": true,
+    "verdict_N02": "not tested"
+   }
+  },
+  {
+   "case": "M07_done_tamper",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I1_failed": true
+   }
+  },
+  {
+   "case": "M08_argmax_violation",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M09_split_table_tamper",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I2_failed": true
+   }
+  },
+  {
+   "case": "M10_speaker_swap",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I3_failed": true
+   }
+  },
+  {
+   "case": "M11_hpo_missing_config",
+   "pass": null,
+   "skipped": "HPO arm absent in this run",
+   "detail": null
+  },
+  {
+   "case": "M15_conditional_truncation",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "n_N11": 24,
+    "tested_N11": true,
+    "tested_R09": true
+   }
+  },
+  {
+   "case": "M20_hygiene_tamper",
+   "pass": false,
+   "skipped": null,
+   "detail": {
+    "integrity_I2_failed": false,
+    "integrity_I5_failed": false
+   }
+  },
+  {
+   "case": "M21_crossing_isolation",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "D14_changed": true,
+    "unchanged_R01": true,
+    "unchanged_R02": true,
+    "unchanged_R03": true
+   }
+  },
+  {
+   "case": "M24_logit_column_missing",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "integrity_I4_failed": true
+   }
+  },
+  {
+   "case": "M18_family_placeholder",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "m_N15": 15,
+    "unchanged_N01": true,
+    "verdict_N15": "not tested"
+   }
+  },
+  {
+   "case": "M23_tost_missing",
+   "pass": null,
+   "skipped": "cremad PROBECPU absent in this run",
+   "detail": null
+  },
+  {
+   "case": "M25_mech_condition_missing",
+   "pass": null,
+   "skipped": "MECH2X2 absent in this run",
+   "detail": null
+  },
+  {
+   "case": "M13_null_world_no_false_support",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "means": {
+     "R01": -1.5852347883597895,
+     "R02": -2.30448082010582,
+     "R03": 0.7192460317460309,
+     "R07": 0.3523892195767197
+    },
+    "supported": []
+   }
+  },
+  {
+   "case": "M14_sign_flip_directional_reading",
+   "pass": true,
+   "skipped": null,
+   "detail": {
+    "mean": -16.794808201058203,
+    "reject": true,
+    "verdict": "not supported"
+   }
+  }
+ ]
+}

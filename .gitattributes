@@ -1,0 +1,16 @@
+# Scientific manifests and frozen source files are verified byte-for-byte.
+# Disable checkout-time newline conversion so SHA-256 values remain portable.
+* -text
+
+*.npz binary
+*.pdf binary
+*.png binary
+
+# Archived diagnostic receipts preserve their original LF or CRLF bytes and hashes.
+v3/speaker_coverage/reports/data/** whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+paper/audit_20260907/n14r2/** whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+paper/final-20260907/figures/** whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Matplotlib SVG output retains generated path spacing and original CRLF bytes.
+v3/speaker_coverage/reports/figures/e2_*.svg whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+paper/final-20260907/figures/*.svg whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

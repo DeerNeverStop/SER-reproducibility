@@ -1,0 +1,122 @@
+% Compact protocol alternative only: no new results or completion claim.
+% C1--C8 correspond to final_program_methods_compact_zh.md.
+\subsection{Shared-trajectory checkpoint-selection protocol}
+\label{sec:final-program-methods}
+
+% C1: Scope and prior exposure.
+The protocol specifies 360 main trajectories: 24 draws and five outer folds
+per corpus, plus 24 paired CREMA-D control fits. Checkpoint rules share a
+training trajectory and speaker-independent outer test set. CREMA-D,
+SUBESCO, and RAVDESS retain six, seven, and eight native classes and
+91, 20, and 24 speakers, respectively~\cite{cremad,subesco,ravdess}.
+These corpora have prior research exposure. The protocol uses a private
+pre-execution source/plan freeze, not public preregistration. New draws do
+not create previously untouched data.
+
+% C2: Speaker/text allocation.
+Within each draw, metadata hashing partitions speakers into five outer
+folds, stratified by recorded sex; each speaker enters exactly one outer
+fold. Outside each fold, disjoint development
+groups A and B are sex-balanced and complete across chosen texts and
+native classes. All query groups share texts disjoint from fit texts
+(Table~\ref{tab:final-program-panels}); unused speakers remain excluded.
+Frozen representatives are MD-preferred/otherwise XX for CREMA-D, T1 for
+SUBESCO, and normal-intensity R1 for RAVDESS, without substitute takes.
+Outer queries retain available representatives, requiring all native
+classes for every outer speaker. Insufficient development capacity causes
+metadata failure, not outcome-dependent resampling.
+
+\begin{table}[t]
+\centering
+\caption{Prespecified per-context allocation. A and B are equal-sized,
+sex-balanced groups; counts denote distinct speakers or recordings.}
+\label{tab:final-program-panels}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrcrr}
+\hline
+Corpus & Classes & A/B & Outer & Texts$^a$ & Fit & Query$^b$\\
+\hline
+CREMA-D & 6 & 24/24 & 17/19 & 4/2 & 576 & 288\\
+SUBESCO & 7 & 8/8 & 4 & 4/2 & 224 & 112\\
+RAVDESS & 8 & 8/8 & 4/6 & 1/1 & 64 & 64\\
+\hline
+\end{tabular}
+\par\raggedright\small
+$^a$ Fit/query text counts. $^b$ Recordings in each of A and B query;
+outer queries contain available CREMA-D representatives, 56 SUBESCO
+recordings, or 32/48 RAVDESS recordings. Slash-separated outer counts
+denote alternative fold sizes.
+\end{table}
+
+% C3: Fixed optimization.
+Main trajectories train on A. WavLM base-plus~\cite{wavlm} has a
+native-class linear head over mean-pooled final features; only the top
+four Transformer layers and head are trainable. The earlier study's fixed
+cfg3 uses AdamW,
+encoder/head learning rates $5\times10^{-5}/10^{-3}$, weight decay 0.01,
+batch size 16, and unweighted cross-entropy. All 15 epochs traverse the
+fit set, without early stopping or hyperparameter search. Training uses
+FP16 autocast with FP32 parameters; evaluation uses FP32.
+Mono 16\,kHz audio is silence-trimmed at 30\,dB; training uses three-second crops
+or zero-padding, and evaluation retains at most the first ten seconds.
+
+% C4: Rules and padding context.
+A queries provide seen-speaker validation; B queries provide unseen-speaker
+validation. All 15 epochs record A, B, and outer logits. Four rules minimize
+mean cross-entropy or maximize UAR on A or B; exact ties select the earliest
+epoch, using rational recall to preserve exact UAR ties.
+UAR is macro recall over native classes in the whole query group,
+not average speaker UAR. Each group has separate sorted batches of 16,
+fixed across epochs and paired models. Outer audio cannot pad validation
+batches. Pooling lacks a length mask: padding context is fixed, but padding
+effects remain.
+
+% C5: Estimands.
+Let $T(g,q)$ be outer UAR in percent at the epoch selected by group
+$g$ (seen $s$, unseen $u$) and criterion $q$. Per-context contrasts are
+\begin{align}
+\delta_q &= T(s,q)-T(u,q),\quad q\in\{\mathrm{CE},\mathrm{UAR}\},\\
+J &= \delta_{\mathrm{CE}}-\delta_{\mathrm{UAR}}.
+\end{align}
+These are outer UAR differences in percentage points (pp), not loss or
+validation-optimism ($V-T$) differences. They compare selection rules,
+without identifying a unique speaker mechanism. Four rules reuse one
+trajectory; they do not require four training runs.
+
+% C6: Prespecified inference.
+Within each corpus, five fold effects are averaged equally per draw.
+Two-sided one-sample $t$ inference uses 24 complete draw effects ($df=23$).
+The six-test family comprises $(\delta_{\mathrm{CE}},J)$ in three corpora,
+with Holm control at 0.05 and pointwise 95\% $t$ intervals.
+Undefined zero-variance tests remain NA, retaining their family slots.
+Absolute UAR and $\delta_{\mathrm{UAR}}$ are descriptive. The 1\,pp practical
+reference is not an equivalence margin; no equivalence test is performed.
+Inference conditions on the finite corpus and training program; folds,
+recordings, repeated speakers, and rules are not extra replicates.
+Different native tasks preclude pooled inference or language-effect claims.
+
+% C7: Paired group control.
+CREMA-D fold 0 adds one B-trained model per draw, sharing initial weights,
+matched stochastic schedules, and sex/text/class fit-slot budgets with A.
+Within each sex, slots also match speaker rank, take, and intensity.
+B trains for 15 epochs and records only final queries, without checkpoint
+selection. For whole-group query UAR $Q_A,Q_B$ in percent,
+\begin{equation}
+\begin{aligned}
+E=\tfrac12\{&[Q_A(M_{A,15})-Q_A(M_{B,15})]\\
+&+[Q_B(M_{B,15})-Q_B(M_{A,15})]\}.
+\end{aligned}
+\end{equation}
+The 24 pairs and their mean are descriptive. This replaces whole training
+groups, not individual speakers; these queries also select main-A
+checkpoints.
+
+% C8: Sealing and diagnostics.
+Four technical pilots are excluded from the 384 fits. Scoring requires
+complete source, artifact, checkpoint, and ledger verification. Prespecified
+descriptions retain selected-epoch distributions and agreement, all
+15 epochs' outer curves, final UAR, epochs 8--10 minus 14--15 mean UAR,
+and shortfall from each trajectory's maximum outer UAR. This oracle
+neither selects retained checkpoints nor extends training. Full processing,
+randomization, and verification details accompany the frozen protocol.

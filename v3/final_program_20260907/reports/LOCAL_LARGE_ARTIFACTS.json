@@ -1,0 +1,47 @@
+{
+  "schema": "ser-final-program-local-large-artifacts-1",
+  "created_at": "2026-09-07T20:06:06.179647+00:00",
+  "scope": "Local identity record only; ZIP not copied into Git and no new export/extraction/validation performed during archival copy.",
+  "portable_numeric_zip": {
+    "path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\bundles\\formal_numeric_bundle.zip",
+    "bytes": 59897568,
+    "sha256": "c3f14905050f13401788a926d21dbb754cf28031499bfa77abef913315b14e6f",
+    "hash_observed_now": true,
+    "copied_to_git": false,
+    "release_attachment_status": "pending main task; not published by this archival task"
+  },
+  "accepted_local_directory": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\portable_accept\\bundle",
+  "bundle_manifest": {
+    "path": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\portable_accept\\bundle\\bundle_manifest.json",
+    "file_sha256": "4275b37cec6a91ce8f35633f087745da3c6c3d9420f9c5bf5ed338f096789abf",
+    "semantic_sha256": "a4a5e83e6d601e89b8ee37b50cd11c99bdf961d6d1de37144ce08e91f82eb2db"
+  },
+  "export_internal_numeric_replay": {
+    "path_in_zip": "audits/export_numeric_audit.json",
+    "accepted_local_copy": "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\portable_accept\\bundle\\audits\\export_numeric_audit.json",
+    "sha256": "e6eae86ac401a5487a36e86907bf67d8fa355e78f9d42d2c48f4bef5fc7eb456",
+    "pass": true,
+    "formal_units": 384,
+    "numeric_values_checked": 63901,
+    "max_abs_error": 4.440892098500626e-16,
+    "mismatches": 0
+  },
+  "extract_internal_numeric_replay": {
+    "archived_report": "audits/numeric_relocated.json",
+    "pass": true,
+    "formal_units": 384,
+    "numeric_values_checked": 63901,
+    "max_abs_error": 4.440892098500626e-16,
+    "mismatches": 0
+  },
+  "scope_limits": {
+    "raw_audio_in_zip": false,
+    "base_in_zip": false,
+    "checkpoint_bytes_in_zip": false,
+    "new_fits": 0,
+    "new_inference_in_numeric_replay": false,
+    "full_original_archive_to_preserve": "D:\\SER-final-program-20260907",
+    "historical_full_weight_gate": "scores/complete_gate.json binds original checkpoint identities; numeric ZIP does not rehash omitted current weights.",
+    "independent_process_restore": "audits/formal_first_panel_restore_recovery_v1.json covers four preselected units and 30 distinct epoch/group comparisons; not all 384 units."
+  }
+}

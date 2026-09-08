@@ -1,0 +1,49 @@
+{
+  "repository_id": "P05R015",
+  "repository_url": "https://github.com/fdebrain/Speech-Emotion-Recognition-Emo-DB",
+  "commit_sha": "55bc617644d61d8c5ce9d46df954776ece525f45",
+  "draw_rank": 18,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "random_whole_speakers",
+  "probe_parameters": {
+    "corpus": "EmoDB",
+    "seed": 42,
+    "n_test_speakers": 2
+  },
+  "decisive_source": [
+    "modules/formatter.py:L18-L33",
+    "modules/formatter.py:L47-L64",
+    "app.py:L12-L14"
+  ],
+  "rationale": "Speaker is parsed from each filename, two complete speaker IDs are sampled, and row membership is filtered by that speaker set. Random selection of groups is still speaker-disjoint.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 336,
+      "test_rows": 84,
+      "train_speakers": [
+        "EmoDB:03",
+        "EmoDB:09",
+        "EmoDB:10",
+        "EmoDB:11",
+        "EmoDB:12",
+        "EmoDB:13",
+        "EmoDB:14",
+        "EmoDB:16"
+      ],
+      "test_speakers": [
+        "EmoDB:08",
+        "EmoDB:15"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_final": "no",
+  "prior_split_risk": "yes"
+}

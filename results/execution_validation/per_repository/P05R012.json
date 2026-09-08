@@ -1,0 +1,22 @@
+{
+  "repository_id": "P05R012",
+  "repository_url": "https://github.com/dori2063/SER_Augmentation_CycleGAN",
+  "commit_sha": "86648637f4fd5dcb564ff2c579fd7cbbe7816f0d",
+  "draw_rank": 15,
+  "evidence_tier": "tier3_unknown",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "missing_external_partition_generator",
+  "probe_parameters": {},
+  "decisive_source": [
+    "run.py:L38-L45",
+    "run.py:L140-L184"
+  ],
+  "rationale": "The code consumes an external section_list and pre-generated arrays, but the frozen tree omits the list contents/generator that maps IEMOCAP speakers to sections. Ten-fold labels alone do not identify whether speakers cross partitions.",
+  "pairs": [],
+  "max_speaker_intersection": null,
+  "split_risk_final": "unknown",
+  "prior_split_risk": "unknown"
+}

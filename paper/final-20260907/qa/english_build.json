@@ -1,0 +1,52 @@
+{
+  "compiler": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\paper-delivery-20260906\\tools\\tectonic-0.17.0\\tectonic.exe",
+    "bytes": 51538432,
+    "sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d"
+  },
+  "version": "Tectonic 0.17.0",
+  "input": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\main.tex",
+    "bytes": 22403,
+    "sha256": "47306581e74c6ab1ae9707cc1f820234710cea971fbe7566cb7b4f97c786367d"
+  },
+  "template": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\spconf.sty",
+    "bytes": 8798,
+    "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+  },
+  "figure": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\complete_epoch_curves.pdf",
+    "bytes": 32820,
+    "sha256": "57c6f4b0c115802e36c59c044165eda36964eab5cc937e22888991f0227cd1ae"
+  },
+  "actual_output": {
+    "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\main.pdf",
+    "bytes": 89538,
+    "sha256": "1c45d1d94582926f6f3122986c6e50e759db69ebc723e630bd6bd4500af93e5c"
+  },
+  "delivered_output": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\xie.pdf",
+    "bytes": 89538,
+    "sha256": "1c45d1d94582926f6f3122986c6e50e759db69ebc723e630bd6bd4500af93e5c"
+  },
+  "log": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\qa\\english_build.log",
+    "bytes": 19435,
+    "sha256": "19e09e18fe4c52b94e23430475f27911212a7a7b14ec0c46864505c0c80da547"
+  },
+  "actual_command": [
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\paper-delivery-20260906\\tools\\tectonic-0.17.0\\tectonic.exe",
+    "-X",
+    "compile",
+    "paper/final-20260907/english/main.tex",
+    "--outdir",
+    "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3",
+    "--keep-logs",
+    "--keep-intermediates"
+  ],
+  "cache_dir": "C:/Users/jock8/Documents/ChatGPT/论文/paper-delivery-20260906/tools/tectonic-cache",
+  "exit_code": 0,
+  "overfull_or_underfull_warnings": false,
+  "fontconfig_message": "Cannot load default config; compilation succeeded and embedded-font inspection passed."
+}

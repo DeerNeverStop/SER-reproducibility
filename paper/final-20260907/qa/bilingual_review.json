@@ -1,0 +1,25 @@
+{
+  "scope": "Completed source-level bilingual comparison, not a new numerical experiment.",
+  "english_source": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\main.tex",
+    "bytes": 22403,
+    "sha256": "47306581e74c6ab1ae9707cc1f820234710cea971fbe7566cb7b4f97c786367d"
+  },
+  "chinese_source": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\中文解读.md",
+    "bytes": 19896,
+    "sha256": "228bb48820f1f18194a51b4894aa3a7347ca657b108b6f810ae298e92644cd64"
+  },
+  "scientific_review": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\review\\ACTUAL_MANUSCRIPT_SCIENCE_REVIEW.md",
+    "bytes": 7466,
+    "sha256": "1f77522c429e2ccb530a9bc048388eeb121e18eeb411b43d1cabe2bc91e000d5"
+  },
+  "reviewed_table_data_rows": 12,
+  "reviewed_english_table_numeric_values": 48,
+  "reference_order_and_entries_match": true,
+  "all_formal_results_and_limits_retained": true,
+  "display_rounding": "Decimal ROUND_HALF_UP; exact source values unchanged",
+  "corrected_translation": "Common outer test modifies evaluation performance, never checkpoint selection.",
+  "pass": true
+}

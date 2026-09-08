@@ -1,0 +1,85 @@
+{
+  "anchors": {
+    "cache_sha256": {
+      "song": "6a29d9106bfb0df837fe263f5f9a9620776a69480995032b5a01525bc9f86929",
+      "speech": "72c4f52c5380c67425cd66055856dc518fb9f7af40ad053f6f26ff2940aa3196"
+    },
+    "n_npz_verified": 99,
+    "pair_manifest_sha256": "d1f7c60a006b04fec1eabbc7d5a71197a4a0f44eab8154f7214c389d9244ec66",
+    "v2_manifest_sha256": "04b9953b354384043a64c5dbe77cb7e449f5bb4b4fd900d22f1bfbaf1ba10dcc"
+  },
+  "environment": {
+    "created_at": "2026-08-16T04:22:18-04:00",
+    "cuda_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 5070",
+    "librosa": "0.11.0",
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0",
+    "soundfile": "0.14.0",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8"
+  },
+  "gpu_seconds_cap": 14400.0,
+  "hard_stop": "2026-08-22T23:59:59-04:00",
+  "label_order": [
+    "neutral",
+    "calm",
+    "happy",
+    "sad",
+    "angry",
+    "fearful"
+  ],
+  "max_attempts_per_unit": 2,
+  "n_classes": 6,
+  "n_matched_units": 396,
+  "n_units": 792,
+  "prepared_at": "2026-08-16T04:22:18-04:00",
+  "run_plan_sha256": "e67e73495f88b1dbe686e09a50a7bc9270da065815d16903cf8b84f767e1f75d",
+  "ser_hash_gate": {
+    "p1_prereg_prefix_check": "inapplicable_for_d1: documented 2026-08-12 migration path edit inside frozen prefix (see P1_PREREGISTRATION.md deviation log); SER code identity verified independently",
+    "ser_commit": "d11768ed31a91f611472b89e52f3f6bb97030c40",
+    "ser_file_sha256": {
+      "advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+      "advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+      "fno_data.py": "9762eeb91268258443dd8a1908336d2cffeed9097f6e2c66461f4419ce0f3c88",
+      "fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+      "tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff"
+    }
+  },
+  "substitute_anchors": {
+    "candidate_configs_match_preregistration": true,
+    "core_full_file_sha256": "619d25d6f8238b6ed64491117adaaa0c7e08568ccf90a8fca50744c1f15e4f45",
+    "frontend_code_hash": "33bc3b5e4b6a7a9693c3ffa41d63166bb9ed827e662ff83ee747cfcd9a883d61",
+    "note": "core full-file hash differs from P1 lock era by documented non-frontend edits; frontend + configs verified equal above (record 44 evidence 3)",
+    "p1_official_runner_sha256": "8cf2232854919eacd676c860ce8ff990ab74e2fa69be2f2826db645cd17b2cbc"
+  },
+  "tool_sha256": {
+    "p1_protocol_core.py": "619d25d6f8238b6ed64491117adaaa0c7e08568ccf90a8fca50744c1f15e4f45",
+    "run_d1_training.py": "938efa401550e8e5f67dc70ca01de7db060d42821508d1806451777d0e61f336",
+    "run_p1_protocol_premium.py": "8cf2232854919eacd676c860ce8ff990ab74e2fa69be2f2826db645cd17b2cbc"
+  },
+  "training_hyperparameters": {
+    "augmentation_scope": "fit subset only (p1.make_train_loader)",
+    "batch_size": 64,
+    "checkpoint_rule": "strict minimum validation loss",
+    "max_epochs": 100,
+    "normalization": "per-sample z-score at cache build (core.compute_logmel)",
+    "optimizer": "AdamW",
+    "outer_test_augmentation": false,
+    "patience": 15,
+    "reused_from": "run_p1_protocol_premium.py (imported, not copied)",
+    "scheduler": "CosineAnnealingLR",
+    "validation_augmentation": false
+  }
+}

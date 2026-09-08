@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "check": "cnn_paired_init_reproducible",
+      "pass": true
+    },
+    {
+      "check": "cnn_output_shape_4x6",
+      "pass": true
+    },
+    {
+      "check": "cnn_different_seed_different_init",
+      "pass": true
+    },
+    {
+      "check": "resnet_se_paired_init_reproducible",
+      "pass": true
+    },
+    {
+      "check": "resnet_se_output_shape_4x6",
+      "pass": true
+    },
+    {
+      "check": "resnet_se_different_seed_different_init",
+      "pass": true
+    },
+    {
+      "check": "transformer_paired_init_reproducible",
+      "pass": true
+    },
+    {
+      "check": "transformer_output_shape_4x6",
+      "pass": true
+    },
+    {
+      "check": "transformer_different_seed_different_init",
+      "pass": true
+    },
+    {
+      "check": "fno_paired_init_reproducible",
+      "pass": true
+    },
+    {
+      "check": "fno_output_shape_4x6",
+      "pass": true
+    },
+    {
+      "check": "fno_different_seed_different_init",
+      "pass": true
+    },
+    {
+      "check": "attempt_fit_has_one_outer_test_call_site",
+      "pass": true
+    },
+    {
+      "check": "seed_set_before_model_build",
+      "pass": true
+    }
+  ],
+  "created_at": "2026-08-16T04:22:26-04:00",
+  "failed": [],
+  "n_checks": 14,
+  "runner_sha256": "938efa401550e8e5f67dc70ca01de7db060d42821508d1806451777d0e61f336",
+  "status": "pass",
+  "synthetic_only": true
+}

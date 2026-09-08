@@ -1,0 +1,1305 @@
+{
+  "schema": "ser-validation-reporting-gpu-market-1",
+  "checked_at_utc": "2026-09-07T11:57:42.560Z",
+  "scope": {
+    "read_only": true,
+    "created_started_stopped_paid_resources": false,
+    "benchmark_performed": false,
+    "account_offer_verified": false,
+    "scientific_results_read": false
+  },
+  "workload": {
+    "model": "WavLM-base+",
+    "trainable": "top 4 Transformer layers plus classification head",
+    "batch_size": 16,
+    "mixed_precision": "FP16",
+    "training_crop_seconds": 3,
+    "proposed_fits": 240
+  },
+  "timing_anchor": {
+    "source": "root-provided cfg3 resource audit, separately checked by timing agent",
+    "historical_same_config_fits": 120,
+    "median_fit_seconds": 34.044,
+    "mean_fit_seconds": 34.158,
+    "p90_fit_seconds": 36.299,
+    "max_fit_seconds": 48.105,
+    "fit_interval_scope": "model loading, fitting, validation, checkpoint saving and reload; not pure GPU utilization",
+    "scaled_240_fit_hours": {
+      "mean": 2.2772,
+      "p90": 2.4199333333333333,
+      "maximum": 3.207
+    },
+    "scaled_values_are_not_confidence_intervals": true,
+    "new_last_only_speed_discount": null,
+    "total_rental_hours_recommendation": {
+      "expected": [
+        3,
+        4
+      ],
+      "budget": 4,
+      "candidate_hard_limit": 6,
+      "pilot_required": true
+    }
+  },
+  "runpod": {
+    "product": "POD",
+    "billing": "on-demand",
+    "currency": "USD",
+    "source_url": "https://api.runpod.io/v2",
+    "tools": [
+      "mcp__runpod__list_gpu_types",
+      "mcp__runpod__get_gpu_type",
+      "mcp__runpod__get_capacity"
+    ],
+    "catalog_checked_at_utc": "2026-09-07T11:53:05.720Z",
+    "catalog": [
+      {
+        "availability": "HIGH",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.1"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA A100-SXM4-80GB",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 8
+        },
+        "memory": 80,
+        "name": "A100 SXM",
+        "pool": "AMPERE_80",
+        "price": {
+          "community": 1.39,
+          "secure": 1.59,
+          "serverless": 2.72
+        },
+        "secure": true
+      },
+      {
+        "availability": "HIGH",
+        "community": false,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA A40",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 1,
+          "secure": 10
+        },
+        "memory": 48,
+        "name": "A40",
+        "pool": "AMPERE_48",
+        "price": {
+          "community": 0.35,
+          "secure": 0.49,
+          "serverless": 1.22
+        },
+        "secure": true
+      },
+      {
+        "availability": "HIGH",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": false,
+            "version": "12.2"
+          },
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.6"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": false,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 4090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 8
+        },
+        "memory": 24,
+        "name": "RTX 4090",
+        "pool": "ADA_24",
+        "price": {
+          "community": 0.34,
+          "secure": 0.74,
+          "serverless": 1.1
+        },
+        "secure": true
+      },
+      {
+        "availability": "MEDIUM",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.1"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 5090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 10
+        },
+        "memory": 32,
+        "name": "RTX 5090",
+        "pool": "ADA_32_PRO",
+        "price": {
+          "community": 0.69,
+          "secure": 0.99,
+          "serverless": 1.58
+        },
+        "secure": true
+      },
+      {
+        "availability": "LOW",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": false,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA A100 80GB PCIe",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 6,
+          "secure": 8
+        },
+        "memory": 80,
+        "name": "A100 PCIe",
+        "pool": "AMPERE_80",
+        "price": {
+          "community": 1.19,
+          "secure": 1.59,
+          "serverless": 2.72
+        },
+        "secure": true
+      },
+      {
+        "availability": "LOW",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "13.1"
+          }
+        ],
+        "id": "NVIDIA A100-SXM4-40GB",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 2,
+          "secure": 0
+        },
+        "memory": 40,
+        "name": "A100 SXM 40GB",
+        "pool": null,
+        "price": {
+          "community": 1,
+          "secure": 0
+        },
+        "secure": false
+      },
+      {
+        "availability": "LOW",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": false,
+            "version": "12.5"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 3090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 6,
+          "secure": 8
+        },
+        "memory": 24,
+        "name": "RTX 3090",
+        "pool": "AMPERE_24",
+        "price": {
+          "community": 0.22,
+          "secure": 0.5,
+          "serverless": 0.69
+        },
+        "secure": true
+      }
+    ],
+    "details": [
+      {
+        "availability": "MEDIUM",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.1"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "dataCenters": [
+          {
+            "availability": "LOW",
+            "id": "EU-CZ-1",
+            "name": "EU-CZ-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "EU-RO-1",
+            "name": "EU-RO-1"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 5090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 10
+        },
+        "memory": 32,
+        "name": "RTX 5090",
+        "pool": "ADA_32_PRO",
+        "price": {
+          "community": 0.69,
+          "secure": 0.99,
+          "serverless": 1.58
+        },
+        "secure": true
+      },
+      {
+        "availability": "HIGH",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": false,
+            "version": "12.2"
+          },
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.6"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": false,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "dataCenters": [
+          {
+            "availability": "LOW",
+            "id": "EU-CZ-1",
+            "name": "EU-CZ-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "EU-RO-1",
+            "name": "EU-RO-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "EUR-IS-1",
+            "name": "EUR-IS-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "EUR-IS-2",
+            "name": "EUR-IS-2"
+          },
+          {
+            "availability": "LOW",
+            "id": "US-IL-1",
+            "name": "US-IL-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "US-NC-1",
+            "name": "US-NC-1"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 4090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 8
+        },
+        "memory": 24,
+        "name": "RTX 4090",
+        "pool": "ADA_24",
+        "price": {
+          "community": 0.34,
+          "secure": 0.74,
+          "serverless": 1.1
+        },
+        "secure": true
+      },
+      {
+        "availability": "LOW",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": false,
+            "version": "12.5"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "12.9"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "id": "NVIDIA GeForce RTX 3090",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 6,
+          "secure": 8
+        },
+        "memory": 24,
+        "name": "RTX 3090",
+        "pool": "AMPERE_24",
+        "price": {
+          "community": 0.22,
+          "secure": 0.5,
+          "serverless": 0.69
+        },
+        "secure": true
+      },
+      {
+        "availability": "HIGH",
+        "community": false,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": true,
+            "version": "13.2"
+          }
+        ],
+        "dataCenters": [
+          {
+            "availability": "MEDIUM",
+            "id": "CA-MTL-1",
+            "name": "CA-MTL-1"
+          },
+          {
+            "availability": "HIGH",
+            "id": "EU-SE-1",
+            "name": "EU-SE-1"
+          }
+        ],
+        "id": "NVIDIA A40",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 1,
+          "secure": 10
+        },
+        "memory": 48,
+        "name": "A40",
+        "pool": "AMPERE_48",
+        "price": {
+          "community": 0.35,
+          "secure": 0.49,
+          "serverless": 1.22
+        },
+        "secure": true
+      },
+      {
+        "availability": "LOW",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": false,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "dataCenters": [
+          {
+            "availability": "LOW",
+            "id": "CA-MTL-3",
+            "name": "CA-MTL-3"
+          },
+          {
+            "availability": "LOW",
+            "id": "US-MO-1",
+            "name": "US-MO-1"
+          }
+        ],
+        "id": "NVIDIA A100 80GB PCIe",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 6,
+          "secure": 8
+        },
+        "memory": 80,
+        "name": "A100 PCIe",
+        "pool": "AMPERE_80",
+        "price": {
+          "community": 1.19,
+          "secure": 1.59,
+          "serverless": 2.72
+        },
+        "secure": true
+      },
+      {
+        "availability": "HIGH",
+        "community": true,
+        "cudaVersions": [
+          {
+            "available": true,
+            "version": "12.4"
+          },
+          {
+            "available": true,
+            "version": "12.8"
+          },
+          {
+            "available": true,
+            "version": "13.0"
+          },
+          {
+            "available": false,
+            "version": "13.1"
+          },
+          {
+            "available": false,
+            "version": "13.2"
+          }
+        ],
+        "dataCenters": [
+          {
+            "availability": "LOW",
+            "id": "US-KS-2",
+            "name": "US-KS-2"
+          },
+          {
+            "availability": "MEDIUM",
+            "id": "US-MD-1",
+            "name": "US-MD-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "US-MO-1",
+            "name": "US-MO-1"
+          },
+          {
+            "availability": "LOW",
+            "id": "US-WA-1",
+            "name": "US-WA-1"
+          }
+        ],
+        "id": "NVIDIA A100-SXM4-80GB",
+        "manufacturer": "NVIDIA",
+        "maxCount": {
+          "community": 8,
+          "secure": 8
+        },
+        "memory": 80,
+        "name": "A100 SXM",
+        "pool": "AMPERE_80",
+        "price": {
+          "community": 1.39,
+          "secure": 1.59,
+          "serverless": 2.72
+        },
+        "secure": true
+      }
+    ],
+    "capacity_secure_cuda128": {
+      "probedCudaVersions": [
+        "12.8"
+      ],
+      "items": [
+        {
+          "id": "NVIDIA A100-SXM4-80GB",
+          "displayName": "A100 SXM",
+          "memoryGb": 80,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Medium",
+              "pricePerHr": 1.59
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A40",
+          "displayName": "A40",
+          "memoryGb": 48,
+          "secureCloud": true,
+          "communityCloud": false,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Medium",
+              "pricePerHr": 0.49
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 5090",
+          "displayName": "RTX 5090",
+          "memoryGb": 32,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.99
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 4090",
+          "displayName": "RTX 4090",
+          "memoryGb": 24,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.74
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A100 80GB PCIe",
+          "displayName": "A100 PCIe",
+          "memoryGb": 80,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A100-SXM4-40GB",
+          "displayName": "A100 SXM 40GB",
+          "memoryGb": 40,
+          "secureCloud": false,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 3090",
+          "displayName": "RTX 3090",
+          "memoryGb": 24,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 3090 Ti",
+          "displayName": "RTX 3090 Ti",
+          "memoryGb": 24,
+          "secureCloud": false,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        }
+      ],
+      "pagination": {
+        "total": 8,
+        "returned": 8,
+        "offset": 0,
+        "truncated": false,
+        "nextCursor": null
+      }
+    },
+    "capacity_any_cloud_cuda128": {
+      "probedCudaVersions": [
+        "12.8"
+      ],
+      "items": [
+        {
+          "id": "NVIDIA A100-SXM4-80GB",
+          "displayName": "A100 SXM",
+          "memoryGb": 80,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Medium",
+              "pricePerHr": 1.39
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A40",
+          "displayName": "A40",
+          "memoryGb": 48,
+          "secureCloud": true,
+          "communityCloud": false,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Medium",
+              "pricePerHr": 0.35
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 5090",
+          "displayName": "RTX 5090",
+          "memoryGb": 32,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.69
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 3090",
+          "displayName": "RTX 3090",
+          "memoryGb": 24,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.22
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 3090 Ti",
+          "displayName": "RTX 3090 Ti",
+          "memoryGb": 24,
+          "secureCloud": false,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.27
+            }
+          }
+        },
+        {
+          "id": "NVIDIA GeForce RTX 4090",
+          "displayName": "RTX 4090",
+          "memoryGb": 24,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Low",
+              "pricePerHr": 0.34
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A100 80GB PCIe",
+          "displayName": "A100 PCIe",
+          "memoryGb": 80,
+          "secureCloud": true,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        },
+        {
+          "id": "NVIDIA A100-SXM4-40GB",
+          "displayName": "A100 SXM 40GB",
+          "memoryGb": 40,
+          "secureCloud": false,
+          "communityCloud": true,
+          "cudaVersions": {
+            "12.8": {
+              "stock": "Out",
+              "pricePerHr": null
+            }
+          }
+        }
+      ],
+      "pagination": {
+        "total": 8,
+        "returned": 8,
+        "offset": 0,
+        "truncated": false,
+        "nextCursor": null
+      }
+    },
+    "caveats": [
+      "Capacity is time- and CUDA-filter-dependent and does not reserve any hardware.",
+      "get_gpu_type dataCenters do not bind availability to one cloud type.",
+      "A40 reports community=false while raw community price is 0.35; treat community offer as unverified and do not recommend it.",
+      "Secure catalog 3090 price is present while CUDA12.8 live stock is Out.",
+      "Do not use serverless prices for this Pod workload."
+    ]
+  },
+  "autodl": {
+    "source_url": "https://autodl.com/home",
+    "evidence": {
+      "default_membership": "Ce=d(\"member_level_3\")",
+      "prices": [
+        {
+          "memory": "32GB",
+          "original_price": 2.93,
+          "name": "NVIDIA RTX 5090",
+          "key": "5090",
+          "matched": true,
+          "listed_in_current_home_price_tabs": true
+        },
+        {
+          "memory": "24GB",
+          "original_price": 1.98,
+          "name": "NVIDIA RTX 4090",
+          "key": "4090",
+          "matched": true,
+          "listed_in_current_home_price_tabs": true
+        },
+        {
+          "memory": "24GB",
+          "original_price": 1.39,
+          "name": "NVIDIA RTX 3090",
+          "key": "3090",
+          "matched": true,
+          "listed_in_current_home_price_tabs": true
+        },
+        {
+          "memory": "48GB",
+          "original_price": 3.14,
+          "name": "NVIDIA A40",
+          "key": "A40",
+          "matched": true,
+          "listed_in_current_home_price_tabs": false
+        },
+        {
+          "memory": "80GB",
+          "original_price": 7.03,
+          "name": "NVIDIA A100 SXM4",
+          "key": "A100",
+          "matched": true,
+          "listed_in_current_home_price_tabs": false
+        }
+      ],
+      "discount_expression": "100*r(H)[e.name].originalPrice*(100*r(M)[Ce.value][s].discount)/1e4",
+      "source_utf8_bytes": 19272,
+      "source_url": "https://www.autodl.com/assets/index.de1bfe64.js",
+      "source_utf8_sha256": "7b5762968a627e52c24ab70df6a558fa6d1d644527fc48323c9ac9aa9db1c194",
+      "types": [
+        {
+          "gpu_name": "RTX 5090",
+          "gpu_memory": 34359738368,
+          "gpu_series_type": "NVIDIA-Blackwell"
+        },
+        {
+          "gpu_name": "RTX 5090 D",
+          "gpu_memory": 34359738368,
+          "gpu_series_type": "NVIDIA-Blackwell"
+        },
+        {
+          "gpu_name": "RTX 4090",
+          "gpu_memory": 25769803776,
+          "gpu_series_type": "NVIDIA-Ada"
+        },
+        {
+          "gpu_name": "RTX 3090",
+          "gpu_memory": 25769803776,
+          "gpu_series_type": "NVIDIA-Ampere"
+        },
+        {
+          "gpu_name": "A100-PCIE-40GB",
+          "gpu_memory": 42949672960,
+          "gpu_series_type": "NVIDIA-Ampere"
+        }
+      ],
+      "checked_at_utc": "2026-09-07T11:57:42.4393483Z"
+    },
+    "public_type_catalog_url": "https://www.autodl.com/api/v1/machine/gpu_type",
+    "public_member_discount": 0.95,
+    "visible_member_rates_cny_per_hour": {
+      "RTX5090": 2.78,
+      "RTX4090": 1.88,
+      "RTX3090": 1.32
+    },
+    "public_normal_rates_cny_per_hour": {
+      "RTX5090": 2.93,
+      "RTX4090": 1.98,
+      "RTX3090": 1.39
+    },
+    "discount_before_display_rounding": {
+      "RTX5090": 2.7835,
+      "RTX4090": 1.881,
+      "RTX3090": 1.3204999999999998
+    },
+    "machine_offer_verified": false,
+    "machine_inventory_verified": false,
+    "read_only_search_result": "AuthorizeFailed; no credentials used; no login or account change",
+    "unknown_prices": [
+      "RTX 5090 D 32GB",
+      "A40 currently rentable offer",
+      "A100 PCIe40/SXM80 currently rentable offer"
+    ],
+    "caveats": [
+      "2.78/1.88/1.32 are already member display rates, not ordinary rates eligible for a second 5% discount.",
+      "Current front-end asset values prove public display logic only; they are not an authenticated quote.",
+      "A40/A100 constants exist in the front-end asset but are absent from current price-tab lists, so they are not offered as current rent prices.",
+      "5090 D is a separate GPU type; neither 5090 price nor workload speed is assigned to it."
+    ]
+  },
+  "fixed_hours_cost_scenarios": [
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 5090",
+      "cloud_type": "COMMUNITY",
+      "currency": "USD",
+      "rate": 0.69,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 2.07
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 2.76
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 4.14
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 5090",
+      "cloud_type": "SECURE",
+      "currency": "USD",
+      "rate": 0.99,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 2.97
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 3.96
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 5.94
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 4090",
+      "cloud_type": "COMMUNITY",
+      "currency": "USD",
+      "rate": 0.34,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 1.02
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 1.36
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 2.04
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 4090",
+      "cloud_type": "SECURE",
+      "currency": "USD",
+      "rate": 0.74,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 2.22
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 2.96
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 4.44
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 3090",
+      "cloud_type": "COMMUNITY",
+      "currency": "USD",
+      "rate": 0.22,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 0.66
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 0.88
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 1.32
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "RTX 3090",
+      "cloud_type": "SECURE",
+      "currency": "USD",
+      "rate": 0.5,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 1.5
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 2
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 3
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "A40",
+      "cloud_type": "SECURE",
+      "currency": "USD",
+      "rate": 0.49,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 1.47
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 1.96
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 2.94
+        }
+      ]
+    },
+    {
+      "provider": "Runpod",
+      "gpu": "A100 SXM 80GB",
+      "cloud_type": "SECURE",
+      "currency": "USD",
+      "rate": 1.59,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 4.77
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 6.36
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 9.54
+        }
+      ]
+    },
+    {
+      "provider": "AutoDL",
+      "gpu": "RTX 5090",
+      "cloud_type": "public_member_display_not_machine_offer",
+      "currency": "CNY",
+      "rate": 2.78,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 8.34
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 11.12
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 16.68
+        }
+      ]
+    },
+    {
+      "provider": "AutoDL",
+      "gpu": "RTX 5090",
+      "cloud_type": "public_normal_display_not_machine_offer",
+      "currency": "CNY",
+      "rate": 2.93,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 8.79
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 11.72
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 17.58
+        }
+      ]
+    },
+    {
+      "provider": "AutoDL",
+      "gpu": "RTX 4090",
+      "cloud_type": "public_member_display_not_machine_offer",
+      "currency": "CNY",
+      "rate": 1.88,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 5.64
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 7.52
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 11.28
+        }
+      ]
+    },
+    {
+      "provider": "AutoDL",
+      "gpu": "RTX 3090",
+      "cloud_type": "public_member_display_not_machine_offer",
+      "currency": "CNY",
+      "rate": 1.32,
+      "costs": [
+        {
+          "rental_hours": 3,
+          "gpu_charge": 3.96
+        },
+        {
+          "rental_hours": 4,
+          "gpu_charge": 5.28
+        },
+        {
+          "rental_hours": 6,
+          "gpu_charge": 7.92
+        }
+      ]
+    }
+  ],
+  "fixed_hours_cost_scope": "Illustrative charge for equal rental hours, not a same-workload speed claim. Excludes storage, data preparation, transfer overhead outside the assumed rental period, tax, currency conversion and account offers.",
+  "break_even_wall_time_ratio": {
+    "definition": "Candidate is cheaper when total rental wall time(candidate)/total rental wall time(5090) is below this price ratio; same billing scope and ignoring unequal storage charges.",
+    "runpod_4090_vs5090_community": 2.0294117647058822,
+    "runpod_4090_vs5090_secure": 1.337837837837838,
+    "runpod_3090_vs5090_community": 3.1363636363636362,
+    "runpod_A40_vs5090_secure": 2.020408163265306,
+    "autodl_4090_vs5090_member_display": 1.4787234042553192
+  },
+  "billing_sources": {
+    "runpod": "https://docs.runpod.io/pods/pricing",
+    "autodl": "https://www.autodl.com/docs/price/",
+    "autodl_no_gpu": "https://www.autodl.com/docs/save_money/"
+  },
+  "billing_notes": {
+    "autodl_no_gpu_mode_cny_per_hour": 0.1,
+    "autodl_no_gpu_resources": "0.5 CPU core, 2GB RAM; may be unsuitable for heavyweight CPU gates/model replay",
+    "autodl_rental_basis": "power-on to power-off, per second, not GPU utilization time",
+    "autodl_paid_disk_charged_while_stopped": true,
+    "runpod_volume_running_usd_per_gb_month": 0.1,
+    "runpod_volume_stopped_usd_per_gb_month": 0.2
+  },
+  "recommendation": "Candidate: one AutoDL RTX5090 if actual member quote, stock, environment and a short technical pilot pass; 4h budget and candidate 6h technical limit. Familiar Runpod RTX5090 with reusable cache is a feasible alternative. No unmeasured GPU is declared fastest or cheapest for this workload."
+}

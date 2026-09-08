@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-08-16T01:54:39-04:00",
+  "gate5_two_tier_hash": {
+    "tier_a_per_channel_provenance_sha256": {
+      "note": "expected to differ (channel provenance)",
+      "song": "04d1155569c0f5e62626a6b7163d9856631f0fb719776e87a2fdb78181587f51",
+      "speech": "0f75777d08443ee863edc97aa525eeef9574d2cb5fce536658215ae861ef2de2"
+    },
+    "tier_b_canonical_slot_assignment_sha256": {
+      "derived_from_song_provenance_file": "50173aadf66207f5814f4c89bd6e15fed149964713431105abdfe1da2e2686b3",
+      "derived_from_speech_provenance_file": "50173aadf66207f5814f4c89bd6e15fed149964713431105abdfe1da2e2686b3",
+      "equal": true,
+      "independence_claim": "NONE beyond two on-disk files hashing equal; correctness against actual split arrays is certified by row-by-row NPZ rebuild comparison (builder self-check + self-contained verifier test_d1_split_manifest_v2.py), not by this hash"
+    }
+  },
+  "outer_schema": "outer[protocol] = the sample's unique outer_test_fold (well-defined by OOF exactly-once); no per-fold overwrite is possible in this schema",
+  "reference_topic02_sha256": "43b453e12149c15d7045eefb8a20ad07bf080eebc2d4e23e406573271106f930",
+  "secondary_determinism_crosscheck": {
+    "note": "informational only; NPZs are the anchored source of truth",
+    "regenerated_from_frozen_p1_code_matches_npz": true
+  },
+  "source_of_truth": {
+    "inventory_csv": "../inner_split_inventory.csv",
+    "inventory_sha256": "3f3cdcd1c7cea6b13d644f7aa2bbfb0ec21242bec48fdfd9f09b765721462c0f",
+    "npz_dir": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\work\\d1_splits",
+    "pair_manifest_sha256": "d1f7c60a006b04fec1eabbc7d5a71197a4a0f44eab8154f7214c389d9244ec66",
+    "what": "the 99 anchored inner-split NPZs (SHA-verified against inner_split_inventory.csv before use); provenance is REBUILT from them, never from a parallel in-memory object"
+  },
+  "supersedes": {
+    "reason": "Codex record-40 review: v1 outer provenance collapsed to the last fold per protocol (810/836/968 of 1,012 rows inconsistent with NPZ truth); v1 'three independent derivations' were same-source. v1 hash must not be cited for any gate.",
+    "tier_b_v1": "e4748d191a6364aa87494887bfb85343061646411201dd7890c01106fc9cb70f",
+    "v1_files_left_in_place": [
+      "../split_manifest.json",
+      "../provenance_song.json",
+      "../provenance_speech.json"
+    ]
+  },
+  "topic02_groupkfold_actor_partition_match": true,
+  "version": 2
+}

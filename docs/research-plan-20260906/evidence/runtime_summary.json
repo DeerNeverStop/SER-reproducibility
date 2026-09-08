@@ -1,0 +1,517 @@
+{
+  "schema": "ser-resource-evidence-portable-1",
+  "checked_date": "2026-09-06",
+  "scope": "Read-only evidence and arithmetic review. New experiments not executed. Whitelist export; no host paths, device identifiers, instance/account identifiers, credentials or raw environment receipts.",
+  "sources": [
+    {
+      "label": "Study II",
+      "git_commit": "55b585efe9ea898f8c1717162cefef1ffda8cd65",
+      "repo_paths": [
+        "v3/data_design/evidence/core_execution_20260905.json",
+        "v3/data_design/core_run.py"
+      ],
+      "plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503"
+    },
+    {
+      "label": "DEPLOY2",
+      "git_commit": "55b585efe9ea898f8c1717162cefef1ffda8cd65",
+      "repo_paths": [
+        "v3/deploy/evidence/EXECUTION_STATUS_ZH.md",
+        "v3/deploy/evidence/pilot_timing_audit.json",
+        "v3/deploy/engines_deploy.py"
+      ],
+      "scientific_source_short_commit": "d0ea238"
+    },
+    {
+      "label": "N14R2",
+      "git_commit": "4fe0bb52f15b56a6626363be31a378b0f9661293",
+      "repo_paths": [
+        "v2_1/n14r2/PINS.json"
+      ],
+      "external_archive_name": "n14r2-closed-run.tar",
+      "external_archive_sha256_recorded": "162e209301252397c6d7bf79ae8c3a781fca93f8ef7dbe2babace94d4f44f9e9",
+      "portable_bundle_contains_raw_archive": false
+    },
+    {
+      "label": "v2 timing definition",
+      "git_commit": "55b585efe9ea898f8c1717162cefef1ffda8cd65",
+      "repo_paths": [
+        "v2/ser_v2/train.py",
+        "v2/RUN_RECORD_main.md"
+      ]
+    }
+  ],
+  "timing_definitions": {
+    "gpu_seconds": "Per-process elapsed from training timer to final predictions; includes CPU waits and evaluation. Not GPU utilization-integral or billed device-hours.",
+    "device_active_span_hours": "Sum over devices of first-to-last unit spans; excludes provisioning, transfer, backup and shutdown tail.",
+    "RTF": "Elapsed generation seconds / generated audio seconds for the specified pipeline and concurrency. All new RTF values are assumptions.",
+    "percentile": "Observed empirical lower order statistic at floor(0.9*(n-1)) in the sorted samples; not interpolated."
+  },
+  "historical": {
+    "study_II": {
+      "completed_units": 1440,
+      "CNN_fits": 720,
+      "Ridge_CPU_fits": 720,
+      "gpu_model": "RTX5090",
+      "configured_GPU_memory_class_GB": 32,
+      "by_model_and_B": {
+        "cnn|288": {
+          "n": 360,
+          "mean_seconds": 6.542869448295419,
+          "median_seconds": 6.229703459423035,
+          "p90_seconds": 9.276777444058098,
+          "min_seconds": 2.3877795960288495,
+          "max_seconds": 12.400488546001725,
+          "sum_seconds": 2355.433001386351,
+          "sum_worker_hours": 0.654286944829542,
+          "epochs": {
+            "min": 23,
+            "median": 55.0,
+            "max": 100
+          }
+        },
+        "cnn|576": {
+          "n": 360,
+          "mean_seconds": 12.83128814399404,
+          "median_seconds": 12.376819821598474,
+          "p90_seconds": 18.723801020998508,
+          "min_seconds": 4.833934514084831,
+          "max_seconds": 23.554804036044516,
+          "sum_seconds": 4619.263731837855,
+          "sum_worker_hours": 1.2831288143994042,
+          "epochs": {
+            "min": 22,
+            "median": 54.0,
+            "max": 100
+          }
+        },
+        "ridge_wavlm|288": {
+          "n": 360,
+          "mean_seconds": 0.05503646472186827,
+          "median_seconds": 0.052966699993703514,
+          "p90_seconds": 0.06378599999879953,
+          "min_seconds": 0.04822670000430662,
+          "max_seconds": 0.08109330000297632,
+          "sum_seconds": 19.813127299872576,
+          "sum_worker_hours": 0.005503646472186827,
+          "epochs": {
+            "min": 0,
+            "median": 0.0,
+            "max": 0
+          }
+        },
+        "ridge_wavlm|576": {
+          "n": 360,
+          "mean_seconds": 0.11467342305521823,
+          "median_seconds": 0.11306749999494059,
+          "p90_seconds": 0.12147100000584032,
+          "min_seconds": 0.10452999999688473,
+          "max_seconds": 0.18646199999784585,
+          "sum_seconds": 41.282432299878565,
+          "sum_worker_hours": 0.011467342305521823,
+          "epochs": {
+            "min": 0,
+            "median": 0.0,
+            "max": 0
+          }
+        }
+      },
+      "source_precision": "B-stratified quantiles independently recomputed from full unit receipts joined to frozen plan; aggregate completion receipt available in repo."
+    },
+    "DEPLOY2": {
+      "CPU_units": 540,
+      "GPU_units": 120,
+      "CPU_underlying_fits_derived_from_code": 675,
+      "CPU_fits_individually_instrumented": false,
+      "reused_B1_units": 360,
+      "gpu_model": "RTX5090",
+      "configured_GPU_memory_class_GB": 32,
+      "GPU_fit_groups": {
+        "cremad|cnn": {
+          "n": 30,
+          "mean_seconds": 125.89121920509885,
+          "median_seconds": 131.511798446998,
+          "p90_seconds": 134.99673180095851,
+          "min_seconds": 91.29778675734997,
+          "max_seconds": 137.86523547768593,
+          "sum_seconds": 3776.7365761529654,
+          "sum_worker_hours": 1.0490934933758238,
+          "epochs": {
+            "min": 70,
+            "median": 100.0,
+            "max": 100
+          },
+          "n_fit_range": [
+            4403,
+            4476
+          ],
+          "batch_sizes": [
+            64
+          ],
+          "configured_epochs": [
+            100
+          ]
+        },
+        "cremad|wavlm_ft": {
+          "n": 10,
+          "mean_seconds": 65.57434534989298,
+          "median_seconds": 64.19909449573606,
+          "p90_seconds": 84.12352971360087,
+          "min_seconds": 43.747809225693345,
+          "max_seconds": 88.14638043195009,
+          "sum_seconds": 655.7434534989297,
+          "sum_worker_hours": 0.18215095930525826,
+          "epochs": {
+            "min": 4,
+            "median": 6.5,
+            "max": 9
+          },
+          "n_fit_range": [
+            4403,
+            4475
+          ],
+          "batch_sizes": [
+            16
+          ],
+          "configured_epochs": [
+            15
+          ]
+        },
+        "ravdess|cnn": {
+          "n": 30,
+          "mean_seconds": 18.119379895739257,
+          "median_seconds": 20.897457614541054,
+          "p90_seconds": 21.988106995821,
+          "min_seconds": 5.686573086306453,
+          "max_seconds": 22.50361515954137,
+          "sum_seconds": 543.5813968721777,
+          "sum_worker_hours": 0.1509948324644938,
+          "epochs": {
+            "min": 26,
+            "median": 93.0,
+            "max": 100
+          },
+          "n_fit_range": [
+            839,
+            900
+          ],
+          "batch_sizes": [
+            64
+          ],
+          "configured_epochs": [
+            100
+          ]
+        },
+        "ravdess|wavlm_ft": {
+          "n": 10,
+          "mean_seconds": 22.537610715441406,
+          "median_seconds": 21.738570317626,
+          "p90_seconds": 26.726680114865303,
+          "min_seconds": 15.93925848416984,
+          "max_seconds": 29.329583501443267,
+          "sum_seconds": 225.37610715441406,
+          "sum_worker_hours": 0.06260447420955946,
+          "epochs": {
+            "min": 7,
+            "median": 10.0,
+            "max": 15
+          },
+          "n_fit_range": [
+            839,
+            899
+          ],
+          "batch_sizes": [
+            16
+          ],
+          "configured_epochs": [
+            15
+          ]
+        },
+        "subesco_980|cnn": {
+          "n": 30,
+          "mean_seconds": 11.464353499623636,
+          "median_seconds": 12.490909041836858,
+          "p90_seconds": 14.903919592499733,
+          "min_seconds": 5.016224613413215,
+          "max_seconds": 15.115390595048666,
+          "sum_seconds": 343.9306049887091,
+          "sum_worker_hours": 0.0955362791635303,
+          "epochs": {
+            "min": 33,
+            "median": 84.5,
+            "max": 100
+          },
+          "n_fit_range": [
+            588,
+            588
+          ],
+          "batch_sizes": [
+            64
+          ],
+          "configured_epochs": [
+            100
+          ]
+        },
+        "subesco_980|wavlm_ft": {
+          "n": 10,
+          "mean_seconds": 14.946386164613068,
+          "median_seconds": 14.56520860362798,
+          "p90_seconds": 18.46239496767521,
+          "min_seconds": 10.948758224025369,
+          "max_seconds": 18.48750265687704,
+          "sum_seconds": 149.46386164613068,
+          "sum_worker_hours": 0.041517739346147414,
+          "epochs": {
+            "min": 6,
+            "median": 9.0,
+            "max": 12
+          },
+          "n_fit_range": [
+            588,
+            588
+          ],
+          "batch_sizes": [
+            16
+          ],
+          "configured_epochs": [
+            15
+          ]
+        }
+      },
+      "sum_fit_elapsed_hours": 1.581897777864813,
+      "queue_elapsed_hours": 1.5891606688888888,
+      "FT_peak_VRAM_independently_verified": false,
+      "source_precision": "Group distributions recomputed from all 120 original unit receipts. Source commits retain independent execution audits; full raw unit payload is not copied here."
+    },
+    "N14R2": {
+      "completed_fits": 1920,
+      "gpu_model": "RTX4090",
+      "GPU_count": 4,
+      "workers_per_GPU": 8,
+      "threads_per_worker": 1,
+      "overall": {
+        "n": 1920,
+        "mean_seconds": 190.24998690581717,
+        "median_seconds": 190.9687052979134,
+        "p90_seconds": 234.9017150197178,
+        "min_seconds": 88.03149494202808,
+        "max_seconds": 362.40370038500987,
+        "sum_seconds": 365279.974859169,
+        "sum_worker_hours": 101.46665968310249
+      },
+      "sum_worker_hours": 101.46665968310249,
+      "sum_device_active_span_hours": 12.795160242777778,
+      "all_device_elapsed_hours": 3.418947126388889,
+      "epoch_stats": {
+        "n": 1920,
+        "mean": 82.04322916666666,
+        "median": 82.0,
+        "min": 45.0,
+        "p90": 100.0,
+        "max": 100.0
+      },
+      "source_precision": "Recomputed from all archived unit receipts; raw archive retained separately, its release-record hash supplied above."
+    }
+  },
+  "reusable_asset_summary": {
+    "raw_main_corpora": {
+      "ravdess_wav": 1440,
+      "cremad_wav": 7442,
+      "subesco_wav": 7000,
+      "total_audio_bytes": 4019881012
+    },
+    "feature_caches": {
+      "NPZ_files": 16,
+      "metadata_JSON_files": 16,
+      "total_bytes": 1568955832,
+      "effective_rows_by_level": {
+        "ravdess": 1439,
+        "cremad": 7435,
+        "subesco": 6998,
+        "subesco_980": 980
+      },
+      "representations": "64x128 float32 log-mel; 13x768 float16 for each of HuBERT/WavLM/wav2vec2"
+    },
+    "pretrained_SSL_weights": {
+      "files": 3,
+      "total_bytes": 1132735157
+    },
+    "N14R2_external_cache_recovered_and_SHA256_verified": true,
+    "existing_DEPLOY2_GPU_checkpoints": 120,
+    "existing_DEPLOY2_GPU_checkpoint_bytes": 11343933870,
+    "new_FT_checkpoint_size_planning_MB_per_file": 377.6,
+    "new_E2_180_FT_checkpoint_GB_approx": 68,
+    "new_E3_60_FT_checkpoint_GB_approx": 23,
+    "unavailable_for_new_work": "New speaker embeddings, new synthetic audio/features, new experiment splits and benchmark measurements still need preparation."
+  },
+  "budget_arithmetic": {
+    "all_independent_formula_checks_passed": true,
+    "E2": {
+      "core_fits": 540,
+      "with_FT_fits": 720,
+      "core_GPU_hours": [
+        4.1,
+        9.625
+      ],
+      "with_FT_GPU_hours": [
+        9.725000000000001,
+        23.125
+      ],
+      "with_FT_GPU_USD": [
+        9.62775,
+        22.89375
+      ],
+      "E0_E1_pilot_plus_core_GPU_hours": [
+        7.1,
+        15.625
+      ],
+      "E0_E1_pilot_plus_full_GPU_hours": [
+        12.725000000000001,
+        29.125
+      ]
+    },
+    "E3": {
+      "accepted_unique_clips_no_cross_split_reuse": 25920,
+      "accepted_audio_hours": 36.0,
+      "one_time_accepted_anchor_audio_hours": 0.8,
+      "expected_attempted_audio_hours": 52.57142857142857,
+      "core_fits": 180,
+      "with_optional_FT_fits": 240,
+      "scenarios": [
+        {
+          "assumed_RTF": 0.3,
+          "generation_GPU_h": 15.77142857142857,
+          "QA_GPU_h": 2.6285714285714286,
+          "CNN_and_optional_FT_GPU_h": 3.5,
+          "new_feature_GPU_h": 2.4000000000000004,
+          "total_GPU_h": 40.449999999999996,
+          "GPU_USD": 40.0455,
+          "continuous_single_GPU_days": 1.6854166666666666
+        },
+        {
+          "assumed_RTF": 1,
+          "generation_GPU_h": 52.57142857142857,
+          "QA_GPU_h": 2.6285714285714286,
+          "CNN_and_optional_FT_GPU_h": 3.5,
+          "new_feature_GPU_h": 2.4000000000000004,
+          "total_GPU_h": 95.64999999999999,
+          "GPU_USD": 94.69349999999999,
+          "continuous_single_GPU_days": 3.985416666666666
+        },
+        {
+          "assumed_RTF": 3,
+          "generation_GPU_h": 157.71428571428572,
+          "QA_GPU_h": 2.6285714285714286,
+          "CNN_and_optional_FT_GPU_h": 3.5,
+          "new_feature_GPU_h": 2.4000000000000004,
+          "total_GPU_h": 253.36428571428576,
+          "GPU_USD": 250.8306428571429,
+          "continuous_single_GPU_days": 10.55684523809524
+        },
+        {
+          "assumed_RTF": 10,
+          "generation_GPU_h": 525.7142857142857,
+          "QA_GPU_h": 2.6285714285714286,
+          "CNN_and_optional_FT_GPU_h": 3.5,
+          "new_feature_GPU_h": 2.4000000000000004,
+          "total_GPU_h": 805.3642857142855,
+          "GPU_USD": 797.3106428571426,
+          "continuous_single_GPU_days": 33.55684523809523
+        }
+      ],
+      "pilot_synthetic_clips": 360,
+      "pilot_rating_person_hours_raw": 12.0,
+      "formal_rating_person_hours_raw": 36.0
+    }
+  },
+  "pricing_comparison": {
+    "date": "2026-09-06",
+    "FX_CNY_per_USD_assumed": 6.7,
+    "FX_is_payment_quote": false,
+    "same_runtime_across_providers_is_verified": false,
+    "GPU_rates": [
+      {
+        "gpu": "RTX4090",
+        "autodl_CNY_per_h": 1.88,
+        "runpod_community_USD_per_h": 0.34,
+        "runpod_secure_USD_per_h": 0.74,
+        "runpod_community_CNY_per_h_at_assumed_FX": 2.278,
+        "runpod_secure_CNY_per_h_at_assumed_FX": 4.958,
+        "saving_fraction_vs_community_same_runtime": 0.17471466198419672,
+        "saving_fraction_vs_secure_same_runtime": 0.6208148446954418
+      },
+      {
+        "gpu": "RTX5090",
+        "autodl_CNY_per_h": 2.78,
+        "runpod_community_USD_per_h": 0.69,
+        "runpod_secure_USD_per_h": 0.99,
+        "runpod_community_CNY_per_h_at_assumed_FX": 4.622999999999999,
+        "runpod_secure_CNY_per_h_at_assumed_FX": 6.633,
+        "saving_fraction_vs_community_same_runtime": 0.3986588795154661,
+        "saving_fraction_vs_secure_same_runtime": 0.5808834614804764
+      }
+    ],
+    "project_counterfactual_costs": {
+      "E0_E1_E2_with_FT": {
+        "hours": [
+          12.725000000000001,
+          29.125
+        ],
+        "autodl_CNY": [
+          35.3755,
+          80.9675
+        ],
+        "runpod_secure_CNY": [
+          84.404925,
+          193.186125
+        ]
+      },
+      "E3": [
+        {
+          "RTF_assumed": 0.3,
+          "hours": 40.449999999999996,
+          "autodl_CNY": 112.45099999999998,
+          "runpod_secure_CNY": 268.30485
+        },
+        {
+          "RTF_assumed": 1,
+          "hours": 95.64999999999999,
+          "autodl_CNY": 265.907,
+          "runpod_secure_CNY": 634.4464499999999
+        },
+        {
+          "RTF_assumed": 3,
+          "hours": 253.36428571428576,
+          "autodl_CNY": 704.3527142857143,
+          "runpod_secure_CNY": 1680.5653071428574
+        },
+        {
+          "RTF_assumed": 10,
+          "hours": 805.3642857142855,
+          "autodl_CNY": 2238.9127142857137,
+          "runpod_secure_CNY": 5341.981307142856
+        }
+      ]
+    },
+    "sources": [
+      "https://www.autodl.com/home",
+      "https://www.runpod.io/pricing",
+      "https://www.autodl.com/docs/save_money/",
+      "https://api.autodl.com/docs/price/",
+      "https://docs.runpod.io/pods/pricing"
+    ],
+    "notes": [
+      "AutoDL member discount excluded.",
+      "GPU-hour prices are catalog values, not verified instance inventory or billing.",
+      "AutoDL 200GB file-storage use: (200-20)*.01*30=54 CNY per 30 days. This is distinct from instance data-disk pricing.",
+      "Runpod 200GB network volume: 200*.07=14 USD per month.",
+      "No transfer speed inferred."
+    ]
+  },
+  "review_limits": [
+    "Portable summaries do not replace raw-run replay or authenticate every historical receipt.",
+    "No new training, synthesis, peak-memory or across-provider runtime measurement performed.",
+    "Scientific validity and power are not certified by compute completion or arithmetic consistency.",
+    "Historical sources may contain operational details; this export includes references and selected scientific aggregates only."
+  ]
+}

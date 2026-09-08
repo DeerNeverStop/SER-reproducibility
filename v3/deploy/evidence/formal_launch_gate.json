@@ -1,0 +1,20 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "pass": true,
+  "lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5",
+  "deadline": "2026-09-06T14:30:00Z",
+  "estimated_incremental_compute_usd_with_buffer": 9.47439,
+  "incremental_compute_budget_usd": 20,
+  "forecast_formal_hours_with_1_5_buffer": 6.81678,
+  "forecast_total_hours_including_setup_pilot_and_2h_backup": 9.57010,
+  "forecast_basis": "Largest-corpus fixed GR/r0/f0 pilots; CNN gross130.996368s/100epochs; FT gross60.941301s/6epochs expanded to152.353s/15maximumepochs;90CNN+30FT and1.5training buffer;2hbackup reserve;pilot outputs not reused.",
+  "pilot_seal_sha256": {
+    "71e0825510faa70a7f69115daf8c12a9f59fff6781db3ab7d6bae80a320a0099": "f0e755c4323ee02be5c60296473bcff35136ebf4b7bd140b5779a1239b6c7b3e",
+    "550539db196b47a2c4034ae308b3b336d39281397dfe96145c0f7311c93ad5eb": "b0f636da3d4ac548749ae9a47e07d494b58b7d1f5c77c1d75d75e39705f7620e"
+  },
+  "data_sha_verified_files": 9883,
+  "cpu_complete_and_integrity_verified_units": 540,
+  "local_tests_passed": 135,
+  "pilot_independent_integrity_pass": true,
+  "scientific_scores_computed": false
+}

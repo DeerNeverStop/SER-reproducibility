@@ -1,0 +1,16 @@
+n_assumed_independent_speakers,paired_sd_assumption_pp,normal_95_halfwidth_pp,normal_two_sided_80pct_mde_pp,scope
+20,5,2.1913,3.1323,illustrative iid paired-normal assumptions; shared-training dependence not captured
+20,8,3.5061,5.0116,illustrative iid paired-normal assumptions; shared-training dependence not captured
+20,11,4.8209,6.891,illustrative iid paired-normal assumptions; shared-training dependence not captured
+20,13,5.6974,8.1439,illustrative iid paired-normal assumptions; shared-training dependence not captured
+20,15,6.5739,9.3968,illustrative iid paired-normal assumptions; shared-training dependence not captured
+35,5,1.6565,2.3678,illustrative iid paired-normal assumptions; shared-training dependence not captured
+35,8,2.6504,3.7884,illustrative iid paired-normal assumptions; shared-training dependence not captured
+35,11,3.6442,5.2091,illustrative iid paired-normal assumptions; shared-training dependence not captured
+35,13,4.3068,6.1562,illustrative iid paired-normal assumptions; shared-training dependence not captured
+35,15,4.9694,7.1033,illustrative iid paired-normal assumptions; shared-training dependence not captured
+91,5,1.0273,1.4684,illustrative iid paired-normal assumptions; shared-training dependence not captured
+91,8,1.6437,2.3495,illustrative iid paired-normal assumptions; shared-training dependence not captured
+91,11,2.2601,3.2305,illustrative iid paired-normal assumptions; shared-training dependence not captured
+91,13,2.671,3.8179,illustrative iid paired-normal assumptions; shared-training dependence not captured
+91,15,3.0819,4.4053,illustrative iid paired-normal assumptions; shared-training dependence not captured

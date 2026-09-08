@@ -1,0 +1,43 @@
+{
+  "schema": "ser-publication-checks-1",
+  "publication_date": "2026-09-08",
+  "new_training": false,
+  "scientific_sources": {
+    "study384_files": 43,
+    "study720_files": 10,
+    "all_exact": true
+  },
+  "primary_table_replay": {
+    "original_tests": 6,
+    "supplement_tests": 10,
+    "passed": true,
+    "scope": "Published draw tables; separate Holm6 and Holm10; no logits authentication or retraining"
+  },
+  "original384_prediction_replay": {
+    "formal_units": 384,
+    "numeric_values_checked": 63901,
+    "max_abs_error": 4.440892098500626e-16,
+    "passed": true,
+    "audit_original_sha256": "0f8744eb26774da1efc73ecfb83b47e606eda61086d5427b029f2e9f92f62484",
+    "scope": "Actual extraction and replay using public source; no weights or model inference"
+  },
+  "supplement_plan_generation": {
+    "formal_units": 720,
+    "epoch_passes": 18000,
+    "plan_sha256": "a8df7f9e0137353baa2218d449558f7977fbe9830f4e89df3856b36e450550ba",
+    "passed": true,
+    "scope": "Portable plan generation only; audio/host execution admission not performed"
+  },
+  "posthoc": {
+    "scientific_output_blocks": 5,
+    "exact_match_to_previous_diagnostic": true,
+    "new_primary_tests": false
+  },
+  "static_review": {
+    "scope": "Bounded source/material/credential-pattern review; not a guarantee that every possible sensitive datum is detectable",
+    "private_old_history_not_published": true,
+    "operational_exclusions_documented": true,
+    "old_source_zip_with_operational_records_excluded": true
+  },
+  "source_repository_commit": "841ea2cc7335f100f6926ce034b2fa1e04c4f0c5"
+}

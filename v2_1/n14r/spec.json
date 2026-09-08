@@ -1,0 +1,83 @@
+{
+  "study_id": "N14R",
+  "spec_version": "1.0.0",
+  "seed_namespace": "SER26-N14R",
+  "status": "frozen_before_confirmatory_execution",
+  "legacy_pilot": {
+    "source_commit": "c0c0beb",
+    "use": "design_only",
+    "excluded_from_confirmatory_analysis": true
+  },
+  "execution_environment": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "scikit_learn": "1.9.0",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "cudnn": 91900,
+    "librosa": "0.11.0",
+    "gpu": "NVIDIA GeForce RTX 5070"
+  },
+  "design": {
+    "corpus_level": "cremad",
+    "model": "resnet_se",
+    "manifest_input_rows": 7442,
+    "analysis_population_rows_after_hygiene": 7435,
+    "hygiene_rule": "v2.ser_v2.corpora.apply_hygiene('cremad'): H1/H2/H3",
+    "primary_draw_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+    "reserve_draw_ids": [24, 25, 26, 27],
+    "folds_per_draw": 5,
+    "train_reps": 1,
+    "cells": ["GR_hpo", "GG_hpo"],
+    "config_indices": [0, 1, 2, 3, 4, 5, 6, 7],
+    "units_per_draw": 80,
+    "primary_units": 1920,
+    "maximum_units": 2240
+  },
+  "primary_estimand": "mean over 24 independent complete outer draws of the five-fold mean of ((validation UAR - selected outer-test UAR) in GR_hpo minus the same quantity in GG_hpo)",
+  "primary_inference": {
+    "unit": "complete outer draw",
+    "test": "two-sided one-sample Student t test",
+    "directional_success": "mean > 0 and Holm-adjusted two-sided p <= 0.05",
+    "ci": "95% Student-t CI over draw deltas",
+    "family": "N14R",
+    "family_size": 1,
+    "holm_adjustment": "adjusted p equals raw p for the frozen one-member family",
+    "sign_flip": "sensitivity only; enumerate all 2^24 assignments; requires symmetry",
+    "bootstrap": {"role": "sensitivity_only", "method": "percentile", "reps": 100000, "seed": 202609040001}
+  },
+  "power": {
+    "method": "noncentral t",
+    "two_sided_alpha": 0.05,
+    "alternative_mean_pp": 1.5,
+    "sd_pp": 2.5,
+    "n": 24,
+    "power": 0.804
+  },
+  "completion_and_stopping": {
+    "required_complete_draws": 24,
+    "maximum_activated_draws": 28,
+    "retry_same_unit_once": true,
+    "maximum_attempts_per_unit": 2,
+    "maximum_unique_units": 2240,
+    "theoretical_maximum_training_attempts": 4480,
+    "void_whole_draw_after_second_unit_failure": true,
+    "activate_reserves_in_order": [24, 25, 26, 27],
+    "effect_based_interim_scoring": false,
+    "if_fewer_than_24_complete": "not tested (incomplete); descriptors only"
+  },
+  "budget": {
+    "primary_first_attempt_projected_gpu_hours": 92.9,
+    "all_28_draws_first_attempt_projected_gpu_hours": 108.4,
+    "all_28_draws_all_retries_projected_gpu_hours": 216.8,
+    "resource_allocation_gpu_hours": 125.0,
+    "resource_allocation_is_a_scientific_stopping_rule": false,
+    "hard_runtime_cap": null
+  },
+  "d09r": {
+    "fixed_config_index": 4,
+    "formula": "mean_draw mean_fold ([T_GR(selected)-T_GG(selected)]-[T_GR(index4)-T_GG(index4)])",
+    "report": "mean and 95% Student-t CI; no p-value and no verdict"
+  }
+}

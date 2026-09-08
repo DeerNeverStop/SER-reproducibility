@@ -1,0 +1,19 @@
+{
+  "file_sha256": {
+    "dual_d00_f0_c0.json": "3b3d66872445a365bc62e1f882b8066e33ea7d8c2e8a9b04bb145a51d873a280",
+    "dual_d00_f0_c1.json": "0b51c4b20277e6c457a379856864ec14b6622dc5381fe5cfd0d4d029ee669307",
+    "dual_d00_f0_c2.json": "566ddcf8e9b7a7dbf8bd3d49fb63b25e8bd436ccb4b398c81b547bfb3856c020",
+    "dual_d00_f0_c3.json": "e7b3dfde6c740c6f9d152df9c1f03c30eb6705ba1b3d65128ebc4ca4737ac1ce",
+    "request.json": "951b450e276503b5f329779e710233b81791a42723e271f35d47976c1bd69061",
+    "summary.json": "0accea1fc22b186d8d691cc5f862b8b45ebaae531fc950f1eca7ee9b8125d970"
+  },
+  "pass_local": true,
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "scientific_scores_computed": false,
+  "unit_ids": [
+    "dual_d00_f0_c0",
+    "dual_d00_f0_c1",
+    "dual_d00_f0_c2",
+    "dual_d00_f0_c3"
+  ]
+}

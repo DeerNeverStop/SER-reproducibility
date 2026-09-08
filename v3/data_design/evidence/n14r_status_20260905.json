@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-05T06:39:56.378002+00:00",
+  "unique_done": 797,
+  "required_primary": 1920,
+  "remaining_primary": 1123,
+  "failed_events": 2,
+  "unrecovered_failed_units": [],
+  "throughput": [
+    {
+      "recent_completions": 20,
+      "units_per_hour": 33.76,
+      "eta_if_rate_holds": "2026-09-06T15:55:48.380870+00:00"
+    },
+    {
+      "recent_completions": 50,
+      "units_per_hour": 31.259,
+      "eta_if_rate_holds": "2026-09-06T18:35:27.835284+00:00"
+    },
+    {
+      "recent_completions": 100,
+      "units_per_hour": 32.976,
+      "eta_if_rate_holds": "2026-09-06T16:43:15.408404+00:00"
+    }
+  ],
+  "scientific_metrics_read": false,
+  "scope": "operational snapshot only; old n14r automation retains execution ownership"
+}

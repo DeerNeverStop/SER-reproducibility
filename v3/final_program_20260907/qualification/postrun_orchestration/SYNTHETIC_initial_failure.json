@@ -1,0 +1,32 @@
+{
+  "schema": "ser-one-shot-postrun-SYNTHETIC-exit17-probe-1",
+  "pass": false,
+  "scope": "Actual postrun_wait.ps1 entry with one hidden synthetic child; no formal inputs or model execution",
+  "started_utc": "2026-09-07T18:41:33.9995334Z",
+  "completed_utc": "2026-09-07T18:41:37.5943320Z",
+  "elapsed_seconds": 3.5924068,
+  "wrapper_entry": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\postrun_wait.ps1",
+  "wrapper_sha256": "eaaabd3ec0c36de2569ad65cba347a3e002ebcdfae7679c5aedbe5bd0304becc",
+  "contract_sha256": "7c37fe80c6ab23bd884fe8628f45795728ad23dbd16062c22bca1f7d2062fe3d",
+  "training_pid": 23880,
+  "training_start_utc": "2026-09-07T18:41:34.0403733Z",
+  "training_exe": "D:\\software\\PowerShell\\7.6.5\\pwsh.exe",
+  "hidden_child_exit": 17,
+  "wrapper_exit": 1,
+  "live_handle_bound": false,
+  "recorded_original_exit17": false,
+  "expected_failed_stop": false,
+  "no_02_admitted": true,
+  "no_10_score": true,
+  "out_absent": true,
+  "synthetic_input_paths_absent": true,
+  "wrapper_source_unchanged": true,
+  "control_files": "99_failed.json",
+  "files_sha256": {
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17\\run_probe.ps1": "ddf53a89a96af68039d6f55f5e84dfafcdfd87e70e657138153c872ea3a6e6ff",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17\\contract.json": "7c37fe80c6ab23bd884fe8628f45795728ad23dbd16062c22bca1f7d2062fe3d",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17\\wrapper.log": "f5b93771de8032ff357ab6e8529a0e412d13a9e61cdce5754d6c60fd4696aaf2",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17\\control\\99_failed.json": "d07951835283f9733452c702e18c527a0b75b2244caf3af333fa9c39eca1bdb5",
+    "D:\\SER-final-program-20260907\\postrun_orchestration_tests\\SYNTHETIC_exit17\\probe_exit17.ps1": "e7304113bdd52df0a9af0151d82bd26bc5524d782e95d77f2bb4d592f5b979a8"
+  }
+}

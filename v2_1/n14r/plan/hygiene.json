@@ -1,0 +1,38 @@
+{
+ "corpus": "cremad",
+ "dropped": [
+  {
+   "reason": "H1 label-conflicting duplicate group 776a8c973fd0",
+   "relative_path": "1006_TIE_HAP_XX.wav"
+  },
+  {
+   "reason": "H1 label-conflicting duplicate group 776a8c973fd0",
+   "relative_path": "1006_TIE_NEU_XX.wav"
+  },
+  {
+   "reason": "H1 label-conflicting duplicate group c9b6d56f9775",
+   "relative_path": "1013_WSI_DIS_XX.wav"
+  },
+  {
+   "reason": "H1 label-conflicting duplicate group c9b6d56f9775",
+   "relative_path": "1013_WSI_SAD_XX.wav"
+  },
+  {
+   "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6",
+   "relative_path": "1017_IWW_ANG_XX.wav"
+  },
+  {
+   "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6",
+   "relative_path": "1017_IWW_FEA_XX.wav"
+  },
+  {
+   "reason": "H3 registered unusable file",
+   "relative_path": "1076_MTI_SAD_XX.wav"
+  }
+ ],
+ "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+ "n_dropped": 7,
+ "n_input": 7442,
+ "n_kept": 7435,
+ "schema": "ser26-n14r-hygiene-1"
+}

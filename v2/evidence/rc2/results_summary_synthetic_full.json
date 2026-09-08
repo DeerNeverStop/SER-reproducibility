@@ -1,0 +1,203 @@
+{
+ "claims": {
+  "C1": "reported (estimation claim)",
+  "C2-rep": "supported",
+  "C2a": "supported",
+  "C2b": "supported",
+  "C3a": "supported",
+  "C3b": "supported",
+  "C3c": "not supported",
+  "C3d": "not supported",
+  "C4a": "supported",
+  "C4b": "reported (estimation claim)",
+  "S1": "supported",
+  "S2": "supported",
+  "S3": "not supported",
+  "S4": "not supported"
+ },
+ "hypotheses": {
+  "N01": {
+   "mean": 9.45578231292517,
+   "n": 20,
+   "p_holm": 0.00035179517388200603,
+   "verdict": "supported"
+  },
+  "N02": {
+   "mean": 8.809523809523808,
+   "n": 20,
+   "p_holm": 0.00035179517388200603,
+   "verdict": "supported"
+  },
+  "N03": {
+   "mean": 5.340136054421768,
+   "n": 20,
+   "p_holm": 0.00035179517388200603,
+   "verdict": "supported"
+  },
+  "N04": {
+   "mean": 4.115646258503401,
+   "n": 20,
+   "p_holm": 0.00035179517388200603,
+   "verdict": "supported"
+  },
+  "N05": {
+   "mean": 3.5645604395604384,
+   "n": 91,
+   "p_holm": 2.6022511851195976e-05,
+   "verdict": "supported"
+  },
+  "N06": {
+   "mean": 4.406288156288157,
+   "n": 91,
+   "p_holm": 9.024544081513896e-08,
+   "verdict": "supported"
+  },
+  "N07": {
+   "mean": 6.4732142857142865,
+   "n": 20,
+   "p_holm": null,
+   "verdict": "estimate (not tested)"
+  },
+  "N08": {
+   "mean": 4.419642857142859,
+   "n": 20,
+   "p_holm": null,
+   "verdict": "estimate (not tested)"
+  },
+  "N09": {
+   "mean": 2.321428571428568,
+   "n": 20,
+   "p_holm": 0.4554889687789071,
+   "verdict": "not supported"
+  },
+  "N10": {
+   "mean": -1.398325263342625,
+   "n": 72,
+   "p_holm": 0.05932988390505875,
+   "verdict": "not supported"
+  },
+  "N11": {
+   "mean": 1.2648809523809523,
+   "n": 24,
+   "p_holm": null,
+   "verdict": "estimate (not tested)"
+  },
+  "N12": {
+   "mean": 5.1385732704414,
+   "n": 91,
+   "p_holm": null,
+   "verdict": "estimate (not tested)"
+  },
+  "N13": {
+   "mean": 0.10204081632653139,
+   "n": 20,
+   "p_holm": null,
+   "verdict": "estimate (not tested)"
+  },
+  "N14": {
+   "mean": 6.110527541839133,
+   "n": 91,
+   "p_holm": 9.814555365072715e-10,
+   "verdict": "supported"
+  },
+  "N15": {
+   "mean": 5.384011243386244,
+   "n": 24,
+   "p_holm": 0.00010161373227210935,
+   "verdict": "supported"
+  },
+  "R01": {
+   "mean": 14.782779431216932,
+   "n": 24,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "R02": {
+   "mean": 8.691922949735451,
+   "n": 24,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "R03": {
+   "mean": 6.090856481481478,
+   "n": 24,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "R04": {
+   "mean": 3.6038425690440343,
+   "n": 91,
+   "p_holm": 1.3588045368999464e-14,
+   "verdict": "supported"
+  },
+  "R05": {
+   "mean": 1.3613336873410145,
+   "n": 91,
+   "p_holm": 2.2626030092178955e-05,
+   "verdict": "supported"
+  },
+  "R06": {
+   "mean": 2.2425088817030203,
+   "n": 91,
+   "p_holm": 3.392895043962836e-09,
+   "verdict": "supported"
+  },
+  "R07": {
+   "mean": 15.687003968253967,
+   "n": 24,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "R08": {
+   "mean": 3.141365824516007,
+   "n": 91,
+   "p_holm": 5.906866652223659e-13,
+   "verdict": "supported"
+  },
+  "R09": {
+   "mean": 18.131510416666668,
+   "n": 24,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "R10": {
+   "mean": 7.831156938299794,
+   "n": 91,
+   "p_holm": 3.526432736998218e-15,
+   "verdict": "supported"
+  },
+  "R11": {
+   "mean": 10.714285714285714,
+   "n": 20,
+   "p_holm": 0.00010854129113247187,
+   "verdict": "supported"
+  },
+  "T01": {
+   "mean": 1.9010734212199407,
+   "n": 91,
+   "p_holm": 1.0,
+   "verdict": "not supported"
+  },
+  "T02": {
+   "mean": 2.623626373626373,
+   "n": 91,
+   "p_holm": 1.0,
+   "verdict": "not supported"
+  }
+ },
+ "integrity": {
+  "I1": true,
+  "I2": true,
+  "I3": true,
+  "I4": true,
+  "I5": true,
+  "I6": true,
+  "I7": true
+ },
+ "n_units_done": 4943,
+ "n_units_void": 0,
+ "note": "synthetic fixture world (mechanics check, not science)",
+ "plan_sha256": "2acc658143333a2cc65b21ffaa73c7e78e355cf73276c6de97655b45898a1865",
+ "registry_sha256": "c6a00bb0fdbcd2f9ec827140611605b19c6d5213c16219e3981292d620880ce7",
+ "schema": "ser-v2-results-1"
+}

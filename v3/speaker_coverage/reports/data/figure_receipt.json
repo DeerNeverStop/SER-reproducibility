@@ -1,0 +1,12 @@
+{
+  "schema": "ser-coverage-figure-receipt-1",
+  "results_sha256": "6b54514a42fc9284b7e22669ab30f8fc765a12559ef7a35cae29a0e435dcc7dd",
+  "plot_script_sha256": "44dc30babbd9d942852ef8aa93f887df985d21407b49afee66c4cef4e8fec45e",
+  "figures": {
+    "e2_contrasts.png": "7b13516d0e2db89d58d09d0b27dd93311b87a6fb44351bbdcf426a43805860a0",
+    "e2_contrasts.svg": "d70bf21c5a30eecc698c575ba291c8484c647ba362b1f6051b2b5816edfb8d44",
+    "e2_policy_means.png": "274859257b47ae1fda4621b8bd6870002a5adafa97e873a7ca7e649790be844c",
+    "e2_policy_means.svg": "3245b3634377c193d5e257ed4318499311dd9ff3e5850a8df4f16336a116ef90"
+  },
+  "new_inference_performed": false
+}

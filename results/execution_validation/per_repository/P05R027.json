@@ -1,0 +1,45 @@
+{
+  "repository_id": "P05R027",
+  "repository_url": "https://github.com/AitanaESCI/speech-emotion-recognition",
+  "commit_sha": "ccec93c7605cd4b962a561b1d0e90e2e9af429e5",
+  "draw_rank": 31,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "fixed_iemocap_sessions",
+  "probe_parameters": {
+    "corpus": "IEMOCAP"
+  },
+  "decisive_source": [
+    "shared-dataset-loader/nbdev-upc-aidl-iemocap-datasets/src/nbdev_upc_aidl_iemocap_datasets/core.py:L531-L547",
+    "shared-dataset-loader/nbdev-upc-aidl-iemocap-datasets/src/nbdev_upc_aidl_iemocap_datasets/core.py:L775-L785",
+    "shared-dataset-loader/nbdev-upc-aidl-iemocap-datasets/src/nbdev_upc_aidl_iemocap_datasets/core.py:L820-L824"
+  ],
+  "rationale": "The loader fixes Ses03-Ses05 speakers to train, Ses02 speakers to validation, and Ses01 speakers to test.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 240,
+      "test_rows": 80,
+      "train_speakers": [
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_final": "no",
+  "prior_split_risk": "no"
+}

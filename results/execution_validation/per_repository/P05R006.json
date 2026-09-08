@@ -1,0 +1,72 @@
+{
+  "repository_id": "P05R006",
+  "repository_url": "https://github.com/ShaheenPerveen/Speech_Emotion_Recognition_IEMOCAP",
+  "commit_sha": "1f2a835abbf1fbce138b7c26e7e2eb74b35b8147",
+  "draw_rank": 8,
+  "evidence_tier": "tier1_execution_confirmed",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "random_rows",
+  "probe_parameters": {
+    "corpora": [
+      "IEMOCAP"
+    ],
+    "test_size": 0.2,
+    "seed": 20260813,
+    "source_random_state": "unset",
+    "stratify": true
+  },
+  "decisive_source": [
+    "Model_Codes/ML_DL_Models_Using_MFCC/ML_with_MFCC_Normalized.ipynb:L1563-L1572"
+  ],
+  "rationale": "The representative normalized-MFCC path stratifies utterance rows only by target label; no IEMOCAP speaker/session group enters the split. The source leaves random_state unset, so the isolated probe fixes 20260813 only to make the witness reproducible.",
+  "pairs": [
+    {
+      "pair": "final_evaluation",
+      "train_rows": 320,
+      "test_rows": 80,
+      "train_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "test_speakers": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "speaker_intersection": [
+        "IEMOCAP:Ses01F",
+        "IEMOCAP:Ses01M",
+        "IEMOCAP:Ses02F",
+        "IEMOCAP:Ses02M",
+        "IEMOCAP:Ses03F",
+        "IEMOCAP:Ses03M",
+        "IEMOCAP:Ses04F",
+        "IEMOCAP:Ses04M",
+        "IEMOCAP:Ses05F",
+        "IEMOCAP:Ses05M"
+      ],
+      "speaker_intersection_count": 10
+    }
+  ],
+  "max_speaker_intersection": 10,
+  "split_risk_final": "yes",
+  "prior_split_risk": "yes"
+}

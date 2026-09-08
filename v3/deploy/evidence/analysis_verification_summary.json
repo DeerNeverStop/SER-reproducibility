@@ -1,0 +1,105 @@
+{
+  "accepted_with_disclosed_supplemental_audit": true,
+  "additional_export_comparisons": 17328,
+  "all_requested_numeric_exports_accepted": true,
+  "availability": {
+    "B2_all_undefined_endpoints": 0,
+    "B2_max_dropped_speakers": 18,
+    "B2_paired_endpoints_with_some_undefined_speakers": 16
+  },
+  "created_at": "2026-09-05T21:59:48.472481+00:00",
+  "disclosed_deviations": [
+    {
+      "action": "original retained; complete sidecar independently verified from all raw predictions",
+      "component": "B1 frozen original CSV export",
+      "reason": "summary.csv takes first six-class corpus column set; support_6/7 missing for corpora requiring them"
+    },
+    {
+      "action": "external versioned raw verification applies strict rule to ALL speakers, budgets and global/fold modes; original failure remains FAIL",
+      "component": "B1 frozen verifier speaker risk",
+      "observed_disagreements": [
+        {
+          "b": 0.3,
+          "frozen_expected_is_finite": true,
+          "level": "subesco_980",
+          "mode": "global",
+          "model": "cnn",
+          "n_defined_risk_reps": 8,
+          "n_reps": 9,
+          "speaker": "F09",
+          "strict_expected_is_finite": false
+        }
+      ],
+      "reason": "finite-only repeat mean conflicts with strict repeat scorer/spec rule when one repetition has no accepted recordings"
+    }
+  ],
+  "frozen_source_and_plan_files_checked": 57,
+  "frozen_source_changes": [],
+  "interpretation_limits": [
+    "Prior outcomes were observed; descriptive/estimation study, no confirmatory p-values.",
+    "Bootstrap clusters speakers with shared full-population indices. A/B2/FIX pair speaker-level repeated quantities; B1 pooled risk/capture recompute ratios from resampled counts within each OOF repeat and then average repeats. Repeated fits/draws are not additional independent people.",
+    "Intervals condition on fixed models and calibrated thresholds, excluding re-fitting/recalibration and real deployment distribution uncertainty.",
+    "B2 GR/GG differences involve complete fit/validation protocol; calibration-source isolation is restricted to FIX.",
+    "B2 secondary risks retain n/n_dropped/n_population; no acceptance means undefined risk and never zero risk.",
+    "A N3 versus all-class single emotions has composition differences; matched-class secondary is separately frozen. Oracle reference reads query features and is not a guaranteed deployable upper bound."
+  ],
+  "lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5",
+  "method_notes": [
+    "No frozen experiment source, raw prediction, checkpoint, endpoint definition or budget was modified. No cloud or training action was performed.",
+    "Frozen full verification uses local 120 full checkpoint byte hashes. B1 supplemental acceptance was written after observing failures, explicitly disclosed and never substituted for the original frozen result.",
+    "All A endpoints/absolute UAR and speaker UAR; B2 paired endpoints/absolute/pooled and speaker metrics; FIX unit/paired quantities passed the frozen independent implementation.",
+    "Supplemental B1 verification covers all global/fold tables, full class support, all72repeat JSON/CSV and presentation numeric sidecars. Extra export verification recomputes A absolute class recalls and B2 every-unit thresholds from raw."
+  ],
+  "modules": {
+    "A": {
+      "accepted_for_descriptive_reporting": true,
+      "frozen_compared": 51150,
+      "frozen_comparison_pass": true
+    },
+    "B1": {
+      "OOF_replicates": 72,
+      "accepted_for_descriptive_reporting": true,
+      "frozen_compared": 546,
+      "frozen_comparison_pass": false,
+      "source_units": 360,
+      "supplemental_comparisons": 426972,
+      "supplemental_pass": true
+    },
+    "B2": {
+      "accepted_for_descriptive_reporting": true,
+      "frozen_compared": 17595,
+      "frozen_comparison_pass": true
+    },
+    "B2-FIX": {
+      "accepted_for_descriptive_reporting": true,
+      "frozen_compared": 22158,
+      "frozen_comparison_pass": true
+    }
+  },
+  "original_frozen_all_pass": false,
+  "predefined_endpoint_inventory": {
+    "A": 903,
+    "A_primary": 90,
+    "A_unavailable_retained": 6,
+    "B1": 84,
+    "B2": 105,
+    "B2-FIX": 36,
+    "total": 1128
+  },
+  "program": "SER26-DEPLOY-2",
+  "receipt_sha256": {
+    "analysis_verification_A.json": "296e8ffc05c7f4b23096a7d32656e762dd960c0ea3fb655ce395612db8d2706a",
+    "analysis_verification_B1_frozen.json": "ce943c9b85e498cc24f3e9dcff1d6f9eca44e8615329eacd7b0b9595aa94fb7c",
+    "analysis_verification_B1_supplemental.json": "46527cd3dec7fbec6a81004770575c43804c27f2687763d3e76ae682dd106431",
+    "analysis_verification_B2.json": "f9a4d736b32bbd346166e63165ae23f0d67c0fd41bfa50e1d26e679f20bfe7b8",
+    "analysis_verification_B2_FIX.json": "dcff05400e73a2eb42587eb02cfc676054dd1d03688906b4a687be1fc738a079",
+    "analysis_verification_all_frozen.json": "bc535d8f5b6c7751a6dfb890a09f54fd8299196b1ad646a877a1d72662fc75b2",
+    "analysis_verification_extra_exports.json": "d42996839312cbabc15c868addfcf55c785bd1b9ffc6bd58b7bcfd968e6ceac1"
+  },
+  "remaining_numeric_blockers": [],
+  "reproducible_scripts": {
+    "v3/deploy/analysis/deploy2_b1_supplemental_audit.py": "d7b6a5869244328b9bbeefbf32f8673db22ec977c1ccaa625f768a174c623952",
+    "v3/deploy/analysis/deploy2_export_audit.py": "a07d7241111c629204fa47bbf010a35f1c85d3923eb896b577293adf311d66ef"
+  },
+  "schema": "ser26-deploy2-analysis-acceptance-summary-1"
+}

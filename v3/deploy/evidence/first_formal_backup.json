@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "program": "SER26-DEPLOY-2",
+  "verified_at": "2026-09-05T19:33:19.464094+00:00",
+  "sealed_units": 1,
+  "expected_units": 120,
+  "cohort_complete": false,
+  "lightweight_files_verified": 16,
+  "managed_exit_code": null,
+  "managed_finished_at": null,
+  "remote_checkpoints_sha_verified": 1,
+  "checkpoint_downloaded": true,
+  "local_checkpoints_verified": 1,
+  "scientific_results_verified": false,
+  "scientific_scores_read": false,
+  "archive_sha256": "14146ce856a330a5c393017e9db7b054b1f7aeebd01b83c3eee84212adb4b9b9",
+  "manifest_sha256": "f92bd2514a3ac677a579a1209fb5bcc37b4f6246f98f4d5d4fe4ddc66d76069a",
+  "lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5",
+  "limitation": "All snapshot checkpoint bytes are locally verified; scientific result verification must still run separately."
+}

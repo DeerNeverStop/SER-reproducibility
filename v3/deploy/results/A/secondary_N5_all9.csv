@@ -1,0 +1,10 @@
+level,model,balanced_N5_naive_uar,single_N5_feasible,single_minus_global,single_minus_global_lo,single_minus_global_hi,single_minus_balanced,single_minus_balanced_lo,single_minus_balanced_hi,naive_harm_share,reason
+cremad,wavlm_base_plus,41.390720390720396,True,-31.0010175010175,-32.72117673992674,-29.191859991859992,-2.0315425315425326,-2.541750610500612,-1.513634513634515,1.0,
+cremad,hubert_base,46.58363858363859,True,-26.310541310541314,-27.979268416768413,-24.581774013024017,-3.892348392348393,-4.611111111111112,-3.1911782661782664,0.989010989010989,
+cremad,wav2vec2_base,39.49023199023199,True,-28.569597069597066,-30.548234635734634,-26.551561864061863,-3.7039072039072045,-4.450055962555963,-2.955433455433456,1.0,
+ravdess,wavlm_base_plus,21.05902777777778,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."
+ravdess,hubert_base,23.81076388888889,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."
+ravdess,wav2vec2_base,25.789930555555554,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."
+subesco_980,wavlm_base_plus,23.95238095238095,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."
+subesco_980,hubert_base,24.46031746031745,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."
+subesco_980,wav2vec2_base,24.857142857142854,False,,,,,,,,"No class can supply five single-emotion enrollment recordings for every speaker; retain infeasible, no replacement."

@@ -1,0 +1,518 @@
+{
+ "fraction": 0.01,
+ "n_cpu_pool": 924,
+ "n_gpu_pool": 4019,
+ "n_selected": 51,
+ "units": [
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_24_d1",
+   "device": "cuda",
+   "fold": "3",
+   "model": "resnet_se",
+   "unit_id": "22e0e98b9f8cd6b4ba86efc851aa61c5775148a08e838e54a0f056cf68ceefd1"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "sub_700_one",
+   "device": "cuda",
+   "fold": "0",
+   "model": "wav2vec2_base",
+   "unit_id": "dc3cbb129727fc9130e74f563583fa01389cb9d80ab609ca2b5b26637059ba09"
+  },
+  {
+   "arm": "HPO",
+   "audio_root": null,
+   "cell": "GG_hpo",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "4",
+   "model": "resnet_se",
+   "unit_id": "d05a0abe73a3860d0fcc6b975b67599032b3e7ab528bd02289caea3cc8aeb779"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RG",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "4",
+   "model": "hubert_base",
+   "unit_id": "d793ae9acbb10a66a7c7902ffba1c86c639b82256abcf99db6d8faa7aa5170e0"
+  },
+  {
+   "arm": "HPO",
+   "audio_root": null,
+   "cell": "RR_hpo",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "0",
+   "model": "resnet_se",
+   "unit_id": "e757acb2df9f82956b7a3a986564da2f9e34f30341089ca92215f97c16f3817d"
+  },
+  {
+   "arm": "MECH2X2",
+   "audio_root": null,
+   "cell": "spk_half_h2",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "3",
+   "model": "resnet_se",
+   "unit_id": "2f11402d2c2f47eff5d645b3f02c4a4f9e562ea80ec60359fc1300a97d9b45aa"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GR",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "0",
+   "model": "hubert_base",
+   "unit_id": "7d56b27bc706f4e322707134a7f32345512d50f06db11d95d90658708db297cb"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_91m_d4",
+   "device": "cuda",
+   "fold": "4",
+   "model": "resnet_se",
+   "unit_id": "912cee28063725d00ac9b03d3a2548d92c571520600714c85034bfddc5592a16"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "sub_700_one",
+   "device": "cuda",
+   "fold": "1",
+   "model": "resnet_se",
+   "unit_id": "3e98679afbce3be26ab5c677c5fb84396df01fe9cb83bda323ddf71bf1421407"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GR",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "3",
+   "model": "wav2vec2_base",
+   "unit_id": "cbb86bad8de9abfb2a49aad59e2360ffcb528ac3d9c6207dad50a77808cad328"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "cremad_24_d2",
+   "device": "cuda",
+   "fold": "2",
+   "model": "resnet_se",
+   "unit_id": "cd06369e1aeb994b211fa8f88744579710abba17c6df79eb01f8fa6e599c4e5c"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "subesco_full",
+   "device": "cuda",
+   "fold": "2",
+   "model": "hubert_base",
+   "unit_id": "53e34ffdfb811cd6c816420102f7e80ea46bc696ab8459d4fccf9f7c48aa076b"
+  },
+  {
+   "arm": "HPO",
+   "audio_root": null,
+   "cell": "RR_hpo",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "3",
+   "model": "resnet_se",
+   "unit_id": "1f6427a7cd5cc64902d0329313432952f6b054e5c4b82c6530a176ce7f989169"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "sub_700_two",
+   "device": "cuda",
+   "fold": "2",
+   "model": "cnn",
+   "unit_id": "91b03398847a5a2847fd38acffae00d949a0bd148be261621437a4c3fc47fb9b"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GR",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "0",
+   "model": "wavlm_base_plus",
+   "unit_id": "e534a5dc6cc0d257df4171fb171d56e9c7793afdd632b67e03b1e4cdb825be9e"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RG",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "3",
+   "model": "hubert_base",
+   "unit_id": "568b722d7ed23501851773a5d46548e70e1a24ee8d5ed9038abbd2e4c1c57461"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "cremad_24_d4",
+   "device": "cuda",
+   "fold": "1",
+   "model": "hubert_base",
+   "unit_id": "af89c3d56f55fa2ba9aa0509514d2546f7ec00d3acf57fd6f5db7ed798fd17aa"
+  },
+  {
+   "arm": "HPO",
+   "audio_root": null,
+   "cell": "GR_hpo",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "0",
+   "model": "resnet_se",
+   "unit_id": "52972db2ea62b5cf323a1c37a2da1c45f897247046c1fd5ff233b090c0e73b21"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "sub_700_one",
+   "device": "cuda",
+   "fold": "3",
+   "model": "hubert_base",
+   "unit_id": "5297ea42250c47e361ce702e535a5d6cef633029bb9518f6a9f0264ac9ec9ca7"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "subesco_full",
+   "device": "cuda",
+   "fold": "1",
+   "model": "hubert_base",
+   "unit_id": "e223785e867a3b2407b177854248bc5341a0d63317882db4563b7a71ac4e3bbf"
+  },
+  {
+   "arm": "MECH2X2",
+   "audio_root": null,
+   "cell": "both_sib",
+   "corpus_level": "subesco_full",
+   "device": "cuda",
+   "fold": "9",
+   "model": "cnn",
+   "unit_id": "7222cf077970fc83fe02acafcf36ad3843984823ffde044688843f7d90006b8e"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "sub_700_two",
+   "device": "cuda",
+   "fold": "2",
+   "model": "cnn",
+   "unit_id": "b5db88b37d7d8c38c5210dcb44a198b557c1ab5a056d65c80cd5aa40e474163b"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "LOSO",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "14",
+   "model": "cnn",
+   "unit_id": "ed9afe2b52c1e96adc480cd7437f031b65d4f6bbd04a535be46f2f334e7cccae"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RG",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "2",
+   "model": "transformer",
+   "unit_id": "caee6a6582d5b6d36f66335180b78d40156152900457025b8aab3d80a8871a0b"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "P1RR",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "1",
+   "model": "cnn",
+   "unit_id": "3de1e8f9876d97d7b2b9d37819a8e57bf7f6023bf945ca183a51ef51f1d00173"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "subesco_980",
+   "device": "cuda",
+   "fold": "4",
+   "model": "hubert_base",
+   "unit_id": "f553fad6a94a168351f526c2068d03dc0ba66240aec53c417c5bc8684a3a5a0a"
+  },
+  {
+   "arm": "HPO",
+   "audio_root": null,
+   "cell": "GR_hpo",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "1",
+   "model": "resnet_se",
+   "unit_id": "d02acf5656de053b06992fd13cb9448e99b47746f4a38eacd74a409d8a0f7be3"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GR",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "2",
+   "model": "cnn",
+   "unit_id": "e5498d01da8fabb0be228728d7aeab41103006c5cac88d1d7569cf5809a92d11"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "ravdess",
+   "device": "cuda",
+   "fold": "4",
+   "model": "hubert_base",
+   "unit_id": "33eddad6b641761a01aaedb3e7e2cbd818ffc76cc00ead3d4f43b1dd78764a8d"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_24_d0",
+   "device": "cuda",
+   "fold": "4",
+   "model": "hubert_base",
+   "unit_id": "a51ef7bc2972d6a033f7533612c6f704e2e2fbf80fed0657238db302772a770c"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "subesco_980",
+   "device": "cuda",
+   "fold": "4",
+   "model": "transformer",
+   "unit_id": "f31aec43aea2985943b0bd08aef8e28fa35a56f9809786f7bfdf20de58c22b45"
+  },
+  {
+   "arm": "FT",
+   "audio_root": "E:/claudework_data/ICASSP2027-corpora/subesco/extracted",
+   "cell": "RR",
+   "corpus_level": "subesco_980",
+   "device": "cuda",
+   "fold": "0",
+   "model": "wavlm_base_plus_frozen_sr",
+   "unit_id": "201bcd0a6b4c449ea05a2b989205dcc2658cd82d5d8709001939aba6ca903172"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "2",
+   "model": "wav2vec2_base",
+   "unit_id": "a9fb4eebf2b4b51f884e484b3991c550161bd20851180c46cf299e346b837bf7"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_91m_d4",
+   "device": "cuda",
+   "fold": "2",
+   "model": "wav2vec2_base",
+   "unit_id": "f7ff84655e083be15456241f19861775468e29b7600db6e8d7554c68263ff6cc"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "sub_700_one",
+   "device": "cuda",
+   "fold": "2",
+   "model": "resnet_se",
+   "unit_id": "d63cfe8b4a04cb488e4ce674386c340f95ecba2faa5225038d2af02e1b893053"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_91m_d0",
+   "device": "cuda",
+   "fold": "2",
+   "model": "hubert_base",
+   "unit_id": "15d833b3769a31e77989ac7a6a1e7910a1298bbc1b3b976fee45fcf7971958c3"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_24_d0",
+   "device": "cuda",
+   "fold": "4",
+   "model": "cnn",
+   "unit_id": "8fb03abc0322d73ab3172289e4a996de8c54c143849bf830ac9ee75d29731d23"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GG",
+   "corpus_level": "sub_700_one",
+   "device": "cuda",
+   "fold": "3",
+   "model": "resnet_se",
+   "unit_id": "2eb876f9518e965dfa19e90b0b903a8a5a76b388dd9e097b5295d6997f6fb7e0"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "GR",
+   "corpus_level": "cremad",
+   "device": "cuda",
+   "fold": "1",
+   "model": "resnet_se",
+   "unit_id": "198e0a39b7be918657c6872953acd7b790580089ab1a7acfcb2fd3fbf661b42c"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_91m_d1",
+   "device": "cuda",
+   "fold": "1",
+   "model": "resnet_se",
+   "unit_id": "03ced44673e85c8ad9d0bef2040924708cfcd6a08f02c5036fc6fe8c6d5c01ba"
+  },
+  {
+   "arm": "CTRL",
+   "audio_root": null,
+   "cell": "RR",
+   "corpus_level": "cremad_24_d2",
+   "device": "cuda",
+   "fold": "1",
+   "model": "cnn",
+   "unit_id": "e136502f26ca645db291c89cba5827293637f5070c5e9ce388a213f8224a61c8"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "69",
+   "model": "ridge_a1_hubert_base",
+   "unit_id": "2d55ae64eb1288a5e48e31b8ff624489139d8ca98c1aac97dc7a47ede504990e"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "33",
+   "model": "ridge_a1_wav2vec2_base",
+   "unit_id": "716d14d8fd35c1e74431629a2fc8b24c01df3181b7a64a9dca5ae6f7e663c2ab"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "15",
+   "model": "ridge_a1_wav2vec2_base",
+   "unit_id": "8234acb43e3d3e656db959bf057d3c0b3c5fe5f12c58ff5a3a695e107d817c9a"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "18",
+   "model": "ridge_a1_hubert_base",
+   "unit_id": "7a27dea9ecb9266eacd59b3fe18e6675c3e0c1539807dde2cd5ba1fb96c7c3c6"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "44",
+   "model": "ridge_a1_wav2vec2_base",
+   "unit_id": "b068f0ea6b32723e99e64a081874608a944330e91a482e946203149593800529"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "56",
+   "model": "ridge_a1_hubert_base",
+   "unit_id": "393aa148dcf8bc14bc8a66b0064a12ef34ceeec33ae940fece0f96f0465bd78b"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "68",
+   "model": "ridge_a1_hubert_base",
+   "unit_id": "c49b7c3c4c035ef80e625fefd6db59adccac84a4b8d2dd50b968cf53ccb1947a"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "0",
+   "model": "ridge_a1_wavlm_base_plus",
+   "unit_id": "081fcb2d71b36bd36609a91095d3dfeb294bd36a1ad74f148cfeb9000f0faaec"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "20",
+   "model": "ridge_a1_wav2vec2_base",
+   "unit_id": "10dfd8a1c14f45d9c073033eaef65f2cd6612e7b2de7d2c3daabeb4393fd2c32"
+  },
+  {
+   "arm": "PROBECPU",
+   "audio_root": null,
+   "cell": "LOSOSUB",
+   "corpus_level": "cremad",
+   "device": "cpu",
+   "fold": "81",
+   "model": "ridge_a1_wavlm_base_plus",
+   "unit_id": "269485639f92be49592c1d31a221befa230bc7b062cf39ae767c9a8afdfa49eb"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "reason": "no_MD_or_XX_after_hygiene",
+  "records": [
+    {
+      "sample_index": "3212",
+      "corpus": "cremad",
+      "relative_path": "1040_ITH_SAD_X.wav",
+      "bytes": "87598",
+      "sha256": "6d369d9d261a003f018fbdeaadf0d9c1de15fb517e3cf6cebdb685c7ba0ef77b",
+      "speaker": "1040",
+      "sex": "",
+      "label": "sad",
+      "label_index": "5",
+      "sentence": "ITH",
+      "take": "X",
+      "intensity": "X"
+    }
+  ]
+}

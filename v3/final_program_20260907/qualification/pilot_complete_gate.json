@@ -1,0 +1,44 @@
+{
+  "schema": "ser-final-program-complete-gate-1",
+  "phase": "pilot",
+  "expected_units": 4,
+  "verified_units": 4,
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "lock_sha256": "3f3b01e815d864aa99ed2bb56dcde9c657e24eb1bce1e83f69b75e3efe4c1a23",
+  "done_sha256": {
+    "fpc_pilot_cremad_d00_f0_A": "a5c155b5ece3e2e91ac3b677e490d12a19a184e8dcf2a0cabd83976801b68161",
+    "fpc_pilot_cremad_d00_f0_B": "534adbfe3ed92961166f134195f5b0306039b2408399ca366c3ed2ec989e1931",
+    "fpc_pilot_subesco_d00_f0_A": "d8ac3443ab4407fa9add81dca2d700e193bc9772ee7385d5b569b5243d4f9e48",
+    "fpc_pilot_ravdess_d00_f0_A": "cb55be2b4532164c5feeb13161832ad35309ec004d707318d90bb3381efe2d67"
+  },
+  "artifacts_sha256": {
+    "fpc_pilot_cremad_d00_f0_A": {
+      "attempts/0001/checkpoint.pt": "5e0ac6ad06fa64059e7e9765526e0ce248934397489c548d3b4f1287ad6a9032",
+      "attempts/0001/history.json": "723fe1ec52529d0475f473ae0ec9c86b2513a270736d72daff4f239404a1d4d9",
+      "attempts/0001/predictions.npz": "74733ab55f17d3f52c6947aaa722e0cadd0ecd9102147301d70cc44e3c2feaf0",
+      "attempts/0001/receipt.json": "76aa78ed608fb186327541db7f002210b84423dba8144aaad479eb49bf218bf7"
+    },
+    "fpc_pilot_cremad_d00_f0_B": {
+      "attempts/0001/checkpoint.pt": "c1cc5b24272614a6fcd41777d55d74683456eb69e2c44ef81588c99009f0bbd8",
+      "attempts/0001/history.json": "7777b5f923df161e0da099f9f23c4d9c04c71056735d2463e63d198470cb2409",
+      "attempts/0001/predictions.npz": "552f7f697bb44ffa442f352aefa6b9a4a7026e0b299a91f528f68fd4ef449ca9",
+      "attempts/0001/receipt.json": "4a8e1c4b177556ef61f98fb0a3e3d39bc7e45e1a9a2727b0d738ed7525d3706b"
+    },
+    "fpc_pilot_subesco_d00_f0_A": {
+      "attempts/0001/checkpoint.pt": "fca951bb1b9b4f1c23b73eb93897dec4e0edff80313938d25f3c79a585d7989c",
+      "attempts/0001/history.json": "9dbbf82b0a81bbfaa6230181eec252c0d55b2387ebda8314c0c0fbae8a816212",
+      "attempts/0001/predictions.npz": "eb5aaeb6adc7960e4bd7fb0b517e739f64cf504f2fbef78f486c4b0645fbcb02",
+      "attempts/0001/receipt.json": "91cae1f6d62e9867cfe691bf66d7dcdd802d830cd45d8de21c4f21d48378ba53"
+    },
+    "fpc_pilot_ravdess_d00_f0_A": {
+      "attempts/0001/checkpoint.pt": "8435d01282d53770945ee7f6eefe37c1e5e6da3b5ac20feb9674171eb0e8a7cc",
+      "attempts/0001/history.json": "042edc82af671416f412da7a1489e32d5efc158cf8e77dfb49fa5e07d7b047e6",
+      "attempts/0001/predictions.npz": "6e78b1b9b2bb757b5f5d1e86a86af0cab5e43b64bb1ad731718ca3adf8933981",
+      "attempts/0001/receipt.json": "3364a5b915a5f3e4baff2d4662a1c4ff21079afa9ef989cf29daf052112c3df2"
+    }
+  },
+  "ledger_sha256": "f55641ade4d325569e28e371c5f14a23eb55389cc92c967bb63a629ce9a6e75d",
+  "completed_at": "2026-09-07T14:38:38.165364+00:00",
+  "scope": "Full declared phase including checkpoint hashes/structure, predictions, history and ledger; no outer scores",
+  "pass": true
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "English review-revision source preservation and PDF layout QA only; no new scientific recomputation or submission-compliance certification.",
+  "pass": true,
+  "checks": {
+    "old_main_sha_matches_copied_baseline": true,
+    "three_tables_exact_source_match": true,
+    "acknowledgments_ai_and_references_exact_source_match": true,
+    "style_exact_byte_copy": true,
+    "figure_reference_resolves": true,
+    "pdf_has_five_pages": true,
+    "references_begin_page_five_only": true,
+    "acknowledgments_on_technical_page_four": true,
+    "integrated_figure_dejavu_em_at_least_9pt": true,
+    "no_overfull_or_underfull_log": true
+  },
+  "page_count": 5,
+  "integrated_figure_dejavu_em_min_pt": 9.532710000000002,
+  "figure_glyph_count": 221,
+  "manual_visual_review": "All five 110-dpi Poppler PNGs inspected: no visible clipping, overlaps, broken tables, missing glyphs, or unreadable figure labels. Page 5 contains references only.",
+  "input_sha256": {
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\figure-revision-20260907\\english\\main.tex": "47306581e74c6ab1ae9707cc1f820234710cea971fbe7566cb7b4f97c786367d",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\review-revision-20260908\\english\\main.tex": "021fbeb933ef42debcd44e9f47074ce30247d38847d3fe516cc7e62dd6573cab",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\figure-revision-20260907\\english\\spconf.sty": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\review-revision-20260908\\english\\spconf.sty": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\figure-revision-20260907\\figures\\complete_epoch_curves.pdf": "71bfd8f50753ae7e97669cfe4470a7116ba9f69f73a1848ee65ddd9859272755"
+  },
+  "output_pdf": "D:\\SER-final-program-20260907\\paper_review_revision_20260908\\english_build\\main.pdf",
+  "output_pdf_sha256": "03baad407e3ca1abb297ab620f24fc2f1dd6c98a8206349afa1af7f5e065b670",
+  "qa_script_sha256": "2c11e4a209f9faf4157c8ce8f8eb356508253201036ee52f4352c334e544df83"
+}

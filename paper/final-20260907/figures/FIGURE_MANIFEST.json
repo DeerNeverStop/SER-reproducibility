@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-09-07T19:57:48.080215+00:00",
+  "program": "SER26-FINAL-CHECKPOINT-PROGRAM-1",
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "inputs": {
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\results.json": "13b07f8c825a8d43f1e62db1aa400b0a5c939c6ac193b2780960446e8dc55088",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\complete_gate.json": "19d8823f3281e283819a04d07ed358f7914d3f7118659d08b266fb321fb1013e",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\audits\\numeric_original.json": "e66a0d5e125d693503ad524bb9c3367c518a9a2cee6a289184ac33cf783740d8",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\plot_results.py": "cbd8981d787c21690e1bd2f171a6f84f4298d68cf5bc1caab8124634305ab617",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\contexts.csv": "d519696dfcbbfc76b5b68542888442d238ad54bbfbb5dcb6fcee815c0db51f16",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\draws.csv": "997da1eb503ad5dfea0b3e217059d53017dc40fc019248cfe25dca779c83cdb1",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\selected_epochs.csv": "d00c1f9a0e8d57282565d399ae5621d5a2f51df48ce40874507de3a51d0582fb",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\curves.csv": "f210fa9208d087c72aeb4156d6ea8523b7601a4cd6c4d16b6355462bab6541c4",
+    "D:\\SER-final-program-20260907\\postrun\\20260907T184308Z\\scores\\controls.csv": "b31d3e9e98d8b4ea6cd914d99c110a536d79f252c073683254f0f1790273d622"
+  },
+  "files": {
+    "checkpoint_rule_effects.png": {
+      "bytes": 91166,
+      "sha256": "e0fef37236d7ea44f53fd6d63b1bf56d57a99d520d02068d698b18dfd5ec7f86"
+    },
+    "checkpoint_rule_effects.pdf": {
+      "bytes": 20516,
+      "sha256": "f53f36e2f1ee2f236e9a22c4f9f0188b7f46c360e4f730b326f62b48f1a8c7a8"
+    },
+    "checkpoint_rule_effects.svg": {
+      "bytes": 69951,
+      "sha256": "4ef831ba305f14ba879140863695d76deb581f096b877e38e1898f8556ae8fc0"
+    },
+    "complete_epoch_curves.png": {
+      "bytes": 145955,
+      "sha256": "a03a735f1c7190f591044a1812cebb52d1913d681ff0f2ef719c897f04a2d951"
+    },
+    "complete_epoch_curves.pdf": {
+      "bytes": 32820,
+      "sha256": "57c6f4b0c115802e36c59c044165eda36964eab5cc937e22888991f0227cd1ae"
+    },
+    "complete_epoch_curves.svg": {
+      "bytes": 259010,
+      "sha256": "0e2f9e79609081be4fb8e63c2fa0136e2f437cd7c8fda621239a76aab5e1d86c"
+    },
+    "paired_role_controls.png": {
+      "bytes": 49672,
+      "sha256": "2058bb1fae82db8da1945480f8c51e5a80a6ade731409395a4c7b28d055a998b"
+    },
+    "paired_role_controls.pdf": {
+      "bytes": 17781,
+      "sha256": "ecf3f0356f0feed99a6f5b72b86f93d8e1e824a795fe5fee04a22e99a4ae750c"
+    },
+    "paired_role_controls.svg": {
+      "bytes": 36700,
+      "sha256": "672d53955d547dbaeb7a4e87855e2489b229f1f6c569400d53fc4d90bc221f61"
+    }
+  },
+  "new_fits": 0,
+  "new_tests": 0,
+  "figure_notes": {
+    "checkpoint_rule_effects": "Pointwise, not simultaneous, 95% t intervals; Holm across the fixed six tests. Grey ±1 pp is a prespecified practical reference, not an equivalence region or test.",
+    "complete_epoch_curves": "120 equally weighted main trajectories per native corpus; all 15 epochs, without smoothing or selected-epoch bins. No curve confidence intervals or additional hypothesis tests. Compact native canvas with an external legend; final embedded size and labels still require PDF and visual checks.",
+    "paired_role_controls": "24 CREMA-D fold-0 fixed-last matched frame pairs; whole training-group replacement, descriptive only. No confidence intervals or p values."
+  },
+  "visual_review_required": true,
+  "visual_review_performed_by_script": false
+}

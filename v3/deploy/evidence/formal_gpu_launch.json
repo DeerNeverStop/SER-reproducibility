@@ -1,0 +1,13 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5",
+  "phase": "formal_gpu_running",
+  "pid": 1902,
+  "started_at": "2026-09-05T19:30:42.758572+00:00",
+  "planned_units": 120,
+  "gate_sha256": "ca5a84977b4524bd27410a8ff869660d571b9bfd1058b064d128f0e0fc7e4122",
+  "deadline": "2026-09-06T14:30:00Z",
+  "output": "/workspace/ser-deploy/v3/deploy/work/B2_gpu",
+  "pilot_outputs_reused": false,
+  "scientific_scores_computed": false
+}

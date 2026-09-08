@@ -1,0 +1,1172 @@
+{
+  "schema": "ser-paper-pdf-qa-1",
+  "created_at": "2026-09-07T20:16:31.834983+00:00",
+  "visual_review_performed_by_this_script": false,
+  "pdfs": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\xie.pdf",
+      "kind": "english",
+      "checks": {
+        "size_below_5MB": {
+          "pass": true,
+          "maximum_exclusive_bytes": 5000000
+        },
+        "unencrypted": {
+          "pass": true
+        },
+        "all_fonts_embedded": {
+          "pass": true
+        },
+        "no_type3_fonts": {
+          "pass": true
+        },
+        "no_nonpainting_text_render_modes_detected": {
+          "pass": true,
+          "occurrences": [],
+          "limitation": "Modes 3 and 7 checked; transparency/occlusion are not exhaustively tested"
+        },
+        "pdf_resource_inspection_succeeded": {
+          "pass": true,
+          "errors": []
+        },
+        "at_most_five_pages": {
+          "pass": true,
+          "maximum": 5
+        },
+        "all_pages_US_letter": {
+          "pass": true
+        },
+        "expected_author": {
+          "pass": true,
+          "expected": "Tian Xie",
+          "panel_text": "VALIDATION SPEAKER EXPOSURE AND CHECKPOINT SELECTION\nIN SPEECH EMOTION RECOGNITION\nTian Xie\nUniversity of Toronto\ntianjack.xie@mail.utoronto.ca\nABSTRACT"
+        },
+        "expected_email": {
+          "pass": true,
+          "expected": "tianjack.xie@mail.utoronto.ca"
+        },
+        "expected_affiliation": {
+          "pass": true,
+          "expected": "University of Toronto"
+        },
+        "abstract_100_to_150_words": {
+          "pass": true,
+          "word_count": 132,
+          "method": "whitespace tokens containing letters/digits, after line-end dehyphenation",
+          "extracted_abstract": "Validation speaker separation and checkpoint selection are often discussed together, although validation optimism and common-test performance are different quantities. We compare seen- and unseen-speaker validation using cross-entropy (CE) or unweighted average recall (UAR) along identical WavLM training trajectories. A frozen protocol covers 360 main trajectories and 24 controls across three native emotionrecognition tasks. With CE selection, seen-speaker validation yields higher common-test UAR by 0.935 percentage points on CREMA-D and 2.247 on SUBESCO; the corresponding CE-versus-UAR interactions are 0.937 and 2.560 points. These four contrasts survive six-test Holm correction. RAVDESS estimates remain uncertain. Descriptive seenminus-unseen differences under UAR selection are close to zero, without establishing equivalence. Complete 15-epoch curves and whole-group controls constrain mechanistic interpretations. The results support criterion-dependent selection effects under this fixed program, rather than a universal advantage of speaker-independent validation.",
+          "region": [
+            52.425196850393704,
+            231.7513612,
+            300.20472440944883,
+            471.12618120000013
+          ]
+        },
+        "page5_references_only_heuristic": {
+          "pass": true,
+          "first_left_column_line": "7. REFERENCES",
+          "citation_labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "forbidden_nonreference_headings": [],
+          "limitation": "Column-order heading/citation checks cannot prove every line is bibliographic content"
+        },
+        "no_pending_author_review_placeholders": {
+          "pass": true,
+          "matches": []
+        },
+        "no_text_outside_physical_pages": {
+          "pass": true,
+          "count": 0,
+          "examples": []
+        },
+        "text_inside_spconf_layout_box": {
+          "pass": true,
+          "bounds_pt": [
+            54.425196850393704,
+            72,
+            558.992125984252,
+            721.1338582677166
+          ],
+          "tolerance_pt": 2.0,
+          "vertical_rule": "Glyph top must fit; final baseline must fit textheight; font descenders may extend below that baseline",
+          "count": 0,
+          "examples": []
+        },
+        "no_printed_footer_page_numbers_heuristic": {
+          "pass": true,
+          "candidates": [],
+          "limitation": "Checks standalone numeral/page labels only in the bottom 45pt strip"
+        },
+        "input_unchanged_during_inspection": {
+          "pass": true
+        }
+      },
+      "manual_review": [
+        "Root must inspect every rendered page; this report is not visual approval.",
+        "Visually confirm all page 5 content is references; automatic checks are heuristic.",
+        "Confirm the responsibility statement is truthful; text matching cannot certify author review or consent.",
+        "Inspect gutter-crossing words: full-width titles/tables/figures may be legitimate; do not treat candidates as automatic violations."
+      ],
+      "sha256": "1c45d1d94582926f6f3122986c6e50e759db69ebc723e630bd6bd4500af93e5c",
+      "size_bytes": 89538,
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1",
+          "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F3",
+          "name": "/TQTHRL+NimbusRomNo9L-MediItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F4",
+          "name": "/YEUUOC+NewTXMI7",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F7",
+          "name": "/VDVGTR+TeXGyreTermesX-Regular",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F8",
+          "name": "/CAFSZL+txsys",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F10",
+          "name": "/DDIEWW+NewTXMI",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F6",
+          "name": "/AKHCZK+txmiaX",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F10",
+          "name": "/DDIEWW+NewTXMI",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F7",
+          "name": "/VDVGTR+TeXGyreTermesX-Regular",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F8",
+          "name": "/CAFSZL+txsys",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F6",
+          "name": "/AKHCZK+txmiaX",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F4",
+          "name": "/YEUUOC+NewTXMI7",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F8",
+          "name": "/CAFSZL+txsys",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F7",
+          "name": "/VDVGTR+TeXGyreTermesX-Regular",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F10",
+          "name": "/DDIEWW+NewTXMI",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//Fm0//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1",
+          "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F12",
+          "name": "/FKPJSN+NimbusMonL-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        }
+      ],
+      "page_count": 5,
+      "page4_author_responsibility_lines": [
+        "tables. These systems are not authors; the named human au-",
+        "thor is responsible for reviewing the evidence and approving"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            96.369,
+            559.001,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "9.96": 3778,
+            "11.96": 128
+          }
+        },
+        {
+          "page": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            72.0,
+            558.998,
+            724.206
+          ],
+          "font_size_character_counts": {
+            "7.27": 45,
+            "8.97": 301,
+            "9.96": 4092
+          }
+        },
+        {
+          "page": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            78.864,
+            558.998,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "7.27": 13,
+            "8.97": 442,
+            "9.96": 3174
+          }
+        },
+        {
+          "page": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            80.744,
+            558.998,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "2.94": 1,
+            "3.82": 1,
+            "4.13": 2,
+            "4.15": 2,
+            "5.52": 1,
+            "6.13": 1,
+            "6.27": 1,
+            "6.49": 2,
+            "6.51": 1,
+            "7.24": 1,
+            "7.36": 1,
+            "7.75": 1,
+            "7.92": 1,
+            "9.53": 57,
+            "9.96": 2693,
+            "10.06": 1,
+            "10.59": 25,
+            "11.65": 105
+          }
+        },
+        {
+          "page": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            59.407,
+            74.042,
+            556.437,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "9.96": 2522
+          }
+        }
+      ],
+      "gutter_crossing_word_candidates": [
+        {
+          "page": 3,
+          "text": "pp,",
+          "x0": 296.823,
+          "top": 81.026,
+          "x1": 309.277,
+          "bottom": 90.989
+        },
+        {
+          "page": 3,
+          "text": "pointwise",
+          "x0": 312.515,
+          "top": 81.026,
+          "x1": 351.259,
+          "bottom": 90.989
+        },
+        {
+          "page": 3,
+          "text": "Pointwise",
+          "x0": 298.723,
+          "top": 108.171,
+          "x1": 334.095,
+          "bottom": 117.137
+        },
+        {
+          "page": 3,
+          "text": "[0.287,",
+          "x0": 313.177,
+          "top": 124.132,
+          "x1": 338.579,
+          "bottom": 133.098
+        },
+        {
+          "page": 3,
+          "text": "[0.210,",
+          "x0": 313.177,
+          "top": 135.091,
+          "x1": 338.579,
+          "bottom": 144.057
+        },
+        {
+          "page": 3,
+          "text": "[0.945,",
+          "x0": 313.177,
+          "top": 146.049,
+          "x1": 338.579,
+          "bottom": 155.016
+        },
+        {
+          "page": 3,
+          "text": "[1.103,",
+          "x0": 313.177,
+          "top": 157.008,
+          "x1": 338.579,
+          "bottom": 165.975
+        },
+        {
+          "page": 3,
+          "text": "[-0.198,",
+          "x0": 310.192,
+          "top": 167.967,
+          "x1": 338.579,
+          "bottom": 176.934
+        },
+        {
+          "page": 3,
+          "text": "[-0.633,",
+          "x0": 310.192,
+          "top": 178.926,
+          "x1": 338.579,
+          "bottom": 187.893
+        },
+        {
+          "page": 3,
+          "text": "policies",
+          "x0": 300.703,
+          "top": 212.729,
+          "x1": 331.696,
+          "bottom": 222.691
+        },
+        {
+          "page": 3,
+          "text": "Seen",
+          "x0": 295.364,
+          "top": 239.873,
+          "x1": 312.795,
+          "bottom": 248.84
+        },
+        {
+          "page": 3,
+          "text": "57.154",
+          "x0": 308.948,
+          "top": 255.834,
+          "x1": 333.606,
+          "bottom": 264.8
+        },
+        {
+          "page": 3,
+          "text": "47.426",
+          "x0": 308.948,
+          "top": 266.793,
+          "x1": 333.606,
+          "bottom": 275.759
+        },
+        {
+          "page": 3,
+          "text": "32.943",
+          "x0": 308.948,
+          "top": 277.752,
+          "x1": 333.606,
+          "bottom": 286.718
+        },
+        {
+          "page": 4,
+          "text": "15",
+          "x0": 285.768,
+          "top": 80.744,
+          "x1": 300.59,
+          "bottom": 92.395
+        },
+        {
+          "page": 4,
+          "text": "epochs",
+          "x0": 304.3,
+          "top": 80.744,
+          "x1": 345.86,
+          "bottom": 92.395
+        },
+        {
+          "page": 4,
+          "text": "individual",
+          "x0": 246.378,
+          "top": 94.73,
+          "x1": 302.962,
+          "bottom": 106.381
+        },
+        {
+          "page": 4,
+          "text": "outer-test",
+          "x0": 306.677,
+          "top": 94.73,
+          "x1": 363.539,
+          "bottom": 106.381
+        },
+        {
+          "page": 4,
+          "text": "SUBESCO",
+          "x0": 266.905,
+          "top": 113.905,
+          "x1": 322.899,
+          "bottom": 125.556
+        },
+        {
+          "page": 4,
+          "text": "5",
+          "x0": 297.208,
+          "top": 235.067,
+          "x1": 303.271,
+          "bottom": 244.6
+        },
+        {
+          "page": 4,
+          "text": "Epoch",
+          "x0": 311.73,
+          "top": 248.832,
+          "x1": 344.172,
+          "bottom": 259.424
+        },
+        {
+          "page": 4,
+          "text": "Unseen",
+          "x0": 289.908,
+          "top": 270.874,
+          "x1": 325.657,
+          "bottom": 280.407
+        },
+        {
+          "page": 4,
+          "text": "are",
+          "x0": 300.686,
+          "top": 303.144,
+          "x1": 312.85,
+          "bottom": 313.107
+        },
+        {
+          "page": 4,
+          "text": "validation,",
+          "x0": 300.363,
+          "top": 315.099,
+          "x1": 342.465,
+          "bottom": 325.062
+        }
+      ],
+      "failed_checks": [],
+      "status": "machine_checks_pass_manual_review_required"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\explainer.pdf",
+      "kind": "chinese",
+      "checks": {
+        "size_below_5MB": {
+          "pass": true,
+          "maximum_exclusive_bytes": 5000000
+        },
+        "unencrypted": {
+          "pass": true
+        },
+        "all_fonts_embedded": {
+          "pass": true
+        },
+        "no_type3_fonts": {
+          "pass": true
+        },
+        "no_nonpainting_text_render_modes_detected": {
+          "pass": true,
+          "occurrences": [],
+          "limitation": "Modes 3 and 7 checked; transparency/occlusion are not exhaustively tested"
+        },
+        "pdf_resource_inspection_succeeded": {
+          "pass": true,
+          "errors": []
+        },
+        "no_text_outside_physical_pages": {
+          "pass": true,
+          "count": 0,
+          "examples": []
+        },
+        "input_unchanged_during_inspection": {
+          "pass": true
+        }
+      },
+      "manual_review": [
+        "Root must inspect every rendered page; this report is not visual approval."
+      ],
+      "sha256": "81219748f97037a1a53494d5b6000c54c570d75fd51b8a6b7d400c74db8edd04",
+      "size_bytes": 378697,
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1",
+          "name": "/BKGLNT+DejaVuSans",
+          "subtype": "/Type0",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        }
+      ],
+      "page_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            548.5,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "10.0": 66,
+            "11.5": 1012,
+            "16.0": 5,
+            "21.0": 21
+          }
+        },
+        {
+          "page": 2,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            542.75,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 39,
+            "9.7": 69,
+            "11.5": 1082,
+            "12.5": 17,
+            "16.0": 5
+          }
+        },
+        {
+          "page": 3,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            548.5,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 1052,
+            "12.0": 93,
+            "12.5": 11,
+            "16.0": 3
+          }
+        },
+        {
+          "page": 4,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 76,
+            "9.7": 364,
+            "11.5": 658,
+            "12.5": 12
+          }
+        },
+        {
+          "page": 5,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "2.84": 1,
+            "3.69": 1,
+            "3.99": 2,
+            "4.01": 2,
+            "5.33": 1,
+            "5.92": 1,
+            "6.06": 1,
+            "6.27": 2,
+            "6.29": 1,
+            "7.0": 1,
+            "7.11": 1,
+            "7.49": 1,
+            "7.65": 1,
+            "8.0": 49,
+            "9.21": 57,
+            "9.5": 97,
+            "9.72": 1,
+            "10.23": 25,
+            "11.25": 105,
+            "11.5": 785,
+            "12.5": 12,
+            "16.0": 3
+          }
+        },
+        {
+          "page": 6,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 1023,
+            "12.5": 24,
+            "16.0": 12
+          }
+        },
+        {
+          "page": 7,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 1924,
+            "16.0": 4
+          }
+        },
+        {
+          "page": 8,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 632
+          }
+        }
+      ],
+      "gutter_crossing_word_candidates": [],
+      "failed_checks": [],
+      "status": "machine_checks_pass_manual_review_required"
+    }
+  ],
+  "machine_checks_pass": true
+}

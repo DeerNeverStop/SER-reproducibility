@@ -1,0 +1,13 @@
+{
+ "base_commit": "c0c0bebfb1509b9606e73b806f5b303fe4c26546",
+ "historical_status": "immutable; N14 is superseded for interpretation, not rewritten",
+ "pilot_use": "design only; excluded from N14R",
+ "tree_object_ids": {
+  "paper/v2": "195eda6c85d6ea850d98b9e381fc977e5d88635a",
+  "v2/evidence/main/results": "04c1c8de0ca4319fc17915ad6c106dfee9f7b8d1",
+  "v2/plan_rc2": "ec02d81cc59261ae4a771ee1ccdb77c4f32aa176",
+  "v2/registry": "cb62d32399a477756083d251789677d2721052c5",
+  "v2/ser_v2": "d6efe220f2abde69703b84da73d46d8f5db6c533"
+ },
+ "schema": "ser26-n14r-historical-base-1"
+}

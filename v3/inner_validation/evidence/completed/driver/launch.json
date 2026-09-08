@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-09-07T00:44:02.020031+00:00",
+  "source_sha256": {
+    "cloud.py": "29dbf94de53c9799a8fa557d9d178e7b16fa4bc4c55131d8f734e95bad682a2c",
+    "formal_driver.py": "82762f1c48d7a6551d95210a62b7f34c87c555ebd157deb2be977aaee5f9b837",
+    "restore_first.py": "f0a323f4a42786b9ccd84d38b033aec35b75dd21b5776d6d798bb6b0211451df",
+    "launch_local.py": "16fc3db44bb587eb43163bd03b26af6de28235558d85c233fd23a9bba48b1fba"
+  },
+  "arguments": [
+    "--start-batch",
+    "0",
+    "--end-batch",
+    "60"
+  ]
+}

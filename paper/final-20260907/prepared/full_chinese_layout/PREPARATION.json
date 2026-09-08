@@ -1,0 +1,29 @@
+{
+  "scope": "WORKING full Chinese layout; no formal outcomes or final submission claim",
+  "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\prepared\\full_corresponding_draft_zh.md",
+  "source_sha256": "cec7c63c7f346ee344b3e44721b0c75995c98057934458ca4f7cbe47a66bd9e7",
+  "english": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\prepared\\page_budget\\SYNTHETIC_main.tex",
+  "english_sha256": "4e50433f2128604c5c5f0ea0a8e87161ace3ef0584f768fde50adb999175363a",
+  "render_source": "D:\\SER-final-program-20260907\\paper_layout_checks\\WORKING_full_chinese_v2\\working_full_zh.md",
+  "render_source_sha256": "1e69ed78ca32c611dc66b174d10f9c012056b15d445efa10a26587b980868742",
+  "reference_key_to_number": {
+    "cawley": 1,
+    "atmaja": 2,
+    "antoniou": 3,
+    "serab": 4,
+    "zielonka": 5,
+    "ibrahim": 6,
+    "kumari": 7,
+    "artifact": 8,
+    "ravdess": 9,
+    "cremad": 10,
+    "subesco": 11,
+    "wavlm": 12
+  },
+  "formal_results_read": false,
+  "results_cells_remain_placeholders": true,
+  "actual_figure_included": false,
+  "metadata_title_must_match_first_heading": true,
+  "previous_render_source_sha256": "7944438b41c806dd56f4ef54f4f6d8af38c2ef8f2d4db799b1337daaa76c9eea",
+  "revision": "Shortened equivalent final sentence to remove an isolated two-character line on page 5; no scientific change"
+}

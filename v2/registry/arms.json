@@ -1,0 +1,164 @@
+{
+ "arms": {
+  "CTRL": {
+   "cap": 16.0,
+   "description": "outer x inner protocol factorial; scratch models + frozen probes; panels; crossings; LOSO pair; P1 reconciliation",
+   "kind": "gpu"
+  },
+  "FT": {
+   "cap": 26.0,
+   "description": "partial fine-tune of WavLM-base+ vs frozen same-regime comparator, RR/GG, r=0 partitions",
+   "kind": "gpu"
+  },
+  "HPO": {
+   "cap": 5.0,
+   "description": "8-config hyperparameter search on random vs grouped inner validation with fixed speaker-exclusive outer test (GR/GG) plus RR descriptor cell; ResNet-SE",
+   "kind": "gpu"
+  },
+  "MECH2X2": {
+   "cap": 7.0,
+   "description": "speaker-overlap x prompt-overlap checkerboard (two prompt-group rotations) with matched training size; sibling condition; half-exposure rotations",
+   "kind": "gpu"
+  },
+  "MECHID": {
+   "cap": 0.5,
+   "description": "inference-only: speaker-ID probes per checkpoint on a common panel; nearest-neighbour composition",
+   "kind": "gpu"
+  },
+  "PREP": {
+   "cap": 3.5,
+   "description": "manifests, log-mel cache (CPU), 13-state SSL cache for 3 encoders, split tables + assertions, synthetic dry run + mutation battery, off-family timing probe",
+   "gpu_hours_plan": 3.0,
+   "kind": "infrastructure"
+  },
+  "PROBECPU": {
+   "cap": 0.0,
+   "description": "Ridge factorial on 13-state features: head x partition family x layer x 20 draws; LOSO / Group5 / LOSO-sub TOST",
+   "kind": "cpu"
+  },
+  "STAT": {
+   "cap": 0.5,
+   "description": "rolling 1%+1% bitwise retrain checks; one-shot scoring; independent verifier replay",
+   "gpu_hours_plan": 0.5,
+   "kind": "gpu"
+  }
+ },
+ "corpus_levels": {
+  "cremad": {
+   "base": "cremad",
+   "n_classes": 6,
+   "n_spk": 91,
+   "n_utt": 7442,
+   "panel": null,
+   "role": "family"
+  },
+  "cremad_24": {
+   "base": "cremad",
+   "draws": 5,
+   "n_classes": 6,
+   "n_spk": 24,
+   "n_utt": 1963,
+   "panel": "speakers_24",
+   "role": "secondary"
+  },
+  "cremad_91m": {
+   "base": "cremad",
+   "draws": 5,
+   "n_classes": 6,
+   "n_spk": 91,
+   "n_utt": 1963,
+   "panel": "utterance_matched_91",
+   "role": "secondary"
+  },
+  "ravdess": {
+   "base": "ravdess",
+   "n_classes": 8,
+   "n_spk": 24,
+   "n_utt": 1440,
+   "panel": null,
+   "role": "family"
+  },
+  "sub_1400_one": {
+   "base": "subesco",
+   "n_classes": 7,
+   "n_spk": 20,
+   "n_utt": 1400,
+   "panel": "one_take_all_prompts",
+   "role": "secondary"
+  },
+  "sub_700_one": {
+   "base": "subesco",
+   "n_classes": 7,
+   "n_spk": 20,
+   "n_utt": 700,
+   "panel": "700_cells_one_take",
+   "role": "secondary"
+  },
+  "sub_700_two": {
+   "base": "subesco",
+   "n_classes": 7,
+   "n_spk": 20,
+   "n_utt": 1400,
+   "panel": "700_cells_two_takes",
+   "role": "secondary"
+  },
+  "subesco_980": {
+   "base": "subesco",
+   "definition": "prompts {1,2,3,6,8,9,10} x one take per speaker x sentence x emotion cell; the pinned S3 release_v10 selected manifest (sha256 in corpora.json) is authoritative when present",
+   "n_classes": 7,
+   "n_spk": 20,
+   "n_utt": 980,
+   "panel": "subesco_980",
+   "role": "family"
+  },
+  "subesco_full": {
+   "base": "subesco",
+   "n_classes": 7,
+   "n_spk": 20,
+   "n_utt": 7000,
+   "panel": null,
+   "role": "secondary"
+  }
+ },
+ "cost_model": {
+  "frozen_same_regime_fraction": 0.3333333333333333,
+  "ft_fold_min_planning": {
+   "cremad": 36.0,
+   "ravdess": 12.0,
+   "subesco_980": 9.0
+  },
+  "model_mult": {
+   "cnn": 1.0,
+   "resnet_se": 1.4,
+   "transformer": 1.1
+  },
+  "probe_unit_sec": 3.2,
+  "ridge_unit_sec": 0.07,
+  "sec_per_train_utt": 0.0095
+ },
+ "probe_models": [
+  "hubert_base",
+  "wavlm_base_plus",
+  "wav2vec2_base"
+ ],
+ "program_cap_gpu_hours": 50.0,
+ "program_version": "2.0.0-rc1",
+ "replicates": [
+  0,
+  1,
+  2
+ ],
+ "scratch_models": [
+  "cnn",
+  "resnet_se",
+  "transformer"
+ ],
+ "truncation_order": [
+  "FT: cremad seed 1 (fine-tune and frozen comparator)          [conditional unit; first to go]",
+  "HPO: ravdess cells (all)",
+  "MECH2X2: replicate r=1 on cremad and subesco_full",
+  "CTRL: cremad_24 / cremad_91m draws 3-4",
+  "FT: ravdess and subesco_980 frozen-comparator seed 1",
+  "CTRL: transformer on subesco_980 replicate r=2"
+ ]
+}

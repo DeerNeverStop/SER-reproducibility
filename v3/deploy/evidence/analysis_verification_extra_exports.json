@@ -1,0 +1,32 @@
+{
+  "artifact_sha256": {
+    "v3\\deploy\\results\\A\\N5.csv": "6bce3daf58986535666c9ece9832c0b983e0d6691f8355e76a0f3b67ec41a84d",
+    "v3\\deploy\\results\\A\\endpoints.json": "e06e92e72c207c2d1f8d363b2435e467a941367f52dfc60f61fdd4e829938bd4",
+    "v3\\deploy\\results\\A\\harm_share.csv": "34751148f6777db6176aae30fb392419190ef5a869305e947947d6edfc4272b7",
+    "v3\\deploy\\results\\A\\primary_N3.csv": "bc5569847503d723cb67bcec8aad9387b754961b9431ba9dd43816173f1887dd",
+    "v3\\deploy\\results\\A\\primary_all9.csv": "bc5569847503d723cb67bcec8aad9387b754961b9431ba9dd43816173f1887dd",
+    "v3\\deploy\\results\\A\\recall.csv": "821a0f3e521fde97142749a406eddae5478118bb7ba13b6eb16067da8672b8ee",
+    "v3\\deploy\\results\\A\\secondary_N5_all9.csv": "6bce3daf58986535666c9ece9832c0b983e0d6691f8355e76a0f3b67ec41a84d",
+    "v3\\deploy\\results\\B2\\units.csv": "4ec6fbadb376363edf1825dd3b2ea08f6f2fe1f3d8a2d12cfc4d53380e7b17a0"
+  },
+  "checks": {
+    "A_N5.csv_numeric": 30,
+    "A_harm_numeric": 1440,
+    "A_primary_N3.csv_numeric": 387,
+    "A_primary_all9.csv_numeric": 387,
+    "A_raw_files_for_absolute_recall": 135,
+    "A_recall_difference_identity": 78,
+    "A_recall_export_numeric": 546,
+    "A_secondary_N5_all9.csv_numeric": 30,
+    "B2_unit_export_numeric": 14430
+  },
+  "compared": 17328,
+  "finished_at": "2026-09-05T21:58:28.775369+00:00",
+  "kind": "independent-extra-export-verification",
+  "method": "A absolute class recalls reconstructed from raw draw/repeat/speaker counts; A presentation exports mapped to already independently accepted endpoints; B2 unit CSV recalculated separately for every raw val/test pair. Frozen sources and raw outputs unmodified.",
+  "pass": true,
+  "program": "SER26-DEPLOY-2",
+  "source_script_path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-deploy\\v3\\deploy\\analysis\\deploy2_export_audit.py",
+  "source_script_sha256": "a07d7241111c629204fa47bbf010a35f1c85d3923eb896b577293adf311d66ef",
+  "started_at": "2026-09-05T21:58:13.633146+00:00"
+}

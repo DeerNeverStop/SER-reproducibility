@@ -1,0 +1,66 @@
+{
+  "program": "SER26-VALIDATION-REPORT-EXPLORATORY-1",
+  "status": "complete",
+  "scope": "post-result exploratory; fixed archived last15 predictions; no new inference",
+  "plan_sha256": "1520d5ddb88b14aeb4309d5e342110b9abd7024457695b686d2faa9fc1a3d724",
+  "started_at": "2026-09-07T10:55:24.817538+00:00",
+  "finished_at": "2026-09-07T10:55:31.141846+00:00",
+  "wall_seconds": 6.324305500020273,
+  "python": "3.13.9",
+  "numpy": "2.4.6",
+  "new_gpu_training_runs": 0,
+  "new_model_inference_runs": 0,
+  "original_trajectories": 480,
+  "means": {
+    "seen__selection_uar": 59.293981481481474,
+    "seen__report_seen_uar": 57.75752314814815,
+    "seen__report_unseen_uar": 54.82060185185185,
+    "seen__test_uar": 53.96971020826155,
+    "seen__reuse_pp": 1.5364583333333333,
+    "seen__report_gap_pp": 3.787812939886598,
+    "seen__apparent_gap_pp": 5.3242712732199315,
+    "seen__report_exposure_pp": 2.9369212962962963,
+    "unseen__selection_uar": 56.218171296296305,
+    "unseen__report_seen_uar": 57.81539351851851,
+    "unseen__report_unseen_uar": 54.823495370370374,
+    "unseen__test_uar": 54.2035743965891,
+    "unseen__reuse_pp": 1.3946759259259258,
+    "unseen__report_gap_pp": 0.6199209737812681,
+    "unseen__apparent_gap_pp": 2.0145968997071946,
+    "unseen__report_exposure_pp": 2.9918981481481475,
+    "apparent_contrast_pp": 3.309674373512737,
+    "reuse_contrast_pp": 0.1417824074074072,
+    "report_gap_contrast_pp": 3.16789196610533,
+    "test_contrast_pp": -0.23386418832755265,
+    "config_agreement": 0.5041666666666667,
+    "fixed_seen_reuse_pp": 0.0,
+    "fixed_unseen_reuse_pp": 0.0,
+    "fixed_report_exposure_pp": 2.8385416666666665,
+    "fixed_test_difference_pp": 0.0
+  },
+  "draw_count": 24,
+  "draw_aggregation": "directions then five folds then 24 draws, equal weights",
+  "config_counts": {
+    "seen": {
+      "0": 42,
+      "1": 31,
+      "2": 112,
+      "3": 55
+    },
+    "unseen": {
+      "0": 43,
+      "1": 28,
+      "2": 116,
+      "3": 53
+    }
+  },
+  "checks": {
+    "source_and_archive_unchanged": true,
+    "uar_replay_values": 2400,
+    "uar_replay_max_abs_pp": 1.4210854715202004e-14,
+    "fixed_historical_exposure_pp": 2.8385416666666674,
+    "fixed_identities_pass": true
+  },
+  "statistical_tests_performed": false,
+  "confidence_intervals_computed": false
+}

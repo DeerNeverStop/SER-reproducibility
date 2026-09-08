@@ -1,0 +1,542 @@
+{
+  "schema": "ser-diag-claim-decomposition-1",
+  "created_at_utc": "2026-09-07T12:38:26.121604+00:00",
+  "pass": true,
+  "scope": "CSV-only descriptive algebra and explicitly hypothetical sensitivity; no new formal inference",
+  "input_files": {
+    "metrics": {
+      "path": "v3/validation_reporting/evidence/analysis/metrics.csv",
+      "sha256": "6f304692710d188874efd74b5a2ac2b3cb13fbaa8b1a5c93e3d9a746c4f37be3",
+      "bytes": 88346
+    },
+    "episodes": {
+      "path": "v3/validation_reporting/evidence/analysis/episodes.csv",
+      "sha256": "2235c7873b43bc120f5e489af43254d79ec7e6bcb66fa82de5bfc8608c24b111",
+      "bytes": 77465
+    },
+    "results": {
+      "path": "v3/validation_reporting/evidence/analysis/results.json",
+      "sha256": "da0e2c20c09fd5eb91e355b49e84f9fb66e01deaee34998b631f14d6bac2565a",
+      "bytes": 2312
+    },
+    "old_full_metrics": {
+      "path": "v3/inner_validation/reports/results/pred_metrics.csv",
+      "sha256": "7b2a0a087c8aa48fbd52dfe606b97b2686c9d64e1fb7a9a34c07cf22b6eeb7d1",
+      "bytes": 317349
+    },
+    "claude_review": {
+      "path": "v3/CLAUDE_EXPERIMENT_REVIEW_20260907.md",
+      "sha256": "3896c54df304633d676b709db86ed24316b261c1d910b6c0798035d9f459bea8",
+      "bytes": 22909
+    }
+  },
+  "script_sha256": "38f160c351dd87c437449b026e1f43262064d2c2a88e5a860967860c5d3219ad",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.4.6"
+  },
+  "coverage": {
+    "metrics": 2400,
+    "half_metrics": 1920,
+    "old_last_full_metrics": 960,
+    "episodes": 480,
+    "contexts": 120,
+    "directions": 2,
+    "exact_full_half_equalities": 960,
+    "self_checks": 4
+  },
+  "formula": "E[sum_c I_c D_c] = sum_c E[I_c] E[D_c] + sum_c Cov(I_c,D_c)",
+  "covariance_denominator": "finite empirical population n=240, not sample n-1",
+  "decomposition": {
+    "seen": {
+      "episodes": 240,
+      "actual_cell_weighted_exposure": {
+        "pp": 2.9369212962962963,
+        "exact_fraction": "5075/1728"
+      },
+      "product_global_frequency_times_global_config_mean": {
+        "pp": 2.9349440586419755,
+        "exact_fraction": "60859/20736"
+      },
+      "sum_covariance": {
+        "pp": 0.0019772376543209878,
+        "exact_fraction": "41/20736"
+      },
+      "per_config": [
+        {
+          "config_index": 0,
+          "selected_count": 42,
+          "selection_probability": 0.175,
+          "global_fixed_config_exposure": {
+            "pp": 2.4681712962962963,
+            "exact_fraction": "4265/1728"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.628968253968254,
+            "exact_fraction": "1325/504"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.4600694444444444,
+            "exact_fraction": "265/576"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.43192997685185186,
+            "exact_fraction": "5971/13824"
+          },
+          "covariance_contribution": {
+            "pp": 0.02813946759259259,
+            "exact_fraction": "389/13824"
+          }
+        },
+        {
+          "config_index": 1,
+          "selected_count": 31,
+          "selection_probability": 0.12916666666666668,
+          "global_fixed_config_exposure": {
+            "pp": 2.6649305555555554,
+            "exact_fraction": "1535/576"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.3745519713261647,
+            "exact_fraction": "1325/558"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.30671296296296297,
+            "exact_fraction": "265/864"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.34422019675925924,
+            "exact_fraction": "9517/27648"
+          },
+          "covariance_contribution": {
+            "pp": -0.037507233796296294,
+            "exact_fraction": "-1037/27648"
+          }
+        },
+        {
+          "config_index": 2,
+          "selected_count": 112,
+          "selection_probability": 0.4666666666666667,
+          "global_fixed_config_exposure": {
+            "pp": 3.232060185185185,
+            "exact_fraction": "5585/1728"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 3.193204365079365,
+            "exact_fraction": "12875/4032"
+          },
+          "actual_joint_contribution": {
+            "pp": 1.490162037037037,
+            "exact_fraction": "2575/1728"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 1.5082947530864197,
+            "exact_fraction": "7819/5184"
+          },
+          "covariance_contribution": {
+            "pp": -0.018132716049382717,
+            "exact_fraction": "-47/2592"
+          }
+        },
+        {
+          "config_index": 3,
+          "selected_count": 55,
+          "selection_probability": 0.22916666666666666,
+          "global_fixed_config_exposure": {
+            "pp": 2.8385416666666665,
+            "exact_fraction": "545/192"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.967171717171717,
+            "exact_fraction": "1175/396"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.6799768518518519,
+            "exact_fraction": "1175/1728"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.6504991319444444,
+            "exact_fraction": "5995/9216"
+          },
+          "covariance_contribution": {
+            "pp": 0.02947771990740741,
+            "exact_fraction": "815/27648"
+          }
+        }
+      ],
+      "claude_reported_prediction_pp": 2.935,
+      "actual_minus_claude_reported_prediction_pp": 0.0019212962962962266,
+      "exact_product_minus_claude_reported_prediction_pp": -5.594135802455824e-05,
+      "actual_reuse": {
+        "pp": 1.5364583333333333,
+        "exact_fraction": "295/192"
+      }
+    },
+    "unseen": {
+      "episodes": 240,
+      "actual_cell_weighted_exposure": {
+        "pp": 2.9918981481481484,
+        "exact_fraction": "2585/864"
+      },
+      "product_global_frequency_times_global_config_mean": {
+        "pp": 2.9421296296296298,
+        "exact_fraction": "1271/432"
+      },
+      "sum_covariance": {
+        "pp": 0.04976851851851852,
+        "exact_fraction": "43/864"
+      },
+      "per_config": [
+        {
+          "config_index": 0,
+          "selected_count": 43,
+          "selection_probability": 0.17916666666666667,
+          "global_fixed_config_exposure": {
+            "pp": 2.4681712962962963,
+            "exact_fraction": "4265/1728"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.406330749354005,
+            "exact_fraction": "3725/1548"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.43113425925925924,
+            "exact_fraction": "745/1728"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.44221402391975306,
+            "exact_fraction": "36679/82944"
+          },
+          "covariance_contribution": {
+            "pp": -0.011079764660493827,
+            "exact_fraction": "-919/82944"
+          }
+        },
+        {
+          "config_index": 1,
+          "selected_count": 28,
+          "selection_probability": 0.11666666666666667,
+          "global_fixed_config_exposure": {
+            "pp": 2.6649305555555554,
+            "exact_fraction": "1535/576"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.6041666666666665,
+            "exact_fraction": "125/48"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.3038194444444444,
+            "exact_fraction": "175/576"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.3109085648148148,
+            "exact_fraction": "2149/6912"
+          },
+          "covariance_contribution": {
+            "pp": -0.007089120370370371,
+            "exact_fraction": "-49/6912"
+          }
+        },
+        {
+          "config_index": 2,
+          "selected_count": 116,
+          "selection_probability": 0.48333333333333334,
+          "global_fixed_config_exposure": {
+            "pp": 3.232060185185185,
+            "exact_fraction": "5585/1728"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 3.5859674329501914,
+            "exact_fraction": "14975/4176"
+          },
+          "actual_joint_contribution": {
+            "pp": 1.7332175925925926,
+            "exact_fraction": "2995/1728"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 1.5621624228395061,
+            "exact_fraction": "32393/20736"
+          },
+          "covariance_contribution": {
+            "pp": 0.17105516975308643,
+            "exact_fraction": "3547/20736"
+          }
+        },
+        {
+          "config_index": 3,
+          "selected_count": 53,
+          "selection_probability": 0.22083333333333333,
+          "global_fixed_config_exposure": {
+            "pp": 2.8385416666666665,
+            "exact_fraction": "545/192"
+          },
+          "conditional_selected_cell_exposure": {
+            "pp": 2.3715932914046123,
+            "exact_fraction": "4525/1908"
+          },
+          "actual_joint_contribution": {
+            "pp": 0.5237268518518519,
+            "exact_fraction": "905/1728"
+          },
+          "product_of_marginals_contribution": {
+            "pp": 0.6268446180555556,
+            "exact_fraction": "5777/9216"
+          },
+          "covariance_contribution": {
+            "pp": -0.1031177662037037,
+            "exact_fraction": "-2851/27648"
+          }
+        }
+      ],
+      "claude_reported_prediction_pp": 2.942,
+      "actual_minus_claude_reported_prediction_pp": 0.04989814814814819,
+      "exact_product_minus_claude_reported_prediction_pp": 0.00012962962962959068,
+      "actual_reuse": {
+        "pp": 1.3946759259259258,
+        "exact_fraction": "1205/864"
+      }
+    }
+  },
+  "noise_scale_descriptives": {
+    "seen": {
+      "sigma_e_under_additive_independent_error_assumption_pp": 2.316477990473856,
+      "sigma_formula": "sqrt(sum_p,c (d_pc-mean_c d_pc)^2 / (2*120*(4-1))), d=A-B",
+      "raw_config_half_difference_correlation": [
+        [
+          0.9999999999999999,
+          0.8620742156981915,
+          0.5658585125683263,
+          0.6808219373126203
+        ],
+        [
+          0.8620742156981915,
+          1.0,
+          0.5867197060649992,
+          0.6639181659990564
+        ],
+        [
+          0.5658585125683263,
+          0.5867197060649991,
+          1.0,
+          0.7498967096811895
+        ],
+        [
+          0.6808219373126203,
+          0.6639181659990565,
+          0.7498967096811896,
+          1.0
+        ]
+      ],
+      "raw_correlation_scope": "descriptive; common half-difficulty can induce correlation without changing argmax",
+      "observed_fixed_config_role_means_percent": [
+        54.42418981481482,
+        54.360532407407405,
+        57.60706018518518,
+        56.171875
+      ]
+    },
+    "unseen": {
+      "sigma_e_under_additive_independent_error_assumption_pp": 2.1460468250503393,
+      "sigma_formula": "sqrt(sum_p,c (d_pc-mean_c d_pc)^2 / (2*120*(4-1))), d=A-B",
+      "raw_config_half_difference_correlation": [
+        [
+          1.0,
+          0.8674651675952375,
+          0.5888216797325833,
+          0.6000669888839032
+        ],
+        [
+          0.8674651675952374,
+          1.0,
+          0.6557948735797893,
+          0.659761571513431
+        ],
+        [
+          0.5888216797325831,
+          0.6557948735797893,
+          0.9999999999999998,
+          0.7794941885827279
+        ],
+        [
+          0.6000669888839032,
+          0.6597615715134311,
+          0.7794941885827279,
+          1.0
+        ]
+      ],
+      "raw_correlation_scope": "descriptive; common half-difficulty can induce correlation without changing argmax",
+      "observed_fixed_config_role_means_percent": [
+        51.95601851851852,
+        51.695601851851855,
+        54.375,
+        53.333333333333336
+      ]
+    }
+  },
+  "pooled_sigma_e_pp": 2.232889076472277,
+  "claude_claimed_sigma_e_pp": 2.233,
+  "Emax_four_iid_standard_normals": 1.0293753730039643,
+  "iid_equal_config_expected_reuse_using_claimed_sigma_pp": 2.2985952079178524,
+  "simulation": {
+    "seed": 2026090716,
+    "rng": "PCG64 with per-scenario SeedSequence",
+    "replicates": 1000,
+    "independent_toy_contexts_per_replicate": 120,
+    "scenarios": [
+      {
+        "replicate_mean_reuse_pp": 2.297042605326416,
+        "replicate_sd_pp": 0.16265888237467427,
+        "replicate_quantiles_025_975_pp": [
+          1.9626436879483937,
+          2.6057670660524104
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shared_context_quality_tau_over_sigma": 0.0,
+        "seed_sequence_entropy": [
+          2026090716,
+          0
+        ],
+        "name": "equal_global_means_shared_context_signal_tau_0.0",
+        "analytic_expected_reuse_pp": 2.2984810259701276,
+        "sigma_e_pp": 2.232889076472277
+      },
+      {
+        "replicate_mean_reuse_pp": 2.0619332770971064,
+        "replicate_sd_pp": 0.166991734737175,
+        "replicate_quantiles_025_975_pp": [
+          1.7181107286370847,
+          2.384273402292147
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shared_context_quality_tau_over_sigma": 0.5,
+        "seed_sequence_entropy": [
+          2026090716,
+          1
+        ],
+        "name": "equal_global_means_shared_context_signal_tau_0.5",
+        "analytic_expected_reuse_pp": 2.055823927625066,
+        "sigma_e_pp": 2.232889076472277
+      },
+      {
+        "replicate_mean_reuse_pp": 1.631442386744674,
+        "replicate_sd_pp": 0.16509501689138376,
+        "replicate_quantiles_025_975_pp": [
+          1.3072867972685744,
+          1.9522940374265318
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shared_context_quality_tau_over_sigma": 1.0,
+        "seed_sequence_entropy": [
+          2026090716,
+          2
+        ],
+        "name": "equal_global_means_shared_context_signal_tau_1.0",
+        "analytic_expected_reuse_pp": 1.6252715198920902,
+        "sigma_e_pp": 2.232889076472277
+      },
+      {
+        "replicate_mean_reuse_pp": 1.0207676050908976,
+        "replicate_sd_pp": 0.14987377149806239,
+        "replicate_quantiles_025_975_pp": [
+          0.747461132567309,
+          1.327854229270878
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shared_context_quality_tau_over_sigma": 2.0,
+        "seed_sequence_entropy": [
+          2026090716,
+          3
+        ],
+        "name": "equal_global_means_shared_context_signal_tau_2.0",
+        "analytic_expected_reuse_pp": 1.027911963812533,
+        "sigma_e_pp": 2.232889076472277
+      },
+      {
+        "replicate_mean_reuse_pp": 1.7775840524327278,
+        "replicate_sd_pp": 0.1762099435097195,
+        "replicate_quantiles_025_975_pp": [
+          1.4346399002085786,
+          2.151245595009096
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          -1.216724537037038,
+          -1.28038194444445,
+          1.9661458333333286,
+          0.5309606481481453
+        ],
+        "shared_context_quality_tau_over_sigma": 0.0,
+        "seed_sequence_entropy": [
+          2026090716,
+          4
+        ],
+        "name": "observed_global_mean_offsets_seen",
+        "sigma_e_pp": 2.232889076472277,
+        "mean_source": "same data; illustrative plug-in, NOT a fitted/validated null"
+      },
+      {
+        "replicate_mean_reuse_pp": 1.9571244287753489,
+        "replicate_sd_pp": 0.1634677883500733,
+        "replicate_quantiles_025_975_pp": [
+          1.6402865185331887,
+          2.2745322195658844
+        ],
+        "quantile_scope": "simulation outcome distribution under stated toy assumptions; NOT an empirical CI",
+        "mean_offsets_pp": [
+          -0.8839699074074119,
+          -1.1443865740740762,
+          1.535011574074069,
+          0.4933449074074048
+        ],
+        "shared_context_quality_tau_over_sigma": 0.0,
+        "seed_sequence_entropy": [
+          2026090716,
+          5
+        ],
+        "name": "observed_global_mean_offsets_unseen",
+        "sigma_e_pp": 2.232889076472277,
+        "mean_source": "same data; illustrative plug-in, NOT a fitted/validated null"
+      }
+    ]
+  },
+  "empirical_p_values_computed": false,
+  "empirical_confidence_intervals_computed": false,
+  "training_or_inference_performed": false,
+  "limitations": [
+    "Reuses committed CSV, not logits or raw audio, and does not independently validate labels/predictions.",
+    "Reconstructed sigma matches a plausible ANOVA-style estimator; Claude supplied no script, so its exact procedure is unknown.",
+    "The toy independent-context outcome quantiles are not calibrated for overlapping real speakers, folds or draws.",
+    "Normal homoscedastic additive errors, equal configuration truths, correlations and latent quality are assumptions.",
+    "A lower observed reuse than the equal-true-configuration noise case does not imply zero information.",
+    "A nonzero covariance term refutes the claimed global identity, but does not establish causal exposure or independent new evidence."
+  ],
+  "cell_output": {
+    "path": "diag_decomposition_cells.csv",
+    "sha256": "706a59e56dd01f0e8b5d20261efb493443a307cd42d27f394e0a7053594fdcf3",
+    "rows": 480
+  }
+}

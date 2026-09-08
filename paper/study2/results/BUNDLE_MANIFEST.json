@@ -1,0 +1,59 @@
+{
+  "schema": "ser-study2-paper-bundle-1",
+  "plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+  "complete_units": 1440,
+  "source_verification_pass": true,
+  "files_sha256": {
+    "absolute_uar.pdf": "eba09b67a1624f07913f5049dbf7a482cd3be83eb79d4ce0d1db053387d4d97a",
+    "absolute_uar.png": "a894035ea27e7bcd4001591165d935b6136eb902ccaaa63a17ba4b9d24cc36d7",
+    "allocation_contrasts.pdf": "796580b4d1a8ce0b5a7aa07ac885c6afd25ff7ab22d5f89ec5a8526c6edc7a55",
+    "allocation_contrasts.png": "1d88eff65de3e2c6c4fdfe6cfdd993ce2761b713a1942a30661e7b71764ff5fb",
+    "draw_estimates.csv": "27379e1af63e33ba409483cb6f7aefd35dc19890303db923077515e4c6992fbf",
+    "PRESENTATION_DONE.json": "27cf86137523934f8158b214ecad5381f8103bcf9c4b72e6873108d0385c6b0b",
+    "presentation_identity.json": "dfdc2af2ae03f8fe1899e496843a45c517d9402e538a967d78198fda5c90c8b7",
+    "results.csv": "3970f72e07d9df2a5bc7f853266eed9259f4dbb4526736dfb70712c2a084a582",
+    "tables.md": "a357389524b0f434ac7d403fb1020fecd2dc9d49070c9b4b578315a9c50987db",
+    "score.json": "9eb80c01211510462beb6a64b888818aa743774fbd0183b017c49724841b0e5b",
+    "per_speaker.csv": "d1d97fcf589e99edd36f64a2e9bd3c0432ac365dbb7539d70bd603c063a9c3d9",
+    "score_identity.json": "c978d8439fa05f1960722c05671f8448bfb480d38d556a74472d91fce6caab2e",
+    "SCORE_DONE": "47efd6c8fc26325492d3af137f5b61b10e8a6700f84c81e1f0a3b0e126526a34",
+    "verification.json.gz": "3fa5f1167396c6398dd20020c30aa6aa24e4c2b381f0c9b637008abc5c6e3433",
+    "completion.json.gz": "b26e1964dae146f8458ff7aae1846d76776fd05202177a505ec1c61559a24334",
+    "analysis_lock.json.gz": "95c962cabe031d2cdc920e3d045070d39d01dab730a0efc2ea63f2ec2c900c4c",
+    "MERGE_DONE.gz": "96a98d86b82d362d88265baf4719f1acaa9d5b01442d120fb7383c678356d40f",
+    "merge_provenance.json.gz": "10f8c3d8dbde3e7338110862f5a58e8388c5dd689c13e797abe1caa4d98b178c",
+    "ledger.jsonl.gz": "2426cc7fd06d4c520be2cdeb3c6de20864b0e39781ab58abdd0fccf8660bab47"
+  },
+  "compressed_sources": {
+    "verification.json.gz": {
+      "source_sha256": "5f4abfef1160c1ebeb3336915a2801df89d4dd838c088b74d38494e6365c719e",
+      "uncompressed_bytes": 1070290
+    },
+    "completion.json.gz": {
+      "source_sha256": "dc52a4f60e4e00ad67cad74c9eef304a7d96ffa092584dd402692ec74d62e209",
+      "uncompressed_bytes": 193159
+    },
+    "analysis_lock.json.gz": {
+      "source_sha256": "191ed52748d87690d5d755c17b0ca5c6bd2d160f48541c9712a04aa8c86fc9d2",
+      "uncompressed_bytes": 193231
+    },
+    "MERGE_DONE.gz": {
+      "source_sha256": "bc8679659b243568b830c89d7b9ad4d02c8789fe7cd980ee4340df6151e4ff7b",
+      "uncompressed_bytes": 650657
+    },
+    "merge_provenance.json.gz": {
+      "source_sha256": "55333a8cd6718a00ee05df48e4fae4fda4cff26438a4084c31f247ae3682f89f",
+      "uncompressed_bytes": 653444
+    },
+    "ledger.jsonl.gz": {
+      "source_sha256": "05dfa8978bf167e21c905a7a7d2ce154acea079ddedb683a1e355603480ef60b",
+      "uncompressed_bytes": 538558
+    }
+  },
+  "notes": [
+    "Analysis and presentation files are exact byte copies of complete independently verified local outputs.",
+    "Verification snapshot contains original absolute paths; copying does not rebind those paths. Compressed originals preserve their byte identities.",
+    "Full per-unit predictions and original ledgers remain in the verified local Ridge/CNN sources and merged_core; this small Git bundle is not their substitute.",
+    "PNG scientific figures visually checked; PDFs are generated from the same Matplotlib figures."
+  ]
+}

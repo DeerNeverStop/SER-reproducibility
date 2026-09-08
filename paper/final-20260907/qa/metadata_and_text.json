@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "checks": {
+    "english_title": true,
+    "chinese_title": true,
+    "author_both": true,
+    "chinese_language": true,
+    "no_working_or_synthetic_placeholders": true,
+    "chinese_headers_all_pages": true,
+    "chinese_no_replacement_glyph": true,
+    "chinese_12_references": true
+  },
+  "pdfs": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\xie.pdf",
+      "bytes": 89538,
+      "sha256": "1c45d1d94582926f6f3122986c6e50e759db69ebc723e630bd6bd4500af93e5c"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\explainer.pdf",
+      "bytes": 378697,
+      "sha256": "81219748f97037a1a53494d5b6000c54c570d75fd51b8a6b7d400c74db8edd04"
+    }
+  ]
+}

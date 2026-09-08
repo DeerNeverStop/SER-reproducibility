@@ -1,0 +1,7 @@
+plan_*/splits/
+runs/
+fixtures/
+features/
+__pycache__/
+*.pyc
+.pytest_cache/

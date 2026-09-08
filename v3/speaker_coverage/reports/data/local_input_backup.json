@@ -1,0 +1,174 @@
+{
+  "schema": "ser-coverage-local-input-preservation-1",
+  "plan_semantic_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "frozen_source_files_in_archive_verified": 26,
+  "frozen_source_archive": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\coverage_source_frozen_db7836c.tar.gz",
+  "files": [
+    {
+      "source": "E:\\科研\\essay\\SER-v2\\v2\\features\\cremad__wavlm_base_plus__sr16000-trim30-13state-time-mean__m84a5885d__wd8e745fb__ccdb5f86e.npz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad__wavlm_base_plus__sr16000-trim30-13state-time-mean__m84a5885d__wd8e745fb__ccdb5f86e.npz",
+      "bytes": 149027638,
+      "sha256": "b0e35c2290556da766e3bf5d14b34dd4467a1d1a76759fa55d6cf9bea52666b9"
+    },
+    {
+      "source": "E:\\科研\\essay\\SER-v2\\v2\\features\\cremad__wavlm_base_plus__sr16000-trim30-13state-time-mean__m84a5885d__wd8e745fb__ccdb5f86e.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad__wavlm_base_plus__sr16000-trim30-13state-time-mean__m84a5885d__wd8e745fb__ccdb5f86e.json",
+      "bytes": 475,
+      "sha256": "6da093c93557c37fade41545411c57d1037a93ac4f706d3d35a8957146c455e6"
+    },
+    {
+      "source": "E:\\科研\\essay\\SER-v2\\v2\\features\\cremad__logmel__sr22050-mel64-nfft1024-hop512-fmax11025-frames128-trim30-zscore__m84a5885d__ccdb5f86e.npz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad__logmel__sr22050-mel64-nfft1024-hop512-fmax11025-frames128-trim30-zscore__m84a5885d__ccdb5f86e.npz",
+      "bytes": 244195638,
+      "sha256": "95147b5c2b19b4b89c5cc9994ff8bcd8cbdc6f86c6872999511123c982bb3b19"
+    },
+    {
+      "source": "E:\\科研\\essay\\SER-v2\\v2\\features\\cremad__logmel__sr22050-mel64-nfft1024-hop512-fmax11025-frames128-trim30-zscore__m84a5885d__ccdb5f86e.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad__logmel__sr22050-mel64-nfft1024-hop512-fmax11025-frames128-trim30-zscore__m84a5885d__ccdb5f86e.json",
+      "bytes": 301,
+      "sha256": "57ec481f42aa42cbceb4a4f26076e9555645a5cd11dc622fbd66e68d38b5e953"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_ecapa.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_ecapa.json",
+      "bytes": 1937,
+      "sha256": "54460c4af1236e3f11449e319a7fde58a0fd810f2e6c2bfde4edc64e76e3ca51"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_ecapa.npz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_ecapa.npz",
+      "bytes": 5325963,
+      "sha256": "905c64d5dea9699951fa192348465fcd715d1bb3aafd67207aaff01072252db9"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_ecapa_audio_quality.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_ecapa_audio_quality.csv",
+      "bytes": 935732,
+      "sha256": "d3e99ae95d5eeeb48f6c4f20a8ae8283b8b8400a00de09026cbbfa6f2f9c929d"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_xvect.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_xvect.json",
+      "bytes": 1935,
+      "sha256": "5d2d81433701a60d9d4adba2a27fc79976c661a2e9ed08e1325f28e9e22e14bb"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_xvect.npz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_xvect.npz",
+      "bytes": 14014755,
+      "sha256": "2f52368e7feb1dd05f786d499a2b0237296c282c8ce9ac5ff784864a03537b2e"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\asv_backup\\coverage-features\\cremad_xvect_audio_quality.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\features\\cremad_xvect_audio_quality.csv",
+      "bytes": 935732,
+      "sha256": "d3e99ae95d5eeeb48f6c4f20a8ae8283b8b8400a00de09026cbbfa6f2f9c929d"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\experiment-feasibility-20260906\\coverage_source.tar.gz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\coverage_source.tar.gz",
+      "bytes": 1589991,
+      "sha256": "9cd11542cd91c727fe254775d3110ff9848c6d4e19cdc986eb45b6ff52e199a7"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\experiment-feasibility-20260906\\asv_artifacts.tar.gz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\asv_artifacts.tar.gz",
+      "bytes": 20144293,
+      "sha256": "c962da7a3c6f98b74d67807d60b6ce7dc4da06432cc8430203abc7a677fdfc3b"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\experiment-feasibility-20260906\\tts_probe_artifacts.tar.gz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\tts_probe_artifacts.tar.gz",
+      "bytes": 8852471,
+      "sha256": "06a228ecc0e568029b1541aa1cb673b8c4e0cfc6b12bd6742d9bd9000b4f5c1b"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\experiment-feasibility-20260906\\probe_draft_plan.json.gz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\probe_draft_plan.json.gz",
+      "bytes": 2569967,
+      "sha256": "fcbcd35384d38936a6859ad87c93d62e9803c3049bc50d8a0309ca382e5b7942"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\plan\\capacity.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\plan\\capacity.json",
+      "bytes": 597820,
+      "sha256": "8194f305af9383627dd71e6608f946691aa0a1cc64c10966177128c8c1511bb7"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\plan\\plan.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\plan\\plan.json",
+      "bytes": 24751263,
+      "sha256": "2c201b05bde2d4b07216ace064a542c0a32f0ed469a119ec8dc034acbe289774"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\work\\plan\\selection_diagnostics.json",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\plan\\selection_diagnostics.json",
+      "bytes": 680980,
+      "sha256": "94c4516a10057768abf0d888cc52c822505b97c1acae076c9aa874898f581d8d"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-study2\\paper\\study2\\results\\per_speaker.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\historical_e1\\per_speaker.csv",
+      "bytes": 147418,
+      "sha256": "d1d97fcf589e99edd36f64a2e9bd3c0432ac365dbb7539d70bd603c063a9c3d9"
+    },
+    {
+      "source": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-study2\\v3\\data_design\\evidence\\core_plan.json.gz",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\historical_e1\\core_plan.json.gz",
+      "bytes": 3006697,
+      "sha256": "76a84b56189af5e2a9888f8690a912f1902f7db0eb7f51ede9f5bd4da179cf43"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\README.md",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\README.md",
+      "bytes": 13579,
+      "sha256": "152d6e2af67e40c043b7244ab45e25f83292b5bcef225b412f416552f05511b9"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\SentenceFilenames.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\SentenceFilenames.csv",
+      "bytes": 177529,
+      "sha256": "ba8c2d1ec4a0b585ca003ffe37fd59cff9a7e2d5b23389e4769b355fd363dfb7"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\processedResults\\summaryTable.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\processedResults\\summaryTable.csv",
+      "bytes": 456491,
+      "sha256": "1ea0e13d98853d920c7c51e69a72ba5ba42018f85a9b89b8b2cc1b53c1aa56a9"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\processedResults\\tabulatedVotes.csv",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\processedResults\\tabulatedVotes.csv",
+      "bytes": 4080280,
+      "sha256": "c60d886c12037306241d51af95ca44539d5b9620762b28a3f50f9c9623dcb18e"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\summarizeVotes.r",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\summarizeVotes.r",
+      "bytes": 5796,
+      "sha256": "ccd211990899ff54c94b46f3c950f772046320d8706cf1153bd6f4218fccefc5"
+    },
+    {
+      "source": "E:\\科研\\SER\\CREMA-D\\tabulateVotesV2.r",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\voice_annotation_sources\\tabulateVotesV2.r",
+      "bytes": 11913,
+      "sha256": "803190fb207080e67343dbcaaf4f6884a10b1ef7bbedc5d5573bbb37d5729498"
+    },
+    {
+      "source": "Git db7836c0ac3564ed44849aa6f8d553984b846064",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\archives\\coverage_source_frozen_db7836c.tar.gz",
+      "bytes": 1596464,
+      "sha256": "2707cb0dd427394ad78acb6d65e745d7f02e494116e3aaa4371090b7e374d533"
+    },
+    {
+      "source": "verified Runpod checkpoint copy",
+      "saved_as": "D:\\SER-speaker-coverage-20260906\\inputs\\wavlm_base_plus.pth",
+      "bytes": 377604347,
+      "sha256": "136a3e720c04f2c77bf7a4dc6a3868b14d5a2c145a988114b733cb1a8428be98"
+    }
+  ],
+  "setup_bundle_scope": "coverage_source.tar.gz is the earlier setup bundle; use coverage_source_frozen_db7836c.tar.gz for the final frozen execution source.",
+  "raw_audio_original_location": "E:/科研/SER/AudioWAV",
+  "raw_audio_not_copied_in_this_step": true,
+  "asv_and_tts_models": "Immutable upstream revisions and file inventories retained; full downloadable model snapshots are not duplicated here."
+}

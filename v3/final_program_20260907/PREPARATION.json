@@ -1,0 +1,193 @@
+{
+  "program": "SER26-FINAL-CHECKPOINT-PROGRAM-1",
+  "status": "design and CPU tests passed; real GPU pilot not yet started",
+  "plan_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "plan_bytes": 25551455,
+  "plan_byte_sha256": "6bee99d32fe5932a6dfe6d22708ac2db6ec445b03afc339be50c649e3cf37c14",
+  "formal_main": 360,
+  "formal_paired_controls": 24,
+  "pilot": 4,
+  "archive": "D:/SER-final-program-20260907",
+  "build_command": "python -m v3.final_program_20260907.plan --repo . --out PATH_TO_NEW_PLAN_JSON",
+  "input_inventory": {
+    "schema": "ser-final-program-audio-inventory-1",
+    "created_at": "2026-09-07T14:05:02.973408+00:00",
+    "scope": "Full manifest bytes and all retained audio decoded; no new model outcomes",
+    "script_sha256": "b083812fa102692ae5ca05d913e90dc30f19e71b1ad4f6452e5cf36beb96bc5f",
+    "hygiene_source_sha256": "d921ff2497fb3ce1074c7237d436419a65e412a4b59db7caf26b89379539860c",
+    "no_gpu": true,
+    "corpora": {
+      "cremad": {
+        "root": "E:\\科研\\SER\\AudioWAV",
+        "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+        "raw_count": 7442,
+        "retained_count": 7435,
+        "byte_verified": 7442,
+        "decoded": 7435,
+        "total_bytes": 605899936,
+        "total_retained_seconds": 18908.224375,
+        "sample_rate_counts": {
+          "16000": 7435
+        },
+        "channel_counts": {
+          "1": 7435
+        },
+        "duration_quantiles": [
+          1.2679375,
+          2.5025,
+          3.1698125,
+          5.005
+        ],
+        "people": 91,
+        "texts": 12,
+        "labels": [
+          "angry",
+          "disgust",
+          "fearful",
+          "happy",
+          "neutral",
+          "sad"
+        ],
+        "hygiene": {
+          "corpus": "cremad",
+          "n_input": 7442,
+          "n_kept": 7435,
+          "n_dropped": 7,
+          "dropped": [
+            {
+              "relative_path": "1006_TIE_HAP_XX.wav",
+              "reason": "H1 label-conflicting duplicate group 776a8c973fd0"
+            },
+            {
+              "relative_path": "1006_TIE_NEU_XX.wav",
+              "reason": "H1 label-conflicting duplicate group 776a8c973fd0"
+            },
+            {
+              "relative_path": "1013_WSI_DIS_XX.wav",
+              "reason": "H1 label-conflicting duplicate group c9b6d56f9775"
+            },
+            {
+              "relative_path": "1013_WSI_SAD_XX.wav",
+              "reason": "H1 label-conflicting duplicate group c9b6d56f9775"
+            },
+            {
+              "relative_path": "1017_IWW_ANG_XX.wav",
+              "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6"
+            },
+            {
+              "relative_path": "1017_IWW_FEA_XX.wav",
+              "reason": "H1 label-conflicting duplicate group 0de0a7bfcfa6"
+            },
+            {
+              "relative_path": "1076_MTI_SAD_XX.wav",
+              "reason": "H3 registered unusable file"
+            }
+          ]
+        },
+        "table_sha256": "dbaa8a0afa378e41b18d53629380a2b774453eb9c11d3594c5608191c33f41f0"
+      },
+      "ravdess": {
+        "root": "E:\\科研\\SER\\data",
+        "manifest_sha256": "860d6c6ed8a3c08b1462dfa3e1e85628c0577f60cf2b76658edf5eeb1249d015",
+        "raw_count": 1440,
+        "retained_count": 1439,
+        "byte_verified": 1440,
+        "decoded": 1439,
+        "total_bytes": 590349330,
+        "total_retained_seconds": 5325.5539375,
+        "sample_rate_counts": {
+          "48000": 1439
+        },
+        "channel_counts": {
+          "1": 1434,
+          "2": 5
+        },
+        "duration_quantiles": [
+          2.9362708333333334,
+          3.6703333333333332,
+          4.137479166666667,
+          5.2719375
+        ],
+        "people": 24,
+        "texts": 2,
+        "labels": [
+          "angry",
+          "calm",
+          "disgust",
+          "fearful",
+          "happy",
+          "neutral",
+          "sad",
+          "surprised"
+        ],
+        "hygiene": {
+          "corpus": "ravdess",
+          "n_input": 1440,
+          "n_kept": 1439,
+          "n_dropped": 1,
+          "dropped": [
+            {
+              "relative_path": "Actor_07/03-01-03-01-02-02-07.wav",
+              "reason": "H2 exact duplicate of lexically first path (ad066a199379)"
+            }
+          ]
+        },
+        "table_sha256": "7a77df66d8b2075b82424b8b07737ddb8ddfeff98ba31787e03b2d53af7c6408"
+      },
+      "subesco": {
+        "root": "E:\\claudework_data\\ICASSP2027-corpora\\subesco\\extracted",
+        "manifest_sha256": "e610505800cc2296c8e69518eaa2378a71a3f0f9cc343ecd4ad0e268fff2908c",
+        "raw_count": 7000,
+        "retained_count": 6998,
+        "byte_verified": 7000,
+        "decoded": 6998,
+        "total_bytes": 2823631746,
+        "total_retained_seconds": 28187.433642998865,
+        "sample_rate_counts": {
+          "44100": 4554,
+          "48000": 2444
+        },
+        "channel_counts": {
+          "2": 724,
+          "1": 6274
+        },
+        "duration_quantiles": [
+          2.75156462585034,
+          4.017052154195011,
+          4.040272108843538,
+          6.0255833333333335
+        ],
+        "people": 20,
+        "texts": 10,
+        "labels": [
+          "ANGRY",
+          "DISGUST",
+          "FEAR",
+          "HAPPY",
+          "NEUTRAL",
+          "SAD",
+          "SURPRISE"
+        ],
+        "hygiene": {
+          "corpus": "subesco",
+          "n_input": 7000,
+          "n_kept": 6998,
+          "n_dropped": 2,
+          "dropped": [
+            {
+              "relative_path": "F_09_CHAITY_S_8_SAD_4.wav",
+              "reason": "H2 exact duplicate of lexically first path (db308f1bef5f)"
+            },
+            {
+              "relative_path": "M_02_NIPUN_S_2_ANGRY_2.wav",
+              "reason": "H2 exact duplicate of lexically first path (71efdec3acd1)"
+            }
+          ]
+        },
+        "table_sha256": "60df61d97c22d69386d7d6bfb38eb37276c321b004164869435f5951372d36f4"
+      }
+    },
+    "wall_seconds": 19.681368199991994,
+    "pass": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "ser-asv-emotion-diagnostic-1",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "asv": {
+    "asv_path": "cremad_ecapa.npz",
+    "asv_location": "features",
+    "asv_sha256": "905c64d5dea9699951fa192348465fcd715d1bb3aafd67207aaff01072252db9",
+    "asv_rows": 7435,
+    "asv_dimension": 192
+  },
+  "source_sha256": "7ccf0d42436b8d44ac6f1c251cb78a24b23ed1f12f41b2f14bb53e1824985135",
+  "table_sha256": "23fe4a66a1cbb2318cf8824c0872047ee78a444f109e74578b006eaac1fe049f",
+  "contexts": 30,
+  "query": "one representative per candidate x eight allowed train prompts x five nonneutral classes",
+  "reference": "eight neutral representatives; no emotional query used in its centroid",
+  "mean_context_class_identity_top1": 0.8878211436203003,
+  "mean_context_class_emotion_over_between": 0.612886140960272,
+  "independent_test": false,
+  "selection_changed": false,
+  "ser_scores_read": false,
+  "interpretation": "candidate-pool closed-set ASV diagnostic only; overlapping contexts are dependent; no universal cutoff; not SER emotion recognition or causal identity disentanglement"
+}

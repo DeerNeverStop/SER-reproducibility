@@ -1,0 +1,129 @@
+{
+  "pass_checks": true,
+  "scope": "Figure-only revision; source text, original delivery and all numerical data preserved.",
+  "original_delivery_files_unchanged": 106,
+  "source_byte_identity": {
+    "english/main.tex": true,
+    "english/spconf.sty": true,
+    "chinese/中文解读.md": true
+  },
+  "comparisons": {
+    "en": {
+      "pages": 5,
+      "all_extracted_text_identical": true,
+      "render_comparison": [
+        {
+          "page": 1,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "7902b6bd49c8c030b1b91284da4e0e539a95972c35fbe46eac6ea59f835df905",
+          "after_sha256": "7902b6bd49c8c030b1b91284da4e0e539a95972c35fbe46eac6ea59f835df905"
+        },
+        {
+          "page": 2,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "15602e5353b075652686945fd93150f7dd8e867cc6ac4718d2767081b2cbb638",
+          "after_sha256": "15602e5353b075652686945fd93150f7dd8e867cc6ac4718d2767081b2cbb638"
+        },
+        {
+          "page": 3,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "6c1674959b77be8a898be07d6a6376f7bfb5ed54e5fcb0e8b298f4fe5f6329d9",
+          "after_sha256": "6c1674959b77be8a898be07d6a6376f7bfb5ed54e5fcb0e8b298f4fe5f6329d9"
+        },
+        {
+          "page": 4,
+          "pixel_identical": false,
+          "changed_bbox_px": [
+            151,
+            238,
+            760,
+            385
+          ],
+          "before_sha256": "60c20cb8bb81da099832d8288a55944ce3b71321f6fe810a72c3cd33bfaa73dd",
+          "after_sha256": "dd51c6629b3f23cd8de2070cc519b0aa42a3e954b1b9253eab9373bf797599f9"
+        },
+        {
+          "page": 5,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "d8c1d66a909b602ea84709f88a854cd3ed5fdc2a90158bcf312a40c01bfa80eb",
+          "after_sha256": "d8c1d66a909b602ea84709f88a854cd3ed5fdc2a90158bcf312a40c01bfa80eb"
+        }
+      ],
+      "pdf_sha256": "a2d8c21b4fb593fda9b3939a92c5c4e758bab06712f86805ff72bdcb4ace0025"
+    },
+    "zh": {
+      "pages": 8,
+      "all_extracted_text_identical": true,
+      "render_comparison": [
+        {
+          "page": 1,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "a1d82f1754629b8b928ca529d105512a84e5b95b9089b57b9ffec9b5c6971d26",
+          "after_sha256": "a1d82f1754629b8b928ca529d105512a84e5b95b9089b57b9ffec9b5c6971d26"
+        },
+        {
+          "page": 2,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "b19e345629887c918b55c64e9ca9e3b22df209fd8e2e024e82af8c12bae6b1db",
+          "after_sha256": "b19e345629887c918b55c64e9ca9e3b22df209fd8e2e024e82af8c12bae6b1db"
+        },
+        {
+          "page": 3,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "7ab8e1f8813148ebb66a8c95182b5936f9893d0675bc335cc7b62312d20d7f11",
+          "after_sha256": "7ab8e1f8813148ebb66a8c95182b5936f9893d0675bc335cc7b62312d20d7f11"
+        },
+        {
+          "page": 4,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "8cb3c31057e31c2a198d27d8ead433da123eb9a54311462f6b1f0f8056007e9b",
+          "after_sha256": "8cb3c31057e31c2a198d27d8ead433da123eb9a54311462f6b1f0f8056007e9b"
+        },
+        {
+          "page": 5,
+          "pixel_identical": false,
+          "changed_bbox_px": [
+            147,
+            317,
+            736,
+            458
+          ],
+          "before_sha256": "d47b88f5ce26b54bdbf150d0fd13e4fea88f3350168b24b26846f67be166d35c",
+          "after_sha256": "45854042f952b1623d18188a77ee97b9f03b0259ab6b27a3cabab16bd7303a2f"
+        },
+        {
+          "page": 6,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "3a2e7edd978facfa6ff3d161908807fa8da8848f64f5d3afa3134385c35aa463",
+          "after_sha256": "3a2e7edd978facfa6ff3d161908807fa8da8848f64f5d3afa3134385c35aa463"
+        },
+        {
+          "page": 7,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "91d4c2c2e7743fac8c612a6648a2356bff9e1e86af31ff921ba06da638faa793",
+          "after_sha256": "91d4c2c2e7743fac8c612a6648a2356bff9e1e86af31ff921ba06da638faa793"
+        },
+        {
+          "page": 8,
+          "pixel_identical": true,
+          "changed_bbox_px": null,
+          "before_sha256": "f315d346985c6a2ff34d32a2fa4bbd4846630db1345f6343fb555f0455bab539",
+          "after_sha256": "f315d346985c6a2ff34d32a2fa4bbd4846630db1345f6343fb555f0455bab539"
+        }
+      ],
+      "pdf_sha256": "94de4f79fde1d0871d8cefbbd117b799e22362bb62f4005a2828f5087486eb81"
+    }
+  },
+  "render_dpi": 100,
+  "visual_review_performed_by_script": false
+}

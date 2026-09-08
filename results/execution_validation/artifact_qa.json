@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "tool": "@oai/artifact-tool",
+  "imported": {
+    "repository_evidence.csv": {
+      "rows_including_header": 31,
+      "columns": 27
+    },
+    "equivalence_registry.csv": {
+      "rows_including_header": 31,
+      "columns": 19
+    },
+    "tier_summary.csv": {
+      "rows_including_header": 7,
+      "columns": 5
+    },
+    "change_registry.csv": {
+      "rows_including_header": 7,
+      "columns": 9
+    }
+  },
+  "checks": [
+    "all CSV imports are rectangular",
+    "all headers are unique",
+    "designed row and column counts match",
+    "tier_summary rendered to PNG and visually reviewed"
+  ],
+  "tier_summary_preview": "work/execution_validation_tier_summary_preview.png",
+  "compact_inspection": "{\"kind\":\"region\",\"sheet\":\"Data\",\"address\":\"A1:E7\",\"rows\":7,\"cols\":5,\"nonEmpty\":35,\"text\":35,\"maxTextLength\":120,\"preview\":[[\"dimension\",\"category\",\"count\",\"denominator\",\"note\"],[\"evidence_tier\",\"tier1_execution_confirmed\",\"24\",\"30\",\"mutually exclusive repository tier after section-12 closure\"],[\"evidence_tier\",\"tier2_static_execution_inference\",\"1\",\"30\",\"mutually exclusive repository tier after section-12 closure\"],[\"evidence_tier\",\"tier3_unknown\",\"5\",\"30\",\"mutually exclusive repository tier after section-12 closure\"],[\"split_risk_final\",\"yes\",\"20\",\"30\",\"yes=exact-fragment overlap or decisive static non-enforcement; no=speaker-dis...\"]],\"previewAddress\":\"A1:E5\",\"previewRows\":5,\"previewCols\":5}"
+}

@@ -1,0 +1,21 @@
+{
+  "repository_id": "P05R004",
+  "repository_url": "https://github.com/dingdongwang/EmotionThinker",
+  "commit_sha": "afcc5c578bc69df436fbb2317957fe4897e33342",
+  "draw_rank": 5,
+  "evidence_tier": "tier3_unknown",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "not_executable_inference_only",
+  "probe_parameters": {},
+  "decisive_source": [
+    "scripts/emotionthinker_infer.py:L1-L39"
+  ],
+  "rationale": "The frozen repository exposes model download/inference only and no IEMOCAP/RAVDESS training manifest or split path. Running it would require network/model execution and still would not reveal the absent training split.",
+  "pairs": [],
+  "max_speaker_intersection": null,
+  "split_risk_final": "unknown",
+  "prior_split_risk": "unknown"
+}

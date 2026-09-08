@@ -1,0 +1,693 @@
+{
+  "schema": "ser-synthetic-publication-layout-checks-1",
+  "created_at": "2026-09-07T17:56:14.234955+00:00",
+  "scope": "SYNTHETIC LAYOUT ONLY: actual spconf figure embedding, CN geometry and actual Chinese builder integration; not a final manuscript or research evidence",
+  "formal_results_accessed": false,
+  "new_scientific_tests": 0,
+  "plot_source": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\plot_results.py",
+    "bytes": 10838,
+    "sha256": "cbd8981d787c21690e1bd2f171a6f84f4298d68cf5bc1caab8124634305ab617"
+  },
+  "builder_source": {
+    "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\build_chinese.py",
+    "bytes": 19687,
+    "sha256": "66201741060889bc19f84abb69ca2e6926fbd420f1ad4f23e0d2013e5501a141"
+  },
+  "synthetic_renderer": {
+    "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\prepare_curve_check.py",
+    "bytes": 2267,
+    "sha256": "21502e9f127445b1b1a37ba4307d63d724fb0d1ce65a05636c9c7e627c4bda1b"
+  },
+  "synthetic_source": {
+    "scope": "SYNTHETIC LAYOUT ONLY; no formal results loaded",
+    "inputs": {
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\results.json": "48a71bb992ba759fa9a5deb995d69442567b3d2edc761125dda4ba34d4bbba8e",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\complete_gate.json": "fb44739e491f082b9d832b08c8d2ef19cc2049b01a773dd7da7dc878bb224daa",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\audit.json": "8bbb8b7902e2eb06bd7de432b5572af8ee85078ef70544d9f31f7fa8c44df9d8",
+      "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\final_program_20260907\\plot_results.py": "cbd8981d787c21690e1bd2f171a6f84f4298d68cf5bc1caab8124634305ab617",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\contexts.csv": "c9f4f9717b18b2f9fad512d7b9804b1bd36d2b3ef0434859f220b5fb6a410784",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\draws.csv": "fc5897fff50bc0e6fbf7d697f9a32eeb424953212bae85a55ce322543cc27438",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\selected_epochs.csv": "68c4746608a05e95048df5dae9fb2ecbbef71c7367ff1f54a65cb2e85595cc9a",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\curves.csv": "517e92037c8cd908f23e373dc3c2d5245249f8b256c2f1488f84d8de32916a96",
+      "C:\\Users\\jock8\\AppData\\Local\\Temp\\pytest-of-9k8\\pytest-258\\test_full_synthetic_closure_ro0\\packet\\scores\\controls.csv": "024f5ad5b5e04596d0b5c6483384409fb0928e1b0ebfa889f39e58b6fb74715c"
+    },
+    "files": {
+      "complete_epoch_curves.png": {
+        "bytes": 212392,
+        "sha256": "282e824c818c04905afa64920aad530ebf9fcc6c6cfcdc44bfec6473341f893a"
+      },
+      "complete_epoch_curves.pdf": {
+        "bytes": 19867,
+        "sha256": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f"
+      },
+      "complete_epoch_curves.svg": {
+        "bytes": 258351,
+        "sha256": "7db0b5a3d634831f8d5928ee6f1e688b830672f51edb3aa7882faa7d5dfdf970"
+      }
+    },
+    "layout": {
+      "lines_per_corpus": [
+        123,
+        123,
+        123
+      ],
+      "legend": [
+        "Seen validation",
+        "Unseen validation",
+        "Outer test"
+      ],
+      "actual_title_fontsize_preserved": 11.0
+    },
+    "new_scientific_tests": 0
+  },
+  "geometry_helper": {
+    "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\geometry_qa.py",
+    "bytes": 12922,
+    "sha256": "bd3cf5e29d3f4782149524ffbc208f7afdc5d5f486aef36879aae0bb2022866a"
+  },
+  "original_geometry_receipt": {
+    "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\GEOMETRY_QA.json",
+    "bytes": 442735,
+    "sha256": "84a6859f5d2cf92bd1f6b9e5a671b8c7f0e701a9f6c241e67c0aff4114db3133"
+  },
+  "geometry": {
+    "schema": "ser-synthetic-figure-geometry-qa-1",
+    "scope": "SYNTHETIC LAYOUT ONLY; no formal data or research results accessed",
+    "created_at": "2026-09-07T17:48:21.423173+00:00",
+    "versions": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "pypdf": "6.10.0",
+      "pdfminer": "20251230"
+    },
+    "script": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\geometry_qa.py",
+      "bytes": 12922,
+      "sha256": "bd3cf5e29d3f4782149524ffbc208f7afdc5d5f486aef36879aae0bb2022866a"
+    },
+    "inputs_sha256": {
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\complete_epoch_curves.pdf": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f",
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\english.pdf": "36b100bc616c9683d2292cab54a6c137445e8f79e95a4b06a0e9996d59e42062",
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\LAYOUT_SOURCE.json": "45dcc01caa7971beec4ece88fa5ed963bf5108a11a6d06438bd24aad250d48ed",
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\geometry_qa.py": "bd3cf5e29d3f4782149524ffbc208f7afdc5d5f486aef36879aae0bb2022866a"
+    },
+    "scientific_tests": 0,
+    "actual_manuscript_qa": false,
+    "visual_review_performed_by_script": false,
+    "method": "raw Tf fontsize multiplied by norm of fully composed font vertical em axis; no bbox-height or double scaling",
+    "point_unit": "PDF point = 1/72 inch; only DejaVu figure text is thresholded",
+    "failures": [],
+    "outputs": {
+      "chinese_geometry.pdf": {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry.pdf",
+        "bytes": 187764,
+        "sha256": "9a2c09678622ac9d4fead15c231015e06c2a8e2e86506915cd9ae7ca80a370e0"
+      }
+    },
+    "renders": {
+      "english": {
+        "command": [
+          "C:\\Users\\jock8\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+          "-png",
+          "-r",
+          "150",
+          "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\english.pdf",
+          "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\english-page"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "images": [
+          {
+            "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\english-page-1.png",
+            "bytes": 166128,
+            "sha256": "2192e246b852b566618b5ce5e1d4abdfb67df62b30f9aea80089d37daeaa0fcd"
+          }
+        ]
+      },
+      "chinese_geometry": {
+        "command": [
+          "C:\\Users\\jock8\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+          "-png",
+          "-r",
+          "150",
+          "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry.pdf",
+          "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry-page"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "images": [
+          {
+            "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry-page-1.png",
+            "bytes": 153007,
+            "sha256": "432636d86550a67fa3274ca8bfb2d1877a7fd676b3543344c473142d8cc8ad69"
+          }
+        ]
+      }
+    },
+    "cn_placement": {
+      "scope": "SYNTHETIC CN GEOMETRY ONLY; not the Chinese builder or a complete manuscript",
+      "page_width_pt": 595.2755905511812,
+      "page_height_pt": 841.8897637795277,
+      "x_pt": 54,
+      "y_pt": 578.3121983827463,
+      "target_width_pt": 487.27559055118115,
+      "actual_width_pt": 487.2755905511811,
+      "actual_height_pt": 209.5775653967814,
+      "uniform_scale": 1.0228297260903645,
+      "source_crop_box": [
+        0.0,
+        0.0,
+        476.39952,
+        204.89976
+      ]
+    },
+    "embedding_comparison": {
+      "english": {
+        "glyph_identity_and_order_equal": true,
+        "expected_uniform_scale": 1.0591256035141645,
+        "observed_minimum_scale": 1.05919,
+        "observed_maximum_scale": 1.05919,
+        "maximum_scale_difference": 6.439648583556057e-05,
+        "expected_width_pt": 504.5669291338583,
+        "observed_minimum_width_pt": 504.59760758880003,
+        "observed_maximum_width_pt": 504.59760758880003,
+        "maximum_width_difference_pt": 0.030678454941747854,
+        "width_tolerance_pt": 0.1,
+        "pass_scale": true
+      },
+      "chinese": {
+        "glyph_identity_and_order_equal": true,
+        "expected_uniform_scale": 1.0228297260903645,
+        "observed_minimum_scale": 1.02282973,
+        "observed_maximum_scale": 1.02282973,
+        "maximum_scale_difference": 3.909635504228959e-09,
+        "expected_width_pt": 487.2755905511811,
+        "observed_minimum_width_pt": 487.2755924137296,
+        "observed_maximum_width_pt": 487.2755924137296,
+        "maximum_width_difference_pt": 1.862548477589634e-06,
+        "width_tolerance_pt": 0.1,
+        "pass_scale": true
+      }
+    },
+    "input_bytes_unchanged": true,
+    "pass_geometry": true
+  },
+  "geometry_pdf_scans": {
+    "native_curve": {
+      "input": {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\complete_epoch_curves.pdf",
+        "bytes": 19867,
+        "sha256": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f"
+      },
+      "page_count": 1,
+      "page_boxes": [
+        {
+          "media": [
+            0.0,
+            0.0,
+            476.39952,
+            204.89976
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            476.39952,
+            204.89976
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        }
+      ],
+      "figure_character_count": 239,
+      "fonts": [
+        "GBCUYZ+DejaVuSans"
+      ],
+      "required_text": {
+        "SYNTHETIC": true,
+        "CREMA-D": true,
+        "SUBESCO": true,
+        "RAVDESS": true,
+        "Seen validation": true,
+        "Unseen validation": true,
+        "Outer test": true,
+        "Epoch": true,
+        "Native-task UAR": true
+      },
+      "minimum_figure_em_pt": 9.0,
+      "maximum_figure_em_pt": 11.0,
+      "rotated_character_count": 17,
+      "rotated_minimum_em_pt": 10.0,
+      "rotated_minimum_bbox_height_pt": 2.780000000000001,
+      "all_orthogonal": true,
+      "all_uniform_scale": true,
+      "all_text_horizontal_scaling_one": true,
+      "all_figure_text_at_least_9pt": true,
+      "checks": {
+        "one_page": true,
+        "required_text_present": true,
+        "text_at_least_9pt": true,
+        "orthogonal": true,
+        "uniform_scale": true,
+        "no_text_horizontal_compression": true,
+        "rotated_axis_text_present": true,
+        "ordinary_user_units_and_rotation": true
+      }
+    },
+    "english_embedded": {
+      "input": {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\english.pdf",
+        "bytes": 23557,
+        "sha256": "36b100bc616c9683d2292cab54a6c137445e8f79e95a4b06a0e9996d59e42062"
+      },
+      "page_count": 1,
+      "page_boxes": [
+        {
+          "media": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        }
+      ],
+      "figure_character_count": 239,
+      "fonts": [
+        "GBCUYZ+DejaVuSans"
+      ],
+      "required_text": {
+        "SYNTHETIC": true,
+        "CREMA-D": true,
+        "SUBESCO": true,
+        "RAVDESS": true,
+        "Seen validation": true,
+        "Unseen validation": true,
+        "Outer test": true,
+        "Epoch": true,
+        "Native-task UAR": true
+      },
+      "minimum_figure_em_pt": 9.532710000000002,
+      "maximum_figure_em_pt": 11.65109,
+      "rotated_character_count": 17,
+      "rotated_minimum_em_pt": 10.5919,
+      "rotated_minimum_bbox_height_pt": 2.9445481999999856,
+      "all_orthogonal": true,
+      "all_uniform_scale": true,
+      "all_text_horizontal_scaling_one": true,
+      "all_figure_text_at_least_9pt": true,
+      "checks": {
+        "one_page": true,
+        "required_text_present": true,
+        "text_at_least_9pt": true,
+        "orthogonal": true,
+        "uniform_scale": true,
+        "no_text_horizontal_compression": true,
+        "rotated_axis_text_present": true,
+        "ordinary_user_units_and_rotation": true
+      }
+    },
+    "chinese_geometry": {
+      "input": {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry.pdf",
+        "bytes": 187764,
+        "sha256": "9a2c09678622ac9d4fead15c231015e06c2a8e2e86506915cd9ae7ca80a370e0"
+      },
+      "page_count": 1,
+      "page_boxes": [
+        {
+          "media": [
+            0.0,
+            0.0,
+            595.275591,
+            841.889764
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            595.275591,
+            841.889764
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        }
+      ],
+      "figure_character_count": 239,
+      "fonts": [
+        "GBCUYZ+DejaVuSans"
+      ],
+      "required_text": {
+        "SYNTHETIC": true,
+        "CREMA-D": true,
+        "SUBESCO": true,
+        "RAVDESS": true,
+        "Seen validation": true,
+        "Unseen validation": true,
+        "Outer test": true,
+        "Epoch": true,
+        "Native-task UAR": true
+      },
+      "minimum_figure_em_pt": 9.20546757,
+      "maximum_figure_em_pt": 11.25112703,
+      "rotated_character_count": 17,
+      "rotated_minimum_em_pt": 10.2282973,
+      "rotated_minimum_bbox_height_pt": 2.8434666494000567,
+      "all_orthogonal": true,
+      "all_uniform_scale": true,
+      "all_text_horizontal_scaling_one": true,
+      "all_figure_text_at_least_9pt": true,
+      "checks": {
+        "one_page": true,
+        "required_text_present": true,
+        "text_at_least_9pt": true,
+        "orthogonal": true,
+        "uniform_scale": true,
+        "no_text_horizontal_compression": true,
+        "rotated_axis_text_present": true,
+        "ordinary_user_units_and_rotation": true
+      }
+    }
+  },
+  "first_geometry_attempt": {
+    "receipt": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v2\\GEOMETRY_QA.json",
+      "bytes": 442290,
+      "sha256": "4990c63e3d784a86566bf8d56a9543970c2d30ca1ed6539c3e72b9f5fe02e411"
+    },
+    "script": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\geometry_qa_initial.py",
+      "bytes": 12351,
+      "sha256": "b550fda1016e5100fefacf2311efce5e33215a985408eb266c13fdb58abf555f"
+    },
+    "failures": [
+      "english: embedded glyph/scale mismatch"
+    ],
+    "explanation": "Only theoretical/TeX scale-difference tolerance failed. Replaced it with an explicit 0.1 PDF point width tolerance; retained the >=9pt font requirement. Initial source and failure receipt remain in the local archive."
+  },
+  "actual_chinese_receipt": {
+    "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\ACTUAL_CN_QA.json",
+    "bytes": 4634,
+    "sha256": "647fe63040287a9feb0173c391a10b51974fb2c0504be23b097c6e5f2995ab87"
+  },
+  "actual_chinese": {
+    "scope": "SYNTHETIC LAYOUT ONLY; actual Chinese builder integration, not final manuscript or research results",
+    "created_at": "2026-09-07T17:54:07.027947+00:00",
+    "scientific_tests": 0,
+    "script": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\check_actual_cn.py",
+      "bytes": 3441,
+      "sha256": "5751c4c0a9eef979f978ec83cadba9bdad77ab54b9e618a81a43c5897eb8bac0"
+    },
+    "geometry_helper": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\geometry_qa.py",
+      "bytes": 12922,
+      "sha256": "bd3cf5e29d3f4782149524ffbc208f7afdc5d5f486aef36879aae0bb2022866a"
+    },
+    "native": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\complete_epoch_curves.pdf",
+      "bytes": 19867,
+      "sha256": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f"
+    },
+    "actual_pdf": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\SYNTHETIC_中文图形嵌入.pdf",
+      "bytes": 272769,
+      "sha256": "4bfbf23fb5c9a473b412dbb9a95e15407586debc5c29ee1e5088c5c22a96e22b"
+    },
+    "build_receipt": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\SYNTHETIC_中文图形嵌入.pdf.build.json",
+      "bytes": 2278,
+      "sha256": "664d21bdcd08f6ac6c72fd1237af0b5489f35d56ccd1ed31a51e91104dc315d2"
+    },
+    "figure_scan": {
+      "input": {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\SYNTHETIC_中文图形嵌入.pdf",
+        "bytes": 272769,
+        "sha256": "4bfbf23fb5c9a473b412dbb9a95e15407586debc5c29ee1e5088c5c22a96e22b"
+      },
+      "page_count": 3,
+      "page_boxes": [
+        {
+          "media": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        },
+        {
+          "media": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        },
+        {
+          "media": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "crop": [
+            0.0,
+            0.0,
+            595.2756,
+            841.8898
+          ],
+          "rotation": 0,
+          "user_unit": 1.0
+        }
+      ],
+      "figure_character_count": 239,
+      "fonts": [
+        "GBCUYZ+DejaVuSans"
+      ],
+      "required_text": {
+        "SYNTHETIC": true,
+        "CREMA-D": true,
+        "SUBESCO": true,
+        "RAVDESS": true,
+        "Seen validation": true,
+        "Unseen validation": true,
+        "Outer test": true,
+        "Epoch": true,
+        "Native-task UAR": true
+      },
+      "minimum_figure_em_pt": 9.20546757,
+      "maximum_figure_em_pt": 11.25112703,
+      "rotated_character_count": 17,
+      "rotated_minimum_em_pt": 10.2282973,
+      "rotated_minimum_bbox_height_pt": 2.8434666494000567,
+      "all_orthogonal": true,
+      "all_uniform_scale": true,
+      "all_text_horizontal_scaling_one": true,
+      "all_figure_text_at_least_9pt": true
+    },
+    "comparison": {
+      "glyph_identity_and_order_equal": true,
+      "expected_uniform_scale": 1.0228297260903645,
+      "observed_minimum_scale": 1.02282973,
+      "observed_maximum_scale": 1.02282973,
+      "maximum_scale_difference": 3.909635504228959e-09,
+      "expected_width_pt": 487.2755905511811,
+      "observed_minimum_width_pt": 487.2755924137296,
+      "observed_maximum_width_pt": 487.2755924137296,
+      "maximum_width_difference_pt": 1.862548477589634e-06,
+      "width_tolerance_pt": 0.1,
+      "pass_scale": true
+    },
+    "page_checks": [
+      {
+        "page": 1,
+        "header": true,
+        "date": true,
+        "footer": true,
+        "no_chars_outside_page": true
+      },
+      {
+        "page": 2,
+        "header": true,
+        "date": true,
+        "footer": true,
+        "no_chars_outside_page": true
+      },
+      {
+        "page": 3,
+        "header": true,
+        "date": true,
+        "footer": true,
+        "no_chars_outside_page": true
+      }
+    ],
+    "checks": {
+      "text_minimum_9pt": true,
+      "required_figure_text": true,
+      "identical_figure_glyphs": true,
+      "expected_width": true,
+      "orthogonal": true,
+      "uniform_scale": true,
+      "no_horizontal_compression": true,
+      "figure_on_declared_page": true,
+      "figure_caption_and_after_text_same_page": true,
+      "all_page_headers_footers_and_bounds": true,
+      "three_pages": true,
+      "three_bookmarks": true,
+      "unencrypted": true
+    },
+    "pass_checks": true,
+    "visual_review_performed_by_script": false
+  },
+  "chinese_build": {
+    "schema": "ser-chinese-companion-build-1",
+    "created_at": "2026-09-07T17:51:21.122430+00:00",
+    "inputs_sha256": {
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\SYNTHETIC_中文图形嵌入.md": "7e2af7b86292829fccef29dd37830d1f85f9cb81a5700cb252bf1fe1347bb3dd",
+      "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\build_chinese.py": "66201741060889bc19f84abb69ca2e6926fbd420f1ad4f23e0d2013e5501a141",
+      "C:\\Windows\\Fonts\\simsun.ttc": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab",
+      "C:\\Windows\\Fonts\\simhei.ttf": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+      "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\LAYOUT_SOURCE.json": "45dcc01caa7971beec4ece88fa5ed963bf5108a11a6d06438bd24aad250d48ed"
+    },
+    "figure_manifest": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\LAYOUT_SOURCE.json",
+    "figures": [
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_curve_v2\\complete_epoch_curves.pdf",
+        "sha256": "f11ed8292777e6b6879e75b8c2253069ae1720154c12ea07d331893408c0067f",
+        "bytes": 19867,
+        "source_cropbox": [
+          0.0,
+          0.0,
+          476.39952,
+          204.89976
+        ],
+        "caption": "图 1．SYNTHETIC 排版曲线。仅供检查矢量嵌入和图中文字，不是正式研究证据。",
+        "page": 2,
+        "x": 54.0,
+        "y": 577.3121983827463,
+        "width": 487.27559055118115,
+        "height": 209.5775653967814,
+        "scale": 1.0228297260903645,
+        "matrix": [
+          1.0228297260903645,
+          0,
+          0,
+          1.0228297260903645,
+          54.0,
+          577.3121983827463
+        ]
+      }
+    ],
+    "output": {
+      "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\SYNTHETIC_中文图形嵌入.pdf",
+      "bytes": 272769,
+      "sha256": "4bfbf23fb5c9a473b412dbb9a95e15407586debc5c29ee1e5088c5c22a96e22b"
+    },
+    "figure_embedding": "vector PDF content merge; no rasterization",
+    "scope": "Document layout only; no model inference or new scientific analysis.",
+    "visual_review_performed": false
+  },
+  "font_receipt": {
+    "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\FONT_EMBEDDING_CHECK.json",
+    "bytes": 713,
+    "sha256": "8cb88f51f83790c883195a9c249cff6e6b0439645c41a6dc702feb7336f23c3c"
+  },
+  "chinese_fonts": {
+    "scope": "SYNTHETIC actual Chinese layout only",
+    "pdf_sha256": "4bfbf23fb5c9a473b412dbb9a95e15407586debc5c29ee1e5088c5c22a96e22b",
+    "fonts": [
+      {
+        "name": "/GBCUYZ+DejaVuSans",
+        "subtype": "/Type0",
+        "embedded": true,
+        "ToUnicode": true
+      },
+      {
+        "name": "/AAAAAA+SimSun-0",
+        "subtype": "/TrueType",
+        "embedded": true,
+        "ToUnicode": true
+      },
+      {
+        "name": "/AAAAAB+SimSun-0",
+        "subtype": "/TrueType",
+        "embedded": true,
+        "ToUnicode": true
+      },
+      {
+        "name": "/AAAAAA+SimHei",
+        "subtype": "/TrueType",
+        "embedded": true,
+        "ToUnicode": true
+      }
+    ],
+    "all_fonts_embedded": true
+  },
+  "root_visual_review": {
+    "performed": true,
+    "method": "view_image at original detail; all listed complete pages plus grayscale and a directly rendered header detail",
+    "renders": [
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\english-page-1.png",
+        "bytes": 166128,
+        "sha256": "2192e246b852b566618b5ce5e1d4abdfb67df62b30f9aea80089d37daeaa0fcd"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\chinese_geometry-page-1.png",
+        "bytes": 153007,
+        "sha256": "432636d86550a67fa3274ca8bfb2d1877a7fd676b3543344c473142d8cc8ad69"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_geometry_v3\\english-gray-page-1.png",
+        "bytes": 156773,
+        "sha256": "cd4997067aa49387de2764c02a9faacda60347754cb037ad36138e0a4fc358d5"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\page-1.png",
+        "bytes": 234068,
+        "sha256": "ef9ade5a0bdf18df0a0e890e8e5ea6b0bf631af22ae9abba3eb0785ade317c5f"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\page-2.png",
+        "bytes": 176537,
+        "sha256": "b4bc7e3b6ae467b31c0d2251a8ed61f7dc2ebedd61daf9a782824b2837431d0d"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\page-3.png",
+        "bytes": 68511,
+        "sha256": "b9050e989a946e9b69cacc194cab00eb85965379344579bca459c933676d2e8e"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\figure_layout_checks\\SYNTHETIC_cn_embedded\\header-detail-2.png",
+        "bytes": 17900,
+        "sha256": "a38c7c08f7871eb9d470d413ff704c83fa5d753884ff42c9bdc841be926daf03"
+      }
+    ],
+    "findings": "No clipped or overlapping chart labels, legends, captions, body, tables or page decorations. Dash/dot/solid legend distinguishes roles in grayscale. The figure and caption move together to page 2; references start on page 3. Header detail confirms faint text is rendered.",
+    "boundary": "These are explicitly synthetic samples. New formal figures and both full final manuscripts still require new font, content, page-budget and visual checks."
+  },
+  "pass_synthetic_layout": true
+}

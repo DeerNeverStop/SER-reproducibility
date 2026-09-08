@@ -1,0 +1,22 @@
+{
+  "repository_id": "P05R002",
+  "repository_url": "https://github.com/fdhlhdc12/ravdess-dtw-emotion-recognition",
+  "commit_sha": "c20123028d7e718e624eb56599ae7436ca9991e4",
+  "draw_rank": 2,
+  "evidence_tier": "tier3_unknown",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "not_executable_no_split_source",
+  "probe_parameters": {},
+  "decisive_source": [
+    "app.py:L733-L752",
+    "feature_extraction_ml.py:L1-L47"
+  ],
+  "rationale": "All executable Python was byte-read. The app loads serialized models/scaler, while the frozen tree contains no training or split constructor; pickle contents cannot recover the original split membership.",
+  "pairs": [],
+  "max_speaker_intersection": null,
+  "split_risk_final": "unknown",
+  "prior_split_risk": "unknown"
+}

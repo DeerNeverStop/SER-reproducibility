@@ -1,0 +1,1631 @@
+{
+ "D15": {
+  "GG": {
+   "mean_speaker_uar": 40.46068948412699,
+   "n_replicates": 3,
+   "tested": true
+  },
+  "LOSO": {
+   "mean_speaker_uar": 47.085813492063494,
+   "n_replicates": 3,
+   "tested": true
+  },
+  "LOSOSUB": {
+   "mean_speaker_uar": 40.47929067460317,
+   "n_replicates": 3,
+   "tested": true
+  },
+  "LOSOSUB_minus_Group5": {
+   "ci_high": 2.2725229414682526,
+   "ci_low": -2.4089316716269837,
+   "mean": 0.018601190476190094,
+   "n": 24,
+   "sd": 5.989397469243053
+  },
+  "LOSO_minus_Group5": {
+   "ci_high": 8.54732452876984,
+   "ci_low": 4.737103174603174,
+   "mean": 6.625124007936507,
+   "n": 24,
+   "sd": 4.899009238421536
+  }
+ },
+ "D16": {
+  "cremad": {
+   "P1GG": {
+    "mean_speaker_uar": 55.40414001952464,
+    "n_seeds": 3,
+    "p1_row": 55.84,
+    "uar_pooled_mean": 55.41360394093993
+   },
+   "P1RR": {
+    "mean_speaker_uar": 58.99706723882548,
+    "n_seeds": 3,
+    "p1_row": 58.63,
+    "uar_pooled_mean": 58.99921452998066
+   },
+   "p1_2026": {
+    "groupkfold": 55.84,
+    "random": 58.63
+   },
+   "premium_p1_2026": 2.789999999999999,
+   "premium_v2_on_P1_splits": 3.5856105890407335,
+   "v2_GG": {
+    "mean_speaker_uar": 56.36308136308136,
+    "n_replicates": 3,
+    "uar_pooled_mean": 56.36294680585004
+   },
+   "v2_RR": {
+    "mean_speaker_uar": 58.7750314398666,
+    "n_replicates": 3,
+    "uar_pooled_mean": 58.77944012293667
+   }
+  },
+  "ravdess": {
+   "P1GG": {
+    "mean_speaker_uar": 37.98673115079365,
+    "n_seeds": 3,
+    "p1_row": 39.15,
+    "uar_pooled_mean": 37.989474258289704
+   },
+   "P1RR": {
+    "mean_speaker_uar": 56.77393353174603,
+    "n_seeds": 3,
+    "p1_row": 56.86,
+    "uar_pooled_mean": 56.75129072134962
+   },
+   "p1_2026": {
+    "groupkfold": 39.15,
+    "random": 56.86
+   },
+   "premium_p1_2026": 17.71,
+   "premium_v2_on_P1_splits": 18.761816463059915,
+   "v2_GG": {
+    "mean_speaker_uar": 40.46068948412699,
+    "n_replicates": 3,
+    "uar_pooled_mean": 40.46286449243746
+   },
+   "v2_RR": {
+    "mean_speaker_uar": 56.959945436507944,
+    "n_replicates": 3,
+    "uar_pooled_mean": 56.94739856020942
+   }
+  }
+ },
+ "D18": {
+  "cremad_24_d0|cnn|GG": {
+   "accuracy": 42.9923273657289,
+   "macro_f1": 40.14402976537822,
+   "mean_speaker_uar": 42.92296245421245,
+   "n_replicates": 2,
+   "uar_pooled": 42.949189340617
+  },
+  "cremad_24_d0|cnn|RR": {
+   "accuracy": 51.048593350383626,
+   "macro_f1": 50.14073229191969,
+   "mean_speaker_uar": 51.18249805749806,
+   "n_replicates": 2,
+   "uar_pooled": 51.20740974191966
+  },
+  "cremad_24_d0|hubert_base|GG": {
+   "accuracy": 62.173913043478265,
+   "macro_f1": 61.90673078796088,
+   "mean_speaker_uar": 62.54061332186332,
+   "n_replicates": 2,
+   "uar_pooled": 62.57975277515145
+  },
+  "cremad_24_d0|hubert_base|RR": {
+   "accuracy": 66.24040920716112,
+   "macro_f1": 66.04059361115944,
+   "mean_speaker_uar": 66.62041662041662,
+   "n_replicates": 2,
+   "uar_pooled": 66.6583499667332
+  },
+  "cremad_24_d0|resnet_se|GG": {
+   "accuracy": 48.18414322250639,
+   "macro_f1": 46.929462822801284,
+   "mean_speaker_uar": 48.497422716172714,
+   "n_replicates": 2,
+   "uar_pooled": 48.51166088874882
+  },
+  "cremad_24_d0|resnet_se|RR": {
+   "accuracy": 54.015345268542205,
+   "macro_f1": 53.419622028669565,
+   "mean_speaker_uar": 54.38268328893329,
+   "n_replicates": 2,
+   "uar_pooled": 54.410477291031974
+  },
+  "cremad_24_d0|wav2vec2_base|GG": {
+   "accuracy": 47.44245524296676,
+   "macro_f1": 46.49148768103004,
+   "mean_speaker_uar": 47.60063431938431,
+   "n_replicates": 2,
+   "uar_pooled": 47.65941800609308
+  },
+  "cremad_24_d0|wav2vec2_base|RR": {
+   "accuracy": 55.67774936061381,
+   "macro_f1": 55.41869772004008,
+   "mean_speaker_uar": 55.82088628963629,
+   "n_replicates": 2,
+   "uar_pooled": 55.89496445705082
+  },
+  "cremad_24_d0|wavlm_base_plus|GG": {
+   "accuracy": 62.27621483375959,
+   "macro_f1": 62.01786819084022,
+   "mean_speaker_uar": 62.70266192141192,
+   "n_replicates": 2,
+   "uar_pooled": 62.72673950344924
+  },
+  "cremad_24_d0|wavlm_base_plus|RR": {
+   "accuracy": 64.0920716112532,
+   "macro_f1": 63.98018335721815,
+   "mean_speaker_uar": 64.55647940022939,
+   "n_replicates": 2,
+   "uar_pooled": 64.56683124978115
+  },
+  "cremad_24_d1|cnn|GG": {
+   "accuracy": 43.489318413021365,
+   "macro_f1": 41.32447288040758,
+   "mean_speaker_uar": 43.69499135124134,
+   "n_replicates": 2,
+   "uar_pooled": 43.72229872463082
+  },
+  "cremad_24_d1|cnn|RR": {
+   "accuracy": 48.44862665310275,
+   "macro_f1": 46.93217611367163,
+   "mean_speaker_uar": 48.75197140822141,
+   "n_replicates": 2,
+   "uar_pooled": 48.780070382215904
+  },
+  "cremad_24_d1|hubert_base|GG": {
+   "accuracy": 59.18107833163785,
+   "macro_f1": 58.84284537451923,
+   "mean_speaker_uar": 59.5467032967033,
+   "n_replicates": 2,
+   "uar_pooled": 59.58473999052357
+  },
+  "cremad_24_d1|hubert_base|RR": {
+   "accuracy": 64.08952187182095,
+   "macro_f1": 64.0311385716218,
+   "mean_speaker_uar": 64.47713166463167,
+   "n_replicates": 2,
+   "uar_pooled": 64.50927406617706
+  },
+  "cremad_24_d1|resnet_se|GG": {
+   "accuracy": 45.39674465920651,
+   "macro_f1": 43.68432922321337,
+   "mean_speaker_uar": 45.73031135531135,
+   "n_replicates": 2,
+   "uar_pooled": 45.75352404643449
+  },
+  "cremad_24_d1|resnet_se|RR": {
+   "accuracy": 52.6703967446592,
+   "macro_f1": 52.13398608306632,
+   "mean_speaker_uar": 52.932628713878714,
+   "n_replicates": 2,
+   "uar_pooled": 52.956929143962725
+  },
+  "cremad_24_d1|wav2vec2_base|GG": {
+   "accuracy": 50.66124109867752,
+   "macro_f1": 49.86502190776877,
+   "mean_speaker_uar": 50.99524318274319,
+   "n_replicates": 2,
+   "uar_pooled": 51.04058082602859
+  },
+  "cremad_24_d1|wav2vec2_base|RR": {
+   "accuracy": 57.22278738555443,
+   "macro_f1": 56.99462866324459,
+   "mean_speaker_uar": 57.51742470492471,
+   "n_replicates": 2,
+   "uar_pooled": 57.55927702756061
+  },
+  "cremad_24_d1|wavlm_base_plus|GG": {
+   "accuracy": 60.40183112919634,
+   "macro_f1": 60.27679101518006,
+   "mean_speaker_uar": 60.793777981277984,
+   "n_replicates": 2,
+   "uar_pooled": 60.817958817025975
+  },
+  "cremad_24_d1|wavlm_base_plus|RR": {
+   "accuracy": 63.14852492370295,
+   "macro_f1": 63.09109269705486,
+   "mean_speaker_uar": 63.5648784086284,
+   "n_replicates": 2,
+   "uar_pooled": 63.5847424583432
+  },
+  "cremad_24_d2|cnn|GG": {
+   "accuracy": 44.13863404689093,
+   "macro_f1": 42.483656301883784,
+   "mean_speaker_uar": 44.34951622451622,
+   "n_replicates": 2,
+   "uar_pooled": 44.35349385476797
+  },
+  "cremad_24_d2|cnn|RR": {
+   "accuracy": 51.121304791029566,
+   "macro_f1": 50.2336995287061,
+   "mean_speaker_uar": 51.43513893513894,
+   "n_replicates": 2,
+   "uar_pooled": 51.44399951462201
+  },
+  "cremad_24_d2|hubert_base|GG": {
+   "accuracy": 59.32721712538226,
+   "macro_f1": 58.82900249568452,
+   "mean_speaker_uar": 59.76792304917305,
+   "n_replicates": 2,
+   "uar_pooled": 59.7826200010401
+  },
+  "cremad_24_d2|hubert_base|RR": {
+   "accuracy": 64.72986748216107,
+   "macro_f1": 64.49129422636997,
+   "mean_speaker_uar": 65.13628154253155,
+   "n_replicates": 2,
+   "uar_pooled": 65.1436198796956
+  },
+  "cremad_24_d2|resnet_se|GG": {
+   "accuracy": 45.51478083588175,
+   "macro_f1": 44.19245571603594,
+   "mean_speaker_uar": 45.81786847411847,
+   "n_replicates": 2,
+   "uar_pooled": 45.85071159880042
+  },
+  "cremad_24_d2|resnet_se|RR": {
+   "accuracy": 53.41488277268094,
+   "macro_f1": 52.41077269692502,
+   "mean_speaker_uar": 53.83964993339993,
+   "n_replicates": 2,
+   "uar_pooled": 53.85338117773502
+  },
+  "cremad_24_d2|wav2vec2_base|GG": {
+   "accuracy": 51.12130479102956,
+   "macro_f1": 50.389959694129594,
+   "mean_speaker_uar": 51.5243148055648,
+   "n_replicates": 2,
+   "uar_pooled": 51.502244873195
+  },
+  "cremad_24_d2|wav2vec2_base|RR": {
+   "accuracy": 56.855249745158005,
+   "macro_f1": 56.57046234741617,
+   "mean_speaker_uar": 57.20763611388612,
+   "n_replicates": 2,
+   "uar_pooled": 57.194948601938044
+  },
+  "cremad_24_d2|wavlm_base_plus|GG": {
+   "accuracy": 61.28950050968399,
+   "macro_f1": 60.96157872719236,
+   "mean_speaker_uar": 61.69704138454138,
+   "n_replicates": 2,
+   "uar_pooled": 61.70220326936745
+  },
+  "cremad_24_d2|wavlm_base_plus|RR": {
+   "accuracy": 64.37308868501529,
+   "macro_f1": 64.25112656915994,
+   "mean_speaker_uar": 64.72274831649833,
+   "n_replicates": 2,
+   "uar_pooled": 64.7204742836341
+  },
+  "cremad_24_d3|cnn|GG": {
+   "accuracy": 44.72477064220183,
+   "macro_f1": 43.10415537589834,
+   "mean_speaker_uar": 44.827394827394826,
+   "n_replicates": 2,
+   "uar_pooled": 44.875708565188
+  },
+  "cremad_24_d3|cnn|RR": {
+   "accuracy": 52.11518858307849,
+   "macro_f1": 51.56501423961689,
+   "mean_speaker_uar": 52.338431244681246,
+   "n_replicates": 2,
+   "uar_pooled": 52.37254494080122
+  },
+  "cremad_24_d3|hubert_base|GG": {
+   "accuracy": 62.20693170234455,
+   "macro_f1": 62.15323937335321,
+   "mean_speaker_uar": 62.52511955636956,
+   "n_replicates": 2,
+   "uar_pooled": 62.53948029885416
+  },
+  "cremad_24_d3|hubert_base|RR": {
+   "accuracy": 68.39959225280326,
+   "macro_f1": 68.37679652603245,
+   "mean_speaker_uar": 68.78488987863987,
+   "n_replicates": 2,
+   "uar_pooled": 68.79643593877302
+  },
+  "cremad_24_d3|resnet_se|GG": {
+   "accuracy": 48.57288481141693,
+   "macro_f1": 48.1916536453473,
+   "mean_speaker_uar": 48.87415824915824,
+   "n_replicates": 2,
+   "uar_pooled": 48.91899388077036
+  },
+  "cremad_24_d3|resnet_se|RR": {
+   "accuracy": 53.92456676860347,
+   "macro_f1": 53.38882672388691,
+   "mean_speaker_uar": 54.21025733525734,
+   "n_replicates": 2,
+   "uar_pooled": 54.238563281155194
+  },
+  "cremad_24_d3|wav2vec2_base|GG": {
+   "accuracy": 50.89194699286442,
+   "macro_f1": 50.384466532364506,
+   "mean_speaker_uar": 51.161743349243345,
+   "n_replicates": 2,
+   "uar_pooled": 51.21595853485187
+  },
+  "cremad_24_d3|wav2vec2_base|RR": {
+   "accuracy": 58.33333333333333,
+   "macro_f1": 58.16777284404777,
+   "mean_speaker_uar": 58.61684611684611,
+   "n_replicates": 2,
+   "uar_pooled": 58.64189505434501
+  },
+  "cremad_24_d3|wavlm_base_plus|GG": {
+   "accuracy": 62.58919469928644,
+   "macro_f1": 62.441715438504055,
+   "mean_speaker_uar": 63.046906796906796,
+   "n_replicates": 2,
+   "uar_pooled": 63.04990725813441
+  },
+  "cremad_24_d3|wavlm_base_plus|RR": {
+   "accuracy": 65.67278287461775,
+   "macro_f1": 65.58491062815907,
+   "mean_speaker_uar": 66.10250282125281,
+   "n_replicates": 2,
+   "uar_pooled": 66.10978209995321
+  },
+  "cremad_24_d4|cnn|GG": {
+   "accuracy": 43.599590373783926,
+   "macro_f1": 41.18135607383183,
+   "mean_speaker_uar": 43.78512112887113,
+   "n_replicates": 2,
+   "uar_pooled": 43.76521021494233
+  },
+  "cremad_24_d4|cnn|RR": {
+   "accuracy": 50.69124423963134,
+   "macro_f1": 49.38095847592952,
+   "mean_speaker_uar": 51.010332260332255,
+   "n_replicates": 2,
+   "uar_pooled": 50.99206202735985
+  },
+  "cremad_24_d4|hubert_base|GG": {
+   "accuracy": 62.10957501280082,
+   "macro_f1": 61.781087829292034,
+   "mean_speaker_uar": 62.57853835978836,
+   "n_replicates": 2,
+   "uar_pooled": 62.551470474571644
+  },
+  "cremad_24_d4|hubert_base|RR": {
+   "accuracy": 65.4889912954429,
+   "macro_f1": 65.3432423301238,
+   "mean_speaker_uar": 65.97465034965036,
+   "n_replicates": 2,
+   "uar_pooled": 65.9476668600526
+  },
+  "cremad_24_d4|resnet_se|GG": {
+   "accuracy": 47.28622631848438,
+   "macro_f1": 45.799863682269994,
+   "mean_speaker_uar": 47.71730006105006,
+   "n_replicates": 2,
+   "uar_pooled": 47.67109529952265
+  },
+  "cremad_24_d4|resnet_se|RR": {
+   "accuracy": 53.17460317460318,
+   "macro_f1": 52.496904254398586,
+   "mean_speaker_uar": 53.48760036260036,
+   "n_replicates": 2,
+   "uar_pooled": 53.46218027040592
+  },
+  "cremad_24_d4|wav2vec2_base|GG": {
+   "accuracy": 50.69124423963133,
+   "macro_f1": 50.17524080054837,
+   "mean_speaker_uar": 50.92401811151811,
+   "n_replicates": 2,
+   "uar_pooled": 50.914267560974146
+  },
+  "cremad_24_d4|wav2vec2_base|RR": {
+   "accuracy": 56.8868407578085,
+   "macro_f1": 56.61822885692883,
+   "mean_speaker_uar": 57.10276413401412,
+   "n_replicates": 2,
+   "uar_pooled": 57.08762497133125
+  },
+  "cremad_24_d4|wavlm_base_plus|GG": {
+   "accuracy": 61.930363543266765,
+   "macro_f1": 61.66887860100807,
+   "mean_speaker_uar": 62.32286232286232,
+   "n_replicates": 2,
+   "uar_pooled": 62.36642330953708
+  },
+  "cremad_24_d4|wavlm_base_plus|RR": {
+   "accuracy": 65.4889912954429,
+   "macro_f1": 65.30000366884664,
+   "mean_speaker_uar": 65.86865102490103,
+   "n_replicates": 2,
+   "uar_pooled": 65.90671825307817
+  },
+  "cremad_91m_d0|cnn|GG": {
+   "accuracy": 46.368286445012785,
+   "macro_f1": 45.675445740664685,
+   "mean_speaker_uar": 47.39774114774115,
+   "n_replicates": 2,
+   "uar_pooled": 47.45363678925219
+  },
+  "cremad_91m_d0|cnn|RR": {
+   "accuracy": 46.547314578005114,
+   "macro_f1": 45.98355767896955,
+   "mean_speaker_uar": 47.542735042735046,
+   "n_replicates": 2,
+   "uar_pooled": 47.60179493208938
+  },
+  "cremad_91m_d0|hubert_base|GG": {
+   "accuracy": 62.02046035805626,
+   "macro_f1": 61.630357944169845,
+   "mean_speaker_uar": 62.17185592185592,
+   "n_replicates": 2,
+   "uar_pooled": 62.358041842094124
+  },
+  "cremad_91m_d0|hubert_base|RR": {
+   "accuracy": 63.40153452685422,
+   "macro_f1": 62.87699031350923,
+   "mean_speaker_uar": 63.41575091575092,
+   "n_replicates": 2,
+   "uar_pooled": 63.552838053272666
+  },
+  "cremad_91m_d0|resnet_se|GG": {
+   "accuracy": 47.59590792838874,
+   "macro_f1": 46.680107994718426,
+   "mean_speaker_uar": 48.80189255189255,
+   "n_replicates": 2,
+   "uar_pooled": 48.78771256429078
+  },
+  "cremad_91m_d0|resnet_se|RR": {
+   "accuracy": 49.10485933503836,
+   "macro_f1": 48.51905400088525,
+   "mean_speaker_uar": 49.96947496947496,
+   "n_replicates": 2,
+   "uar_pooled": 49.97940694786818
+  },
+  "cremad_91m_d0|wav2vec2_base|GG": {
+   "accuracy": 51.687979539641944,
+   "macro_f1": 51.247473076131996,
+   "mean_speaker_uar": 52.00702075702076,
+   "n_replicates": 2,
+   "uar_pooled": 52.08657786409851
+  },
+  "cremad_91m_d0|wav2vec2_base|RR": {
+   "accuracy": 53.58056265984655,
+   "macro_f1": 53.14726312992589,
+   "mean_speaker_uar": 53.80799755799755,
+   "n_replicates": 2,
+   "uar_pooled": 53.95185008283171
+  },
+  "cremad_91m_d0|wavlm_base_plus|GG": {
+   "accuracy": 61.73913043478261,
+   "macro_f1": 61.3861238754382,
+   "mean_speaker_uar": 62.126068376068375,
+   "n_replicates": 2,
+   "uar_pooled": 62.22773833108475
+  },
+  "cremad_91m_d0|wavlm_base_plus|RR": {
+   "accuracy": 62.58312020460358,
+   "macro_f1": 62.223768574712,
+   "mean_speaker_uar": 62.973137973137966,
+   "n_replicates": 2,
+   "uar_pooled": 63.08720601821976
+  },
+  "cremad_91m_d1|cnn|GG": {
+   "accuracy": 47.38046795523907,
+   "macro_f1": 46.72282398464493,
+   "mean_speaker_uar": 48.92399267399267,
+   "n_replicates": 2,
+   "uar_pooled": 48.79780965383443
+  },
+  "cremad_91m_d1|cnn|RR": {
+   "accuracy": 47.32960325534079,
+   "macro_f1": 46.759771024895414,
+   "mean_speaker_uar": 48.80952380952381,
+   "n_replicates": 2,
+   "uar_pooled": 48.685218823873804
+  },
+  "cremad_91m_d1|hubert_base|GG": {
+   "accuracy": 65.31027466937945,
+   "macro_f1": 65.05181359442459,
+   "mean_speaker_uar": 65.9416971916972,
+   "n_replicates": 2,
+   "uar_pooled": 65.87779458019361
+  },
+  "cremad_91m_d1|hubert_base|RR": {
+   "accuracy": 65.97151576805696,
+   "macro_f1": 65.6849608339442,
+   "mean_speaker_uar": 66.51404151404151,
+   "n_replicates": 2,
+   "uar_pooled": 66.49824335674998
+  },
+  "cremad_91m_d1|resnet_se|GG": {
+   "accuracy": 49.79654120040692,
+   "macro_f1": 49.32275824620455,
+   "mean_speaker_uar": 51.06074481074481,
+   "n_replicates": 2,
+   "uar_pooled": 51.082225431926375
+  },
+  "cremad_91m_d1|resnet_se|RR": {
+   "accuracy": 50.25432349949135,
+   "macro_f1": 49.85996615399024,
+   "mean_speaker_uar": 51.610195360195355,
+   "n_replicates": 2,
+   "uar_pooled": 51.50520892320128
+  },
+  "cremad_91m_d1|wav2vec2_base|GG": {
+   "accuracy": 54.8321464903357,
+   "macro_f1": 54.53002943939185,
+   "mean_speaker_uar": 55.34188034188034,
+   "n_replicates": 2,
+   "uar_pooled": 55.33880627277892
+  },
+  "cremad_91m_d1|wav2vec2_base|RR": {
+   "accuracy": 55.137334689725336,
+   "macro_f1": 54.7584572544282,
+   "mean_speaker_uar": 55.555555555555564,
+   "n_replicates": 2,
+   "uar_pooled": 55.59785467696226
+  },
+  "cremad_91m_d1|wavlm_base_plus|GG": {
+   "accuracy": 64.64903357070193,
+   "macro_f1": 64.42240993305694,
+   "mean_speaker_uar": 65.10225885225886,
+   "n_replicates": 2,
+   "uar_pooled": 65.17179935946729
+  },
+  "cremad_91m_d1|wavlm_base_plus|RR": {
+   "accuracy": 64.49643947100712,
+   "macro_f1": 64.29402743535277,
+   "mean_speaker_uar": 65.10225885225884,
+   "n_replicates": 2,
+   "uar_pooled": 65.14190549468988
+  },
+  "cremad_91m_d2|cnn|GG": {
+   "accuracy": 44.801223241590215,
+   "macro_f1": 43.722263776490955,
+   "mean_speaker_uar": 46.06990231990231,
+   "n_replicates": 2,
+   "uar_pooled": 46.04311521157169
+  },
+  "cremad_91m_d2|cnn|RR": {
+   "accuracy": 48.24159021406727,
+   "macro_f1": 47.75220983952768,
+   "mean_speaker_uar": 49.259768009768,
+   "n_replicates": 2,
+   "uar_pooled": 49.235047058675775
+  },
+  "cremad_91m_d2|hubert_base|GG": {
+   "accuracy": 65.2395514780836,
+   "macro_f1": 64.80025294898445,
+   "mean_speaker_uar": 65.55250305250304,
+   "n_replicates": 2,
+   "uar_pooled": 65.69071762693936
+  },
+  "cremad_91m_d2|hubert_base|RR": {
+   "accuracy": 66.5137614678899,
+   "macro_f1": 66.10695504086831,
+   "mean_speaker_uar": 66.92612942612944,
+   "n_replicates": 2,
+   "uar_pooled": 66.9893269436989
+  },
+  "cremad_91m_d2|resnet_se|GG": {
+   "accuracy": 48.853211009174316,
+   "macro_f1": 48.1277720075593,
+   "mean_speaker_uar": 50.02289377289377,
+   "n_replicates": 2,
+   "uar_pooled": 50.13352247154277
+  },
+  "cremad_91m_d2|resnet_se|RR": {
+   "accuracy": 49.286442405708456,
+   "macro_f1": 48.62236942433793,
+   "mean_speaker_uar": 50.08394383394383,
+   "n_replicates": 2,
+   "uar_pooled": 50.16936192577553
+  },
+  "cremad_91m_d2|wav2vec2_base|GG": {
+   "accuracy": 55.020387359836896,
+   "macro_f1": 54.47057703140018,
+   "mean_speaker_uar": 55.42582417582417,
+   "n_replicates": 2,
+   "uar_pooled": 55.41781930945543
+  },
+  "cremad_91m_d2|wav2vec2_base|RR": {
+   "accuracy": 55.70846075433232,
+   "macro_f1": 55.060623097102805,
+   "mean_speaker_uar": 55.89896214896214,
+   "n_replicates": 2,
+   "uar_pooled": 56.0317145537046
+  },
+  "cremad_91m_d2|wavlm_base_plus|GG": {
+   "accuracy": 63.328236493374106,
+   "macro_f1": 62.86591194417146,
+   "mean_speaker_uar": 63.74389499389499,
+   "n_replicates": 2,
+   "uar_pooled": 63.83396193914014
+  },
+  "cremad_91m_d2|wavlm_base_plus|RR": {
+   "accuracy": 64.06727828746178,
+   "macro_f1": 63.57729962301201,
+   "mean_speaker_uar": 64.44597069597069,
+   "n_replicates": 2,
+   "uar_pooled": 64.44429267456161
+  },
+  "cremad_91m_d3|cnn|GG": {
+   "accuracy": 47.120285423037714,
+   "macro_f1": 46.58026748779909,
+   "mean_speaker_uar": 48.45848595848595,
+   "n_replicates": 2,
+   "uar_pooled": 48.33222353003548
+  },
+  "cremad_91m_d3|cnn|RR": {
+   "accuracy": 49.159021406727824,
+   "macro_f1": 48.80284270057474,
+   "mean_speaker_uar": 50.44261294261294,
+   "n_replicates": 2,
+   "uar_pooled": 50.275988056985256
+  },
+  "cremad_91m_d3|hubert_base|GG": {
+   "accuracy": 65.59633027522935,
+   "macro_f1": 65.23101183259246,
+   "mean_speaker_uar": 65.98748473748472,
+   "n_replicates": 2,
+   "uar_pooled": 66.01966321717552
+  },
+  "cremad_91m_d3|hubert_base|RR": {
+   "accuracy": 65.97859327217125,
+   "macro_f1": 65.67576474110925,
+   "mean_speaker_uar": 66.32326007326007,
+   "n_replicates": 2,
+   "uar_pooled": 66.3615864690592
+  },
+  "cremad_91m_d3|resnet_se|GG": {
+   "accuracy": 49.77064220183486,
+   "macro_f1": 49.29315467321035,
+   "mean_speaker_uar": 51.02258852258852,
+   "n_replicates": 2,
+   "uar_pooled": 50.98496410698941
+  },
+  "cremad_91m_d3|resnet_se|RR": {
+   "accuracy": 51.47808358817534,
+   "macro_f1": 51.15802052783013,
+   "mean_speaker_uar": 52.762515262515265,
+   "n_replicates": 2,
+   "uar_pooled": 52.72918375509363
+  },
+  "cremad_91m_d3|wav2vec2_base|GG": {
+   "accuracy": 54.40876656472987,
+   "macro_f1": 53.94493396723456,
+   "mean_speaker_uar": 54.670329670329664,
+   "n_replicates": 2,
+   "uar_pooled": 54.771637594897705
+  },
+  "cremad_91m_d3|wav2vec2_base|RR": {
+   "accuracy": 56.14169215086646,
+   "macro_f1": 55.69111602618263,
+   "mean_speaker_uar": 56.57051282051283,
+   "n_replicates": 2,
+   "uar_pooled": 56.645225654248605
+  },
+  "cremad_91m_d3|wavlm_base_plus|GG": {
+   "accuracy": 65.03567787971458,
+   "macro_f1": 64.75408712581482,
+   "mean_speaker_uar": 65.53724053724054,
+   "n_replicates": 2,
+   "uar_pooled": 65.57012655699442
+  },
+  "cremad_91m_d3|wavlm_base_plus|RR": {
+   "accuracy": 64.80632008154944,
+   "macro_f1": 64.49898220377445,
+   "mean_speaker_uar": 65.31593406593407,
+   "n_replicates": 2,
+   "uar_pooled": 65.31284669066716
+  },
+  "cremad_91m_d4|cnn|GG": {
+   "accuracy": 46.46697388632873,
+   "macro_f1": 45.22562379459743,
+   "mean_speaker_uar": 47.748778998779,
+   "n_replicates": 2,
+   "uar_pooled": 47.735177084303004
+  },
+  "cremad_91m_d4|cnn|RR": {
+   "accuracy": 49.76958525345622,
+   "macro_f1": 49.03295104701752,
+   "mean_speaker_uar": 50.831807081807085,
+   "n_replicates": 2,
+   "uar_pooled": 50.88471237355639
+  },
+  "cremad_91m_d4|hubert_base|GG": {
+   "accuracy": 66.07782898105478,
+   "macro_f1": 65.77495389547023,
+   "mean_speaker_uar": 66.54456654456655,
+   "n_replicates": 2,
+   "uar_pooled": 66.6349666250899
+  },
+  "cremad_91m_d4|hubert_base|RR": {
+   "accuracy": 66.12903225806451,
+   "macro_f1": 65.8362604365482,
+   "mean_speaker_uar": 66.3919413919414,
+   "n_replicates": 2,
+   "uar_pooled": 66.59575750672553
+  },
+  "cremad_91m_d4|resnet_se|GG": {
+   "accuracy": 49.74398361495136,
+   "macro_f1": 48.9114341592296,
+   "mean_speaker_uar": 50.724969474969484,
+   "n_replicates": 2,
+   "uar_pooled": 50.78096248547293
+  },
+  "cremad_91m_d4|resnet_se|RR": {
+   "accuracy": 51.94572452636969,
+   "macro_f1": 51.493372336489486,
+   "mean_speaker_uar": 52.922771672771674,
+   "n_replicates": 2,
+   "uar_pooled": 52.87746245336522
+  },
+  "cremad_91m_d4|wav2vec2_base|GG": {
+   "accuracy": 56.144393241167435,
+   "macro_f1": 55.66808398552331,
+   "mean_speaker_uar": 56.43315018315019,
+   "n_replicates": 2,
+   "uar_pooled": 56.49506108520207
+  },
+  "cremad_91m_d4|wav2vec2_base|RR": {
+   "accuracy": 57.373271889400925,
+   "macro_f1": 56.87557345450767,
+   "mean_speaker_uar": 57.38705738705738,
+   "n_replicates": 2,
+   "uar_pooled": 57.57886853857751
+  },
+  "cremad_91m_d4|wavlm_base_plus|GG": {
+   "accuracy": 65.2073732718894,
+   "macro_f1": 64.87942695132034,
+   "mean_speaker_uar": 65.57539682539684,
+   "n_replicates": 2,
+   "uar_pooled": 65.66583695493102
+  },
+  "cremad_91m_d4|wavlm_base_plus|RR": {
+   "accuracy": 65.25857654889913,
+   "macro_f1": 64.88570986793307,
+   "mean_speaker_uar": 65.76617826617826,
+   "n_replicates": 2,
+   "uar_pooled": 65.82923571467276
+  },
+  "cremad|cnn|GG": {
+   "accuracy": 55.98744676081596,
+   "macro_f1": 55.69281174940014,
+   "mean_speaker_uar": 56.36308136308136,
+   "n_replicates": 3,
+   "uar_pooled": 56.36294680585004
+  },
+  "cremad|cnn|GR": {
+   "accuracy": 56.88410670253307,
+   "macro_f1": 56.50357063313451,
+   "mean_speaker_uar": 57.26351893934312,
+   "n_replicates": 3,
+   "uar_pooled": 57.26898338594526
+  },
+  "cremad|cnn|P1GG": {
+   "accuracy": 55.028020623178655,
+   "macro_f1": 54.60972501573286,
+   "mean_speaker_uar": 55.40414001952464,
+   "n_replicates": 3,
+   "uar_pooled": 55.41360394093993
+  },
+  "cremad|cnn|P1RR": {
+   "accuracy": 58.56982739296122,
+   "macro_f1": 58.22598763721869,
+   "mean_speaker_uar": 58.99706723882548,
+   "n_replicates": 3,
+   "uar_pooled": 58.99921452998066
+  },
+  "cremad|cnn|RG": {
+   "accuracy": 57.32347007397444,
+   "macro_f1": 56.93537227881552,
+   "mean_speaker_uar": 57.729577097708976,
+   "n_replicates": 3,
+   "uar_pooled": 57.730449393423974
+  },
+  "cremad|cnn|RR": {
+   "accuracy": 58.3591123066577,
+   "macro_f1": 57.988406739426324,
+   "mean_speaker_uar": 58.7750314398666,
+   "n_replicates": 3,
+   "uar_pooled": 58.77944012293667
+  },
+  "cremad|hubert_base|GG": {
+   "accuracy": 68.50033624747813,
+   "macro_f1": 68.45684242666165,
+   "mean_speaker_uar": 68.8386044155275,
+   "n_replicates": 3,
+   "uar_pooled": 68.85398279442308
+  },
+  "cremad|hubert_base|GR": {
+   "accuracy": 68.81416722707912,
+   "macro_f1": 68.78994685394639,
+   "mean_speaker_uar": 69.13098094416775,
+   "n_replicates": 3,
+   "uar_pooled": 69.14167931519347
+  },
+  "cremad|hubert_base|RG": {
+   "accuracy": 69.85429275947098,
+   "macro_f1": 69.82901715737428,
+   "mean_speaker_uar": 70.1842113930026,
+   "n_replicates": 3,
+   "uar_pooled": 70.20353162919406
+  },
+  "cremad|hubert_base|RR": {
+   "accuracy": 70.41022192333558,
+   "macro_f1": 70.41047109359765,
+   "mean_speaker_uar": 70.7319237539018,
+   "n_replicates": 3,
+   "uar_pooled": 70.74671532632352
+  },
+  "cremad|resnet_se|GG": {
+   "accuracy": 58.72225958305313,
+   "macro_f1": 58.50492133090308,
+   "mean_speaker_uar": 59.11293631073851,
+   "n_replicates": 3,
+   "uar_pooled": 59.1191406987775
+  },
+  "cremad|resnet_se|GR": {
+   "accuracy": 59.408204438466704,
+   "macro_f1": 59.1074552634264,
+   "mean_speaker_uar": 59.77992296673616,
+   "n_replicates": 3,
+   "uar_pooled": 59.777642123239666
+  },
+  "cremad|resnet_se|RG": {
+   "accuracy": 59.43958753642681,
+   "macro_f1": 59.10298780581368,
+   "mean_speaker_uar": 59.85718087366439,
+   "n_replicates": 3,
+   "uar_pooled": 59.85658345425933
+  },
+  "cremad|resnet_se|RR": {
+   "accuracy": 61.174624523649406,
+   "macro_f1": 61.01167381481546,
+   "mean_speaker_uar": 61.58648535022163,
+   "n_replicates": 3,
+   "uar_pooled": 61.589936587655
+  },
+  "cremad|transformer|GG": {
+   "accuracy": 49.23111409997759,
+   "macro_f1": 48.65997841417899,
+   "mean_speaker_uar": 49.518669161526304,
+   "n_replicates": 3,
+   "uar_pooled": 49.52855553357369
+  },
+  "cremad|transformer|GR": {
+   "accuracy": 50.9930508854517,
+   "macro_f1": 50.704270864069805,
+   "mean_speaker_uar": 51.19435916139213,
+   "n_replicates": 3,
+   "uar_pooled": 51.20612451862379
+  },
+  "cremad|transformer|RG": {
+   "accuracy": 50.60300381080475,
+   "macro_f1": 50.13570000821559,
+   "mean_speaker_uar": 50.88927657608976,
+   "n_replicates": 3,
+   "uar_pooled": 50.89743613037229
+  },
+  "cremad|transformer|RR": {
+   "accuracy": 52.01524321900919,
+   "macro_f1": 51.690209981219276,
+   "mean_speaker_uar": 52.308085687206564,
+   "n_replicates": 3,
+   "uar_pooled": 52.3192241681796
+  },
+  "cremad|wav2vec2_base|GG": {
+   "accuracy": 61.309123514906965,
+   "macro_f1": 61.155888074913264,
+   "mean_speaker_uar": 61.50903431123212,
+   "n_replicates": 3,
+   "uar_pooled": 61.51856471815609
+  },
+  "cremad|wav2vec2_base|GR": {
+   "accuracy": 62.27751625196145,
+   "macro_f1": 62.16263762312963,
+   "mean_speaker_uar": 62.44756464536684,
+   "n_replicates": 3,
+   "uar_pooled": 62.45767934744827
+  },
+  "cremad|wav2vec2_base|RG": {
+   "accuracy": 63.407307778524995,
+   "macro_f1": 63.309945953093376,
+   "mean_speaker_uar": 63.61738587013313,
+   "n_replicates": 3,
+   "uar_pooled": 63.63454015326525
+  },
+  "cremad|wav2vec2_base|RR": {
+   "accuracy": 64.28603452140776,
+   "macro_f1": 64.20813099224885,
+   "mean_speaker_uar": 64.49270611358523,
+   "n_replicates": 3,
+   "uar_pooled": 64.5111479755956
+  },
+  "cremad|wavlm_base_plus|GG": {
+   "accuracy": 68.41067025330644,
+   "macro_f1": 68.43096844428244,
+   "mean_speaker_uar": 68.76211903684431,
+   "n_replicates": 3,
+   "uar_pooled": 68.77248505679408
+  },
+  "cremad|wavlm_base_plus|GR": {
+   "accuracy": 68.77830082941045,
+   "macro_f1": 68.81421499047791,
+   "mean_speaker_uar": 69.12026211476761,
+   "n_replicates": 3,
+   "uar_pooled": 69.12731206208164
+  },
+  "cremad|wavlm_base_plus|RG": {
+   "accuracy": 69.6256444743331,
+   "macro_f1": 69.67751767340177,
+   "mean_speaker_uar": 69.96181982445718,
+   "n_replicates": 3,
+   "uar_pooled": 69.9780283375832
+  },
+  "cremad|wavlm_base_plus|RR": {
+   "accuracy": 70.03810804752298,
+   "macro_f1": 70.08500503902927,
+   "mean_speaker_uar": 70.37775513050238,
+   "n_replicates": 3,
+   "uar_pooled": 70.3886376819305
+  },
+  "ravdess|cnn|GG": {
+   "accuracy": 39.379198517489,
+   "macro_f1": 36.97610286351235,
+   "mean_speaker_uar": 40.46068948412699,
+   "n_replicates": 3,
+   "uar_pooled": 40.46286449243746
+  },
+  "ravdess|cnn|GR": {
+   "accuracy": 45.00810748204771,
+   "macro_f1": 42.84737347905584,
+   "mean_speaker_uar": 45.7062251984127,
+   "n_replicates": 3,
+   "uar_pooled": 45.70210242146597
+  },
+  "ravdess|cnn|LOSO": {
+   "accuracy": 46.004169562195976,
+   "macro_f1": 44.23489811425403,
+   "mean_speaker_uar": 47.085813492063494,
+   "n_replicates": 3,
+   "uar_pooled": 47.06838096276905
+  },
+  "ravdess|cnn|LOSOSUB": {
+   "accuracy": 39.518183924021315,
+   "macro_f1": 37.524734971169025,
+   "mean_speaker_uar": 40.47929067460317,
+   "n_replicates": 3,
+   "uar_pooled": 40.4864974185573
+  },
+  "ravdess|cnn|P1GG": {
+   "accuracy": 37.22492471623813,
+   "macro_f1": 35.06586454355287,
+   "mean_speaker_uar": 37.98673115079365,
+   "n_replicates": 3,
+   "uar_pooled": 37.989474258289704
+  },
+  "ravdess|cnn|P1RR": {
+   "accuracy": 55.38568450312717,
+   "macro_f1": 52.97599889628629,
+   "mean_speaker_uar": 56.77393353174603,
+   "n_replicates": 3,
+   "uar_pooled": 56.75129072134962
+  },
+  "ravdess|cnn|RG": {
+   "accuracy": 51.285615010423896,
+   "macro_f1": 48.74186334690619,
+   "mean_speaker_uar": 52.622767857142854,
+   "n_replicates": 3,
+   "uar_pooled": 52.623936518324605
+  },
+  "ravdess|cnn|RR": {
+   "accuracy": 55.45517720639333,
+   "macro_f1": 52.96713261275956,
+   "mean_speaker_uar": 56.959945436507944,
+   "n_replicates": 3,
+   "uar_pooled": 56.94739856020942
+  },
+  "ravdess|hubert_base|GG": {
+   "accuracy": 65.60111188325226,
+   "macro_f1": 65.07924702481597,
+   "mean_speaker_uar": 65.90401785714285,
+   "n_replicates": 3,
+   "uar_pooled": 65.90166430337406
+  },
+  "ravdess|hubert_base|GR": {
+   "accuracy": 67.33842946490618,
+   "macro_f1": 66.97010938851294,
+   "mean_speaker_uar": 67.28360615079366,
+   "n_replicates": 3,
+   "uar_pooled": 67.27044248109367
+  },
+  "ravdess|hubert_base|RG": {
+   "accuracy": 74.49617790132037,
+   "macro_f1": 74.0196821813015,
+   "mean_speaker_uar": 75.21391369047619,
+   "n_replicates": 3,
+   "uar_pooled": 75.2179228475858
+  },
+  "ravdess|hubert_base|RR": {
+   "accuracy": 78.20245540884873,
+   "macro_f1": 77.86866287209385,
+   "mean_speaker_uar": 78.38851686507937,
+   "n_replicates": 3,
+   "uar_pooled": 78.38927974112856
+  },
+  "ravdess|resnet_se|GG": {
+   "accuracy": 45.17025712300208,
+   "macro_f1": 43.06419370279005,
+   "mean_speaker_uar": 45.63182043650793,
+   "n_replicates": 3,
+   "uar_pooled": 45.63370327952298
+  },
+  "ravdess|resnet_se|GR": {
+   "accuracy": 52.883947185545516,
+   "macro_f1": 51.66556017311129,
+   "mean_speaker_uar": 52.88318452380952,
+   "n_replicates": 3,
+   "uar_pooled": 52.89139761489238
+  },
+  "ravdess|resnet_se|RG": {
+   "accuracy": 57.053509381514935,
+   "macro_f1": 55.400944642833366,
+   "mean_speaker_uar": 58.407738095238095,
+   "n_replicates": 3,
+   "uar_pooled": 58.402073334787666
+  },
+  "ravdess|resnet_se|RR": {
+   "accuracy": 64.99884178827888,
+   "macro_f1": 64.02405382003656,
+   "mean_speaker_uar": 65.86371527777779,
+   "n_replicates": 3,
+   "uar_pooled": 65.85564826934264
+  },
+  "ravdess|transformer|GG": {
+   "accuracy": 38.42946490618485,
+   "macro_f1": 37.173779036130306,
+   "mean_speaker_uar": 38.76178075396825,
+   "n_replicates": 3,
+   "uar_pooled": 38.77663248981966
+  },
+  "ravdess|transformer|GR": {
+   "accuracy": 45.77252721797544,
+   "macro_f1": 44.938619091549945,
+   "mean_speaker_uar": 45.200892857142854,
+   "n_replicates": 3,
+   "uar_pooled": 45.20740165066899
+  },
+  "ravdess|transformer|RG": {
+   "accuracy": 49.640954366458196,
+   "macro_f1": 48.53370100384547,
+   "mean_speaker_uar": 50.30691964285714,
+   "n_replicates": 3,
+   "uar_pooled": 50.307568899069224
+  },
+  "ravdess|transformer|RR": {
+   "accuracy": 56.38174658327542,
+   "macro_f1": 55.577439141270666,
+   "mean_speaker_uar": 56.73983134920635,
+   "n_replicates": 3,
+   "uar_pooled": 56.73379326643397
+  },
+  "ravdess|wav2vec2_base|GG": {
+   "accuracy": 53.74102385916145,
+   "macro_f1": 52.81405460193565,
+   "mean_speaker_uar": 53.3172123015873,
+   "n_replicates": 3,
+   "uar_pooled": 53.32463005381036
+  },
+  "ravdess|wav2vec2_base|GR": {
+   "accuracy": 56.24276117674311,
+   "macro_f1": 55.480120296589824,
+   "mean_speaker_uar": 55.679563492063494,
+   "n_replicates": 3,
+   "uar_pooled": 55.69292193862711
+  },
+  "ravdess|wav2vec2_base|RG": {
+   "accuracy": 62.24229789205467,
+   "macro_f1": 61.51447999554756,
+   "mean_speaker_uar": 62.53720238095238,
+   "n_replicates": 3,
+   "uar_pooled": 62.552605984584055
+  },
+  "ravdess|wav2vec2_base|RR": {
+   "accuracy": 66.96780171415334,
+   "macro_f1": 66.24948410697152,
+   "mean_speaker_uar": 66.87748015873017,
+   "n_replicates": 3,
+   "uar_pooled": 66.87584078679465
+  },
+  "ravdess|wavlm_base_plus|GG": {
+   "accuracy": 64.18809358350707,
+   "macro_f1": 63.6025988395333,
+   "mean_speaker_uar": 65.11966765873017,
+   "n_replicates": 3,
+   "uar_pooled": 65.11711932809773
+  },
+  "ravdess|wavlm_base_plus|GR": {
+   "accuracy": 65.41579800787584,
+   "macro_f1": 65.14740259045413,
+   "mean_speaker_uar": 65.91951884920636,
+   "n_replicates": 3,
+   "uar_pooled": 65.92166139470622
+  },
+  "ravdess|wavlm_base_plus|RG": {
+   "accuracy": 71.55432012971971,
+   "macro_f1": 70.96969814639083,
+   "mean_speaker_uar": 72.33382936507937,
+   "n_replicates": 3,
+   "uar_pooled": 72.32902486910994
+  },
+  "ravdess|wavlm_base_plus|RR": {
+   "accuracy": 74.07922168172341,
+   "macro_f1": 73.5396504705763,
+   "mean_speaker_uar": 74.4140625,
+   "n_replicates": 3,
+   "uar_pooled": 74.4132671611402
+  },
+  "sub_1400_one|cnn|GG": {
+   "accuracy": 41.166666666666664,
+   "macro_f1": 38.02213499900503,
+   "mean_speaker_uar": 41.166666666666664,
+   "n_replicates": 3,
+   "uar_pooled": 41.16666666666667
+  },
+  "sub_1400_one|cnn|RR": {
+   "accuracy": 50.642857142857146,
+   "macro_f1": 47.96031283707858,
+   "mean_speaker_uar": 50.642857142857146,
+   "n_replicates": 3,
+   "uar_pooled": 50.642857142857146
+  },
+  "sub_1400_one|hubert_base|GG": {
+   "accuracy": 57.642857142857146,
+   "macro_f1": 56.983127250120475,
+   "mean_speaker_uar": 57.64285714285714,
+   "n_replicates": 3,
+   "uar_pooled": 57.642857142857146
+  },
+  "sub_1400_one|hubert_base|RR": {
+   "accuracy": 63.61904761904762,
+   "macro_f1": 63.09183527279274,
+   "mean_speaker_uar": 63.61904761904762,
+   "n_replicates": 3,
+   "uar_pooled": 63.61904761904762
+  },
+  "sub_1400_one|resnet_se|GG": {
+   "accuracy": 45.54761904761906,
+   "macro_f1": 43.6299150735239,
+   "mean_speaker_uar": 45.54761904761906,
+   "n_replicates": 3,
+   "uar_pooled": 45.54761904761904
+  },
+  "sub_1400_one|resnet_se|RR": {
+   "accuracy": 54.28571428571428,
+   "macro_f1": 52.86242086157342,
+   "mean_speaker_uar": 54.285714285714285,
+   "n_replicates": 3,
+   "uar_pooled": 54.28571428571428
+  },
+  "sub_1400_one|wav2vec2_base|GG": {
+   "accuracy": 55.833333333333336,
+   "macro_f1": 55.12539532498079,
+   "mean_speaker_uar": 55.833333333333336,
+   "n_replicates": 3,
+   "uar_pooled": 55.833333333333336
+  },
+  "sub_1400_one|wav2vec2_base|RR": {
+   "accuracy": 64.38095238095238,
+   "macro_f1": 64.03210647463192,
+   "mean_speaker_uar": 64.3809523809524,
+   "n_replicates": 3,
+   "uar_pooled": 64.38095238095238
+  },
+  "sub_1400_one|wavlm_base_plus|GG": {
+   "accuracy": 58.0,
+   "macro_f1": 56.81073774696454,
+   "mean_speaker_uar": 57.99999999999999,
+   "n_replicates": 3,
+   "uar_pooled": 57.99999999999999
+  },
+  "sub_1400_one|wavlm_base_plus|RR": {
+   "accuracy": 61.26190476190476,
+   "macro_f1": 60.57186293792022,
+   "mean_speaker_uar": 61.26190476190476,
+   "n_replicates": 3,
+   "uar_pooled": 61.26190476190476
+  },
+  "sub_700_one|cnn|GG": {
+   "accuracy": 40.38095238095238,
+   "macro_f1": 36.837331276595194,
+   "mean_speaker_uar": 38.91487150415722,
+   "n_replicates": 3,
+   "uar_pooled": 39.81893718848814
+  },
+  "sub_700_one|cnn|RR": {
+   "accuracy": 46.904761904761905,
+   "macro_f1": 44.294430102239055,
+   "mean_speaker_uar": 44.71154572940287,
+   "n_replicates": 3,
+   "uar_pooled": 46.52206340032898
+  },
+  "sub_700_one|hubert_base|GG": {
+   "accuracy": 56.1904761904762,
+   "macro_f1": 54.89264407219235,
+   "mean_speaker_uar": 54.289210128495846,
+   "n_replicates": 3,
+   "uar_pooled": 56.067852407840924
+  },
+  "sub_700_one|hubert_base|RR": {
+   "accuracy": 60.666666666666664,
+   "macro_f1": 59.85471379547497,
+   "mean_speaker_uar": 57.974773242630384,
+   "n_replicates": 3,
+   "uar_pooled": 60.55793878599343
+  },
+  "sub_700_one|resnet_se|GG": {
+   "accuracy": 39.714285714285715,
+   "macro_f1": 37.48675809414391,
+   "mean_speaker_uar": 38.366118669690096,
+   "n_replicates": 3,
+   "uar_pooled": 39.49038671771421
+  },
+  "sub_700_one|resnet_se|RR": {
+   "accuracy": 51.19047619047618,
+   "macro_f1": 49.56622482692205,
+   "mean_speaker_uar": 49.37840136054422,
+   "n_replicates": 3,
+   "uar_pooled": 50.97338596831654
+  },
+  "sub_700_one|wav2vec2_base|GG": {
+   "accuracy": 52.14285714285714,
+   "macro_f1": 50.429476820655545,
+   "mean_speaker_uar": 50.74234693877551,
+   "n_replicates": 3,
+   "uar_pooled": 52.22615604626694
+  },
+  "sub_700_one|wav2vec2_base|RR": {
+   "accuracy": 56.666666666666664,
+   "macro_f1": 55.86844974948264,
+   "mean_speaker_uar": 54.48894557823129,
+   "n_replicates": 3,
+   "uar_pooled": 56.66830873759508
+  },
+  "sub_700_one|wavlm_base_plus|GG": {
+   "accuracy": 53.714285714285715,
+   "macro_f1": 52.43490305256052,
+   "mean_speaker_uar": 51.85279667422524,
+   "n_replicates": 3,
+   "uar_pooled": 53.689420418107524
+  },
+  "sub_700_one|wavlm_base_plus|RR": {
+   "accuracy": 57.42857142857142,
+   "macro_f1": 56.705386347380376,
+   "mean_speaker_uar": 55.374716553287975,
+   "n_replicates": 3,
+   "uar_pooled": 57.311048711947876
+  },
+  "sub_700_two|cnn|GG": {
+   "accuracy": 41.73809523809524,
+   "macro_f1": 39.25803826782548,
+   "mean_speaker_uar": 40.42791005291006,
+   "n_replicates": 3,
+   "uar_pooled": 41.47251519241156
+  },
+  "sub_700_two|cnn|RR": {
+   "accuracy": 54.523809523809526,
+   "macro_f1": 52.57743885053268,
+   "mean_speaker_uar": 52.38671579743008,
+   "n_replicates": 3,
+   "uar_pooled": 54.50149012561059
+  },
+  "sub_700_two|hubert_base|GG": {
+   "accuracy": 57.833333333333336,
+   "macro_f1": 56.70423146595808,
+   "mean_speaker_uar": 56.10440287226002,
+   "n_replicates": 3,
+   "uar_pooled": 57.64731125663576
+  },
+  "sub_700_two|hubert_base|RR": {
+   "accuracy": 73.28571428571429,
+   "macro_f1": 72.93073702126308,
+   "mean_speaker_uar": 71.33848261526832,
+   "n_replicates": 3,
+   "uar_pooled": 73.18383660990382
+  },
+  "sub_700_two|resnet_se|GG": {
+   "accuracy": 41.833333333333336,
+   "macro_f1": 40.446297510298706,
+   "mean_speaker_uar": 40.955924036281175,
+   "n_replicates": 3,
+   "uar_pooled": 41.708633260139926
+  },
+  "sub_700_two|resnet_se|RR": {
+   "accuracy": 59.35714285714286,
+   "macro_f1": 58.59265001623686,
+   "mean_speaker_uar": 58.06968065003779,
+   "n_replicates": 3,
+   "uar_pooled": 59.459351729409526
+  },
+  "sub_700_two|wav2vec2_base|GG": {
+   "accuracy": 52.88095238095238,
+   "macro_f1": 51.77291273737428,
+   "mean_speaker_uar": 50.91104497354498,
+   "n_replicates": 3,
+   "uar_pooled": 53.04739570695845
+  },
+  "sub_700_two|wav2vec2_base|RR": {
+   "accuracy": 69.04761904761905,
+   "macro_f1": 68.83102538534149,
+   "mean_speaker_uar": 67.00817271352986,
+   "n_replicates": 3,
+   "uar_pooled": 69.1377942397563
+  },
+  "sub_700_two|wavlm_base_plus|GG": {
+   "accuracy": 57.047619047619044,
+   "macro_f1": 55.95455633383627,
+   "mean_speaker_uar": 55.62103174603174,
+   "n_replicates": 3,
+   "uar_pooled": 56.92213199533533
+  },
+  "sub_700_two|wavlm_base_plus|RR": {
+   "accuracy": 71.19047619047619,
+   "macro_f1": 70.87518621599843,
+   "mean_speaker_uar": 69.42526455026454,
+   "n_replicates": 3,
+   "uar_pooled": 71.08962453542028
+  },
+  "subesco_980|cnn|GG": {
+   "accuracy": 39.625850340136054,
+   "macro_f1": 36.78835257819521,
+   "mean_speaker_uar": 39.625850340136054,
+   "n_replicates": 3,
+   "uar_pooled": 39.625850340136054
+  },
+  "subesco_980|cnn|GR": {
+   "accuracy": 42.85714285714286,
+   "macro_f1": 40.214952414633096,
+   "mean_speaker_uar": 42.85714285714286,
+   "n_replicates": 3,
+   "uar_pooled": 42.85714285714286
+  },
+  "subesco_980|cnn|RG": {
+   "accuracy": 43.40136054421768,
+   "macro_f1": 40.59530592243496,
+   "mean_speaker_uar": 43.40136054421769,
+   "n_replicates": 3,
+   "uar_pooled": 43.40136054421769
+  },
+  "subesco_980|cnn|RR": {
+   "accuracy": 47.142857142857146,
+   "macro_f1": 44.668157194709316,
+   "mean_speaker_uar": 47.14285714285714,
+   "n_replicates": 3,
+   "uar_pooled": 47.142857142857146
+  },
+  "subesco_980|hubert_base|GG": {
+   "accuracy": 56.56462585034013,
+   "macro_f1": 55.57273396370608,
+   "mean_speaker_uar": 56.56462585034013,
+   "n_replicates": 3,
+   "uar_pooled": 56.56462585034014
+  },
+  "subesco_980|hubert_base|GR": {
+   "accuracy": 58.46938775510204,
+   "macro_f1": 57.723666294303996,
+   "mean_speaker_uar": 58.46938775510204,
+   "n_replicates": 3,
+   "uar_pooled": 58.46938775510205
+  },
+  "subesco_980|hubert_base|RG": {
+   "accuracy": 58.50340136054422,
+   "macro_f1": 57.55656406552541,
+   "mean_speaker_uar": 58.50340136054422,
+   "n_replicates": 3,
+   "uar_pooled": 58.503401360544224
+  },
+  "subesco_980|hubert_base|RR": {
+   "accuracy": 60.81632653061224,
+   "macro_f1": 60.25425887653688,
+   "mean_speaker_uar": 60.81632653061223,
+   "n_replicates": 3,
+   "uar_pooled": 60.81632653061224
+  },
+  "subesco_980|resnet_se|GG": {
+   "accuracy": 44.04761904761906,
+   "macro_f1": 41.78766235158437,
+   "mean_speaker_uar": 44.04761904761904,
+   "n_replicates": 3,
+   "uar_pooled": 44.04761904761906
+  },
+  "subesco_980|resnet_se|GR": {
+   "accuracy": 46.63265306122449,
+   "macro_f1": 45.08484590391391,
+   "mean_speaker_uar": 46.63265306122449,
+   "n_replicates": 3,
+   "uar_pooled": 46.63265306122449
+  },
+  "subesco_980|resnet_se|RG": {
+   "accuracy": 47.10884353741496,
+   "macro_f1": 45.287320099748136,
+   "mean_speaker_uar": 47.10884353741497,
+   "n_replicates": 3,
+   "uar_pooled": 47.10884353741497
+  },
+  "subesco_980|resnet_se|RR": {
+   "accuracy": 51.12244897959184,
+   "macro_f1": 49.25788562193302,
+   "mean_speaker_uar": 51.12244897959183,
+   "n_replicates": 3,
+   "uar_pooled": 51.12244897959184
+  },
+  "subesco_980|transformer|GG": {
+   "accuracy": 37.993197278911566,
+   "macro_f1": 35.26182325616894,
+   "mean_speaker_uar": 37.99319727891156,
+   "n_replicates": 3,
+   "uar_pooled": 37.993197278911566
+  },
+  "subesco_980|transformer|GR": {
+   "accuracy": 41.666666666666664,
+   "macro_f1": 39.914726127233074,
+   "mean_speaker_uar": 41.666666666666664,
+   "n_replicates": 3,
+   "uar_pooled": 41.666666666666664
+  },
+  "subesco_980|transformer|RG": {
+   "accuracy": 43.0952380952381,
+   "macro_f1": 40.41791966222773,
+   "mean_speaker_uar": 43.095238095238095,
+   "n_replicates": 3,
+   "uar_pooled": 43.095238095238095
+  },
+  "subesco_980|transformer|RR": {
+   "accuracy": 45.03401360544217,
+   "macro_f1": 43.32488326682252,
+   "mean_speaker_uar": 45.03401360544217,
+   "n_replicates": 3,
+   "uar_pooled": 45.03401360544217
+  },
+  "subesco_980|wav2vec2_base|GG": {
+   "accuracy": 52.585034013605444,
+   "macro_f1": 51.60518930587301,
+   "mean_speaker_uar": 52.585034013605444,
+   "n_replicates": 3,
+   "uar_pooled": 52.585034013605444
+  },
+  "subesco_980|wav2vec2_base|GR": {
+   "accuracy": 54.14965986394558,
+   "macro_f1": 53.42930843759806,
+   "mean_speaker_uar": 54.14965986394558,
+   "n_replicates": 3,
+   "uar_pooled": 54.14965986394557
+  },
+  "subesco_980|wav2vec2_base|RG": {
+   "accuracy": 55.85034013605442,
+   "macro_f1": 54.97832303945817,
+   "mean_speaker_uar": 55.850340136054406,
+   "n_replicates": 3,
+   "uar_pooled": 55.85034013605442
+  },
+  "subesco_980|wav2vec2_base|RR": {
+   "accuracy": 58.60544217687075,
+   "macro_f1": 58.17911756705351,
+   "mean_speaker_uar": 58.605442176870746,
+   "n_replicates": 3,
+   "uar_pooled": 58.605442176870746
+  },
+  "subesco_980|wavlm_base_plus|GG": {
+   "accuracy": 54.59183673469388,
+   "macro_f1": 53.494551228298775,
+   "mean_speaker_uar": 54.59183673469388,
+   "n_replicates": 3,
+   "uar_pooled": 54.59183673469388
+  },
+  "subesco_980|wavlm_base_plus|GR": {
+   "accuracy": 56.394557823129254,
+   "macro_f1": 55.62232838538355,
+   "mean_speaker_uar": 56.39455782312925,
+   "n_replicates": 3,
+   "uar_pooled": 56.394557823129254
+  },
+  "subesco_980|wavlm_base_plus|RG": {
+   "accuracy": 58.63945578231293,
+   "macro_f1": 57.83084043740546,
+   "mean_speaker_uar": 58.63945578231292,
+   "n_replicates": 3,
+   "uar_pooled": 58.63945578231293
+  },
+  "subesco_980|wavlm_base_plus|RR": {
+   "accuracy": 60.34013605442177,
+   "macro_f1": 59.7228264493742,
+   "mean_speaker_uar": 60.34013605442177,
+   "n_replicates": 3,
+   "uar_pooled": 60.34013605442178
+  },
+  "subesco_full|cnn|GG": {
+   "accuracy": 46.751452796036965,
+   "macro_f1": 45.423777306724126,
+   "mean_speaker_uar": 46.75801749271137,
+   "n_replicates": 3,
+   "uar_pooled": 46.75109871776539
+  },
+  "subesco_full|cnn|RR": {
+   "accuracy": 75.40249595122415,
+   "macro_f1": 74.849832889399,
+   "mean_speaker_uar": 75.40621963070943,
+   "n_replicates": 3,
+   "uar_pooled": 75.40259783593116
+  },
+  "subesco_full|cnn|TG": {
+   "accuracy": 61.91769076879108,
+   "macro_f1": 61.20951769569638,
+   "mean_speaker_uar": 61.91933916423712,
+   "n_replicates": 3,
+   "uar_pooled": 61.91806091806092
+  },
+  "subesco_full|hubert_base|GG": {
+   "accuracy": 60.69829475088121,
+   "macro_f1": 59.93204897627036,
+   "mean_speaker_uar": 60.70437317784256,
+   "n_replicates": 3,
+   "uar_pooled": 60.69822679822679
+  },
+  "subesco_full|hubert_base|RR": {
+   "accuracy": 81.31847194436506,
+   "macro_f1": 81.22113135661304,
+   "mean_speaker_uar": 81.321768707483,
+   "n_replicates": 3,
+   "uar_pooled": 81.31914771914772
+  },
+  "subesco_full|resnet_se|GG": {
+   "accuracy": 49.59512241592836,
+   "macro_f1": 48.65065450856239,
+   "mean_speaker_uar": 49.601943634596694,
+   "n_replicates": 3,
+   "uar_pooled": 49.59480432813766
+  },
+  "subesco_full|resnet_se|RR": {
+   "accuracy": 87.28684386015051,
+   "macro_f1": 87.26416523748337,
+   "mean_speaker_uar": 87.28804664723032,
+   "n_replicates": 3,
+   "uar_pooled": 87.28683445350111
+  },
+  "subesco_full|wav2vec2_base|GG": {
+   "accuracy": 58.10707821282271,
+   "macro_f1": 57.371930490926644,
+   "mean_speaker_uar": 58.11690962099126,
+   "n_replicates": 3,
+   "uar_pooled": 58.10730730730731
+  },
+  "subesco_full|wav2vec2_base|RR": {
+   "accuracy": 80.16576164618462,
+   "macro_f1": 80.07756902340041,
+   "mean_speaker_uar": 80.16967930029155,
+   "n_replicates": 3,
+   "uar_pooled": 80.16608513275179
+  },
+  "subesco_full|wavlm_base_plus|GG": {
+   "accuracy": 61.35086215109079,
+   "macro_f1": 60.711663236750326,
+   "mean_speaker_uar": 61.35850340136056,
+   "n_replicates": 3,
+   "uar_pooled": 61.35135135135135
+  },
+  "subesco_full|wavlm_base_plus|RR": {
+   "accuracy": 80.69448413832524,
+   "macro_f1": 80.58445612897485,
+   "mean_speaker_uar": 80.69825072886296,
+   "n_replicates": 3,
+   "uar_pooled": 80.69493779493779
+  }
+ },
+ "n_cell_runs": 557
+}

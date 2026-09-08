@@ -1,0 +1,1504 @@
+{
+  "status": "complete",
+  "analysis_identity": "post-Claude-review exploratory audit; original prespecified endpoint unchanged",
+  "generated_at": "2026-09-07T12:38:09.708463+00:00",
+  "script_sha256": "e8c55f30867797fb1eacc6a4e39af5e9523af9329d7a99b22cffbae2cac03385",
+  "archive": "D:\\SER-dual-validation-20260906",
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "input_sha256": {
+    "D:\\SER-dual-validation-20260906\\inputs\\plan.json": "a765bad72a0c6be88040ca0dadac6848d139988714af26e738a06403ad0cb1e1",
+    "D:\\SER-dual-validation-20260906\\analysis\\formal_gate.json": "5cafbc5d32080f09b2bf9cb4488c5fb6b9455395b6a9ad887bd195a57bf41b68",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\results.json": "95b0cf199c9c77361b2956b12eb275e0d45c5f6227867324086dd995bc3028a9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\dataset.py": "af033c6ff25439dac513f29287570cd4f616c656aef01f10dac8c00ac71d6e5b",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\experiment_utils.py": "44f143b800e7aff562fef47a90f81520f8bf542ddb40ffcc5094552710e95e63",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\features.py": "a4c8fc003b9732158cbecd2cea41f3978416ecc51dbf3649df48a92c24e68f7f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\plan_rc2\\unit_configs.json": "c541c6a2c868dd367e2b77426b1e312d15feef7317b8a172ebe2486a2a9c1d59",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\__init__.py": "b8dea7d361597222634b83f90ea26bdbf930e1d740c4797e19421ac5207cdecc",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\common.py": "e954e51f77ee66f23aead0fffd9d1cd8b2ed7b6aa0b1385e251498ca02d92ee2",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\corpora.py": "d921ff2497fb3ce1074c7237d436419a65e412a4b59db7caf26b89379539860c",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\features.py": "cdb5f86e0ee52da7c52dd2b0a892bd7be2c3e4f2bb87780329ba22d2d10c245f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\stats.py": "e25be689c4c1cbf2c549fc5b2c4c8599415c1b11de68f9669b130d5154b02a7e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\ser_v2\\train.py": "cda4967cd8a8009eefdd87df87b7a327566cf9586299018397ac132adf12ba44",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\__init__.py": "43aebf57889f668bac4631bb0d9c567078cf4d13bcd61db8481666aa5a991a12",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\__init__.py": "0a3409854a608428971af437b236e614e9e539843a5797ac7cf96f859b44c30c",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_plan.py": "678f41809e84730cfea45e072adecfc6ea22cb23535ae86ac47b9859976b97da",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_run.py": "ea9fd83f067e47b39a2398797622be98a3dbe3239fd5455b67e9406a78221ae4",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\core_verify.py": "7f189b077b792af5bdd4ed7762043f7647bdcab518a0a2394abad8e47e45cf4b",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\deploy\\__init__.py": "27a9c173ac33cdcf2d2af8aaf3671f0bacb3ea6fa59e7ff5876ec1feb7d342e8",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\deploy\\engines_deploy.py": "62f5d792243ca5ec8631988e1169502db2810d2ab1bbf9c325f3f3326e837753",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\PROTOCOL.md": "d249110b0a76c3b019a4f18a232fe2b98124e65639417db4733701012a25860f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\__init__.py": "eda1e0150358953110356fb71d93a4e21690a449457ff1720b55a410bbf4fff1",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\engine.py": "220709618044deec36137cd88c8c8d2255f6ebd3b198296e78b77678f90763b1",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\plan.py": "e301577aae2b93234b34c4ab3386a9b19dbbaf4530cb72267921e5c4dc313a3f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\run.py": "0b415cfd5680c28ab12ce34f966c829b4e22b3d63e75f4040c543203cae3c77e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\inner_validation\\score.py": "5cc6fefb4c8f8eb32454f2849507b16c43e05d65aea3ce5b27f88e360a4aea1e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\EXECUTION_PLAN.md": "dc3ba1c1f21092ac4339096b456aa56eae90d5d6f5da47819452acb01d6982b9",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\asv_emotion.py": "7ccf0d42436b8d44ac6f1c251cb78a24b23ed1f12f41b2f14bb53e1824985135",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\diagnose.py": "4b35e176c26416873cb42f05310c15da110a60f4b3958d3197e3e644b55fe773",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\extract_asv.py": "e1ad418c7f14fe7a1f49baa10d2e06ffad79d2d12d52ba15efa5e63929a750a3",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\plan.py": "369248b95ccc66cd7ac181f428fbff20daefa0008f6fb0da748504ac3e443480",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\run.py": "c3589ad5f22b366ab8971ada823e4f7f063ff0197250c58aebf1f794a7fba309",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\score.py": "8614fe6b6632f4db0bd73c5df201d74849d450fd63d719abee06634dea24b22f",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\verify.py": "e9a548a7a1beb59dd99ad7043247ba31215d28eb84fc6b014d44c3b047ffe48e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\speaker_coverage\\voice_diagnostic.py": "7a7c17a26b6e73b91c04c94be566e3d4392252efba8ca5a500a68004dfa6735e",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v2\\manifests\\cremad_manifest.csv": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+    "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\v3\\data_design\\metadata\\VideoDemographics.csv": "e33ddc8b60bedf98541735801127cbb67098b5957271adbdd5dea8a44294eec3",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\pred_metrics.csv": "7b2a0a087c8aa48fbd52dfe606b97b2686c9d64e1fb7a9a34c07cf22b6eeb7d1",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\selected_episodes.csv": "e4db0a8f9f901e60b07894bb58e91ba54a06702a193856d2dd79fd97cb758568",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\draws.csv": "08ec548fa25457452510e11d06b816fc3552b27bba17752c5852a27658d4d897",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f0_c3\\DONE": "b37c7d1041bf2e7d05000b20bf161b74a866d459db712490d1a6d3372376f0b9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f0_c3\\attempts\\0001\\predictions.npz": "52a8379d5b1123511490039cbb785c3a7b5657c491502eedf42aa0c8f81dc19c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f0_c3\\attempts\\0001\\receipt.json": "eba6a9f2d6c217f17755ad28d4805434047a83acb92c2f724d87c5facb8a9caa",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f1_c3\\DONE": "58b0a74612bc3bb7ea0912e9457dca97480f37b07638be926e9d625a093fc19c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f1_c3\\attempts\\0001\\predictions.npz": "03cb32fa5db3d639197e0959b8c4c50bfc5f62e6a37f0589bd627ff41f6efebd",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f1_c3\\attempts\\0001\\receipt.json": "527768def5045df3b6163028c8fb529c75080bffbca45b32a4fabf0cfdd98a62",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f2_c3\\DONE": "dae6429e9a0b7676520f07b8619feb3348ead479ad9f58d1e5c0c0dfc0b9f59d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f2_c3\\attempts\\0001\\predictions.npz": "c576af064d4e7e3f903d0b1e085d0eb67d98ec5658bc9329df4a332de3a42e8e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f2_c3\\attempts\\0001\\receipt.json": "0bc6cc32376bb9dbf883490b035cfa8a4e3e1e28ce79112562f8987a4b1b0f99",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f3_c3\\DONE": "35c26999e05b36c491e4e68b2519e96245a0dc7821452333441f24820f78b030",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f3_c3\\attempts\\0001\\predictions.npz": "793864ac719f1c940cd585be77ea2423b7b51e658d74b9f7f908a8fdcd574b04",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f3_c3\\attempts\\0001\\receipt.json": "2979d7e800fcc0a976fbb90bf218c3f6ad21b1787696d1dbea7b573146f24e5a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f4_c3\\DONE": "5438d458d5a8f87a30575c5f3c17be763c7d63bae281389d59f17e82350c9066",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f4_c3\\attempts\\0001\\predictions.npz": "31eae00c1a793bd52f51270540028f9f4c5d2b8dc83e857e4ac702d6891b3a99",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d00_f4_c3\\attempts\\0001\\receipt.json": "ba699c9da083fb30c9db0491ad9ec0cd2f46a2eb5abf12b0a337ca72d8b059e6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f0_c3\\DONE": "e70ecd6ef1dbfb361f85dd4b3426a1e0678cbba8c2f9d9a72b0577349fef08e0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f0_c3\\attempts\\0001\\predictions.npz": "20730c5086f08f927531fc4167159ac6dd98771b77545be681762f907b10524e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f0_c3\\attempts\\0001\\receipt.json": "e4095b23768fd1447549f5bb873d99e11dff15fb188a9dbe243a88b819e832f7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f1_c3\\DONE": "7d72783437dd1245162a4172181d9da32ede674d6c749c1f390e19fe48426bb1",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f1_c3\\attempts\\0001\\predictions.npz": "fb403f992ca6f0b0fac08acbb1cc467a0fa583ea68984cb2aa1bbe9d9ef0ffff",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f1_c3\\attempts\\0001\\receipt.json": "38b2411f0d26cfb4acc10ec6f8e9951d54b2bf43173aa1f784ca308cb91493fa",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f2_c3\\DONE": "562064a888a600c2446cbae718b4dfff210e0197bd1857d2f153829d7770e132",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f2_c3\\attempts\\0001\\predictions.npz": "9063ee663e6927b4e5e8b830f9a165ba00b46f0b6d7c96da1c77d412fb8a6a7c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f2_c3\\attempts\\0001\\receipt.json": "cd532b04d1874278b919117f6595f8a7bf42fd08b796f04ac7dd3eb19e9d11ba",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f3_c3\\DONE": "89ea49cf22c61a32917f0c9e33d1b16c480ca3b088481aae0dc86258bea6a909",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f3_c3\\attempts\\0001\\predictions.npz": "a233515a16a4d81fafdccf544994c912dd4f530913584eface4dc5d145bdf0c6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f3_c3\\attempts\\0001\\receipt.json": "3bf4840b9034b588df23c1ef7ec2a95ec3aea339254ff05fc5faeb033644f68d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f4_c3\\DONE": "0c8242ad7af733e2f6ebddc703ac9af22fec5bbe60337b2339e7b679d3eaa0cd",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f4_c3\\attempts\\0001\\predictions.npz": "a167345cf0c6debeb82ada0496d252c47ebab13d0c85fc1e522a0d00cfa74785",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d01_f4_c3\\attempts\\0001\\receipt.json": "15d7a4e3fb818214aab62e124ae8a0b9637664244965918d285c8927e06b660e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f0_c3\\DONE": "72f45110d3d1f2925365459a24cf88e578dbe589b29d8974f5d2d661605df478",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f0_c3\\attempts\\0001\\predictions.npz": "3fb60698f6bf8c9585840b7cf99d6b8d22aabe73fab08e2686b2787c371d3cf6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f0_c3\\attempts\\0001\\receipt.json": "240dad9fda7ab8589dc37f66f3e6762c5af6d03949d42aa06599d8bd334b4d06",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f1_c3\\DONE": "621cc20151cfc231d24ebb98e669af66a3863c190b1f20ec79364b0f4e129de1",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f1_c3\\attempts\\0001\\predictions.npz": "93ff556bebb97283de226e2c84857fbdfa0ebfc22c5c596dbc1bf80cfd08bb08",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f1_c3\\attempts\\0001\\receipt.json": "c7181df565ed55c04794335f1f02a2b07d62276ee6b2acf997146520fb55697f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f2_c3\\DONE": "7cf1c2de32265c13be5d191a87d2607b2665435ccb26b1c83ff5b85b6e8d237c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f2_c3\\attempts\\0001\\predictions.npz": "08869d22a3bdddd068baca69ea18eb03f4272d163fbe47d8e702a5abd45882d0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f2_c3\\attempts\\0001\\receipt.json": "e3b842dbbc69c7025ccbd3ee7eea7277d1544cdb8e4ec2944973fdbd8950a250",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f3_c3\\DONE": "7991bc59aee5ede97c21ea263dd2d3ff95f3b829db0cbeb2541e2a43e4dad5c2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f3_c3\\attempts\\0001\\predictions.npz": "2740337c97c4119de6992f6e8fc1e250b35d6a8076b78f93d4babd401262ea20",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f3_c3\\attempts\\0001\\receipt.json": "377cc29b8d3b8cd967b2ea78eacc59d85d1d2d5757959eb85548a73b9989a55e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f4_c3\\DONE": "adf098161e52bfc32f10395e4699d44cb65097fa5060e40819a5363f241f9604",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f4_c3\\attempts\\0001\\predictions.npz": "58bb116570a9cd5ac446b9113b688159dcdade801dd98eeafc2c83dfa645dc9f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d02_f4_c3\\attempts\\0001\\receipt.json": "be7315a9c1875981cad0bbdb22fea8c3cc809dc16651a35585dcf9060439c6f6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f0_c3\\DONE": "2912fe6c0fc4a02e2ea3619a116afa0f53b30890e15c9bcd0970aa2b37330f39",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f0_c3\\attempts\\0001\\predictions.npz": "2316086997535509b1f7ae9bf62994d8cff4e3ee219f0bce14f99e2d8fe4f0b9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f0_c3\\attempts\\0001\\receipt.json": "e89e24075a111ae3cc2db028ccfd7003a8899829be40290a5d9284819e34238a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f1_c3\\DONE": "edee5bfe765d231cbcb4482dc6c0fd13662bb742ac240f4cc1bbc8dc436bc5b0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f1_c3\\attempts\\0001\\predictions.npz": "ffc3819cdb4bd1c2d2c0c71eac31092af787650f6e18c950efd7690f3defdcc8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f1_c3\\attempts\\0001\\receipt.json": "3988b5451e46388cdd405affe5e4e59188c540927c167ec7d0581f157a73e2cd",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f2_c3\\DONE": "1e97a14df2def55152a805212c2c5668fe3d0a3a275a26e3231db1d67ba2614b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f2_c3\\attempts\\0001\\predictions.npz": "71865baf0488317a55d1bf8a4f0a7890acb92d7a7abbed66b39fb10d22539244",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f2_c3\\attempts\\0001\\receipt.json": "f35acb7b07301a3cf0b2f8a5d0861b79c63a86524233205821342c90e60aad4a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f3_c3\\DONE": "2176d185abf28d7eea0285aa9d7651b1a1278ce5881c4921c0c15b6e4b2e699a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f3_c3\\attempts\\0001\\predictions.npz": "738c96df1076fe686d3a909c9dc7fa183b37b3ddc93cfbd5c79f8819a3f46a02",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f3_c3\\attempts\\0001\\receipt.json": "1ee5b5b18c080f59edc04a6f603cf76685f66c97ca7bb410cd681cbc777f9c9b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f4_c3\\DONE": "d82b39fc2ee71c99d38128bc99b1f0bcb0750e98fa3b9ae530d93b99070bb673",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f4_c3\\attempts\\0001\\predictions.npz": "003db3b015b6e4bfdd39004510bfbcaf85e7ef6800a1e7a3b2294acd88e70ff3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d03_f4_c3\\attempts\\0001\\receipt.json": "28ec65f388c01595b516e3c45abd591a54b267d67d63a320e9e778c12b1c3671",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f0_c3\\DONE": "68fc725204ca510450bf964ff27d7490efd4a719ea6c9a9c92565f91c5372375",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f0_c3\\attempts\\0001\\predictions.npz": "0e338f4f11f305da2ccc53c421b2549275150ea934a635b84b1ba0ccf2777053",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f0_c3\\attempts\\0001\\receipt.json": "d5337f280c33e984fbf8a95ea5056e2b5bb23c8700efc67e4a3cff290757468f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f1_c3\\DONE": "5a613242a2d3a2c9bca38156fd94b036073e8dc57d67138b83804c94a0e1eea6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f1_c3\\attempts\\0001\\predictions.npz": "a057a35e94d1321017f8a5134f9e25a007d6c6f8d6923dea3ffc8817f35e84ff",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f1_c3\\attempts\\0001\\receipt.json": "001261026f17d85ac20eba42d875df680492108470751cbc8896b0d3a7b8e5f4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f2_c3\\DONE": "0b4c8220e66fce18d8aef8f3445526ff4380b2e77367e5d4d30b24bb834737b4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f2_c3\\attempts\\0001\\predictions.npz": "64f1d165fa18421b40e24d801d7bf225dd38104cec898b7bc2985904c25b4ff5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f2_c3\\attempts\\0001\\receipt.json": "90b978e9727630f053017ce999610c9852cc85e9d679704c1305baa3957fbae6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f3_c3\\DONE": "55f54f2a7d6b0051be4ba77a2ef3ef27ed364359faae6db683493be82327dfae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f3_c3\\attempts\\0001\\predictions.npz": "6543e5341db454ce71d2d4054858210fc13009f46e39b067f5ea7be729ce03b0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f3_c3\\attempts\\0001\\receipt.json": "fb69e11c8a1b4129d22c67d4fd0966f5e3517cf16caa52b5a300531df22a0a64",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f4_c3\\DONE": "380363bdcf0feb55ebddd6932d234443c4831bd30811b42b499a45619bbca9e2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f4_c3\\attempts\\0001\\predictions.npz": "672dbb7d3871ba71ef9a3df125775fe4148937201f69985f383753ef7616694e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d04_f4_c3\\attempts\\0001\\receipt.json": "c214f02c878c9d7d8e176ceb6779d2c81a2621449848c4662adc46e4cdbdfdb5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f0_c3\\DONE": "e0c8d9770982b6cb91fc285b4dd91a979e196204625355add2748541ed23eb7b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f0_c3\\attempts\\0001\\predictions.npz": "edf21268e31c006d390a57f565c62b89cce32627db6e4f48326e91c528c45eb2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f0_c3\\attempts\\0001\\receipt.json": "34f7cdab0b0665a352eed18fb022de568742e85e16677bae5fedfda7ac8c4005",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f1_c3\\DONE": "8c25cc14b03e8bf5ed8b0ac83e866bd1a401099c7c629f5186b8f5b725735eb3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f1_c3\\attempts\\0001\\predictions.npz": "c98bb3c930b0cca8a1676cc89334414b53574c080699515c7b4fe57a0b5d8bb6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f1_c3\\attempts\\0001\\receipt.json": "d94699aa37526564696e7bc565e9150a4407daffa673dce8a3b235c11c0784af",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f2_c3\\DONE": "a4897ae76ada68655b54b9432d38eed899f9883a291d185bd41b1d78737fb3a9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f2_c3\\attempts\\0001\\predictions.npz": "388e150b322f54ca60cfe71151e53032dca488e7fdde73bb98a0c611f9d6be6c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f2_c3\\attempts\\0001\\receipt.json": "69c72ff4fb816f2dedcfe053b2dbc7bf4ce88b721bfe761911da4e94d5aebb21",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f3_c3\\DONE": "14b940ce0a6a6893f904bdb1d87f58e88a386fd2572d86547767ca98bf6ea189",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f3_c3\\attempts\\0001\\predictions.npz": "7b9ba552fd2f3d55f7a595fc1abdf47599434a0761337411d1d4203a5eb97cd5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f3_c3\\attempts\\0001\\receipt.json": "cda9b884855db5a446558a3c3e71f641efcdc88910a3cb512dccf58e3f1de34e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f4_c3\\DONE": "e3ec1da5e80518725cac4c4322f6245436f7ead31fdd67fd17c1c0d47ec41d17",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f4_c3\\attempts\\0001\\predictions.npz": "777f5c172c10b809d0b32eaf0ba6cd4d688e5e883c08cc15ea3bd0301614a684",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d05_f4_c3\\attempts\\0001\\receipt.json": "f4fc0010ee9cafd25ff3dc0c3b26fd50f1831284fdbdd543d2ff5ed51384a228",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f0_c3\\DONE": "26d419a7737c00b54bf7b49db922d82c79f866f20d0f0bfbcd049e0d40a9bdf4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f0_c3\\attempts\\0001\\predictions.npz": "2d642b43152b8d75881e6d9aa7cd925a5b2b67b09cf93ab697ae60e1b0bc3293",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f0_c3\\attempts\\0001\\receipt.json": "05281cfe9118ffd57e1ec8bb6e1874478bac1519c76b952790eb5bc4ac77aa3d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f1_c3\\DONE": "b161bc61a0a9c08abc8054a79c874f6e6ff2004b0f62d76ae1ba1332517c3381",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f1_c3\\attempts\\0001\\predictions.npz": "1461779ec7e778902170c64f9693c837269abf7a3d37043f5e4184e043921581",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f1_c3\\attempts\\0001\\receipt.json": "6e437546edf14f6a2b0a13daf2983edb931f9ef41d2fd344684d9e909553dbed",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f2_c3\\DONE": "024bf8ef1ee2e6f924e156d6bfd180699f07989ab3bc0bfb80007440bcb1e56a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f2_c3\\attempts\\0001\\predictions.npz": "110e110abb5abb97aa3477f8d4df5c88c437e0ff36e21378460cd11e383a9401",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f2_c3\\attempts\\0001\\receipt.json": "c659d34af36091a33f494341be3b4a9b778b2a1d52b19bb7c9627a2c047759af",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f3_c3\\DONE": "8d86d6d12a0237c988617b7550004cb7af380b68a92487c1dbe798046bb026f7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f3_c3\\attempts\\0001\\predictions.npz": "5e7dc194790175a3667936201ca20da17972f87237b46c19d89689676d4cd37b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f3_c3\\attempts\\0001\\receipt.json": "9628fb1d48b1bcf36bc67570f00f10fd7e0200db72454591e100e84af0d84a4a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f4_c3\\DONE": "a98b1cd11bde6b2a2edb610f6b59f62cdd85226ee6d3783ab9506c0273e244ef",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f4_c3\\attempts\\0001\\predictions.npz": "5c29c6a1a473e051b7c764b4ba78e4f4224f33fdc84ec144d6ba6199e32b7135",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d06_f4_c3\\attempts\\0001\\receipt.json": "b48a666da408f01ec7fc9633f43e44a106c751df76dcffb664edd8293fca0903",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f0_c3\\DONE": "102afb66bea1e16414bb1e985b99bebb5819462bc94c5f4a29223d7ba70ba31f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f0_c3\\attempts\\0001\\predictions.npz": "dbba2572e71954bbb9d62b1f6ab021ca30622617ff4d434cc2db9439f83ab375",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f0_c3\\attempts\\0001\\receipt.json": "266a705cc04115a426aaba057dafea85216b1cdb2418565cd3c8789cad25f5a3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f1_c3\\DONE": "460e553e2da77bfc036835584a8321a91636fc01c5889c3d110ca588d5ffdd20",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f1_c3\\attempts\\0001\\predictions.npz": "275a7749013d74312aa9a7f1e12a1743323bf17c35284ad164a77ccafd456712",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f1_c3\\attempts\\0001\\receipt.json": "a9eae3be37809c685b9682a35f99e76a5ba323a6188e3aa6d197756b685cd805",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f2_c3\\DONE": "4309a53590d66cd440240a38b60c1cfd0f2554577ce9beb5ca8c973b04ee33ae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f2_c3\\attempts\\0001\\predictions.npz": "ccc739e52060ebc4d87b4a9982864f5e8f638636113144f6b13efcb5c920afb3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f2_c3\\attempts\\0001\\receipt.json": "f8eef6ef12d420b490b75c96c35a631bb77ff504ef24d86cf39bb6ba60d8980c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f3_c3\\DONE": "adfee28cd95dead5726725e9a86e696f1f19d2a55bd47d5050b568cd3897a946",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f3_c3\\attempts\\0001\\predictions.npz": "210634282b9515132556539c2ea46ae9363bb48dfe7a238b4c0c24774e07a28d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f3_c3\\attempts\\0001\\receipt.json": "91899ad730496cb9aeadfbd158b225857cf99f5d9a558b8d53a575c52eb46a03",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f4_c3\\DONE": "5eaec3cb8a03edbe9feb5a52efbe3eeae1553c6da68ff66e951fa3b467464d93",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f4_c3\\attempts\\0001\\predictions.npz": "18171f33544558a9f5131c63e0d580529b96309ace4385be72655df18228c678",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d07_f4_c3\\attempts\\0001\\receipt.json": "bf040372e77a5f54fbc5d712c2cd5c3f4dd61dd5b4e23a8c0ebecfa561921c00",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f0_c3\\DONE": "d92a93d79cdbbe38ed10278f9a030923391bd4a5f07ccc0d4b99fc6c9e13c152",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f0_c3\\attempts\\0001\\predictions.npz": "c7497f1e7642432528ea19c736858176d91b33671695217be0523633f92ef1bf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f0_c3\\attempts\\0001\\receipt.json": "84310bfefd5dfa771e63f9ee344f44ae5292021766e341a30085acafaab6a2ee",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f1_c3\\DONE": "e53770f66cf7466509c1b0de513a2a31a8240c8bdcaea66d8780883bd0d3888e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f1_c3\\attempts\\0001\\predictions.npz": "0cf816050230255df09b687c0bff94e88558c90e6652c4c2c149d037678b1283",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f1_c3\\attempts\\0001\\receipt.json": "28e8ca4d981013c7e321c833988ece3aae85b2da0961d9a8bb95a8ba53149f70",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f2_c3\\DONE": "7d75df91507f627f1e7107e3fbfb8fba5e1d226b9cee23a21ca053b68cad087d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f2_c3\\attempts\\0001\\predictions.npz": "c1c017eeefb7323052454f10f41e250e479fb4a4fb7f4c866aae432bb4989573",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f2_c3\\attempts\\0001\\receipt.json": "1e3ccf7ce7d77cd1e3336edc411581bdb14c6fd58eb16d99f6787aa225b27480",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f3_c3\\DONE": "f9205e47a46e65e7d1d5d3fb11de59b279b71e9fe07de469c800bfe6e7de9eb2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f3_c3\\attempts\\0001\\predictions.npz": "0bc95d5f68dfab0eb9bd2b23a048546347f05c49f0c58bc8c7d77d91328296a6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f3_c3\\attempts\\0001\\receipt.json": "51013cb3b8e64e2f8d8c80c12e885a5d477b481bfdc0d43eda872a2f5deee3df",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f4_c3\\DONE": "f2d6df17cfe914f219988a25aa1d86b15aa994740a44da32f8302e26079f5177",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f4_c3\\attempts\\0001\\predictions.npz": "7f3ef7c48a04a3b7794099f94402e6bcbf91c272fad40abfcd635135b9d4b4e9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d08_f4_c3\\attempts\\0001\\receipt.json": "e40d281c14d1420af62f6bc662404cc28ed0c2deef4733a56aa7dfe1b956b379",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f0_c3\\DONE": "b3e2ce0dfd6500b284ddbc47c221fdc8163575c338ef4c0b6766e9cc4a5a7757",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f0_c3\\attempts\\0001\\predictions.npz": "c4cc992208f533237ca06e9decef90618ca59fc5d887f37ca5171ad85abbc9ea",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f0_c3\\attempts\\0001\\receipt.json": "7406e37c0a0c46d89509639c0276b87528ac1f3b99d27049403afdda9bd139b4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f1_c3\\DONE": "3bebf8eba7fc1051ef00ecfc36125944d127969148f0dd4313f240f31de10cff",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f1_c3\\attempts\\0001\\predictions.npz": "5519e6c5475ea8c89e5de43317a6f4e228e6a5133141b56c5e085f869e533700",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f1_c3\\attempts\\0001\\receipt.json": "762cb99947be7e5516a324a331651655c0107f95c39a0e530930303d4eb691e4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f2_c3\\DONE": "b3d0fa654578c350dda9a3f6c4dfef029cafd5962050557f9ad3f335674ce68f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f2_c3\\attempts\\0001\\predictions.npz": "9f0e15fea956d52a6d7cbbde7037caffce27e7f5ad05fe0fc948998d90d4f65e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f2_c3\\attempts\\0001\\receipt.json": "8dfcf79b04686db0738ff63194bf4e33bf6fd5cd42ab86c0c4316ae6a5ff45d4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f3_c3\\DONE": "39ac222711d9af3b9f2e4ed50be98977db7814fdecf6261d91cb578003f2e678",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f3_c3\\attempts\\0001\\predictions.npz": "1c7e13fc6c12de2bb1df7f8c00106a9227c60d3399b4bd84eb3244b48fd431b3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f3_c3\\attempts\\0001\\receipt.json": "fab3b5cf96c75ac6f0a983885fa54fc443fb56f8c483f1df8e438a34ab2af152",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f4_c3\\DONE": "8a5dbd14d027e72916a8db118c889d4a40ec87b942ab658e788bda38a618af8d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f4_c3\\attempts\\0001\\predictions.npz": "c96cc8175bf1369e05e19caa6f3d16a450662ce52aed74bd0ac4e4351070825c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d09_f4_c3\\attempts\\0001\\receipt.json": "f96ebb2ceb5ee5c4274641a698d0927c59ee956c7eb3c2a73a1dcbe3962b11e0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f0_c3\\DONE": "8fbdca0876ba8af24ef4415c1f63c0b52a16a466728d0762481dfb06edfa7ba0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f0_c3\\attempts\\0001\\predictions.npz": "2ff5ad9f6db0e0e362b8c440944a5732135e95b9b5e652ea99e3e6f869d81a94",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f0_c3\\attempts\\0001\\receipt.json": "7f8707fc79dde5e8e789c636ea7e11e78072d5a2e34f371c0b07bec6966e0d7c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f1_c3\\DONE": "68b6b74efee333b4927ce15031f6649ba5970ce99a32874b272f86be5d28289a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f1_c3\\attempts\\0001\\predictions.npz": "0b3f5ef8e0b1d1c0deee87131b91d9cb1bb161c02430994a268278679a72f74d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f1_c3\\attempts\\0001\\receipt.json": "d94115ce683f209f56baf0ffa1931b15517c724fbbc640dce151e7029bafafc1",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f2_c3\\DONE": "f3949cf0f31d3e77c26f475b111f59473b1486904032f9467a995c2899492328",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f2_c3\\attempts\\0001\\predictions.npz": "d5367432e4b6a9c64843a630b66f05fd83dbf1ec33f2723795b76a91f9703ae4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f2_c3\\attempts\\0001\\receipt.json": "959f03960f1088fd031158b3a3e7e35f9cd6ca8089bb907ddc30e1e1f59cc407",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f3_c3\\DONE": "9f63fee437f0a34e1051b688639aa661fbeb7d13761ef06d61cf887c89b650a5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f3_c3\\attempts\\0001\\predictions.npz": "1e96a56c8dee8a3dc51e77871a792a1e1c42a02d84d8d774fe1311c0acc66eae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f3_c3\\attempts\\0001\\receipt.json": "42ecf94e8ac2d729a290f766fd849946c722638673b37872915b486d4d20cd0f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f4_c3\\DONE": "055947bf22220ac266c871a89e4df06f72a14ed2d4b8c85d02fcb938cc04a5b3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f4_c3\\attempts\\0001\\predictions.npz": "34e2ca58c56b2d1d423de5c879b43ceb89961a98f83e9652fbab32cb45ff7125",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d10_f4_c3\\attempts\\0001\\receipt.json": "6d64ae4788828062d06843c788682caaaa34b31f1a7274bcbf5c18221e70e23c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f0_c3\\DONE": "4bf34525b88aaeeebab22f9c59150d62514774117d5486f0e0ee4fe94002d0c2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f0_c3\\attempts\\0001\\predictions.npz": "4dc8cb3a9bd2e3a2040f7e7d5147adf180438ccaece3b9710697874cf0c376fb",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f0_c3\\attempts\\0001\\receipt.json": "91a1adb86a1927e79192f72243e6c5981ccd43eb791e6a863b2375321cd8aa4b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f1_c3\\DONE": "fcff2c79a6aacba3e4b81a8fad98cdc58716b226d66c6fcbc969f73098555ddd",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f1_c3\\attempts\\0001\\predictions.npz": "8702e791bd029ba1d0b3154bce6f417e38cfbaa175db4cacc76ce74a2a01922a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f1_c3\\attempts\\0001\\receipt.json": "faf5257265b3143523c3f976052274974eeda64d0097dfbf2dd10a1de7590f86",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f2_c3\\DONE": "31a82952fed37790692ed23354c137716ac4fec552a01bf9dbec78002d8d10ae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f2_c3\\attempts\\0001\\predictions.npz": "06cf7f0056912c9d83f9c460003fb7c847a167eef992971f6db533bae878dbee",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f2_c3\\attempts\\0001\\receipt.json": "43d11c04cfe30bc95805afd2b413b6e594f84eb9529df19b0b87ce055d1e4c4e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f3_c3\\DONE": "692536f758269d5f4f9d2935186610d51aa61b6a5178495f473a7f81c0122834",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f3_c3\\attempts\\0001\\predictions.npz": "c7a0a8f5e8c015b6b4a8957e3743550506f50bac1b738f6bb57a48403eccce8e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f3_c3\\attempts\\0001\\receipt.json": "c1f505c3ba4c14cf5493484a14631c2aec24b3b45480d16805e424a61d346a74",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f4_c3\\DONE": "0151f9d0ecd54aa886ec98d7ee4e24629348239f3259c97d6aecbf149a9ca3e0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f4_c3\\attempts\\0001\\predictions.npz": "8849d82a8b9e5eac5a72fd83d36b47167a98e5ba06a930fc025def26b20e5f0c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d11_f4_c3\\attempts\\0001\\receipt.json": "ec2ec8394ca77496257025b2c1c03e73f687f44a7fbe5a733f63e752ec72ae18",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f0_c3\\DONE": "00a599519c3ffca29fa93483f0885c12bf0f88baef2a2978b64c149f060697ac",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f0_c3\\attempts\\0001\\predictions.npz": "e3b90a7df0cb07551b694ba52d02a39a0cf77fb77f50241c29914da6f4bf6a53",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f0_c3\\attempts\\0001\\receipt.json": "18c8d2c3426161373f1457f9c1824a555c04be5bf645def16a2cab6d436de305",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f1_c3\\DONE": "d1607f11d80a9e98879bb2b97a3089f7bba0ec915c7ae4a90680ea42d82a3423",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f1_c3\\attempts\\0001\\predictions.npz": "af4810cea022518c2a3ae13ff20035bc650312bff44092b5edd525f369feb5d9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f1_c3\\attempts\\0001\\receipt.json": "4d792aeb2185902adc0822dc8b72aaa1ed866129c2339a927140eacffd08f879",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f2_c3\\DONE": "5f918316e5df542566f297f61c7f5926ea489d7d91238347ea90fa435d1e63b0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f2_c3\\attempts\\0001\\predictions.npz": "c9c1563556644cb6c7e617ba8b42f5323bbaef5fbd4eb08a664f8fcd7fc45871",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f2_c3\\attempts\\0001\\receipt.json": "506bed2956be4fbaa9e164892079e067290236293321f7c33493236c20d0dc82",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f3_c3\\DONE": "317dd3caa9ccdb008165c05a8cfbd505332a0ab1ddacc6f1b090d757d5c75ab8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f3_c3\\attempts\\0001\\predictions.npz": "ee363d68ffd5c3c3e0cb44bc87db20b868617626c0771c317682a00e06b3ddab",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f3_c3\\attempts\\0001\\receipt.json": "0bedee3133ac234d94ac5a00e2a043e84a21c6e67bb2a0110d80b719a25230c5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f4_c3\\DONE": "a3dbb6c38da29e0041f19bae75373b05b5862e3c4ddd47172e1443f6836c51d8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f4_c3\\attempts\\0001\\predictions.npz": "3ae0a76d6fe0143d021aa3cd7913c9d14b0db7690fa5e8b49fb89fbe3d4a3aa8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d12_f4_c3\\attempts\\0001\\receipt.json": "8ed2f1ae3df2b095da58b0b7ee21a260751f320ae8128e2b2f0bd9a189669534",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f0_c3\\DONE": "903b806136c235cba115d4cb176a275c32bbe24a9308cef53f15dd20f463a60c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f0_c3\\attempts\\0001\\predictions.npz": "71b98b14a59a92e37a1b306d16458b3fa9141898cf0524f39b66112ffac5d351",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f0_c3\\attempts\\0001\\receipt.json": "0bdc25d1dfb391ebd086a347857ce354ac4f7d14991a0ba3a2b289091cea2a6a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f1_c3\\DONE": "af17b1dbc08ae1ca42c191c97ebc5846c496bccdc08e275e1576212b7340497f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f1_c3\\attempts\\0001\\predictions.npz": "a9a36b6b4a82a1cf9b3098e2122812b23f2765b495ede763033d7fbda18f1748",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f1_c3\\attempts\\0001\\receipt.json": "94175ed0b164e698956c9d3bca7f951c5c522b58a4bf3c86b5a7103865bba166",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f2_c3\\DONE": "eb73978a56b194d56641dc9db096021b93519c0aad009e42884ee76619107911",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f2_c3\\attempts\\0001\\predictions.npz": "60cdb1aa04826f99a820d44e315bff9112b506f3bf3bd32d0db81ee76444cc5e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f2_c3\\attempts\\0001\\receipt.json": "b0a3d19b9e15a4e42fe09562e2365e3d7387b79b4933048afabe7041758a83c9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f3_c3\\DONE": "22c77355009aff08f4c10d0f2294f7acedc0006d75d82f5bd76c7caaf704dfee",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f3_c3\\attempts\\0001\\predictions.npz": "24d96f8571346037b6a87f61a63cc5d9e6268051dd58756c9a7c43d8c1867938",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f3_c3\\attempts\\0001\\receipt.json": "3db001a1ed8cc6386931c064388856241f2d3255088f1e0cc2dfb0a91c804f25",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f4_c3\\DONE": "1a457823666eda2233d3df834772bb88286029cc5bcdf717e814744845d06458",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f4_c3\\attempts\\0001\\predictions.npz": "832cf1caace0718765af7476d45f126409f142e6e878d5d20564b05a038e7ed0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d13_f4_c3\\attempts\\0001\\receipt.json": "7abfda913bbd0b0c1dbed1d10ed76ec151d424234d91a5e1172541c3b30afed3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f0_c3\\DONE": "acc1221d5e4d26d8f9c9cec5e83a4e083c7d5444d73336ede32395de33d0be84",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f0_c3\\attempts\\0001\\predictions.npz": "c7a76601f473d0f54644bbdf8deceee89b0265a11472db861dae55aa873c3899",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f0_c3\\attempts\\0001\\receipt.json": "f9b0ccf2b440bb99afc4ee4f34df81e70601933ad33845fb4f7a35ef1f0c6ba2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f1_c3\\DONE": "dd79cb93942582efd090ae953a12c50436ac162c1ac0aa54fb6f4ace30124eeb",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f1_c3\\attempts\\0001\\predictions.npz": "f2a52eed30b49f7dd94d16260680511b3d23ccc641ff6ff469fc1e59c530240b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f1_c3\\attempts\\0001\\receipt.json": "797934d73ce9db433f51919a4a0a6cfd4531f60c110768cb63943ebc54bfd481",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f2_c3\\DONE": "5c6018e9a6e7aba78fcaab7ebff41bb34a2adfdea06630d01ec9aa49d55785ea",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f2_c3\\attempts\\0001\\predictions.npz": "ba51f9af55750ccce7b0179787e445cddd6ed357935f75aa4a88f67cd782c5e4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f2_c3\\attempts\\0001\\receipt.json": "93fcfea52467118808649142472cdc4f01579e2eba43f57276851cd65695540f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f3_c3\\DONE": "e8c1ec08a364f11a67deadcb2069ae4515d4163b3ee5b3bd90547e6c869d38e5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f3_c3\\attempts\\0001\\predictions.npz": "de4173bc266e1d4734cfe078d8c7dd1c2a81874b25341cb8a1fd1215423077e9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f3_c3\\attempts\\0001\\receipt.json": "aa4168236c2dc66f7afd9d7f6501e85438c68d701a04b82a9882726dbc822ee3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f4_c3\\DONE": "8193b3cde0f88fd4899fd188b69d5b76a4c73a20c88460f7ec1918d7ae8eeea7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f4_c3\\attempts\\0001\\predictions.npz": "11bc6a526602f3199f3e9f67eb10861664eb19da23c29d92d56b5ef5df746acc",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d14_f4_c3\\attempts\\0001\\receipt.json": "793be5ff5c7a04d167176c4e23739bb59cb8d62c3b241a2fa7fc14aac72d6baf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f0_c3\\DONE": "58b6392c3be9eaec0e6eb05ef19e97e26a752576df15d8c813bf16742d321b88",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f0_c3\\attempts\\0001\\predictions.npz": "d12ef887a936d1bd381fda75866553bea4611323a040e3a881d4b8c8788e07cf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f0_c3\\attempts\\0001\\receipt.json": "1fedab49ca3717d0e3da8664cc528aac7fb0dc38d226edbcc0985dff382ac794",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f1_c3\\DONE": "0d6c681388369299c92ed2ee70ab2a917a86bb2411fe710b892f52f57d83c491",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f1_c3\\attempts\\0001\\predictions.npz": "189577569388366001222d08e6d66d369a0931c25c686cc86ff0b862916a69af",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f1_c3\\attempts\\0001\\receipt.json": "40a9060172574a17c9a1c09fd46b295688248df9894e87fb183fe02210991755",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f2_c3\\DONE": "dfdfe625703ec3aba865949e5aefc8558a6463e659630824e23f7d0b7f9a2fbb",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f2_c3\\attempts\\0001\\predictions.npz": "9b3fbfedf233ebc1ed2efab7cc3fe6e051901d65dac9d6375d6fba50c78673f6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f2_c3\\attempts\\0001\\receipt.json": "d7599801ab2337dc4199a86ee80dcac4c98546e82aed9e20742aeea6244e4ca6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f3_c3\\DONE": "eae1b814136714e2a64002803bde54ee2149e8d33d9b91d4170d801d014017e3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f3_c3\\attempts\\0001\\predictions.npz": "9ff978d9f7e9419da74f57c8b3f02343d4bbd9f99a9fb4496e1bf18c956c6e6c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f3_c3\\attempts\\0001\\receipt.json": "a754ee9001f6e39aad70caf6715a1af7d058553c6f811c4f67e2a73e43cf8534",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f4_c3\\DONE": "f641d88856682c63ae434f21799d767cbb06fba696feacfd04d60916a110a92e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f4_c3\\attempts\\0001\\predictions.npz": "c342d76305848303bf5dfbc0a5d50f41d80225a54509049c63d53c266e82a7c4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d15_f4_c3\\attempts\\0001\\receipt.json": "cab2c20cdd34315fc3bb3f1734a09845659a374566f3c2fbc7ff23f66a985686",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f0_c3\\DONE": "3451b79230a7ff939f09063aee674ce740bdf7ce73da8fa31b2ccdc7ad5f96ea",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f0_c3\\attempts\\0001\\predictions.npz": "d8d09976f457bd3035614295df9d3c507eb9b0ce881e0d9b70a951cded30af5b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f0_c3\\attempts\\0001\\receipt.json": "dbe1f30777d959517aed2aa972136004a0affa949f42f979ba27692c78b3e25a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f1_c3\\DONE": "4572d19f8bf7c01e24139faa0cbf56ba8613c74074dd300a547b73b04a024fe0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f1_c3\\attempts\\0001\\predictions.npz": "c5f0119137303fd56382688f88e72853241e4d5f8a73e86ae6684716e55cef6b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f1_c3\\attempts\\0001\\receipt.json": "4f4c7fe10c66cf9745e26211e4164847d0583f8c2ca0c4ffa5163fa61e2fffc6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f2_c3\\DONE": "0400a8b2bb6bb731de8dd4fac1640186b4146b0ee659c60cd5dbc1705702181e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f2_c3\\attempts\\0001\\predictions.npz": "3fff0d2c511f287767de7a178b6d4e2b4c781b7296dda369b25c006d50d83218",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f2_c3\\attempts\\0001\\receipt.json": "f4a45a2d6388723ef650ae9fd7cbcfefae932db8bf2d4948a7efc95dafdcea94",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f3_c3\\DONE": "f226dcddf2132d5b8b0973775986f68ac4cc9d2fe0ac0cd078544e4d38f63835",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f3_c3\\attempts\\0001\\predictions.npz": "1c9e40a91eeaca84ca8f1b51b4b5d1fbbf5db7aefb54e2e3bdb145e93b924bbb",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f3_c3\\attempts\\0001\\receipt.json": "bc6413852e775f6175fd0859e6812a92cb29228e67d6e4b5804192ac32769e9b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f4_c3\\DONE": "5f61899c53225f499e21c018d2e91c9c77ed709f0ebb9478e0d2ded568c2b4d6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f4_c3\\attempts\\0001\\predictions.npz": "1e964c9a753e7a3ac25a1607d3ba6facdc56179ecef3efd2548936e90f75daae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d16_f4_c3\\attempts\\0001\\receipt.json": "ea78899654d09d431a075df5112b1a0af60c68f228a9aef58af1edf6943bf3ef",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f0_c3\\DONE": "c907ab8582748b820849b5289fd579d9d591fa737b5dad41fda2f32ebd62fc53",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f0_c3\\attempts\\0001\\predictions.npz": "67ba7181d029c788c7d9c9477fd81eeb1bb7deecf8bf4652f0e8ae14e69acf82",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f0_c3\\attempts\\0001\\receipt.json": "5c2c66512b3131edc0ae8ac69e82f05dc57c5a9872eb34311ec41ca24fe47d65",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f1_c3\\DONE": "ee3c6fa7a2ccd25448a6d0d5aaeaae8c896936075fc42c2da416897446c95a1e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f1_c3\\attempts\\0001\\predictions.npz": "d03b381257b21a570f09ef6701e69213a9488d92b49d61c8a8cf1dcc0e81e2d7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f1_c3\\attempts\\0001\\receipt.json": "006a50a108eddcdd3ddb00b6e998883720b65c0001b8ceff44f34b938dba2567",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f2_c3\\DONE": "f5e5f7f0f770313277cfd2ad277026d2865f90a08ec3e76187cef05fe8f9687e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f2_c3\\attempts\\0001\\predictions.npz": "c2647bf9eacbc7c609ed7f90a4ff8a309477864f3674d6d1cfb0aaf372b868a1",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f2_c3\\attempts\\0001\\receipt.json": "7ed88e28ae147133e7206ee8bbb0fe5a8871a33aba1a9349815055b1bd949460",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f3_c3\\DONE": "78102d3aa021b84454345368bf7348e0bfacc3d89301df9fd024880e80e29459",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f3_c3\\attempts\\0001\\predictions.npz": "2f0d4db787fabee7c2953329b89a996e7d7748ecda016f29cab533739503d0b7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f3_c3\\attempts\\0001\\receipt.json": "78da4b6a6b3bd25f3080150f2622ced836b8461b0cf91380e80426b8d5fa4dec",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f4_c3\\DONE": "9d0b0def4e0abb956de7781382729474e0c002e2a1b7e1976ad8abab65cf224a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f4_c3\\attempts\\0001\\predictions.npz": "324fef18db35ca1086a8c0108e63d1a5960ff677346e7cdc70721e44621e3602",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d17_f4_c3\\attempts\\0001\\receipt.json": "c2e126c929f3a1583a84381db9dc0462238531dadaa65b26269cdd935e7b4d37",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f0_c3\\DONE": "d78e5339d022c6643c3207926918e0697b3fe3897a9f3c05ba08d538cfbd97af",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f0_c3\\attempts\\0001\\predictions.npz": "aa819057e00481958cf58dfe162c02521e5d2dd99524aa4d0c306423b52eb7fc",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f0_c3\\attempts\\0001\\receipt.json": "c206a71e166002172273d2019329c3ce7b85bbdfd311a276659ed4372f053461",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f1_c3\\DONE": "51bfb7b0487069f6a73605c75669c059bd43a2a767d0fbf33bf6a26a3d5acc90",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f1_c3\\attempts\\0001\\predictions.npz": "a9fd9ca19f5b7bf7fceddcc1d21f0d6ba25041d70a669046de1a8ffcb5d0e33a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f1_c3\\attempts\\0001\\receipt.json": "9a859f0a96e49f913fcdea4d9a8ba19e991d9cd530ef9b36c48689946ccf855f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f2_c3\\DONE": "858cc803fa38f13054893353c6a504808b3c4eeaf854175cba74eb8297acd99a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f2_c3\\attempts\\0001\\predictions.npz": "b4af7f52045993ceee5af9af65e6bcbaca2f295965732ea73a8c24054f31c3af",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f2_c3\\attempts\\0001\\receipt.json": "33e0302cbd23ced20bca1dbc9436abfee6e93b4f5dd8db16f4c00d6672a44cc9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f3_c3\\DONE": "c7fb42107dd6bcfad08377f490b9bd8d9b7bf300b9888477361b0ddf1e143b52",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f3_c3\\attempts\\0001\\predictions.npz": "093173f9a8db34aded380adf04867d76882184e9f2fbe56db8c123c75a8495db",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f3_c3\\attempts\\0001\\receipt.json": "86c271a1512ac38f77d88d19d34927f9884e294a55fe5ebd9dd497079dae7ecf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f4_c3\\DONE": "c6347c4ca1fc666f8e4b388adecfa169671b2e6dc696d0312fa224d1eff6b06a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f4_c3\\attempts\\0001\\predictions.npz": "8a853d258f96613b0e55e4c26378b21515e6a80f3f4451021a3cc504e97bb688",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d18_f4_c3\\attempts\\0001\\receipt.json": "c09004e757e14048bdbdf01f2ef4e34004941789c777e58795c091c664444cb8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f0_c3\\DONE": "ae1dcda3eb3f504963f683a9076811908f064e8e3883bfa6919953e3b24b680b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f0_c3\\attempts\\0001\\predictions.npz": "7fbe5d10fc36c924f25579a000a30651fb6b4f90d06a152a0171262a401043e2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f0_c3\\attempts\\0001\\receipt.json": "99d93c55805753519acffbc223fe346381d15a997ccdc9039d39ba7853279ebf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f1_c3\\DONE": "a9d53ab51afffd8760656c6b4a8377d3f366cdd9bc247854c4d844343609ad93",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f1_c3\\attempts\\0001\\predictions.npz": "b1ff6db6f27ff65b64ee89b2af3da490cfdeaf6db7c2ca46c57994446fde54ae",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f1_c3\\attempts\\0001\\receipt.json": "abf6d3f2d6712f32cec83c6800a74b7a16193769bdad88c0897e9898db838e68",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f2_c3\\DONE": "e808c6c25239e1ade6efbc5914a611bdf8031888d77fc0fffbc8fb53f9525472",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f2_c3\\attempts\\0001\\predictions.npz": "726d83cbd45e939fd12683b8ccd91feeb12778c9d5559366d8a305218b84bcbc",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f2_c3\\attempts\\0001\\receipt.json": "0142b8ca6c9796c2b40ad9d8224680b04053941bede15587c03ffd3cecec4a02",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f3_c3\\DONE": "3756c3f3a1bc3a5ff3b41f70ece4314a97183ffc4b12373c35e112a4209888be",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f3_c3\\attempts\\0001\\predictions.npz": "1ae959c907383480d1d201966d8de72d1b859753d04d3fbd87e1314885b8797a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f3_c3\\attempts\\0001\\receipt.json": "3a267e93060f35565e0d3d58c1a321f8bf1e5c4f5d8f0303b7913312d25591e7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f4_c3\\DONE": "645bf43a8480a84a21c47fd29d38cabfface94854daf519f55bb3ea3b0e65d74",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f4_c3\\attempts\\0001\\predictions.npz": "3195cd427ea0325dbe543f52146868f6234ebbb82371ec057e9dcdf49efd306b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d19_f4_c3\\attempts\\0001\\receipt.json": "cd88ba50d8d2e3bc7caebf5670d7ebf4f81210d4f21a80246360afa7972f869f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f0_c3\\DONE": "bdb11667a59ac84256db541af9b1be4ec03730fc1f4d91d3bb959254432dedb6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f0_c3\\attempts\\0001\\predictions.npz": "c355f79099205bed6b1b0a6b30239ed71ded7bf2dcedd64a9ccde2e7b027a69f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f0_c3\\attempts\\0001\\receipt.json": "29a04e2d731f0ccbac29af4cea0d05b2bca7c1a6f6f73cd29eb1df67133f253a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f1_c3\\DONE": "390136f651bfe03640ab898d28a92cc856c8994b5f17b12a2558d87a0addae8b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f1_c3\\attempts\\0001\\predictions.npz": "de80b1d02960bc9bcc06eee9b5b9e0ae1ec8b3709d0198f5b386753cd9d438ca",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f1_c3\\attempts\\0001\\receipt.json": "1df56b926d3085fcca088fd1d2b655b36553d9b911430cc0854cb358a54d229d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f2_c3\\DONE": "a4830fed984506b58bc1c12e121ee00097d15f5a9897e8ac70837d5865e538e5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f2_c3\\attempts\\0001\\predictions.npz": "0f0ecdcbeaf6507d0b7c5b176285b33c2691b76cf762b1cb8ea7228f14960e3e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f2_c3\\attempts\\0001\\receipt.json": "254523e8c9d58c12adc310df1ab453b3f071be7c968aae05ceb6a3e1dc03183a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f3_c3\\DONE": "32c014c3ba5796001d2857a0e59adbc80e7aba8fd476835d8d518e2415caac1e",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f3_c3\\attempts\\0001\\predictions.npz": "2c84925f94cb6d0a245433fec68b1fe2031ffa932a8b2a52e55961df80108d45",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f3_c3\\attempts\\0001\\receipt.json": "4a572cbbcea7645db7bb540892fe3db12cd3e19e1c62f19c94b1257d85f74f6b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f4_c3\\DONE": "76149abcc8b1260307ecc781ab36ad8cd1a93bc34e9a8b3884890e43a4c296a9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f4_c3\\attempts\\0001\\predictions.npz": "85934ddfcd67beebbea5b9d51fd8cf9ed208cd6e492b66687310084ae9e2bddd",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d20_f4_c3\\attempts\\0001\\receipt.json": "0a9450f7f2fa34038226405db5de9453c805457ea5e8e7de97a5e3a3b2736c84",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f0_c3\\DONE": "0afe9c69e932032374deb69d3005bdbb9b004afd75a0b818789c4b3cc0ed6ea7",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f0_c3\\attempts\\0001\\predictions.npz": "a618b9f0ff64be2b694f6e832c4210f446fed29a315135a753b091961efa046d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f0_c3\\attempts\\0001\\receipt.json": "522c4d5f96364c3d081e9c416bfa667a6677fcfa936c53d86d34652e0c7c873f",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f1_c3\\DONE": "5caaac79e866eab06c1e75ffe69bc37e5598e201edfac3815c46a7b72c47ef10",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f1_c3\\attempts\\0001\\predictions.npz": "4ff5ab72354c30ca68d1798de1886cfb1a4172ae5d829746f286f4bc85e42747",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f1_c3\\attempts\\0001\\receipt.json": "0808164bf29c47c1a60ac13b9acba717a370481ab10bc1e001dfb90dfc238dcb",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f2_c3\\DONE": "b2c7268a89679cadb654ff74384be6dbd779b87d8fc7b82ea5868dd179ec194b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f2_c3\\attempts\\0001\\predictions.npz": "55e4fdb3d5d7ad0bb3914440c73c9c8c787ed90d2dfdba3554017d4349d58983",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f2_c3\\attempts\\0001\\receipt.json": "03ee7729d7d535c0f20dd8f0cd8a62496b64b9ec85bb055acf58bdd0bfb05daa",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f3_c3\\DONE": "4833c836a2867bd2b2c0068b2c1db3d6bc2a3df8eab04b32f9245a60bbf1757d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f3_c3\\attempts\\0001\\predictions.npz": "e8ec63346e3bc590a6ed5503de0be0405e59cf430acac0cf4ec128b66f5bdb97",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f3_c3\\attempts\\0001\\receipt.json": "92000a07ccd587e290728fac0d93e6eaaf65f158eed6ffb27df65f3f9edc7739",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f4_c3\\DONE": "c8cff0a7bc7bd3ffffa0bdd5150bb5952c3201b5bdab56f7b1eb0ec0806764d5",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f4_c3\\attempts\\0001\\predictions.npz": "7ad949d5b0c7bc84d002eee0261ac1db77b7d53e5cdd0e83fcdc9620214a6b84",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d21_f4_c3\\attempts\\0001\\receipt.json": "b0b187999feb1d4788e34b7311c954ea6ad4da565497056987c29cc2138bf933",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f0_c3\\DONE": "b5a3564abc2823fbeb46f5118246e17a0afa510eb5be43d4f8ea938d77cd17f4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f0_c3\\attempts\\0001\\predictions.npz": "39afe57af389fb0f9afbbcbe751c80fffc2918600619da7a0b7b10c5d5bb33f9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f0_c3\\attempts\\0001\\receipt.json": "e249cd66d82e430a7a6ed6e71c708580ba2e736d326e1a0cd6454d5f27bf6afc",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f1_c3\\DONE": "d2e66d749ac88b1157a52a6024c0f45e73ad2675d5b91659d2fdf0b903bf1ced",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f1_c3\\attempts\\0001\\predictions.npz": "4f0011bce3caaab9e7d5c3615d1ae715ee3f4c30d0ce79a9b6644fb468fb1f67",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f1_c3\\attempts\\0001\\receipt.json": "8bc470a6bf1ecf8c8100a2d6a6162ea1f3dc20d8e999512077a047fb1b249077",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f2_c3\\DONE": "f36314dd171bf8ea60f7cc955b29dc103faef4cd6d5a77bbc06630a4f10b5007",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f2_c3\\attempts\\0001\\predictions.npz": "7c719eda1ad67a2d17b44907657955e5505335a81b846aba44f73b2b1993b3ce",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f2_c3\\attempts\\0001\\receipt.json": "2d80af49128123c7ebaa4b7df4aec5c07b15e1455b1ea9c86d89398611a74a38",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f3_c3\\DONE": "be71b1f15be76eef50199211359c2b1f92200ea964c8a0eb7e21563f5a84dddf",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f3_c3\\attempts\\0001\\predictions.npz": "c6dc64dbb1ca5fe0473f8ed61f2d9f2edc83bfe45d67331ecf928169f3da16c0",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f3_c3\\attempts\\0001\\receipt.json": "e0e4b19b0797757ef9e0aaaca536454ec766a4c2d5368d1bdcfc6229da991f6c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f4_c3\\DONE": "561b1455f12fc2a966578a3fd0abd760e9da7195599f915afc61c58b5e751fd9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f4_c3\\attempts\\0001\\predictions.npz": "c4a6eab57a1d09124ada7866b9276260b064067ef940d8034f27bf5cec2781f9",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d22_f4_c3\\attempts\\0001\\receipt.json": "f163bc5c6749c6b84502e14fb4cef6ab89957915cfb170063739bfdc99c21c25",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f0_c3\\DONE": "873396a4733d66eef6696206cd2c227809add3476a7920ed209d645e99b0b325",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f0_c3\\attempts\\0001\\predictions.npz": "f0970d2a853f579ace70ce3b9cc7a6170ed1f824d4718aeadfcd2fe12bca5179",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f0_c3\\attempts\\0001\\receipt.json": "4f4676fb643e231bb50db2b41eb4b9112bba3230c7df4568d56c4ff7bcdad8f3",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f1_c3\\DONE": "e73bfdde1fe4b551970d50e1c686709baaba0cb90bb1587e54886564000a80f4",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f1_c3\\attempts\\0001\\predictions.npz": "d3c59c2ec7012fd5912979d7de314357a7e3c910a9a95fb262236127406fb308",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f1_c3\\attempts\\0001\\receipt.json": "92115f3e72ac87297c26376fed5433cb590e0a306727b2ecf85bd512a599740d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f2_c3\\DONE": "06ccbbabf817de6c9c7de8731794d9549aa2bb06dcd1666cb18ad7118388a98b",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f2_c3\\attempts\\0001\\predictions.npz": "37a5cf2ea3cb930dab0f7c4b8005e6f921360bef4a25d7728d172e9ee6b06bf6",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f2_c3\\attempts\\0001\\receipt.json": "e9c217d7d8bc6e5204d38981ddfb9e5e902ddfc6d9d6808797bd59dcbcdee67c",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f3_c3\\DONE": "a6404f25ca7926de6d18b4e5b5530167d07db50c7a4292d20fef66e28a7f54c2",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f3_c3\\attempts\\0001\\predictions.npz": "f03b9e3865be88723377f37526562234c6677ed387d2eb2446eea907aab70d12",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f3_c3\\attempts\\0001\\receipt.json": "e6c97f14cf986bb874fcc446d219e6910533350035e56aa3c9564839ce8c49f8",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f4_c3\\DONE": "812ed1c9437215ba961d32231fbc406a7026322031aea073a584fdfdde5ed95a",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f4_c3\\attempts\\0001\\predictions.npz": "c4b1f49a138bf4aa6cdc61f98d65cc851ce7ec124de33f4eef153c6ef4fc952d",
+    "D:\\SER-dual-validation-20260906\\runs\\formal\\units\\dual_d23_f4_c3\\attempts\\0001\\receipt.json": "558d391919623f14dbb74573f7df42b0def2dbcfabb50e2535b5ee67034334c4"
+  },
+  "no_gpu": true,
+  "no_checkpoint_weights_read": true,
+  "original_source_unchanged": true,
+  "interval_scope": "All newly computed t/CR1 intervals and p-values are post-review exploratory, unadjusted and conditional; no equivalence or mechanism claim.",
+  "role_coverage": {
+    "people": 91,
+    "all_people_both_roles": true,
+    "observations": 5760,
+    "seen_share_denominator": "seen+unseen validation-role observations; excludes outer and unselected eligible contexts",
+    "seen_share_equal_person_mean": 0.5003541911528435,
+    "seen_share_min": 0.2857142857142857,
+    "seen_share_max": 0.6285714285714286,
+    "pooled_seen_fraction": 0.5,
+    "same_fold_pairwise_fit_overlap_mean": 6.51304347826087,
+    "overlap_comparisons": 1380,
+    "per_person": {
+      "1001": {
+        "seen": 33,
+        "unseen": 27,
+        "seen_share": 0.55
+      },
+      "1002": {
+        "unseen": 22,
+        "seen": 19,
+        "seen_share": 0.4634146341463415
+      },
+      "1003": {
+        "seen": 31,
+        "unseen": 44,
+        "seen_share": 0.41333333333333333
+      },
+      "1004": {
+        "seen": 45,
+        "unseen": 33,
+        "seen_share": 0.5769230769230769
+      },
+      "1005": {
+        "unseen": 28,
+        "seen": 36,
+        "seen_share": 0.5625
+      },
+      "1006": {
+        "seen": 17,
+        "unseen": 23,
+        "seen_share": 0.425
+      },
+      "1007": {
+        "unseen": 30,
+        "seen": 44,
+        "seen_share": 0.5945945945945946
+      },
+      "1008": {
+        "unseen": 17,
+        "seen": 17,
+        "seen_share": 0.5
+      },
+      "1009": {
+        "seen": 17,
+        "unseen": 23,
+        "seen_share": 0.425
+      },
+      "1010": {
+        "seen": 42,
+        "unseen": 34,
+        "seen_share": 0.5526315789473685
+      },
+      "1011": {
+        "unseen": 32,
+        "seen": 26,
+        "seen_share": 0.4482758620689655
+      },
+      "1012": {
+        "unseen": 40,
+        "seen": 33,
+        "seen_share": 0.4520547945205479
+      },
+      "1013": {
+        "seen": 15,
+        "unseen": 12,
+        "seen_share": 0.5555555555555556
+      },
+      "1014": {
+        "seen": 31,
+        "unseen": 32,
+        "seen_share": 0.49206349206349204
+      },
+      "1015": {
+        "unseen": 39,
+        "seen": 33,
+        "seen_share": 0.4583333333333333
+      },
+      "1016": {
+        "seen": 39,
+        "unseen": 28,
+        "seen_share": 0.582089552238806
+      },
+      "1017": {
+        "seen": 18,
+        "unseen": 14,
+        "seen_share": 0.5625
+      },
+      "1018": {
+        "unseen": 33,
+        "seen": 40,
+        "seen_share": 0.547945205479452
+      },
+      "1019": {
+        "seen": 16,
+        "unseen": 11,
+        "seen_share": 0.5925925925925926
+      },
+      "1020": {
+        "seen": 37,
+        "unseen": 38,
+        "seen_share": 0.49333333333333335
+      },
+      "1021": {
+        "unseen": 44,
+        "seen": 29,
+        "seen_share": 0.3972602739726027
+      },
+      "1022": {
+        "unseen": 31,
+        "seen": 39,
+        "seen_share": 0.5571428571428572
+      },
+      "1023": {
+        "seen": 26,
+        "unseen": 35,
+        "seen_share": 0.4262295081967213
+      },
+      "1024": {
+        "unseen": 37,
+        "seen": 32,
+        "seen_share": 0.463768115942029
+      },
+      "1025": {
+        "unseen": 37,
+        "seen": 33,
+        "seen_share": 0.4714285714285714
+      },
+      "1026": {
+        "unseen": 45,
+        "seen": 18,
+        "seen_share": 0.2857142857142857
+      },
+      "1027": {
+        "unseen": 30,
+        "seen": 27,
+        "seen_share": 0.47368421052631576
+      },
+      "1028": {
+        "unseen": 24,
+        "seen": 40,
+        "seen_share": 0.625
+      },
+      "1029": {
+        "unseen": 33,
+        "seen": 34,
+        "seen_share": 0.5074626865671642
+      },
+      "1030": {
+        "seen": 28,
+        "unseen": 41,
+        "seen_share": 0.4057971014492754
+      },
+      "1031": {
+        "seen": 31,
+        "unseen": 33,
+        "seen_share": 0.484375
+      },
+      "1032": {
+        "unseen": 32,
+        "seen": 26,
+        "seen_share": 0.4482758620689655
+      },
+      "1033": {
+        "seen": 28,
+        "unseen": 30,
+        "seen_share": 0.4827586206896552
+      },
+      "1034": {
+        "unseen": 27,
+        "seen": 31,
+        "seen_share": 0.5344827586206896
+      },
+      "1035": {
+        "unseen": 38,
+        "seen": 28,
+        "seen_share": 0.42424242424242425
+      },
+      "1036": {
+        "unseen": 29,
+        "seen": 23,
+        "seen_share": 0.4423076923076923
+      },
+      "1037": {
+        "unseen": 35,
+        "seen": 40,
+        "seen_share": 0.5333333333333333
+      },
+      "1038": {
+        "unseen": 31,
+        "seen": 28,
+        "seen_share": 0.4745762711864407
+      },
+      "1039": {
+        "seen": 34,
+        "unseen": 35,
+        "seen_share": 0.4927536231884058
+      },
+      "1040": {
+        "seen": 18,
+        "unseen": 11,
+        "seen_share": 0.6206896551724138
+      },
+      "1041": {
+        "unseen": 33,
+        "seen": 25,
+        "seen_share": 0.43103448275862066
+      },
+      "1042": {
+        "seen": 39,
+        "unseen": 26,
+        "seen_share": 0.6
+      },
+      "1043": {
+        "seen": 40,
+        "unseen": 38,
+        "seen_share": 0.5128205128205128
+      },
+      "1044": {
+        "unseen": 30,
+        "seen": 33,
+        "seen_share": 0.5238095238095238
+      },
+      "1045": {
+        "unseen": 34,
+        "seen": 35,
+        "seen_share": 0.5072463768115942
+      },
+      "1046": {
+        "seen": 35,
+        "unseen": 37,
+        "seen_share": 0.4861111111111111
+      },
+      "1047": {
+        "unseen": 39,
+        "seen": 35,
+        "seen_share": 0.47297297297297297
+      },
+      "1048": {
+        "seen": 35,
+        "unseen": 27,
+        "seen_share": 0.5645161290322581
+      },
+      "1049": {
+        "unseen": 45,
+        "seen": 33,
+        "seen_share": 0.4230769230769231
+      },
+      "1050": {
+        "seen": 35,
+        "unseen": 28,
+        "seen_share": 0.5555555555555556
+      },
+      "1051": {
+        "seen": 44,
+        "unseen": 26,
+        "seen_share": 0.6285714285714286
+      },
+      "1052": {
+        "unseen": 36,
+        "seen": 33,
+        "seen_share": 0.4782608695652174
+      },
+      "1053": {
+        "unseen": 36,
+        "seen": 35,
+        "seen_share": 0.49295774647887325
+      },
+      "1054": {
+        "unseen": 34,
+        "seen": 33,
+        "seen_share": 0.4925373134328358
+      },
+      "1055": {
+        "unseen": 46,
+        "seen": 30,
+        "seen_share": 0.39473684210526316
+      },
+      "1056": {
+        "seen": 37,
+        "unseen": 31,
+        "seen_share": 0.5441176470588235
+      },
+      "1057": {
+        "unseen": 31,
+        "seen": 27,
+        "seen_share": 0.46551724137931033
+      },
+      "1058": {
+        "unseen": 38,
+        "seen": 41,
+        "seen_share": 0.5189873417721519
+      },
+      "1059": {
+        "seen": 38,
+        "unseen": 31,
+        "seen_share": 0.5507246376811594
+      },
+      "1060": {
+        "seen": 42,
+        "unseen": 32,
+        "seen_share": 0.5675675675675675
+      },
+      "1061": {
+        "seen": 31,
+        "unseen": 39,
+        "seen_share": 0.44285714285714284
+      },
+      "1062": {
+        "seen": 30,
+        "unseen": 27,
+        "seen_share": 0.5263157894736842
+      },
+      "1063": {
+        "seen": 35,
+        "unseen": 30,
+        "seen_share": 0.5384615384615384
+      },
+      "1064": {
+        "unseen": 28,
+        "seen": 38,
+        "seen_share": 0.5757575757575758
+      },
+      "1065": {
+        "seen": 33,
+        "unseen": 32,
+        "seen_share": 0.5076923076923077
+      },
+      "1066": {
+        "seen": 31,
+        "unseen": 31,
+        "seen_share": 0.5
+      },
+      "1067": {
+        "unseen": 34,
+        "seen": 27,
+        "seen_share": 0.4426229508196721
+      },
+      "1068": {
+        "unseen": 34,
+        "seen": 26,
+        "seen_share": 0.43333333333333335
+      },
+      "1069": {
+        "seen": 25,
+        "unseen": 25,
+        "seen_share": 0.5
+      },
+      "1070": {
+        "seen": 27,
+        "unseen": 36,
+        "seen_share": 0.42857142857142855
+      },
+      "1071": {
+        "seen": 26,
+        "unseen": 30,
+        "seen_share": 0.4642857142857143
+      },
+      "1072": {
+        "seen": 32,
+        "unseen": 39,
+        "seen_share": 0.4507042253521127
+      },
+      "1073": {
+        "seen": 33,
+        "unseen": 40,
+        "seen_share": 0.4520547945205479
+      },
+      "1074": {
+        "seen": 43,
+        "unseen": 34,
+        "seen_share": 0.5584415584415584
+      },
+      "1075": {
+        "unseen": 31,
+        "seen": 40,
+        "seen_share": 0.5633802816901409
+      },
+      "1076": {
+        "seen": 7,
+        "unseen": 7,
+        "seen_share": 0.5
+      },
+      "1077": {
+        "seen": 31,
+        "unseen": 30,
+        "seen_share": 0.5081967213114754
+      },
+      "1078": {
+        "seen": 42,
+        "unseen": 34,
+        "seen_share": 0.5526315789473685
+      },
+      "1079": {
+        "seen": 35,
+        "unseen": 36,
+        "seen_share": 0.49295774647887325
+      },
+      "1080": {
+        "unseen": 34,
+        "seen": 30,
+        "seen_share": 0.46875
+      },
+      "1081": {
+        "unseen": 34,
+        "seen": 27,
+        "seen_share": 0.4426229508196721
+      },
+      "1082": {
+        "unseen": 34,
+        "seen": 36,
+        "seen_share": 0.5142857142857142
+      },
+      "1083": {
+        "seen": 35,
+        "unseen": 30,
+        "seen_share": 0.5384615384615384
+      },
+      "1084": {
+        "seen": 39,
+        "unseen": 33,
+        "seen_share": 0.5416666666666666
+      },
+      "1085": {
+        "seen": 27,
+        "unseen": 27,
+        "seen_share": 0.5
+      },
+      "1086": {
+        "seen": 35,
+        "unseen": 28,
+        "seen_share": 0.5555555555555556
+      },
+      "1087": {
+        "seen": 30,
+        "unseen": 35,
+        "seen_share": 0.46153846153846156
+      },
+      "1088": {
+        "unseen": 34,
+        "seen": 31,
+        "seen_share": 0.47692307692307695
+      },
+      "1089": {
+        "unseen": 37,
+        "seen": 32,
+        "seen_share": 0.463768115942029
+      },
+      "1090": {
+        "unseen": 27,
+        "seen": 31,
+        "seen_share": 0.5344827586206896
+      },
+      "1091": {
+        "unseen": 34,
+        "seen": 48,
+        "seen_share": 0.5853658536585366
+      }
+    }
+  },
+  "raw_effects": {
+    "pooled_person_context_gap_pp": 2.8385416666666643,
+    "equal_person_difference_of_role_means_pp": 2.715726408590301,
+    "weighting_note": "These differ because per-person role frequencies differ; neither is silently substituted for the frozen whole-fold estimator."
+  },
+  "fixed_effect_models": {
+    "speaker_plus_joint_draw_fold_context": {
+      "coefficient_pp": 2.8709411975928028,
+      "rows": 5760,
+      "columns": 211,
+      "model": "OLS of per-speaker per-context six-class UAR on seen indicator plus named fixed effects; equal row weights",
+      "cluster": "complete draw, G=24",
+      "standard_error_pp": 0.31925477436558314,
+      "cr1_correction": 1.0829683374207653,
+      "reference_df": 23,
+      "ci95_pp": [
+        2.2105123789388257,
+        3.53137001624678
+      ],
+      "interval_identity": "new post-review exploratory CR1 cluster-t interval; Claude CI method not supplied, so not its verified replication"
+    },
+    "speaker_plus_additive_draw_and_fold": {
+      "coefficient_pp": 2.871211428774517,
+      "rows": 5760,
+      "columns": 119,
+      "model": "OLS of per-speaker per-context six-class UAR on seen indicator plus named fixed effects; equal row weights"
+    },
+    "speaker_only": {
+      "coefficient_pp": 2.8801164500480247,
+      "rows": 5760,
+      "columns": 92,
+      "model": "OLS of per-speaker per-context six-class UAR on seen indicator plus named fixed effects; equal row weights"
+    }
+  },
+  "claude_fixed_effect_claim": {
+    "point_pp": 2.967,
+    "ci95_pp": [
+      2.395,
+      3.581
+    ],
+    "missing_specification": [
+      "regression code/design matrix",
+      "joint-context versus additive draw/fold effects",
+      "row weights",
+      "cluster/resampling unit",
+      "CI formula or bootstrap seed/replications"
+    ],
+    "interval_reproducibility": "Not established; own explicit audit specification supplied instead."
+  },
+  "draw_contrasts": {
+    "primary_delta_gap_pp": {
+      "mean_pp": 2.7060011038339216,
+      "draw_sd_pp": 2.1403504903162767,
+      "positive_draws": 22,
+      "draws": 24,
+      "values_pp": [
+        3.8437101962643654,
+        1.2258224661475452,
+        2.817122463020296,
+        0.48611111111111427,
+        1.454947594653477,
+        2.7259631922944636,
+        5.310310310310311,
+        3.4650749821028413,
+        1.2726334552959968,
+        5.252052467609744,
+        2.6380637603547825,
+        -0.04391194600173378,
+        4.04794112998447,
+        0.5944702442380432,
+        4.70918550833412,
+        2.1394478844169256,
+        1.8569596897770282,
+        1.7900561340963832,
+        -2.8062748225286938,
+        5.428538058182025,
+        3.6908950182944027,
+        7.2570403220558095,
+        2.570593919278127,
+        3.217273352722273
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.4368972143325555,
+      "t_ci95_pp": [
+        1.802210356434002,
+        3.609791851233841
+      ],
+      "t_statistic": 6.193679005181707,
+      "p_two_sided": 2.5557218908321298e-06,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "fixed_config_last_delta_gap_pp": {
+      "mean_pp": 2.8385416666666674,
+      "draw_sd_pp": 1.743560407189416,
+      "positive_draws": 23,
+      "draws": 24,
+      "values_pp": [
+        1.1111111111111058,
+        5.138888888888891,
+        4.09722222222222,
+        2.361111111111113,
+        1.180555555555553,
+        0.13888888888888856,
+        4.722222222222221,
+        0.6944444444444485,
+        2.291666666666667,
+        4.444444444444445,
+        3.1944444444444455,
+        2.2222222222222214,
+        5.13888888888889,
+        3.26388888888889,
+        4.166666666666667,
+        3.4722222222222214,
+        2.9166666666666727,
+        2.291666666666667,
+        -0.9722222222222229,
+        1.9444444444444429,
+        2.986111111111113,
+        5.208333333333338,
+        0.9027777777777786,
+        5.20833333333334
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.355902777777778,
+      "t_ci95_pp": [
+        2.10230067684739,
+        3.5747826564859446
+      ],
+      "t_statistic": 7.975609756097557,
+      "p_two_sided": 4.519699797743824e-08,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "selection_increment_pp": {
+      "mean_pp": -0.13254056283274585,
+      "draw_sd_pp": 1.9576117328925555,
+      "positive_draws": 11,
+      "draws": 24,
+      "values_pp": [
+        2.7325990851532596,
+        -3.9130664227413456,
+        -1.2800997592019239,
+        -1.8749999999999987,
+        0.274392039097924,
+        2.587074303405575,
+        0.5880880880880897,
+        2.7706305376583926,
+        -1.0190332113706702,
+        0.8076080231652991,
+        -0.556380684089663,
+        -2.2661341682239553,
+        -1.09094775890442,
+        -2.6694186446508468,
+        0.5425188416674533,
+        -1.3327743378052959,
+        -1.0597069768896445,
+        -0.5016105325702838,
+        -1.834052600306471,
+        3.484093613737582,
+        0.7047839071832898,
+        2.048706988722471,
+        1.6678161415003485,
+        -1.991059980611067
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.39959582167269314,
+      "t_ci95_pp": [
+        -0.9591675004276123,
+        0.6940863747621207
+      ],
+      "t_statistic": -0.33168655837775285,
+      "p_two_sided": 0.7431294135685707,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "primary_delta_test_pp": {
+      "mean_pp": 0.847239636906819,
+      "draw_sd_pp": 1.5491374291402824,
+      "positive_draws": 15,
+      "draws": 24,
+      "values_pp": [
+        -1.6909324184865953,
+        2.4547330894080104,
+        -0.24767801857585142,
+        0.0,
+        0.5589412942354116,
+        -2.378740970072242,
+        2.4674674674674675,
+        0.4238139067860473,
+        -0.7170778997404398,
+        0.09516975461247909,
+        -0.1380637603547811,
+        1.5022452793350651,
+        -0.9923855744289127,
+        1.5583075335397312,
+        2.02692560277699,
+        -0.6811145510835914,
+        1.4763736435563017,
+        2.168277199236951,
+        3.2229414891953594,
+        1.446461941817978,
+        2.281327203927822,
+        2.187404122388635,
+        3.3321838584996484,
+        -0.02282890827782751
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.31621635357005207,
+      "t_ci95_pp": [
+        0.19309627055517264,
+        1.5013830032584654
+      ],
+      "t_statistic": 2.679303670861944,
+      "p_two_sided": 0.013392569805812085,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "fixed_config_best_delta_test_pp": {
+      "mean_pp": 0.7322443761427243,
+      "draw_sd_pp": 1.09306023452431,
+      "positive_draws": 17,
+      "draws": 24,
+      "values_pp": [
+        2.0104314841156934,
+        0.8771929824561397,
+        1.217750257997936,
+        -0.4385964912280699,
+        2.9890959070525627,
+        -1.3725490196078454,
+        1.4705882352941189,
+        -0.16037709536161343,
+        0.26831785345717096,
+        -0.2631578947368425,
+        0.0,
+        0.26315789473683965,
+        -1.121384542437174,
+        1.3312693498452035,
+        1.065766019326388,
+        0.3818369453044383,
+        2.0743034055727563,
+        -0.31647746818025835,
+        1.6666666666666685,
+        0.09803921568627487,
+        2.2136222910216703,
+        0.5056759545923584,
+        1.2815925973820683,
+        1.5311004784688975
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.22311998605928937,
+      "t_ci95_pp": [
+        0.2706855189445851,
+        1.1938032333408635
+      ],
+      "t_statistic": 3.281841259832931,
+      "p_two_sided": 0.0032699859057350182,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "fixed_config_last_seen_gap_pp": {
+      "mean_pp": 3.325576601263521,
+      "draw_sd_pp": 1.8380076503142038,
+      "positive_draws": 23,
+      "draws": 24,
+      "values_pp": [
+        -1.1316114876486423,
+        3.016289051505774,
+        6.733101135190919,
+        1.9172764799699764,
+        2.9613824350666436,
+        3.176105672235701,
+        5.9639864322526845,
+        0.8912735209174827,
+        5.0167307752447075,
+        3.9210345653844114,
+        4.583083470467375,
+        2.1118177000529954,
+        6.728528063667386,
+        1.1197110423116612,
+        3.980831028044649,
+        4.227941176470584,
+        2.7480884698376995,
+        2.802619851768462,
+        2.70800106326422,
+        1.6996311326806677,
+        3.8320902523688942,
+        4.335881934566151,
+        2.1821385134078652,
+        4.2879061512962435
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.37518174055013775,
+      "t_ci95_pp": [
+        2.5494540383842166,
+        4.1016991641428255
+      ],
+      "t_statistic": 8.863908452440011,
+      "p_two_sided": 7.067713839614242e-09,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "fixed_config_last_unseen_gap_pp": {
+      "mean_pp": 0.48703493459685393,
+      "draw_sd_pp": 1.6176844327533817,
+      "positive_draws": 13,
+      "draws": 24,
+      "values_pp": [
+        -2.242722598759748,
+        -2.1225998373831176,
+        2.6358789129686997,
+        -0.4438346311411365,
+        1.7808268795110904,
+        3.0372167833468127,
+        1.2417642100304633,
+        0.1968290764730341,
+        2.72506410857804,
+        -0.5234098790600328,
+        1.388639026022929,
+        -0.11040452216922603,
+        1.5896391747784961,
+        -2.1441778465772288,
+        -0.185835638622018,
+        0.7557189542483627,
+        -0.16857819682897315,
+        0.5109531851017948,
+        3.6802232854864427,
+        -0.24481331176377524,
+        0.8459791412577815,
+        -0.8724513987671869,
+        1.2793607356300867,
+        -0.9204271820370963
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.33020845209078603,
+      "t_ci95_pp": [
+        -0.19605329284544176,
+        1.1701231620391497
+      ],
+      "t_statistic": 1.474931763596865,
+      "p_two_sided": 0.15378925556847084,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    }
+  },
+  "epoch_only_delta_test_all_four_configs": {
+    "mean_pp": 0.8356249828611797,
+    "draw_sd_pp": 0.6297195593790134,
+    "positive_draws": 21,
+    "draws": 24,
+    "values_pp": [
+      0.4686497643153991,
+      2.0021030740844967,
+      0.5379256965944275,
+      0.2205882352941181,
+      1.4033247643928743,
+      -0.2586952277354776,
+      1.920105089609734,
+      0.9712544658365108,
+      0.6790818400725519,
+      0.7111868412178008,
+      0.43413382422670316,
+      -0.1690235126767643,
+      0.9660628120380441,
+      1.368679050567594,
+      0.6513465336994738,
+      0.11480908152734806,
+      0.9591659630359335,
+      -0.013329893360854328,
+      1.5073333958782886,
+      0.6604747162022712,
+      0.8152734778121772,
+      1.7737358101135154,
+      1.3428771439607357,
+      0.9879366419614097
+    ],
+    "analysis_status": "post-review exploratory",
+    "standard_error_pp": 0.12854096679406965,
+    "t_ci95_pp": [
+      0.5697177336520063,
+      1.1015322320703531
+    ],
+    "t_statistic": 6.500845634683152,
+    "p_two_sided": 1.238919609224944e-06,
+    "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+  },
+  "epoch_only_delta_test_by_config": {
+    "0": {
+      "mean_pp": 0.6642115365670572,
+      "draw_sd_pp": 0.6966730268155754,
+      "positive_draws": 21,
+      "draws": 24,
+      "values_pp": [
+        0.44570886676149823,
+        1.4824717765894235,
+        0.0,
+        0.5263157894736878,
+        0.2941176470588232,
+        0.8771929824561397,
+        1.8439259693129628,
+        0.8912655971479481,
+        0.36854614253995094,
+        0.6695690906217209,
+        -0.19607843137254832,
+        0.5357989568515876,
+        1.4201043148411572,
+        0.45923632610938514,
+        0.1825509720246572,
+        0.6140350877192973,
+        0.526315789473685,
+        0.3508771929824562,
+        2.1052631578947385,
+        0.588235294117645,
+        -0.9700722394220846,
+        0.42827657378740724,
+        0.5211558307533537,
+        1.9762641898864828
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.14220778610487184,
+      "t_ci95_pp": [
+        0.37003231758037103,
+        0.9583907555537434
+      ],
+      "t_statistic": 4.6707114621504,
+      "p_two_sided": 0.00010575980161749594,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "1": {
+      "mean_pp": 1.1599369094209127,
+      "draw_sd_pp": 1.5126189601283844,
+      "positive_draws": 16,
+      "draws": 24,
+      "values_pp": [
+        0.7843137254901947,
+        5.736466835538037,
+        0.0,
+        0.7946336429308545,
+        1.3725490196078411,
+        0.0,
+        2.349625166962629,
+        1.928987811340754,
+        0.7017543859649124,
+        1.8954248366013062,
+        1.4566424009148449,
+        -0.6656346749226018,
+        2.5128998968008234,
+        1.0526315789473686,
+        0.3766769865841056,
+        -0.7017543859649124,
+        0.0,
+        0.0,
+        0.0,
+        2.569659442724459,
+        1.1403508771929807,
+        4.102167182662534,
+        -0.013290802764484511,
+        0.4443818994902585
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.30876205229781956,
+      "t_ci95_pp": [
+        0.5212139401264264,
+        1.798659878715399
+      ],
+      "t_statistic": 3.7567340312341355,
+      "p_two_sided": 0.0010272294369507808,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "2": {
+      "mean_pp": 0.7861071093140244,
+      "draw_sd_pp": 1.1727434868298394,
+      "positive_draws": 16,
+      "draws": 24,
+      "values_pp": [
+        -1.3658550191057899,
+        -0.08771929824561368,
+        0.933952528379774,
+        0.0,
+        0.9575364838522702,
+        -0.5394248737902047,
+        2.016280986869225,
+        1.2251415502189544,
+        1.3777089783281737,
+        0.5429113323850189,
+        0.47597132736451614,
+        -0.8094162273728827,
+        1.05263157894737,
+        2.631578947368419,
+        0.9803921568627445,
+        0.16511867905056904,
+        1.2360446570972925,
+        -0.08771929824561511,
+        2.2574037589517473,
+        -0.6140350877192944,
+        0.8771929824561425,
+        2.0588235294117623,
+        3.582050950472005,
+        0.0
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.23938526182545591,
+      "t_ci95_pp": [
+        0.29090096561664036,
+        1.2813132530114084
+      ],
+      "t_statistic": 3.28385759139676,
+      "p_two_sided": 0.003254171643145528,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    },
+    "3": {
+      "mean_pp": 0.7322443761427243,
+      "draw_sd_pp": 1.09306023452431,
+      "positive_draws": 17,
+      "draws": 24,
+      "values_pp": [
+        2.0104314841156934,
+        0.8771929824561397,
+        1.217750257997936,
+        -0.4385964912280699,
+        2.9890959070525627,
+        -1.3725490196078454,
+        1.4705882352941189,
+        -0.16037709536161343,
+        0.26831785345717096,
+        -0.2631578947368425,
+        0.0,
+        0.26315789473683965,
+        -1.121384542437174,
+        1.3312693498452035,
+        1.065766019326388,
+        0.3818369453044383,
+        2.0743034055727563,
+        -0.31647746818025835,
+        1.6666666666666685,
+        0.09803921568627487,
+        2.2136222910216703,
+        0.5056759545923584,
+        1.2815925973820683,
+        1.5311004784688975
+      ],
+      "analysis_status": "post-review exploratory",
+      "standard_error_pp": 0.22311998605928937,
+      "t_ci95_pp": [
+        0.2706855189445851,
+        1.1938032333408635
+      ],
+      "t_statistic": 3.281841259832931,
+      "p_two_sided": 0.0032699859057350182,
+      "method": "one-sample t, df=23, unadjusted, conditional fixed-corpus draw distribution; not a new confirmatory test"
+    }
+  },
+  "selected_epochs_all_four_configs": {
+    "best_seen": {
+      "mean": 9.639583333333333,
+      "counts": {
+        "15": 53,
+        "11": 36,
+        "9": 32,
+        "5": 36,
+        "13": 47,
+        "12": 36,
+        "8": 45,
+        "6": 54,
+        "4": 25,
+        "7": 34,
+        "14": 35,
+        "10": 39,
+        "3": 7,
+        "2": 1
+      }
+    },
+    "best_unseen": {
+      "mean": 8.65625,
+      "counts": {
+        "15": 30,
+        "12": 36,
+        "10": 29,
+        "5": 56,
+        "13": 41,
+        "7": 44,
+        "9": 25,
+        "8": 39,
+        "3": 12,
+        "6": 61,
+        "4": 47,
+        "14": 31,
+        "11": 27,
+        "2": 2
+      }
+    }
+  },
+  "selected_epoch_agreement": {
+    "numerator": 293,
+    "denominator": 480,
+    "fraction": 0.6104166666666667
+  },
+  "selected_checkpoint_epoch_bins": {
+    "epochs_8_to_10": {
+      "three_checkpoint_rows_including_aliases": {
+        "rows": 209,
+        "distinct_trajectories": 146,
+        "mean_uar_percent": 54.01883409904801
+      },
+      "unique_unit_epoch": {
+        "rows": 158,
+        "distinct_trajectories": 146,
+        "mean_uar_percent": 54.08136558252167
+      }
+    },
+    "epochs_14_to_15": {
+      "three_checkpoint_rows_including_aliases": {
+        "rows": 629,
+        "distinct_trajectories": 480,
+        "mean_uar_percent": 53.00418392880505
+      },
+      "unique_unit_epoch": {
+        "rows": 525,
+        "distinct_trajectories": 480,
+        "mean_uar_percent": 52.537586176905066
+      }
+    }
+  },
+  "epoch_bin_limit": "Selected checkpoint cross-sections; only best_seen/best_unseen/last test predictions exist. No complete within-trajectory learning curve or causal peak epoch is identified."
+}

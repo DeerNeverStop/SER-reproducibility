@@ -1,0 +1,14 @@
+{
+  "hypothesis_id": "N14R",
+  "method": "noncentral Student t",
+  "alpha": 0.05,
+  "sidedness": "two-sided",
+  "alternative_mean_pp": 1.5,
+  "sd_pp": 2.5,
+  "standardized_effect": 0.6,
+  "n_independent_outer_draws": 24,
+  "degrees_of_freedom": 23,
+  "power_rounded": 0.804,
+  "pilot_source": "c0c0beb",
+  "pilot_role": "design only; excluded from all N14R analyses"
+}

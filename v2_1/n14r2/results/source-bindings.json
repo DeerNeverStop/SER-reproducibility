@@ -1,0 +1,20 @@
+{
+  "schema": "ser26-n14r2-analysis-source-bindings-1",
+  "verified_at": "2026-09-06T03:46:49Z",
+  "local_tracked_worktree_clean": true,
+  "remote_full_pins_verification_pass": true,
+  "frozen_commit": "4fe0bb52f15b56a6626363be31a378b0f9661293",
+  "sha256": {
+    "score.py": "1adb0f5e626a7bd5d5cc3169850b99f5bf2c03bd583d13f54ed82c696ec7f061",
+    "verify.py": "d523d0ff1504562cc9585250bdf69a3e8e19e918c2c64cd89f6d63dbae359f26",
+    "PINS.json": "aeafca3c77791374140ce96a6632557e0d2822ff1dcc762e53bc7977321be4f8",
+    "run_plan.csv": "165f79d939efbba52946d70c222d6df643c419ceb670c5e4b6fd1c184d0385c7",
+    "analysis_lock.json": "e471cb3c2a3b26e799d8f85cbab86f9818b656db356b86eb3524a0e0ec0c3b82",
+    "completion.json": "4d19ba026381983d0c593728f104fbdf391ad8f99bf2bac1638e3f44559978ff"
+  },
+  "attestation_kind": "operator-recorded source and cache verification; private transport/control receipts are retained locally, not included as public evidence",
+  "original_scorer_exit_zero": true,
+  "original_independent_verification_pass": false,
+  "original_verification_difference": {"path": "$.n_planned_draws", "actual": 24, "expected": 28},
+  "external_cache_note": "The frozen verifier reports false for original Windows paths absent on Linux; the actual cloud cache bytes under /workspace/features independently passed the complete frozen PINS verification. No immutable paths were rewritten."
+}

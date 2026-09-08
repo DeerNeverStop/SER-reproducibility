@@ -1,0 +1,89 @@
+{
+  "checks": {
+    "cluster_bootstrap_10000_recomputed": true,
+    "fixed_24_test_holm_recomputed": true,
+    "full_72_cell_oof_exactly_once": true,
+    "published_statistical_summary_tables_match": true,
+    "speaker_paired_differences_recomputed": true,
+    "strict_protocol_speaker_disjointness": true,
+    "three_seed_mean_and_sample_sd_recomputed": true,
+    "utterance_metrics_recomputed": true,
+    "wilcoxon_and_sign_sensitivity_recomputed": true
+  },
+  "frozen_statistics": {
+    "bootstrap_percentile_method": "linear",
+    "bootstrap_percentiles": [
+      2.5,
+      97.5
+    ],
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 202608101744,
+    "holm_alpha": 0.05,
+    "holm_family_size": 24,
+    "numeric_tolerance": 5e-12,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "speaker_paired_contrasts": {
+      "GL": "groupkfold - loso",
+      "RG": "random - groupkfold",
+      "RL": "random - loso"
+    },
+    "wilcoxon": {
+      "alternative": "two-sided",
+      "correction": false,
+      "method": "auto",
+      "zero_method": "wilcox"
+    }
+  },
+  "independence": {
+    "imports_existing_verifier": false,
+    "imports_primary_summarizer": false,
+    "imports_training_or_ser_code": false,
+    "raw_sources": [
+      "run_plan.csv",
+      "manifests/*.csv",
+      "splits/*_outer_test_assignments.csv",
+      "units/**/predictions.csv"
+    ]
+  },
+  "max_absolute_numeric_error": {
+    "cell_completeness.csv": 0.0,
+    "oof_seed_metrics.csv": 0.0,
+    "outer_fold_speaker_overlap.csv": 0.0,
+    "paired_speaker_differences.csv": 0.0,
+    "protocol_metric_summary.csv": 0.0,
+    "protocol_premium.csv": 0.0,
+    "speaker_protocol_metrics.csv": 0.0,
+    "speaker_seed_metrics.csv": 0.0
+  },
+  "provenance": {
+    "assignment_sha256": {
+      "splits/cremad_outer_test_assignments.csv": "81cf1f28685582b92a0ad9c58e7a743dbc992416fa9d1576a11bd388a0595f93",
+      "splits/ravdess_outer_test_assignments.csv": "6cfa5aea57eb03b4fa1f1e8596bd081ee83866436775948d0632defaa91b953b"
+    },
+    "manifest_sha256": {
+      "manifests/cremad_manifest.csv": "8b628265bcea9ed36ac96a0fffe753423a8c4d8c87befb5775a2ca36c673c9b8",
+      "manifests/ravdess_manifest.csv": "259b453ce6135242b03a34d113209a4b8a0234687c9717e56fbe2bd75acb7ab2"
+    },
+    "prediction_files": 1620,
+    "prediction_inventory_sha256": "95b94ed4a9e54a5340a49236511cc85c36e79d389d72f01b9c2021d392a98a4e",
+    "run_plan_sha256": "ffac41581a09a769d7f299c2e27a94f75d7ca6b594196b3c81843cbe4d01296a"
+  },
+  "schema_version": "p1_independent_statistics_verification_v1",
+  "script_sha256": "6b5b839424e1562a97a95938ff14ac7057a8fff82ad12556aaeb17cb42a7417f",
+  "status": "pass",
+  "table_rows": {
+    "cell_completeness.csv": 72,
+    "oof_seed_metrics.csv": 72,
+    "outer_fold_speaker_overlap.csv": 135,
+    "paired_speaker_differences.csv": 1380,
+    "protocol_metric_summary.csv": 72,
+    "protocol_premium.csv": 72,
+    "speaker_protocol_metrics.csv": 1380,
+    "speaker_seed_metrics.csv": 4140
+  },
+  "verified_at": "2026-08-12T15:39:29-04:00"
+}

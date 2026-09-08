@@ -1,0 +1,89 @@
+{
+  "schema": "research-review-packet-1",
+  "date": "2026-09-06",
+  "status": "review draft; new experiments not run",
+  "base_commit": "333a42f1b28de89d6a75ab2ca314bb8caa683f1b",
+  "scope": "Only docs/research-plan-20260906; manifest does not certify scientific validity or runtime readiness",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+      "size_bytes": 14
+    },
+    {
+      "path": "budget_plan.json",
+      "sha256": "366f3abba2976e4c23984239da13b691e6c5090a837ad34a7f5eb711b6bf6d54",
+      "size_bytes": 7639
+    },
+    {
+      "path": "budget_plan.py",
+      "sha256": "f15ce31021813a86663b3b102e55e30a9815952b7dcd6f9723395dbb8c191a4b",
+      "size_bytes": 9026
+    },
+    {
+      "path": "budget_table.md",
+      "sha256": "19d5fd0cca800a042c9a7ce62a6ae68410e3e702b65bf5665b551c06f4eba0e1",
+      "size_bytes": 2122
+    },
+    {
+      "path": "CLAUDE_REVIEW_REQUEST.md",
+      "sha256": "6dde87c71a86b5630dd18719bcc7bbf455c2419c4fdf8c90ed146f34e6329001",
+      "size_bytes": 3508
+    },
+    {
+      "path": "cost_comparison_autodl.md",
+      "sha256": "7c12c7977b45ccf0211da7fab1af58914bd4c2a4886faa457698f810e22972fc",
+      "size_bytes": 2443
+    },
+    {
+      "path": "evidence/runtime_evidence.md",
+      "sha256": "8503b6de1bfcdac0601444d62a9354bc01dc782fc5e35e830174adb53c8b4edc",
+      "size_bytes": 3915
+    },
+    {
+      "path": "evidence/runtime_summary.json",
+      "sha256": "5809ccecd2586729de2b5435a75faa74da9587769feaf0c82c4213b5a8ee075c",
+      "size_bytes": 16993
+    },
+    {
+      "path": "evidence/sources.json",
+      "sha256": "e29ea21a65bee56b41fc6c001d782c0a75859cc78f71fe6057d27c8b34b0df6b",
+      "size_bytes": 1217
+    },
+    {
+      "path": "evidence/study2_tables.md",
+      "sha256": "a357389524b0f434ac7d403fb1020fecd2dc9d49070c9b4b578315a9c50987db",
+      "size_bytes": 5869
+    },
+    {
+      "path": "execution_contract.md",
+      "sha256": "6051adbcd3ac2f1a67f237b370ac4616fe20870b61a450719af5e0602e88fa2d",
+      "size_bytes": 20026
+    },
+    {
+      "path": "pricing_snapshot.json",
+      "sha256": "5a354d1e0ea5bcc432d1b626c6d6a27093fd6445065cf9fb7410941267304396",
+      "size_bytes": 3944
+    },
+    {
+      "path": "README.md",
+      "sha256": "757a9d4d778df19b7220a8d9b2762e3acad5cdb755341b7289cbae14482bdb44",
+      "size_bytes": 2132
+    },
+    {
+      "path": "research_plan.md",
+      "sha256": "3bf3ab4f42abdf2d27dea546cc55ba076a213b3192cc90465a58a2fb051795ec",
+      "size_bytes": 40057
+    },
+    {
+      "path": "SELF_REVIEW.md",
+      "sha256": "63b6940db7bcb29ed640d2a8e6ac5e146c7debc419b3832d08a974758d526647",
+      "size_bytes": 5407
+    },
+    {
+      "path": "validate_review_packet.py",
+      "sha256": "34e68bed37e58fade106718cf7fe95682767025e1a149ba1bdd183a45a8b5f8c",
+      "size_bytes": 24114
+    }
+  ]
+}

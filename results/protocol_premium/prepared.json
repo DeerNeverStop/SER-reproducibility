@@ -1,0 +1,285 @@
+{
+  "corpora": {
+    "cremad": {
+      "cache": {
+        "cache_path": "cache/mel_cremad_v1_sr22050_mel64_nfft1024_hop512_fmax11025_frames128_trim30_sample-zscore_code-33bc3b5e4b6a7a96.npz",
+        "cache_sha256": "c49136162c65e38a1f39a62e4de6878ec490a40947e02ab82f35da53c9e06fef",
+        "cache_shape": [
+          7442,
+          64,
+          128
+        ],
+        "corpus": "cremad",
+        "signature": {
+          "corpus": "cremad",
+          "manifest_sha256": "8b628265bcea9ed36ac96a0fffe753423a8c4d8c87befb5775a2ca36c673c9b8",
+          "preprocess": {
+            "eps": 1e-06,
+            "fmax": 11025,
+            "frames": 128,
+            "hop_length": 512,
+            "minimum_seconds": 0.1,
+            "mono": true,
+            "n_fft": 1024,
+            "n_mels": 64,
+            "normalization": "per-sample-global-zscore",
+            "power_to_db_ref": "np.max",
+            "sr": 22050,
+            "time_policy": "right-pad-with-spectrogram-min-or-left-truncate",
+            "trim_top_db": 30,
+            "version": "p1_logmel_v1"
+          },
+          "preprocessing_code_hash": "33bc3b5e4b6a7a9693c3ffa41d63166bb9ed827e662ff83ee747cfcd9a883d61"
+        }
+      },
+      "manifest": {
+        "corpus": "cremad",
+        "label_counts": {
+          "angry": 1271,
+          "disgust": 1271,
+          "fearful": 1271,
+          "happy": 1271,
+          "neutral": 1087,
+          "sad": 1271
+        },
+        "license": "ODbL 1.0 / DbCL 1.0",
+        "manifest_path": "manifests/cremad_manifest.csv",
+        "manifest_sha256": "8b628265bcea9ed36ac96a0fffe753423a8c4d8c87befb5775a2ca36c673c9b8",
+        "n_labels": 6,
+        "n_samples": 7442,
+        "n_speakers": 91,
+        "parse_failures": 0,
+        "read_failures": 0,
+        "source": "https://github.com/CheyneyComputerScience/CREMA-D"
+      },
+      "splits": {
+        "corpus": "cremad",
+        "inner_inventory_path": "splits/cremad_inner_split_inventory.csv",
+        "inner_inventory_sha256": "57afd4e7c90b61a68e293f7e7e5bf6dfccccc612310e990bc648f6e2ff787a0b",
+        "n_inner_splits": 303,
+        "n_outer_folds": 101,
+        "outer_assignments_path": "splits/cremad_outer_test_assignments.csv",
+        "outer_assignments_sha256": "81cf1f28685582b92a0ad9c58e7a743dbc992416fa9d1576a11bd388a0595f93",
+        "outer_fold_summary_path": "splits/cremad_outer_fold_summary.csv",
+        "outer_fold_summary_sha256": "0ee73f112f1b4c2f18d3dd093a425f12e10b522444353fb2ee33107081754d22"
+      }
+    },
+    "ravdess": {
+      "cache": {
+        "cache_path": "cache/mel_ravdess_v1_sr22050_mel64_nfft1024_hop512_fmax11025_frames128_trim30_sample-zscore_code-33bc3b5e4b6a7a96.npz",
+        "cache_sha256": "0e73160e1a5b88b13b437091332ec9479722e8feecb92061b9b6c0fb571a79f8",
+        "cache_shape": [
+          1440,
+          64,
+          128
+        ],
+        "corpus": "ravdess",
+        "signature": {
+          "corpus": "ravdess",
+          "manifest_sha256": "259b453ce6135242b03a34d113209a4b8a0234687c9717e56fbe2bd75acb7ab2",
+          "preprocess": {
+            "eps": 1e-06,
+            "fmax": 11025,
+            "frames": 128,
+            "hop_length": 512,
+            "minimum_seconds": 0.1,
+            "mono": true,
+            "n_fft": 1024,
+            "n_mels": 64,
+            "normalization": "per-sample-global-zscore",
+            "power_to_db_ref": "np.max",
+            "sr": 22050,
+            "time_policy": "right-pad-with-spectrogram-min-or-left-truncate",
+            "trim_top_db": 30,
+            "version": "p1_logmel_v1"
+          },
+          "preprocessing_code_hash": "33bc3b5e4b6a7a9693c3ffa41d63166bb9ed827e662ff83ee747cfcd9a883d61"
+        }
+      },
+      "manifest": {
+        "corpus": "ravdess",
+        "label_counts": {
+          "angry": 192,
+          "calm": 192,
+          "disgust": 192,
+          "fearful": 192,
+          "happy": 192,
+          "neutral": 96,
+          "sad": 192,
+          "surprised": 192
+        },
+        "license": "CC BY-NC-SA 4.0",
+        "manifest_path": "manifests/ravdess_manifest.csv",
+        "manifest_sha256": "259b453ce6135242b03a34d113209a4b8a0234687c9717e56fbe2bd75acb7ab2",
+        "n_labels": 8,
+        "n_samples": 1440,
+        "n_speakers": 24,
+        "parse_failures": 0,
+        "read_failures": 0,
+        "source": "https://doi.org/10.5281/zenodo.1188976"
+      },
+      "splits": {
+        "corpus": "ravdess",
+        "inner_inventory_path": "splits/ravdess_inner_split_inventory.csv",
+        "inner_inventory_sha256": "8c3d7f6907d098195f3e4f153e01e34db29fcbe054a25636380e6376994a6af7",
+        "n_inner_splits": 102,
+        "n_outer_folds": 34,
+        "outer_assignments_path": "splits/ravdess_outer_test_assignments.csv",
+        "outer_assignments_sha256": "6cfa5aea57eb03b4fa1f1e8596bd081ee83866436775948d0632defaa91b953b",
+        "outer_fold_summary_path": "splits/ravdess_outer_fold_summary.csv",
+        "outer_fold_summary_sha256": "b1e5b517b2ba3a6621ae4b7c0956bd942fd90fb4b8bbc5cfd8c218bc53391eba"
+      }
+    }
+  },
+  "engineering_refreeze_reason": "preflight review fixes before first real P1 training result",
+  "engineering_refrozen_at": "2026-08-11T14:13:43-04:00",
+  "environment": {
+    "created_at": "2026-08-11T13:53:54-04:00",
+    "cuda_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 5070",
+    "librosa": "0.11.0",
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0",
+    "soundfile": "0.14.0",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8"
+  },
+  "frozen_inputs": {
+    "preregistration_frozen_prefix_bytes": 12426,
+    "preregistration_frozen_prefix_sha256": "91db3edc544f76fc412f4dfc5f35adef23934635ca3ede36c8089c38bd14b782",
+    "preregistration_full_sha256": "91db3edc544f76fc412f4dfc5f35adef23934635ca3ede36c8089c38bd14b782",
+    "ser_commit": "d11768ed31a91f611472b89e52f3f6bb97030c40",
+    "ser_file_sha256": {
+      "advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+      "advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+      "fno_data.py": "9762eeb91268258443dd8a1908336d2cffeed9097f6e2c66461f4419ce0f3c88",
+      "fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+      "tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff"
+    }
+  },
+  "limits": {
+    "failed_unit_retries": 1,
+    "gpu_hours": 200,
+    "output_gib": 20,
+    "wall_days": 14
+  },
+  "model_configs": {
+    "cnn": {
+      "augment": true,
+      "balanced_loss": true,
+      "dilation_base": 1,
+      "dropout": 0.1,
+      "freq_mask": 8,
+      "kernel_size": 5,
+      "lr": 0.001,
+      "n_blocks": 3,
+      "noise_std": 0.1,
+      "time_mask": 16,
+      "weight_decay": 0.0001,
+      "width": 48
+    },
+    "fno": {
+      "augment": true,
+      "balanced_loss": true,
+      "dropout": 0.1,
+      "freq_mask": 8,
+      "lr": 0.001,
+      "modes": 16,
+      "n_layers": 4,
+      "noise_std": 0.1,
+      "time_mask": 16,
+      "weight_decay": 0.0001,
+      "width": 48
+    },
+    "resnet_se": {
+      "augment": true,
+      "balanced_loss": true,
+      "dropout": 0.1,
+      "freq_mask": 8,
+      "kernel_size": 5,
+      "lr": 0.001,
+      "max_dilation": 4,
+      "n_blocks": 4,
+      "noise_std": 0.1,
+      "se_reduction": 4,
+      "time_mask": 16,
+      "weight_decay": 0.0001,
+      "width": 48
+    },
+    "transformer": {
+      "augment": true,
+      "balanced_loss": true,
+      "d_model": 96,
+      "dropout": 0.1,
+      "ff_mult": 2.0,
+      "freq_mask": 8,
+      "lr": 0.0003,
+      "n_heads": 4,
+      "n_layers": 2,
+      "noise_std": 0.1,
+      "pooling": "attentive",
+      "position_mode": "normalized",
+      "time_mask": 16,
+      "weight_decay": 0.0001
+    }
+  },
+  "prepared_at": "2026-08-11T13:52:50-04:00",
+  "preprocess_config": {
+    "eps": 1e-06,
+    "fmax": 11025,
+    "frames": 128,
+    "hop_length": 512,
+    "minimum_seconds": 0.1,
+    "mono": true,
+    "n_fft": 1024,
+    "n_mels": 64,
+    "normalization": "per-sample-global-zscore",
+    "power_to_db_ref": "np.max",
+    "sr": 22050,
+    "time_policy": "right-pad-with-spectrogram-min-or-left-truncate",
+    "trim_top_db": 30,
+    "version": "p1_logmel_v1"
+  },
+  "run_plan": {
+    "cremad_units": 1212,
+    "n_units": 1620,
+    "path": "run_plan.csv",
+    "ravdess_units": 408,
+    "sha256": "ffac41581a09a769d7f299c2e27a94f75d7ca6b594196b3c81843cbe4d01296a"
+  },
+  "statistics": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 202608101744,
+    "confirmatory_family": 24
+  },
+  "status": "prepared_before_formal_training",
+  "tool_sha256": {
+    "p1_protocol_core.py": "16a4d2ed96892674f6132c4ea42dea1634bcd605f2467cb88551314984f86180",
+    "run_p1_protocol_premium.py": "8cf2232854919eacd676c860ce8ff990ab74e2fa69be2f2826db645cd17b2cbc"
+  },
+  "training": {
+    "batch_size": 64,
+    "class_weights": "fit-subset only",
+    "deterministic_algorithms": true,
+    "early_stopping": "strict global minimum of exact validation-set weighted CE; patience=15; restore best",
+    "gpu_budget_accounting": "atomic per-attempt ledger with epoch heartbeat and train+outer-test wall charge",
+    "max_epochs": 100,
+    "mixed_precision": false,
+    "optimizer": "AdamW",
+    "outer_test_retry_policy": "no retry after any outer-test access; artifact commit is retried in-memory only",
+    "scheduler": "CosineAnnealingLR(T_max=100)",
+    "tf32": false,
+    "validation_loss_aggregation": "sum(weighted per-sample CE) / sum(target class weights) over full validation set"
+  }
+}

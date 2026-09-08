@@ -1,0 +1,20 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "kind": "independent-verification",
+  "modules": {
+    "A": {
+      "integrity": {
+        "pass": true
+      },
+      "comparison": {
+        "pass": true,
+        "compared": 51150,
+        "failed": 0
+      }
+    }
+  },
+  "reasons": [],
+  "verify_sha256": "94b0c47fd3fbf249843c4305872ab5694b507d76fc3f134d2b12ee7192f16419",
+  "tolerance": 1e-09,
+  "pass": true
+}

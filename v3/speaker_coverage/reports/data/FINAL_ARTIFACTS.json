@@ -1,0 +1,121 @@
+{
+  "schema": "ser-coverage-final-delivery-artifacts-1",
+  "created_at_utc": "2026-09-06T23:44:56.963264+00:00",
+  "scope": "Only the 19 byte-preserved deliverables copied in this batch; excludes this manifest, RUN_REPORT, and previously archived diagnostics.",
+  "source_commit": "db7836c0ac3564ed44849aa6f8d553984b846064",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "path_base": "repository root",
+  "file_count": 19,
+  "total_bytes": 2172609,
+  "checks": {
+    "source_destination_bytes_equal": true,
+    "frozen_source_files_unchanged": 26,
+    "formal_units": 720,
+    "pilot_units": 19,
+    "score_tables_sha_bound": 5,
+    "figures_sha_bound": 4,
+    "numeric_contrasts_checked": 12,
+    "numeric_audit_pass": true,
+    "resource_audit_pass": true,
+    "score_gate_done_mapping_bindings_match": true,
+    "private_backup_and_stop_receipt_links_exist": true,
+    "operations_receipt_file_hashes_match": 59
+  },
+  "files": [
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/contrasts.csv",
+      "bytes": 2044,
+      "sha256": "3a02c0beb3b00cbefd12060b60020eaa831599e8872366c7b945e61a3a9f5681"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/fold_contrasts.csv",
+      "bytes": 2594,
+      "sha256": "36c753e35d426c897b0c004cf53b07a930b4186d5a86f95578e65b1320e024a2"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/per_repeat_speaker.csv",
+      "bytes": 259172,
+      "sha256": "c5bde8d874ec60c84bd9bf6de7f6b436d0a76a575a353dceaeee5e4396792faf"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/per_speaker.csv",
+      "bytes": 65520,
+      "sha256": "290a3f86ac9e9afdf1f8e8716ff2d8e764401df4308e91d0698a9ce3c81bcf98"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/policy_means.csv",
+      "bytes": 2108,
+      "sha256": "fff24beea79a44d20742334a6307a436196c631c2d3fe06733606bc619c09cb2"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/e2/results.json",
+      "bytes": 120857,
+      "sha256": "6b54514a42fc9284b7e22669ab30f8fc765a12559ef7a35cae29a0e435dcc7dd"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/figure_receipt.json",
+      "bytes": 669,
+      "sha256": "6dab5cfc2784a0f7eb6c235d1c676ffdfc3cc4f18ffa450feee3d4742c34c584"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/gates/formal_all.json",
+      "bytes": 101726,
+      "sha256": "499b7a069a5cf6d4ce1ecc5a5faa1c20be1fac45fa9fdc2e83338f89e9161d63"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/gates/pilot_all.json",
+      "bytes": 6377,
+      "sha256": "17ad3e288ebecae5f8a234e69e5b581b1d4255e5bd11a28ee0e0d6fc0f537e03"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/independent_numerical_audit.json",
+      "bytes": 2453,
+      "sha256": "064db750116b29c7afe4b165b984e5b6e2c9b6f570dcc89d6d5aa6a245c5563b"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/local_results_backup.json",
+      "bytes": 345,
+      "sha256": "e655c0953945def1be2d074084cc22e8aed8ccfaef3e0db4d3837d4ba0d1c904"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/operations_backup.json",
+      "bytes": 9420,
+      "sha256": "de1f68add5b40e5a64ee6b92a1dc1a06f8268b104b6329d65534ad83871d619f"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/rental_final.json",
+      "bytes": 2665,
+      "sha256": "cd05622b0fd8569a96ef7eea0d885afed67aa723f7dc6722925643c3580d33e0"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/resource_audit.json",
+      "bytes": 1123983,
+      "sha256": "cbec9bb90042b42ccefec0e94e11e7200f0ee857bf103f3d70f9eee6bb68d351"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/data/scoring_started.json",
+      "bytes": 546,
+      "sha256": "aa1a9dea516d17de4289da7d36ce0b2fa0b4916445b3f92a8048b4af6be77c9a"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/figures/e2_contrasts.png",
+      "bytes": 149674,
+      "sha256": "7b13516d0e2db89d58d09d0b27dd93311b87a6fb44351bbdcf426a43805860a0"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/figures/e2_contrasts.svg",
+      "bytes": 120461,
+      "sha256": "d70bf21c5a30eecc698c575ba291c8484c647ba362b1f6051b2b5816edfb8d44"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/figures/e2_policy_means.png",
+      "bytes": 109900,
+      "sha256": "274859257b47ae1fda4621b8bd6870002a5adafa97e873a7ca7e649790be844c"
+    },
+    {
+      "path": "v3/speaker_coverage/reports/figures/e2_policy_means.svg",
+      "bytes": 92095,
+      "sha256": "3245b3634377c193d5e257ed4318499311dd9ff3e5850a8df4f16336a116ef90"
+    }
+  ]
+}

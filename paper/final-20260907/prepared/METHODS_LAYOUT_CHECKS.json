@@ -1,0 +1,88 @@
+{
+  "scope": "PREPARED_METHODS_ONLY_NOT_FINAL_PAPER_OR_SCIENTIFIC_ACCEPTANCE",
+  "utc": "2026-09-07T17:17:51.429047+00:00",
+  "pdfs": {
+    "en": {
+      "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\prepared_methods_v3\\main.pdf",
+      "sha256": "04022b3be43427b515ec40cc40668fee26ef2840ae53c22fbc0544d7e43e1f25",
+      "bytes": 34522,
+      "pages": [
+        {
+          "page": 1,
+          "width": 612,
+          "height": 792,
+          "chinese_header_present": null,
+          "chinese_date_present": null,
+          "chinese_footer_present": null
+        },
+        {
+          "page": 2,
+          "width": 612,
+          "height": 792,
+          "chinese_header_present": null,
+          "chinese_date_present": null,
+          "chinese_footer_present": null
+        }
+      ],
+      "all_fonts_embedded": true,
+      "encrypted": false,
+      "invisible_text": [],
+      "font_resource_errors": [],
+      "outside_physical_page": [],
+      "root_visual_pages": [
+        1,
+        2
+      ]
+    },
+    "zh": {
+      "path": "D:\\SER-final-program-20260907\\paper_layout_checks\\prepared_methods_v4\\methods_zh.pdf",
+      "sha256": "6251268efae05960be6ae180ca965c8cf635dff56d5fa42c131e8dad85a8839a",
+      "bytes": 122836,
+      "pages": [
+        {
+          "page": 1,
+          "width": 595.2756,
+          "height": 841.8898,
+          "chinese_header_present": true,
+          "chinese_date_present": true,
+          "chinese_footer_present": true
+        },
+        {
+          "page": 2,
+          "width": 595.2756,
+          "height": 841.8898,
+          "chinese_header_present": true,
+          "chinese_date_present": true,
+          "chinese_footer_present": true
+        },
+        {
+          "page": 3,
+          "width": 595.2756,
+          "height": 841.8898,
+          "chinese_header_present": true,
+          "chinese_date_present": true,
+          "chinese_footer_present": true
+        }
+      ],
+      "all_fonts_embedded": true,
+      "encrypted": false,
+      "invisible_text": [],
+      "font_resource_errors": [],
+      "outside_physical_page": [],
+      "root_visual_pages": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "sources": {
+    "paper\\final-20260907\\prepared\\final_program_methods_en.tex": "e318d36ac65dd8897bda32ef1fe8f742f0906cadcb1569c837a7ef020689f74a",
+    "paper\\final-20260907\\prepared\\final_program_methods_zh.md": "8b4320c9d3cfe68d378661eafdc0c9b6249fb8eedfa51e470df145141db606d0",
+    "paper\\final-20260907\\chinese\\build_chinese.py": "d28793a8a83be4bfa607a5b651e1df5656d7a7b6658e490ab7ea2bc034caeba2",
+    "paper\\final-20260907\\english\\spconf.sty": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+  },
+  "final_deliverable": false,
+  "new_formal_results_read": false,
+  "known_remaining_layout_defects": []
+}

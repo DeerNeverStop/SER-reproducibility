@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-08-11T13:53:54-04:00",
+  "cuda_arch_list": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 5070",
+  "librosa": "0.11.0",
+  "numpy": "2.4.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "scipy": "1.18.0",
+  "sklearn": "1.9.0",
+  "soundfile": "0.14.0",
+  "torch": "2.11.0+cu128",
+  "torch_cuda": "12.8"
+}

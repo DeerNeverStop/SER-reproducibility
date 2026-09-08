@@ -1,0 +1,135 @@
+{
+  "base_file_sha256": "136a3e720c04f2c77bf7a4dc6a3868b14d5a2c145a988114b733cb1a8428be98",
+  "base_state_sha256": "d8e745fb761c56d209431413bcc373f92784dc2c8d850199b6caa5cf05ca2c36",
+  "bundle_params_sha256": "e70e8d484a2ef3a4755520da427c4a46fc34e40167dca0e0eda4f22c7ac4d1b4",
+  "committed_file_sha256": {
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c2/DONE": "2c95de89075728689a54c352dcf72c022601794a3d1c7f8969110937684a101f",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c2/attempts/0001/checkpoint.pt": "794b0f95623d24bd992b567bf07fffea80492a1e47c71b409ef88e2cb62e9cbb",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c2/attempts/0001/history.json": "f03b53d71af0960e38ac19506486bd353632c47c05acfacc3db73099cb3ee22d",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c2/attempts/0001/predictions.npz": "56b4cdfbf730e2ade6097261092cdf8090d98215fcfb3cc191dc84cb390987a7",
+    "/workspace/dual-runs-20260906/formal/units/dual_d00_f0_c2/attempts/0001/receipt.json": "e20fc6e3cc2db051031291bcb9cae7c735c8b283c6f542ee0401e1fcdc846793"
+  },
+  "comparisons": {
+    "test__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "test__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "test__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 228,
+      "rtol": 1e-05
+    },
+    "val_seen__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_seen__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_seen__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__best_seen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__best_unseen__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    },
+    "val_unseen__last__logits": {
+      "atol": 1e-05,
+      "classes": 6,
+      "max_abs_diff": 0.0,
+      "pass": true,
+      "rows": 288,
+      "rtol": 1e-05
+    }
+  },
+  "environment": {
+    "audit_extra_package_versions": {
+      "librosa": "0.11.0",
+      "soundfile": "0.13.1",
+      "torchaudio": "2.8.0+cu128"
+    },
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "cudnn_tf32": true,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "matmul_tf32": false,
+    "numpy": "2.1.2",
+    "python": "3.12.3",
+    "threads": 1,
+    "torch": "2.8.0+cu128"
+  },
+  "epoch_state_load_seconds": {
+    "10": 0.1809353493154049,
+    "15": 0.17802701890468597,
+    "9": 0.19198730774223804
+  },
+  "forward_seconds": {
+    "epoch10__test": 0.2741675730794668,
+    "epoch10__val_seen": 0.3535963073372841,
+    "epoch10__val_unseen": 0.33960031159222126,
+    "epoch15__test": 0.2743406519293785,
+    "epoch15__val_seen": 0.34780266135931015,
+    "epoch15__val_unseen": 0.33555438555777073,
+    "epoch9__test": 0.27942187525331974,
+    "epoch9__val_seen": 0.3490886352956295,
+    "epoch9__val_unseen": 0.3387559447437525
+  },
+  "frozen_parameter_sha256": "2c49490398901cdd9a36af0df34deb2bccfbafb5151237cf817becd067497f84",
+  "max_abs_diff": 0.0,
+  "model_constructor_seconds": 1.491246433928609,
+  "pass": true,
+  "schema": "ser-dual-validation-restore-unit-1",
+  "scientific_scores_computed": false,
+  "selected_epochs": {
+    "best_seen": 9,
+    "best_unseen": 10,
+    "last": 15
+  },
+  "unique_epochs": [
+    9,
+    10,
+    15
+  ],
+  "unit_id": "dual_d00_f0_c2"
+}

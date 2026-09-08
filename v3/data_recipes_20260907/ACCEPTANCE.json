@@ -1,0 +1,91 @@
+{
+  "scope": "Executed Study II metadata export and relocated delivery acceptance; no new scientific results",
+  "implementation_sha256": "68f8e2ac12c6b4b80325bb8c3c083e5841f8ef35222cf73ecd31a3f68c136901",
+  "test_sha256": "40a349d082b009c6d7dcc19b8b2c3876a3ff51db8cb074b9534fe75604c8128d",
+  "independent_tests": {
+    "tests": 17,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "junit_seconds": 42.476,
+    "junit_sha256": "6dfc88759bcdd7b0cd99ca35f72a4c8b0904efccf68997441a3b8f096a8d1091",
+    "limitation": "Initial collection failed due to a relative test import; changed to absolute import before this passing run. Production implementation unchanged."
+  },
+  "delivery": {
+    "pass": true,
+    "archive": "D:\\SER-final-program-20260907\\data_recipes\\study2_recording_recipes_v1.zip",
+    "bytes": 4509454,
+    "sha256": "1252d3b28a0b1a8db3cdfe9c58ede0d22033f0d6bf95de7691a98e137494afd5",
+    "delivery_files": 936,
+    "tool_sha256": "68f8e2ac12c6b4b80325bb8c3c083e5841f8ef35222cf73ecd31a3f68c136901",
+    "fresh_process_relocated_verify": {
+      "counts": {
+        "fit_components": 720,
+        "representative_rows": 6524,
+        "test_components": 90,
+        "units": 1440,
+        "val_components": 90
+      },
+      "manifest_sha256": "1115dcfc0ce5512a9968a6f7a951fa34ef0a484e0a310b481d0f1da03533c48d",
+      "pass": true,
+      "payload_bytes": 14316492,
+      "payload_files": 932,
+      "plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+      "schema": "ser-study2-data-recipes-1",
+      "scope": {
+        "claim": "Exact recorded configurations; not an optimal recipe or proof of eliminating SD/SI gaps.",
+        "contains_audio_features_weights_or_predictions": false,
+        "historical_receipts_only": true,
+        "history": "Original receipt absolute paths are preserved as historical evidence, not rebound to this bundle.",
+        "kind": "metadata_only_export_of_executed_Study_II",
+        "new_plan_generated": false,
+        "new_preregistration": false,
+        "new_training_or_scientific_recomputation": false
+      }
+    },
+    "fresh_process_export": {
+      "bundle_manifest_sha256": "1115dcfc0ce5512a9968a6f7a951fa34ef0a484e0a310b481d0f1da03533c48d",
+      "files": {
+        "fit.csv": {
+          "bytes": 34085,
+          "sha256": "4640f17634d2ae0e0255288b6caf144d6ea2eb59e15aca78e423c2ade0798973"
+        },
+        "test.csv": {
+          "bytes": 27253,
+          "sha256": "daca847e836006fc2c1ea358f474c464d96ab99c536459021144f7b0dc51914e"
+        },
+        "unit.json": {
+          "bytes": 18078,
+          "sha256": "a3139623313948fb312cbdccfacbc1e63fe1dcaecb6b547cfa716976977e5591"
+        },
+        "val.csv": {
+          "bytes": 33965,
+          "sha256": "74e4cb446e3d9206d747bb8a2556ae68d865db6778c247ee841f60ebfc52d5b2"
+        }
+      },
+      "pass": true,
+      "plan_sha256": "f258cabe582d97b3a386a666b566730d00241a5ded0e14ad61d590cb3c861503",
+      "row_index": "zero-based; original ordered fit/val/test paths",
+      "rows": {
+        "fit": 288,
+        "test": 228,
+        "val": 288
+      },
+      "schema": "ser-study2-data-recipes-1-unit-export",
+      "scope": {
+        "claim": "Exact recorded configurations; not an optimal recipe or proof of eliminating SD/SI gaps.",
+        "contains_audio_features_weights_or_predictions": false,
+        "historical_receipts_only": true,
+        "history": "Original receipt absolute paths are preserved as historical evidence, not rebound to this bundle.",
+        "kind": "metadata_only_export_of_executed_Study_II",
+        "new_plan_generated": false,
+        "new_preregistration": false,
+        "new_training_or_scientific_recomputation": false
+      },
+      "sex_field": "joined from pinned official demographics; original representative CSV unchanged",
+      "unit_id": "e890d24810c9f91a11f1fcf8b78d5904d497b78ed0bda3b75b4642b335fe5fc5",
+      "val_role": "early-stop validation; not final test"
+    }
+  },
+  "packaging_script_sha256": "71324160066c7c6064733b598a190bee5f1b1ac58a6597503852e56ef96b95b3"
+}

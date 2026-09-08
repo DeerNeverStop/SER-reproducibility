@@ -1,0 +1,11 @@
+{
+  "schema": "ser-public-posthoc-adaptation-1",
+  "original_sha256": "cd0a3a08b419deab86f90d792a54a79860c90eeb21bcbaf4171aa8f0d8fd7d48",
+  "public_sha256": "c6bfe60ea9777e23b4265e4653e7d9c5b344f43081cac1bac5fe8b98374bd3cd",
+  "changes": [
+    "Remove required private review text input and its byte hash assertion; no scientific CSV gate removed",
+    "Change output schema/scope to identify public projection; numerical calculations unchanged"
+  ],
+  "post_hoc": true,
+  "new_training": false
+}

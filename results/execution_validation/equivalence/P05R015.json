@@ -1,0 +1,205 @@
+{
+  "repository_id": "P05R015",
+  "evidence_tier_before": "tier1_execution_confirmed",
+  "evidence_tier_after": "tier1_execution_confirmed",
+  "candidate_module_imported": false,
+  "whole_repository_executed": false,
+  "original_source_fragment_executed": true,
+  "execution_scope": "exact NumPy speaker-choice and dataframe-mask statements on MiniFrame",
+  "source_reference": "modules/formatter.py:L57-L61",
+  "source_file_sha256": "81bcd6c082b98230ecae97415feb56c8b0bab329eafea996cc4e0edf83d1595b",
+  "source_fragment_ast_sha256": "4189a5fccd13897d5a84f0c33fa78befdb830aeeefdcfa5e05d3f8e67684ff54",
+  "adapter_equivalence": "pass_finite_cases",
+  "property_case_count": 16,
+  "property_cases_passed": 16,
+  "property_case_seeds": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    11,
+    17,
+    23,
+    42,
+    101,
+    313,
+    997,
+    20260810,
+    20260811,
+    20260812,
+    20260813
+  ],
+  "input_domain": "case 0 is the complete frozen synthetic target-corpus manifest for this repository; cases 1-15 are deterministic row-order permutations of the same manifest, including any frozen augmentation/window expansion",
+  "output_contract": "ordered train and final-evaluation row-index arrays; multi-stage paths include their exact inner validation removal before the final train array",
+  "coverage_boundary": "Only the decisive frozen split fragment and its declared arrays/lists are exercised. Upstream audio/feature extraction, external manifests, model code and performance are outside scope.",
+  "general_mathematical_proof": false,
+  "primary_pairs": [
+    {
+      "pair": "pair_00",
+      "train_rows": 336,
+      "test_rows": 84,
+      "train_speakers": [
+        "EmoDB:03",
+        "EmoDB:09",
+        "EmoDB:10",
+        "EmoDB:11",
+        "EmoDB:12",
+        "EmoDB:13",
+        "EmoDB:14",
+        "EmoDB:16"
+      ],
+      "test_speakers": [
+        "EmoDB:08",
+        "EmoDB:15"
+      ],
+      "speaker_intersection": [],
+      "speaker_intersection_count": 0
+    }
+  ],
+  "max_speaker_intersection": 0,
+  "split_risk_observed": "no",
+  "cases": [
+    {
+      "case_index": 0,
+      "seed": 0,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 1,
+      "seed": 1,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 2,
+      "seed": 2,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 3,
+      "seed": 3,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 4,
+      "seed": 7,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 5,
+      "seed": 11,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 6,
+      "seed": 17,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 7,
+      "seed": 23,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 8,
+      "seed": 42,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 9,
+      "seed": 101,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 10,
+      "seed": 313,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 11,
+      "seed": 997,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 12,
+      "seed": 20260810,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 13,
+      "seed": 20260811,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 14,
+      "seed": 20260812,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    },
+    {
+      "case_index": 15,
+      "seed": 20260813,
+      "input_rows": 420,
+      "input_speakers": 10,
+      "pair_count": 1,
+      "exact_index_agreement": true
+    }
+  ],
+  "safety": {
+    "network": false,
+    "gpu": false,
+    "candidate_module_import": false,
+    "whole_repository": false,
+    "training": false
+  },
+  "repository_url": "https://github.com/fdebrain/Speech-Emotion-Recognition-Emo-DB",
+  "commit_sha": "55bc617644d61d8c5ce9d46df954776ece525f45",
+  "draw_rank": 18,
+  "decisive_file_line": "modules/formatter.py:L18-L33 | modules/formatter.py:L47-L64 | app.py:L12-L14",
+  "split_risk_before_section12": "no",
+  "split_risk_after_section12": "no"
+}

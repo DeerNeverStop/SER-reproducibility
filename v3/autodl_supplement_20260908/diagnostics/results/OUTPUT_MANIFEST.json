@@ -1,0 +1,22 @@
+{
+  "pass_": true,
+  "script_sha256": "cdf2eafa81e2d35cee42717dca5ce48d680d7125b7bb89f190c3d4355278031c",
+  "files": {
+    "window_contexts.csv": {
+      "bytes": 232534,
+      "sha256": "ff718d0fc639f42b0d52f7a5c24d2dfff0a2ae84143681afcfa00420a6e03aad"
+    },
+    "window_diagnostics.json": {
+      "bytes": 1072668,
+      "sha256": "ebe76d3c2fef1c78048062bfe7bb78295f00e3b09639300d94938f47c19444ba"
+    },
+    "window_draws.csv": {
+      "bytes": 44508,
+      "sha256": "c7384f7e1389c9af7c14cc54a7cb5e6bff05d23ae063e5f6e15b9ffd8b278b68"
+    },
+    "window_summary.csv": {
+      "bytes": 4032,
+      "sha256": "9812a837e5cde60eefb79983ad9b515ef2e534736b5089ee323077fb83ae0c61"
+    }
+  }
+}

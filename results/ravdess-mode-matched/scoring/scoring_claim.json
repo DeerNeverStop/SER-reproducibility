@@ -1,0 +1,7 @@
+{
+  "claimed_at": "2026-08-16T14:49:30-04:00",
+  "pid": 4552,
+  "scorer_sha256": "b5fbd5b213e12507044a9928b4c36c8b6a88e0b9c196fc635c20c9e23a88b465",
+  "unlock_sha256": "601fa150c2f50a2ddf2f27e13f5ba7ccbe92da24b886341bd24dd122bb04aba9",
+  "completion_manifest_v6_sha256": "f3b5ce8c785cddd463b8bbd60e7cb2b9e328e91641b6e114a433030cbec9aa9d"
+}

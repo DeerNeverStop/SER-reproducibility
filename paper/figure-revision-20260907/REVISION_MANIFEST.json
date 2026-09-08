@@ -1,0 +1,88 @@
+{
+  "schema": "ser-figure-only-revision-1",
+  "created_at": "2026-09-07T22:25:42.757749+00:00",
+  "base_commit": "1c533520503f069172e4c8bcd6926538d2f77d2d",
+  "scope": "Curve appearance and bilingual figure replacement only. Original full release preserved.",
+  "previous_delivery_manifest": {
+    "bytes": 20812,
+    "sha256": "15aec8f9ef74a77d1c0f68b6f2d90814c5ad395e92847fdc198276dbf5473c85"
+  },
+  "shared_plot_source": {
+    "bytes": 11415,
+    "sha256": "6d0384e036dd21d9e5fa73245e76f746f5684550b43bf04ae9f303223b217191"
+  },
+  "shared_chinese_builder": {
+    "bytes": 20225,
+    "sha256": "579de6d33c25baca69371c1f0a2f50c64f1327fd431e0c2a9b6469872440e5ee"
+  },
+  "files": {
+    "build_figure.py": {
+      "bytes": 4292,
+      "sha256": "6a15f1b7f83d5ca918254968875147e2186679cceb97a679d5c019b6ce73ddb8"
+    },
+    "chinese/explainer.pdf": {
+      "bytes": 382032,
+      "sha256": "94de4f79fde1d0871d8cefbbd117b799e22362bb62f4005a2828f5087486eb81"
+    },
+    "chinese/explainer.pdf.build.json": {
+      "bytes": 2802,
+      "sha256": "bf2ffa6c2a7b139cbd1043efecb4eb0ac263d6d4c3c6851c1fef74486e8cd379"
+    },
+    "chinese/中文解读.md": {
+      "bytes": 19896,
+      "sha256": "228bb48820f1f18194a51b4894aa3a7347ca657b108b6f810ae298e92644cd64"
+    },
+    "english/main.tex": {
+      "bytes": 22403,
+      "sha256": "47306581e74c6ab1ae9707cc1f820234710cea971fbe7566cb7b4f97c786367d"
+    },
+    "english/spconf.sty": {
+      "bytes": 8798,
+      "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+    },
+    "english/xie.pdf": {
+      "bytes": 91019,
+      "sha256": "a2d8c21b4fb593fda9b3939a92c5c4e758bab06712f86805ff72bdcb4ace0025"
+    },
+    "figures/complete_epoch_curves.pdf": {
+      "bytes": 34392,
+      "sha256": "71bfd8f50753ae7e97669cfe4470a7116ba9f69f73a1848ee65ddd9859272755"
+    },
+    "figures/complete_epoch_curves.png": {
+      "bytes": 152327,
+      "sha256": "c43c8f4570619b4d785d91df4033a20c74048323867012f6905b3e6e8b8c8e9a"
+    },
+    "figures/complete_epoch_curves.svg": {
+      "bytes": 265514,
+      "sha256": "829d5033d4102ea3bc6b2ceeb8673fd3d891cd3cd6ac9963c152c4ce9c5a15f5"
+    },
+    "figures/FIGURE_MANIFEST.json": {
+      "bytes": 7341,
+      "sha256": "2d4ac65f6e8f618c75dbcb19bd0a846c33603367a40e0ac98e56fc178f7e4526"
+    },
+    "qa/figure_geometry.json": {
+      "bytes": 379403,
+      "sha256": "1eeb87e5f72333161c7aef25281f5f0cd5e7b202897518591cbe1291faba3b46"
+    },
+    "qa/scope_verification.json": {
+      "bytes": 4985,
+      "sha256": "199452d647538db777a2cb59211d2341842975bd12d7cf364fe4be215ce69a85"
+    },
+    "qa/structural.json": {
+      "bytes": 51474,
+      "sha256": "d2cc1ea343d2b91c4dba2734deefd0e2e3b8501b8e6ef7e5d804d5489c65ef60"
+    },
+    "qa/visual_review.json": {
+      "bytes": 1242,
+      "sha256": "4d95cf311bb7f1d825a44a137519b6e224e9702f457680a13dc21075fe614342"
+    },
+    "README.md": {
+      "bytes": 2342,
+      "sha256": "ceaff815f67173fb0210ace4af119205117c56e65c13f27700fa6eda4435ba90"
+    }
+  },
+  "new_fits": 0,
+  "new_tests": 0,
+  "manuscript_source_text_changed": false,
+  "numerical_data_changed": false
+}

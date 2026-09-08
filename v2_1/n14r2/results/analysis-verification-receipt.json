@@ -1,0 +1,21 @@
+{
+  "schema": "ser26-n14r2-analysis-verification-receipt-1",
+  "observed_at": "2026-09-06T03:52:47Z",
+  "frozen_commit": "4fe0bb52f15b56a6626363be31a378b0f9661293",
+  "original_result_sha256": "a49a9cd56f2fe64df0be96b568c24be63779e1d6126e38b791310b0fad506ec6",
+  "original_failed_verification_sha256": "bdaf7745fd218115d038f852137b3aefbf84053403f0ebe5a5a1a1b53f646a0c",
+  "corrected_result_sha256": "92146e7dcf01cc8fd923f78d08017e638d501732ff23110008caa64b5f6ef6c6",
+  "corrected_verification_sha256": "e82f088d88770e6a201ad93b581a5460aa9fba27658a9810ba63a9ed115cf843",
+  "corrected_verifier_exit_code": 0,
+  "corrected_verifier_pass": true,
+  "corrected_verifier_differences": [],
+  "verifier_source_unchanged": true,
+  "verification_scope": "Complete frozen reconstruction, 100000 bootstrap repetitions and all 16777216 sign assignments; no verification option was shortened or disabled.",
+  "post_verification_pins_pass": true,
+  "original_result_and_failure_report_unchanged": true,
+  "analysis_lock_and_completion_unchanged": true,
+  "source_and_local_final_report_hashes_match": true,
+  "operator_erratum_tests": {"passed": 17, "skipped": 1, "skip_reason": "Native symlink privilege unavailable on local Windows; simulated reparse rejection passed."},
+  "external_cache_bytes_verified_by_frozen_replay": false,
+  "note": "This pass belongs only to the explicitly labeled metadata-corrected result. The frozen scorer's original output retains its documented one-field failed comparison. Full cloud cache PINS checks separately passed; they are operator attestations, not a claim that the public replay includes cache bytes."
+}

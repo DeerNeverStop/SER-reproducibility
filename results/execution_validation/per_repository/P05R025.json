@@ -1,0 +1,23 @@
+{
+  "repository_id": "P05R025",
+  "repository_url": "https://github.com/flaviorainhoavila/IEMOCAPspeechEmotionRecognition",
+  "commit_sha": "ac73e9f95b23f132cdf60ccbd39d0807b60e2db0",
+  "draw_rank": 29,
+  "evidence_tier": "tier2_static_execution_inference",
+  "candidate_code_executed": false,
+  "candidate_source_imported": false,
+  "network_used": false,
+  "whole_repository_executed": false,
+  "probe_method": "fastai_random_items_static",
+  "probe_parameters": {},
+  "decisive_source": [
+    "prep_data.py:L38-L45",
+    "melspec_extrac.py:L42-L57",
+    "emo_rec.ipynb:L122-L133"
+  ],
+  "rationale": "The full path copies utterances into emotion folders, preserves utterance filenames for images, and calls ImageDataBunch.from_folder(valid_pct=0.2). That API partitions items, and the call supplies neither speaker groups nor a group-aware splitter. Fastai is absent from the frozen isolated environment and installation is forbidden, so this is static execution inference: non-enforcement is decisive, while an observed synthetic intersection is not claimed.",
+  "pairs": [],
+  "max_speaker_intersection": null,
+  "split_risk_final": "yes",
+  "prior_split_risk": "yes"
+}

@@ -1,0 +1,719 @@
+{
+ "code_sha256": {
+  "verify.py": "9c8593322b369f1e951f70e0e334106105a17d64dc9821d1b353574017271ab2",
+  "verify_deploy2.py": "94b0c47fd3fbf249843c4305872ab5694b507d76fc3f134d2b12ee7192f16419"
+ },
+ "modules": {
+  "A": {
+   "levels": {
+    "cremad": {
+     "feasible": 32,
+     "speakers": 91
+    },
+    "ravdess": {
+     "feasible": 22,
+     "speakers": 24
+    },
+    "subesco_980": {
+     "feasible": 22,
+     "speakers": 20
+    }
+   },
+   "units": 135
+  },
+  "B2": {
+   "fit_differs": 195,
+   "paired_folds": 195,
+   "units": 390
+  },
+  "B2-FIX": {
+   "matched_splits": 45,
+   "partitions": {
+    "cremad__r0__f0": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3640,
+      "new": 772,
+      "seen": 772,
+      "test": 1475
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r0__f1": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3683,
+      "new": 736,
+      "seen": 736,
+      "test": 1542
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 18,
+      "seen": 18,
+      "test": 19
+     }
+    },
+    "cremad__r0__f2": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3628,
+      "new": 775,
+      "seen": 775,
+      "test": 1474
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r0__f3": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3643,
+      "new": 772,
+      "seen": 772,
+      "test": 1468
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r0__f4": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3646,
+      "new": 768,
+      "seen": 768,
+      "test": 1476
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r1__f0": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3635,
+      "new": 777,
+      "seen": 777,
+      "test": 1467
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r1__f1": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3637,
+      "new": 772,
+      "seen": 772,
+      "test": 1474
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r1__f2": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3688,
+      "new": 733,
+      "seen": 733,
+      "test": 1548
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 18,
+      "seen": 18,
+      "test": 19
+     }
+    },
+    "cremad__r1__f3": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3634,
+      "new": 773,
+      "seen": 773,
+      "test": 1476
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r1__f4": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3641,
+      "new": 774,
+      "seen": 774,
+      "test": 1470
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r2__f0": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3638,
+      "new": 774,
+      "seen": 774,
+      "test": 1469
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r2__f1": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3636,
+      "new": 773,
+      "seen": 773,
+      "test": 1474
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r2__f2": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3673,
+      "new": 736,
+      "seen": 736,
+      "test": 1550
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 18,
+      "seen": 18,
+      "test": 19
+     }
+    },
+    "cremad__r2__f3": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3634,
+      "new": 774,
+      "seen": 774,
+      "test": 1470
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "cremad__r2__f4": {
+     "matched_cells": 72,
+     "rows": {
+      "fit": 3640,
+      "new": 771,
+      "seen": 771,
+      "test": 1472
+     },
+     "speakers": {
+      "fit": 54,
+      "new": 19,
+      "seen": 19,
+      "test": 18
+     }
+    },
+    "ravdess__r0__f0": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 689,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r0__f1": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r0__f2": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 689,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r0__f3": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 299
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r0__f4": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 749,
+      "new": 150,
+      "seen": 150,
+      "test": 240
+     },
+     "speakers": {
+      "fit": 15,
+      "new": 5,
+      "seen": 5,
+      "test": 4
+     }
+    },
+    "ravdess__r1__f0": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r1__f1": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 689,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r1__f2": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 689,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r1__f3": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 299
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r1__f4": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 750,
+      "new": 150,
+      "seen": 150,
+      "test": 240
+     },
+     "speakers": {
+      "fit": 15,
+      "new": 5,
+      "seen": 5,
+      "test": 4
+     }
+    },
+    "ravdess__r2__f0": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r2__f1": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 149,
+      "seen": 149,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r2__f2": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 689,
+      "new": 150,
+      "seen": 150,
+      "test": 300
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r2__f3": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 690,
+      "new": 150,
+      "seen": 150,
+      "test": 299
+     },
+     "speakers": {
+      "fit": 14,
+      "new": 5,
+      "seen": 5,
+      "test": 5
+     }
+    },
+    "ravdess__r2__f4": {
+     "matched_cells": 16,
+     "rows": {
+      "fit": 749,
+      "new": 150,
+      "seen": 150,
+      "test": 240
+     },
+     "speakers": {
+      "fit": 15,
+      "new": 5,
+      "seen": 5,
+      "test": 4
+     }
+    },
+    "subesco_980__r0__f0": {
+     "matched_cells": 48,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r0__f1": {
+     "matched_cells": 46,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r0__f2": {
+     "matched_cells": 45,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r0__f3": {
+     "matched_cells": 47,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r0__f4": {
+     "matched_cells": 46,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r1__f0": {
+     "matched_cells": 43,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r1__f1": {
+     "matched_cells": 44,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r1__f2": {
+     "matched_cells": 45,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r1__f3": {
+     "matched_cells": 44,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r1__f4": {
+     "matched_cells": 46,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r2__f0": {
+     "matched_cells": 46,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r2__f1": {
+     "matched_cells": 47,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r2__f2": {
+     "matched_cells": 45,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r2__f3": {
+     "matched_cells": 47,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    },
+    "subesco_980__r2__f4": {
+     "matched_cells": 47,
+     "rows": {
+      "fit": 492,
+      "new": 96,
+      "seen": 96,
+      "test": 196
+     },
+     "speakers": {
+      "fit": 12,
+      "new": 4,
+      "seen": 4,
+      "test": 4
+     }
+    }
+   },
+   "units": 135
+  }
+ },
+ "outcomes_read": false,
+ "pass": true,
+ "plan_file_sha256": {
+  "A.json": "05dce157835358bc626948fc1f0f16669b7a830ce3d6b470965f2f4fa1832480",
+  "B2.json": "928f0a922cb353f1fa5e9c128b73bda5c105487252adde4769e6d226000e21ab",
+  "B2_FIXED.json": "2346100270bf8797545229e885625807508202f560392101eebcf640540c0e5f"
+ },
+ "program": "SER26-DEPLOY-2"
+}

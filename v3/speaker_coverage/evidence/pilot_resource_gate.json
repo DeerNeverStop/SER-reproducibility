@@ -1,0 +1,68 @@
+{
+  "schema": "ser-coverage-pilot-resource-gate-1",
+  "plan_sha256": "8ea69b57b7030e4b431f503d8562de230cefed2cfa7d4d092f703e8b164cae4f",
+  "pilot_units": 19,
+  "all_units_complete": true,
+  "by_model": {
+    "ridge_wavlm": {
+      "n": 9,
+      "mean_fit_seconds": 0.19964777678251266,
+      "min_fit_seconds": 0.1152974646538496,
+      "max_fit_seconds": 0.8430349957197905,
+      "mean_unit_wall_seconds": 0.29026072430941796,
+      "max_peak_cuda_bytes": 0,
+      "fixed_epochs": [
+        0
+      ],
+      "all_best_last_reload_verified": true
+    },
+    "cnn": {
+      "n": 9,
+      "mean_fit_seconds": 15.142975806155139,
+      "min_fit_seconds": 14.106697987765074,
+      "max_fit_seconds": 16.771968448534608,
+      "mean_unit_wall_seconds": 15.24726267800563,
+      "max_peak_cuda_bytes": 52127232,
+      "fixed_epochs": [
+        100
+      ],
+      "all_best_last_reload_verified": true
+    },
+    "wavlm_ft": {
+      "n": 1,
+      "mean_fit_seconds": 26.511602863669395,
+      "min_fit_seconds": 26.511602863669395,
+      "max_fit_seconds": 26.511602863669395,
+      "mean_unit_wall_seconds": 26.7239801120013,
+      "max_peak_cuda_bytes": 2002108928,
+      "fixed_epochs": [
+        15
+      ],
+      "all_best_last_reload_verified": true
+    }
+  },
+  "formal_units": 720,
+  "projected_sum_unit_wall_hours": 2.5015132607736934,
+  "projection_limitation": "same machine; FT measured at one fold/rotation/unit only; add startup/hash gates/backup/idle/failures; not billed hours",
+  "operator_planning_window_hours": [
+    3,
+    5
+  ],
+  "rate_usd_per_hour": 0.99,
+  "operator_working_compute_cap_usd": 30,
+  "scores_computed": false,
+  "fixed_ft_shards": {
+    "ft_batch_1.json": {
+      "n": 60,
+      "sha256": "c3c393e53793d0ab2d603b4fa54b0d3ac04ccaac169bb9d116f4418a216d07a1"
+    },
+    "ft_batch_2.json": {
+      "n": 60,
+      "sha256": "21104902ebe4646c0a66bece8ea6a903d01171251e3492ad01b162d2a2cfa088"
+    },
+    "ft_batch_3.json": {
+      "n": 60,
+      "sha256": "6bfe48d57fffed7322f84f18ac2b514ca7197e3b4de18a82aa96c156af16ad78"
+    }
+  }
+}

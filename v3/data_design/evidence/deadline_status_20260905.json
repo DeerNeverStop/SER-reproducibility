@@ -1,0 +1,54 @@
+{
+  "schema": "ser-study2-deadline-status-1",
+  "recorded_at": "2026-09-05T06:57:36.785426+00:00",
+  "scientific_metrics_read": false,
+  "source_identity_mismatches": [],
+  "n14r": {
+    "unique_done": 807,
+    "remaining_primary_estimate": 1113,
+    "failed_events": 2,
+    "ambiguous_draw_accounting_units": [],
+    "unrecovered_failed_units": [],
+    "last_done_at": "2026-09-05T06:56:10.974814+00:00",
+    "stale_over_one_hour": false,
+    "throughput": [
+      {
+        "recent_completions": 20,
+        "units_per_hour": 34.8864199662938
+      },
+      {
+        "recent_completions": 50,
+        "units_per_hour": 34.32853157925134
+      },
+      {
+        "recent_completions": 100,
+        "units_per_hour": 32.46867892739476
+      }
+    ],
+    "training_eta_utc": "2026-09-06T17:14:21.867874+00:00",
+    "counts_are_ledger_progress_not_artifact_verification": true
+  },
+  "study2": {
+    "done_by_model": {
+      "ridge_wavlm": 720,
+      "cnn": 0
+    },
+    "remaining_ridge": 0,
+    "remaining_cnn": 720,
+    "cnn_seconds_per_unit_allowance": 120.0,
+    "exhausted_failed_units": [],
+    "timing_basis": "max(120-second planning assumption, 1.5 times slowest of last 50 CNN units)",
+    "representative_cnn_benchmark_available": false
+  },
+  "forecast": {
+    "needs_attention": false,
+    "reasons": [],
+    "gpu_ready_operator_confirmed": false,
+    "projected_compute_and_verification_end_utc": "2026-09-08T05:14:21.867874+00:00",
+    "handoff_buffer_hours_assumed": 6.0,
+    "verification_buffer_hours_assumed": 6.0,
+    "gpu_availability_gate": "2026-09-07T18:00:00-04:00",
+    "compute_gate": "2026-09-10T20:00:00-04:00",
+    "interpretation": "planning estimate, not a guarantee or permission to launch/rent; inspect any alert before recommending a purchase"
+  }
+}

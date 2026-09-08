@@ -1,0 +1,195 @@
+{
+  "schema": "ser-autodl-supplement-design-1",
+  "program": "SER27-AUTODL-SUPPLEMENT-DESIGN-1",
+  "status": "planning_only_not_an_execution_lock",
+  "execution_ready": false,
+  "reference_source_commit": "3ae0014d27a0af369f6bbe40da79b7f4d670b2c2",
+  "reference_plan_byte_sha256": "6bee99d32fe5932a6dfe6d22708ac2db6ec445b03afc339be50c649e3cf37c14",
+  "reference_plan_semantic_sha256": "393109434af0bfb6d18205f8f3713aa5e08d08f0f0ac3ffc4a63f8e635422c25",
+  "formal_units": 840,
+  "formal_epoch_passes": 19800,
+  "groups": [
+    {
+      "model": "hubert_base",
+      "corpus": "cremad",
+      "arm": "A",
+      "epochs": 15,
+      "units": 120
+    },
+    {
+      "model": "hubert_base",
+      "corpus": "ravdess",
+      "arm": "A",
+      "epochs": 15,
+      "units": 120
+    },
+    {
+      "model": "hubert_base",
+      "corpus": "subesco",
+      "arm": "A",
+      "epochs": 15,
+      "units": 120
+    },
+    {
+      "model": "wavlm_base_plus",
+      "corpus": "cremad",
+      "arm": "A",
+      "epochs": 15,
+      "units": 120
+    },
+    {
+      "model": "wavlm_base_plus",
+      "corpus": "cremad",
+      "arm": "B",
+      "epochs": 15,
+      "units": 120
+    },
+    {
+      "model": "wavlm_base_plus",
+      "corpus": "ravdess",
+      "arm": "A",
+      "epochs": 45,
+      "units": 120
+    },
+    {
+      "model": "wavlm_base_plus",
+      "corpus": "subesco",
+      "arm": "A",
+      "epochs": 45,
+      "units": 120
+    }
+  ],
+  "all_future_gpu_work_backend": "autodl",
+  "same_host_and_environment_for_formal": true,
+  "historical_local_results_enter_primary_pairs": false,
+  "rng_domain": "SER27-AUTODL-SUPPLEMENT-DESIGN-1",
+  "head_initialization": "Separate seed after encoder construction; same class head tensors across backbones, full initialization matched within WavLM A/B",
+  "checkpoint_retention": {
+    "policy": "all_epoch_predictions_and_receipts; all saved states validated while present; fixed14_units_weights_permanent",
+    "fixed_sample_unit_ids": [
+      "ads1_formal_cremad_d00_f0_wavlm_base_plus_A",
+      "ads1_formal_cremad_d00_f0_wavlm_base_plus_B",
+      "ads1_formal_cremad_d00_f0_hubert_base_A",
+      "ads1_formal_subesco_d00_f0_wavlm_base_plus_A",
+      "ads1_formal_subesco_d00_f0_hubert_base_A",
+      "ads1_formal_ravdess_d00_f0_hubert_base_A",
+      "ads1_formal_ravdess_d00_f0_wavlm_base_plus_A",
+      "ads1_formal_cremad_d12_f0_wavlm_base_plus_A",
+      "ads1_formal_cremad_d12_f0_hubert_base_A",
+      "ads1_formal_cremad_d12_f0_wavlm_base_plus_B",
+      "ads1_formal_subesco_d12_f0_wavlm_base_plus_A",
+      "ads1_formal_subesco_d12_f0_hubert_base_A",
+      "ads1_formal_ravdess_d12_f0_hubert_base_A",
+      "ads1_formal_ravdess_d12_f0_wavlm_base_plus_A"
+    ],
+    "max_sample_deltas": 90,
+    "max_all_deltas_if_retained": 5400,
+    "require_verified_backup_before_non_sample_weights_removed": true,
+    "old_archive_changed": false
+  },
+  "statistics": {
+    "replicate": "24 draw means after five-fold means; directions averaged first for P3",
+    "test": "two-sided one-sample t",
+    "df": 23,
+    "family": [
+      {
+        "id": "P1_cremad_D_CE",
+        "corpus": "cremad",
+        "endpoint": "D_CE",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P1_cremad_J",
+        "corpus": "cremad",
+        "endpoint": "J",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P1_subesco_D_CE",
+        "corpus": "subesco",
+        "endpoint": "D_CE",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P1_subesco_J",
+        "corpus": "subesco",
+        "endpoint": "J",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P1_ravdess_D_CE",
+        "corpus": "ravdess",
+        "endpoint": "D_CE",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P1_ravdess_J",
+        "corpus": "ravdess",
+        "endpoint": "J",
+        "comparison": "HuBERT A, window15, seen minus unseen"
+      },
+      {
+        "id": "P2_subesco_L_CE",
+        "corpus": "subesco",
+        "endpoint": "L_CE",
+        "comparison": "WavLM A, window45 minus window15 on same trajectory"
+      },
+      {
+        "id": "P2_subesco_L_J",
+        "corpus": "subesco",
+        "endpoint": "L_J",
+        "comparison": "WavLM A, window45 minus window15 on same trajectory"
+      },
+      {
+        "id": "P2_ravdess_L_CE",
+        "corpus": "ravdess",
+        "endpoint": "L_CE",
+        "comparison": "WavLM A, window45 minus window15 on same trajectory"
+      },
+      {
+        "id": "P2_ravdess_L_J",
+        "corpus": "ravdess",
+        "endpoint": "L_J",
+        "comparison": "WavLM A, window45 minus window15 on same trajectory"
+      },
+      {
+        "id": "P3_cremad_S_CE",
+        "corpus": "cremad",
+        "endpoint": "S_CE",
+        "comparison": "Equal mean of new-cloud WavLM A/B directional effects"
+      },
+      {
+        "id": "P3_cremad_S_J",
+        "corpus": "cremad",
+        "endpoint": "S_J",
+        "comparison": "Equal mean of new-cloud WavLM A/B directional effects"
+      }
+    ],
+    "multiplicity": "Holm, fixed 12 slots, alpha0.05",
+    "intervals": "pointwise95%"
+  },
+  "cloud_candidate": {
+    "gpu_spec_uuid": "5090-p",
+    "gpu_count": 1,
+    "vram_gb": 32,
+    "cuda_v_from": 128,
+    "expand_system_disk_by_gb_candidate": 100,
+    "image_uuid_candidate": "base-image-mbr2n4urrc",
+    "environment": "new Python3.11, torch2.11.0+cu128, torchaudio2.11.0+cu128",
+    "hourly_price_yuan": null,
+    "storage_price_yuan": null,
+    "planning_gpu_window_hours": 24,
+    "proposed_total_budget_yuan": 80,
+    "budget_is_not_a_measured_quote_or_user_approved_spend_cap": true,
+    "created": false,
+    "real_name_status_current": "unconfirmed; earlier create returned TORealName"
+  },
+  "not_yet_complete": [
+    "derive all fit slots including B folds1-4 and check audio union",
+    "implement independent multi-backbone dual-window runner and new retention-aware gates",
+    "hash model files, resolve full Linux dependency and source lock",
+    "verify current real-name eligibility, stock and actual Pro prices",
+    "AutoDL-only technical pilots and blinded resource admission"
+  ],
+  "job_matrix_semantic_sha256": "588dc27bd0cea6c755b25e33782cb52d6e8649830baef9a80de86c145dd1269a"
+}

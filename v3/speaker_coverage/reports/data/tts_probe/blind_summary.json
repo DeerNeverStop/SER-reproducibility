@@ -1,0 +1,10 @@
+{
+  "asv_status": "not_implemented_not_run;requires_separately_pinned_embedding_analysis",
+  "manifest_sha256": "341f8cae062b38bee33569a50e45ffded4e7a27bc16f30a2cf9b0f0b93218a19",
+  "missing_anchors": [],
+  "omitted_attempts": [],
+  "raters_completed": 0,
+  "share_only": "one blind/rater_N directory per person; never share manifest/config/private key",
+  "status": "awaiting_three_independent_human_raters",
+  "success_clips_per_rater": 100
+}

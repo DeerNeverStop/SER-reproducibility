@@ -1,0 +1,169 @@
+{
+  "checked_date": "2026-09-06",
+  "source": "Configured Runpod MCP list_gpu_types; product=POD",
+  "units": "USD per GPU-hour; on-demand; not account bill or future quote",
+  "catalog": [
+    {
+      "items": [
+        {
+          "availability": "HIGH",
+          "community": true,
+          "cudaVersions": [
+            {
+              "available": false,
+              "version": "12.2"
+            },
+            {
+              "available": false,
+              "version": "12.4"
+            },
+            {
+              "available": false,
+              "version": "12.6"
+            },
+            {
+              "available": true,
+              "version": "12.8"
+            },
+            {
+              "available": false,
+              "version": "12.9"
+            },
+            {
+              "available": true,
+              "version": "13.0"
+            },
+            {
+              "available": true,
+              "version": "13.2"
+            }
+          ],
+          "id": "NVIDIA GeForce RTX 4090",
+          "manufacturer": "NVIDIA",
+          "maxCount": {
+            "community": 8,
+            "secure": 8
+          },
+          "memory": 24,
+          "name": "RTX 4090",
+          "pool": "ADA_24",
+          "price": {
+            "community": 0.34,
+            "secure": 0.74,
+            "serverless": 1.1
+          },
+          "secure": true
+        }
+      ],
+      "pagination": {
+        "total": 1,
+        "returned": 1,
+        "offset": 0,
+        "truncated": false,
+        "nextCursor": null
+      }
+    },
+    {
+      "items": [
+        {
+          "availability": "LOW",
+          "community": true,
+          "cudaVersions": [
+            {
+              "available": true,
+              "version": "12.4"
+            },
+            {
+              "available": true,
+              "version": "12.7"
+            },
+            {
+              "available": true,
+              "version": "12.8"
+            },
+            {
+              "available": true,
+              "version": "13.0"
+            }
+          ],
+          "id": "NVIDIA RTX A6000",
+          "manufacturer": "NVIDIA",
+          "maxCount": {
+            "community": 3,
+            "secure": 10
+          },
+          "memory": 48,
+          "name": "RTX A6000",
+          "pool": "AMPERE_48",
+          "price": {
+            "community": 0.33,
+            "secure": 0.53,
+            "serverless": 1.22
+          },
+          "secure": true
+        }
+      ],
+      "pagination": {
+        "total": 1,
+        "returned": 1,
+        "offset": 0,
+        "truncated": false,
+        "nextCursor": null
+      }
+    },
+    {
+      "items": [
+        {
+          "availability": "LOW",
+          "community": true,
+          "cudaVersions": [
+            {
+              "available": true,
+              "version": "12.8"
+            },
+            {
+              "available": true,
+              "version": "12.9"
+            },
+            {
+              "available": true,
+              "version": "13.0"
+            },
+            {
+              "available": true,
+              "version": "13.1"
+            },
+            {
+              "available": true,
+              "version": "13.2"
+            }
+          ],
+          "id": "NVIDIA GeForce RTX 5090",
+          "manufacturer": "NVIDIA",
+          "maxCount": {
+            "community": 8,
+            "secure": 10
+          },
+          "memory": 32,
+          "name": "RTX 5090",
+          "pool": "ADA_32_PRO",
+          "price": {
+            "community": 0.69,
+            "secure": 0.99,
+            "serverless": 1.58
+          },
+          "secure": true
+        }
+      ],
+      "pagination": {
+        "total": 1,
+        "returned": 1,
+        "offset": 0,
+        "truncated": false,
+        "nextCursor": null
+      }
+    }
+  ],
+  "storage_source": "https://docs.runpod.io/pods/pricing",
+  "network_volume_usd_per_GB_month_under1TB": 0.07
+}

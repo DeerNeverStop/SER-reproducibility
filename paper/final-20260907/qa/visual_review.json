@@ -1,0 +1,131 @@
+{
+  "schema": "ser-final-visual-review-1",
+  "created_at": "2026-09-07T20:22:31.223388+00:00",
+  "reviewer": "root assistant, actual tool-displayed page inspection",
+  "pass": true,
+  "pdfs": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\english\\xie.pdf",
+      "bytes": 89538,
+      "sha256": "1c45d1d94582926f6f3122986c6e50e759db69ebc723e630bd6bd4500af93e5c"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\chinese\\explainer.pdf",
+      "bytes": 378697,
+      "sha256": "81219748f97037a1a53494d5b6000c54c570d75fd51b8a6b7d400c74db8edd04"
+    }
+  ],
+  "renders": {
+    "english": [
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\page-1.png",
+        "bytes": 508589,
+        "sha256": "8e5b8d3f0e0428960f76d74c89713008733a7c52d56a940492faed8dedc20dfc"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\page-2.png",
+        "bytes": 597500,
+        "sha256": "d7de646c8309afebeaf9fe9e11b44b449fdf564dd3dab0a91343795c967b352c"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\page-3.png",
+        "bytes": 494703,
+        "sha256": "3e047f0077d9feae9005774df3bfd577bd041e37ebd40f952c9c63445e0afddf"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\page-4.png",
+        "bytes": 445574,
+        "sha256": "3ab8f24e4b758fb7fdb18a528683b7367a6411b7ed02bad88edd08c1bd6c25b9"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\english_v3\\page-5.png",
+        "bytes": 394696,
+        "sha256": "4f56a27611c7bf1243e2c78928087ceb04239c9b8d2a1e6bd18ba9ec5116fa96"
+      }
+    ],
+    "chinese": [
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-1.png",
+        "bytes": 595969,
+        "sha256": "efcbfe5516af4bcc51f21d61063dded30d055540be63855e087595295007118e"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-2.png",
+        "bytes": 562897,
+        "sha256": "123bdbc42c4e3d285dac7be2bca1b99b95054b07135bb4969bc2b334f22eb3ca"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-3.png",
+        "bytes": 549997,
+        "sha256": "be819b060b1934d35cf0f35fa601310b298747edd73912f209ef9d06c9c6218c"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-4.png",
+        "bytes": 384953,
+        "sha256": "35b90a82235aedb8c8df199780ad6a40c1179ab7a8ea167856b823fb75935f4b"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-5.png",
+        "bytes": 557176,
+        "sha256": "9a585d495aafe09a49d7b059ad8e2d0bbcb6e042428a699e657c4fd69975190f"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-6.png",
+        "bytes": 567752,
+        "sha256": "699351aba258070c6ec90db101525d97474c94732f9b369a3d73f179a5b889f2"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-7.png",
+        "bytes": 362386,
+        "sha256": "3b8cb962cab113aee8794ff68b8572f19fbb44a9248f5a6e436f548b73b4ddfc"
+      },
+      {
+        "path": "D:\\SER-final-program-20260907\\paper_final_builds\\chinese_v2\\page-8.png",
+        "bytes": 128672,
+        "sha256": "f426f48239bbe4a86131bb7022712c3321773bd44bdcededca29829ae7fe70da"
+      }
+    ]
+  },
+  "english_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "chinese_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "chinese_review_method": "All eight v1 pages displayed; v2 pages 4/5/6 displayed after CI-column-width improvement; pages 1/2/3/7/8 were PNG-byte-identical to those already displayed.",
+  "notes": [
+    "No overlapping or clipped body text, missing glyphs, broken tables or detached figure caption observed.",
+    "English page 5 contains references only; all 12 references retained in both languages.",
+    "Chinese page 4 CI endpoints now remain on one line.",
+    "Actual three native plots were separately displayed; all corpora, full curves and 24 control points retained."
+  ],
+  "native_plot_previews": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\complete_epoch_curves.png",
+      "bytes": 145955,
+      "sha256": "a03a735f1c7190f591044a1812cebb52d1913d681ff0f2ef719c897f04a2d951"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\checkpoint_rule_effects.png",
+      "bytes": 91166,
+      "sha256": "e0fef37236d7ea44f53fd6d63b1bf56d57a99d520d02068d698b18dfd5ec7f86"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\SER-speaker-execution-20260906\\paper\\final-20260907\\figures\\paired_role_controls.png",
+      "bytes": 49672,
+      "sha256": "2058bb1fae82db8da1945480f8c51e5a80a6ade731409395a4c7b28d055a998b"
+    }
+  ],
+  "not_a_claim_of_human_author_approval": true
+}

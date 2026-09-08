@@ -1,0 +1,90 @@
+# Local environments
+ser_gpu/
+.venv/
+venv/
+env/
+
+# Python cache/build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Audio corpora and generated/demo audio
+data/
+AudioWAV/
+CREMA-D/
+demo_data/
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.m4a
+
+# Large archives, cached features, and model checkpoints
+*.zip
+*.npz
+*.pt
+*.pth
+*.joblib
+
+# Frozen split assignments are small, versioned scientific inputs rather than caches.
+!results/protocol_premium/splits/**/*.npz
+
+# Internal agent/governance material is never part of the paper artifact.
+AGENTS.md
+CLAUDE_CODEX_DIALOGUE.md
+claude/
+codex/
+
+# Large or mutable experiment intermediates stay outside the default tree.
+results/**/cache/
+results/**/units/
+results/**/attempt_ledger/
+results/**/logs/
+
+# Throwaway verification output
+results/smoke/
+
+# Local editor/system files
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+paper/v2/spconf.sty
+
+# N14R local execution and working score outputs; verified summaries are copied
+# to v2_1/n14r/evidence explicitly after independent replay.
+v2_1/n14r/runs/
+v2_1/n14r/results/
+v2_1/n14r/release_staging/
+
+# Study II execution intermediates; reviewed compact evidence is versioned separately.
+v3/data_design/work/
+v3/data_design/runs/
+
+# SER26-DEPLOY-1 local working outputs (raw units, pilots, sync manifests); plans and summaries stay tracked
+v3/deploy/work/*
+!v3/deploy/work/plan/
+v3/deploy/work/plan/*
+!v3/deploy/work/plan/*.json
+!v3/deploy/work/plan/*.md
+v3/deploy/results/verification_recomputed_*.csv
+
+# Speaker-coverage executions contain large checkpoints and sealed predictions.
+v3/speaker_coverage/work/
+v3/speaker_coverage/runs/
+
+# Reviewed diagnostic tables and receipts; global audio/checkpoint exclusions still apply.
+!v3/speaker_coverage/reports/data/
+
+# Separate dual-validation experiment: large mutable predictions/checkpoints.
+v3/inner_validation/work/
+v3/inner_validation/runs/
+!v3/inner_validation/reports/data/
+
+# Final-program full generated plans and mutable training payloads are archived externally.
+v3/final_program_20260907/work/
+v3/final_program_20260907/runs/
+
+# Public, verified metadata-only recipe attachment.
+!v3/data_recipes_20260907/releases/study2_recording_recipes_v1.zip

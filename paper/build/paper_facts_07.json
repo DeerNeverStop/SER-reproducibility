@@ -1,0 +1,2123 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-18T01:40:45.524203+00:00",
+  "description": "Project-07 paper facts derived from frozen audit and P1 tables.",
+  "sources": [
+    {
+      "id": "tier_summary",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\execution_validation\\tier_summary.csv",
+      "sha256": "14c8b364dfdc2b3b650c48bfbfba106690fd69367d9d4f370c07da5e2e2a2842",
+      "priority": 100,
+      "authority": "final-audit-adjudication",
+      "required": true
+    },
+    {
+      "id": "run_status",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\run_status_summary.json",
+      "sha256": "cf19c5d742c80f8be16bd41088a09ff23244e5ddff4bf29eddaf43d43df7d051",
+      "priority": 100,
+      "authority": "final-run-status",
+      "required": true
+    },
+    {
+      "id": "verification",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\verification.json",
+      "sha256": "5d6f12f9ef9783aa1cb4c384c420542ebe1150e93107786d512f446d31dc471e",
+      "priority": 100,
+      "authority": "independent-verification",
+      "required": true
+    },
+    {
+      "id": "premium",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\protocol_premium.csv",
+      "sha256": "e28298dded7c74441a300235e225aee0a0c11d4a854bca1d5289e6fe3ebd718c",
+      "priority": 100,
+      "authority": "final-paired-statistics",
+      "required": true
+    },
+    {
+      "id": "metric_summary",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\protocol_metric_summary.csv",
+      "sha256": "14e630a47c1beba3aa737d45ca8d40487d213ccdcf813a90f7e4c249b63c3b2b",
+      "priority": 100,
+      "authority": "final-oof-metrics",
+      "required": true
+    },
+    {
+      "id": "prereg",
+      "path": "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\P1_PREREGISTRATION.md",
+      "sha256": "666cfdb951220a8e712d1121821a1590bd2f40812f61fb8244f617526ebe21f2",
+      "priority": 100,
+      "authority": "frozen-preregistration",
+      "required": true
+    },
+    {
+      "id": "d1_report",
+      "path": "E:\\科研\\ICASSP2027\\results\\corpora\\ravdess-mode-matched\\scoring\\d1_scoring_report.json",
+      "sha256": "aaab7a0be4feedf190d65953651c121a230fe8bd43e8d45b9f1e084c7214e142",
+      "priority": 100,
+      "authority": "frozen-one-shot-scoring",
+      "required": true
+    },
+    {
+      "id": "d1_completion",
+      "path": "E:\\科研\\ICASSP2027\\results\\corpora\\ravdess-mode-matched\\training\\completion_manifest_v6.json",
+      "sha256": "f3b5ce8c785cddd463b8bbd60e7cb2b9e328e91641b6e114a433030cbec9aa9d",
+      "priority": 100,
+      "authority": "frozen-completion-manifest",
+      "required": true
+    }
+  ],
+  "facts": [
+    {
+      "id": "audit.n",
+      "value": 30,
+      "statistic": "count",
+      "metric": "repository sample",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "sample"
+      },
+      "aliases": [
+        "sample included",
+        "sample contained",
+        "sample size",
+        "audit denominator",
+        "denominator remained"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "split_risk_final denominator",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.yes",
+      "value": 20,
+      "statistic": "count",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "speaker nonexclusive"
+      },
+      "aliases": [
+        "showed speaker-nonexclusive split risk",
+        "found speaker-nonexclusive split risk"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "split_risk_final=yes",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.no",
+      "value": 5,
+      "statistic": "count",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "verified negative"
+      },
+      "aliases": [
+        "verified negative",
+        "did not"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "split_risk_final=no",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.unknown",
+      "value": 5,
+      "statistic": "count",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "unresolved"
+      },
+      "aliases": [
+        "were unresolved",
+        "unresolved cases"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "split_risk_final=unknown",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.rate_pct",
+      "value": 66.7,
+      "statistic": "mean",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "speaker nonexclusive"
+      },
+      "aliases": [
+        "observed rate",
+        "observed positive fraction"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "20/30 displayed",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.ci_low_pct",
+      "value": 48.8,
+      "statistic": "ci_low",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "speaker nonexclusive"
+      },
+      "aliases": [
+        "observed rate",
+        "observed positive fraction"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "Wilson interval from 20/30",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.ci_high_pct",
+      "value": 80.8,
+      "statistic": "ci_high",
+      "metric": "repository audit",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "speaker nonexclusive"
+      },
+      "aliases": [
+        "observed rate",
+        "observed positive fraction"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "Wilson interval from 20/30",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.sensitivity_count",
+      "value": 25,
+      "statistic": "count",
+      "metric": "repository audit sensitivity",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "unknown as risk"
+      },
+      "aliases": [
+        "positive count"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "20+5 unknown",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.sensitivity_pct",
+      "value": 83.3,
+      "statistic": "mean",
+      "metric": "repository audit sensitivity",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "unknown as risk"
+      },
+      "aliases": [
+        "sensitivity rate"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "25/30 displayed",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.sensitivity_ci_low_pct",
+      "value": 66.4,
+      "statistic": "ci_low",
+      "metric": "repository audit sensitivity",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "unknown as risk"
+      },
+      "aliases": [
+        "sensitivity rate"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "Wilson interval from 25/30",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.sensitivity_ci_high_pct",
+      "value": 92.7,
+      "statistic": "ci_high",
+      "metric": "repository audit sensitivity",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "outcome": "unknown as risk"
+      },
+      "aliases": [
+        "sensitivity rate"
+      ],
+      "unit": "percent",
+      "source_id": "tier_summary",
+      "pointer": "Wilson interval from 25/30",
+      "track_unused": false,
+      "tolerance": 0.05
+    },
+    {
+      "id": "audit.tier1",
+      "value": 24,
+      "statistic": "count",
+      "metric": "execution evidence",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "evidence_tier": "highest tier"
+      },
+      "aliases": [
+        "highest-tier executable evidence"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "evidence_tier=tier1_execution_confirmed",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.property_checks",
+      "value": 384,
+      "statistic": "count",
+      "metric": "property checks",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "evidence_tier": "highest tier"
+      },
+      "aliases": [
+        "finite property cases",
+        "fragments passed"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "24*16 derived",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "audit.property_checks_per_repository",
+      "value": 16,
+      "statistic": "count",
+      "metric": "property checks",
+      "dimensions": {
+        "experiment": "public code protocol audit",
+        "evidence_tier": "highest tier"
+      },
+      "aliases": [
+        "repository contributed",
+        "cases per repository"
+      ],
+      "unit": "count",
+      "source_id": "tier_summary",
+      "pointer": "384/24 derived",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "run.fits",
+      "value": 1620,
+      "statistic": "count",
+      "metric": "fit count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "status": "successful"
+      },
+      "aliases": [
+        "valid fits",
+        "successful fits",
+        "ran 1,620 fits",
+        "1,620-fit study"
+      ],
+      "unit": "count",
+      "source_id": "run_status",
+      "pointer": "/success",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "run.oof_cells",
+      "value": 72,
+      "statistic": "count",
+      "metric": "oof cell count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "status": "complete"
+      },
+      "aliases": [
+        "complete cells",
+        "OOF cells"
+      ],
+      "unit": "count",
+      "source_id": "verification",
+      "pointer": "/counts/complete_cells",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "stats.holm_significant",
+      "value": 19,
+      "statistic": "count",
+      "metric": "Holm rejections",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "family": "all protocol contrasts"
+      },
+      "aliases": [
+        "Holm rejections numbered"
+      ],
+      "unit": "count",
+      "source_id": "premium",
+      "pointer": "count holm_reject_0_05=true for UAR",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "stats.holm_family",
+      "value": 24,
+      "statistic": "count",
+      "metric": "multiplicity family size",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "family": "all protocol contrasts"
+      },
+      "aliases": [
+        "multiplicity family size"
+      ],
+      "unit": "count",
+      "source_id": "premium",
+      "pointer": "fixed family size",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "stats.bootstrap",
+      "value": 10000,
+      "statistic": "count",
+      "metric": "bootstrap replicates",
+      "dimensions": {
+        "experiment": "protocol premium"
+      },
+      "aliases": [
+        "whole-speaker bootstrap replicates",
+        "speaker-cluster intervals"
+      ],
+      "unit": "count",
+      "source_id": "premium",
+      "pointer": "bootstrap_replicates",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "dataset.ravdess.utterances",
+      "value": 1440,
+      "statistic": "count",
+      "metric": "utterance count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech"
+      },
+      "aliases": [
+        "RAVDESS contributed"
+      ],
+      "unit": "count",
+      "source_id": "prereg",
+      "pointer": "RAVDESS utterances",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "dataset.ravdess.speakers",
+      "value": 24,
+      "statistic": "count",
+      "metric": "speaker count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech"
+      },
+      "aliases": [
+        "RAVDESS contains"
+      ],
+      "unit": "count",
+      "source_id": "prereg",
+      "pointer": "RAVDESS speakers",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "dataset.cremad.utterances",
+      "value": 7442,
+      "statistic": "count",
+      "metric": "utterance count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad"
+      },
+      "aliases": [
+        "CREMA-D contributed"
+      ],
+      "unit": "count",
+      "source_id": "prereg",
+      "pointer": "CREMA-D utterances",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "dataset.cremad.speakers",
+      "value": 91,
+      "statistic": "count",
+      "metric": "speaker count",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad"
+      },
+      "aliases": [
+        "CREMA-D contains"
+      ],
+      "unit": "count",
+      "source_id": "prereg",
+      "pointer": "CREMA-D speakers",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "d1.actors",
+      "value": 23,
+      "statistic": "count",
+      "metric": "matched panel actors",
+      "dimensions": {
+        "experiment": "d1 matched panel"
+      },
+      "aliases": [
+        "matched 23-actor"
+      ],
+      "unit": "count",
+      "source_id": "d1_report",
+      "pointer": "len(actors)",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "d1.items_per_channel",
+      "value": 1012,
+      "statistic": "count",
+      "metric": "items per channel",
+      "dimensions": {
+        "experiment": "d1 matched panel"
+      },
+      "aliases": [
+        "items per channel"
+      ],
+      "unit": "count",
+      "source_id": "d1_report",
+      "pointer": "n_samples_per_channel",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "d1.fits",
+      "value": 792,
+      "statistic": "count",
+      "metric": "fit count",
+      "dimensions": {
+        "experiment": "d1 matched panel",
+        "status": "successful"
+      },
+      "aliases": [
+        "792 fits"
+      ],
+      "unit": "count",
+      "source_id": "d1_completion",
+      "pointer": "len(units)",
+      "track_unused": false,
+      "tolerance": 0.0005
+    },
+    {
+      "id": "d1.premium_speech_low",
+      "value": 11.87,
+      "statistic": "mean",
+      "metric": "RG premium speech low",
+      "dimensions": {
+        "experiment": "d1 matched panel",
+        "channel": "speech"
+      },
+      "aliases": [
+        "speech"
+      ],
+      "unit": "uar points",
+      "source_id": "d1_report",
+      "pointer": "min over models of point_estimates.P_RG_speech*100",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "d1.premium_speech_high",
+      "value": 16.12,
+      "statistic": "mean",
+      "metric": "RG premium speech high",
+      "dimensions": {
+        "experiment": "d1 matched panel",
+        "channel": "speech"
+      },
+      "aliases": [
+        "speech"
+      ],
+      "unit": "uar points",
+      "source_id": "d1_report",
+      "pointer": "max over models of point_estimates.P_RG_speech*100",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "d1.premium_song_low",
+      "value": 9.45,
+      "statistic": "mean",
+      "metric": "RG premium song low",
+      "dimensions": {
+        "experiment": "d1 matched panel",
+        "channel": "song"
+      },
+      "aliases": [
+        "song"
+      ],
+      "unit": "uar points",
+      "source_id": "d1_report",
+      "pointer": "min over models of point_estimates.P_RG_song*100",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "d1.premium_song_high",
+      "value": 11.59,
+      "statistic": "mean",
+      "metric": "RG premium song high",
+      "dimensions": {
+        "experiment": "d1 matched panel",
+        "channel": "song"
+      },
+      "aliases": [
+        "song"
+      ],
+      "unit": "uar points",
+      "source_id": "d1_report",
+      "pointer": "max over models of point_estimates.P_RG_song*100",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.delta_pct",
+      "value": 17.708333333333336,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "RAVDESS CNN"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/cnn/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.ci_low_pct",
+      "value": 15.0390625,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/cnn/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.ci_high_pct",
+      "value": 20.551215277777775,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/cnn/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.random.mean_pct",
+      "value": 56.85763888888889,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.random.sd_pct",
+      "value": 1.1652251526613557,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.groupkfold.mean_pct",
+      "value": 39.14930555555555,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.groupkfold.sd_pct",
+      "value": 0.522187908659548,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.loso.mean_pct",
+      "value": 45.78993055555556,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.cnn.loso.sd_pct",
+      "value": 1.8093024606853068,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "CNN",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/cnn/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.delta_pct",
+      "value": 19.68315972222222,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "RAVDESS ResNet-SE"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/resnet_se/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.ci_low_pct",
+      "value": 16.623263888888893,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/resnet_se/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.ci_high_pct",
+      "value": 22.938368055555554,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/resnet_se/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.random.mean_pct",
+      "value": 66.03732638888889,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.random.sd_pct",
+      "value": 1.530063345231974,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.groupkfold.mean_pct",
+      "value": 46.35416666666667,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.groupkfold.sd_pct",
+      "value": 2.502067558668704,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.loso.mean_pct",
+      "value": 50.75954861111111,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.resnet_se.loso.sd_pct",
+      "value": 2.5099605358725667,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "ResNet-SE",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/resnet_se/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.delta_pct",
+      "value": 16.341145833333336,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "RAVDESS Transformer"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/transformer/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.ci_low_pct",
+      "value": 12.586805555555555,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/transformer/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.ci_high_pct",
+      "value": 20.334201388888886,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/transformer/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.random.mean_pct",
+      "value": 57.356770833333336,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.random.sd_pct",
+      "value": 1.7261814561930846,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.groupkfold.mean_pct",
+      "value": 41.015625,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.groupkfold.sd_pct",
+      "value": 1.3294647042097745,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.loso.mean_pct",
+      "value": 42.53472222222223,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.transformer.loso.sd_pct",
+      "value": 2.3976843129112684,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "Transformer",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/transformer/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.delta_pct",
+      "value": 15.386284722222223,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "RAVDESS FNO"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/fno/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.ci_low_pct",
+      "value": 12.28244357638889,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/fno/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.ci_high_pct",
+      "value": 18.815104166666664,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "ravdess/fno/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.random.mean_pct",
+      "value": 55.794270833333336,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.random.sd_pct",
+      "value": 1.2369791666666718,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.groupkfold.mean_pct",
+      "value": 40.407986111111114,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.groupkfold.sd_pct",
+      "value": 2.129944610644959,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.loso.mean_pct",
+      "value": 42.51302083333333,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "ravdess.fno.loso.sd_pct",
+      "value": 0.6889977372564066,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "ravdess speech",
+        "model": "FNO",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "ravdess/fno/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.delta_pct",
+      "value": 2.800480959821619,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "CREMA-D CNN"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/cnn/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.ci_low_pct",
+      "value": 2.0657170210741618,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/cnn/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.ci_high_pct",
+      "value": 3.5272175931516605,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/cnn/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.random.mean_pct",
+      "value": 58.63045152990628,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.random.sd_pct",
+      "value": 0.5937091377579127,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.groupkfold.mean_pct",
+      "value": 55.83963913058129,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.groupkfold.sd_pct",
+      "value": 0.8409847705411085,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.loso.mean_pct",
+      "value": 57.5862341850412,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.cnn.loso.sd_pct",
+      "value": 0.3062937571569566,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "CNN",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/cnn/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.delta_pct",
+      "value": 2.4555979226308895,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "CREMA-D ResNet-SE"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/resnet_se/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.ci_low_pct",
+      "value": 1.6522310615717202,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/resnet_se/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.ci_high_pct",
+      "value": 3.2736965669657976,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/resnet_se/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.random.mean_pct",
+      "value": 61.23599657814543,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.random.sd_pct",
+      "value": 0.6420205573611136,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.groupkfold.mean_pct",
+      "value": 58.78934402900132,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.groupkfold.sd_pct",
+      "value": 0.7883961867451099,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.loso.mean_pct",
+      "value": 60.34194177298037,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.resnet_se.loso.sd_pct",
+      "value": 0.43122844523366244,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "ResNet-SE",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/resnet_se/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.delta_pct",
+      "value": 3.061168583146604,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "CREMA-D Transformer"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/transformer/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.ci_low_pct",
+      "value": 2.2939043303054283,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/transformer/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.ci_high_pct",
+      "value": 3.8218198417374234,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/transformer/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.random.mean_pct",
+      "value": 52.00507584207516,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.random.sd_pct",
+      "value": 0.58352240794394,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.groupkfold.mean_pct",
+      "value": 48.94520697885259,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.groupkfold.sd_pct",
+      "value": 0.30686102935906806,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.loso.mean_pct",
+      "value": 51.54295497906459,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.transformer.loso.sd_pct",
+      "value": 0.3964106048770779,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "Transformer",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/transformer/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.delta_pct",
+      "value": 1.8169152784537408,
+      "statistic": "difference",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "Random-Grouped difference",
+        "CREMA-D FNO"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/fno/RG/uar/point_mean_difference",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.ci_low_pct",
+      "value": 1.0888677612578719,
+      "statistic": "ci_low",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/fno/RG/uar/ci95_low",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.ci_high_pct",
+      "value": 2.505388511569832,
+      "statistic": "ci_high",
+      "metric": "delta balanced accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "comparison": "random minus groupkfold"
+      },
+      "aliases": [
+        "Delta UAR",
+        "95% CI"
+      ],
+      "unit": "percentage_points",
+      "source_id": "premium",
+      "pointer": "cremad/fno/RG/uar/ci95_high",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.random.mean_pct",
+      "value": 53.37302147393079,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/random/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.random.sd_pct",
+      "value": 0.4751411187622234,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "random"
+      },
+      "aliases": [
+        "Random UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/random/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.groupkfold.mean_pct",
+      "value": 51.55277869661505,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/groupkfold/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.groupkfold.sd_pct",
+      "value": 0.5355315402864387,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "groupkfold"
+      },
+      "aliases": [
+        "Grouped UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/groupkfold/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.loso.mean_pct",
+      "value": 53.85639421874825,
+      "statistic": "mean",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/loso/uar/mean",
+      "track_unused": false,
+      "tolerance": 0.005
+    },
+    {
+      "id": "cremad.fno.loso.sd_pct",
+      "value": 0.10832182118440006,
+      "statistic": "sd",
+      "metric": "balanced_accuracy",
+      "dimensions": {
+        "experiment": "protocol premium",
+        "corpus": "cremad",
+        "model": "FNO",
+        "condition": "loso"
+      },
+      "aliases": [
+        "LOSO UAR",
+        "sample SD"
+      ],
+      "unit": "percent",
+      "source_id": "metric_summary",
+      "pointer": "cremad/fno/loso/uar/sample_sd",
+      "track_unused": false,
+      "tolerance": 0.005
+    }
+  ]
+}

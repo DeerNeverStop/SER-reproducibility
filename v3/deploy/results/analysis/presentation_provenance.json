@@ -1,0 +1,14 @@
+{
+  "purpose": "presentation of complete frozen scores; no fitting or endpoint selection",
+  "endpoint_count": 1128,
+  "source_sha256": {
+    "results\\A\\endpoints.json": "e06e92e72c207c2d1f8d363b2435e467a941367f52dfc60f61fdd4e829938bd4",
+    "results\\B1\\endpoints.json": "eeb08647384df8a9ddd598587d8dd3c42020feb1b98706f5dc6ee579f881710c",
+    "results\\B2\\endpoints.json": "c19ecb2448d2a574b9e33333b4430adfb8ccbe28734561efaaace6d401b34ef0",
+    "results\\B2-FIX\\endpoints.json": "757f0caf87c72eca6fea963ad39872bb57b2cd6c43adddf74227eaa416b126f8",
+    "results\\B1\\primary_budget20_complete.csv": "80012b35bfe554e3a568f516ace78cf5c4e0fbb01911b336b5699994bed2cf4e"
+  },
+  "script_sha256": "9b5a31074206e2a983fb8854654d51bcec09ff7059746293d9606eaa2e716fd3",
+  "scale_note": "Original endpoint values retained in all_1128_endpoints.csv; B2/FIX presentation converts proportions to percentage points.",
+  "verification": "See separate original frozen and supplemental audit receipts; presentation does not override them."
+}

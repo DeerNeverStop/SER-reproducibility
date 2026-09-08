@@ -1,0 +1,3 @@
+corpus,manifest_path,manifest_sha256,n_samples,n_speakers,n_labels,label_counts,license,source,parse_failures,read_failures
+ravdess,manifests/ravdess_manifest.csv,259b453ce6135242b03a34d113209a4b8a0234687c9717e56fbe2bd75acb7ab2,1440,24,8,"{""angry"":192,""calm"":192,""disgust"":192,""fearful"":192,""happy"":192,""neutral"":96,""sad"":192,""surprised"":192}",CC BY-NC-SA 4.0,https://doi.org/10.5281/zenodo.1188976,0,0
+cremad,manifests/cremad_manifest.csv,8b628265bcea9ed36ac96a0fffe753423a8c4d8c87befb5775a2ca36c673c9b8,7442,91,6,"{""angry"":1271,""disgust"":1271,""fearful"":1271,""happy"":1271,""neutral"":1087,""sad"":1271}",ODbL 1.0 / DbCL 1.0,https://github.com/CheyneyComputerScience/CREMA-D,0,0

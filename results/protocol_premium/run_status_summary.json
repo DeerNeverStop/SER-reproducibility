@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-08-12T15:37:20-04:00",
+  "failed_after_retry": 0,
+  "gpu_seconds_recorded": 90310.79574360081,
+  "output_bytes": 295293410,
+  "pending": 0,
+  "planned": 1620,
+  "success": 1620
+}

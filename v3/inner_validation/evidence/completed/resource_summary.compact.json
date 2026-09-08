@@ -1,0 +1,687 @@
+{
+  "actual_bill": null,
+  "combined_484_executed_fits": {
+    "amp_skipped_fraction_of_attempted": 0.0005241812059993878,
+    "amp_updates_skipped_by_scale_decrease": 137,
+    "checkpoint_formats": {
+      "wavlm_dual_validation_epoch_deltas": 484
+    },
+    "checkpoint_unique_states_histogram": {
+      "1": 30,
+      "2": 290,
+      "3": 164
+    },
+    "checkpoint_unique_states_total": 1102,
+    "environment_sets": {
+      "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+        "environment": {
+          "cuda": "12.8",
+          "cudnn": 91002,
+          "cudnn_tf32": true,
+          "gpu": "NVIDIA GeForce RTX 5090",
+          "matmul_tf32": false,
+          "numpy": "2.1.2",
+          "python": "3.12.3",
+          "threads": 1,
+          "torch": "2.8.0+cu128"
+        },
+        "units": 484
+      }
+    },
+    "epochs_total": 7260,
+    "fit_seconds": {
+      "max": 48.104850145056844,
+      "mean": 34.3763915394733,
+      "median": 34.184027024544775,
+      "min": 29.1821211874485,
+      "sum": 16638.17350510508
+    },
+    "optimizer_updates_attempted": 261360,
+    "optimizer_updates_not_skipped": 261223,
+    "payload_bytes_by_file": {
+      "DONE": 338796,
+      "checkpoint.pt": 125028440904,
+      "history.json": 1481348,
+      "predictions.npz": 89595776,
+      "receipt.json": 694839
+    },
+    "payload_bytes_total": 125120551663,
+    "peak_cuda_allocated_bytes": {
+      "max": 2030068736,
+      "mean": 1923549267.570248,
+      "median": 1932033536.0,
+      "min": 1774144000
+    },
+    "units": 484
+  },
+  "definitions": {
+    "checkpoint_states": "Distinct saved epoch deltas per fit, deduplicated when best_seen/best_unseen/last select the same epoch. Counts do not equal total trained epochs.",
+    "failures": "Zero failures/unclosed units in these accepted full-gate ledgers does not establish zero failures or zero unrecorded work throughout the rental.",
+    "fit_seconds": "Host perf_counter interval covering CUDA cache/reset plus fit_dual: model/base loading and hashes, uncached waveform preprocessing, all 15 training epochs and both validations, checkpoint creation and fsync, selected/last inference, fresh-model disk reload and all replay predictions. Excludes subsequent predictions/history/receipt serialization, DONE sealing and runner final verification. Not GPU busy time, rental time or a bill.",
+    "observed_ledger_interval": "Elapsed first unit_start to last unit_done event, including gaps between batches and any delayed recovery event; not a sum of GPU work and not the complete rental interval.",
+    "optimizer_updates_attempted": "Sum of history.optimizer_steps, including AMP-skipped minibatches. Skips are inferred from a GradScaler scale decrease; not-skipped = attempted minus these recorded skips.",
+    "payload_bytes": "Current sizes of each unit checkpoint, predictions, history, receipt and DONE; excludes base model, ledger, transfer archives, audit files, raw audio and features.",
+    "peak_cuda_allocated_bytes": "torch.cuda.max_memory_allocated after per-fit reset; not reserved memory, whole-process nvidia-smi usage or total board memory."
+  },
+  "gate_file_sha256": {
+    "D:\\SER-dual-validation-20260906\\analysis\\formal_gate.json": "5cafbc5d32080f09b2bf9cb4488c5fb6b9455395b6a9ad887bd195a57bf41b68",
+    "D:\\SER-dual-validation-20260906\\analysis\\pilot_gate.json": "beb73b2f2c6b1ee3e6ea9a7b28526ce0c8bd1b42dab2db7b32b19e189d73b7b0"
+  },
+  "generated_at": "2026-09-07T05:51:45.504159+00:00",
+  "gpu_rental_elapsed_seconds": null,
+  "integrity_scope": {
+    "currently_rehashed": "Gate/plan/source in CLI; all DONE, receipt, history and both ledger files.",
+    "formal_units": 480,
+    "large_payload_limit": "Checkpoint/prediction files are only checked for existence/type and stat size here. Their byte validity depends on the supplied prior full gates; this report does not replace a fresh full artifact gate.",
+    "large_payloads_rehashed_now": false,
+    "logits_loaded": false,
+    "pilot_units": 4,
+    "requires_prior_full_result_gates": true
+  },
+  "observed_interval_first_start_to_last_completion_seconds": 19792.084375,
+  "operator_source_sha256": "e19615c9f9c6a9e0cd40997fbca7541579e2642886deb01cf2ec9f079ca6fff4",
+  "pass": true,
+  "phases": {
+    "formal": {
+      "amp_skipped_fraction_of_attempted": 0.0005169753086419753,
+      "amp_updates_skipped_by_scale_decrease": 134,
+      "by_configuration": {
+        "0": {
+          "amp_skipped_fraction_of_attempted": 0.00035493827160493826,
+          "amp_updates_skipped_by_scale_decrease": 23,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 120
+          },
+          "checkpoint_unique_states_histogram": {
+            "1": 19,
+            "2": 78,
+            "3": 23
+          },
+          "checkpoint_unique_states_total": 244,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 120
+            }
+          },
+          "epochs_total": 1800,
+          "fit_seconds": {
+            "max": 41.82773508131504,
+            "mean": 35.47640663172739,
+            "median": 35.53024123515934,
+            "min": 30.120201390236616,
+            "sum": 4257.168795807287
+          },
+          "optimizer_updates_attempted": 64800,
+          "optimizer_updates_not_skipped": 64777,
+          "payload_bytes_by_file": {
+            "DONE": 84000,
+            "checkpoint.pt": 27683318506,
+            "history.json": 366996,
+            "predictions.npz": 22211496,
+            "receipt.json": 172212
+          },
+          "payload_bytes_total": 27706153210,
+          "peak_cuda_allocated_bytes": {
+            "max": 2030068736,
+            "mean": 1925027844.2666667,
+            "median": 1933204480.0,
+            "min": 1774144000
+          },
+          "units": 120
+        },
+        "1": {
+          "amp_skipped_fraction_of_attempted": 0.001095679012345679,
+          "amp_updates_skipped_by_scale_decrease": 71,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 120
+          },
+          "checkpoint_unique_states_histogram": {
+            "1": 10,
+            "2": 76,
+            "3": 34
+          },
+          "checkpoint_unique_states_total": 264,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 120
+            }
+          },
+          "epochs_total": 1800,
+          "fit_seconds": {
+            "max": 38.35000498406589,
+            "mean": 33.64997742236592,
+            "median": 33.5441693328321,
+            "min": 29.1821211874485,
+            "sum": 4037.9972906839103
+          },
+          "optimizer_updates_attempted": 64800,
+          "optimizer_updates_not_skipped": 64729,
+          "payload_bytes_by_file": {
+            "DONE": 84000,
+            "checkpoint.pt": 29952389028,
+            "history.json": 367058,
+            "predictions.npz": 22211496,
+            "receipt.json": 172325
+          },
+          "payload_bytes_total": 29975223907,
+          "peak_cuda_allocated_bytes": {
+            "max": 2028756992,
+            "mean": 1924327325.8666666,
+            "median": 1932033536.0,
+            "min": 1774144000
+          },
+          "units": 120
+        },
+        "2": {
+          "amp_skipped_fraction_of_attempted": 0.00020061728395061727,
+          "amp_updates_skipped_by_scale_decrease": 13,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 120
+          },
+          "checkpoint_unique_states_histogram": {
+            "2": 64,
+            "3": 56
+          },
+          "checkpoint_unique_states_total": 296,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 120
+            }
+          },
+          "epochs_total": 1800,
+          "fit_seconds": {
+            "max": 38.92730375379324,
+            "mean": 34.2620197557689,
+            "median": 34.18370988313109,
+            "min": 30.785046253353357,
+            "sum": 4111.442370692268
+          },
+          "optimizer_updates_attempted": 64800,
+          "optimizer_updates_not_skipped": 64787,
+          "payload_bytes_by_file": {
+            "DONE": 84000,
+            "checkpoint.pt": 33582902312,
+            "history.json": 367488,
+            "predictions.npz": 22211496,
+            "receipt.json": 172305
+          },
+          "payload_bytes_total": 33605737601,
+          "peak_cuda_allocated_bytes": {
+            "max": 2028756992,
+            "mean": 1924327325.8666666,
+            "median": 1932033536.0,
+            "min": 1774144000
+          },
+          "units": 120
+        },
+        "3": {
+          "amp_skipped_fraction_of_attempted": 0.0004166666666666667,
+          "amp_updates_skipped_by_scale_decrease": 27,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 120
+          },
+          "checkpoint_unique_states_histogram": {
+            "2": 71,
+            "3": 49
+          },
+          "checkpoint_unique_states_total": 289,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 120
+            }
+          },
+          "epochs_total": 1800,
+          "fit_seconds": {
+            "max": 48.104850145056844,
+            "mean": 34.15783921009861,
+            "median": 34.04402133170515,
+            "min": 29.86983896419406,
+            "sum": 4098.940705211833
+          },
+          "optimizer_updates_attempted": 64800,
+          "optimizer_updates_not_skipped": 64773,
+          "payload_bytes_by_file": {
+            "DONE": 84000,
+            "checkpoint.pt": 32788727308,
+            "history.json": 367580,
+            "predictions.npz": 22211496,
+            "receipt.json": 172257
+          },
+          "payload_bytes_total": 32811562641,
+          "peak_cuda_allocated_bytes": {
+            "max": 2028756992,
+            "mean": 1924327325.8666666,
+            "median": 1932033536.0,
+            "min": 1774144000
+          },
+          "units": 120
+        }
+      },
+      "checkpoint_formats": {
+        "wavlm_dual_validation_epoch_deltas": 480
+      },
+      "checkpoint_unique_states_histogram": {
+        "1": 29,
+        "2": 289,
+        "3": 162
+      },
+      "checkpoint_unique_states_total": 1093,
+      "environment_sets": {
+        "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+          "environment": {
+            "cuda": "12.8",
+            "cudnn": 91002,
+            "cudnn_tf32": true,
+            "gpu": "NVIDIA GeForce RTX 5090",
+            "matmul_tf32": false,
+            "numpy": "2.1.2",
+            "python": "3.12.3",
+            "threads": 1,
+            "torch": "2.8.0+cu128"
+          },
+          "units": 480
+        }
+      },
+      "epochs_total": 7200,
+      "first_unit_start": "2026-09-07T00:35:45.167396+00:00",
+      "fit_seconds": {
+        "max": 48.104850145056844,
+        "mean": 34.38656075499021,
+        "median": 34.19503083638847,
+        "min": 29.1821211874485,
+        "sum": 16505.5491623953
+      },
+      "gate_sha256": "e289bf207279829c0b2f7f7f31bfb62265aaafe08d20081230952f47f173c956",
+      "last_completion_event": "2026-09-07T05:43:25.361011+00:00",
+      "observed_attempt_directories": 480,
+      "observed_ledger_interval_seconds": 18460.193615,
+      "optimizer_updates_attempted": 259200,
+      "optimizer_updates_not_skipped": 259066,
+      "payload_bytes_by_file": {
+        "DONE": 336000,
+        "checkpoint.pt": 124007337154,
+        "history.json": 1469122,
+        "predictions.npz": 88845984,
+        "receipt.json": 689099
+      },
+      "payload_bytes_total": 124098677359,
+      "peak_cuda_allocated_bytes": {
+        "max": 2030068736,
+        "mean": 1924502455.4666667,
+        "median": 1932033536.0,
+        "min": 1774144000
+      },
+      "recorded_unit_completions": 480,
+      "recorded_unit_failures": 0,
+      "recorded_unit_starts": 480,
+      "units": 480
+    },
+    "pilot": {
+      "amp_skipped_fraction_of_attempted": 0.001388888888888889,
+      "amp_updates_skipped_by_scale_decrease": 3,
+      "by_configuration": {
+        "0": {
+          "amp_skipped_fraction_of_attempted": 0.0,
+          "amp_updates_skipped_by_scale_decrease": 0,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 1
+          },
+          "checkpoint_unique_states_histogram": {
+            "1": 1
+          },
+          "checkpoint_unique_states_total": 1,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 1
+            }
+          },
+          "epochs_total": 15,
+          "fit_seconds": {
+            "max": 33.16526156105101,
+            "mean": 33.16526156105101,
+            "median": 33.16526156105101,
+            "min": 33.16526156105101,
+            "sum": 33.16526156105101
+          },
+          "optimizer_updates_attempted": 540,
+          "optimizer_updates_not_skipped": 540,
+          "payload_bytes_by_file": {
+            "DONE": 699,
+            "checkpoint.pt": 113459049,
+            "history.json": 3055,
+            "predictions.npz": 187448,
+            "receipt.json": 1426
+          },
+          "payload_bytes_total": 113651677,
+          "peak_cuda_allocated_bytes": {
+            "max": 1810424320,
+            "mean": 1810424320,
+            "median": 1810424320,
+            "min": 1810424320
+          },
+          "units": 1
+        },
+        "1": {
+          "amp_skipped_fraction_of_attempted": 0.001851851851851852,
+          "amp_updates_skipped_by_scale_decrease": 1,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 1
+          },
+          "checkpoint_unique_states_histogram": {
+            "3": 1
+          },
+          "checkpoint_unique_states_total": 3,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 1
+            }
+          },
+          "epochs_total": 15,
+          "fit_seconds": {
+            "max": 34.16642921231687,
+            "mean": 34.16642921231687,
+            "median": 34.16642921231687,
+            "min": 34.16642921231687,
+            "sum": 34.16642921231687
+          },
+          "optimizer_updates_attempted": 540,
+          "optimizer_updates_not_skipped": 539,
+          "payload_bytes_by_file": {
+            "DONE": 699,
+            "checkpoint.pt": 340366091,
+            "history.json": 3056,
+            "predictions.npz": 187448,
+            "receipt.json": 1442
+          },
+          "payload_bytes_total": 340558736,
+          "peak_cuda_allocated_bytes": {
+            "max": 1808747520,
+            "mean": 1808747520,
+            "median": 1808747520,
+            "min": 1808747520
+          },
+          "units": 1
+        },
+        "2": {
+          "amp_skipped_fraction_of_attempted": 0.001851851851851852,
+          "amp_updates_skipped_by_scale_decrease": 1,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 1
+          },
+          "checkpoint_unique_states_histogram": {
+            "3": 1
+          },
+          "checkpoint_unique_states_total": 3,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 1
+            }
+          },
+          "epochs_total": 15,
+          "fit_seconds": {
+            "max": 33.78877436555922,
+            "mean": 33.78877436555922,
+            "median": 33.78877436555922,
+            "min": 33.78877436555922,
+            "sum": 33.78877436555922
+          },
+          "optimizer_updates_attempted": 540,
+          "optimizer_updates_not_skipped": 539,
+          "payload_bytes_by_file": {
+            "DONE": 699,
+            "checkpoint.pt": 340366091,
+            "history.json": 3057,
+            "predictions.npz": 187448,
+            "receipt.json": 1440
+          },
+          "payload_bytes_total": 340558735,
+          "peak_cuda_allocated_bytes": {
+            "max": 1808747520,
+            "mean": 1808747520,
+            "median": 1808747520,
+            "min": 1808747520
+          },
+          "units": 1
+        },
+        "3": {
+          "amp_skipped_fraction_of_attempted": 0.001851851851851852,
+          "amp_updates_skipped_by_scale_decrease": 1,
+          "checkpoint_formats": {
+            "wavlm_dual_validation_epoch_deltas": 1
+          },
+          "checkpoint_unique_states_histogram": {
+            "2": 1
+          },
+          "checkpoint_unique_states_total": 2,
+          "environment_sets": {
+            "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+              "environment": {
+                "cuda": "12.8",
+                "cudnn": 91002,
+                "cudnn_tf32": true,
+                "gpu": "NVIDIA GeForce RTX 5090",
+                "matmul_tf32": false,
+                "numpy": "2.1.2",
+                "python": "3.12.3",
+                "threads": 1,
+                "torch": "2.8.0+cu128"
+              },
+              "units": 1
+            }
+          },
+          "epochs_total": 15,
+          "fit_seconds": {
+            "max": 31.503877570852637,
+            "mean": 31.503877570852637,
+            "median": 31.503877570852637,
+            "min": 31.503877570852637,
+            "sum": 31.503877570852637
+          },
+          "optimizer_updates_attempted": 540,
+          "optimizer_updates_not_skipped": 539,
+          "payload_bytes_by_file": {
+            "DONE": 699,
+            "checkpoint.pt": 226912519,
+            "history.json": 3058,
+            "predictions.npz": 187448,
+            "receipt.json": 1432
+          },
+          "payload_bytes_total": 227105156,
+          "peak_cuda_allocated_bytes": {
+            "max": 1808747520,
+            "mean": 1808747520,
+            "median": 1808747520,
+            "min": 1808747520
+          },
+          "units": 1
+        }
+      },
+      "checkpoint_formats": {
+        "wavlm_dual_validation_epoch_deltas": 4
+      },
+      "checkpoint_unique_states_histogram": {
+        "1": 1,
+        "2": 1,
+        "3": 2
+      },
+      "checkpoint_unique_states_total": 9,
+      "environment_sets": {
+        "d2c8cd753669b97dc0f5a399ad4ee4d21e42ff54f948b863cf8879dff2469d46": {
+          "environment": {
+            "cuda": "12.8",
+            "cudnn": 91002,
+            "cudnn_tf32": true,
+            "gpu": "NVIDIA GeForce RTX 5090",
+            "matmul_tf32": false,
+            "numpy": "2.1.2",
+            "python": "3.12.3",
+            "threads": 1,
+            "torch": "2.8.0+cu128"
+          },
+          "units": 4
+        }
+      },
+      "epochs_total": 60,
+      "first_unit_start": "2026-09-07T00:13:33.276636+00:00",
+      "fit_seconds": {
+        "max": 34.16642921231687,
+        "mean": 33.156085677444935,
+        "median": 33.477017963305116,
+        "min": 31.503877570852637,
+        "sum": 132.62434270977974
+      },
+      "gate_sha256": "d7e6e82f02bfcbc4bacd908ed840e9957fb15aa1d97aaefaa2e65421800838a7",
+      "last_completion_event": "2026-09-07T00:15:47.684747+00:00",
+      "observed_attempt_directories": 4,
+      "observed_ledger_interval_seconds": 134.408111,
+      "optimizer_updates_attempted": 2160,
+      "optimizer_updates_not_skipped": 2157,
+      "payload_bytes_by_file": {
+        "DONE": 2796,
+        "checkpoint.pt": 1021103750,
+        "history.json": 12226,
+        "predictions.npz": 749792,
+        "receipt.json": 5740
+      },
+      "payload_bytes_total": 1021874304,
+      "peak_cuda_allocated_bytes": {
+        "max": 1810424320,
+        "mean": 1809166720,
+        "median": 1808747520.0,
+        "min": 1808747520
+      },
+      "recorded_unit_completions": 4,
+      "recorded_unit_failures": 0,
+      "recorded_unit_starts": 4,
+      "units": 4
+    }
+  },
+  "plan_file_sha256": "a765bad72a0c6be88040ca0dadac6848d139988714af26e738a06403ad0cb1e1",
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "schema": "ser-dual-validation-resource-extract-1",
+  "scientific_scores_computed": false,
+  "source_sha256": {
+    "advanced_experiment_utils.py": "ea175e3f7366feeee505d2441796268f58e6daae7aa6b625e6d0cb78a4b0e04e",
+    "advanced_models.py": "c1e18011dbb6aeb1717a4ee5f88afb5e8352ec61044837aeb5b7d70f6fe26ad5",
+    "dataset.py": "af033c6ff25439dac513f29287570cd4f616c656aef01f10dac8c00ac71d6e5b",
+    "experiment_utils.py": "44f143b800e7aff562fef47a90f81520f8bf542ddb40ffcc5094552710e95e63",
+    "features.py": "a4c8fc003b9732158cbecd2cea41f3978416ecc51dbf3649df48a92c24e68f7f",
+    "fno_model.py": "c24555bf21f7bd0cb09fa7861450b579818422671939b08b51b01c3d915242f9",
+    "tuned_standard_experiment.py": "865f60a6d27f28514b57ac174c9a3432382718f300ebe4d75d1f280d81402bff",
+    "v2/plan_rc2/unit_configs.json": "c541c6a2c868dd367e2b77426b1e312d15feef7317b8a172ebe2486a2a9c1d59",
+    "v2/ser_v2/__init__.py": "b8dea7d361597222634b83f90ea26bdbf930e1d740c4797e19421ac5207cdecc",
+    "v2/ser_v2/common.py": "e954e51f77ee66f23aead0fffd9d1cd8b2ed7b6aa0b1385e251498ca02d92ee2",
+    "v2/ser_v2/corpora.py": "d921ff2497fb3ce1074c7237d436419a65e412a4b59db7caf26b89379539860c",
+    "v2/ser_v2/features.py": "cdb5f86e0ee52da7c52dd2b0a892bd7be2c3e4f2bb87780329ba22d2d10c245f",
+    "v2/ser_v2/stats.py": "e25be689c4c1cbf2c549fc5b2c4c8599415c1b11de68f9669b130d5154b02a7e",
+    "v2/ser_v2/train.py": "cda4967cd8a8009eefdd87df87b7a327566cf9586299018397ac132adf12ba44",
+    "v3/__init__.py": "43aebf57889f668bac4631bb0d9c567078cf4d13bcd61db8481666aa5a991a12",
+    "v3/data_design/__init__.py": "0a3409854a608428971af437b236e614e9e539843a5797ac7cf96f859b44c30c",
+    "v3/data_design/core_plan.py": "678f41809e84730cfea45e072adecfc6ea22cb23535ae86ac47b9859976b97da",
+    "v3/data_design/core_run.py": "ea9fd83f067e47b39a2398797622be98a3dbe3239fd5455b67e9406a78221ae4",
+    "v3/data_design/core_verify.py": "7f189b077b792af5bdd4ed7762043f7647bdcab518a0a2394abad8e47e45cf4b",
+    "v3/deploy/__init__.py": "27a9c173ac33cdcf2d2af8aaf3671f0bacb3ea6fa59e7ff5876ec1feb7d342e8",
+    "v3/deploy/engines_deploy.py": "62f5d792243ca5ec8631988e1169502db2810d2ab1bbf9c325f3f3326e837753",
+    "v3/inner_validation/PROTOCOL.md": "d249110b0a76c3b019a4f18a232fe2b98124e65639417db4733701012a25860f",
+    "v3/inner_validation/__init__.py": "eda1e0150358953110356fb71d93a4e21690a449457ff1720b55a410bbf4fff1",
+    "v3/inner_validation/engine.py": "220709618044deec36137cd88c8c8d2255f6ebd3b198296e78b77678f90763b1",
+    "v3/inner_validation/plan.py": "e301577aae2b93234b34c4ab3386a9b19dbbaf4530cb72267921e5c4dc313a3f",
+    "v3/inner_validation/run.py": "0b415cfd5680c28ab12ce34f966c829b4e22b3d63e75f4040c543203cae3c77e",
+    "v3/inner_validation/score.py": "5cc6fefb4c8f8eb32454f2849507b16c43e05d65aea3ce5b27f88e360a4aea1e",
+    "v3/speaker_coverage/EXECUTION_PLAN.md": "dc3ba1c1f21092ac4339096b456aa56eae90d5d6f5da47819452acb01d6982b9",
+    "v3/speaker_coverage/asv_emotion.py": "7ccf0d42436b8d44ac6f1c251cb78a24b23ed1f12f41b2f14bb53e1824985135",
+    "v3/speaker_coverage/diagnose.py": "4b35e176c26416873cb42f05310c15da110a60f4b3958d3197e3e644b55fe773",
+    "v3/speaker_coverage/extract_asv.py": "e1ad418c7f14fe7a1f49baa10d2e06ffad79d2d12d52ba15efa5e63929a750a3",
+    "v3/speaker_coverage/plan.py": "369248b95ccc66cd7ac181f428fbff20daefa0008f6fb0da748504ac3e443480",
+    "v3/speaker_coverage/run.py": "c3589ad5f22b366ab8971ada823e4f7f063ff0197250c58aebf1f794a7fba309",
+    "v3/speaker_coverage/score.py": "8614fe6b6632f4db0bd73c5df201d74849d450fd63d719abee06634dea24b22f",
+    "v3/speaker_coverage/verify.py": "e9a548a7a1beb59dd99ad7043247ba31215d28eb84fc6b014d44c3b047ffe48e",
+    "v3/speaker_coverage/voice_diagnostic.py": "7a7c17a26b6e73b91c04c94be566e3d4392252efba8ca5a500a68004dfa6735e"
+  },
+  "unrecorded_failed_work_seconds": null,
+  "full_report_file_sha256": "f76ccf92c0a7aa0ee9546a1e0348de30deaedf7ee116d7b2863046184584ba34",
+  "full_report_compressed_file": "resource_summary.json.gz",
+  "omitted_fields": [
+    "unit_resources",
+    "metadata_file_sha256",
+    "report_sha256"
+  ],
+  "extract_note": "Display extract. The full original JSON, including its own semantic hash, is preserved by gzip."
+}

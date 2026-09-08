@@ -1,0 +1,143 @@
+{
+ "n_units_done": 4943,
+ "n_void": 0,
+ "integrity": {
+  "I1": true,
+  "I2": true,
+  "I3": true,
+  "I4": true,
+  "I5": true,
+  "I6": true,
+  "I7": true
+ },
+ "hypotheses": {
+  "N01": [
+   "supported",
+   7.211
+  ],
+  "N02": [
+   "supported",
+   5.34
+  ],
+  "N03": [
+   "supported",
+   3.98
+  ],
+  "N04": [
+   "supported",
+   3.231
+  ],
+  "N05": [
+   "supported",
+   11.074
+  ],
+  "N06": [
+   "supported",
+   2.683
+  ],
+  "N07": [
+   "estimate (not tested)",
+   5.268
+  ],
+  "N08": [
+   "estimate (not tested)",
+   15.893
+  ],
+  "N09": [
+   "supported",
+   10.089
+  ],
+  "N10": [
+   "supported",
+   4.903
+  ],
+  "N11": [
+   "estimate (not tested)",
+   14.174
+  ],
+  "N12": [
+   "estimate (not tested)",
+   2.609
+  ],
+  "N13": [
+   "estimate (not tested)",
+   8.571
+  ],
+  "N14": [
+   "supported",
+   1.707
+  ],
+  "N15": [
+   "supported",
+   5.132
+  ],
+  "R01": [
+   "supported",
+   18.236
+  ],
+  "R02": [
+   "supported",
+   12.161
+  ],
+  "R03": [
+   "supported",
+   6.075
+  ],
+  "R04": [
+   "supported",
+   2.558
+  ],
+  "R05": [
+   "supported",
+   1.16
+  ],
+  "R06": [
+   "supported",
+   1.398
+  ],
+  "R07": [
+   "supported",
+   11.78
+  ],
+  "R08": [
+   "supported",
+   2.164
+  ],
+  "R09": [
+   "supported",
+   19.006
+  ],
+  "R10": [
+   "supported",
+   1.758
+  ],
+  "R11": [
+   "supported",
+   6.786
+  ],
+  "T01": [
+   "supported",
+   -0.218
+  ],
+  "T02": [
+   "supported",
+   -0.105
+  ]
+ },
+ "claims": {
+  "C1": "reported (estimation claim)",
+  "C2-rep": "supported",
+  "C2a": "supported",
+  "C2b": "supported",
+  "C3a": "supported",
+  "C3b": "supported",
+  "C3c": "supported",
+  "C3d": "supported",
+  "C4a": "supported",
+  "C4b": "reported (estimation claim)",
+  "S1": "supported",
+  "S2": "supported",
+  "S3": "supported",
+  "S4": "supported"
+ }
+}

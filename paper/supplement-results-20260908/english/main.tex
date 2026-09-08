@@ -1,0 +1,179 @@
+\documentclass[letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{spconf,amsmath,graphicx,booktabs}
+\usepackage{newtxmath}
+\usepackage[hidelinks]{hyperref}
+
+\urlstyle{same}
+\hypersetup{pdftitle={Validation Speaker Exposure and Checkpoint Selection in Speech Emotion Recognition},pdfauthor={Tian Xie}}
+\title{Validation Speaker Exposure and Checkpoint Selection\\in Speech Emotion Recognition}
+\name{Tian Xie}
+\address{University of Toronto\\tianjack.xie@mail.utoronto.ca}
+\begin{document}
+\maketitle
+\begin{abstract}
+We compare seen- and unseen-speaker validation using cross-entropy (CE) or unweighted average recall (UAR), holding each candidate training trajectory and unfamiliar-speaker test fixed. An original 384-fit WavLM study and a separately frozen 720-fit supplement cover three native emotion-recognition tasks, a second backbone, and longer candidate windows. HuBERT CE selection favors seen-speaker validation by 1.576, 4.018, and 1.398 percentage points on CREMA-D, SUBESCO, and RAVDESS; CE-versus-UAR interactions are supported in the first two tasks. Extending the same RAVDESS WavLM trajectories from 15 to 45 candidate epochs increases the CE exposure contrast by 2.257 points. These six supplement effects survive one ten-test Holm correction; four other tests do not. The findings support criterion- and window-dependent selection behavior within specified programs, without identifying a universal validation rule or eliminating speaker-related differences.
+\end{abstract}
+\begin{keywords}
+speech emotion recognition, speaker independence, checkpoint selection, validation, evaluation
+\end{keywords}
+
+\section{Introduction}
+Speech emotion recognition (SER) is often evaluated on speakers absent from training. SERAB and Antoniou et al. explicitly separate training, validation, and test speakers~\cite{serab,antoniou}. Optimizing a finite-sample selection criterion can also affect performance evaluation~\cite{cawley}. Yet a validation--test score gap and a difference between the selected models on an identical unfamiliar-speaker test answer different questions. A larger validation optimism gap alone does not establish a worse selected model.
+
+Prior SER work compares random and actor-independent evaluation across datasets, models, or repeated runs~\cite{ibrahim,zielonka,kumari}; matching training counts across speaker/text conditions also has precedent~\cite{atmaja}. Such comparisons may change training or test membership together with the validation boundary. We instead hold the training trajectory and outer test fixed, and vary only the checkpoint-selection policy: validation on familiar versus unfamiliar speakers, each using CE or UAR. This removes between-run training differences from the within-trajectory policy comparison. The validation groups still contain different people and recordings, so the contrast does not isolate a voiceprint mechanism.
+
+An original 384-fit program found criterion-dependent effects with WavLM at 15 epochs~\cite{artifact}. Review motivated a separately frozen 720-fit supplement: HuBERT at 15 epochs and WavLM at 45 epochs on two corpora. It retains the original panels and all prespecified outcomes, including unfavorable or imprecise estimates. Reusing these corpora does not supply an independent sample of untouched data.
+
+\section{Experimental design}
+\subsection{Shared trajectories and query roles}
+Each corpus uses 24 draws and five outer folds. The original program has 360 A-trained main fits and 24 B-trained CREMA-D fold-0 controls. CREMA-D, SUBESCO, and RAVDESS retain six, seven, and eight native classes and 91, 20, and 24 speakers, respectively~\cite{cremad,subesco,ravdess}. Within a draw, metadata hashing partitions speakers into five outer folds stratified by recorded sex; each speaker enters exactly one outer fold. Outside each fold, disjoint development groups A and B have equal sex-balanced quotas. Eligible speakers in each sex stratum are hash-ranked using phase, corpus, draw, and fold identifiers; successive quotas form A and B without model scores. Unused speakers remain excluded.
+
+All query roles share texts disjoint from fit texts (Table~\ref{tab:panels}). Frozen representatives are MD-preferred/otherwise XX for CREMA-D, T1 for SUBESCO, and normal-intensity R1 for RAVDESS, without substitute takes. Outer queries retain available representatives, requiring every native class for each outer speaker. Insufficient development capacity causes metadata failure, not outcome-dependent resampling. Both studies use private pre-execution source/plan freezes, not public preregistration; the corpora have prior research exposure.
+
+\begin{table}[t]
+\centering\small
+\caption{Per-context allocation. A/B counts are distinct speakers; fit/query counts are recordings. A and B are sex-balanced.}
+\label{tab:panels}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrcrr}\toprule
+Corpus & Classes & A/B & Outer & Texts$^a$ & Fit & Query$^b$\\\midrule
+CREMA-D & 6 & 24/24 & 17/19 & 4/2 & 576 & 288\\
+SUBESCO & 7 & 8/8 & 4 & 4/2 & 224 & 112\\
+RAVDESS & 8 & 8/8 & 4/6 & 1/1 & 64 & 64\\\bottomrule
+\end{tabular}
+\par\raggedright\small
+$^a$ Fit/query text counts. $^b$ Each development query role. Outer queries use available CREMA-D representatives, 56 SUBESCO recordings, or 32/48 RAVDESS recordings; slash counts denote different fold sizes.
+\end{table}
+
+Main fits train on A; A and B queries provide seen- and unseen-speaker validation. WavLM Base+~\cite{wavlm} and HuBERT Base~\cite{hubert} use native-class linear heads over mean-pooled final features, with only the top four Transformer layers and head trainable. Fixed settings are AdamW, encoder/head learning rates $5\times10^{-5}/10^{-3}$, weight decay .01, batch size 16, and unweighted CE. Every epoch traverses the fit set, without early stopping or hyperparameter search. Training uses FP16 autocast with FP32 parameters; evaluation uses FP32. Mono 16\,kHz audio is silence-trimmed at 30\,dB; training uses three-second crops or zero-padding, and evaluation retains at most ten seconds.
+
+Every epoch records A, B, and outer logits. Four rules minimize whole-role mean CE or maximize whole-role native-class macro recall (UAR) on A or B; exact ties select the earliest epoch, using rational recall for UAR ties. This is not average speaker UAR. Each role has separate fixed sorted batches of 16, so outer audio cannot pad validation batches. Mean pooling lacks a length mask: fixed batching preserves padding context without removing padding effects. Outer scores never select epochs or determine training length.
+
+\subsection{Separately frozen backbone and window supplement}
+HuBERT trains for 15 epochs on all three corpora (360 fits). New WavLM fits use 15 epochs on CREMA-D and 45 on SUBESCO/RAVDESS (360 fits): 720 trajectories and 18,000 epoch traversals in total. The matrix is not fully factorial; HuBERT 45 and CREMA-D WavLM 45 are absent. Each long trajectory supplies both its own 15- and 45-epoch selection windows, rather than using the original Windows WavLM run as a paired baseline.
+
+The supplement reuses the frozen panels and fit/query order. Within a context, both backbones share head initialization and training/order/crop seed conventions, with a new execution seed domain and a separate crop domain. Backbone and horizon do not enter these seeds. This matches stochastic schedules, not training trajectories across different models; architecture and pretraining remain confounded. Both new models run in the same Linux/CUDA environment, which differs from the original Windows execution. Eight excluded technical pilots include independent 15-epoch companions whose histories, logits, and selections exactly matched the corresponding 45-epoch prefixes; they are engineering checks, not inferential replicates.
+
+\subsection{Estimands and inference}
+Let $T(g,q;w)$ be outer UAR (\%) at the epoch selected within window $w$ by group $g$ (seen $s$, unseen $u$) and criterion $q$. Per-context effects are
+\begin{align}
+\delta_q(w)&=T(s,q;w)-T(u,q;w),\\
+J(w)&=\delta_{\rm CE}(w)-\delta_{\rm UAR}(w),\\
+L_{\rm CE}&=\delta_{\rm CE}(45)-\delta_{\rm CE}(15),\\
+L_J&=J(45)-J(15).
+\end{align}
+All contrasts are UAR percentage points, not CE losses or validation-optimism differences $\Delta(V-T)$. Positive $\delta$ favors the seen-selected model on the common outer test. Four rules share one candidate trajectory within a model and require no additional training.
+
+Five fold effects are averaged equally per draw. Two-sided one-sample $t$ inference uses 24 draw effects ($df=23$), not 120 independent folds. The original six-test family contains $(\delta_{\rm CE},J)$ in each corpus with Holm6. The new ten-test family jointly contains six HuBERT15 effects and four WavLM window effects, with one Holm10 at .05. Families remain separate; no tests or tails are changed after outcomes. Pointwise 95\% $t$ intervals are not simultaneous intervals or equivalence tests. Undefined zero-variance tests retain NA family slots. Absolute UAR, $\delta_{\rm UAR}$, new WavLM level effects, and paired HuBERT-minus-WavLM15 differences are prespecified descriptions without additional $p$ values.
+
+Inference conditions on these finite corpora, panels, and training programs. Repeated speakers, folds, rules, and the 1,104 total fits do not enlarge the independent sample size. Native tasks differ, so no pooled corpus or language-effect inference is performed. Original whole-training-group exchange controls and post hoc 8/10/12/15-epoch truncations remain descriptive artifact analyses~\cite{artifact}; neither supplies new replication or determines which supplement outcomes are included.
+
+\begin{table*}[t]
+\centering\small
+\caption{Complete primary families: effects in UAR percentage points (pp), pointwise 95\% draw-level $t$ intervals, and two-sided raw/within-family Holm $p$. Panel A retains the original Holm6; panels B and C together use one Holm10. A pointwise interval excluding zero need not imply rejection after Holm.}
+\label{tab:primary}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrrr}\toprule
+Corpus & Contrast & Mean & Pointwise 95\% CI & Raw $p$ & Holm $p$\\\midrule
+\multicolumn{6}{l}{\textit{A. Original WavLM, 15 epochs: six-test family}}\\
+CREMA-D & $\delta_{\mathrm{CE}}$ & 0.935 & [0.287, 1.583] & 0.0066 & 0.0264\\
+CREMA-D & $J$ & 0.937 & [0.210, 1.663] & 0.0138 & 0.0413\\
+SUBESCO & $\delta_{\mathrm{CE}}$ & 2.247 & [0.945, 3.549] & 0.0016 & 0.0083\\
+SUBESCO & $J$ & 2.560 & [1.103, 4.016] & 0.0014 & 0.0083\\
+RAVDESS & $\delta_{\mathrm{CE}}$ & 0.486 & [-0.198, 1.170] & 0.1549 & 0.3098\\
+RAVDESS & $J$ & 0.469 & [-0.633, 1.570] & 0.3877 & 0.3877\\\midrule
+\multicolumn{6}{l}{\textit{B. Supplement: HuBERT, 15 epochs (six of ten tests)}}\\
+CREMA-D & $\delta_{\rm CE}$ & 1.576 & [1.000, 2.153] & $9.28\!\times\!10^{-6}$ & $7.43\!\times\!10^{-5}$\\
+CREMA-D & $J$ & 1.296 & [0.499, 2.093] & 0.0027 & 0.0161\\
+SUBESCO & $\delta_{\rm CE}$ & 4.018 & [2.835, 5.201] & $3.67\!\times\!10^{-7}$ & $3.67\!\times\!10^{-6}$\\
+SUBESCO & $J$ & 3.616 & [2.332, 4.900] & $6.15\!\times\!10^{-6}$ & $5.54\!\times\!10^{-5}$\\
+RAVDESS & $\delta_{\rm CE}$ & 1.398 & [0.425, 2.370] & 0.0068 & 0.0340\\
+RAVDESS & $J$ & 0.703 & [-0.510, 1.917] & 0.2428 & 0.4857\\
+\midrule
+\multicolumn{6}{l}{\textit{C. Supplement: WavLM window 45 minus 15 (four of ten tests)}}\\
+SUBESCO & $L_{\rm CE}$ & 0.283 & [-0.009, 0.574] & 0.0567 & 0.1702\\
+SUBESCO & $L_J$ & 0.268 & [-0.761, 1.297] & 0.5954 & 0.5954\\
+RAVDESS & $L_{\rm CE}$ & 2.257 & [1.294, 3.220] & $6.82\!\times\!10^{-5}$ & $4.77\!\times\!10^{-4}$\\
+RAVDESS & $L_J$ & 1.849 & [0.343, 3.355] & 0.0183 & 0.0731\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering\small
+\caption{Descriptive common-test UAR (\%) of all four policies and the window's last epoch; $\delta_{\rm UAR}$ is in pp. Each mean equally weights five folds then 24 draws. Original and supplement WavLM runs are distinct. Supplement WavLM 15/45 values use the same long trajectory where available.}
+\label{tab:absolute}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrrrrrrr}\toprule
+Corpus & Model & Window & Seen CE & Unseen CE & Seen UAR & Unseen UAR & Last & $\delta_{\rm UAR}$\\\midrule
+\multicolumn{9}{l}{\textit{Original study}}\\
+CREMA-D & WavLM & 15 & 56.253 & 55.318 & 57.154 & 57.155 & 53.715 & -0.002\\
+SUBESCO & WavLM & 15 & 47.113 & 44.866 & 47.426 & 47.738 & 47.292 & -0.313\\
+RAVDESS & WavLM & 15 & 33.941 & 33.455 & 32.943 & 32.925 & 32.821 & 0.017\\\midrule
+\multicolumn{9}{l}{\textit{Supplement: eight model--window settings}}\\
+CREMA-D & WavLM & 15 & 55.121 & 54.103 & 56.541 & 56.430 & 53.240 & 0.111\\
+SUBESCO & WavLM & 15 & 48.110 & 45.774 & 47.946 & 47.470 & 47.009 & 0.476\\
+SUBESCO & WavLM & 45 & 48.393 & 45.774 & 49.613 & 49.122 & 48.839 & 0.491\\
+RAVDESS & WavLM & 15 & 34.983 & 34.766 & 34.028 & 33.325 & 34.141 & 0.703\\
+RAVDESS & WavLM & 45 & 42.700 & 40.226 & 43.516 & 42.405 & 42.491 & 1.111\\
+CREMA-D & HuBERT & 15 & 57.002 & 55.426 & 58.783 & 58.503 & 56.446 & 0.280\\
+SUBESCO & HuBERT & 15 & 48.616 & 44.598 & 49.836 & 49.435 & 49.048 & 0.402\\
+RAVDESS & HuBERT & 15 & 42.066 & 40.668 & 41.450 & 40.755 & 41.615 & 0.694\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Results}
+\subsection{Original study and second backbone}
+Table~\ref{tab:primary} retains both complete inferential families. In the original study, positive CE exposure contrasts and CE-versus-UAR interactions on CREMA-D and SUBESCO survive Holm6; both RAVDESS estimates remain uncertain. No corpus or test was dropped within that original frozen program. The supplement was designed after reviewing those results and frozen before its own execution.
+
+HuBERT CE selection favors seen validation in all three tasks: $\delta_{\rm CE}=1.576$, 4.018, and 1.398\,pp, each surviving Holm10. The interactions $J=1.296$ and 3.616\,pp also survive on CREMA-D and SUBESCO. RAVDESS $J=0.703$\,pp has a pointwise interval spanning zero and Holm $p=.4857$. Thus the original two-task criterion dependence is also supported under this second fixed backbone; a three-task interaction claim is not supported. These within-model tests do not establish a backbone interaction merely because significance differs. The paired backbone contrasts and their descriptive intervals are retained in the artifact.
+
+\subsection{Candidate-window dependence}
+On RAVDESS, extending WavLM from 15 to 45 candidate epochs increases the CE exposure contrast by $L_{\rm CE}=2.257$\,pp, with CI [1.294, 3.220] and Holm $p=.000477$. The underlying descriptive contrast rises from 0.217 to 2.474\,pp. Both CE policies' absolute outer means improve (34.983 to 42.700\% for seen; 34.766 to 40.226\% for unseen). The widening gap therefore does not imply a common late-training collapse.
+
+The RAVDESS interaction changes descriptively from $J(15)=-0.486$ to $J(45)=1.363$\,pp. However, $L_J=1.849$\,pp does not survive Holm10 ($p=.0731$), despite its pointwise CI excluding zero. On SUBESCO, neither $L_{\rm CE}=0.283$ nor $L_J=0.268$\,pp survives correction; the latter interval [-0.761, 1.297] leaves substantial uncertainty. These outcomes do not establish window invariance, convergence, or equivalence.
+
+\subsection{Absolute performance and the limits of UAR selection}
+Table~\ref{tab:absolute} shows all four policies and last epochs in every studied setting. UAR selection is not universally superior: in new SUBESCO WavLM15 and HuBERT RAVDESS, CE exceeds UAR for seen validation but not unseen validation. SUBESCO WavLM45 favors UAR for both roles. These descriptive rankings depend on the model, window, and validation role.
+
+Nor does UAR remove the exposure contrast. In the supplement, descriptive $\delta_{\rm UAR}$ ranges from 0.111 to 1.111\,pp; RAVDESS WavLM45 has a pointwise descriptive CI [0.168, 2.054]. No extra corrected hypothesis test is claimed for that interval. Full selected epochs, 18,000-epoch curves, and all paired descriptions are retained, without smoothing or outcome-based selection of corpora. The original complete 15-epoch curves and whole-group exchange ($E=2.828$\,pp across 24 pairs, including the negative pair) remain available~\cite{artifact}.
+
+\section{Discussion}
+The second backbone strengthens evidence for criterion dependence in CREMA-D and SUBESCO, while RAVDESS demonstrates a material candidate-window boundary. These findings concern selection policies within fixed programs, not a universal advantage of either validation population.
+
+Speaker-exclusive testing remains necessary for claims about generalization to unfamiliar speakers. Better outer performance of a seen-CE-selected checkpoint does not justify reporting seen-speaker validation as generalization performance. CE concerns probability quality and UAR concerns class decisions; this distinction motivates calibration studies but is not a tested mechanism here. Likewise, decomposing a mean effect as the frequency of selection disagreement times its conditional effect is an algebraic identity, not a causal explanation.
+
+Earlier N14R2/DUAL analyses concern validation optimism~\cite{artifact}. DUAL's post hoc fixed-last-epoch comparison already exhibited optimism, precluding attribution of its entire gap to selection. Those estimands differ from the present $\delta_q$.
+
+\subsection{Scope and reproducibility}
+Both studies use acted speech, reused corpora, fixed hyperparameters, and partial encoder fine-tuning. Class sets, speaker/text counts, recording conditions, and fit budgets confound corpus comparisons. Different validation identities preclude isolated speaker causality. The incomplete horizon matrix supplies no HuBERT45 evidence, language mechanism, generated-speech validation, or dataset eliminating the gap. Whole-group control queries also participate in main-A selection. Draw intervals condition on the chosen resampling program, not all future speaker populations.
+
+All 384 original and 720 supplement fits completed without training retries; four and eight technical pilots are excluded, respectively. Execution used RTX 5070/Windows and AutoDL RTX 5090/Linux. Selected states were reloaded while available; the supplement retains 12 prescribed formal checkpoint files and eight pilot files with fresh-process restore reports. Other weights were released only after off-instance verification of predictions and metadata. This does not preserve every weight or constitute independent retraining.
+
+Scoring required input/source/plan/environment and retention checks. A subsequent independent archive audit verified all 720 formal units, eight pilots, 90 clean batches, and 20 retained checkpoint files. Independent CPU replay reproduced 199,780 scalar comparisons with maximum difference $7.1\times10^{-15}$. Predictions, full curves, tables, source locks, and verification manifests accompany the access-restricted artifact~\cite{artifact}.
+
+\section{Conclusion}
+Under shared candidate trajectories and common outer tests, CE-versus-UAR exposure effects persist on CREMA-D and SUBESCO with a second backbone. On RAVDESS, the WavLM CE exposure contrast grows with a longer candidate window, while corrected interaction evidence remains uncertain. All ten supplement tests are reported. These results support criterion- and window-dependent checkpoint-selection effects within the specified programs, not a universal validation prescription or elimination of speaker-related differences.
+
+\section{Acknowledgments and AI disclosure}
+Anthropic Claude assisted original implementation, drafting and scientific review. OpenAI Codex assisted experiment design, implementation/execution, literature and analysis verification, and drafting/revision of all manuscript sections and tables. These systems are not authors; the named human author is responsible for reviewing the evidence and approving submission. The experiments use existing datasets; no new participant data were collected.
+\clearpage
+\begin{thebibliography}{13}
+\raggedright
+\bibitem{serab} N. Scheidwasser-Clow, M. Kegler, P. Beckmann, and M. Cernak, ``SERAB: A multi-lingual benchmark for speech emotion recognition,'' in \emph{Proc. ICASSP}, 2022, pp. 7697--7701, doi: 10.1109/ICASSP43922.2022.9747348.
+\bibitem{antoniou} N. Antoniou, A. Katsamanis, T. Giannakopoulos, and S. Narayanan, ``Designing and evaluating speech emotion recognition systems: A reality check case study with IEMOCAP,'' in \emph{Proc. ICASSP}, 2023, pp. 1--5, doi: 10.1109/ICASSP49357.2023.10096808.
+\bibitem{cawley} G. C. Cawley and N. L. C. Talbot, ``On over-fitting in model selection and subsequent selection bias in performance evaluation,'' \emph{Journal of Machine Learning Research}, vol. 11, no. 70, pp. 2079--2107, 2010.
+\bibitem{ibrahim} E. Ibrahim, M. E. Ghoraba, and A. E. Ghoraba, ``Multimodal emotion recognition using hybrid deep feature fusion under speaker-independent evaluation,'' \emph{Scientific Reports}, vol. 16, Art. 19584, 2026, doi: 10.1038/s41598-026-58836-w.
+\bibitem{zielonka} M. Zielonka et al., ``Recognition of emotions in speech using convolutional neural networks on different datasets,'' \emph{Electronics}, vol. 11, no. 22, Art. 3831, 2022, doi: 10.3390/electronics11223831.
+\bibitem{kumari} P. Kumari et al., ``Hybrid CNN-embedding fusion with MFCC-SVM for speech emotion recognition: Random vs actor-wise evaluation on CREMA-D,'' \emph{PLOS One}, vol. 21, no. 8, Art. e0355238, 2026, doi: 10.1371/journal.pone.0355238.
+\bibitem{atmaja} B. T. Atmaja and A. Sasou, ``Effect of different splitting criteria on the performance of speech emotion recognition,'' in \emph{Proc. TENCON}, 2021, pp. 760--764, doi: 10.1109/TENCON54134.2021.9707265.
+\bibitem{artifact} T. Xie, ``SER: Speaker-validation studies and the completed checkpoint-selection program,'' GitHub repository, 2026. [Online; access restricted at manuscript preparation]. \url{https://github.com/DeerNeverStop/SER}. Frozen scientific commit: \texttt{976297d}; completed evidence: \texttt{SER26-final-program-}\allowbreak\texttt{complete-20260907}. Supplement scientific commit: \texttt{2dfde44}; protocol and completed results: \texttt{autodl\_supplement\_20260908}. Earlier studies retain their separate protocols.
+\bibitem{cremad} H. Cao, D. G. Cooper, M. K. Keutmann, R. C. Gur, A. Nenkova, and R. Verma, ``CREMA-D: Crowd-sourced emotional multimodal actors dataset,'' \emph{IEEE Trans. Affective Computing}, vol. 5, no. 4, pp. 377--390, 2014, doi: 10.1109/TAFFC.2014.2336244.
+\bibitem{subesco} S. Sultana, M. S. Rahman, M. R. Selim, and M. Z. Iqbal, ``SUST Bangla Emotional Speech Corpus (SUBESCO): An audio-only emotional speech corpus for Bangla,'' \emph{PLOS ONE}, vol. 16, no. 4, Art. e0250173, 2021, doi: 10.1371/journal.pone.0250173.
+\bibitem{ravdess} S. R. Livingstone and F. A. Russo, ``The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English,'' \emph{PLOS ONE}, vol. 13, no. 5, Art. e0196391, 2018, doi: 10.1371/journal.pone.0196391.
+\bibitem{wavlm} S. Chen et al., ``WavLM: Large-scale self-supervised pre-training for full stack speech processing,'' \emph{IEEE J. Sel. Topics Signal Process.}, vol. 16, no. 6, pp. 1505--1518, 2022, doi: 10.1109/JSTSP.2022.3188113.
+\bibitem{hubert} W.-N. Hsu, B. Bolte, Y.-H. H. Tsai, K. Lakhotia, R. Salakhutdinov, and A. Mohamed, ``HuBERT: Self-supervised speech representation learning by masked prediction of hidden units,'' arXiv:2106.07447, 2021. \url{https://arxiv.org/abs/2106.07447}.
+\end{thebibliography}
+\end{document}

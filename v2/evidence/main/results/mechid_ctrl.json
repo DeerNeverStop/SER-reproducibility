@@ -1,0 +1,1480 @@
+{
+ "D10": {
+  "CTRL|cremad|cnn": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 30.746437276365036,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 36.30199283192059,
+      "n_items": 309,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 26.71917118447046,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 32.27472674002602,
+      "n_items": 309,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -4.027266091894575,
+     "fold": 0,
+     "items_per_speaker": {
+      "1002": 16,
+      "1005": 18,
+      "1010": 17,
+      "1016": 21,
+      "1025": 24,
+      "1027": 15,
+      "1028": 13,
+      "1034": 19,
+      "1049": 11,
+      "1051": 17,
+      "1055": 13,
+      "1060": 20,
+      "1062": 15,
+      "1072": 22,
+      "1075": 18,
+      "1080": 15,
+      "1082": 18,
+      "1083": 17
+     },
+     "speakers": [
+      "1002",
+      "1005",
+      "1010",
+      "1016",
+      "1025",
+      "1027",
+      "1028",
+      "1034",
+      "1049",
+      "1051",
+      "1055",
+      "1060",
+      "1062",
+      "1072",
+      "1075",
+      "1080",
+      "1082",
+      "1083"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 29.999524375299252,
+      "chance": 5.2631578947368425,
+      "cv_folds": 5,
+      "macro_recall": 35.262682270036095,
+      "n_items": 316,
+      "n_speakers": 19,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 23.78675495379415,
+      "chance": 5.2631578947368425,
+      "cv_folds": 5,
+      "macro_recall": 29.049912848530994,
+      "n_items": 316,
+      "n_speakers": 19,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -6.212769421505101,
+     "fold": 1,
+     "items_per_speaker": {
+      "1008": 11,
+      "1013": 14,
+      "1014": 16,
+      "1019": 13,
+      "1021": 23,
+      "1029": 20,
+      "1038": 18,
+      "1040": 12,
+      "1056": 24,
+      "1057": 16,
+      "1070": 17,
+      "1073": 18,
+      "1074": 11,
+      "1076": 8,
+      "1084": 17,
+      "1085": 27,
+      "1087": 16,
+      "1089": 16,
+      "1090": 19
+     },
+     "speakers": [
+      "1008",
+      "1013",
+      "1014",
+      "1019",
+      "1021",
+      "1029",
+      "1038",
+      "1040",
+      "1056",
+      "1057",
+      "1070",
+      "1073",
+      "1074",
+      "1076",
+      "1084",
+      "1085",
+      "1087",
+      "1089",
+      "1090"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 22.067150446923414,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 27.62270600247897,
+      "n_items": 288,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 21.112981254880125,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 26.66853681043568,
+      "n_items": 288,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -0.9541691920432882,
+     "fold": 2,
+     "items_per_speaker": {
+      "1001": 12,
+      "1003": 14,
+      "1006": 19,
+      "1022": 20,
+      "1023": 20,
+      "1030": 14,
+      "1039": 17,
+      "1043": 17,
+      "1045": 10,
+      "1052": 17,
+      "1058": 15,
+      "1063": 21,
+      "1065": 12,
+      "1067": 15,
+      "1069": 15,
+      "1071": 14,
+      "1079": 18,
+      "1081": 18
+     },
+     "speakers": [
+      "1001",
+      "1003",
+      "1006",
+      "1022",
+      "1023",
+      "1030",
+      "1039",
+      "1043",
+      "1045",
+      "1052",
+      "1058",
+      "1063",
+      "1065",
+      "1067",
+      "1069",
+      "1071",
+      "1079",
+      "1081"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 21.666579075466544,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 27.2221346310221,
+      "n_items": 324,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 25.944498591052636,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 31.500054146608193,
+      "n_items": 324,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 4.277919515586092,
+     "fold": 3,
+     "items_per_speaker": {
+      "1007": 23,
+      "1009": 15,
+      "1011": 19,
+      "1017": 17,
+      "1018": 21,
+      "1020": 14,
+      "1024": 14,
+      "1035": 21,
+      "1036": 20,
+      "1037": 14,
+      "1042": 17,
+      "1044": 22,
+      "1046": 23,
+      "1061": 16,
+      "1064": 15,
+      "1068": 17,
+      "1077": 13,
+      "1091": 23
+     },
+     "speakers": [
+      "1007",
+      "1009",
+      "1011",
+      "1017",
+      "1018",
+      "1020",
+      "1024",
+      "1035",
+      "1036",
+      "1037",
+      "1042",
+      "1044",
+      "1046",
+      "1061",
+      "1064",
+      "1068",
+      "1077",
+      "1091"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 25.75545827867809,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 31.31101383423365,
+      "n_items": 282,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 17.677357448384278,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 23.232913003939835,
+      "n_items": 282,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -8.078100830293813,
+     "fold": 4,
+     "items_per_speaker": {
+      "1004": 13,
+      "1012": 22,
+      "1015": 14,
+      "1026": 18,
+      "1031": 15,
+      "1032": 12,
+      "1033": 19,
+      "1041": 22,
+      "1047": 19,
+      "1048": 14,
+      "1050": 22,
+      "1053": 16,
+      "1054": 10,
+      "1059": 12,
+      "1066": 12,
+      "1078": 12,
+      "1086": 17,
+      "1088": 13
+     },
+     "speakers": [
+      "1004",
+      "1012",
+      "1015",
+      "1026",
+      "1031",
+      "1032",
+      "1033",
+      "1041",
+      "1047",
+      "1048",
+      "1050",
+      "1053",
+      "1054",
+      "1059",
+      "1066",
+      "1078",
+      "1086",
+      "1088"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 26.04702989054647,
+   "mean_RR_above_chance": 23.048152686516328,
+   "mean_RR_minus_GG_above_chance": -2.998877204030137,
+   "tested": true
+  },
+  "CTRL|cremad|resnet_se": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 29.65675704775292,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 35.212312603308476,
+      "n_items": 309,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 29.756667576585016,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 35.31222313214057,
+      "n_items": 309,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 0.09991052883209761,
+     "fold": 0,
+     "items_per_speaker": {
+      "1002": 16,
+      "1005": 18,
+      "1010": 17,
+      "1016": 21,
+      "1025": 24,
+      "1027": 15,
+      "1028": 13,
+      "1034": 19,
+      "1049": 11,
+      "1051": 17,
+      "1055": 13,
+      "1060": 20,
+      "1062": 15,
+      "1072": 22,
+      "1075": 18,
+      "1080": 15,
+      "1082": 18,
+      "1083": 17
+     },
+     "speakers": [
+      "1002",
+      "1005",
+      "1010",
+      "1016",
+      "1025",
+      "1027",
+      "1028",
+      "1034",
+      "1049",
+      "1051",
+      "1055",
+      "1060",
+      "1062",
+      "1072",
+      "1075",
+      "1080",
+      "1082",
+      "1083"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 21.16787093849779,
+      "chance": 5.2631578947368425,
+      "cv_folds": 5,
+      "macro_recall": 26.43102883323463,
+      "n_items": 316,
+      "n_speakers": 19,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 25.93251334559402,
+      "chance": 5.2631578947368425,
+      "cv_folds": 5,
+      "macro_recall": 31.195671240330864,
+      "n_items": 316,
+      "n_speakers": 19,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 4.7646424070962325,
+     "fold": 1,
+     "items_per_speaker": {
+      "1008": 11,
+      "1013": 14,
+      "1014": 16,
+      "1019": 13,
+      "1021": 23,
+      "1029": 20,
+      "1038": 18,
+      "1040": 12,
+      "1056": 24,
+      "1057": 16,
+      "1070": 17,
+      "1073": 18,
+      "1074": 11,
+      "1076": 8,
+      "1084": 17,
+      "1085": 27,
+      "1087": 16,
+      "1089": 16,
+      "1090": 19
+     },
+     "speakers": [
+      "1008",
+      "1013",
+      "1014",
+      "1019",
+      "1021",
+      "1029",
+      "1038",
+      "1040",
+      "1056",
+      "1057",
+      "1070",
+      "1073",
+      "1074",
+      "1076",
+      "1084",
+      "1085",
+      "1087",
+      "1089",
+      "1090"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 18.677043916981994,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 24.23259947253755,
+      "n_items": 288,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 17.737986032619673,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 23.29354158817523,
+      "n_items": 288,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -0.9390578843623203,
+     "fold": 2,
+     "items_per_speaker": {
+      "1001": 12,
+      "1003": 14,
+      "1006": 19,
+      "1022": 20,
+      "1023": 20,
+      "1030": 14,
+      "1039": 17,
+      "1043": 17,
+      "1045": 10,
+      "1052": 17,
+      "1058": 15,
+      "1063": 21,
+      "1065": 12,
+      "1067": 15,
+      "1069": 15,
+      "1071": 14,
+      "1079": 18,
+      "1081": 18
+     },
+     "speakers": [
+      "1001",
+      "1003",
+      "1006",
+      "1022",
+      "1023",
+      "1030",
+      "1039",
+      "1043",
+      "1045",
+      "1052",
+      "1058",
+      "1063",
+      "1065",
+      "1067",
+      "1069",
+      "1071",
+      "1079",
+      "1081"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 21.66047769266575,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 27.216033248221304,
+      "n_items": 324,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 17.191559188631473,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 22.74711474418703,
+      "n_items": 324,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -4.468918504034278,
+     "fold": 3,
+     "items_per_speaker": {
+      "1007": 23,
+      "1009": 15,
+      "1011": 19,
+      "1017": 17,
+      "1018": 21,
+      "1020": 14,
+      "1024": 14,
+      "1035": 21,
+      "1036": 20,
+      "1037": 14,
+      "1042": 17,
+      "1044": 22,
+      "1046": 23,
+      "1061": 16,
+      "1064": 15,
+      "1068": 17,
+      "1077": 13,
+      "1091": 23
+     },
+     "speakers": [
+      "1007",
+      "1009",
+      "1011",
+      "1017",
+      "1018",
+      "1020",
+      "1024",
+      "1035",
+      "1036",
+      "1037",
+      "1042",
+      "1044",
+      "1046",
+      "1061",
+      "1064",
+      "1068",
+      "1077",
+      "1091"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 15.556457264403596,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 21.11201281995915,
+      "n_items": 282,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 16.168388261396515,
+      "chance": 5.555555555555555,
+      "cv_folds": 5,
+      "macro_recall": 21.723943816952072,
+      "n_items": 282,
+      "n_speakers": 18,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 0.6119309969929194,
+     "fold": 4,
+     "items_per_speaker": {
+      "1004": 13,
+      "1012": 22,
+      "1015": 14,
+      "1026": 18,
+      "1031": 15,
+      "1032": 12,
+      "1033": 19,
+      "1041": 22,
+      "1047": 19,
+      "1048": 14,
+      "1050": 22,
+      "1053": 16,
+      "1054": 10,
+      "1059": 12,
+      "1066": 12,
+      "1078": 12,
+      "1086": 17,
+      "1088": 13
+     },
+     "speakers": [
+      "1004",
+      "1012",
+      "1015",
+      "1026",
+      "1031",
+      "1032",
+      "1033",
+      "1041",
+      "1047",
+      "1048",
+      "1050",
+      "1053",
+      "1054",
+      "1059",
+      "1066",
+      "1078",
+      "1086",
+      "1088"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 21.343721372060408,
+   "mean_RR_above_chance": 21.357422880965338,
+   "mean_RR_minus_GG_above_chance": 0.013701508904930293,
+   "tested": true
+  },
+  "CTRL|ravdess|cnn": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 30.61904761904762,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 50.61904761904762,
+      "n_items": 60,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 26.19047619047619,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 46.19047619047619,
+      "n_items": 60,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -4.428571428571431,
+     "fold": 0,
+     "items_per_speaker": {
+      "04": 12,
+      "12": 14,
+      "14": 7,
+      "16": 15,
+      "20": 12
+     },
+     "speakers": [
+      "04",
+      "12",
+      "14",
+      "16",
+      "20"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 32.13305322128852,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 52.13305322128852,
+      "n_items": 61,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 40.86134453781512,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 60.86134453781512,
+      "n_items": 61,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 8.728291316526601,
+     "fold": 1,
+     "items_per_speaker": {
+      "01": 14,
+      "02": 17,
+      "05": 12,
+      "10": 8,
+      "17": 10
+     },
+     "speakers": [
+      "01",
+      "02",
+      "05",
+      "10",
+      "17"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 32.159090909090914,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 52.159090909090914,
+      "n_items": 69,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 32.98701298701298,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 52.98701298701298,
+      "n_items": 69,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 0.827922077922068,
+     "fold": 2,
+     "items_per_speaker": {
+      "03": 14,
+      "06": 16,
+      "08": 14,
+      "13": 14,
+      "24": 11
+     },
+     "speakers": [
+      "03",
+      "06",
+      "08",
+      "13",
+      "24"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 29.365079365079353,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 49.36507936507935,
+      "n_items": 56,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 40.873015873015866,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 60.873015873015866,
+      "n_items": 56,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 11.507936507936513,
+     "fold": 3,
+     "items_per_speaker": {
+      "07": 14,
+      "09": 9,
+      "15": 7,
+      "19": 14,
+      "22": 12
+     },
+     "speakers": [
+      "07",
+      "09",
+      "15",
+      "19",
+      "22"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 51.25,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 76.25,
+      "n_items": 52,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 40.41666666666666,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 65.41666666666666,
+      "n_items": 52,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -10.833333333333343,
+     "fold": 4,
+     "items_per_speaker": {
+      "11": 10,
+      "18": 12,
+      "21": 15,
+      "23": 15
+     },
+     "speakers": [
+      "11",
+      "18",
+      "21",
+      "23"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 35.10525422290128,
+   "mean_RR_above_chance": 36.26570325099736,
+   "mean_RR_minus_GG_above_chance": 1.1604490280960817,
+   "tested": true
+  },
+  "CTRL|ravdess|resnet_se": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 17.095238095238095,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 37.095238095238095,
+      "n_items": 60,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 23.61904761904762,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 43.61904761904762,
+      "n_items": 60,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 6.5238095238095255,
+     "fold": 0,
+     "items_per_speaker": {
+      "04": 12,
+      "12": 14,
+      "14": 7,
+      "16": 15,
+      "20": 12
+     },
+     "speakers": [
+      "04",
+      "12",
+      "14",
+      "16",
+      "20"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 42.63305322128851,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 62.63305322128851,
+      "n_items": 61,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 35.6610644257703,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 55.6610644257703,
+      "n_items": 61,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -6.9719887955182145,
+     "fold": 1,
+     "items_per_speaker": {
+      "01": 14,
+      "02": 17,
+      "05": 12,
+      "10": 8,
+      "17": 10
+     },
+     "speakers": [
+      "01",
+      "02",
+      "05",
+      "10",
+      "17"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 44.626623376623385,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 64.62662337662339,
+      "n_items": 69,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 28.522727272727273,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 48.52272727272727,
+      "n_items": 69,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -16.103896103896112,
+     "fold": 2,
+     "items_per_speaker": {
+      "03": 14,
+      "06": 16,
+      "08": 14,
+      "13": 14,
+      "24": 11
+     },
+     "speakers": [
+      "03",
+      "06",
+      "08",
+      "13",
+      "24"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 23.650793650793645,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 43.650793650793645,
+      "n_items": 56,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 35.63492063492064,
+      "chance": 20.0,
+      "cv_folds": 5,
+      "macro_recall": 55.63492063492064,
+      "n_items": 56,
+      "n_speakers": 5,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 11.984126984126995,
+     "fold": 3,
+     "items_per_speaker": {
+      "07": 14,
+      "09": 9,
+      "15": 7,
+      "19": 14,
+      "22": 12
+     },
+     "speakers": [
+      "07",
+      "09",
+      "15",
+      "19",
+      "22"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 55.0,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 80.0,
+      "n_items": 52,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 45.0,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 70.0,
+      "n_items": 52,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -10.0,
+     "fold": 4,
+     "items_per_speaker": {
+      "11": 10,
+      "18": 12,
+      "21": 15,
+      "23": 15
+     },
+     "speakers": [
+      "11",
+      "18",
+      "21",
+      "23"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 36.60114166878873,
+   "mean_RR_above_chance": 33.68755199049316,
+   "mean_RR_minus_GG_above_chance": -2.913589678295561,
+   "tested": true
+  },
+  "CTRL|subesco_980|cnn": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 29.015151515151516,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 54.015151515151516,
+      "n_items": 37,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 17.007575757575758,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 42.00757575757576,
+      "n_items": 37,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -12.007575757575758,
+     "fold": 0,
+     "items_per_speaker": {
+      "F08": 5,
+      "M05": 9,
+      "M08": 12,
+      "M10": 11
+     },
+     "speakers": [
+      "F08",
+      "M05",
+      "M08",
+      "M10"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 15.89646464646465,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 40.89646464646465,
+      "n_items": 42,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 21.275252525252526,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 46.275252525252526,
+      "n_items": 42,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 5.378787878787875,
+     "fold": 1,
+     "items_per_speaker": {
+      "F02": 11,
+      "F09": 9,
+      "M01": 12,
+      "M07": 10
+     },
+     "speakers": [
+      "F02",
+      "F09",
+      "M01",
+      "M07"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 3.6309523809523796,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 28.63095238095238,
+      "n_items": 44,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 14.345238095238088,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 39.34523809523809,
+      "n_items": 44,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 10.714285714285708,
+     "fold": 2,
+     "items_per_speaker": {
+      "F04": 15,
+      "F05": 14,
+      "F07": 8,
+      "M09": 7
+     },
+     "speakers": [
+      "F04",
+      "F05",
+      "F07",
+      "M09"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 22.083333333333336,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 47.083333333333336,
+      "n_items": 48,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 26.874999999999993,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 51.87499999999999,
+      "n_items": 48,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 4.791666666666657,
+     "fold": 3,
+     "items_per_speaker": {
+      "F03": 12,
+      "F06": 16,
+      "M03": 10,
+      "M06": 10
+     },
+     "speakers": [
+      "F03",
+      "F06",
+      "M03",
+      "M06"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 7.651515151515156,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 32.651515151515156,
+      "n_items": 40,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 26.237373737373737,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 51.23737373737374,
+      "n_items": 40,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 18.58585858585858,
+     "fold": 4,
+     "items_per_speaker": {
+      "F01": 11,
+      "F10": 9,
+      "M02": 10,
+      "M04": 10
+     },
+     "speakers": [
+      "F01",
+      "F10",
+      "M02",
+      "M04"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 15.655483405483409,
+   "mean_RR_above_chance": 21.148088023088018,
+   "mean_RR_minus_GG_above_chance": 5.492604617604613,
+   "tested": true
+  },
+  "CTRL|subesco_980|resnet_se": {
+   "folds": [
+    {
+     "GG": {
+      "above_chance": 14.330808080808076,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 39.330808080808076,
+      "n_items": 37,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 15.858585858585855,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 40.858585858585855,
+      "n_items": 37,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 1.5277777777777786,
+     "fold": 0,
+     "items_per_speaker": {
+      "F08": 5,
+      "M05": 9,
+      "M08": 12,
+      "M10": 11
+     },
+     "speakers": [
+      "F08",
+      "M05",
+      "M08",
+      "M10"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 48.40909090909091,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 73.4090909090909,
+      "n_items": 42,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 18.91414141414142,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 43.91414141414142,
+      "n_items": 42,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -29.494949494949488,
+     "fold": 1,
+     "items_per_speaker": {
+      "F02": 11,
+      "F09": 9,
+      "M01": 12,
+      "M07": 10
+     },
+     "speakers": [
+      "F02",
+      "F09",
+      "M01",
+      "M07"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 3.9880952380952337,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 28.988095238095234,
+      "n_items": 44,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 19.13690476190476,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 44.13690476190476,
+      "n_items": 44,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 15.148809523809526,
+     "fold": 2,
+     "items_per_speaker": {
+      "F04": 15,
+      "F05": 14,
+      "F07": 8,
+      "M09": 7
+     },
+     "speakers": [
+      "F04",
+      "F05",
+      "F07",
+      "M09"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 35.0,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 60.0,
+      "n_items": 48,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 25.72916666666667,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 50.72916666666667,
+      "n_items": 48,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": -9.270833333333329,
+     "fold": 3,
+     "items_per_speaker": {
+      "F03": 12,
+      "F06": 16,
+      "M03": 10,
+      "M06": 10
+     },
+     "speakers": [
+      "F03",
+      "F06",
+      "M03",
+      "M06"
+     ]
+    },
+    {
+     "GG": {
+      "above_chance": 11.868686868686872,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 36.86868686868687,
+      "n_items": 40,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR": {
+      "above_chance": 28.03030303030303,
+      "chance": 25.0,
+      "cv_folds": 5,
+      "macro_recall": 53.03030303030303,
+      "n_items": 40,
+      "n_speakers": 4,
+      "tested": true
+     },
+     "RR_minus_GG_above_chance": 16.16161616161616,
+     "fold": 4,
+     "items_per_speaker": {
+      "F01": 11,
+      "F10": 9,
+      "M02": 10,
+      "M04": 10
+     },
+     "speakers": [
+      "F01",
+      "F10",
+      "M02",
+      "M04"
+     ]
+    }
+   ],
+   "mean_GG_above_chance": 22.71933621933622,
+   "mean_RR_above_chance": 21.533820346320347,
+   "mean_RR_minus_GG_above_chance": -1.1855158730158706,
+   "tested": true
+  }
+ },
+ "D11": {
+  "CTRL|cremad|cnn": {
+   "GG": {
+    "other": 0.5694821669326398,
+    "same_sentence": 0.4305178330673602,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.5261600537995964,
+    "same_sentence": 0.40053799596503026,
+    "same_speaker": 0.06967047747141897,
+    "sibling": 0.0036314727639542702
+   }
+  },
+  "CTRL|cremad|resnet_se": {
+   "GG": {
+    "other": 0.5393087013225148,
+    "same_sentence": 0.46069129867748515,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.5088096839273706,
+    "same_sentence": 0.4372562205783456,
+    "same_speaker": 0.04976462676529926,
+    "sibling": 0.004169468728984533
+   }
+  },
+  "CTRL|ravdess|cnn": {
+   "GG": {
+    "other": 0.41126978818283166,
+    "same_sentence": 0.5887302118171683,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.2779447348044909,
+    "same_sentence": 0.3606610530391018,
+    "same_speaker": 0.20919473480449086,
+    "sibling": 0.15219947735191636
+   }
+  },
+  "CTRL|ravdess|resnet_se": {
+   "GG": {
+    "other": 0.42478985507246375,
+    "same_sentence": 0.5752101449275362,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.28561265969802563,
+    "same_sentence": 0.38219367015098726,
+    "same_speaker": 0.17722125435540073,
+    "sibling": 0.15497241579558654
+   }
+  },
+  "CTRL|subesco_980|cnn": {
+   "GG": {
+    "other": 0.6683673469387755,
+    "same_sentence": 0.33163265306122447,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.5622448979591838,
+    "same_sentence": 0.2938775510204082,
+    "same_speaker": 0.14387755102040817,
+    "sibling": 0.0
+   }
+  },
+  "CTRL|subesco_980|resnet_se": {
+   "GG": {
+    "other": 0.7071428571428571,
+    "same_sentence": 0.2928571428571428,
+    "same_speaker": 0.0,
+    "sibling": 0.0
+   },
+   "RR": {
+    "other": 0.5673469387755101,
+    "same_sentence": 0.25816326530612244,
+    "same_speaker": 0.17448979591836733,
+    "sibling": 0.0
+   }
+  }
+ },
+ "definition": [
+  "MECHID (descriptors D10 and D11; estimation only, never tested).",
+  "",
+  "Runs AFTER the CTRL and FT arms, on the checkpoints the runner persisted",
+  "(`runs/<run>/units/<unit_id>/checkpoint.pt`: CTRL r=0/seed 0 cnn and resnet_se in cells RR and GG",
+  "on the family levels; every FT unit).  Nothing here feeds a hypothesis.",
+  "",
+  "D10  speaker-ID probe per checkpoint on a common held-out panel.",
+  "     For outer fold f, S_f = the test speakers of the GG table of that level (r=0 for scratch;",
+  "     the FT tables reuse the r=0 CTRL partitions).  The RR checkpoint of fold f is probed on the",
+  "     RR test items of fold f whose speaker is in S_f; the GG checkpoint of fold f on its own test",
+  "     items (all of S_f).  Per speaker the two panels are trimmed to the same item count (hash",
+  "     order), so both panels share speaker set and size, and neither panel was used to train its",
+  "     checkpoint.  Probe = multinomial logistic regression (C=1, standardized embeddings),",
+  "     stratified 5-fold CV inside the panel, metric = macro speaker recall (%) minus chance",
+  "     100/|S_f|.  Reported: per fold, and the mean over folds of RR minus GG, per level x model.",
+  "     Embeddings: the pooled representation right before the classification head (CNN:",
+  "     features(x).mean(-1); ResNet-SE: blocks(lift(x)).mean(-1); WavLM: last-state time mean).",
+  "D11  nearest-neighbour composition: for every test item of a checkpoint, the cosine-nearest",
+  "     TRAINING item (fit + val of that fold) in the same embedding space, categorised as",
+  "     sibling (same speaker, sentence and label), same_speaker, same_sentence (different speaker),"
+ ]
+}

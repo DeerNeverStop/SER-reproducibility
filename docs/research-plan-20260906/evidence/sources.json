@@ -1,0 +1,27 @@
+{
+  "repository": "DeerNeverStop/SER",
+  "source_commit": "55b585efe9ea898f8c1717162cefef1ffda8cd65",
+  "documents": [
+    {
+      "path": "paper/study2/results/tables.md",
+      "url": "https://github.com/DeerNeverStop/SER/blob/55b585efe9ea898f8c1717162cefef1ffda8cd65/paper/study2/results/tables.md"
+    },
+    {
+      "path": "v3/data_design/README.md",
+      "url": "https://github.com/DeerNeverStop/SER/blob/55b585efe9ea898f8c1717162cefef1ffda8cd65/v3/data_design/README.md"
+    },
+    {
+      "path": "v3/data_design/SPEC_CORE_ZH.md",
+      "url": "https://github.com/DeerNeverStop/SER/blob/55b585efe9ea898f8c1717162cefef1ffda8cd65/v3/data_design/SPEC_CORE_ZH.md"
+    },
+    {
+      "path": "v3/data_design/evidence/capacity.json",
+      "url": "https://github.com/DeerNeverStop/SER/blob/55b585efe9ea898f8c1717162cefef1ffda8cd65/v3/data_design/evidence/capacity.json"
+    },
+    {
+      "path": "v3/deploy/evidence/EXECUTION_STATUS_ZH.md",
+      "url": "https://github.com/DeerNeverStop/SER/blob/55b585efe9ea898f8c1717162cefef1ffda8cd65/v3/deploy/evidence/EXECUTION_STATUS_ZH.md"
+    }
+  ],
+  "note": "Existing scientific evidence only. New speaker embeddings, role assignments and panels are not generated."
+}

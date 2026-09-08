@@ -1,0 +1,17 @@
+{
+  "program": "SER26-DEPLOY-2",
+  "formal_scientific_outcomes_read": false,
+  "test_command": "python -m pytest v3/deploy/tests -q",
+  "tests_passed": 135,
+  "tests_failed": 0,
+  "seconds": 22.17,
+  "warnings": "Two legacy audioread compatibility deprecation warnings on Python 3.13; no test failures.",
+  "independent_metadata_audit": "metadata_independent_audit.json",
+  "scientific_review": "../REVIEW_DEPLOY2.md",
+  "execution_lock_sha256": "16a2045f637175961bd07dc83a84315f5940708eba87fc96889219aff15e4ad5",
+  "cpu_units": 540,
+  "cpu_fits": 675,
+  "gpu_units": 120,
+  "gpu_blind_timing_complete": false,
+  "gpu_formal_started": false
+}

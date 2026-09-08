@@ -1,0 +1,67 @@
+{
+  "scope": "Root visual review of full WORKING Chinese layout only",
+  "at_utc": "2026-09-07T19:00:16.692892+00:00",
+  "pdf_sha256": "1d063d5e20ca36e7dc8f0df53f450fe49e9b2b2f8ffd8d17d8e47347e34c558c",
+  "pages": 8,
+  "method": "Root viewed all 8 original 120dpi pages, then viewed the revised page 5. The other 7 newly rendered PNGs have byte-identical SHA to those already viewed.",
+  "observations": [
+    "Tables and formulas remain within the page with readable spacing",
+    "All six primary rows and three absolute rows remain explicitly unfilled",
+    "Page 5 two-character terminal line removed by equivalent wording",
+    "No real or synthetic result curve inserted",
+    "Complete references remain on pages 7 and 8"
+  ],
+  "per_page_pngs": [
+    {
+      "page": 1,
+      "original_sha256": "4efb9e592f535d943052fb922712b8df45d120e67e70aee3d550eacf176828d6",
+      "current_sha256": "4efb9e592f535d943052fb922712b8df45d120e67e70aee3d550eacf176828d6",
+      "pixels_identical": true
+    },
+    {
+      "page": 2,
+      "original_sha256": "2cdf340afa3400afa61dc7f67cb27ac1bc0c1c2d342c8c588abee7fcb4da2511",
+      "current_sha256": "2cdf340afa3400afa61dc7f67cb27ac1bc0c1c2d342c8c588abee7fcb4da2511",
+      "pixels_identical": true
+    },
+    {
+      "page": 3,
+      "original_sha256": "a785fe95fd511734b5e4ce7c1c2712a90e83a109c1ab393829d9f8f53c333772",
+      "current_sha256": "a785fe95fd511734b5e4ce7c1c2712a90e83a109c1ab393829d9f8f53c333772",
+      "pixels_identical": true
+    },
+    {
+      "page": 4,
+      "original_sha256": "62011cf6abc22b7b72ec14d3f8be6865f44a5358f2ab3d860073169e5c9d115e",
+      "current_sha256": "62011cf6abc22b7b72ec14d3f8be6865f44a5358f2ab3d860073169e5c9d115e",
+      "pixels_identical": true
+    },
+    {
+      "page": 5,
+      "original_sha256": "b1dcfbee06f48f3613a4b5b390701b381d50685995fdb726f77e1f513e123fdb",
+      "current_sha256": "2a6a2d7a35b1bef3dc2b7c7f4324d11581268dcf337195c6971f69874bd23763",
+      "pixels_identical": false
+    },
+    {
+      "page": 6,
+      "original_sha256": "38b1f6389ea4c5da86e109cd965cca0edf8c0fb0bc85ddfbe423cf9f87fd1008",
+      "current_sha256": "38b1f6389ea4c5da86e109cd965cca0edf8c0fb0bc85ddfbe423cf9f87fd1008",
+      "pixels_identical": true
+    },
+    {
+      "page": 7,
+      "original_sha256": "6b93aee84ccce9e9a169f86267b94e288e4fb211701f4c2b90d10222af159d56",
+      "current_sha256": "6b93aee84ccce9e9a169f86267b94e288e4fb211701f4c2b90d10222af159d56",
+      "pixels_identical": true
+    },
+    {
+      "page": 8,
+      "original_sha256": "f54d35754128d99f1233b5506bf53e46f961fc9f4d6c62cbaf2947a64268c6ea",
+      "current_sha256": "f54d35754128d99f1233b5506bf53e46f961fc9f4d6c62cbaf2947a64268c6ea",
+      "pixels_identical": true
+    }
+  ],
+  "visual_review_performed": true,
+  "formal_science_accepted": false,
+  "final_manuscript_accepted": false
+}

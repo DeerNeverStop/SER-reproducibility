@@ -1,0 +1,48 @@
+loading 4943 unit directories ...
+  500/4943 units
+  1000/4943 units
+  1500/4943 units
+  2000/4943 units
+  2500/4943 units
+  3000/4943 units
+  3500/4943 units
+  4000/4943 units
+  4500/4943 units
+units: 4943 done (0 not done), 4943 usable
+cell-runs: 717 complete, 0 void
+wrote runs/main\verifier_results.json
+wrote runs/main\verification.json
+=== ser_v2.verify summary ===
+run_id=main  units done=4943 usable=4943 void=0  cell-runs=717 complete=717
+integrity: I0=pass  I1=pass  I2=pass  I3=pass  I4=pass  I5=pass  I6=pass  I7=pass
+hypotheses: estimate (not tested)=5, supported=23
+  N01 [N-decomp]: n=20 mean=7.2109 ci=[5.1474, 9.3878] wilcoxon_p=8.832e-05 p_holm=0.0003533 -> supported
+  N02 [N-decomp]: n=20 mean=5.3401 ci=[4.0249, 6.9048] wilcoxon_p=0.0001028 p_holm=0.0003533 -> supported
+  N03 [N-decomp]: n=20 mean=3.9796 ci=[2.2902, 5.6689] wilcoxon_p=0.00089 p_holm=0.00089 -> supported
+  N04 [N-decomp]: n=20 mean=3.2313 ci=[2.2222, 4.2177] wilcoxon_p=0.0002707 p_holm=0.0005414 -> supported
+  N05 [N-mech]: n=91 mean=11.0745 ci=[9.8153, 12.3405] wilcoxon_p=3.067e-16 p_holm=1.227e-15 -> supported
+  N06 [N-mech]: n=91 mean=2.6832 ci=[1.7857, 3.5386] wilcoxon_p=1.258e-07 p_holm=2.517e-07 -> supported
+  N07 [N-mech]: n=20 mean=5.2679 ci=[2.6786, 7.8571] wilcoxon_p=0.002325 p_holm=null -> estimate (not tested)
+  N08 [N-mech]: n=20 mean=15.8929 ci=[13.3929, 18.4821] wilcoxon_p=8.795e-05 p_holm=null -> estimate (not tested)
+  N09 [N-mech]: n=20 mean=10.0893 ci=[7.9911, 12.4107] wilcoxon_p=8.757e-05 p_holm=8.757e-05 -> supported
+  N10 [N-mech]: n=72 mean=4.9032 ci=[3.9454, 5.8719] wilcoxon_p=7.58e-12 p_holm=2.274e-11 -> supported
+  N11 [N-modern]: n=24 mean=14.1741 ci=[8.8216, 19.5966] wilcoxon_p=0.0002685 p_holm=null -> estimate (not tested)
+  N12 [N-modern]: n=91 mean=2.6086 ci=[1.4738, 3.7440] wilcoxon_p=8.499e-05 p_holm=null -> estimate (not tested)
+  N13 [N-modern]: n=20 mean=8.5714 ci=[5.0000, 12.5000] wilcoxon_p=0.0008388 p_holm=null -> estimate (not tested)
+  N14 [N-supp]: n=91 mean=1.7073 ci=[0.5873, 2.8093] wilcoxon_p=0.004322 p_holm=0.004322 -> supported
+  N15 [N-supp]: n=24 mean=5.1319 ci=[3.5951, 6.6985] wilcoxon_p=4.664e-05 p_holm=9.328e-05 -> supported
+  R01 [R]: n=24 mean=18.2364 ci=[15.5310, 21.0576] wilcoxon_p=1.192e-07 p_holm=9.537e-07 -> supported
+  R02 [R]: n=24 mean=12.1610 ci=[10.1799, 14.2082] wilcoxon_p=1.818e-05 p_holm=0.0001091 -> supported
+  R03 [R]: n=24 mean=6.0754 ci=[4.7020, 7.4064] wilcoxon_p=2.693e-05 p_holm=0.0001091 -> supported
+  R04 [R]: n=91 mean=2.5583 ci=[2.0794, 3.0573] wilcoxon_p=1.954e-13 p_holm=1.954e-12 -> supported
+  R05 [R]: n=91 mean=1.1604 ci=[0.7374, 1.5918] wilcoxon_p=1.282e-06 p_holm=8.972e-06 -> supported
+  R06 [R]: n=91 mean=1.3979 ci=[1.0500, 1.7492] wilcoxon_p=1.009e-09 p_holm=9.077e-09 -> supported
+  R07 [R]: n=24 mean=11.7797 ci=[9.7346, 14.1545] wilcoxon_p=1.818e-05 p_holm=0.0001091 -> supported
+  R08 [R]: n=91 mean=2.1642 ci=[1.7295, 2.6392] wilcoxon_p=1.474e-13 p_holm=1.622e-12 -> supported
+  R09 [R]: n=24 mean=19.0058 ci=[14.7786, 23.1631] wilcoxon_p=2.687e-05 p_holm=0.0001091 -> supported
+  R10 [R]: n=91 mean=1.7581 ci=[0.8457, 2.6857] wilcoxon_p=0.0004681 p_holm=0.0009362 -> supported
+  R11 [R]: n=20 mean=6.7857 ci=[3.8776, 9.7959] wilcoxon_p=0.000773 p_holm=0.0009362 -> supported
+  T01 [T]: n=91 mean=-0.2176 ci=[-0.5644, 0.1307] wilcoxon_p=0.2328 p=1.749e-05 p_holm=3.498e-05 -> supported
+  T02 [T]: n=91 mean=-0.1045 ci=[-0.9158, 0.6769] wilcoxon_p=0.8044 p=0.0004788 p_holm=0.0004788 -> supported
+claims: C1=reported (estimation claim), C2-rep=supported, C2a=supported, C2b=supported, C3a=supported, C3b=supported, C3c=supported, C3d=supported, C4a=supported, C4b=reported (estimation claim), S1=supported, S2=supported, S3=supported, S4=supported
+verification: pass=True items=1320 failed=0 max_abs_diff=2.842170943040401e-14

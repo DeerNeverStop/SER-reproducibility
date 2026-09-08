@@ -1,0 +1,265 @@
+{
+  "schema": "ser-dual-validation-analysis-1",
+  "phase": "formal",
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "analyzed_formal_units": 480,
+  "excluded_pilot_runs": 4,
+  "draws": 24,
+  "folds_per_draw": 5,
+  "configurations": 4,
+  "aggregation": "whole-fold six-class macro recall; equal five-fold mean within draw; equal mean of 24 draws",
+  "selection": "minimum own-validation CE epoch supplied by sealed runner; maximum own-validation UAR configuration; smallest config_index on exact ties",
+  "primary": {
+    "estimate_pp": 2.7060011038339216,
+    "draws": 24,
+    "df": 23,
+    "sample_sd_pp": 2.1403504903162767,
+    "standard_error_pp": 0.4368972143325555,
+    "alternative": "two-sided",
+    "t_statistic": 6.193679005181707,
+    "p_value_two_sided": 2.5557218908321315e-06,
+    "t_ci95_pp": [
+      1.8022103564339984,
+      3.6097918512338447
+    ],
+    "t_test_defined": true,
+    "degenerate_variance_note": null,
+    "bootstrap_sensitivity": {
+      "method": "percentile bootstrap of 24 draw effects with replacement; linear quantiles",
+      "repetitions": 50000,
+      "seed": 2026090701,
+      "bit_generator": "PCG64",
+      "ci95_pp": [
+        1.8567458530996166,
+        3.526509969149773
+      ],
+      "additional_hypothesis_test": false
+    },
+    "scope": "Conditional on this fixed CREMA-D corpus, encoder, training procedure and prespecified randomization. The 24 draws are the inferential units; five folds are averaged within each draw. Neither recordings nor people are resampled. No population, cross-corpus or causal-mechanism claim is certified.",
+    "contrast": "mean_draw(mean_fold[(V_seen-T_seen)-(V_unseen-T_unseen)])"
+  },
+  "primary_hypothesis_tests": 1,
+  "descriptive_draw_summaries": {
+    "primary_seen_validation_uar_percent": {
+      "mean": 60.71180555555555,
+      "draw_sd": 2.9881993316329587,
+      "minimum": 55.208333333333336,
+      "maximum": 65.625
+    },
+    "primary_unseen_validation_uar_percent": {
+      "mean": 57.15856481481482,
+      "draw_sd": 2.3188998777349976,
+      "minimum": 52.01388888888889,
+      "maximum": 61.73611111111111
+    },
+    "primary_seen_test_uar_percent": {
+      "mean": 55.93024276622058,
+      "draw_sd": 2.3560172094373644,
+      "minimum": 51.003064702755104,
+      "maximum": 61.42235677839393
+    },
+    "primary_unseen_test_uar_percent": {
+      "mean": 55.08300312931376,
+      "draw_sd": 2.4971377718870578,
+      "minimum": 48.72173749882728,
+      "maximum": 59.395431175616935
+    },
+    "primary_seen_gap_pp": {
+      "mean": 4.781562789334978,
+      "draw_sd": 1.913280305625391,
+      "minimum": 1.629256965944269,
+      "maximum": 7.526038034938973
+    },
+    "primary_unseen_gap_pp": {
+      "mean": 2.0755616855010564,
+      "draw_sd": 1.664020002865116,
+      "minimum": -1.028423934770683,
+      "maximum": 4.757501485442667
+    },
+    "primary_delta_validation_pp": {
+      "mean": 3.5532407407407405,
+      "draw_sd": 2.5080943395255137,
+      "minimum": 0.34722222222222143,
+      "maximum": 9.444444444444445
+    },
+    "primary_delta_test_pp": {
+      "mean": 0.847239636906819,
+      "draw_sd": 1.5491374291402824,
+      "minimum": -2.378740970072242,
+      "maximum": 3.3321838584996484
+    },
+    "primary_delta_gap_pp": {
+      "mean": 2.7060011038339216,
+      "draw_sd": 2.1403504903162767,
+      "minimum": -2.8062748225286938,
+      "maximum": 7.2570403220558095
+    },
+    "primary_identity_residual_pp": {
+      "mean": 0.0,
+      "draw_sd": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "fixed_config_best_seen_validation_uar_percent": {
+      "mean": 58.822337962962955,
+      "draw_sd": 3.2773503855445076,
+      "minimum": 51.597222222222214,
+      "maximum": 64.16666666666666
+    },
+    "fixed_config_best_unseen_validation_uar_percent": {
+      "mean": 55.19965277777777,
+      "draw_sd": 2.632469985323905,
+      "minimum": 50.06944444444444,
+      "maximum": 59.791666666666664
+    },
+    "fixed_config_best_seen_test_uar_percent": {
+      "mean": 54.91756441801591,
+      "draw_sd": 2.6881333610236635,
+      "minimum": 48.80257685211246,
+      "maximum": 61.02126190361484
+    },
+    "fixed_config_best_unseen_test_uar_percent": {
+      "mean": 54.18532004187318,
+      "draw_sd": 2.8467834510954853,
+      "minimum": 48.03718297526347,
+      "maximum": 59.95549588428846
+    },
+    "fixed_config_best_seen_gap_pp": {
+      "mean": 3.9047735449470493,
+      "draw_sd": 1.9222876658037162,
+      "minimum": 0.0726694186446494,
+      "maximum": 6.823638654134011
+    },
+    "fixed_config_best_unseen_gap_pp": {
+      "mean": 1.014332735904589,
+      "draw_sd": 2.075160785495653,
+      "minimum": -2.4554958842884544,
+      "maximum": 4.502825193614673
+    },
+    "fixed_config_best_delta_validation_pp": {
+      "mean": 3.6226851851851847,
+      "draw_sd": 2.445534131661525,
+      "minimum": 0.06944444444444428,
+      "maximum": 8.472222222222225
+    },
+    "fixed_config_best_delta_test_pp": {
+      "mean": 0.7322443761427243,
+      "draw_sd": 1.09306023452431,
+      "minimum": -1.3725490196078454,
+      "maximum": 2.9890959070525627
+    },
+    "fixed_config_best_delta_gap_pp": {
+      "mean": 2.890440809042461,
+      "draw_sd": 2.424638743860161,
+      "minimum": -0.9027777777777786,
+      "maximum": 7.401960784313729
+    },
+    "fixed_config_best_identity_residual_pp": {
+      "mean": 0.0,
+      "draw_sd": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "fixed_config_last_seen_validation_uar_percent": {
+      "mean": 56.171875,
+      "draw_sd": 2.840941914427567,
+      "minimum": 49.86111111111111,
+      "maximum": 63.47222222222223
+    },
+    "fixed_config_last_unseen_validation_uar_percent": {
+      "mean": 53.333333333333336,
+      "draw_sd": 2.551469638494009,
+      "minimum": 49.513888888888886,
+      "maximum": 59.30555555555556
+    },
+    "fixed_config_last_seen_test_uar_percent": {
+      "mean": 52.84629839873648,
+      "draw_sd": 2.880510190712856,
+      "minimum": 47.153110047846894,
+      "maximum": 59.491391194177574
+    },
+    "fixed_config_last_unseen_test_uar_percent": {
+      "mean": 52.84629839873648,
+      "draw_sd": 2.880510190712856,
+      "minimum": 47.153110047846894,
+      "maximum": 59.491391194177574
+    },
+    "fixed_config_last_seen_gap_pp": {
+      "mean": 3.325576601263521,
+      "draw_sd": 1.8380076503142038,
+      "minimum": -1.1316114876486423,
+      "maximum": 6.733101135190919
+    },
+    "fixed_config_last_unseen_gap_pp": {
+      "mean": 0.48703493459685393,
+      "draw_sd": 1.6176844327533817,
+      "minimum": -2.242722598759748,
+      "maximum": 3.6802232854864427
+    },
+    "fixed_config_last_delta_validation_pp": {
+      "mean": 2.8385416666666674,
+      "draw_sd": 1.743560407189416,
+      "minimum": -0.9722222222222229,
+      "maximum": 5.20833333333334
+    },
+    "fixed_config_last_delta_test_pp": {
+      "mean": 0.0,
+      "draw_sd": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "fixed_config_last_delta_gap_pp": {
+      "mean": 2.8385416666666674,
+      "draw_sd": 1.743560407189416,
+      "minimum": -0.9722222222222229,
+      "maximum": 5.20833333333334
+    },
+    "fixed_config_last_identity_residual_pp": {
+      "mean": 0.0,
+      "draw_sd": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "selection_increment_pp": {
+      "mean": -0.13254056283274585,
+      "draw_sd": 1.9576117328925555,
+      "minimum": -3.9130664227413456,
+      "maximum": 3.484093613737582
+    }
+  },
+  "fixed_config_index": 3,
+  "fixed_config": {
+    "model": "wavlm_base_plus_ft",
+    "epochs": 15,
+    "batch_size": 16,
+    "fp16": true,
+    "early_stopping": false,
+    "crop_seconds": 3.0,
+    "eval_cap_seconds": 10.0,
+    "trainable_layers": "top4+head",
+    "lr_encoder": 5e-05,
+    "lr_head": 0.001,
+    "weight_decay": 0.01
+  },
+  "control_scope": {
+    "fixed_config_best": "fixed hyperparameters; respective own-validation checkpoint selection remains",
+    "fixed_config_last": "fixed hyperparameters and last epoch; no validation selection; identical test model",
+    "selection_increment_pp": "primary gap difference minus fixed-config last gap difference; descriptive, not an identified mediation effect"
+  },
+  "test_difference": "primary_delta_test_pp is the paired T_seen minus T_unseen difference after each rule selects its configuration/checkpoint",
+  "identity": "delta_gap = delta_validation - delta_test; fixed-config last delta_test is exactly zero",
+  "inference_scope": "Conditional on this fixed CREMA-D corpus, encoder, training procedure and prespecified randomization. The 24 draws are the inferential units; five folds are averaged within each draw. Neither recordings nor people are resampled. No population, cross-corpus or causal-mechanism claim is certified.",
+  "additional_control_hypothesis_tests": 0,
+  "no_outcome_based_stopping": true,
+  "all_prespecified_controls_reported": true,
+  "source_sha256": "5cc6fefb4c8f8eb32454f2849507b16c43e05d65aea3ce5b27f88e360a4aea1e",
+  "plan_file_sha256": "a765bad72a0c6be88040ca0dadac6848d139988714af26e738a06403ad0cb1e1",
+  "accepted_gate_file_sha256": "5cafbc5d32080f09b2bf9cb4488c5fb6b9455395b6a9ad887bd195a57bf41b68",
+  "accepted_gate_sha256": "e289bf207279829c0b2f7f7f31bfb62265aaafe08d20081230952f47f173c956",
+  "done_mapping_sha256": "ca7fb07826936f1255f927e77be39a9919450451a0b8f8c905639569d6e9c410",
+  "table_sha256": {
+    "pred_metrics.csv": "7b2a0a087c8aa48fbd52dfe606b97b2686c9d64e1fb7a9a34c07cf22b6eeb7d1",
+    "selected_episodes.csv": "e4db0a8f9f901e60b07894bb58e91ba54a06702a193856d2dd79fd97cb758568",
+    "draws.csv": "08ec548fa25457452510e11d06b816fc3552b27bba17752c5852a27658d4d897"
+  }
+}

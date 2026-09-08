@@ -1,0 +1,32 @@
+{
+  "pass_review": true,
+  "reviewer": "Root assistant, via displayed view_image outputs",
+  "not_a_claim_of_human_author_approval": true,
+  "reviewed": [
+    "Native colour curve PNG",
+    "Native PDF rendered in grayscale",
+    "English full page 4 at 100 dpi",
+    "Chinese full page 5 at 100 dpi"
+  ],
+  "findings": "Seen dashed, unseen dotted with hollow circles, and outer solid remain distinguishable. No clipping or layout displacement. All epoch markers are visible. Original 0-100 common scale retained.",
+  "unchanged_pages": "Other 11 pages are pixel-identical to previously reviewed final delivery; see scope_verification.json.",
+  "pdfs": {
+    "figures\\complete_epoch_curves.pdf": {
+      "bytes": 34392,
+      "sha256": "71bfd8f50753ae7e97669cfe4470a7116ba9f69f73a1848ee65ddd9859272755"
+    },
+    "english\\xie.pdf": {
+      "bytes": 91019,
+      "sha256": "a2d8c21b4fb593fda9b3939a92c5c4e758bab06712f86805ff72bdcb4ace0025"
+    },
+    "chinese\\explainer.pdf": {
+      "bytes": 382032,
+      "sha256": "94de4f79fde1d0871d8cefbbd117b799e22362bb62f4005a2828f5087486eb81"
+    }
+  },
+  "supporting_checks": [
+    "structural.json",
+    "figure_geometry.json",
+    "scope_verification.json"
+  ]
+}

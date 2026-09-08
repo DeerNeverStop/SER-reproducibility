@@ -1,0 +1,45 @@
+{
+  "audio_quality_file": "cremad_ecapa_audio_quality.csv",
+  "audio_quality_sha256": "d3e99ae95d5eeeb48f6c4f20a8ae8283b8b8400a00de09026cbbfa6f2f9c929d",
+  "device": "cuda",
+  "elapsed_seconds": 12.16160424426198,
+  "extraction_RTF": 0.0006431912380065605,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "identity": {
+    "batch_size": 16,
+    "corpus": "cremad",
+    "embedding": "SpeechBrain EncoderClassifier.encode_batch normalize=False; eval mode",
+    "manifest_sha256": "e43224f032d474ac5e0d1b46d82cb7580c88bb08bac87e989fc767fd8eef552b",
+    "model_id": "speechbrain/spkrec-ecapa-voxceleb",
+    "model_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "model_sha256": {
+      "classifier.ckpt": "fd9e3634fe68bd0a427c95e354c0c677374f62b3f434e45b78599950d860d535",
+      "embedding_model.ckpt": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+      "hyperparams.yaml": "6f78854fa04ba59e761437b76a2575d3aba5e5016de3e9b69f0c9a5077fb1a41",
+      "label_encoder.txt": "e13c3a167bb4112685670ee896d20e2b565af16b3a4ceeaa8689fa4d22adb8b9",
+      "mean_var_norm_emb.ckpt": "cd70225b05b37be64fc5a95e24395d804231d43f74b2e1e5a513db7b69b34c33"
+    },
+    "preprocessing": "soundfile float32; channel mean; scipy polyphase resample to 16000; no trim or loudness change",
+    "rows": 7435,
+    "schema": "ser-asv-embeddings-1",
+    "source_sha256": "e1ad418c7f14fe7a1f49baa10d2e06ffad79d2d12d52ba15efa5e63929a750a3"
+  },
+  "peak_allocated_bytes": 1154006016,
+  "peak_reserved_bytes": 3972005888,
+  "scientific_SER_scores_computed": false,
+  "sha256": "905c64d5dea9699951fa192348465fcd715d1bb3aafd67207aaff01072252db9",
+  "shape": [
+    7435,
+    192
+  ],
+  "source_audio_bytes_verified": 605390320,
+  "source_audio_seconds": 18908.224374999852,
+  "versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.16.2",
+    "soundfile": "0.13.1",
+    "speechbrain": "1.0.3",
+    "torch": "2.8.0+cu128",
+    "torchaudio": "2.8.0+cu128"
+  }
+}

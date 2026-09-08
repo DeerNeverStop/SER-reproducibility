@@ -1,0 +1,38 @@
+{
+  "built_at": "2026-08-18T01:40:45.692443+00:00",
+  "output_pdf": "E:\\科研\\ICASSP2027\\paper\\build\\icassp2027_protocol_audit_m2.pdf",
+  "output_sha256": "f77bc67486a3219da6f24030d8a8956f185535f823994d2ca5495a5af45863f1",
+  "inputs": {
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\execution_validation\\tier_summary.csv": "14c8b364dfdc2b3b650c48bfbfba106690fd69367d9d4f370c07da5e2e2a2842",
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\run_status_summary.json": "cf19c5d742c80f8be16bd41088a09ff23244e5ddff4bf29eddaf43d43df7d051",
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\verification.json": "5d6f12f9ef9783aa1cb4c384c420542ebe1150e93107786d512f446d31dc471e",
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\protocol_premium.csv": "e28298dded7c74441a300235e225aee0a0c11d4a854bca1d5289e6fe3ebd718c",
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\results\\protocol_premium\\summary\\protocol_metric_summary.csv": "14e630a47c1beba3aa737d45ca8d40487d213ccdcf813a90f7e4c249b63c3b2b",
+    "E:\\科研\\claudework\\07-ser-repro-protocol-audit\\P1_PREREGISTRATION.md": "666cfdb951220a8e712d1121821a1590bd2f40812f61fb8244f617526ebe21f2",
+    "E:\\科研\\ICASSP2027\\results\\corpora\\ravdess-mode-matched\\scoring\\d1_scoring_report.json": "aaab7a0be4feedf190d65953651c121a230fe8bd43e8d45b9f1e084c7214e142",
+    "E:\\科研\\ICASSP2027\\results\\corpora\\ravdess-mode-matched\\training\\completion_manifest_v6.json": "f3b5ce8c785cddd463b8bbd60e7cb2b9e328e91641b6e114a433030cbec9aa9d"
+  },
+  "generated": {
+    "E:\\科研\\ICASSP2027\\figures\\figure_protocol_effects.png": "e8307a07f0350617c970048c7a31fda52bf48eea2c8061a3bf5ae4601a6c6a69",
+    "E:\\科研\\ICASSP2027\\paper\\build\\paper_demo.md": "30ff482fe79f6d08cdda2f431756acef02c5b15d8177f2f4a72d8dab129d1273",
+    "E:\\科研\\ICASSP2027\\paper\\build\\main_provisional.tex": "1ec6c6f120a47b87752fc87a10c6ba5a75bf46067c7aa359b6ed0d1472b1480a",
+    "E:\\科研\\ICASSP2027\\paper\\build\\main_numbercheck.tex": "088879716a3bbdde7358d382b4ec9f53c6c5f85f483e7d8407c4234773741b4a",
+    "E:\\科研\\ICASSP2027\\paper\\build\\paper_facts_07.json": "ab1bbffb98274035c9c78aa1fe2da88b761384a9465b68166e70981cb083c46f"
+  },
+  "pdf_audit": {
+    "pages": 5,
+    "page_size_points": [
+      612,
+      792
+    ],
+    "fonts": {
+      "/AAAAAA+TimesNewRomanPS-BoldMT": true,
+      "/AAAAAA+TimesNewRomanPSMT": true,
+      "/AAAAAA+TimesNewRomanPS-ItalicMT": true,
+      "/AAAAAA+TimesNewRomanPS-BoldItalicMT": true
+    },
+    "abstract_words": 135,
+    "references_only_page_5": true
+  },
+  "scientific_scope": "P0 final 20/5/5 plus P1 controlled protocol effects plus D1 compact matched-panel diagnostic (record-66 wording); P2 and P5 excluded"
+}

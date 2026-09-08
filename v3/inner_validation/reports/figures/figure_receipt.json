@@ -1,0 +1,31 @@
+{
+  "complete_formal_gate_required": true,
+  "created_at_unix": 1788760306.7043154,
+  "figure_roles": {
+    "figure1": "Selected-rule V/T means and 24-draw primary effect",
+    "figure2": "Three prespecified analyses; draw values and means only"
+  },
+  "input_sha256": {
+    "D:\\SER-dual-validation-20260906\\analysis\\formal_gate.json": "5cafbc5d32080f09b2bf9cb4488c5fb6b9455395b6a9ad887bd195a57bf41b68",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\draws.csv": "08ec548fa25457452510e11d06b816fc3552b27bba17752c5852a27658d4d897",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\pred_metrics.csv": "7b2a0a087c8aa48fbd52dfe606b97b2686c9d64e1fb7a9a34c07cf22b6eeb7d1",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\results.json": "95b0cf199c9c77361b2956b12eb275e0d45c5f6227867324086dd995bc3028a9",
+    "D:\\SER-dual-validation-20260906\\analysis\\scores\\selected_episodes.csv": "e4db0a8f9f901e60b07894bb58e91ba54a06702a193856d2dd79fd97cb758568",
+    "D:\\SER-dual-validation-20260906\\inputs\\plan.json": "a765bad72a0c6be88040ca0dadac6848d139988714af26e738a06403ad0cb1e1"
+  },
+  "new_inferential_intervals": 0,
+  "new_statistical_tests": 0,
+  "output_sha256": {
+    "figure1_validation_optimism.png": "a458f0bc79eeb66253d5ed811b9a42b193f1e288f83671d872443f905fdc1b46",
+    "figure1_validation_optimism.svg": "4ddca328f1ed96e894bfabab669bf4d3bc6a22b8d0a2eb177a5e5604bec6d8e5",
+    "figure2_prespecified_controls.png": "ef3601357d648d01250f46997d05249f8c7c14df7ee3ee2e13f2d646a0d195d7",
+    "figure2_prespecified_controls.svg": "47718c8a390604bb6f4ab8aee66c197cc25d9aefa81ffa41ca6d02b84b0652eb",
+    "figure_notes_zh.md": "1c43dae79580dbc4f909fce0f10aad7d632d8ca5a8d24c058b090ae624521a92"
+  },
+  "plan_sha256": "570cae10577e13bc17a5838d872251beeb52d8b216886d19a8dcb6418a7f5bbd",
+  "primary_interval": "Recorded prespecified 95% t CI only; none for descriptive controls",
+  "schema": "ser-dual-validation-figures-1",
+  "scope": "Whole-fold six-class UAR; five folds averaged within each of 24 draws. Inference is conditional on the fixed corpus and prespecified procedure.",
+  "source_sha256": "07939c2101a882633fcffdcea7e2320c5aa4809f3fe427bc53f07f29db29887d",
+  "synthetic_demo": false
+}

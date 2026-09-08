@@ -1,0 +1,280 @@
+{
+  "parameters": {
+    "date": "2026-09-06",
+    "status": "planning scenarios; not measured new runtimes",
+    "gpu": "single RTX 5090 sequential jobs",
+    "hourly_rate_USD": 0.99,
+    "rate_basis": "Runpod Secure Cloud on-demand catalog snapshot",
+    "platform_comparison": {
+      "autodl_5090_CNY_h": 2.78,
+      "USD_to_CNY_budget_assumption": 6.7
+    },
+    "E4": {
+      "train_language_conditions": 3,
+      "speaker_folds": 5,
+      "draws": 3,
+      "CNN_seeds": 2,
+      "Ridge_seeds": 1,
+      "status": "optional language extension; not GPU-priced"
+    },
+    "retry_slowdown_multiplier": 1.5,
+    "E0_E1_E2pilot_allocated_GPU_hours": [
+      3,
+      6
+    ],
+    "E2": {
+      "pilot_CNN": 9,
+      "pilot_Ridge": 9,
+      "core_CNN": 270,
+      "core_Ridge": 270,
+      "optional_FT": 180,
+      "CNN_seconds_scenario": [
+        12,
+        30
+      ],
+      "FT_seconds_scenario": [
+        75,
+        180
+      ],
+      "feature_GPU_hours": [
+        0.5,
+        1.5
+      ],
+      "setup_transfer_GPU_hours": [
+        2,
+        4
+      ]
+    },
+    "E3": {
+      "arms": 6,
+      "synthetic_arms": 3,
+      "folds": 5,
+      "draws": 3,
+      "accepted_clips_per_arm_split": 576,
+      "seconds_per_clip_assumed": 5,
+      "acceptance_probability_assumed": 0.7,
+      "one_time_anchor_candidates": 96,
+      "anchor_emotions": 6,
+      "anchor_seconds_assumed": 5,
+      "generation_RTF_scenarios": [
+        0.3,
+        1,
+        3,
+        10
+      ],
+      "QA_RTF_all_attempts_assumed": 0.05,
+      "feature_RTF_accepted_training_audio_assumed": 0.05,
+      "conventional_aug_audio_hours_assumed": 12,
+      "CNN": 90,
+      "Ridge": 90,
+      "optional_FT": 60,
+      "CNN_seconds_assumed": 40,
+      "FT_seconds_assumed": 150,
+      "setup_transfer_GPU_hours": 4,
+      "technical_benchmark_attempted_clips": 100,
+      "benchmark_GPU_hour_cap_proposal": 2,
+      "pilot_accepted_clips_per_synthetic_arm": 120,
+      "pilot_synthesis_splits": 1,
+      "pilot_CNN": 18,
+      "pilot_Ridge": 18,
+      "pilot_rating_clips": 480,
+      "formal_rating_clips": 1440,
+      "raters": 3,
+      "rating_seconds_assumed": 30
+    },
+    "G": {
+      "strategies": 2,
+      "exposures": 2,
+      "blocks": 5,
+      "draws": 3,
+      "models": 2,
+      "distinct_query_speakers": 60
+    },
+    "storage": {
+      "network_volume_GB": 200,
+      "USD_per_GB_month": 0.07,
+      "days_per_month_assumed": 30
+    }
+  },
+  "E2": {
+    "core_fits": 540,
+    "with_FT_fits": 720,
+    "core_GPU_hours": [
+      4.1,
+      9.625
+    ],
+    "with_FT_GPU_hours": [
+      9.725000000000001,
+      23.125
+    ],
+    "with_FT_GPU_USD": [
+      9.62775,
+      22.89375
+    ],
+    "E0_E1_pilot_plus_core_GPU_hours": [
+      7.1,
+      15.625
+    ],
+    "E0_E1_pilot_plus_full_GPU_hours": [
+      12.725000000000001,
+      29.125
+    ]
+  },
+  "E3": {
+    "accepted_unique_clips_no_cross_split_reuse": 25920,
+    "accepted_audio_hours": 36.0,
+    "one_time_accepted_anchor_audio_hours": 0.8,
+    "expected_attempted_audio_hours": 52.57142857142857,
+    "core_fits": 180,
+    "with_optional_FT_fits": 240,
+    "scenarios": [
+      {
+        "assumed_RTF": 0.3,
+        "generation_GPU_h": 15.77142857142857,
+        "QA_GPU_h": 2.6285714285714286,
+        "CNN_and_optional_FT_GPU_h": 3.5,
+        "new_feature_GPU_h": 2.4000000000000004,
+        "total_GPU_h": 40.449999999999996,
+        "GPU_USD": 40.0455,
+        "continuous_single_GPU_days": 1.6854166666666666
+      },
+      {
+        "assumed_RTF": 1,
+        "generation_GPU_h": 52.57142857142857,
+        "QA_GPU_h": 2.6285714285714286,
+        "CNN_and_optional_FT_GPU_h": 3.5,
+        "new_feature_GPU_h": 2.4000000000000004,
+        "total_GPU_h": 95.64999999999999,
+        "GPU_USD": 94.69349999999999,
+        "continuous_single_GPU_days": 3.985416666666666
+      },
+      {
+        "assumed_RTF": 3,
+        "generation_GPU_h": 157.71428571428572,
+        "QA_GPU_h": 2.6285714285714286,
+        "CNN_and_optional_FT_GPU_h": 3.5,
+        "new_feature_GPU_h": 2.4000000000000004,
+        "total_GPU_h": 253.36428571428576,
+        "GPU_USD": 250.8306428571429,
+        "continuous_single_GPU_days": 10.55684523809524
+      },
+      {
+        "assumed_RTF": 10,
+        "generation_GPU_h": 525.7142857142857,
+        "QA_GPU_h": 2.6285714285714286,
+        "CNN_and_optional_FT_GPU_h": 3.5,
+        "new_feature_GPU_h": 2.4000000000000004,
+        "total_GPU_h": 805.3642857142855,
+        "GPU_USD": 797.3106428571426,
+        "continuous_single_GPU_days": 33.55684523809523
+      }
+    ],
+    "pilot_synthetic_clips": 360,
+    "pilot_rating_person_hours_raw": 12.0,
+    "formal_rating_person_hours_raw": 36.0
+  },
+  "G": {
+    "all_fits": 120,
+    "CNN": 60,
+    "Ridge": 60,
+    "allocated_GPU_hours": [
+      1,
+      3
+    ]
+  },
+  "storage_USD": {
+    "30_days": 14.000000000000002,
+    "7_days": 3.266666666666667
+  },
+  "precision_sensitivity": [
+    {
+      "n_speakers": 20,
+      "paired_SD_assumed_pp": 5,
+      "approx_80pct_MDE_pp": 3.1322674962295856,
+      "approx_CI_halfwidth_pp": 2.1913063514414532
+    },
+    {
+      "n_speakers": 20,
+      "paired_SD_assumed_pp": 10,
+      "approx_80pct_MDE_pp": 6.264534992459171,
+      "approx_CI_halfwidth_pp": 4.3826127028829065
+    },
+    {
+      "n_speakers": 24,
+      "paired_SD_assumed_pp": 5,
+      "approx_80pct_MDE_pp": 2.85935593970862,
+      "approx_CI_halfwidth_pp": 2.0003798651480453
+    },
+    {
+      "n_speakers": 24,
+      "paired_SD_assumed_pp": 10,
+      "approx_80pct_MDE_pp": 5.71871187941724,
+      "approx_CI_halfwidth_pp": 4.000759730296091
+    },
+    {
+      "n_speakers": 60,
+      "paired_SD_assumed_pp": 5,
+      "approx_80pct_MDE_pp": 1.8084154821220664,
+      "approx_CI_halfwidth_pp": 1.2651513118816597
+    },
+    {
+      "n_speakers": 60,
+      "paired_SD_assumed_pp": 10,
+      "approx_80pct_MDE_pp": 3.6168309642441328,
+      "approx_CI_halfwidth_pp": 2.5303026237633195
+    },
+    {
+      "n_speakers": 91,
+      "paired_SD_assumed_pp": 5,
+      "approx_80pct_MDE_pp": 1.4684296514660464,
+      "approx_CI_halfwidth_pp": 1.0273002627572052
+    },
+    {
+      "n_speakers": 91,
+      "paired_SD_assumed_pp": 10,
+      "approx_80pct_MDE_pp": 2.936859302932093,
+      "approx_CI_halfwidth_pp": 2.0546005255144104
+    }
+  ],
+  "E4": {
+    "data_panels": 45,
+    "Ridge_fits": 45,
+    "CNN_fits": 90,
+    "total_fits": 135,
+    "GPU_hours": null
+  },
+  "AutoDL": {
+    "condition": "same RTX5090 task time assumed; actual throughput unmeasured",
+    "E0_E1_E2_full_CNY": [
+      35.3755,
+      80.9675
+    ],
+    "E3_scenarios": [
+      {
+        "assumed_RTF": 0.3,
+        "GPU_CNY": 112.45099999999998
+      },
+      {
+        "assumed_RTF": 1,
+        "GPU_CNY": 265.907
+      },
+      {
+        "assumed_RTF": 3,
+        "GPU_CNY": 704.3527142857143
+      },
+      {
+        "assumed_RTF": 10,
+        "GPU_CNY": 2238.9127142857137
+      }
+    ]
+  },
+  "warnings": [
+    "RTF and acceptance rate are unknown. These are arithmetic scenarios, not runtime predictions.",
+    "FT75-180s for E2 is a planning assumption, not a matched historical benchmark.",
+    "QA RTF is charged on ALL attempted audio including rejected generations.",
+    "New WavLM features budget covers 36h accepted synthetic and 12h conventional augmentation; assumed feature RTF .05, not benchmarked.",
+    "Same GPU type does not ensure equal throughput; benchmark host and pipeline first.",
+    "Independent-speaker normal approximation is not established power for overlapping CV models.",
+    "Excluded: labor, dataset fees, taxes, local CPU time, language collection and development delays."
+  ]
+}

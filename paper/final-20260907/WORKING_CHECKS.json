@@ -1,0 +1,59 @@
+{
+  "purpose": "WORKING_DRAFT_ONLY; formal384 science and final editorial decision pending",
+  "source_sha256": {
+    "paper/final-20260907/english/main.tex": "fbee80ea7105161e4549fb679664fa93aaaf2c14b1bf77fe30f4a8a33f057588",
+    "paper/final-20260907/english/spconf.sty": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86",
+    "paper/final-20260907/chinese/中文解读.md": "c6f5fa2ef4a50edc2d18953a604a3ba56122335f5217c167aad7c32cd561054f",
+    "paper/final-20260907/chinese/build_chinese.py": "9febbebb088f3de97db241beae6310c54f2114a80fd52627cff5236b37a87837",
+    "paper/final-20260907/tools/check_pdfs.py": "e118f917d1902cb60ebb8c4e000afd0755dae5efd59cf0cbefa5cc5859491514"
+  },
+  "english": {
+    "path": "D:/SER-final-program-20260907/paper_layout_checks/revision_v3/english/main.pdf",
+    "sha256": "a771fa4ab67a882b12b527710c652ff1bafdce428172a9f399bb39adbe818e55",
+    "pages": 5,
+    "technical_pages": 4,
+    "last_page_references_only": true,
+    "visual_pages_checked_by_root": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "chinese": {
+    "path": "D:/SER-final-program-20260907/paper_layout_checks/revision_v5/chinese.pdf",
+    "sha256": "2e3b3e2ead491bb7e50310dc28e66d1fcf35b3d5d241725938c25dbeec9e016a",
+    "pages": 11,
+    "initial_pages_checked_by_reviewer": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "current_render_pages_1_to_8_byte_identical_to_reviewed_version": true,
+    "changed_pages_checked_by_root": [
+      9,
+      10,
+      11
+    ],
+    "references_start_page": 10,
+    "reference_entries_not_split": true,
+    "header_missing_claim": "Withdrawn visual-review mistake; same original PNG and all-page PDF text confirmed headers/date/footers; decoration code unchanged"
+  },
+  "structural_qa": {
+    "path": "D:/SER-final-program-20260907/paper_layout_checks/revision_v5/structural_qa.json",
+    "sha256": "bd56a5b3bb32fc5ef669e5f914faf6ba526a10a0001f591113576fc3ff16b850",
+    "machine_checks_pass": true
+  },
+  "observed_layout_issues_remaining": [],
+  "final_deliverable": false,
+  "future_scientific_edits_require_fresh_build_and_qa": true
+}

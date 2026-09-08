@@ -1,0 +1,908 @@
+{
+  "schema": "ser-paper-pdf-qa-1",
+  "created_at": "2026-09-06T04:58:54.420182+00:00",
+  "visual_review_performed_by_this_script": false,
+  "pdfs": [
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\output\\pdf\\xie.pdf",
+      "kind": "english",
+      "checks": {
+        "size_below_5MB": {
+          "pass": true,
+          "maximum_exclusive_bytes": 5000000
+        },
+        "unencrypted": {
+          "pass": true
+        },
+        "all_fonts_embedded": {
+          "pass": true
+        },
+        "no_type3_fonts": {
+          "pass": true
+        },
+        "no_nonpainting_text_render_modes_detected": {
+          "pass": true,
+          "occurrences": [],
+          "limitation": "Modes 3 and 7 checked; transparency/occlusion are not exhaustively tested"
+        },
+        "pdf_resource_inspection_succeeded": {
+          "pass": true,
+          "errors": []
+        },
+        "at_most_five_pages": {
+          "pass": true,
+          "maximum": 5
+        },
+        "all_pages_US_letter": {
+          "pass": true
+        },
+        "expected_author": {
+          "pass": true,
+          "expected": "Tian Xie",
+          "panel_text": "SPEAKER OVERLAP IN SPEECH EMOTION RECOGNITION:\nOUTER- AND INNER-SPLIT PROTOCOL EFFECTS\nTian Xie\nUniversity of Toronto\ntianjack.xie@mail.utoronto.ca\nABSTRACT"
+        },
+        "expected_email": {
+          "pass": true,
+          "expected": "tianjack.xie@mail.utoronto.ca"
+        },
+        "expected_affiliation": {
+          "pass": true,
+          "expected": "University of Toronto"
+        },
+        "abstract_100_to_150_words": {
+          "pass": true,
+          "word_count": 142,
+          "method": "whitespace tokens containing letters/digits, after line-end dehyphenation",
+          "extracted_abstract": "Speaker-overlapping evaluation can obscure whether speech emotion recognition generalizes to unseen speakers. We combine a prespecified multi-corpus experiment with a preexecution-frozen test of validation optimism. The original program crosses random and speaker-grouped outer test and inner validation splits, compares matched-size exposure conditions, and evaluates partial fine-tuning. Across three fromscratch models, the random-versus-grouped pipeline contrast is 18.24 UAR points on RAVDESS, 2.56 on CREMA-D, and 7.21 on a repetition-clean SUBESCO panel. Both boundary contrasts contribute; matched-size comparisons also implicate prompt and cross-prompt speaker overlap. The new CREMA-D experiment completes 24 prespecified draws and 1,920 fits. With an identical speaker-exclusive outer test, random inner validation increases validation optimism by 1.419 points (95% confidence interval 0.901–1.937). This does not establish a corresponding loss in outer-test performance. We distinguish the two studies’ inferential units, preserve their audit trails, and bound the conclusions to the specified pipelines.",
+          "region": [
+            52.425196850393704,
+            231.7513612,
+            300.20472440944883,
+            483.08135120000014
+          ]
+        },
+        "page5_references_only_heuristic": {
+          "pass": true,
+          "first_left_column_line": "8. REFERENCES",
+          "citation_labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "forbidden_nonreference_headings": [],
+          "limitation": "Column-order heading/citation checks cannot prove every line is bibliographic content"
+        },
+        "no_pending_author_review_placeholders": {
+          "pass": true,
+          "matches": []
+        },
+        "no_text_outside_physical_pages": {
+          "pass": true,
+          "count": 0,
+          "examples": []
+        },
+        "text_inside_spconf_layout_box": {
+          "pass": true,
+          "bounds_pt": [
+            54.425196850393704,
+            72,
+            558.992125984252,
+            721.1338582677166
+          ],
+          "tolerance_pt": 2.0,
+          "vertical_rule": "Glyph top must fit; final baseline must fit textheight; font descenders may extend below that baseline",
+          "count": 0,
+          "examples": []
+        },
+        "no_printed_footer_page_numbers_heuristic": {
+          "pass": true,
+          "candidates": [],
+          "limitation": "Checks standalone numeral/page labels only in the bottom 45pt strip"
+        },
+        "input_unchanged_during_inspection": {
+          "pass": true
+        }
+      },
+      "manual_review": [
+        "Root must inspect every rendered page; this report is not visual approval.",
+        "Visually confirm all page 5 content is references; automatic checks are heuristic.",
+        "Confirm the responsibility statement is truthful; text matching cannot certify author review or consent.",
+        "Inspect gutter-crossing words: full-width titles/tables/figures may be legitimate; do not treat candidates as automatic violations."
+      ],
+      "sha256": "59f7932897bfd3723cfd5cd43017ea44956cb847984f88dcc478f0bcb1f1efef",
+      "size_bytes": 58633,
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1",
+          "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F3",
+          "name": "/TQTHRL+NimbusRomNo9L-MediItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F4",
+          "name": "/YEUUOC+NewTXMI",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F6",
+          "name": "/AKHCZK+NewTXMI7",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F7",
+          "name": "/VDVGTR+txsys",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F9",
+          "name": "/CAFSZL+txmiaX",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F11",
+          "name": "/DDIEWW+TeXGyreTermesX-Regular",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F4",
+          "name": "/YEUUOC+NewTXMI",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F11",
+          "name": "/DDIEWW+TeXGyreTermesX-Regular",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F7",
+          "name": "/VDVGTR+txsys",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F9",
+          "name": "/CAFSZL+txmiaX",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F6",
+          "name": "/AKHCZK+NewTXMI7",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F12",
+          "name": "/FKPJSN+txexs",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F0",
+          "name": "/IHAIZV+NimbusRomNo9L-Medi",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F2",
+          "name": "/IXFAWU+NimbusRomNo9L-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1",
+          "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F13",
+          "name": "/PVTTLK+NimbusMonL-Regu",
+          "subtype": "/Type1",
+          "embedded": true,
+          "type3": false
+        }
+      ],
+      "page_count": 5,
+      "page4_author_responsibility_lines": [
+        "bles. These systems are not authors; the named human author",
+        "is responsible for reviewing the evidence and approving sub-"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            96.369,
+            558.998,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "9.96": 3578,
+            "11.96": 131
+          }
+        },
+        {
+          "page": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            74.162,
+            558.998,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "7.27": 18,
+            "9.96": 4518
+          }
+        },
+        {
+          "page": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            80.907,
+            559.001,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "7.27": 50,
+            "8.97": 404,
+            "9.96": 3501
+          }
+        },
+        {
+          "page": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            74.042,
+            558.998,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "9.96": 3393
+          }
+        },
+        {
+          "page": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_bbox": [
+            54.425,
+            74.042,
+            556.039,
+            723.296
+          ],
+          "font_size_character_counts": {
+            "9.96": 2371
+          }
+        }
+      ],
+      "gutter_crossing_word_candidates": [
+        {
+          "page": 3,
+          "text": "whole-speaker",
+          "x0": 261.886,
+          "top": 81.026,
+          "x1": 319.888,
+          "bottom": 90.989
+        },
+        {
+          "page": 3,
+          "text": "All",
+          "x0": 298.161,
+          "top": 92.981,
+          "x1": 310.893,
+          "bottom": 102.944
+        },
+        {
+          "page": 3,
+          "text": "Scratch",
+          "x0": 306.174,
+          "top": 120.126,
+          "x1": 333.064,
+          "bottom": 129.092
+        },
+        {
+          "page": 3,
+          "text": "12.16",
+          "x0": 291.971,
+          "top": 136.087,
+          "x1": 312.145,
+          "bottom": 145.053
+        },
+        {
+          "page": 3,
+          "text": "1.16",
+          "x0": 305.421,
+          "top": 147.046,
+          "x1": 321.112,
+          "bottom": 156.012
+        },
+        {
+          "page": 3,
+          "text": "3.98",
+          "x0": 305.421,
+          "top": 158.005,
+          "x1": 321.112,
+          "bottom": 166.971
+        }
+      ],
+      "failed_checks": [],
+      "status": "machine_checks_pass_manual_review_required"
+    },
+    {
+      "path": "C:\\Users\\jock8\\Documents\\ChatGPT\\论文\\output\\pdf\\SER_中文解读.pdf",
+      "kind": "chinese",
+      "checks": {
+        "size_below_5MB": {
+          "pass": true,
+          "maximum_exclusive_bytes": 5000000
+        },
+        "unencrypted": {
+          "pass": true
+        },
+        "all_fonts_embedded": {
+          "pass": true
+        },
+        "no_type3_fonts": {
+          "pass": true
+        },
+        "no_nonpainting_text_render_modes_detected": {
+          "pass": true,
+          "occurrences": [],
+          "limitation": "Modes 3 and 7 checked; transparency/occlusion are not exhaustively tested"
+        },
+        "pdf_resource_inspection_succeeded": {
+          "pass": true,
+          "errors": []
+        },
+        "no_text_outside_physical_pages": {
+          "pass": true,
+          "count": 0,
+          "examples": []
+        },
+        "input_unchanged_during_inspection": {
+          "pass": true
+        }
+      },
+      "manual_review": [
+        "Root must inspect every rendered page; this report is not visual approval."
+      ],
+      "sha256": "0e8c8d1bc37db20ddebe510cf1453c0d7e48d8b2e8620f760aef17212d989861",
+      "size_bytes": 203354,
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 1,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 2,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 3,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 4,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 5,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 6,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 7,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+0",
+          "name": "/AAAAAA+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+1",
+          "name": "/AAAAAB+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F1+2",
+          "name": "/AAAAAC+SimSun-0",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        },
+        {
+          "page": 8,
+          "resource": "page//F2+0",
+          "name": "/AAAAAA+SimHei",
+          "subtype": "/TrueType",
+          "embedded": true,
+          "type3": false
+        }
+      ],
+      "page_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            548.5,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "10.0": 71,
+            "10.5": 111,
+            "11.5": 819,
+            "16.0": 18,
+            "21.0": 33
+          }
+        },
+        {
+          "page": 2,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            548.5,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 855,
+            "12.5": 37,
+            "16.0": 5
+          }
+        },
+        {
+          "page": 3,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 17,
+            "9.7": 48,
+            "11.5": 821,
+            "12.0": 21,
+            "12.5": 19
+          }
+        },
+        {
+          "page": 4,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            548.5,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 53,
+            "9.7": 219,
+            "11.5": 744,
+            "12.5": 26,
+            "16.0": 6
+          }
+        },
+        {
+          "page": 5,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 58,
+            "9.7": 388,
+            "11.5": 415,
+            "12.5": 39
+          }
+        },
+        {
+          "page": 6,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 1122,
+            "12.5": 37,
+            "16.0": 13
+          }
+        },
+        {
+          "page": 7,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "9.5": 4,
+            "9.7": 161,
+            "11.5": 823,
+            "16.0": 11
+          }
+        },
+        {
+          "page": 8,
+          "width_pt": 595.2756,
+          "height_pt": 841.8898,
+          "text_bbox": [
+            54.0,
+            25.125,
+            541.276,
+            819.015
+          ],
+          "font_size_character_counts": {
+            "8.0": 49,
+            "11.5": 792,
+            "16.0": 13
+          }
+        }
+      ],
+      "gutter_crossing_word_candidates": [],
+      "failed_checks": [],
+      "status": "machine_checks_pass_manual_review_required"
+    }
+  ],
+  "machine_checks_pass": true
+}

@@ -1,0 +1,3 @@
+# Python >=3.10. This lightweight draw-table replay does not require PyTorch.
+# Validated with SciPy 1.18.0; NumPy is installed transitively by SciPy.
+scipy>=1.10,<2
