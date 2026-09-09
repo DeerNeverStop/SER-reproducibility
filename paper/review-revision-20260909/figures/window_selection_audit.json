@@ -1,0 +1,203 @@
+{
+  "inputs": {
+    "docs/autodl-supplement-20260908/results/results.json": {
+      "bytes": 58988,
+      "sha256": "bf6e41c9ef39465c566da737add9e2cf0c2b4e707e751fa42f3fe2991131630f"
+    },
+    "docs/autodl-supplement-20260908/results/curves.csv": {
+      "bytes": 3255145,
+      "sha256": "89d416c77a3a113b62dc3c017b9d0bd0e1445c2548850ec49a3cbdf5de832f15"
+    },
+    "docs/autodl-supplement-20260908/results/selected_epochs.csv": {
+      "bytes": 780432,
+      "sha256": "67dbe02aa7180b608d90025d25614a029f2d29a1e1939f711be117382a4970ef"
+    },
+    "docs/autodl-supplement-20260908/results/units.csv": {
+      "bytes": 443276,
+      "sha256": "1aafd0197366e290cd5242bb56dcc61f787eefc77834b9f30d8c294043c9905a"
+    },
+    "docs/autodl-supplement-20260908/results/draws.csv": {
+      "bytes": 139966,
+      "sha256": "d22ef6d439a07ba094a2d32f2163c2283d52102cb338bacad83896ede1da8ecb"
+    }
+  },
+  "result_sha256": "9d6a84ccfb3a001497039b2eca4a124916ab0c04361d7a2b4c7bbf406e7872af",
+  "plan_sha256": "a8df7f9e0137353baa2218d449558f7977fbe9830f4e89df3856b36e450550ba",
+  "counts": {
+    "source_units": 720,
+    "source_curve_rows": 18000,
+    "long_trajectories_used": 240,
+    "curve_rows_used": 10800,
+    "draw_rows_output": 4320,
+    "summary_rows_output": 180
+  },
+  "endpoint_checks": {
+    "selected_epochs_checked": 1920,
+    "selected_outer_values_checked": 1920,
+    "unit_differences_checked": 960,
+    "draw_values_checked": 192,
+    "summary_values_checked": 24,
+    "max_numeric_abs_error_pp": 8.881784197001252e-15
+  },
+  "endpoint_values": [
+    {
+      "corpus": "subesco",
+      "model": "wavlm_base_plus",
+      "window": 15,
+      "criterion": "CE",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 2.3363095238095237,
+      "sd_draw_pp": 2.678787085866458,
+      "se_pp": 0.5468051241608275,
+      "pointwise_95_low_pp": 1.2051569422980952,
+      "pointwise_95_high_pp": 3.4674621053209522
+    },
+    {
+      "corpus": "subesco",
+      "model": "wavlm_base_plus",
+      "window": 15,
+      "criterion": "UAR",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 0.47619047619047583,
+      "sd_draw_pp": 2.515847435172879,
+      "se_pp": 0.5135452072386112,
+      "pointwise_95_low_pp": -0.5861587250579048,
+      "pointwise_95_high_pp": 1.5385396774388564
+    },
+    {
+      "corpus": "subesco",
+      "model": "wavlm_base_plus",
+      "window": 45,
+      "criterion": "CE",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 2.619047619047619,
+      "sd_draw_pp": 2.8291851604288003,
+      "se_pp": 0.5775050025753939,
+      "pointwise_95_low_pp": 1.4243875004149582,
+      "pointwise_95_high_pp": 3.81370773768028
+    },
+    {
+      "corpus": "subesco",
+      "model": "wavlm_base_plus",
+      "window": 45,
+      "criterion": "UAR",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 0.4910714285714284,
+      "sd_draw_pp": 2.3497732054658194,
+      "se_pp": 0.4796454470546062,
+      "pointwise_95_low_pp": -0.5011507757809296,
+      "pointwise_95_high_pp": 1.4832936329237865
+    },
+    {
+      "corpus": "ravdess",
+      "model": "wavlm_base_plus",
+      "window": 15,
+      "criterion": "CE",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 0.2170138888888888,
+      "sd_draw_pp": 1.198326830641552,
+      "se_pp": 0.24460744001319637,
+      "pointwise_95_low_pp": -0.28899515345953075,
+      "pointwise_95_high_pp": 0.7230229312373084
+    },
+    {
+      "corpus": "ravdess",
+      "model": "wavlm_base_plus",
+      "window": 15,
+      "criterion": "UAR",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 0.7031250000000001,
+      "sd_draw_pp": 2.125313009768856,
+      "se_pp": 0.4338277014693715,
+      "pointwise_95_low_pp": -0.19431597625521835,
+      "pointwise_95_high_pp": 1.6005659762552185
+    },
+    {
+      "corpus": "ravdess",
+      "model": "wavlm_base_plus",
+      "window": 45,
+      "criterion": "CE",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 2.473958333333333,
+      "sd_draw_pp": 1.9919377241116578,
+      "se_pp": 0.4066025852895312,
+      "pointwise_95_low_pp": 1.632836800858084,
+      "pointwise_95_high_pp": 3.315079865808582
+    },
+    {
+      "corpus": "ravdess",
+      "model": "wavlm_base_plus",
+      "window": 45,
+      "criterion": "UAR",
+      "n_draws": 24,
+      "folds_per_draw": 5,
+      "df": 23,
+      "mean_pp": 1.1111111111111112,
+      "sd_draw_pp": 2.233422108697764,
+      "se_pp": 0.4558953788800292,
+      "pointwise_95_low_pp": 0.16801966603606322,
+      "pointwise_95_high_pp": 2.054202556186159
+    }
+  ],
+  "t_critical_df23": 2.0686576104190486,
+  "layout": {
+    "width_mm": 178.0,
+    "height_mm": 58.0,
+    "native_minimum_text_pt": 9.2,
+    "visible_text_artists_checked": 22,
+    "native_text_inside_canvas": true,
+    "pdf_fonttype": 42,
+    "png_dpi": 300,
+    "save_bbox": "native canvas; no tight cropping"
+  },
+  "schema": "ser-posthoc-window-figure-1",
+  "created_at_utc": "2026-09-09T13:12:44.787242+00:00",
+  "script": {
+    "path": "paper/review-revision-20260909/scripts/make_window_figure.py",
+    "bytes": 15537,
+    "sha256": "6de9ec4fc7645674049208406a0546e9abf7b728f885e582be83e92092d5b454"
+  },
+  "analysis_scope": "Post hoc nested candidate windows on archived WavLM 45-epoch trajectories; not new training or a new confirmatory test family.",
+  "aggregation": "Within each corpus/window/criterion, mean five paired fold differences per draw, then mean 24 draws.",
+  "interval_scope": "Pointwise mean +/- t(.975,23) * SD(24 draw means)/sqrt(24); conditional on fixed corpus, panels and program. Not simultaneous bands.",
+  "selection": "Minimize own validation CE or maximize own validation UAR over epochs 1..W; earliest ties. Outer UAR is used only after selection.",
+  "csv_scope": "Archived full-precision floating serialization; original scorer uses Fraction UAR. All W15/45 choices and values checked against original tables.",
+  "runtime": {
+    "python": "3.13.9",
+    "matplotlib": "3.11.1",
+    "scipy": "1.18.0"
+  },
+  "outputs": {
+    "window_selection.pdf": {
+      "bytes": 20685,
+      "sha256": "c35f78f7c294803c9d72f64856beb515d7eea5c0dd75461ee40204052223d53a"
+    },
+    "window_selection.png": {
+      "bytes": 143198,
+      "sha256": "cf6c6de4d5bcd2b80c61bed480c6c33fd546fb6dcf667bab0c12da5c90bb6f66"
+    },
+    "window_selection_draws.csv": {
+      "bytes": 216249,
+      "sha256": "690d4c5652a9fa18e3f7032cacbe41964091c4af85b823c6fb95c7d9a77f7355"
+    },
+    "window_selection_summary.csv": {
+      "bytes": 23586,
+      "sha256": "eff3f8ac9da576cf0d02be03b9edfd5f547ce01e3df60af881bcd3d5ea00e599"
+    }
+  },
+  "audit_sha256": "8d3cac5056d4bd137d81657deb10c6be6a454db0f12aa28ef949456b9b07833b"
+}

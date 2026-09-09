@@ -1,0 +1,58 @@
+{
+  "schema": "ser-manuscript-build-20260909-1",
+  "pages": 5,
+  "technical_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "declarations_and_references_pages": [
+    5
+  ],
+  "compiler": "Tectonic 0.17.0",
+  "files": {
+    "english/main.tex": {
+      "bytes": 23392,
+      "sha256": "043ebfaddb925910b74005fff77b61192d50b5d798931e09fa2512fff6b957a7"
+    },
+    "english/xie.pdf": {
+      "bytes": 80191,
+      "sha256": "ac05ccf1c192e61db85cf2ebb594730be4508d166db4bf4122bbf2451326d056"
+    },
+    "english/spconf.sty": {
+      "bytes": 8798,
+      "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86"
+    },
+    "figures/window_selection.pdf": {
+      "bytes": 20685,
+      "sha256": "c35f78f7c294803c9d72f64856beb515d7eea5c0dd75461ee40204052223d53a"
+    },
+    "qa/MACHINE_CHECKS.json": {
+      "bytes": 11656,
+      "sha256": "d3422305d8114d4c3dc6702523ec2b300d7b50b4d8281d42ecd00380d330614c"
+    }
+  },
+  "compiler_log_sha256": "d3bc4e65c1570363ce6d6fca0daf17633b466b28fdeb99179fe7b932b3632042",
+  "overfull_boxes": false,
+  "underfull_boxes": "Present; final pages visually inspected. No clipping or overlap observed.",
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "method": "Final PDF rendered by Poppler at scale-to 1600; root inspected all five pages after the final source edit.",
+    "pdf_sha256": "ac05ccf1c192e61db85cf2ebb594730be4508d166db4bf4122bbf2451326d056",
+    "render_sha256": {
+      "page-1.png": "43c386861aee4101a137bff89b44405e72203ae82f719b5c5e66c2b883f9eb25",
+      "page-2.png": "05d252cf886940dc74cfe61d994d92411d4aa719ea41084cf43551a1041af539",
+      "page-3.png": "ac0f323a9ae1ff2a141ca8d31d5bdd97468e587facfd0cc559f3e403e654b829",
+      "page-4.png": "ef91fc564b8d1077a861583bc6bebbf664e9f249f9671883dad7ca59797c13aa",
+      "page-5.png": "df42c746c1ecead6d00dfedef4ab1536b8458f0d5a3a546e93039002610cb749"
+    }
+  },
+  "note": "The official style is recorded for build provenance but is not redistributed in the public repository. Submission and public-link availability are outside these layout checks."
+}

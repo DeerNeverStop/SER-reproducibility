@@ -1,0 +1,36 @@
+{
+  "schema": "ser-window-figure-render-qa-1",
+  "pdf": {
+    "bytes": 20685,
+    "sha256": "c35f78f7c294803c9d72f64856beb515d7eea5c0dd75461ee40204052223d53a"
+  },
+  "pages": 1,
+  "page_mm": [
+    177.99999855889212,
+    58.00000194973415
+  ],
+  "minimum_extracted_font_pt": 9.199999809265137,
+  "font_resources": [
+    {
+      "name": "CYQZUH+DejaVuSans",
+      "type": "Type0",
+      "embedded_bytes": 12272,
+      "has_tounicode": true
+    },
+    {
+      "name": "EEZAWI+DejaVuSans",
+      "type": "Type0",
+      "embedded_bytes": 3864,
+      "has_tounicode": true
+    }
+  ],
+  "native_size_used_without_tight_crop": true,
+  "rendering": "Poppler pdftoppm 300 dpi, one page, visually reviewed",
+  "visual_review": {
+    "clipping": false,
+    "overlap": false,
+    "legible_axes_and_legend": true,
+    "review_scope": "standalone native-size figure; manuscript embedding is separately checked"
+  },
+  "pdf_render_png_sha256": "06020c2450514d403af391b16b7f0933aba06665b11ce4dec273a375158d5b14"
+}

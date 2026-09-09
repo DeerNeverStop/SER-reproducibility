@@ -4,16 +4,19 @@ Research artifacts accompanying **Validation Speaker Exposure and Checkpoint Sel
 
 **中文入口：** [全部实验及成果，用人话解释](docs/public-release-20260908/EXPERIMENTS_ZH.md) · [公开材料与复现说明](docs/public-release-20260908/REPRODUCING.md)
 
+**Latest revision:** [v2026.09.09](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.09) updates manuscript presentation and adds an explicitly post hoc window figure. No training or primary test results change. See the [revision notes and scope](docs/public-release-20260909/README.md). The [v2026.09.08 release](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.08) remains the source for its original downloadable bundles.
+
 ## Start here
 
 | What you want | Entry point |
 |---|---|
-| Current manuscript | [English PDF](paper/supplement-results-20260908/english/xie.pdf), [editable LaTeX](paper/supplement-results-20260908/english/main.tex), [Chinese results report](docs/autodl-supplement-20260908/RESULTS_REPORT_ZH.md) |
+| Latest manuscript revision | [English PDF](paper/review-revision-20260909/english/xie.pdf), [editable LaTeX](paper/review-revision-20260909/english/main.tex), [complete absolute-results supplement](paper/review-revision-20260909/ABSOLUTE_RESULTS.md) |
+| Previous manuscript and results explanation | [2026-09-08 English PDF](paper/supplement-results-20260908/english/xie.pdf), [its LaTeX source](paper/supplement-results-20260908/english/main.tex), [Chinese results report](docs/autodl-supplement-20260908/RESULTS_REPORT_ZH.md) |
 | Complete research history | [Experiment inventory](docs/public-release-20260908/EXPERIMENTS_ZH.md): completed, exploratory, superseded, interrupted and unexecuted work are distinguished |
 | Original 384 formal fits | [Results and interpretation](paper/final-20260907/RESEARCH_REPORT_中文.md), [all score files](v3/final_program_20260907/reports/scores/), [frozen scientific design](v3/final_program_20260907/SCIENCE_DESIGN.md) |
 | Separate 720-fit supplement | [Protocol](docs/autodl-supplement-20260908/README.md), [all results](docs/autodl-supplement-20260908/results/), [code and portable plans](v3/autodl_supplement_20260908/README.md) |
 | CPU-only verification | [Reproduction levels and commands](docs/public-release-20260908/REPRODUCING.md), including all 6 original and all 10 supplemental primary tests |
-| Downloadable artifacts | [Versioned release](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.08), [file identities and availability](docs/public-release-20260908/AVAILABILITY.md) |
+| Downloadable artifacts | [2026-09-09 revision notes](docs/public-release-20260909/README.md), [existing v2026.09.08 bundles](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.08), [their file identities and availability](docs/public-release-20260908/AVAILABILITY.md) |
 | Data and reuse terms | [Rights and original dataset sources](RIGHTS_AND_DATA.md) |
 
 ## What the current paper establishes
@@ -46,6 +49,6 @@ Historical reports are preserved for provenance and may describe their original 
 
 This repository starts from a curated snapshot of the private research workspace. It does not expose the private repository's history, PR conversations, cloud accounts or operational records. Retained Python training/scoring code and scientific result tables preserve their bytes. Selected narrative documents are explicitly marked public projections, with distinct hashes where private operational details are omitted. The original private repository and full local archives remain separate.
 
-The named manuscript predates this public artifact. Its reference to an access-restricted archive describes the original full archive; use the public release above for the materials actually published here. The earlier Chinese PDF is a historical manuscript and is not represented as a full translation of the latest 720-fit English revision.
+The 2026-09-09 manuscript revision distinguishes the public numerical artifact from the controlled full archive. Earlier manuscripts retain their historical artifact references; use the current navigation and versioned release notes for public availability. The earlier Chinese PDF is a historical manuscript and is not represented as a full translation of the latest English revision.
 
 No raw audio, model weights, credentials, third-party research-paper PDFs or bundled conference style are included. See [rights](RIGHTS_AND_DATA.md), [availability](docs/public-release-20260908/AVAILABILITY.md), and [CITATION.cff](CITATION.cff).

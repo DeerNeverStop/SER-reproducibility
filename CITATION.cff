@@ -5,8 +5,8 @@ title: "SER research artifacts: validation speaker exposure and checkpoint selec
 authors:
   - family-names: Xie
     given-names: Tian
-version: "2026.09.08"
-date-released: 2026-09-08
+version: "v2026.09.09"
+date-released: 2026-09-09
 repository-code: "https://github.com/DeerNeverStop/SER-reproducibility"
 url: "https://github.com/DeerNeverStop/SER-reproducibility"
 abstract: "Public research snapshot with experiment navigation, scientific source, fixed plans and complete reported results. Current manuscript experiments comprise an original 384-fit program and a separately frozen 720-fit supplement. Historical experiments are indexed separately."

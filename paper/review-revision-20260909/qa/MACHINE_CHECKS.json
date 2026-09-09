@@ -1,0 +1,438 @@
+{
+  "schema": "ser-manuscript-checks-20260909-1",
+  "pass": true,
+  "source_sha256": "043ebfaddb925910b74005fff77b61192d50b5d798931e09fa2512fff6b957a7",
+  "previous_source_sha256": "8c8d28974e6facc46f6d5a08375360ba455bb64e842c309839c119ccb5eb3ae8",
+  "pdf_sha256": "ac05ccf1c192e61db85cf2ebb594730be4508d166db4bf4122bbf2451326d056",
+  "compiler_log_sha256": "d3bc4e65c1570363ce6d6fca0daf17633b466b28fdeb99179fe7b932b3632042",
+  "checker_sha256": "c96fc2116d8d700da68afcb4f08a6eac7abc2fdcd9f51fa23ad2a078502e9032",
+  "checks": {
+    "expected_author": {
+      "pass": true,
+      "expected": "Tian Xie",
+      "panel_text": "VALIDATION SPEAKER EXPOSURE AND CHECKPOINT SELECTION\nIN SPEECH EMOTION RECOGNITION\nTian Xie\nUniversity of Toronto\ntianjack.xie@mail.utoronto.ca\nABSTRACT"
+    },
+    "expected_email": {
+      "pass": true,
+      "expected": "tianjack.xie@mail.utoronto.ca"
+    },
+    "expected_affiliation": {
+      "pass": true,
+      "expected": "University of Toronto"
+    },
+    "abstract_100_to_150_words": {
+      "pass": true,
+      "word_count": 134,
+      "method": "whitespace tokens containing letters/digits, after line-end dehyphenation",
+      "extracted_abstract": "Checkpoint selection can change speaker-independent speech emotion recognition results even when training and testing are held fixed. We compare seen- and unseen-speaker validation using cross-entropy (CE) or unweighted average recall (UAR) on shared candidate trajectories and unfamiliar-speaker tests. An original 384-fit study and a separately frozen 720-fit supplement cover three native tasks, two backbones, and longer candidate windows. HuBERT CE selection favors seen-speaker validation by 1.576, 4.018, and 1.398 percentage points on CREMA-D, SUBESCO, and RAVDESS; CEversus-UAR interactions are supported in the first two tasks. Extending RAVDESS WavLM candidate windows from 15 to 45 epochs increases the CE contrast by 2.257 points. Six of ten supplemental tests survive joint Holm correction. These findings establish criterion- and window-dependent selection effects within the studied programs: validation population, selection metric, and candidate window should be reported together.",
+      "region": [
+        52.425196850393704,
+        231.7513612,
+        300.20472440944883,
+        459.1710112000001
+      ]
+    },
+    "five_pages": {
+      "pass": true,
+      "pages": 5
+    },
+    "all_16_primary_rows_unchanged": {
+      "pass": true
+    },
+    "compiler_no_overfull_or_missing_references": {
+      "pass": true
+    },
+    "all_fonts_embedded_no_type3": {
+      "pass": true
+    },
+    "no_invisible_text": {
+      "pass": true
+    },
+    "figure_final_font_at_least_9pt": {
+      "pass": true,
+      "min_size_pt": 9.20027600000003,
+      "method": "Final PDF transformed font height; upright size or x extent for checked 90-degree y-axis labels."
+    },
+    "text_inside_layout": {
+      "pass": true,
+      "violations": []
+    },
+    "AI_disclosure_on_technical_pages": {
+      "pass": true
+    },
+    "page5_declarations_and_references": {
+      "pass": true,
+      "limitation": "Heading check only; final page contents require visual review."
+    },
+    "public_artifact_reference": {
+      "pass": true
+    },
+    "separate_Holm_families": {
+      "pass": true
+    }
+  },
+  "fonts": [
+    {
+      "page": 1,
+      "resource": "page//F0",
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F1",
+      "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F2",
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F3",
+      "name": "/TQTHRL+NimbusRomNo9L-MediItal",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F5",
+      "name": "/AKHCZK+TeXGyreTermesX-Regular",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F6",
+      "name": "/VDVGTR+txsys",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F0",
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F2",
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F8",
+      "name": "/CAFSZL+NewTXMI7",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F10",
+      "name": "/DDIEWW+NewTXMI",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F6",
+      "name": "/VDVGTR+txsys",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F5",
+      "name": "/AKHCZK+TeXGyreTermesX-Regular",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F4",
+      "name": "/YEUUOC+txmiaX",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F0",
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F2",
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F10",
+      "name": "/DDIEWW+NewTXMI",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F1",
+      "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F5",
+      "name": "/AKHCZK+TeXGyreTermesX-Regular",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F6",
+      "name": "/VDVGTR+txsys",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F8",
+      "name": "/CAFSZL+NewTXMI7",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F4",
+      "name": "/YEUUOC+txmiaX",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F0",
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F2",
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F10",
+      "name": "/DDIEWW+NewTXMI",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F8",
+      "name": "/CAFSZL+NewTXMI7",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F5",
+      "name": "/AKHCZK+TeXGyreTermesX-Regular",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F6",
+      "name": "/VDVGTR+txsys",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//Fm0//F1",
+      "name": "/CYQZUH+DejaVuSans",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//Fm0//F2",
+      "name": "/EEZAWI+DejaVuSans",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F0",
+      "name": "/IHAIZV+NimbusRomNo9L-Medi",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F2",
+      "name": "/IXFAWU+NimbusRomNo9L-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F1",
+      "name": "/BZIVMZ+NimbusRomNo9L-ReguItal",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F12",
+      "name": "/FKPJSN+NimbusMonL-Regu",
+      "subtype": "/Type1",
+      "embedded": true,
+      "type3": false
+    }
+  ],
+  "page_geometry": [
+    {
+      "page": 1,
+      "size_pt": [
+        612,
+        792
+      ],
+      "min_x_pt": 54.42520999999999,
+      "max_x_pt": 558.99852576,
+      "min_top_pt": 96.36863143999994,
+      "max_bottom_pt": 723.2957628799998,
+      "font_size_counts": {
+        "11.955": 128,
+        "9.963": 3649,
+        "7.273": 4
+      }
+    },
+    {
+      "page": 2,
+      "size_pt": [
+        612,
+        792
+      ],
+      "min_x_pt": 54.42521000000002,
+      "max_x_pt": 559.0025780000001,
+      "min_top_pt": 74.04235119999998,
+      "max_bottom_pt": 723.2957928799995,
+      "font_size_counts": {
+        "9.963": 3893,
+        "8.966": 276,
+        "7.273": 24
+      }
+    },
+    {
+      "page": 3,
+      "size_pt": [
+        612,
+        792
+      ],
+      "min_x_pt": 54.42519,
+      "max_x_pt": 558.9984208,
+      "min_top_pt": 78.86422000000005,
+      "max_bottom_pt": 723.2957628799998,
+      "font_size_counts": {
+        "9.963": 2439,
+        "8.966": 793,
+        "7.273": 46
+      }
+    },
+    {
+      "page": 4,
+      "size_pt": [
+        612,
+        792
+      ],
+      "min_x_pt": 54.42521999999997,
+      "max_x_pt": 558.9984208000002,
+      "min_top_pt": 75.39117103817489,
+      "max_bottom_pt": 723.2957828799997,
+      "font_size_counts": {
+        "9.2": 24,
+        "7.398": 1,
+        "5.96": 6,
+        "3.685": 1,
+        "5.781": 8,
+        "3.864": 2,
+        "6.881": 1,
+        "6.43": 1,
+        "6.533": 1,
+        "5.969": 3,
+        "2.613": 1,
+        "6.477": 1,
+        "5.17": 1,
+        "3.666": 2,
+        "4.898": 2,
+        "3.394": 1,
+        "9.6": 20,
+        "9.4": 47,
+        "9.963": 2916,
+        "7.273": 4
+      }
+    },
+    {
+      "page": 5,
+      "size_pt": [
+        612,
+        792
+      ],
+      "min_x_pt": 54.425219999999996,
+      "max_x_pt": 558.4105368,
+      "min_top_pt": 74.04235119999998,
+      "max_bottom_pt": 723.2957528799998,
+      "font_size_counts": {
+        "9.963": 3671
+      }
+    }
+  ],
+  "scope": "Manuscript numeric preservation and machine PDF checks. Not submission, ethics approval, new statistical evidence, or independent retraining. Visual review and public-link availability are checked separately."
+}
