@@ -1,0 +1,474 @@
+{
+  "schema": "ser-chinese-companion-qa-20260909-1",
+  "pass": true,
+  "source_markdown_sha256": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+  "english_source_sha256": "043ebfaddb925910b74005fff77b61192d50b5d798931e09fa2512fff6b957a7",
+  "pdf_sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0",
+  "checker_sha256": "b5ff5c9e4e4a8157fc7d02ca9c9eb6245669fdcc091a9201b5edc23abdc09150",
+  "pages": 7,
+  "checks": {
+    "all_16_primary_numeric_rows": true,
+    "all_11_absolute_numeric_rows": true,
+    "final_english_source_identity": true,
+    "fonts_embedded_no_type3": true,
+    "no_invisible_text": true,
+    "no_layout_escape": true,
+    "nonempty_pages": true,
+    "unicode_chinese_text": true,
+    "no_replacement_characters": true
+  },
+  "fonts": [
+    {
+      "page": 1,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 1,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 2,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 3,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 4,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 5,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 6,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F1",
+      "name": "/BSPMMI+SimHei",
+      "subtype": "/Type0",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F1+0",
+      "name": "/AAAAAA+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F1+1",
+      "name": "/AAAAAB+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F1+2",
+      "name": "/AAAAAC+SimSun-0",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F2+0",
+      "name": "/AAAAAA+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    },
+    {
+      "page": 7,
+      "resource": "page//F2+1",
+      "name": "/AAAAAB+SimHei",
+      "subtype": "/TrueType",
+      "embedded": true,
+      "type3": false
+    }
+  ],
+  "page_reports": [
+    {
+      "page": 1,
+      "text_characters": 841,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "21.0": 23,
+        "16.0": 24,
+        "11.5": 705
+      }
+    },
+    {
+      "page": 2,
+      "text_characters": 975,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 23,
+        "11.5": 722,
+        "9.5": 43,
+        "9.7": 69
+      }
+    },
+    {
+      "page": 3,
+      "text_characters": 991,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 22,
+        "11.5": 617,
+        "9.5": 11,
+        "9.7": 224
+      }
+    },
+    {
+      "page": 4,
+      "text_characters": 1199,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 24,
+        "11.5": 376,
+        "12.5": 57,
+        "9.5": 34,
+        "9.7": 513,
+        "7.76": 12
+      }
+    },
+    {
+      "page": 5,
+      "text_characters": 1034,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 22,
+        "11.5": 454,
+        "12.5": 30,
+        "9.5": 111,
+        "9.7": 182,
+        "7.76": 4,
+        "10.19": 24,
+        "10.39": 32,
+        "5.2": 4,
+        "10.59": 20
+      }
+    },
+    {
+      "page": 6,
+      "text_characters": 1338,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 21,
+        "11.5": 486,
+        "12.5": 21,
+        "9.5": 62,
+        "9.7": 544
+      }
+    },
+    {
+      "page": 7,
+      "text_characters": 1135,
+      "size_pt": [
+        595.2756,
+        841.8898
+      ],
+      "font_sizes": {
+        "8.0": 56,
+        "16.0": 20,
+        "11.5": 1004,
+        "9.5": 3
+      }
+    }
+  ],
+  "layout_violations": [],
+  "scope": "Numeric translation checks and machine PDF inspection. Does not replace human-language review or visual page inspection; no new scientific tests or training."
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "ser-chinese-companion-build-20260909-1",
+  "created_at": "2026-09-09T14:42:14.318279+00:00",
+  "inputs_sha256": {
+    "paper/review-revision-20260909/chinese/中文解读.md": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+    "paper/review-revision-20260909/chinese/build_chinese.py": "793aabbb1ad599ba79f5d35c5333a408352448cd9875e61519415895fa400d8b",
+    "external-fonts/simsun.ttc": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab",
+    "external-fonts/simhei.ttf": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+    "paper/review-revision-20260909/chinese/figures/manifest.json": "40dd9a1119d5c279523cca4128d2ad87ddcced2b000aecd55faf5acaa5efa716"
+  },
+  "document_metadata": {
+    "title": "验证集里是谁，会改变最后选出的情绪识别模型吗？",
+    "author": "Tian Xie",
+    "language": "zh-CN"
+  },
+  "figure_manifest": "paper/review-revision-20260909/chinese/figures/manifest.json",
+  "figures": [
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/window_selection_zh.pdf",
+      "sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5",
+      "bytes": 14394,
+      "source_cropbox": [
+        0.0,
+        0.0,
+        487.5590551181,
+        175.7480314961
+      ],
+      "caption": "事后候选窗口图：蓝色实线为CE、橙色虚线为UAR；纵轴是已见减未见所选模型的外测UAR差。阴影按五折先平均、再24个draw计算逐点95%t区间，不是同时置信带。所有轨迹均完整训练45轮。",
+      "page": 5,
+      "x": 54.0,
+      "y": 176.94391137150305,
+      "width": 487.27559055118115,
+      "height": 175.64585240802458,
+      "scale": 0.9994186046511839,
+      "matrix": [
+        0.9994186046511839,
+        0,
+        0,
+        0.9994186046511839,
+        54.0,
+        176.94391137150305
+      ]
+    }
+  ],
+  "output": {
+    "path": "external-build/中文解释版.pdf",
+    "bytes": 243415,
+    "sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0"
+  },
+  "figure_embedding": "vector PDF content merge; no rasterization",
+  "scope": "Document layout only; no model inference or new scientific analysis.",
+  "visual_review_performed": false
+}

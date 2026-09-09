@@ -1,0 +1,104 @@
+{
+  "schema": "ser-chinese-companion-delivery-20260909-1",
+  "created_at": "2026-09-09T14:43:23.684272+00:00",
+  "pass": true,
+  "pages": 7,
+  "files": {
+    "中文解读.md": {
+      "sha256": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+      "bytes": 16904
+    },
+    "论文中文解释版.pdf": {
+      "sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0",
+      "bytes": 243415
+    },
+    "build_chinese.py": {
+      "sha256": "793aabbb1ad599ba79f5d35c5333a408352448cd9875e61519415895fa400d8b",
+      "bytes": 21621
+    },
+    "check_chinese.py": {
+      "sha256": "b5ff5c9e4e4a8157fc7d02ca9c9eb6245669fdcc091a9201b5edc23abdc09150",
+      "bytes": 5669
+    },
+    "make_chinese_figure.py": {
+      "sha256": "745421f9e59204ae238b1781a214e508281e4f1471d564ca974232dabe48e642",
+      "bytes": 9260
+    },
+    "figures/window_selection_zh.pdf": {
+      "sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5",
+      "bytes": 14394
+    },
+    "figures/manifest.json": {
+      "sha256": "40dd9a1119d5c279523cca4128d2ad87ddcced2b000aecd55faf5acaa5efa716",
+      "bytes": 2438
+    },
+    "qa/MACHINE_CHECKS.json": {
+      "sha256": "da3ce01251918110ba69c1d0e0db9453347fb5e4741d318d0b4526e4344b7c65",
+      "bytes": 10037
+    },
+    "qa/BUILD_RECEIPT.json": {
+      "sha256": "b26780d725dbf7ea144bd3c080b007926b9ca767057cb541b48942cd7e4c987e",
+      "bytes": 2255
+    }
+  },
+  "english_source_sha256": "043ebfaddb925910b74005fff77b61192d50b5d798931e09fa2512fff6b957a7",
+  "english_pdf_sha256": "ac05ccf1c192e61db85cf2ebb594730be4508d166db4bf4122bbf2451326d056",
+  "numeric_correspondence": {
+    "primary_rows": 16,
+    "primary_displayed_numbers": 80,
+    "absolute_rows": 11,
+    "absolute_result_numbers": 66,
+    "absolute_window_numbers": 11,
+    "pass": true
+  },
+  "content_review": {
+    "pass": true,
+    "reviewed_markdown_sha256": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+    "scope": "Independent comparison against the English manuscript and complete absolute table; review of scientific, ethics, funding/conflict and AI-assistance wording. No new inference or training."
+  },
+  "visual_review": {
+    "performed": true,
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "renderer": "Poppler pdftoppm, PNG, scale-to 1500; additional 144-dpi header detail",
+    "rendered_pages": [
+      {
+        "page": 1,
+        "sha256": "099227e416505e43df94d361c68dc5b1fcc0d953d711c7a1b505fa5195d75e58"
+      },
+      {
+        "page": 2,
+        "sha256": "741baa6c2bbb6629909227a3a7e9e14d9f35714d42cbd00a13b83fb884d7b44d"
+      },
+      {
+        "page": 3,
+        "sha256": "1d445be0bec9ae09fae41f3845181499f6e2aacc3d81a4b3530ef0fb87abf93a"
+      },
+      {
+        "page": 4,
+        "sha256": "f9be6c9e34c4c67e5178fd7449dc6b7f1e12671a3ec2cc9659613793fb4b603e"
+      },
+      {
+        "page": 5,
+        "sha256": "db77bb5927833956252ec987a870978a674bc675d421025b3bd58c437b5c9c47"
+      },
+      {
+        "page": 6,
+        "sha256": "3026a4dd5b95477909580badd3a9933bbb8c156e0aa2364b80b4368bb56a4117"
+      },
+      {
+        "page": 7,
+        "sha256": "ac98a5f4190dc88bc107105c45b7e22b91a9b09d6fe102857ea9575babb2b3dc"
+      }
+    ],
+    "result": "Readable Chinese glyphs and tables; exponent formatting and intentional window-label line breaks verified; no clipping, overlap or broken pagination observed."
+  },
+  "scope": "Chinese explanatory companion to the 9 September English revision. No additional training, primary tests or acceptance prediction. Embedded font subsets are part of PDFs; external font files are not redistributed."
+}

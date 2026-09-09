@@ -1,6 +1,6 @@
 # Manuscript revision: 9 September 2026
 
-[English manuscript](english/xie.pdf) · [LaTeX source](english/main.tex) · [Complete absolute results](ABSOLUTE_RESULTS.md) · [Window figure and reproduction](figures/README.md)
+[English manuscript](english/xie.pdf) · [中文解释版](chinese/README.md) · [LaTeX source](english/main.tex) · [Complete absolute results](ABSOLUTE_RESULTS.md) · [Window figure and reproduction](figures/README.md)
 
 This revision accompanies public artifact version `v2026.09.09`. It is an author-review manuscript, not a submission receipt or an acceptance claim. The [8 September manuscript](../supplement-results-20260908/english/xie.pdf) remains a historical version.
 
@@ -43,3 +43,5 @@ The checker imports the existing PDF font-inspection helper and preserves the or
 这版把论文的发现讲得更直接：同样的训练和陌生人测试，仅改变验证人群、选模指标或候选轮数，最后拿来报告的模型与成绩就会变化。新增图方便看懂这种变化；完整成绩表仍公开保留。没有新增GPU训练，也没有把事后图包装成新的显著性证据。原始16项主检验、负向例子和不确定结果都保留。
 
 资助和利益冲突声明依据作者确认填写；伦理部分说明公开资料二次分析的政策依据及没有取得机构审批/豁免，AI辅助披露保留。此前中文PDF仍为历史译稿，本次没有将其冒称为新版全文翻译。
+
+现另附[对应本版的7页中文解释版](chinese/README.md)，解释方法、指标和结论边界，保留全部16项主检验及11种设置的绝对成绩。

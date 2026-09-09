@@ -1,15 +1,15 @@
 {
   "schema": "ser-public-snapshot-1",
-  "version": "v2026.09.09",
+  "version": "v2026.09.09-zh",
   "date": "2026-09-09",
   "source_repository": "DeerNeverStop/SER",
   "source_repository_private": true,
-  "source_commit": "59494e8eaf858c65fc42c8afe56b57edbd971400",
+  "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312",
   "history_not_included": true,
   "public_repo": "https://github.com/DeerNeverStop/SER-reproducibility",
   "scope": "File inventory for this curated snapshot only; original study locks and result identities retain their separate meanings",
-  "file_count": 1832,
-  "bytes": 230338841,
+  "file_count": 1847,
+  "bytes": 230950834,
   "files": [
     {
       "path": ".gitattributes",
@@ -33,18 +33,18 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 759,
-      "sha256": "ee0408a31f0877a60c1b9e0a77e8f038cd24ff0db72c870cb9e5e257275da3b5",
+      "bytes": 762,
+      "sha256": "53be609e281c33da37bc9b5b6cd60b6b23d27a2a5423d1acb5bf68b36e25b125",
       "disposition": "publication_adaptation",
-      "previous_public_sha256": "7ad694bbd67ac8859f2466f7f1cc6ef55eaca70c4827b5e8699f554d59d5fda7"
+      "previous_public_sha256": "ee0408a31f0877a60c1b9e0a77e8f038cd24ff0db72c870cb9e5e257275da3b5"
     },
     {
       "path": "README.md",
-      "bytes": 6926,
-      "sha256": "43d5ffc96287384a0f2a731229c70b4c0da3191b83cc14a34886327837690531",
+      "bytes": 7359,
+      "sha256": "1ac439e38d25fe82917a2127e1110619b34bff0be88fe6800f63a9cf7aedb3eb",
       "source_sha256": "e84a646ecbbb09a114a44c471d2cdd4e06d201b4644424d37a6e437265b8ad95",
       "disposition": "publication_adaptation",
-      "previous_public_sha256": "76968e9f09e27fbd1703b141b9c1d2c5e24b3a55ddcf809f48b3e918da1c772d"
+      "previous_public_sha256": "43d5ffc96287384a0f2a731229c70b4c0da3191b83cc14a34886327837690531"
     },
     {
       "path": "RIGHTS_AND_DATA.md",
@@ -358,6 +358,12 @@
       "sha256": "24ecc16c210be0de752ecbb03d4dbca9ce37ccf40acb573245fcb35a9350ed2a",
       "source_sha256": "24ecc16c210be0de752ecbb03d4dbca9ce37ccf40acb573245fcb35a9350ed2a",
       "disposition": "source_bytes_preserved"
+    },
+    {
+      "path": "docs/public-release-20260909-zh/README.md",
+      "bytes": 1921,
+      "sha256": "a9d7780dc522219a9f204424c2e845a8d1947e4e03a37b2d19be27b5804b850e",
+      "disposition": "new_publication_file_or_explicit_historical_export"
     },
     {
       "path": "docs/public-release-20260909/README.md",
@@ -1270,10 +1276,124 @@
     },
     {
       "path": "paper/review-revision-20260909/README.md",
-      "bytes": 4728,
-      "sha256": "4b6db9667c3cbf829a171d4a68cd30589ef7307bff02b5359b78dc3097999a5b",
-      "source_sha256": "4b6db9667c3cbf829a171d4a68cd30589ef7307bff02b5359b78dc3097999a5b",
-      "disposition": "source_bytes_preserved"
+      "bytes": 4934,
+      "sha256": "9f16adc203fed9c6edd27acee0d5ca913e07d1ca58e37aa0dfd26eece29f4c86",
+      "source_sha256": "9f16adc203fed9c6edd27acee0d5ca913e07d1ca58e37aa0dfd26eece29f4c86",
+      "disposition": "source_bytes_preserved",
+      "previous_public_sha256": "4b6db9667c3cbf829a171d4a68cd30589ef7307bff02b5359b78dc3097999a5b",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/README.md",
+      "bytes": 2349,
+      "sha256": "8fd1b74c239f08dcc653dc412ab686789c321693b2d922cd8d25837bbe323729",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "8fd1b74c239f08dcc653dc412ab686789c321693b2d922cd8d25837bbe323729",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/build_chinese.py",
+      "bytes": 21621,
+      "sha256": "793aabbb1ad599ba79f5d35c5333a408352448cd9875e61519415895fa400d8b",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "793aabbb1ad599ba79f5d35c5333a408352448cd9875e61519415895fa400d8b",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/check_chinese.py",
+      "bytes": 5669,
+      "sha256": "b5ff5c9e4e4a8157fc7d02ca9c9eb6245669fdcc091a9201b5edc23abdc09150",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "b5ff5c9e4e4a8157fc7d02ca9c9eb6245669fdcc091a9201b5edc23abdc09150",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/layout_qa.json",
+      "bytes": 1105,
+      "sha256": "025905bd4d2e52f2fc8525e2bbd9599e7266aca16cb838fad61c39da21ac9f0d",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "025905bd4d2e52f2fc8525e2bbd9599e7266aca16cb838fad61c39da21ac9f0d",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/manifest.json",
+      "bytes": 2438,
+      "sha256": "40dd9a1119d5c279523cca4128d2ad87ddcced2b000aecd55faf5acaa5efa716",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "40dd9a1119d5c279523cca4128d2ad87ddcced2b000aecd55faf5acaa5efa716",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/window_selection_zh.pdf",
+      "bytes": 14394,
+      "sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/window_selection_zh.png",
+      "bytes": 147486,
+      "sha256": "50a517326ccbed241746bcc486d2deaf031510773416a488c8e0a5e530fbd6ee",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "50a517326ccbed241746bcc486d2deaf031510773416a488c8e0a5e530fbd6ee",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/figures/window_selection_zh_pdf_render.png",
+      "bytes": 128800,
+      "sha256": "24b4be76d1866b79e53e03bc360b02e0118cb55e9cc4ee70526310cbf724f346",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "24b4be76d1866b79e53e03bc360b02e0118cb55e9cc4ee70526310cbf724f346",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/make_chinese_figure.py",
+      "bytes": 9260,
+      "sha256": "745421f9e59204ae238b1781a214e508281e4f1471d564ca974232dabe48e642",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "745421f9e59204ae238b1781a214e508281e4f1471d564ca974232dabe48e642",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/qa/BUILD_RECEIPT.json",
+      "bytes": 2255,
+      "sha256": "b26780d725dbf7ea144bd3c080b007926b9ca767057cb541b48942cd7e4c987e",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "b26780d725dbf7ea144bd3c080b007926b9ca767057cb541b48942cd7e4c987e",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/qa/DELIVERY_QA.json",
+      "bytes": 3697,
+      "sha256": "f1b7fdf74d42697f1542d568b03da81ae038031aa223309b3ed55e80c0abdaea",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "f1b7fdf74d42697f1542d568b03da81ae038031aa223309b3ed55e80c0abdaea",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/qa/MACHINE_CHECKS.json",
+      "bytes": 10037,
+      "sha256": "da3ce01251918110ba69c1d0e0db9453347fb5e4741d318d0b4526e4344b7c65",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "da3ce01251918110ba69c1d0e0db9453347fb5e4741d318d0b4526e4344b7c65",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/中文解读.md",
+      "bytes": 16904,
+      "sha256": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "d5d257ee7c160dcbdab05f40f393db6910255e0fff1e9a984cec995620a2ef35",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
+    },
+    {
+      "path": "paper/review-revision-20260909/chinese/论文中文解释版.pdf",
+      "bytes": 243415,
+      "sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0",
+      "disposition": "source_bytes_preserved",
+      "source_sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0",
+      "source_commit": "e6052a5e48ac7d2d0aac5deccf1dd95895efe312"
     },
     {
       "path": "paper/review-revision-20260909/english/main.tex",
@@ -13603,7 +13723,7 @@
     }
   ],
   "historical_n14r2_export_manifest": "v2_1/n14r2/EXPORT_MANIFEST.json",
-  "adaptations": "Navigation/availability, explicit public projections of selected narrative documents omitting private finance/operations, and reproducibility helpers. Retained Python training/scoring implementations and scientific numeric result tables preserve source bytes; projected narrative specifications have distinct public/source hashes and do not replace controlled originals for historical gates. Revision v2026.09.09 adds the reviewed manuscript, complete absolute-results presentation and explicitly post hoc window figure with draw-level intervals; original training/scoring files and result tables are unchanged. Public navigation and citation metadata point to the new version.",
+  "adaptations": "Navigation/availability, explicit public projections of selected narrative documents omitting private finance/operations, and reproducibility helpers. Retained Python training/scoring implementations and scientific numeric result tables preserve source bytes; projected narrative specifications have distinct public/source hashes and do not replace controlled originals for historical gates. Revision v2026.09.09 adds the reviewed manuscript, complete absolute-results presentation and explicitly post hoc window figure with draw-level intervals; original training/scoring files and result tables are unchanged. Public navigation and citation metadata point to the new version. Version v2026.09.09-zh adds the Chinese explanatory companion, translated figure labels, document builders/checks and navigation; the English manuscript and scientific results are unchanged.",
   "external_assets": [
     {
       "name": "formal_numeric_bundle.zip",
@@ -13616,9 +13736,15 @@
       "release": "v2026.09.09",
       "bytes": 80191,
       "sha256": "ac05ccf1c192e61db85cf2ebb594730be4508d166db4bf4122bbf2451326d056"
+    },
+    {
+      "name": "SER-Chinese-explainer-20260909.pdf",
+      "release": "v2026.09.09-zh",
+      "bytes": 243415,
+      "sha256": "ae029ba484872ac65596d482fc651cfbcfb34525efa9126001b3e64ca9045bd0"
     }
   ],
-  "previous_public_commit": "d9af0816c7323b37540956a614b54abaeb526f3d",
-  "previous_version": "v2026.09.08",
-  "previous_manifest_sha256": "0ec6edac366a9579378ffbe9b0652e3966be666327cd957e9e505339ef26aaaa"
+  "previous_public_commit": "dd5a61f0939f85e537fa3193ff76d6ad6e00710f",
+  "previous_version": "v2026.09.09",
+  "previous_manifest_sha256": "53dfb96add3dc402e28791c5f8bed23e8123e8feff614bfb11bb1b71e5e5d36c"
 }

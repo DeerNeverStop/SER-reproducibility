@@ -1,0 +1,32 @@
+{
+  "schema": "ser-chinese-window-layout-qa-1",
+  "pdf_sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5",
+  "manifest_sha256": "40dd9a1119d5c279523cca4128d2ad87ddcced2b000aecd55faf5acaa5efa716",
+  "pages": 1,
+  "width_mm": 171.99999872843424,
+  "height_mm": 62.000000042385516,
+  "minimum_extracted_font_pt": 10.199999809265137,
+  "minimum_native_font_pt": 10.2,
+  "floating_extraction_tolerance_pt": 1e-05,
+  "fonts": [
+    {
+      "name": "BSPMMI+SimHei",
+      "type": "Type0",
+      "embedded_subset_bytes": 9004,
+      "to_unicode": true
+    }
+  ],
+  "required_labels_extracted": true,
+  "pdf_rendering": "Poppler 300 dpi, native vector PDF",
+  "visual_review": {
+    "clipping": false,
+    "overlap": false,
+    "readable_chinese_labels": true,
+    "reviewed_actual_pdf_render": true
+  },
+  "pdf_render_png": {
+    "filename": "window_selection_zh_pdf_render.png",
+    "sha256": "24b4be76d1866b79e53e03bc360b02e0118cb55e9cc4ee70526310cbf724f346"
+  },
+  "scope": "Translation/rendering only. All 180 archived summaries are unchanged; no new analysis or hypothesis tests."
+}

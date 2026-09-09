@@ -1,0 +1,61 @@
+{
+  "schema": "ser-chinese-window-figure-1",
+  "created_at_utc": "2026-09-09T14:32:56.040353+00:00",
+  "files": {
+    "window_selection_zh.pdf": {
+      "bytes": 14394,
+      "sha256": "49bded0ae6d3b3ae3b093edbe70f39992dac596bec0fc0abbe207e9952d737c5"
+    },
+    "window_selection_zh.png": {
+      "bytes": 147486,
+      "sha256": "50a517326ccbed241746bcc486d2deaf031510773416a488c8e0a5e530fbd6ee"
+    }
+  },
+  "inputs": {
+    "summary_csv": {
+      "path": "paper/review-revision-20260909/figures/window_selection_summary.csv",
+      "bytes": 23586,
+      "sha256": "eff3f8ac9da576cf0d02be03b9edfd5f547ce01e3df60af881bcd3d5ea00e599"
+    },
+    "english_pdf": {
+      "path": "paper/review-revision-20260909/figures/window_selection.pdf",
+      "bytes": 20685,
+      "sha256": "c35f78f7c294803c9d72f64856beb515d7eea5c0dd75461ee40204052223d53a"
+    },
+    "english_audit": {
+      "path": "paper/review-revision-20260909/figures/window_selection_audit.json",
+      "bytes": 6840,
+      "sha256": "0df7d5dc304ab4c1774748ba7f8e31362f00a5ea7ebb6f1dd2e7cf295e885473"
+    }
+  },
+  "script": {
+    "path": "paper/review-revision-20260909/chinese/make_chinese_figure.py",
+    "bytes": 9260,
+    "sha256": "745421f9e59204ae238b1781a214e508281e4f1471d564ca974232dabe48e642"
+  },
+  "font": {
+    "filename": "simhei.ttf",
+    "family": "SimHei",
+    "bytes": 9745792,
+    "sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+    "distribution": "Installed font used for rendering; original font file not included. PDF embeds the used subset."
+  },
+  "layout": {
+    "width_mm": 172.0,
+    "height_mm": 62.0,
+    "minimum_native_font_pt": 10.2,
+    "text_artists_checked": 22,
+    "text_inside_canvas": true,
+    "png_dpi": 300,
+    "pdf_fonttype": 42,
+    "cropping": "native canvas; no tight bounding-box resize"
+  },
+  "data_scope": "All 180 existing English summary rows reused without statistical recalculation or rounding; 2 corpora x 2 criteria x 45 windows.",
+  "interval_scope": "Existing pointwise 95% t intervals from 24 five-fold draw means, df23; not simultaneous bands; post hoc windows; no additional hypothesis tests.",
+  "label_scope": "Seen/unseen validation translated as 熟悉验证/陌生验证; all trajectories still completed 45 epochs.",
+  "runtime": {
+    "python": "3.13.9",
+    "matplotlib": "3.11.1"
+  },
+  "manifest_sha256": "7b61529e702eaa2a140f09d53154c61b8db045336d6b8710555aced12c038930"
+}

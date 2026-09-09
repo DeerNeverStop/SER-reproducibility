@@ -2,9 +2,11 @@
 
 Research artifacts accompanying **Validation Speaker Exposure and Checkpoint Selection in Speech Emotion Recognition**, by Tian Xie. This is a research manuscript and public reproducibility snapshot, not a claim of ICASSP acceptance.
 
-**中文入口：** [全部实验及成果，用人话解释](docs/public-release-20260908/EXPERIMENTS_ZH.md) · [公开材料与复现说明](docs/public-release-20260908/REPRODUCING.md)
+**中文入口：** [最新版7页中文解释版](paper/review-revision-20260909/chinese/README.md) · [全部实验及成果，用人话解释](docs/public-release-20260908/EXPERIMENTS_ZH.md) · [公开材料与复现说明](docs/public-release-20260908/REPRODUCING.md)
 
 **Latest revision:** [v2026.09.09](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.09) updates manuscript presentation and adds an explicitly post hoc window figure. No training or primary test results change. See the [revision notes and scope](docs/public-release-20260909/README.md). The [v2026.09.08 release](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.08) remains the source for its original downloadable bundles.
+
+**Chinese companion:** [v2026.09.09-zh](https://github.com/DeerNeverStop/SER-reproducibility/releases/tag/v2026.09.09-zh) adds a seven-page plain-language explanation of the 9 September English revision, with all 16 primary tests, 11 absolute settings and a Chinese figure. See [companion release notes](docs/public-release-20260909-zh/README.md).
 
 ## Start here
 
